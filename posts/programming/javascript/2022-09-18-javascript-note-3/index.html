@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>JavaScript #3 - 데이터타입, data types, let vs var, hoisting | 페이퍼블로그</title>
+<meta name="keywords" content="programming">
+<meta name="description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+프로그래밍에서 중요한 것들 - 입력, 연산, 출력
+- 데이터 전송
+- CPU에 최적화된 연산
+- 메모리의 사용을 최소화
+Strict mode - Vanilla JavaScript를 사용할 때는 **&lsquo;use strict&rsquo;**를 가장 상단에 선언해주는 것을 권장
+// 1. Use strict // added in ES 5 // use this for Vanilla JavaScript. &#39;use strict&#39;; - (참고) Vanilla JavaScript">
+<meta name="author" content="">
+<link rel="canonical" href="https://paperblog.github.io/posts/programming/javascript/2022-09-18-javascript-note-3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.abc7c82c3d415a6df50430738d1cbcc4c76fea558bc5a0c830d3babf78167a35.css" integrity="sha256-q8fILD1BWm31BDBzjRy8xMdv6lWLxaDIMNO6v3gWejU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://paperblog.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://paperblog.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://paperblog.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://paperblog.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://paperblog.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-E1373S6D9G', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<meta property="og:title" content="JavaScript #3 - 데이터타입, data types, let vs var, hoisting" />
+<meta property="og:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+프로그래밍에서 중요한 것들 - 입력, 연산, 출력
+- 데이터 전송
+- CPU에 최적화된 연산
+- 메모리의 사용을 최소화
+Strict mode - Vanilla JavaScript를 사용할 때는 **&lsquo;use strict&rsquo;**를 가장 상단에 선언해주는 것을 권장
+// 1. Use strict // added in ES 5 // use this for Vanilla JavaScript. &#39;use strict&#39;; - (참고) Vanilla JavaScript" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://paperblog.github.io/posts/programming/javascript/2022-09-18-javascript-note-3/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaScript #3 - 데이터타입, data types, let vs var, hoisting"/>
+<meta name="twitter:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+프로그래밍에서 중요한 것들 - 입력, 연산, 출력
+- 데이터 전송
+- CPU에 최적화된 연산
+- 메모리의 사용을 최소화
+Strict mode - Vanilla JavaScript를 사용할 때는 **&lsquo;use strict&rsquo;**를 가장 상단에 선언해주는 것을 권장
+// 1. Use strict // added in ES 5 // use this for Vanilla JavaScript. &#39;use strict&#39;; - (참고) Vanilla JavaScript"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "JavaScript #3 - 데이터타입, data types, let vs var, hoisting",
+      "item": "https://paperblog.github.io/posts/programming/javascript/2022-09-18-javascript-note-3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "JavaScript #3 - 데이터타입, data types, let vs var, hoisting",
+  "name": "JavaScript #3 - 데이터타입, data types, let vs var, hoisting",
+  "description": "아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\n프로그래밍에서 중요한 것들 - 입력, 연산, 출력\n- 데이터 전송\n- CPU에 최적화된 연산\n- 메모리의 사용을 최소화\nStrict mode - Vanilla JavaScript를 사용할 때는 **\u0026lsquo;use strict\u0026rsquo;**를 가장 상단에 선언해주는 것을 권장\n// 1. Use strict // added in ES 5 // use this for Vanilla JavaScript. \u0026#39;use strict\u0026#39;; - (참고) Vanilla JavaScript",
+  "keywords": [
+    "programming"
+  ],
+  "articleBody": "아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\n프로그래밍에서 중요한 것들 - 입력, 연산, 출력\n- 데이터 전송\n- CPU에 최적화된 연산\n- 메모리의 사용을 최소화\nStrict mode - Vanilla JavaScript를 사용할 때는 **‘use strict’**를 가장 상단에 선언해주는 것을 권장\n// 1. Use strict // added in ES 5 // use this for Vanilla JavaScript. 'use strict'; - (참고) Vanilla JavaScript\nVanilla JS {: .text-center}\n 외부 라이브러리나 프레임워크를 쓰지 않는 순수 JavaScript를 이르는 말이다. 사용자 정의된 라이브러리나 프레임워크 자체를 쓰지 않기 때문에 당연히 다른 라이브러리나 프레임워크를 사용했을 때보다 빠르고 호환성이 좋을 수밖에 없다. 또한 숙련된 사람일 수록 별의별 기능을 구현할 수 있다는 특징이 있다.\n - (참고) Strict mode\nStrict mode {: .text-center}\n 1. 기존에는 조용히 무시되던 에러들을 throwing합니다.\n2. JavaScript 엔진의 최적화 작업을 어렵게 만드는 실수들을 바로잡습니다. 가끔씩 엄격 모드의 코드는 비-엄격 모드의 동일한 코드보다 더 빨리 작동하도록 만들어집니다.\n3. 엄격 모드는 ECMAScript의 차기 버전들에서 정의 될 문법을 금지합니다.\n Variable - EC 6에 추가된 let 명령으로 변수를 선언할 수 있음\n- Global scope 에서 선언된 전역변수는 어디서나 접근할 수 있음\nlet name = \"kevin\"; - Block scope 안에 변수를 선언하면, Block scope 바깥에서는 이 변수에 접근할 수 없음\n{ let name = 'kevin'; } - Global scope과 Block scope에서 정의된 변수를 아래와 같이 출력하여 위 내용을 확인할 수 있음\n// 2. Variable // let (added in ES 6)  // 전역변수 let globalName = 'global name'; // Block scope // Block 안에 정의된 변수는 Block 밖에서 사용할 수 없음 // 전역변수는 Block 안에서도 사용할 수 있음 { let name = 'kevin'; console.log(name); name = 'hello'; console.log(name); console.log(globalName); } console.log(name); console.log(globalName); - var는 이제 사용하지 않는 변수 선언 명령어로 Hoisting 문제(변수 선언을 가장 맨 위로 올려주는 문제)가 있음\n// var (don't ever use this!) // var hoisting (move delaration from bottom to top) console.log(age); // undefined age = 4; console.log(age); // 4 var age; // Hoising  // var는 blcok scope이 없음 { age = 5; var age; // Hoisting } console.log(age); // 5 Constants - 선언함과 동시에 값을 할당한 뒤로는 값을 변경할 수 없음 (Immutable data type)\n- favor immutable data type always for a few reasons\n - security\n - thread safety\n - reduce human mistakes\n// 3. Constants const daysInWeek = 7; const maxNumber = 5; console.log(daysInWeek); console.log(maxNumber); Data types Number\n// Number 숫자형 const count = 17; // integer const size = 17.1; // decimal number console.log(`value: ${count}, type: ${typeof count}`); console.log(`value: ${size}, type: ${typeof size}`); // Number의 특별한 값 유형 const infinity = 1 / 0; const negativeInfinity = -1 / 0; const nAn = 'not a number' / 2; console.log(`value: ${infinity}, type: ${typeof infinity}`) console.log(`value: ${negativeInfinity}, type: ${typeof negativeInfinity}`) console.log(`value: ${nAn}, type: ${typeof nAn}`) Bigint\n// 새로 추가된 Bigint 숫자형 // (fairly new, don't use it yet) // over (-2**53 ~ 2**53) const bigInt = 6789678967896789678967896789678967896789n; console.log(`value: ${bigInt}, type: ${typeof bigInt}`) String\n// String 문자열 const char = \"C\"; const brendan = \"brendan\"; const greeting = \"hello \" + brendan; console.log(`value: ${greeting}, type: ${typeof greeting}`); const helloBob = `hi ${brendan}!`; // template literals (string) console.log(`value: ${helloBob}, type: ${typeof helloBob}`); Boolean\n// Boolean // false: 0, null, undefined, NaN, '' // true: any other value const canRead = true; const text = 3  1; // false console.log(`value: ${canRead}, type: ${typeof canRead}`); console.log(`value: ${text}, type: ${typeof text}`); // null let nothing = null; console.log(`value: ${nothing}, type: ${typeof nothing}`); // undefined let x; // or let x=undefined; console.log(`value: ${x}, type: ${typeof x}`); Symbol\n// symbol, create unique identifiers for objects const symbol1 = Symbol('id'); const symbol2 = Symbol('id'); console.log(symbol1 === symbol2); // false const gSymbol1 = Symbol.for('id'); const gSymbol2 = Symbol.for('id'); console.log(gSymbol1 === gSymbol2); // true console.log(`value: ${symbol1.description}, type: ${typeof symbol1.description}`); Object\n// object, real-life object, data structure const kevin = { name: \"kevin\", age: 30}; kevin.age = 15; console.log(kevin); Dynamic typing\n// 5. Dynamic typing: dynamically typed language let test = \"hello\"; console.log(test.charAt(0)); console.log(`value: ${test}, type: ${typeof test}`); // string test = 1; console.log(`value: ${test}, type: ${typeof test}`); // number test = '7' + 5; console.log(`value: ${test}, type: ${typeof test}`); // string test = \"8\" / \"2\"; console.log(`value: ${test}, type: ${typeof test}`); // number console.log(test.charAt(0)); // error ",
+  "wordCount" : "693",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://paperblog.github.io/posts/programming/javascript/2022-09-18-javascript-note-3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "페이퍼블로그",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://paperblog.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://paperblog.github.io" accesskey="h" title="페이퍼블로그 (Alt + H)">페이퍼블로그</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://paperblog.github.io/archives/" title="아카이브">
+                    <span>아카이브</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/categories/" title="카테고리">
+                    <span>카테고리</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/tags/" title="태그">
+                    <span>태그</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://paperblog.github.io">Home</a></div>
+    <h1 class="post-title">
+      JavaScript #3 - 데이터타입, data types, let vs var, hoisting
+    </h1>
+    <div class="post-meta">4 min
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d%ec%97%90%ec%84%9c-%ec%a4%91%ec%9a%94%ed%95%9c-%ea%b2%83%eb%93%a4" aria-label="프로그래밍에서 중요한 것들"><strong>프로그래밍에서 중요한 것들</strong></a></li>
+                <li>
+                    <a href="#strict-mode" aria-label="Strict mode"><strong>Strict mode</strong></a></li>
+                <li>
+                    <a href="#variable" aria-label="Variable"><strong>Variable</strong></a></li>
+                <li>
+                    <a href="#constants" aria-label="Constants"><strong>Constants</strong></a></li>
+                <li>
+                    <a href="#data-types" aria-label="Data types"><strong>Data types</strong></a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><!-- raw HTML omitted -->
+<p>아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.</p>
+<p>기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.</p>
+<h2 id="프로그래밍에서-중요한-것들"><strong>프로그래밍에서 중요한 것들</strong><a hidden class="anchor" aria-hidden="true" href="#프로그래밍에서-중요한-것들">#</a></h2>
+<p>- 입력, 연산, 출력</p>
+<p>- 데이터 전송</p>
+<p>- CPU에 최적화된 연산</p>
+<p>- 메모리의 사용을 최소화</p>
+<h2 id="strict-mode"><strong>Strict mode</strong><a hidden class="anchor" aria-hidden="true" href="#strict-mode">#</a></h2>
+<p>- <strong>Vanilla JavaScript</strong>를 사용할 때는 **&lsquo;use strict&rsquo;**를 가장 상단에 선언해주는 것을 권장</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 1. Use strict
+</span><span style="color:#75715e">// added in ES 5
+</span><span style="color:#75715e">// use this for Vanilla JavaScript.
+</span><span style="color:#75715e"></span><span style="color:#e6db74">&#39;use strict&#39;</span>;
+</code></pre></div><p>- <strong>(참고) Vanilla JavaScript</strong></p>
+<p><a href="https://namu.wiki/w/Vanilla%20JS">Vanilla JS</a>
+{: .text-center}</p>
+<blockquote>
+<p>외부 라이브러리나 프레임워크를 쓰지 않는 순수 JavaScript를 이르는 말이다. 사용자 정의된 라이브러리나 프레임워크 자체를 쓰지 않기 때문에 당연히 다른 라이브러리나 프레임워크를 사용했을 때보다 빠르고 호환성이 좋을 수밖에 없다. 또한 숙련된 사람일 수록 별의별 기능을 구현할 수 있다는 특징이 있다.</p>
+</blockquote>
+<p>- <strong>(참고) Strict mode</strong></p>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a>
+{: .text-center}</p>
+<blockquote>
+<p>1. 기존에는 조용히 무시되던 에러들을 throwing합니다.<br>
+2. JavaScript 엔진의 최적화 작업을 어렵게 만드는 실수들을 바로잡습니다. 가끔씩 엄격 모드의 코드는 비-엄격 모드의 동일한 코드보다 더 빨리 작동하도록 만들어집니다.<br>
+3. 엄격 모드는 ECMAScript의 차기 버전들에서 정의 될 문법을 금지합니다.</p>
+</blockquote>
+<h2 id="variable"><strong>Variable</strong><a hidden class="anchor" aria-hidden="true" href="#variable">#</a></h2>
+<p>- EC 6에 추가된 <strong>let</strong> 명령으로 변수를 선언할 수 있음</p>
+<p>- <strong>Global scope</strong> 에서 선언된 전역변수는 어디서나 접근할 수 있음</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kevin&#34;</span>;
+</code></pre></div><p>- <strong>Block scope</strong> 안에 변수를 선언하면, <strong>Block scope</strong> 바깥에서는 이 변수에 접근할 수 없음</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;kevin&#39;</span>;
+}
+</code></pre></div><p>- <strong>Global scope</strong>과 <strong>Block scope</strong>에서 정의된 변수를 아래와 같이 출력하여 위 내용을 확인할 수 있음</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 2. Variable
+</span><span style="color:#75715e">// let (added in ES 6)
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 전역변수
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">globalName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;global name&#39;</span>;
+
+<span style="color:#75715e">// Block scope
+</span><span style="color:#75715e">// Block 안에 정의된 변수는 Block 밖에서 사용할 수 없음
+</span><span style="color:#75715e">// 전역변수는 Block 안에서도 사용할 수 있음
+</span><span style="color:#75715e"></span>{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;kevin&#39;</span>;
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>);
+    <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">globalName</span>);
+}
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">globalName</span>);
+</code></pre></div><p>- <strong>var</strong>는 이제 <strong>사용하지 않는</strong> 변수 선언 명령어로 <strong>Hoisting 문제</strong>(변수 선언을 가장 맨 위로 올려주는 문제)가 있음</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// var (don&#39;t ever use this!)
+</span><span style="color:#75715e">// var hoisting (move delaration from bottom to top)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">age</span>); <span style="color:#75715e">// undefined
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">age</span>); <span style="color:#75715e">// 4
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">age</span>; <span style="color:#75715e">// Hoising
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// var는 blcok scope이 없음
+</span><span style="color:#75715e"></span>{
+    <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">age</span>; <span style="color:#75715e">// Hoisting
+</span><span style="color:#75715e"></span>}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">age</span>); <span style="color:#75715e">// 5
+</span></code></pre></div><h2 id="constants"><strong>Constants</strong><a hidden class="anchor" aria-hidden="true" href="#constants">#</a></h2>
+<p><strong>- 선언함과 동시에 값을 할당한 뒤로는 값을 변경할 수 없음 (Immutable data type)</strong></p>
+<p><strong>- favor immutable data type always for a few reasons</strong></p>
+<p>  <strong>- security</strong></p>
+<p>  <strong>- thread safety</strong></p>
+<p>  <strong>- reduce human mistakes</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 3. Constants
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">daysInWeek</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">maxNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">daysInWeek</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">maxNumber</span>);
+</code></pre></div><h2 id="data-types"><strong>Data types</strong><a hidden class="anchor" aria-hidden="true" href="#data-types">#</a></h2>
+<p><strong>Number</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Number 숫자형
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>; <span style="color:#75715e">// integer
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17.1</span>; <span style="color:#75715e">// decimal number
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">count</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">count</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">size</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">size</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#75715e">// Number의 특별한 값 유형
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">infinity</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">negativeInfinity</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nAn</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;not a number&#39;</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">infinity</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">infinity</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">negativeInfinity</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">negativeInfinity</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nAn</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">nAn</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</code></pre></div><p><strong>Bigint</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 새로 추가된 Bigint 숫자형
+</span><span style="color:#75715e">// (fairly new, don&#39;t use it yet)
+</span><span style="color:#75715e">// over (-2**53 ~ 2**53)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bigInt</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6789678967896789678967896789678967896789</span><span style="color:#a6e22e">n</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">bigInt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">bigInt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</code></pre></div><p><strong>String</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// String 문자열
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;C&#34;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">brendan</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;brendan&#34;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">brendan</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">greeting</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">greeting</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">helloBob</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`hi </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">brendan</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!`</span>; <span style="color:#75715e">// template literals (string)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">helloBob</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">helloBob</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</code></pre></div><p><strong>Boolean</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Boolean
+</span><span style="color:#75715e">// false: 0, null, undefined, NaN, &#39;&#39;
+</span><span style="color:#75715e">// true: any other value
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">canRead</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">canRead</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">canRead</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">text</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">text</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#75715e">// null
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nothing</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nothing</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">nothing</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+
+<span style="color:#75715e">// undefined
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span>; <span style="color:#75715e">// or let x=undefined;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</code></pre></div><p><strong>Symbol</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// symbol, create unique identifiers for objects
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">symbol1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">symbol2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">symbol1</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">symbol2</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gSymbol1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>.<span style="color:#66d9ef">for</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gSymbol2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>.<span style="color:#66d9ef">for</span>(<span style="color:#e6db74">&#39;id&#39;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">gSymbol1</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">gSymbol2</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">symbol1</span>.<span style="color:#a6e22e">description</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">symbol1</span>.<span style="color:#a6e22e">description</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</code></pre></div><p><strong>Object</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// object, real-life object, data structure
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">kevin</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;kevin&#34;</span>, <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>};
+<span style="color:#a6e22e">kevin</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">kevin</span>);
+</code></pre></div><p><strong>Dynamic typing</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 5. Dynamic typing: dynamically typed language
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">test</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>));
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// string
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// number
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;7&#39;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// string
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;2&#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`value: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">test</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// number
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">test</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>)); <span style="color:#75715e">// error
+</span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://paperblog.github.io/tags/programming/">programming</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://paperblog.github.io/posts/programming/javascript/2022-09-11-javascript-note-2/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향</span>
+  </a>
+  <a class="next" href="https://paperblog.github.io/posts/programming/javascript/2022-09-24-javascript-note-4/">
+    <span class="title">Next »</span>
+    <br>
+    <span>JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://paperblog.github.io">페이퍼블로그</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
