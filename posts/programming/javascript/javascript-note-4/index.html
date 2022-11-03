@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁 | 페이퍼블로그</title>
+<meta name="keywords" content="programming">
+<meta name="description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Variable (let) vs Constant (const) 복습 // Variable, rw(read/write) // let (added in ES6) let globalName = &#39;global name&#39;; // Global Variable 선언 및 값 할당 { let name = &#39;kevin&#39;; // Local Variable 선언 및 값 할당  console.log(name); // kevin 출력  name = &#39;hello&#39;; // Variable 값 변경  console.">
+<meta name="author" content="">
+<link rel="canonical" href="https://paperblog.github.io/posts/programming/javascript/javascript-note-4/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.abc7c82c3d415a6df50430738d1cbcc4c76fea558bc5a0c830d3babf78167a35.css" integrity="sha256-q8fILD1BWm31BDBzjRy8xMdv6lWLxaDIMNO6v3gWejU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://paperblog.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://paperblog.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://paperblog.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://paperblog.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://paperblog.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-E1373S6D9G', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<meta property="og:title" content="JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁" />
+<meta property="og:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Variable (let) vs Constant (const) 복습 // Variable, rw(read/write) // let (added in ES6) let globalName = &#39;global name&#39;; // Global Variable 선언 및 값 할당 { let name = &#39;kevin&#39;; // Local Variable 선언 및 값 할당  console.log(name); // kevin 출력  name = &#39;hello&#39;; // Variable 값 변경  console." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://paperblog.github.io/posts/programming/javascript/javascript-note-4/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-24T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁"/>
+<meta name="twitter:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Variable (let) vs Constant (const) 복습 // Variable, rw(read/write) // let (added in ES6) let globalName = &#39;global name&#39;; // Global Variable 선언 및 값 할당 { let name = &#39;kevin&#39;; // Local Variable 선언 및 값 할당  console.log(name); // kevin 출력  name = &#39;hello&#39;; // Variable 값 변경  console."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁",
+      "item": "https://paperblog.github.io/posts/programming/javascript/javascript-note-4/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁",
+  "name": "JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁",
+  "description": "아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\nVariable (let) vs Constant (const) 복습 // Variable, rw(read/write) // let (added in ES6) let globalName = \u0026#39;global name\u0026#39;; // Global Variable 선언 및 값 할당 { let name = \u0026#39;kevin\u0026#39;; // Local Variable 선언 및 값 할당  console.log(name); // kevin 출력  name = \u0026#39;hello\u0026#39;; // Variable 값 변경  console.",
+  "keywords": [
+    "programming"
+  ],
+  "articleBody": "   아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\nVariable (let) vs Constant (const) 복습 // Variable, rw(read/write) // let (added in ES6) let globalName = 'global name'; // Global Variable 선언 및 값 할당 { let name = 'kevin'; // Local Variable 선언 및 값 할당  console.log(name); // kevin 출력  name = 'hello'; // Variable 값 변경  console.log(name); // hello 출력  console.log(globalName); // global name 출력 } console.log(name); // 미출력 console.log(globalName); // global name 출력  // Variable은 메모리의 값을 읽거나 쓸 수 있다. // Constant, r(read only) // use const whenever possible. // only use let if variable needs to change.  // favor immutable data type always for a few reasons: // - security // - thread safety // - reduce human mistakes const daysInWeek = 7; const maxNumber = 5; Mutable vs Immutable 데이터 타입 복습 // Note! // Immutable data types: primitive types, frozen objects (i.e. object.freeze()) // Mutable data types: all objects by default are mutable in JS // favor immutable data type always for a fe reasons: // - security // - thread safety // - reduce human mistakes 1. String concatenation // 1. String concatenation console.log('my' + ' cat'); // my cat console.log('1' + 2); // 12 console.log(`string literals: 1 + 2 = ${1 + 2}`); // string literals: 1 + 2 = 3 2. Numeric operators // 2. Numeric operators console.log(1 + 1); // add console.log(1 - 1); // substract console.log(1 / 1); // divide console.log(1 * 1); // muliply console.log(5 % 2); // remainder console.log(2 ** 3); // exponentiation 3. Increment and decrement operators // 3. Increment and decrement operators let counter = 2; const preIncrement = ++counter; // counter = counter + 1; // preIncrement = counter; console.log(`preIncrement: ${preIncrement}, counter: ${counter}`); const postIncrement = counter++; // postIncrement = counter; // counter = counter + 1; console.log(`postIncrement: ${postIncrement}, counter: ${counter}`); const preDecrement = --counter; console.log(`preDecrement: ${preDecrement}, counter: ${counter}`); const postDecrement = counter--; console.log(`postDecrement: ${postDecrement}, counter: ${counter}`); 4. Assignment operators // 4. Assignment operators let x = 3; let y = 6; x += y; console.log(`x: ${x}, y: ${y}`) // x: 9, y: 6 x -= y; console.log(`x: ${x}, y: ${y}`) // x: 3, y: 6 x *= y; console.log(`x: ${x}, y: ${y}`) // x: 18, y: 6 x /= y; console.log(`x: ${x}, y: ${y}`) // x: 3, y: 6 5. Comparision operators // 5. Comparison operators console.log(10  6); // false console.log(10  6); // false console.log(10  6); // true console.log(10 = 6); // ture 6. Logical operators: || (or), \u0026\u0026 (and), ! (not) // 6. Logical operators: || (or), \u0026\u0026 (and), ! (not) const value1 = false; const value2 = 4  2; const value3 = true; const value4 = 4  2; // || (or), finds the first truthy value console.log(`or: ${value1 || value2 || check()}`); // false, false, true - true console.log(`or: ${value3 || value2 || check()}`); // true - true // 조건 중 하나라도 true이면 true 반환 // 앞 조건 부터 탐색해서 true 나오면 탐색 종료 후 반환하므로 무거운 로직은 후순위 조건으로 두는게 좋음.  // \u0026\u0026 (and), finds the first falsy value console.log(`and: ${value1 \u0026\u0026 value2 \u0026\u0026 check()}`); // false - false console.log(`and: ${value3 \u0026\u0026 value4 \u0026\u0026 check()}`); // true, true, true - true  // often used to compress long if-statement // nullableObject \u0026\u0026 nullableObject.something // if (nullableObject != null) { // nullableObject.something; // }  // ! (not) console.log(!value1); // false  // 시간 낭비하는 임의의 함수 function check() { for (let i = 0; i  10; i++) { // wasting time  console.log('✔'); } return true; } 7. Equality // 7. Equality const stringFive = '5'; const numberFive = 5; // == loose equality, with type conversion console.log(stringFive == numberFive); // true console.log(stringFive != numberFive); // false  // === strict equality, no type conversion console.log(stringFive === numberFive); // false console.log(stringFive !== numberFive); // true  // object equality by reference const kevin1 = {name: 'kevin'}; const kevin2 = {name: 'kevin'}; const kevin3 = kevin1; console.log(kevin1 == kevin2); // false console.log(kevin1 === kevin2); // false console.log(kevin1 === kevin3); // true  // equality = puzzler console.log(0 == false); // true console.log(0 === false); // false console.log('' == false); // true console.log('' === false); // false console.log(null == undefined); // true console.log(null === undefined); // false 8. Conditional operators: if // 8. Conditional operators: if // if, else if, else const name = 'kevin'; if (name === 'kevin') { console.log('Welcome, Kevin!'); } else if (name === 'coder') { console.log('You are amazing coder!'); } else { console.log(\"You are stranger!\") } 9. Ternary operator: ? // 9. Ternary operator: ? // condition ? value1 : value2; console.log(name === 'kevin' ? 'yes' : 'no'); 10. Switch statement // 10. Switch statement // use for multiple if checks // use for enum-like value check // use for multiple type checks in TS const browser = 'Firefox'; switch (browser) { case 'IE': console.log('go away!'); break; case 'Chrome': case 'Firefox': console.log('Good!'); break; default: console.log('same all!'); break; } 11. Loops // 11. Loops // while loop, while the condition is truthy, // body code is executed. let i = 3; while (i  0) { console.log(`while: ${i}`); i--; } // do while loop, body code is executed first, // then check the condition. i = 3; do { console.log(`do while: ${i}`); i--; } while (i  0); // for loop, for(begin; condition; step) for (i = 3; i  0; i--) { console.log(`for ${i}`); } for (let i = 3; i  0; i = i - 2) { // inline variable declaration  console.log(`inline variable for: ${i}`); } // nested loops - O(n^2) 이므로 피하는게 좋음 for (let i = 0; i  2; i++) { for (let j = 0; j  2; j++) { console.log(`i: ${i}, j: ${j}`); } } // break, continue // 01. iterate from 0 to 10 and print only even numbers (use continue) for (let i = 0; i  10; i++) { if (i % 2 !== 0) { continue; } console.log(i); } // 02. iterate from 0 to 10 and print numbers until reaching 8 (use break) for (let i = 0; i  10; i++) { if (i  8) { break; } console.log(i); } ",
+  "wordCount" : "1040",
+  "inLanguage": "en",
+  "datePublished": "2022-09-24T00:00:00Z",
+  "dateModified": "2022-09-24T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://paperblog.github.io/posts/programming/javascript/javascript-note-4/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "페이퍼블로그",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://paperblog.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1373S6D9G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E1373S6D9G');
+</script>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5083146661516357"
+     crossorigin="anonymous"></script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://paperblog.github.io" accesskey="h" title="페이퍼블로그 (Alt + H)">페이퍼블로그</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://paperblog.github.io/archives/" title="아카이브">
+                    <span>아카이브</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/categories/" title="카테고리">
+                    <span>카테고리</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/tags/" title="태그">
+                    <span>태그</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://paperblog.github.io">Home</a></div>
+    <h1 class="post-title">
+      JavaScript #4 - 코딩의 기본 operator, if, for loop 코드리뷰 팁
+    </h1>
+    <div class="post-meta"><span title='2022-09-24 00:00:00 +0000 UTC'>September 24, 2022</span>&nbsp;·&nbsp;5 min
+
+</div>
+  </header> 
+  <div class="post-content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/YBjufjBaxHo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.</p>
+<p>기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.</p>
+<h2 id="variable-let-vs-constant-const-복습"><strong>Variable (let) vs Constant (const) 복습</strong><a hidden class="anchor" aria-hidden="true" href="#variable-let-vs-constant-const-복습">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Variable, rw(read/write)
+</span><span style="color:#75715e">// let (added in ES6)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">globalName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;global name&#39;</span>; <span style="color:#75715e">// Global Variable 선언 및 값 할당
+</span><span style="color:#75715e"></span>{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;kevin&#39;</span>; <span style="color:#75715e">// Local Variable 선언 및 값 할당
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// kevin 출력
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>; <span style="color:#75715e">// Variable 값 변경
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// hello 출력
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">globalName</span>); <span style="color:#75715e">// global name 출력
+</span><span style="color:#75715e"></span>}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// 미출력
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">globalName</span>); <span style="color:#75715e">// global name 출력
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Variable은 메모리의 값을 읽거나 쓸 수 있다.
+</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Constant, r(read only)
+</span><span style="color:#75715e">// use const whenever possible.
+</span><span style="color:#75715e">// only use let if variable needs to change.
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// favor immutable data type always for a few reasons:
+</span><span style="color:#75715e">//   - security
+</span><span style="color:#75715e">//   - thread safety
+</span><span style="color:#75715e">//   - reduce human mistakes
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">daysInWeek</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">maxNumber</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</code></pre></div><h2 id="mutable-vs-immutable-데이터-타입-복습"><strong>Mutable vs Immutable 데이터 타입 복습</strong><a hidden class="anchor" aria-hidden="true" href="#mutable-vs-immutable-데이터-타입-복습">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Note!
+</span><span style="color:#75715e">// Immutable data types: primitive types, frozen objects (i.e. object.freeze())
+</span><span style="color:#75715e">// Mutable data types: all objects by default are mutable in JS
+</span><span style="color:#75715e">// favor immutable data type always for a fe reasons:
+</span><span style="color:#75715e">//   - security
+</span><span style="color:#75715e">//   - thread safety
+</span><span style="color:#75715e">//   - reduce human mistakes
+</span></code></pre></div><h2 id="1-string-concatenation"><strong>1. String concatenation</strong><a hidden class="anchor" aria-hidden="true" href="#1-string-concatenation">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 1. String concatenation
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;my&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; cat&#39;</span>); <span style="color:#75715e">// my cat
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;1&#39;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>); <span style="color:#75715e">// 12
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`string literals: 1 + 2 = </span><span style="color:#e6db74">${</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// string literals: 1 + 2 = 3
+</span></code></pre></div><h2 id="2-numeric-operators"><strong>2. Numeric operators</strong><a hidden class="anchor" aria-hidden="true" href="#2-numeric-operators">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 2. Numeric operators
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// add
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// substract
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// divide
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// muliply
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>); <span style="color:#75715e">// remainder
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">3</span>); <span style="color:#75715e">// exponentiation
+</span></code></pre></div><h2 id="3-increment-and-decrement-operators"><strong>3. Increment and decrement operators</strong><a hidden class="anchor" aria-hidden="true" href="#3-increment-and-decrement-operators">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 3. Increment and decrement operators
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">counter</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">preIncrement</span> <span style="color:#f92672">=</span> <span style="color:#f92672">++</span><span style="color:#a6e22e">counter</span>;
+<span style="color:#75715e">// counter = counter + 1;
+</span><span style="color:#75715e">// preIncrement = counter;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`preIncrement: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">preIncrement</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, counter: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">counter</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postIncrement</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">counter</span><span style="color:#f92672">++</span>;
+<span style="color:#75715e">// postIncrement = counter;
+</span><span style="color:#75715e">// counter = counter + 1;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`postIncrement: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postIncrement</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, counter: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">counter</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">preDecrement</span> <span style="color:#f92672">=</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">counter</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`preDecrement: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">preDecrement</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, counter: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">counter</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postDecrement</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">counter</span><span style="color:#f92672">--</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`postDecrement: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postDecrement</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, counter: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">counter</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</code></pre></div><h2 id="4-assignment-operators"><strong>4. Assignment operators</strong><a hidden class="anchor" aria-hidden="true" href="#4-assignment-operators">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 4. Assignment operators
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+<span style="color:#a6e22e">x</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">y</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`x: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, y: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">y</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) <span style="color:#75715e">// x: 9, y: 6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">-=</span> <span style="color:#a6e22e">y</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`x: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, y: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">y</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) <span style="color:#75715e">// x: 3, y: 6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">*=</span> <span style="color:#a6e22e">y</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`x: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, y: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">y</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) <span style="color:#75715e">// x: 18, y: 6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">/=</span> <span style="color:#a6e22e">y</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`x: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">x</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, y: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">y</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>) <span style="color:#75715e">// x: 3, y: 6
+</span></code></pre></div><h2 id="5-comparision-operators"><strong>5. Comparision operators</strong><a hidden class="anchor" aria-hidden="true" href="#5-comparision-operators">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 5. Comparison operators
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">6</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">6</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">6</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span>); <span style="color:#75715e">// ture
+</span></code></pre></div><h2 id="6logicaloperatorsorand-not"><strong>6. Logical operators: || (or), &amp;&amp; (and), ! (not)</strong><a hidden class="anchor" aria-hidden="true" href="#6logicaloperatorsorand-not">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 6. Logical operators: || (or), &amp;&amp; (and), ! (not)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value3</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value4</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>;
+
+<span style="color:#75715e">// || (or), finds the first truthy value
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`or: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">check</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// false, false, true -&gt; true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`or: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value3</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">check</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// true -&gt; true
+</span><span style="color:#75715e">// 조건 중 하나라도 true이면 true 반환
+</span><span style="color:#75715e">// 앞 조건 부터 탐색해서 true 나오면 탐색 종료 후 반환하므로 무거운 로직은 후순위 조건으로 두는게 좋음.
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// &amp;&amp; (and), finds the first falsy value
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`and: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">check</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// false -&gt; false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`and: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value3</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">value4</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">check</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); <span style="color:#75715e">// true, true, true -&gt; true
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// often used to compress long if-statement
+</span><span style="color:#75715e">// nullableObject &amp;&amp; nullableObject.something
+</span><span style="color:#75715e">// if (nullableObject != null) {
+</span><span style="color:#75715e">//     nullableObject.something;
+</span><span style="color:#75715e">// }
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// ! (not)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">value1</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 시간 낭비하는 임의의 함수
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">check</span>() {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#75715e">// wasting time
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;✔&#39;</span>);
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+}
+</code></pre></div><h2 id="7-equality"><strong>7. Equality</strong><a hidden class="anchor" aria-hidden="true" href="#7-equality">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 7. Equality
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">stringFive</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;5&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numberFive</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+
+<span style="color:#75715e">// == loose equality, with type conversion
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stringFive</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">numberFive</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stringFive</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">numberFive</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// === strict equality, no type conversion
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stringFive</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">numberFive</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stringFive</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">numberFive</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// object equality by reference
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">kevin1</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;kevin&#39;</span>};
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">kevin2</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;kevin&#39;</span>};
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">kevin3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kevin1</span>;
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">kevin1</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">kevin2</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">kevin1</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">kevin2</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">kevin1</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">kevin3</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// equality = puzzler
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;&#39;</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;&#39;</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>); <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// false
+</span></code></pre></div><h2 id="8-conditional-operators-if"><strong>8. Conditional operators: if</strong><a hidden class="anchor" aria-hidden="true" href="#8-conditional-operators-if">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 8. Conditional operators: if
+</span><span style="color:#75715e">// if, else if, else
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;kevin&#39;</span>;
+<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;kevin&#39;</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Welcome, Kevin!&#39;</span>);
+} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;coder&#39;</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;You are amazing coder!&#39;</span>);
+} <span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;You are stranger!&#34;</span>)
+}
+</code></pre></div><h2 id="9-ternary-operator-"><strong>9. Ternary operator: ?</strong><a hidden class="anchor" aria-hidden="true" href="#9-ternary-operator-">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 9. Ternary operator: ?
+</span><span style="color:#75715e">// condition ? value1 : value2;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;kevin&#39;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;yes&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;no&#39;</span>);
+</code></pre></div><h2 id="10-switch-statement"><strong>10. Switch statement</strong><a hidden class="anchor" aria-hidden="true" href="#10-switch-statement">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 10. Switch statement
+</span><span style="color:#75715e">// use for multiple if checks
+</span><span style="color:#75715e">// use for enum-like value check
+</span><span style="color:#75715e">// use for multiple type checks in TS
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browser</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Firefox&#39;</span>;
+<span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">browser</span>) {
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;IE&#39;</span><span style="color:#f92672">:</span>
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;go away!&#39;</span>);
+        <span style="color:#66d9ef">break</span>;
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Chrome&#39;</span><span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Firefox&#39;</span><span style="color:#f92672">:</span>
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Good!&#39;</span>);
+        <span style="color:#66d9ef">break</span>;
+    <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;same all!&#39;</span>);
+        <span style="color:#66d9ef">break</span>;
+}
+</code></pre></div><h2 id="11loops"><strong>11. Loops</strong><a hidden class="anchor" aria-hidden="true" href="#11loops">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 11. Loops
+</span><span style="color:#75715e">// while loop, while the condition is truthy,
+</span><span style="color:#75715e">// body code is executed.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+<span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`while: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+    <span style="color:#a6e22e">i</span><span style="color:#f92672">--</span>;
+}
+
+<span style="color:#75715e">// do while loop, body code is executed first,
+</span><span style="color:#75715e">// then check the condition.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+<span style="color:#66d9ef">do</span> {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`do while: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+    <span style="color:#a6e22e">i</span><span style="color:#f92672">--</span>;
+} <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>);
+
+
+<span style="color:#75715e">// for loop, for(begin; condition; step)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">--</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`for </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+}
+
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>) {
+    <span style="color:#75715e">// inline variable declaration
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`inline variable for: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+}
+
+<span style="color:#75715e">// nested loops -&gt; O(n^2) 이므로 피하는게 좋음
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>; <span style="color:#a6e22e">j</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`i: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, j: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">j</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+    }
+}
+
+<span style="color:#75715e">// break, continue
+</span><span style="color:#75715e">// 01. iterate from 0 to 10 and print only even numbers (use continue)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">0</span>) {
+        <span style="color:#66d9ef">continue</span>;
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+}
+
+
+<span style="color:#75715e">// 02. iterate from 0 to 10 and print numbers until reaching 8 (use break)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">8</span>) {
+        <span style="color:#66d9ef">break</span>;
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+}
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://paperblog.github.io/tags/programming/">programming</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://paperblog.github.io/posts/news/popularkeyword/221104/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>인기 급상승 키워드 뉴스 정리-2022년 11월 4일(금)</span>
+  </a>
+  <a class="next" href="https://paperblog.github.io/posts/programming/javascript/javascript-note-3/">
+    <span class="title">Next »</span>
+    <br>
+    <span>JavaScript #3 - 데이터타입, data types, let vs var, hoisting</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://paperblog.github.io">페이퍼블로그</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

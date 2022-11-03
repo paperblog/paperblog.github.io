@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 | 페이퍼블로그</title>
+<meta name="keywords" content="programming">
+<meta name="description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Hello World - node.js 다운로드
+다운로드 {: .text-center}
+- 프로젝트 경로에 main.js를 만들고 아래 명령어를 입력
+console.log(&#34;Hello World&#34;) - 명령 창에서main.js를 실행
+node main.js index.html - 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성
+&lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.">
+<meta name="author" content="">
+<link rel="canonical" href="https://paperblog.github.io/posts/programming/javascript/javascript-note-2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.abc7c82c3d415a6df50430738d1cbcc4c76fea558bc5a0c830d3babf78167a35.css" integrity="sha256-q8fILD1BWm31BDBzjRy8xMdv6lWLxaDIMNO6v3gWejU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://paperblog.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://paperblog.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://paperblog.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://paperblog.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://paperblog.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-E1373S6D9G', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<meta property="og:title" content="JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향" />
+<meta property="og:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Hello World - node.js 다운로드
+다운로드 {: .text-center}
+- 프로젝트 경로에 main.js를 만들고 아래 명령어를 입력
+console.log(&#34;Hello World&#34;) - 명령 창에서main.js를 실행
+node main.js index.html - 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성
+&lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://paperblog.github.io/posts/programming/javascript/javascript-note-2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-11T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향"/>
+<meta name="twitter:description" content="아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.
+기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.
+Hello World - node.js 다운로드
+다운로드 {: .text-center}
+- 프로젝트 경로에 main.js를 만들고 아래 명령어를 입력
+console.log(&#34;Hello World&#34;) - 명령 창에서main.js를 실행
+node main.js index.html - 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성
+&lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향",
+      "item": "https://paperblog.github.io/posts/programming/javascript/javascript-note-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향",
+  "name": "JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향",
+  "description": "아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\nHello World - node.js 다운로드\n다운로드 {: .text-center}\n- 프로젝트 경로에 main.js를 만들고 아래 명령어를 입력\nconsole.log(\u0026#34;Hello World\u0026#34;) - 명령 창에서main.js를 실행\nnode main.js index.html - 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성\n\u0026lt;html lang=\u0026#34;en\u0026#34;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;UTF-8\u0026#34;\u0026gt; \u0026lt;meta http-equiv=\u0026#34;X-UA-Compatible\u0026#34; content=\u0026#34;IE=edge\u0026#34;\u0026gt; \u0026lt;meta name=\u0026#34;viewport\u0026#34; content=\u0026#34;width=device-width, initial-scale=1.",
+  "keywords": [
+    "programming"
+  ],
+  "articleBody": "   아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.\n기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.\nHello World - node.js 다운로드\n다운로드 {: .text-center}\n- 프로젝트 경로에 main.js를 만들고 아래 명령어를 입력\nconsole.log(\"Hello World\") - 명령 창에서main.js를 실행\nnode main.js index.html - 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성\nhtml lang=\"en\" head meta charset=\"UTF-8\" meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" titleDocumenttitle script src=\"main.js\"script head body body html - node.js와 Web API 모두 Console 관련 API 존재함. 참고로 Web API는 자바스크립트 언어 자체에 포함된 것이 아닌 브라우저가 제공하는 브라우저가 이해할 수 있는 함수임.\nConsole API - Web API {: .text-center}\n자바스크립트 학습 참고 사이트 ECMA INTERNATIONAL\nHome - Ecma International {: .text-center}\n- 공식 사이트이지만, 난해할 수 있음.\nMDN\nMDN {: .text-center}\n- Mozilla가 운영 중인 사이트이지만, 참고하기 좋음.\nasync vs defer 1. head 안에 그냥 js 삽입하는 경우\nhead meta charset=\"UTF-8\" meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" titleDocumenttitle script src=\"main.js\"script head 단점\n- 중간에 HTML 파싱이 멈출 수 있음\n2. body 맨 끝에 js 삽입하는 경우\nbody divdiv script src=\"main.js\"script html 단점\n- 자바스크립트에 의존적인 콘텐츠인 경우 사용자가 정상적인 페이지를 보기 전까지 대기시간이 길어질 수 있음\n3. head 안에 넣되, async 속성 값을 주는 경우\nhead meta charset=\"UTF-8\" meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" titleDocumenttitle script async src=\"main.js\"script head 장점\n- body 끝에 사용하는 경우와 비교하면 fetching이 HTML을 파싱하는 것과 병렬적으로 실행되므로 시간을 절약할 수 있음\n단점\n- HTML 파싱 전 자바스크립트가 실행되는 동안 대기시간이 길어질 수 있음\n- 순서에 의존적이라면 문제가 될 수 있음\n4. head 안에 넣되, defer 속성 값을 주는 경우\nhead meta charset=\"UTF-8\" meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" titleDocumenttitle script defer src=\"main.js\"script head 장점\n- HTML 파싱 먼저 후 js 실행할 수 있음\n- 순서에 의존적인 경우에도 잘 작동함\nuse strict를 선언하자 - javascript 코드 작성 전 가장 상단에 아래와 같이 use strict를 정의하는 것을 권장\n'use strict'; Why?\n- 선언하기 전에 변수에 값을 할당하는 등의 비상식적인 로직을 막아줄 수 있음\n// 'use strict'; a = 1; - use strict 선언 시 비상식적인 로직에 대해 오류를 출력해줌\n'use strict'; a = 1; - 이 오류를 없애려면 아래와 같이 let을 통해 변수를 먼저 정의해주면 됨\n'use strict'; let a; a = 1; ",
+  "wordCount" : "371",
+  "inLanguage": "en",
+  "datePublished": "2022-09-11T00:00:00Z",
+  "dateModified": "2022-09-11T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://paperblog.github.io/posts/programming/javascript/javascript-note-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "페이퍼블로그",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://paperblog.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1373S6D9G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E1373S6D9G');
+</script>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5083146661516357"
+     crossorigin="anonymous"></script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://paperblog.github.io" accesskey="h" title="페이퍼블로그 (Alt + H)">페이퍼블로그</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://paperblog.github.io/archives/" title="아카이브">
+                    <span>아카이브</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/categories/" title="카테고리">
+                    <span>카테고리</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://paperblog.github.io/tags/" title="태그">
+                    <span>태그</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://paperblog.github.io">Home</a></div>
+    <h1 class="post-title">
+      JavaScript #2 - 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향
+    </h1>
+    <div class="post-meta"><span title='2022-09-11 00:00:00 +0000 UTC'>September 11, 2022</span>&nbsp;·&nbsp;2 min
+
+</div>
+  </header> 
+  <div class="post-content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/tJieVCgGzhs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>아래 내용은 위 강의 내용을 토대로 작성한 개인 공부용 학습 자료입니다.</p>
+<p>기본적으로 강의 내용을 주로 요약하였지만, 일부 내용은 강의 내용과 다를 수 있습니다.</p>
+<h2 id="hello-world"><strong>Hello World</strong><a hidden class="anchor" aria-hidden="true" href="#hello-world">#</a></h2>
+<p>- <strong>node.js</strong> 다운로드</p>
+<p><a href="https://nodejs.org/ko/download/">다운로드</a>
+{: .text-center}</p>
+<p>- 프로젝트 경로에 <strong>main.js</strong>를 만들고 아래 명령어를 입력</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello World&#34;</span><span style="color:#f92672">)</span>
+</code></pre></div><p>- 명령 창에서<strong>main.js</strong>를 실행</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node main.js
+</code></pre></div><h2 id="indexhtml"><strong>index.html</strong><a hidden class="anchor" aria-hidden="true" href="#indexhtml">#</a></h2>
+<p>- 프로젝트 경로에 index.html 생성 - title 태그 아래 script 태그 작성</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+
+&lt;<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>- <strong>node.js</strong>와 <strong>Web API</strong> 모두 <strong>Console 관련 API</strong> 존재함. 참고로 <strong>Web API</strong>는 자바스크립트 언어 자체에 포함된 것이 아닌 브라우저가 제공하는 브라우저가 이해할 수 있는 함수임.</p>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/API/Console_API">Console API - Web API</a>
+{: .text-center}</p>
+<h2 id="자바스크립트-학습-참고-사이트"><strong>자바스크립트 학습 참고 사이트</strong><a hidden class="anchor" aria-hidden="true" href="#자바스크립트-학습-참고-사이트">#</a></h2>
+<p><strong>ECMA INTERNATIONAL</strong></p>
+<p><a href="https://ecma-international.org">Home - Ecma International</a>
+{: .text-center}</p>
+<p>- 공식 사이트이지만, 난해할 수 있음.</p>
+<p><strong>MDN</strong></p>
+<p><a href="https://developer.mozilla.org/ko/">MDN</a>
+{: .text-center}</p>
+<p>- Mozilla가 운영 중인 사이트이지만, 참고하기 좋음.</p>
+<h2 id="async-vs-defer">async vs defer<a hidden class="anchor" aria-hidden="true" href="#async-vs-defer">#</a></h2>
+<p><strong>1. head 안에 그냥 js 삽입하는 경우</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+</code></pre></div><p><strong>단점</strong></p>
+<p>- 중간에 HTML 파싱이 멈출 수 있음</p>
+<p><strong>2. body 맨 끝에 js 삽입하는 경우</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;/<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p><strong>단점</strong></p>
+<p>- 자바스크립트에 의존적인 콘텐츠인 경우 사용자가 정상적인 페이지를 보기 전까지 대기시간이 길어질 수 있음</p>
+<p><strong>3. head 안에 넣되, async 속성 값을 주는 경우</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+</code></pre></div><p><strong>장점</strong></p>
+<p>- body 끝에 사용하는 경우와 비교하면 fetching이 HTML을 파싱하는 것과 병렬적으로 실행되므로 시간을 절약할 수 있음</p>
+<p><strong>단점</strong></p>
+<p>- HTML 파싱 전 자바스크립트가 실행되는 동안 대기시간이 길어질 수 있음</p>
+<p>- 순서에 의존적이라면 문제가 될 수 있음</p>
+<p><strong>4. head 안에 넣되, defer 속성 값을 주는 경우</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+</code></pre></div><p><strong>장점</strong></p>
+<p>- HTML 파싱 먼저 후 js 실행할 수 있음</p>
+<p>- 순서에 의존적인 경우에도 잘 작동함</p>
+<h2 id="use-strict를-선언하자"><strong>use strict를 선언하자</strong><a hidden class="anchor" aria-hidden="true" href="#use-strict를-선언하자">#</a></h2>
+<p>- javascript 코드 작성 전 가장 상단에 아래와 같이 use strict를 정의하는 것을 권장</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;use strict&#39;</span>;
+</code></pre></div><p><strong>Why?</strong></p>
+<p>- 선언하기 전에 변수에 값을 할당하는 등의 비상식적인 로직을 막아줄 수 있음</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// &#39;use strict&#39;;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</code></pre></div><p>- use strict 선언 시 비상식적인 로직에 대해 오류를 출력해줌</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</code></pre></div><p>- 이 오류를 없애려면 아래와 같이 let을 통해 변수를 먼저 정의해주면 됨</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://paperblog.github.io/tags/programming/">programming</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://paperblog.github.io/posts/shoppingmall/shopping-mall-3/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>쇼핑몰로 돈 벌기 #3 - 고객들이 내 상품을 사게 만드는 방법</span>
+  </a>
+  <a class="next" href="https://paperblog.github.io/posts/shoppingmall/shopping-mall-2/">
+    <span class="title">Next »</span>
+    <br>
+    <span>쇼핑몰로 돈 벌기 #2 - 상품을 상위 노출 시키는 방법</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://paperblog.github.io">페이퍼블로그</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
