@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_16a9161ff27eee9251005430a77f158c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_16a9161ff27eee9251005430a77f158c" ></div>
+        
+</body>
+<script>    
+    
+            var map_16a9161ff27eee9251005430a77f158c = L.map(
+                "map_16a9161ff27eee9251005430a77f158c",
+                {
+                    center: [35.27842326364356, 126.47693878698502],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_adcf3dae7ac751017e810d8c56556e6b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            var locate_control_b0cc7975104dbcfc91b1a2128ff9e11c = L.control.locate(
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+            
+        
+    
+            var marker_fb556d4eb431e2e42641a36fe8f4dcc7 = L.marker(
+                [35.187773779765784, 126.48983248353527],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_fb556d4eb431e2e42641a36fe8f4dcc7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 불갑면 우곡리 501-3<br>
+        전남 영광군 불갑면 함영로 2579<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b7d8e2f8e0ae8ad439a30e52dcf0d87 = L.marker(
+                [35.30621803361758, 126.54908339512056],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_8b7d8e2f8e0ae8ad439a30e52dcf0d87.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영광IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 영광읍 우평리 270-4<br>
+        전남 영광군 영광읍 영대로 672<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_51c265f7beb0e99fb692b59b9a433d29 = L.marker(
+                [35.25596677659384, 126.5132262432721],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_51c265f7beb0e99fb692b59b9a433d29.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남선석유(주)남부주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 영광읍 학정리 924<br>
+        전남 영광군 영광읍 영광로 1326<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4460cfd889090fe3368f342d54bf640c = L.marker(
+                [35.28618028974814, 126.50742940652749],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_4460cfd889090fe3368f342d54bf640c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>국제주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 영광읍 월평리 363<br>
+        전남 영광군 영광읍 옥당로 316<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_814037e59d6201a61b3084dcf642baa9 = L.marker(
+                [35.26952797884028, 126.50787786971595],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_814037e59d6201a61b3084dcf642baa9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥당주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영광군 영광읍 녹사리 3-1<br>
+        전남 영광군 영광읍 옥당로 58<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3564af70f90ba5d9ea55285369f1eff8 = L.marker(
+                [35.2646673926715, 126.50312832258878],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_3564af70f90ba5d9ea55285369f1eff8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해오름주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영광군 영광읍 녹사리 355-1<br>
+        전남 영광군 영광읍 영광로 1179<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d615641bf6b6be8e1b258183f3f43f5 = L.marker(
+                [35.235018320266896, 126.5005947229397],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_6d615641bf6b6be8e1b258183f3f43f5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신진주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 불갑면 순용리 104<br>
+        전남 영광군 불갑면 함영로 3175<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cd413ebce24eb5912ece9fa123e55e3 = L.marker(
+                [35.27981586340916, 126.50065385433157],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_4cd413ebce24eb5912ece9fa123e55e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영광군 영광읍 단주리 557-11<br>
+        전남 영광군 영광읍 월현로 48<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63b32789cdfac936ddfb8fdb3d67405d = L.marker(
+                [35.407817872974064, 126.49265598620933],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_63b32789cdfac936ddfb8fdb3d67405d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마래주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 홍농읍 단덕리 21-6<br>
+        전남 영광군 홍농읍 단덕로 225<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_466a19718271585071ac20fd683a24cd = L.marker(
+                [35.25893500839057, 126.50525792164738],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_466a19718271585071ac20fd683a24cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)새한주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 영광읍 녹사리 609-6<br>
+        전남 영광군 영광읍 함영로 3455<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ebfee4b548f18bb07a4f96c87f9f012b = L.marker(
+                [35.306400708804, 126.48368208196096],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_ebfee4b548f18bb07a4f96c87f9f012b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굴비골주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 영광읍 덕호리 682-1<br>
+        전남 영광군 영광읍 덕호로 53<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2c6f2fc3bb754bcd9ba125f191e79dd3 = L.marker(
+                [35.21345033259083, 126.37644538474702],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_2c6f2fc3bb754bcd9ba125f191e79dd3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>설도주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 염산면 봉남리 191<br>
+        전남 영광군 염산면 칠산로 1<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fe0d7108e3410c2547b80ea55bdd9656 = L.marker(
+                [35.22634120999718, 126.3278349826086],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_fe0d7108e3410c2547b80ea55bdd9656.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송암주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 염산면 송암리 485<br>
+        전남 영광군 염산면 칠산로 533<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b1dfbca925f6f3a5cf93f0e3b531006 = L.marker(
+                [35.24109157546775, 126.43553609684746],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_4b1dfbca925f6f3a5cf93f0e3b531006.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광명해주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 군남면 양덕리 913-7<br>
+        전남 영광군 군남면 천년로 692<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa9ee1e8ee3345c992d2aa5b6f3d0844 = L.marker(
+                [35.263945285372806, 126.51009993642978],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_fa9ee1e8ee3345c992d2aa5b6f3d0844.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 영광읍 학정리 672-4<br>
+        전남 영광군 영광읍 함영로 3526<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_991901ae584ce01678c56fda740cc62e = L.marker(
+                [35.394317163765656, 126.45371479452785],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_991901ae584ce01678c56fda740cc62e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금정주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 영광군 홍농읍 신석리 625-7<br>
+        전남 영광군 홍농읍 동부로 69<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34ec3563a6c3c1135ab241de4a41b6e8 = L.marker(
+                [35.24342570404715, 126.45623626178497],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_34ec3563a6c3c1135ab241de4a41b6e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서영광농협군남주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 영광군 군남면 포천리 246<br>
+        전남 영광군 군남면 천년로 870-20<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9921bf3aded39d0abd050b69b767b05d = L.marker(
+                [35.35665675629239, 126.44738256777028],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_9921bf3aded39d0abd050b69b767b05d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천일주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 법성면 법성리 1141-14<br>
+        전남 영광군 법성면 굴비로 72<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fca22e71a41bc779e73a8e340d9e9294 = L.marker(
+                [35.304996097589076, 126.4855184705413],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_fca22e71a41bc779e73a8e340d9e9294.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 영광읍 덕호리 61-1<br>
+        전남 영광군 영광읍 덕호로 28<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9299de70acf4f1207273c3692f3e0580 = L.marker(
+                [35.265919122666595, 126.49258495659433],
+                {}
+            ).addTo(map_16a9161ff27eee9251005430a77f158c);
+        
+    
+            marker_9299de70acf4f1207273c3692f3e0580.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)낙원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 영광읍 신하리 130-6<br>
+        전남 영광군 영광읍 천년로 1329<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

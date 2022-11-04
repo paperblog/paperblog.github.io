@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8edfae083eb865da1d581c9c8d77b7ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8edfae083eb865da1d581c9c8d77b7ea" ></div>
+        
+</body>
+<script>    
+    
+            var map_8edfae083eb865da1d581c9c8d77b7ea = L.map(
+                "map_8edfae083eb865da1d581c9c8d77b7ea",
+                {
+                    center: [37.53962929013919, 127.14329718744503],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15f4c2b441ce44c5c6674636a2e4a15b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+        
+    
+            var locate_control_09b88b7a57f988742ddc831d9db87644 = L.control.locate(
+                {}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+            
+        
+    
+            var marker_5483fee5ff380791738d206d729c0446 = L.marker(
+                [37.52509643093713, 127.14653281213704],
+                {}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+        
+    
+            marker_5483fee5ff380791738d206d729c0446.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복지둔촌충전소</b><br>
+        <b>SK에너지</b><br>
+        서울 강동구 둔촌동 115-1<br>
+        서울특별시 강동구  동남로 563 (둔촌제2동)<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1e003b7359c3d89ced90b8aa2740cf41 = L.marker(
+                [37.545090589068764, 127.16991193438244],
+                {}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+        
+    
+            marker_1e003b7359c3d89ced90b8aa2740cf41.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복지상일충전소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 강동구 상일동 443-5<br>
+        서울 강동구 천호대로 1452 (상일동)<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_06a327acf4a1bc2bb9fa9421c0c35dd8 = L.marker(
+                [37.55181104306917, 127.12776992660129],
+                {}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+        
+    
+            marker_06a327acf4a1bc2bb9fa9421c0c35dd8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>암사충전소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 강동구 암사동 503-30<br>
+        서울 강동구 올림픽로 791 (암사동)<br>
+        > <b>가격: 1,096 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_12148c7b46bda0c432c8ef40c7010a8b = L.marker(
+                [37.5365190974817, 127.12897407665933],
+                {}
+            ).addTo(map_8edfae083eb865da1d581c9c8d77b7ea);
+        
+    
+            marker_12148c7b46bda0c432c8ef40c7010a8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)경기에너지</b><br>
+        <b>E1</b><br>
+        서울 강동구 성내동 19-1<br>
+        서울 강동구 천호대로 1056 (성내동)<br>
+        > <b>가격: 1,096 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

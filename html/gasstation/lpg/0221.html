@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e8249f0e5a1445f4c32b084d68d535a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6e8249f0e5a1445f4c32b084d68d535a" ></div>
+        
+</body>
+<script>    
+    
+            var map_6e8249f0e5a1445f4c32b084d68d535a = L.map(
+                "map_6e8249f0e5a1445f4c32b084d68d535a",
+                {
+                    center: [37.78664379502983, 127.02243448276785],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_70cbbafc3d7836c8ecf80517b743a285 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            var locate_control_2ccbcc3a12ef8124c92f795de34245a6 = L.control.locate(
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+            
+        
+    
+            var marker_261a660156d05a90328c1f0409399300 = L.marker(
+                [37.70851058666926, 126.93403393045958],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_261a660156d05a90328c1f0409399300.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에이치디에너지 양주지점주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 양주시 장흥면 일영리 201-2<br>
+        경기 양주시 장흥면 일영로 746<br>
+        > <b>가격: 942 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dbf9eb512c4dd23fb4ad5b577a21973c = L.marker(
+                [37.86998333597032, 127.05984346344188],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_dbf9eb512c4dd23fb4ad5b577a21973c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양주에너지 봉양LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 양주시 봉양동 801-6<br>
+        경기 양주시 평화로 2041 (봉양동)<br>
+        > <b>가격: 1,021 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2be00fc8f441bc4cfd664587f325951c = L.marker(
+                [37.839459612636915, 127.09233738118878],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_2be00fc8f441bc4cfd664587f325951c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥정LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 양주시 율정동 596-1<br>
+        경기 양주시 화합로 1677 (율정동)<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10ad014da89de0e97558919f7b211404 = L.marker(
+                [37.85998004530102, 127.02834095559851],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_10ad014da89de0e97558919f7b211404.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>모정제2주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 은현면 선암리 171-3<br>
+        경기 양주시 은현면 화합로 959<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23176dc321e07089b1dbe4f90cad4598 = L.marker(
+                [37.84708682004813, 127.05620239318903],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_23176dc321e07089b1dbe4f90cad4598.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양주에너지 덕정LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 양주시 회정동 522<br>
+        경기 양주시 화합로 1277<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4ff54a7d91c44e6e21680d85750c53c8 = L.marker(
+                [37.83838189775734, 127.07884220969844],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_4ff54a7d91c44e6e21680d85750c53c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>모정주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 회암동 607-9<br>
+        경기 양주시 화합로 1547 (회암동)<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1e175e8ce49ed360dd24257909c4df33 = L.marker(
+                [37.722624409369146, 126.98812208763596],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_1e175e8ce49ed360dd24257909c4df33.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송추LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 장흥면 울대리 322-1<br>
+        경기 양주시 장흥면 호국로 682<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3df0257c4efd94bd176c9ff9edf90089 = L.marker(
+                [37.719845869742855, 126.98112724094622],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_3df0257c4efd94bd176c9ff9edf90089.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 뉴송정에너지</b><br>
+        <b>SK가스</b><br>
+        경기 양주시 장흥면 부곡리 535-15<br>
+        경기 양주시 장흥면 호국로 607<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_956d498ee10dd0f65e76fe496eeb0251 = L.marker(
+                [37.791536779647494, 127.07289473578015],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_956d498ee10dd0f65e76fe496eeb0251.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사과나무주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 광사동 317-9<br>
+        경기 양주시 부흥로 1881 (광사동)<br>
+        > <b>가격: 1,066 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a7132ccc34d190ab7529f75607dddf6 = L.marker(
+                [37.769864182378605, 127.04713926796178],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_1a7132ccc34d190ab7529f75607dddf6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에이치에너지산업LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 마전동 291-28<br>
+        경기 양주시 동일로 955 (마전동)<br>
+        > <b>가격: 1,079 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_396df882b47d87133b8da0126fc4cdcd = L.marker(
+                [37.79218967898886, 127.01341436254145],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_396df882b47d87133b8da0126fc4cdcd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유양에너지</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 유양동 698-11<br>
+        경기 양주시 부흥로 1213 (유양동)<br>
+        > <b>가격: 1,080 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e56e811fa5bd1c067d5c2954cb65a74 = L.marker(
+                [37.78641088864411, 127.0221080826776],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_0e56e811fa5bd1c067d5c2954cb65a74.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유양LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 양주시 유양동 629-3<br>
+        경기 양주시 부흥로 1320 (유양동)<br>
+        > <b>가격: 1,081 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b88ed0ac8fef4bdbc0784c5b2d3df4b = L.marker(
+                [37.68049522823375, 126.91724216486278],
+                {}
+            ).addTo(map_6e8249f0e5a1445f4c32b084d68d535a);
+        
+    
+            marker_8b88ed0ac8fef4bdbc0784c5b2d3df4b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양주충전소(일산방향)</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 장흥면 삼하리 250-16<br>
+        경기 양주시 장흥면 수도권제1순환고속도로 58<br>
+        > <b>가격: 1,084 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

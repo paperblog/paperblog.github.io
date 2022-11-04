@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ce13846ed7637c55ecf9b290ec03588 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2ce13846ed7637c55ecf9b290ec03588" ></div>
+        
+</body>
+<script>    
+    
+            var map_2ce13846ed7637c55ecf9b290ec03588 = L.map(
+                "map_2ce13846ed7637c55ecf9b290ec03588",
+                {
+                    center: [35.24473319704247, 127.23473997416507],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1b9df6e1b399b85d1cb6ceff8598ba21 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            var locate_control_482ccbb1cbd974da78c82cafc361b6a1 = L.control.locate(
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+            
+        
+    
+            var marker_57d6eec5840f84e6f25a24df02351d69 = L.marker(
+                [35.25832971993184, 127.15187575143041],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_57d6eec5840f84e6f25a24df02351d69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시카프관광개발(주) 곡성(순천)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 곡성군 겸면 가정리 348-13<br>
+        전남 곡성군 겸면 호남고속도로 49-1<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd53d76791099fd4e1dc2392a68b4993 = L.marker(
+                [35.25954960139748, 127.15174390732699],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_fd53d76791099fd4e1dc2392a68b4993.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>곡성(논산방향)주유소,충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 곡성군 겸면 가정리 358-7<br>
+        전남 곡성군 겸면 호남고속도로 50-1<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_66fbba5ff306e22cb776d1617db06b2f = L.marker(
+                [35.24863848883008, 127.26031841609417],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_66fbba5ff306e22cb776d1617db06b2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광명주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 곡성군 곡성읍 구원리 806<br>
+        전라남도 곡성군 곡성읍 곡성로 359<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b632b605b1a95385dcdbb0745baaa9ac = L.marker(
+                [35.27385769416056, 127.13446685660888],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_b632b605b1a95385dcdbb0745baaa9ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥과농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 곡성군 옥과면 옥과리 221-13<br>
+        전남 곡성군 옥과면 리문3길 16<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_80d6037c5ebbc7c7f18cf887f2e36353 = L.marker(
+                [35.2286067846942, 127.22417852413209],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_80d6037c5ebbc7c7f18cf887f2e36353.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금정주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 곡성군 삼기면 괴소리 301-1<br>
+        전라남도 곡성군 삼기면 곡순로 1269<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9f66c7d7322f05b7eb5624a9c30927e0 = L.marker(
+                [35.28279995988096, 127.30147596295214],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_9f66c7d7322f05b7eb5624a9c30927e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>귀뚜라미주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 곡성군 곡성읍 읍내리 124-3<br>
+        전남 곡성군 곡성읍 낙동원로 12<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4dc9c5da0263a5fd024214292415b82e = L.marker(
+                [35.26703138337432, 127.12360160081296],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_4dc9c5da0263a5fd024214292415b82e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송월주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 곡성군 오산면 운곡리 8-17<br>
+        전남 곡성군 오산면 오산로 997<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2faadaae52c3eb0f337287b55050aaca = L.marker(
+                [35.22192536663171, 127.12901814760274],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_2faadaae52c3eb0f337287b55050aaca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>심청주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 곡성군 오산면 단사리436<br>
+        전남 곡성군 오산면 오산로 413<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_61580f016ba2d601a196b84d0c600d85 = L.marker(
+                [35.13535241578238, 127.2548967017613],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_61580f016ba2d601a196b84d0c600d85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>석곡주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 곡성군 석곡면 능파리 365-5<br>
+        전남 곡성군 석곡면 석곡로 96<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0bc6a0a35b021296e92e95cf1378ce32 = L.marker(
+                [35.306079008794335, 127.19341947912847],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_0bc6a0a35b021296e92e95cf1378ce32.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>입면농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 곡성군 입면 창정리 57-1<br>
+        전남 곡성군 입면 입면로 541<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_285cd53b4ec8f6cb74bc864d4153fd6a = L.marker(
+                [35.285669127138426, 127.3001137628371],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_285cd53b4ec8f6cb74bc864d4153fd6a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 곡성군 곡성읍 읍내리 617<br>
+        전남 곡성군 곡성읍 낙동원로 49<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_88b5076010267bc314c200aa26b36687 = L.marker(
+                [35.26555931824846, 127.12207396824246],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_88b5076010267bc314c200aa26b36687.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥과쌍용주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 곡성군 오산면 연화리 7-4<br>
+        전남 곡성군 오산면 오산로 982<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_572fc965737a004fc3ce4f9bece79e6d = L.marker(
+                [35.25453305132204, 127.17320846279034],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_572fc965737a004fc3ce4f9bece79e6d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>겸면주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 곡성군 겸면 칠봉리 31-3<br>
+        전남 곡성군 겸면 곡순로 1849<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e8e4417e4f44880662baf590a08b6e78 = L.marker(
+                [35.30284139260394, 127.29891804583066],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_e8e4417e4f44880662baf590a08b6e78.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동성주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 곡성군 곡성읍 장선리 108<br>
+        전남 곡성군 곡성읍 섬진강로 2606<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c2c246badd703211ae4fc689572f947b = L.marker(
+                [35.148573496612066, 127.31830771858722],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_c2c246badd703211ae4fc689572f947b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>석곡농협죽곡지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 곡성군 죽곡면 태평리 451-1<br>
+        전남 곡성군 죽곡면 대황강로 796<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_957c546f8a973cd7244bff50f70b2069 = L.marker(
+                [35.1259367838542, 127.25114710399816],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_957c546f8a973cd7244bff50f70b2069.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유정주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 곡성군 석곡면 유정리 381-5<br>
+        전남 곡성군 석곡면 주석로 612<br>
+        > <b>가격: 1,698 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bcf62df0a3e389877ee3ad56eafabad3 = L.marker(
+                [35.27272391789755, 127.31440057707798],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_bcf62df0a3e389877ee3ad56eafabad3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>곡성농협오곡주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 곡성군 오곡면 오지리 1240-6<br>
+        전남 곡성군 오곡면 기차마을로 156<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8d473c44b2ff1033d7d998d65f50ff5 = L.marker(
+                [35.275642404920845, 127.28714275854104],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_a8d473c44b2ff1033d7d998d65f50ff5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>곡성농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 곡성군 곡성읍 죽동리 41<br>
+        전남 곡성군 곡성읍 곡성로 753<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3ffc9ee92bd5bbdfa74d358c0cf83d3f = L.marker(
+                [35.214038669101754, 127.37188583886821],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_3ffc9ee92bd5bbdfa74d358c0cf83d3f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>섬진강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 곡성군 오곡면 압록리 396-1<br>
+        전남 곡성군 오곡면 섬진강로 1270<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_086821399e59a7b7d32a50d0909aa0cd = L.marker(
+                [35.26697535567218, 127.332605898678],
+                {}
+            ).addTo(map_2ce13846ed7637c55ecf9b290ec03588);
+        
+    
+            marker_086821399e59a7b7d32a50d0909aa0cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강변주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 곡성군 오곡면 오지리 12-1<br>
+        전남 곡성군 오곡면 섬진강로 2068<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

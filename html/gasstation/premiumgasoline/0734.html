@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f39eee8235f61aa808482f6db315ac2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7f39eee8235f61aa808482f6db315ac2" ></div>
+        
+</body>
+<script>    
+    
+            var map_7f39eee8235f61aa808482f6db315ac2 = L.map(
+                "map_7f39eee8235f61aa808482f6db315ac2",
+                {
+                    center: [34.76533497703757, 126.43222214690195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71efbf27f22d37906b7a3915f3dfd90d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7f39eee8235f61aa808482f6db315ac2);
+        
+    
+            var locate_control_bf84f342910328b4b1bd85179a1503ef = L.control.locate(
+                {}
+            ).addTo(map_7f39eee8235f61aa808482f6db315ac2);
+            
+        
+    
+            var marker_8f34601b140fbf333a8c497725062569 = L.marker(
+                [34.75217891906861, 126.410404449414],
+                {}
+            ).addTo(map_7f39eee8235f61aa808482f6db315ac2);
+        
+    
+            marker_8f34601b140fbf333a8c497725062569.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그랑프리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영암군 삼호읍 삼포리 599<br>
+        전남 영암군 삼호읍 용당로 94<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3071ff3e356c37b7028613f51e8aa38 = L.marker(
+                [34.77849103500652, 126.45403984438991],
+                {}
+            ).addTo(map_7f39eee8235f61aa808482f6db315ac2);
+        
+    
+            marker_a3071ff3e356c37b7028613f51e8aa38.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)영산호현대 주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영암군 삼호읍 나불리 304-13<br>
+        전남 영암군 삼호읍 녹색로 603<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

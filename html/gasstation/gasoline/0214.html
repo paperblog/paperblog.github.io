@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7967698b1408a5c7045ed08459a2961e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7967698b1408a5c7045ed08459a2961e" ></div>
+        
+</body>
+<script>    
+    
+            var map_7967698b1408a5c7045ed08459a2961e = L.map(
+                "map_7967698b1408a5c7045ed08459a2961e",
+                {
+                    center: [37.35793597560544, 126.97821131655401],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aff0a8482afd0e8294468f01e6237a95 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            var locate_control_6b6f0917174a8c990f40b596515c0c64 = L.control.locate(
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+            
+        
+    
+            var marker_9f8c9986249b654c76ded667be518b73 = L.marker(
+                [37.33771044019482, 126.98026742695026],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_9f8c9986249b654c76ded667be518b73.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지지대셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 왕곡동 468-8<br>
+        경기 의왕시 경수대로 112 (왕곡동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c73645c20ec182d4fa45b1188229127c = L.marker(
+                [37.34582160186985, 126.97476341677772],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_c73645c20ec182d4fa45b1188229127c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>HG에너지(주)대원주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 고천동 234-7<br>
+        경기 의왕시 경수대로 215 (고천동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97ac15a91e84a4b7d579dd8cf035d21d = L.marker(
+                [37.37672256281711, 126.96935245523765],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_97ac15a91e84a4b7d579dd8cf035d21d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평촌주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 의왕시 내손동 797<br>
+        경기도 의왕시  갈미로 2 (내손동)<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e8cdc1a7319c9b2a4b17c1cb51f980df = L.marker(
+                [37.36831793816475, 126.96613831454356],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_e8cdc1a7319c9b2a4b17c1cb51f980df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유(주)열린스타주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 의왕시 오전동 11-9<br>
+        경기 의왕시 모락로 117<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f60495ac67c0b833f632227c04cc916 = L.marker(
+                [37.35303222513092, 126.97129010885548],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_2f60495ac67c0b833f632227c04cc916.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통(주)구도일주유소대림</b><br>
+        <b>S-OIL</b><br>
+        경기 의왕시 오전동 276-5<br>
+        경기 의왕시 경수대로 300 (오전동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_970af1265c1c7237f936e4faa2c2268d = L.marker(
+                [37.39325743627299, 127.0220776782742],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_970af1265c1c7237f936e4faa2c2268d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의왕청계주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 청계동 산 8-18<br>
+        경기 의왕시 안양판교로 476 (청계동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c493485087a85b68be0b85e00a821c2 = L.marker(
+                [37.35626479697511, 126.9675139713854],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_3c493485087a85b68be0b85e00a821c2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 오전동 204-4<br>
+        경기 의왕시 경수대로 347 (오전동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84fc3c3c69d01470f61a1445d84be0dc = L.marker(
+                [37.33662801813471, 126.95633528704974],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_84fc3c3c69d01470f61a1445d84be0dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)의왕ICD주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 의왕시 이동40-1<br>
+        경기 의왕시 창말로 39<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_88b47c1515dcb4a4246a11c95f847b06 = L.marker(
+                [37.38628914351906, 126.9730131888557],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_88b47c1515dcb4a4246a11c95f847b06.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK청계주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 내손동 381-5<br>
+        경기 의왕시 민백길 1 (내손동)<br>
+        > <b>가격: 1,654 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_03eac994ad833734989b5377723213e5 = L.marker(
+                [37.31801788216677, 126.95794844587004],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_03eac994ad833734989b5377723213e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 의왕시 삼동 102<br>
+        경기 의왕시 덕영대로 171 (삼동)<br>
+        > <b>가격: 1,663 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89223de37b8c4d37159770d8e2b657cb = L.marker(
+                [37.32549045592151, 126.94862707777233],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_89223de37b8c4d37159770d8e2b657cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 부곡셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 삼동 428-2<br>
+        경기 의왕시 철도박물관로 14<br>
+        > <b>가격: 1,663 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56fa6843b8e704fd402376a68204c11d = L.marker(
+                [37.33486101116194, 126.96033191828965],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_56fa6843b8e704fd402376a68204c11d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 의왕셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 이동 364-10<br>
+        경기 의왕시 오봉로 182 (부곡동)<br>
+        > <b>가격: 1,663 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4691bd2de2848646bdf01ecdba5f0077 = L.marker(
+                [37.34741093754969, 126.98566765961812],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_4691bd2de2848646bdf01ecdba5f0077.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의왕주유소(서울방향)</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 왕곡동 260<br>
+        경기 의왕시 오전로 24<br>
+        > <b>가격: 1,673 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a6a9a6e3f52d73fca4fe968e29bcd9d = L.marker(
+                [37.34799198091921, 126.98329462261927],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_6a6a9a6e3f52d73fca4fe968e29bcd9d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의왕주유소(의왕방향)</b><br>
+        <b>SK에너지</b><br>
+        경기 의왕시 왕곡동 260<br>
+        경기 의왕시 오전로 24<br>
+        > <b>가격: 1,673 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6e87b3a1d8360c0300b6f686fc2e21cf = L.marker(
+                [37.39393574833851, 127.0195543320499],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_6e87b3a1d8360c0300b6f686fc2e21cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주) 판교현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 청계동 252-8<br>
+        경기 의왕시 안양판교로 448,  (청계동)<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d31c06ec173d605663053586022337c5 = L.marker(
+                [37.3722921591445, 127.00304807372763],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_d31c06ec173d605663053586022337c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)백운밸리주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 의왕 학의동 1111<br>
+        경기 의왕 백운로 370<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41dac74f8a3dc7aa5c9c43062a47987d = L.marker(
+                [37.35143199886518, 126.96368103010485],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_41dac74f8a3dc7aa5c9c43062a47987d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>산뜻주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 의왕시 고천동 375<br>
+        경기도 의왕시 고산로 65 (고천동)<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_882c609a657e164974d41de4f27c918b = L.marker(
+                [37.33058235785746, 126.95630036527957],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_882c609a657e164974d41de4f27c918b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)덕성에너지</b><br>
+        <b>S-OIL</b><br>
+        경기 의왕시 이동 595<br>
+        경기 의왕시 덕영대로 20<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0a2d082bc37016a125a1359b850f1118 = L.marker(
+                [37.39273307672078, 127.01109302422424],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_0a2d082bc37016a125a1359b850f1118.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 청계동 536<br>
+        경기 의왕시 안양판교로 377 (청계동)<br>
+        > <b>가격: 1,698 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cd7ee9f6a1e86c874a7461348c433a14 = L.marker(
+                [37.38992774038399, 126.9939279335947],
+                {}
+            ).addTo(map_7967698b1408a5c7045ed08459a2961e);
+        
+    
+            marker_cd7ee9f6a1e86c874a7461348c433a14.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>포일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의왕시 청계동 989<br>
+        경기 의왕시 안양판교로 205 (청계동)<br>
+        > <b>가격: 1,698 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f65adcea0ddf72e07ba9f3235da19fa8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f65adcea0ddf72e07ba9f3235da19fa8" ></div>
+        
+</body>
+<script>    
+    
+            var map_f65adcea0ddf72e07ba9f3235da19fa8 = L.map(
+                "map_f65adcea0ddf72e07ba9f3235da19fa8",
+                {
+                    center: [35.97278467439257, 126.70551843015292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_172907e812d5f0a85eb0fb2ce33b7036 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            var locate_control_e349253cf20588c715c2c7c036711bcc = L.control.locate(
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+            
+        
+    
+            var marker_bc27aedcc2fe99aef010668f706d7786 = L.marker(
+                [35.98567410032183, 126.76647889079359],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_bc27aedcc2fe99aef010668f706d7786.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일필드(주) 서부지점</b><br>
+        <b>자가상표</b><br>
+        전북 군산시 개정면 아동리 685-6<br>
+        전북 군산시 개정면 구암로 252<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7c557c51ba71732663cd70c1c982e2c = L.marker(
+                [35.98037160463802, 126.83016933567839],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_e7c557c51ba71732663cd70c1c982e2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군산무안주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 군산시 성산면 산곡리 650-7<br>
+        전북 군산시 서해안고속도로 141<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_03a3544b3e84c7643d8ec22e5f15e055 = L.marker(
+                [35.970254078946645, 126.68353293048891],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_03a3544b3e84c7643d8ec22e5f15e055.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한7주유소</b><br>
+        <b>자가상표</b><br>
+        전북 군산시 소룡동 1542-4<br>
+        전북 군산시 공단대로 567 (소룡동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_746c77b16fd6e04668cbd8a8e568dea9 = L.marker(
+                [35.974492796178346, 126.65934736139386],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_746c77b16fd6e04668cbd8a8e568dea9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>실크로드주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 군산시 산북동 1433<br>
+        전북 군산시 외항로 83 (산북동)<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d659b66d8d678b1cdb9e3c2034ce4464 = L.marker(
+                [35.962641643533004, 126.62090578240513],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_d659b66d8d678b1cdb9e3c2034ce4464.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세신셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 군산시 내초동 188-33<br>
+        전북 군산시 옥녀로 36  (내초동)<br>
+        > <b>가격: 1,834 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_abf1d67143124ab9ac22fc1ced748ef9 = L.marker(
+                [35.96547292192268, 126.66434437478502],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_abf1d67143124ab9ac22fc1ced748ef9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼성주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 산북동 1597<br>
+        전북 군산시 공항로 262-1<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ec11eca7801cdfa52d1a7a57ed818a3a = L.marker(
+                [35.9904196044848, 126.70004989164867],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_ec11eca7801cdfa52d1a7a57ed818a3a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 해망동 999-79<br>
+        전북 군산시 해망로 370 (해망동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_87611b91a647fd902a1a19125d2c4f62 = L.marker(
+                [35.99105851638324, 126.71054892493666],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_87611b91a647fd902a1a19125d2c4f62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스제이오일㈜ 에스제이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 군산시 장미동 46<br>
+        전북 군산시 해망로 252<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59f99efd03ba0888644a0f702f08c550 = L.marker(
+                [35.96151330488976, 126.7495026610289],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_59f99efd03ba0888644a0f702f08c550.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스마트셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 사정동 29-2<br>
+        전북 군산시 옥산로 16<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f0df50005b8a8600173ea48c11840fe = L.marker(
+                [35.958158185258256, 126.65697296682445],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_1f0df50005b8a8600173ea48c11840fe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한사랑주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 산북동 2481<br>
+        전북 군산시  공항로 368 (산북동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a35077e9de187c7ff659c56440695fbe = L.marker(
+                [35.95652281039255, 126.61963425428902],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_a35077e9de187c7ff659c56440695fbe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)희망에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 군산시 내초동 183-22<br>
+        전북 군산시 옥녀로 102<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bdcdc41fbcc5e87094d902cfca91e0ce = L.marker(
+                [35.9862605536884, 126.72306394284534],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_bdcdc41fbcc5e87094d902cfca91e0ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군산현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 군산시 금암동 274-14<br>
+        전북 군산시 해망로 127(금암동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e83a60a8f0c037b179cd2cd2f9bfb9a = L.marker(
+                [35.976649919870894, 126.73269005393377],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_0e83a60a8f0c037b179cd2cd2f9bfb9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마트24주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 군산시 경암동 659-2<br>
+        전북 군산시 진포로 201<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32f2b3cb041f2df5b47f255889f8e95e = L.marker(
+                [35.98266592520954, 126.73484500462878],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_32f2b3cb041f2df5b47f255889f8e95e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스㈜ 군산이마트셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 군산시 경암동 590-296<br>
+        전북 군산시 구암3.1로 137 (경암동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ff94d2176da9e0ccab25773da81c9f00 = L.marker(
+                [35.98802107889437, 126.71042934136507],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_ff94d2176da9e0ccab25773da81c9f00.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙로주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 군산시 중앙로1가 7-3<br>
+        전북 군산시 중앙로 188 (중앙로1가)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5a38686a9dc070c275b6e0dae4d5d445 = L.marker(
+                [35.94896037949724, 126.746868820048],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_5a38686a9dc070c275b6e0dae4d5d445.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>직영주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 군산시 옥산면 쌍봉리 742-28<br>
+        전북 군산시 옥산면 옥산로 154<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41b3b3f22611f4f17ce32acc7261f01a = L.marker(
+                [35.98347628662191, 126.7561560538277],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_41b3b3f22611f4f17ce32acc7261f01a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서광주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 군산시 구암동 180-7<br>
+        전북 군산시 구암로 158 (구암동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4bc0518482db48f8b1a275894a0f8cf6 = L.marker(
+                [35.97136611194534, 126.67330238586203],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_4bc0518482db48f8b1a275894a0f8cf6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정든주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 군산시 산북동 1327-1<br>
+        전북 군산시 공항로 157 (산북동)<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_62c0cd9655488057422e2ae47c3bc353 = L.marker(
+                [35.969769988287695, 126.68541463419753],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_62c0cd9655488057422e2ae47c3bc353.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙self주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 소룡동 산161-5<br>
+        전북 군산시 공단대로 552 (소룡동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2ef4c812d06d0137b6bfd500dc2a70a = L.marker(
+                [35.951943676886856, 126.68611099207729],
+                {}
+            ).addTo(map_f65adcea0ddf72e07ba9f3235da19fa8);
+        
+    
+            marker_d2ef4c812d06d0137b6bfd500dc2a70a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대학로셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 군산시 미룡동 466-1<br>
+        전북 군산시 대학로 487 (미룡동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

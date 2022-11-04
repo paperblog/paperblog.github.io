@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbd07bb0748eb151ffa50aaaa4d15397 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fbd07bb0748eb151ffa50aaaa4d15397" ></div>
+        
+</body>
+<script>    
+    
+            var map_fbd07bb0748eb151ffa50aaaa4d15397 = L.map(
+                "map_fbd07bb0748eb151ffa50aaaa4d15397",
+                {
+                    center: [36.45686175595633, 127.15931577536885],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_86abfd86cd49c75bd88e9d44e56e31bc = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            var locate_control_759efe5c09b3aea08f5fc017a96ed8b7 = L.control.locate(
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+            
+        
+    
+            var marker_8d02f612b24e10e1ecd89c2590e0077d = L.marker(
+                [36.568979841662326, 127.11819553245238],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_8d02f612b24e10e1ecd89c2590e0077d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>차사랑주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 공주시 정안면 전평리 2-9<br>
+        충남 공주시 정안면 차령로 3133<br>
+        > <b>가격: 1,590 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_99438476a21a2bdd6125c78a7663f906 = L.marker(
+                [36.64057085499751, 127.12187704920888],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_99438476a21a2bdd6125c78a7663f906.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>킹콩셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 공주시 정안면 인풍리 50-27 외 1필지<br>
+        충남 공주시 정안면 차령로 3953<br>
+        > <b>가격: 1,591 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ca39f55adfdf9d104b68e059c64cccae = L.marker(
+                [36.44689822324076, 127.19219670944916],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_ca39f55adfdf9d104b68e059c64cccae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼진주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 공주시 석장리동 86-6<br>
+        충남 공주시 장기면 금벽로 1018<br>
+        > <b>가격: 1,592 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23dea84a409cebfb89e25127c983c9a9 = L.marker(
+                [36.62015581913934, 127.12334017072358],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_23dea84a409cebfb89e25127c983c9a9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 정안면 사현리 395<br>
+        충남 공주시 정안면 차령로 3737<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb125e4766ce83af5474b9ef952a3f82 = L.marker(
+                [36.37918411434118, 127.2596913177452],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_fb125e4766ce83af5474b9ef952a3f82.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>온천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 반포면 온천리 251-1<br>
+        충남 공주시 반포면 온천사기소길 17<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee0349c1adf4421d67a9f6af778f62ec = L.marker(
+                [36.40054437496958, 127.23773591533292],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_ee0349c1adf4421d67a9f6af778f62ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>푸른주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 반포면 봉곡리 319-3<br>
+        충남 공주시 반포면 금벽로 1749<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f49014dd444a7e385642f8f46905d81e = L.marker(
+                [36.44628154351051, 127.19377537402907],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_f49014dd444a7e385642f8f46905d81e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강녕주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 공주시 석장리동 80<br>
+        충남 공주시 금벽로 1004-49<br>
+        > <b>가격: 1,602 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_437b9c2fc1ad4d860170df9032715269 = L.marker(
+                [36.354210183108506, 127.06930200419953],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_437b9c2fc1ad4d860170df9032715269.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이인상행주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 이인면 이인리 3-6<br>
+        충남 공주시 이인면 논산천안고속도로 32-2<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_061e824b31fb748508acef30d5b1ba53 = L.marker(
+                [36.31800293044383, 127.07085003697738],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_061e824b31fb748508acef30d5b1ba53.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>탄천하행주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 탄천면 장선리 151-15<br>
+        충남 공주시 탄천면 산디길 94<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5a12d7183ea100092a0829b5f7fe0bb = L.marker(
+                [36.44777796246908, 127.15081215834105],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_e5a12d7183ea100092a0829b5f7fe0bb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금영주유소</b><br>
+        <b>자가상표</b><br>
+        충남 공주시 소학동 299-3<br>
+        충남 공주시 소학동길 125<br>
+        > <b>가격: 1,610 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cefa6ec6914c3104e0bac60d752d159b = L.marker(
+                [36.42706728728875, 127.21538926916934],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_cefa6ec6914c3104e0bac60d752d159b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스엘 반포주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 반포면 마암리 317-2<br>
+        충남 공주시 반포면 금벽로 1330<br>
+        > <b>가격: 1,612 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_078b50bd61854b4f39ef7978a2c05195 = L.marker(
+                [36.44352709045934, 127.19823124767011],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_078b50bd61854b4f39ef7978a2c05195.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장암셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 석장리동 21<br>
+        충남 공주시 금벽로 1083<br>
+        > <b>가격: 1,612 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1458b2f682e710be0c4e71906c58d472 = L.marker(
+                [36.388794103539034, 127.25505275417457],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_1458b2f682e710be0c4e71906c58d472.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동학사주유소</b><br>
+        <b>자가상표</b><br>
+        충남 공주시 반포면 온천리 101<br>
+        충남 공주시 반포면 금벽로 1963<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6efab1dbf8f1bfdd689953f923cf63fd = L.marker(
+                [36.4675585983137, 127.14307644086236],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_6efab1dbf8f1bfdd689953f923cf63fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중부제3셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 공주시 신관동 44-2<br>
+        충남 공주시 무령로 466 (신관동)<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4489777d5267d7d2743c83a2475f3c2f = L.marker(
+                [36.48170925887438, 127.15816364669385],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_4489777d5267d7d2743c83a2475f3c2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송선셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 장기면 송선리543-2<br>
+        충남 공주시 송선농공단지길 6 (송선동)<br>
+        > <b>가격: 1,620 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_246f0efeeb65227de0f298e13d899749 = L.marker(
+                [36.46906868041211, 127.14504601311005],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_246f0efeeb65227de0f298e13d899749.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동건셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 신관동 37-2<br>
+        충남 공주시 무령로 492 (신관동)<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fdcfdb4a5bc448292e6565ff9256ef7f = L.marker(
+                [36.45137784484427, 127.13378312656852],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_fdcfdb4a5bc448292e6565ff9256ef7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강남셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 공주시 옥룡동 184-3<br>
+        충남 공주시 우금티로 745 (옥룡동)<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e14b7ef7f056d74bc5ccb59327815e9 = L.marker(
+                [36.465557185205256, 127.14081180159862],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_4e14b7ef7f056d74bc5ccb59327815e9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)신창에너지 공주대주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 신관동 56-2<br>
+        충남 공주시 무령로 435 (신관동)<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fbbfc748baac57a938946042419fe411 = L.marker(
+                [36.46186437944957, 127.12216381022593],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_fbbfc748baac57a938946042419fe411.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제일셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 공주시 금성동 203-1<br>
+        충남 공주시 미나리1길 18-10 (금성동)<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b83ee428ca0f7a16baae68c5c7bf375b = L.marker(
+                [36.45810484285758, 127.13682112884392],
+                {}
+            ).addTo(map_fbd07bb0748eb151ffa50aaaa4d15397);
+        
+    
+            marker_b83ee428ca0f7a16baae68c5c7bf375b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>엔젤주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 옥룡동 24-14<br>
+        충남 공주시 무령로 345  (옥룡동)<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

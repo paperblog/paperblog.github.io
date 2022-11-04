@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5690cfa20f6e027ceb4d3f21f50fd3f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5690cfa20f6e027ceb4d3f21f50fd3f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_5690cfa20f6e027ceb4d3f21f50fd3f7 = L.map(
+                "map_5690cfa20f6e027ceb4d3f21f50fd3f7",
+                {
+                    center: [36.79228763221775, 127.58416220059371],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_956cd1bee40c639d272d1fab4dba7ad4 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5690cfa20f6e027ceb4d3f21f50fd3f7);
+        
+    
+            var locate_control_92c46e044444e74b1aaad274c1b3716d = L.control.locate(
+                {}
+            ).addTo(map_5690cfa20f6e027ceb4d3f21f50fd3f7);
+            
+        
+    
+            var marker_c31b00c6c6c0cd9d253f975d64bbe98f = L.marker(
+                [36.789071306581654, 127.56906009588988],
+                {}
+            ).addTo(map_5690cfa20f6e027ceb4d3f21f50fd3f7);
+        
+    
+            marker_c31b00c6c6c0cd9d253f975d64bbe98f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가나안 LPG 충전소</b><br>
+        <b>SK에너지</b><br>
+        충북 증평군 증평읍 연탄리 508-2<br>
+        충북 증평군 증평읍 중부로 2309<br>
+        > <b>가격: 1,013 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e6a8d8d635680d724263f025bc6b6ed = L.marker(
+                [36.79677687130281, 127.58557630945475],
+                {}
+            ).addTo(map_5690cfa20f6e027ceb4d3f21f50fd3f7);
+        
+    
+            marker_5e6a8d8d635680d724263f025bc6b6ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>민서가스충전소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 송산리 84<br>
+        충북 증평군 증평읍 중부로 2481<br>
+        > <b>가격: 1,013 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_568a60faaa79a0a9d721f0f5f36d6572 = L.marker(
+                [36.791014718768785, 127.5978501964365],
+                {}
+            ).addTo(map_5690cfa20f6e027ceb4d3f21f50fd3f7);
+        
+    
+            marker_568a60faaa79a0a9d721f0f5f36d6572.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>증평LPG충전소</b><br>
+        <b>E1</b><br>
+        충북 괴산군 증평읍 미암리 284-1<br>
+        충북 증평군 증평읍 충청대로 1925<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

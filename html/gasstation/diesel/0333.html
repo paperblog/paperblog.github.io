@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d78cc8ed85d059e71b93496338d64940 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d78cc8ed85d059e71b93496338d64940" ></div>
+        
+</body>
+<script>    
+    
+            var map_d78cc8ed85d059e71b93496338d64940 = L.map(
+                "map_d78cc8ed85d059e71b93496338d64940",
+                {
+                    center: [38.05691675963614, 128.6612450536815],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8735c4a9a3f12fcf00f2b680d11141de = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            var locate_control_8085a6ab5414d7446ec96d364aecf58d = L.control.locate(
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+            
+        
+    
+            var marker_53a1dd7d9615c73e98eb1585e5414277 = L.marker(
+                [38.04727993439802, 128.65304886259375],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_53a1dd7d9615c73e98eb1585e5414277.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>푸른하늘주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 양양군 손양면 밀양리 248-1<br>
+        강원 양양군 손양면 동해대로 2181<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8f3549279a8ec6d67669dd4de320bfe = L.marker(
+                [38.09896519209157, 128.628951288606],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_d8f3549279a8ec6d67669dd4de320bfe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 동해주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 양양군 양양읍 포월리 71-16<br>
+        강원 양양군 양양읍 동해대로 2853<br>
+        > <b>가격: 1,874 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35f8f2e038da17c7f72057df28768bd9 = L.marker(
+                [38.142217949948034, 128.6123944768574],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_35f8f2e038da17c7f72057df28768bd9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강현농업협동조합(강현농협주유소)</b><br>
+        <b>농협알뜰</b><br>
+        강원 양양군 강현면 정암리 17-6<br>
+        강원 양양군 강현면 동해대로 3415<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e746638913f8db8a392ec0abcfbafbcb = L.marker(
+                [37.92858786083832, 128.791204794749],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_e746638913f8db8a392ec0abcfbafbcb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하조대농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 양양군 현남면 원포리 18<br>
+        강원 양양군 현남면 화상천로 5-4<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee74d2729b31a3fb64d1efdf9360ce5e = L.marker(
+                [38.08159862137111, 128.62980528214678],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_ee74d2729b31a3fb64d1efdf9360ce5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양양농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 양양군 양양읍 연창리 180-105<br>
+        강원 양양군 양양읍 동해대로 2662<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f079e853ba7ebf4a4ddd36853f4d9a36 = L.marker(
+                [38.07383215410919, 128.61866274831735],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_f079e853ba7ebf4a4ddd36853f4d9a36.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일출주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 양양읍 남문리 355-1<br>
+        강원 양양군 양양읍 양양로 98<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_628db76514c4ec58a56b32b41c869067 = L.marker(
+                [37.958988610326024, 128.76659830958792],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_628db76514c4ec58a56b32b41c869067.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서울주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 양양군 현남면 광진리 142-2<br>
+        강원 양양군 현남면 동해대로 603<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b87f0114e4250dde85b51938b45894f1 = L.marker(
+                [38.11382343563667, 128.63043601624608],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_b87f0114e4250dde85b51938b45894f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양양송림주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 양양군 양양읍 조산리 465<br>
+        강원 양양군 양양읍 동해대로 3039<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_063f4aed0846bbc62524435159e237e0 = L.marker(
+                [38.084357463686594, 128.62380472768686],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_063f4aed0846bbc62524435159e237e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양양IC주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 양양읍 연창리 270-4<br>
+        강원 양양군 양양읍 설악로 2728<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d6133b9758034a97cf3de258f83c820d = L.marker(
+                [37.94270968431271, 128.78284402046967],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_d6133b9758034a97cf3de258f83c820d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동해우리주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 현남면 남애리 469-6<br>
+        강원 양양군 현남면 동해대로 376<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7593d148d9c2b98b564421a3e7d730d = L.marker(
+                [38.136824851627225, 128.6168565776608],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_e7593d148d9c2b98b564421a3e7d730d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 커피향셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 강현면 정암리 156-3<br>
+        강원 양양군 강현면 동해대로 3343<br>
+        > <b>가격: 1,903 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49100ad2aafaf4db8812916cfcf62c85 = L.marker(
+                [38.0805374526991, 128.62825734033706],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_49100ad2aafaf4db8812916cfcf62c85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)맥산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 양양군 양양읍 연창리 180-81<br>
+        강원 양양군 양양읍 동해대로 2643<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1b8ad629f9fa0b3dfd84d7a1d58c0d8 = L.marker(
+                [38.046366713438786, 128.56554251048925],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_b1b8ad629f9fa0b3dfd84d7a1d58c0d8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서광농협송천주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 양양군 서면 송천리 3-5<br>
+        강원 양양군 서면 구룡령로 2948<br>
+        > <b>가격: 1,915 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b328e9aed645123f8b2aa10868a21734 = L.marker(
+                [38.03783286396295, 128.6960159102001],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_b328e9aed645123f8b2aa10868a21734.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>7GAS STATION</b><br>
+        <b>S-OIL</b><br>
+        강원 양양군 손양면 여운포리 85-1<br>
+        강원 양양군 손양면 동해대로 1750<br>
+        > <b>가격: 1,925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_843bf8689074a5c1a8a4e9ce86bc4991 = L.marker(
+                [38.07197138941539, 128.63563346181192],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_843bf8689074a5c1a8a4e9ce86bc4991.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>손양주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 손양면 송현리 230-1<br>
+        강원 양양군 손양면 동해대로 2519<br>
+        > <b>가격: 1,928 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_158c3f01e65a76674026f6e1f49d94dc = L.marker(
+                [38.11727165102164, 128.62874463522508],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_158c3f01e65a76674026f6e1f49d94dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)낙산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 양양군 강현면 주청리 99-5<br>
+        강원 양양군 강현면 동해대로 3081<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0113d2f2e24a50e0acef63319e672282 = L.marker(
+                [38.00441908493104, 128.7323649496002],
+                {}
+            ).addTo(map_d78cc8ed85d059e71b93496338d64940);
+        
+    
+            marker_0113d2f2e24a50e0acef63319e672282.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼팔선주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 양양군 현북면 잔교리 41-10<br>
+        강원도 양양군 현북면 동해대로 1252<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

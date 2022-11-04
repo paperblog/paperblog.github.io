@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70f847bf2826e78bdfdd8592efbbc746 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_70f847bf2826e78bdfdd8592efbbc746" ></div>
+        
+</body>
+<script>    
+    
+            var map_70f847bf2826e78bdfdd8592efbbc746 = L.map(
+                "map_70f847bf2826e78bdfdd8592efbbc746",
+                {
+                    center: [35.875298604532745, 128.5537242922751],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52285ea7dd2e250d399a034073c140fe = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            var locate_control_c4ba7ec3f74ae0e9b0910f7326b6d4f6 = L.control.locate(
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+            
+        
+    
+            var marker_68bf9eb0b77523a6bab89ea187d44986 = L.marker(
+                [35.87663804328732, 128.55522068657245],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_68bf9eb0b77523a6bab89ea187d44986.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영신주유소</b><br>
+        <b>자영알뜰</b><br>
+        대구 서구 평리동 722-2<br>
+        대구 서구 서대구로 210 (평리동)<br>
+        > <b>가격: 1,772 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ca596b62986e4fa7ec0343a93754445 = L.marker(
+                [35.87654968654498, 128.55453886644156],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_5ca596b62986e4fa7ec0343a93754445.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영신제2주유소</b><br>
+        <b>자영알뜰</b><br>
+        대구 서구 평리6동 617-22<br>
+        대구 서구 서대구로 207 (평리동)<br>
+        > <b>가격: 1,772 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_42364c060638ea15231de890f7dbae00 = L.marker(
+                [35.867398669191054, 128.55509504962154],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_42364c060638ea15231de890f7dbae00.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세아에너지</b><br>
+        <b>S-OIL</b><br>
+        대구 서구 평리동 1404-3<br>
+        대구 서구 서대구로 105 (평리동)<br>
+        > <b>가격: 1,775 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bdccb48f3e4c3680a7bb4055f8bbde66 = L.marker(
+                [35.878406301755206, 128.55456291373432],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_bdccb48f3e4c3680a7bb4055f8bbde66.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 서구 평리6동 530-9<br>
+        대구 서구 서대구로 227 (평리동)<br>
+        > <b>가격: 1,777 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5610dc67ccb0c3ec5e2fc32e379ae741 = L.marker(
+                [35.87322285525338, 128.55526259711226],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_5610dc67ccb0c3ec5e2fc32e379ae741.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나혜주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 서구 평리동1086-4<br>
+        대구 서구 서대구로 170<br>
+        > <b>가격: 1,777 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ab9fc44544708e6ccd97895bc7ac877 = L.marker(
+                [35.879034579137986, 128.54333732239422],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_6ab9fc44544708e6ccd97895bc7ac877.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>브라보주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 서구 이현동 33-14<br>
+        대구 서구 북비산로 95<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f14f4130b866b95c5d5883df714b7a3e = L.marker(
+                [35.868520535386146, 128.54435055508554],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_f14f4130b866b95c5d5883df714b7a3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 서구 중리동 1082-7<br>
+        대구 서구 국채보상로 122 (중리동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e81408536424d4fb8b69ad66a40ba509 = L.marker(
+                [35.86388201455501, 128.53722660669422],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_e81408536424d4fb8b69ad66a40ba509.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 서구 중리동 1051-3<br>
+        대구 서구 와룡로 349 (상중이동)<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2dd58e75b1140ca55d5698d0ed044ceb = L.marker(
+                [35.890083448994574, 128.55837766127686],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_2dd58e75b1140ca55d5698d0ed044ceb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        대구 서구 비산동 1449-4<br>
+        대구 서구 팔달로 78 (비산동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d8a4b50d99dc152953d1bff05b82156 = L.marker(
+                [35.868340575610745, 128.5708236994544],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_7d8a4b50d99dc152953d1bff05b82156.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아름다운주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 서구 비산동 302-5<br>
+        대구 서구 달서로 67 (비산동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_83fca8acd0ce2156ea2beb26fe406bcf = L.marker(
+                [35.870221987299274, 128.5384444422529],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_83fca8acd0ce2156ea2beb26fe406bcf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기분좋은주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 서구 이현동 44-106<br>
+        대구 서구 와룡로 420 (이현동)<br>
+        > <b>가격: 1,817 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b7e4009ce0c738c478b1bb5f8c06a3f1 = L.marker(
+                [35.8785268305365, 128.5499233896432],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_b7e4009ce0c738c478b1bb5f8c06a3f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천만에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 서구 평리동 574-1<br>
+        대구 서구 북비산로 154 (평리동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_794cc4cc17958bb62ae8417af1b935e0 = L.marker(
+                [35.87944331329099, 128.55977581489464],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_794cc4cc17958bb62ae8417af1b935e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평리동양주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 서구 평리동 646-13<br>
+        대구 서구 북비산로 241 (평리동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_857dd22f73fd62e0f1bfa7653d0333f6 = L.marker(
+                [35.88195249759641, 128.55369449332775],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_857dd22f73fd62e0f1bfa7653d0333f6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>달서주유소</b><br>
+        <b>S-OIL</b><br>
+        대구 서구 평리동 107-5<br>
+        대구 서구 달서천로 176 (평리동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f77f7502734a8489a2ffc86ae1967be3 = L.marker(
+                [35.86990224648698, 128.55066758756107],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_f77f7502734a8489a2ffc86ae1967be3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이현공단주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 서구 평리동 1527-2<br>
+        대구 서구 국채보상로 181 (평리동)<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a7fc5cb489b277a93dad5d92b51a35c = L.marker(
+                [35.872061280081134, 128.57176072983887],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_4a7fc5cb489b277a93dad5d92b51a35c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 서구 비산4동 329-8<br>
+        대구 서구 국채보상로 372<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97f58fd5b77d3a8a6a96bcf8555706dc = L.marker(
+                [35.87250078045987, 128.56994111313116],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_97f58fd5b77d3a8a6a96bcf8555706dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화성제일주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 서구 비산6동 372-1<br>
+        대구 서구 국채보상로 355-1<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_88a451377c91a4c332a0df0370f03eed = L.marker(
+                [35.88225944459734, 128.57708835010314],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_88a451377c91a4c332a0df0370f03eed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복제1주유소</b><br>
+        <b>S-OIL</b><br>
+        대구 서구 원대동1가 208<br>
+        대구 서구 고성로 104 (원대동1가)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8eff81caf8004543aa88779e2e62c6e8 = L.marker(
+                [35.87823942345268, 128.5369621600568],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_8eff81caf8004543aa88779e2e62c6e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조광주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 서구 이현동 42-331<br>
+        대구 서구 북비산로 36(이현동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f5924685e611f455924bb324cb44dab = L.marker(
+                [35.878787577137274, 128.53743180630516],
+                {}
+            ).addTo(map_70f847bf2826e78bdfdd8592efbbc746);
+        
+    
+            marker_5f5924685e611f455924bb324cb44dab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서대구주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 서구 이현동 288-2<br>
+        대구 서구 북비산로 41<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

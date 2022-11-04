@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_badad5f729289ffc766bec8fb16285b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_badad5f729289ffc766bec8fb16285b2" ></div>
+        
+</body>
+<script>    
+    
+            var map_badad5f729289ffc766bec8fb16285b2 = L.map(
+                "map_badad5f729289ffc766bec8fb16285b2",
+                {
+                    center: [36.54635294345375, 127.2588761692626],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28adc883981995a69d085fc29ba3bea3 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            var locate_control_5e7c47374d8b18d48f761da85621a3f4 = L.control.locate(
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+            
+        
+    
+            var marker_13659fb48d540a5e616dd264a6a4ed4b = L.marker(
+                [36.46471871755115, 127.24462267112705],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_13659fb48d540a5e616dd264a6a4ed4b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지㈜ 가람셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시 가람동 968<br>
+        세종특별자치시 금송로 589<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_96330282acedb515800b0ee25a8cfcb8 = L.marker(
+                [36.48432202833226, 127.30566250028971],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_96330282acedb515800b0ee25a8cfcb8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 소담self주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시 소담동 9-121<br>
+        세종특별자치시 소담로 40<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bdc39900abbfe7e90d77f6a160c79e57 = L.marker(
+                [36.49608343818328, 127.25733549793354],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_bdc39900abbfe7e90d77f6a160c79e57.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 청사셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종특별자치시 어진동 101-4<br>
+        세종특별자치시 다솜로 38 (어진동)<br>
+        > <b>가격: 1,876 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_103d9b5f6adbb1b6fe062b55f078bf11 = L.marker(
+                [36.52081678951155, 127.24451975598396],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_103d9b5f6adbb1b6fe062b55f078bf11.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영에너지㈜세종지점 다온알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        세종특별자치시 아름동 816<br>
+        세종특별자치시 세종로 1328 (아름동)<br>
+        > <b>가격: 1,915 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_04956718c8b14d7a7ac7f2c31e5c8c7e = L.marker(
+                [36.46820187625628, 127.28135525104923],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_04956718c8b14d7a7ac7f2c31e5c8c7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대평주유소</b><br>
+        <b>GS칼텍스</b><br>
+        세종특별자치시 금남면 용포리 211-13<br>
+        세종특별자치시 금남면 용포로 109<br>
+        > <b>가격: 1,959 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5cd889b61e5278f57cd116b3cc57a046 = L.marker(
+                [36.627544854673985, 127.28982525628972],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_5cd889b61e5278f57cd116b3cc57a046.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종 조치원읍 신안리 207-10<br>
+        세종 조치원읍 세종로 2706<br>
+        > <b>가격: 2,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_275af47668eb6d8bb94660c846b5bf33 = L.marker(
+                [36.60851929382196, 127.29713033615376],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_275af47668eb6d8bb94660c846b5bf33.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금빛주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시 조치원읍 서창리 14-1<br>
+        세종특별자치시 조치원읍 새내로 182<br>
+        > <b>가격: 2,100 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_31ecef996679b838f6163183f5b0f8fc = L.marker(
+                [36.70061654929949, 127.1505580852738],
+                {}
+            ).addTo(map_badad5f729289ffc766bec8fb16285b2);
+        
+    
+            marker_31ecef996679b838f6163183f5b0f8fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>승덕주유소</b><br>
+        <b>GS칼텍스</b><br>
+        세종특별자치시 소정면 운당리 128-2<br>
+        세종특별자치시 소정면 세종로 4317<br>
+        > <b>가격: 2,295 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

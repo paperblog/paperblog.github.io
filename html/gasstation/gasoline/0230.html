@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a892c44ecf5d678360ee0963b09874eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a892c44ecf5d678360ee0963b09874eb" ></div>
+        
+</body>
+<script>    
+    
+            var map_a892c44ecf5d678360ee0963b09874eb = L.map(
+                "map_a892c44ecf5d678360ee0963b09874eb",
+                {
+                    center: [37.90808374763675, 127.2413061372569],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e2a56989f6f841037fc0593f0b4517d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            var locate_control_6b5b3298440cd2ff26b40630b12b5d37 = L.control.locate(
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+            
+        
+    
+            var marker_d5516e3e454de668d145352192d211eb = L.marker(
+                [37.771374705125574, 127.2285399218796],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_d5516e3e454de668d145352192d211eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>모리아셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 포천시 내촌면 음현리 293-1<br>
+        경기 포천시 내촌면 금강로 2182<br>
+        > <b>가격: 1,593 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9377f29f82e51eb8153f87a7aa4bf162 = L.marker(
+                [38.00452484560788, 127.2468155313728],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_9377f29f82e51eb8153f87a7aa4bf162.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굳오일셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 포천시 영중면 양문리 832-1<br>
+        경기 포천시 영중면 호국로 2931<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c8f7b6f8ecc86db6b72d8ac372921e93 = L.marker(
+                [37.93479297589264, 127.22729477809078],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_c8f7b6f8ecc86db6b72d8ac372921e93.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신북IC주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 포천시 신북면 기지리 964<br>
+        경기 포천시 신북면 호국로 2075<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_404ef7fc34b18de95a8da569a95bc023 = L.marker(
+                [37.97314902293371, 127.24833564020236],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_404ef7fc34b18de95a8da569a95bc023.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)포천주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 포천시 영중면 금주리 879-2<br>
+        경기 포천시 영중면 호국로 2563<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b46f4434c53e7dd2b4ef8adebda2bf70 = L.marker(
+                [37.946454648603655, 127.23569680502007],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_b46f4434c53e7dd2b4ef8adebda2bf70.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>포천신북주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 포천시 신북면 기지리 59-2<br>
+        경기 포천시 호국로 2226<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d6af3cb9a9c603274f8ffbb7905581a2 = L.marker(
+                [38.04285235292848, 127.26733439478593],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_d6af3cb9a9c603274f8ffbb7905581a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장군제2주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 포천시 영북면 야미리 467-2<br>
+        경기 포천시 영북면 호국로 3428<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db279cb7547b8f7c6b25736eefd71b19 = L.marker(
+                [37.979978660070614, 127.24412269177387],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_db279cb7547b8f7c6b25736eefd71b19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주식회사 동해주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 포천시 영중면 금주리 694-16<br>
+        경기 포천시 호국로 2659<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20b4497b422f82f7d2eb47373da37339 = L.marker(
+                [37.906772744339236, 127.20988003410123],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_20b4497b422f82f7d2eb47373da37339.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동영셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 포천시 신북면 가채리 793-2<br>
+        경기 포천시 신북면 중앙로 241<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d37b21b1db3b2557a451395dbf24cc6 = L.marker(
+                [37.92930280925072, 127.29919493340739],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_4d37b21b1db3b2557a451395dbf24cc6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>예루살렘셀프주유소</b><br>
+        <b>자가상표</b><br>
+        경기 포천시 일동면 유동리 575-1<br>
+        경기도 포천시 일동면 금강로 4193 (일동면)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d5f7fe3dfefeb0c5700322b400ae860f = L.marker(
+                [37.79032574683262, 127.22784362937408],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_d5f7fe3dfefeb0c5700322b400ae860f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙셀프주유소 포천지점</b><br>
+        <b>GS칼텍스</b><br>
+        경기 포천시 내촌면 내리 280-3<br>
+        경기 포천시 내촌면 금강로 2383<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d8ae3543faf9a832a020270c204265a = L.marker(
+                [37.83535421252193, 127.26926257440891],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_4d8ae3543faf9a832a020270c204265a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수정주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 포천시 내촌면 신팔리 321-3<br>
+        경기 포천시 내촌면 금강로 3059<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c46fc727a7f12521c0e97c69601d33a1 = L.marker(
+                [37.81853921386554, 127.21173116591386],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_c46fc727a7f12521c0e97c69601d33a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오일까사 포천지점</b><br>
+        <b>S-OIL</b><br>
+        경기 포천시 내촌면 진목리 243-2<br>
+        경기 포천시 내촌면 포천로 486<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5993b5119ecc7244d22c511aa3018c03 = L.marker(
+                [37.818183070172886, 127.2108577176225],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_5993b5119ecc7244d22c511aa3018c03.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한빛에너지주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 포천시 내촌면 진목리 241<br>
+        경기 포천시 내촌면 포천로 485<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_51100b98e672f1961208e8fcb392c6d6 = L.marker(
+                [37.825536795468864, 127.2097231438984],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_51100b98e672f1961208e8fcb392c6d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행운주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 포천시 가산면 우금리 761-6<br>
+        경기 포천시 가산면 포천로 569<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f200e683b61cfadaec7548a5bbf93a6 = L.marker(
+                [37.95453452195337, 127.23963192146334],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_4f200e683b61cfadaec7548a5bbf93a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)금풍주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 포천시 신북면 만세교리 365<br>
+        경기 포천시 신북면 호국로 2323<br>
+        > <b>가격: 1,637 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a462827e8065854bd14e8604e228d7dc = L.marker(
+                [37.9498128844426, 127.2384690454793],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_a462827e8065854bd14e8604e228d7dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)고래주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 포천시 신북면 만세교리 326-1<br>
+        경기 포천시 신북면 호국로 2272<br>
+        > <b>가격: 1,637 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e7ea6e10e01a2dd04017dcfe14bd2a0 = L.marker(
+                [37.80442920961038, 127.24744526966536],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_7e7ea6e10e01a2dd04017dcfe14bd2a0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿오일주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 포천시 내촌면 소학리 412-1<br>
+        경기 포천시 내촌면 금강로 2639<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d7bdc145ebdd49b42b33f497b2125949 = L.marker(
+                [38.01423010499316, 127.21764382313488],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_d7bdc145ebdd49b42b33f497b2125949.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대일석유㈜ 포천지점주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 포천시 영중면 영송리 471-2<br>
+        경기 포천시 영중면 전영로 1440<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_859cef5bdec14476cda55479c2045854 = L.marker(
+                [37.910369658884555, 127.30775142610948],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_859cef5bdec14476cda55479c2045854.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일동농협화현주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 포천시 화현면 화현리 459-3<br>
+        경기 포천시 화현면 화동로 493<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d740317ae99eb79c01c361667d32a4cb = L.marker(
+                [37.95115676923658, 127.23854829743375],
+                {}
+            ).addTo(map_a892c44ecf5d678360ee0963b09874eb);
+        
+    
+            marker_d740317ae99eb79c01c361667d32a4cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한마음주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 포천시 신북면 만세교리 351<br>
+        경기 포천시 신북면 호국로 2285<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

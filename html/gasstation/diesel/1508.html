@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_14f4e637e4474c22bdd12fbd2e2ebbcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_14f4e637e4474c22bdd12fbd2e2ebbcb" ></div>
+        
+</body>
+<script>    
+    
+            var map_14f4e637e4474c22bdd12fbd2e2ebbcb = L.map(
+                "map_14f4e637e4474c22bdd12fbd2e2ebbcb",
+                {
+                    center: [37.550263837807705, 126.74366093587996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_346efcc8167658b93f03d3d549b5dd41 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            var locate_control_905a268d56803b7555c885ecfd5ef649 = L.control.locate(
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+            
+        
+    
+            var marker_2a2874a364137a62bc65be0fe1ee140a = L.marker(
+                [37.55721044740565, 126.76899742844161],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_2a2874a364137a62bc65be0fe1ee140a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원천제2주유소</b><br>
+        <b>자영알뜰</b><br>
+        인천 계양구 동양동 83-3<br>
+        인천 계양구 벌말로 295<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a02138e890b437a803e4223f8b605dc = L.marker(
+                [37.55335263543421, 126.74843921073138],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_1a02138e890b437a803e4223f8b605dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린에너지</b><br>
+        <b>S-OIL</b><br>
+        인천 계양구 박촌동 124-4<br>
+        인천 계양구 솔고개길 2<br>
+        > <b>가격: 1,834 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6d4a1334a1ffb21cb982e4be324cd9f = L.marker(
+                [37.5442850852311, 126.714749609976],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_e6d4a1334a1ffb21cb982e4be324cd9f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명품주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 계양구 계산동 728-4<br>
+        인천 계양구 경명대로 971 (계산동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43932b51b82d00237f58fd440de093ab = L.marker(
+                [37.577295113971815, 126.77751565608003],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_43932b51b82d00237f58fd440de093ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)스타에너지상사 계양점</b><br>
+        <b>GS칼텍스</b><br>
+        인천 계양구 상야동 40-1<br>
+        인천 계양구 벌말로 545<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1a4047fb30ec624c812d0c836e3154e = L.marker(
+                [37.580423084858154, 126.77941358142043],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_f1a4047fb30ec624c812d0c836e3154e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK KH에너지 에이원주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 하야동 35-5<br>
+        인천 계양구 벌말로 583(하야동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_61393a7e5465f069dd68cbebbef31845 = L.marker(
+                [37.58018667287173, 126.78018315436893],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_61393a7e5465f069dd68cbebbef31845.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상야주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 계양구 상야동 10-3<br>
+        인천 계양구 벌말로584번길 1<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_61d4845f2aa7a2d5b315f609afce6807 = L.marker(
+                [37.543881487948894, 126.71400968324888],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_61d4845f2aa7a2d5b315f609afce6807.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미래주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 계산동 728-6<br>
+        인천 계양구 경명대로 966 (계산동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_409951638e03d656ae3c509536939855 = L.marker(
+                [37.55690689420608, 126.74539328486145],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_409951638e03d656ae3c509536939855.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>박촌주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 계양구 박촌동 23-4<br>
+        인천 계양구 장제로 1021 (박촌동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_382abcbeee9291c346c85969574d5585 = L.marker(
+                [37.560184482156, 126.77008542850925],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_382abcbeee9291c346c85969574d5585.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 계양구 동양동 56-10<br>
+        인천 계양구 벌말로 328 (동양동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a90e24ef6417c3185936331c07be6bb7 = L.marker(
+                [37.5429945687912, 126.72704934529227],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_a90e24ef6417c3185936331c07be6bb7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미상사(주)북인천주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 계산1동 946<br>
+        인천 계양구 경명대로 1082 (계산동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e9c59de24018bc0844098824073cd2b0 = L.marker(
+                [37.5246963369107, 126.69313762448107],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_e9c59de24018bc0844098824073cd2b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통신도시 주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 계양구 효성동 655-171<br>
+        인천 계양구  봉오대로 391 (효성동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dc6600b794f235f125079679ed7ca422 = L.marker(
+                [37.552794801392814, 126.74832839426179],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_dc6600b794f235f125079679ed7ca422.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 계양IC셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 계양구 박촌동 122-2<br>
+        인천 계양구 서부간선로 250  (박촌동)<br>
+        > <b>가격: 1,864 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d68dd16c0919e00e8349356464a45381 = L.marker(
+                [37.525776591680554, 126.75568119116325],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_d68dd16c0919e00e8349356464a45381.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>믿음주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 계양구 서운동 142-24<br>
+        인천 계양구 아나지로 557 (서운동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aabc9069b8ebc7f9de34aa693528f0da = L.marker(
+                [37.525929824272886, 126.75894192162],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_aabc9069b8ebc7f9de34aa693528f0da.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양정주유소</b><br>
+        <b>자영알뜰</b><br>
+        인천 계양구 서운동 147-20<br>
+        인천 계양구 아나지로 597 (서운동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1474bfaa83ed3d9984a10e3ca701e1e9 = L.marker(
+                [37.57621010271409, 126.71967317614656],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_1474bfaa83ed3d9984a10e3ca701e1e9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유(주) 갈현주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 계양구 갈현동 134-6<br>
+        인천 계양구  드림로 764 (갈현동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57962a9f0eaebe355d80a3f15d622956 = L.marker(
+                [37.543140124840356, 126.73641635292428],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_57962a9f0eaebe355d80a3f15d622956.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>임학주유소(셀프)</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 임학동 73-8<br>
+        인천 계양구 경명대로 1161 (임학동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af6d6684912839e8a3e82fb2fcb9ce44 = L.marker(
+                [37.576376843493236, 126.73539397208586],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_af6d6684912839e8a3e82fb2fcb9ce44.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계현주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 장기동 115-248<br>
+        인천 계양구 장제로 1263 (장기동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_85ba52d657725e06e202d97ef1c2f0f4 = L.marker(
+                [37.5258115744389, 126.75407414909894],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_85ba52d657725e06e202d97ef1c2f0f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 계양구 서운동 142-36<br>
+        인천 계양구 아나지로 553<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d73902c20c953f9b85acb6848ccdce0d = L.marker(
+                [37.53215966188416, 126.72222891512921],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_d73902c20c953f9b85acb6848ccdce0d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 행복날개주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 작전동 864-8<br>
+        인천 계양구 계양대로 93 (작전동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5738a80e0f3db0a79bda328dc052bc23 = L.marker(
+                [37.52566042165157, 126.72350663775808],
+                {}
+            ).addTo(map_14f4e637e4474c22bdd12fbd2e2ebbcb);
+        
+    
+            marker_5738a80e0f3db0a79bda328dc052bc23.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일석유(주)동일주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 계양구 작전동 427-6<br>
+        인천 계양구 아나지로 283 (작전동)<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

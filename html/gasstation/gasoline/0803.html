@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f069b6bcfdf7dda73c840881358892f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f069b6bcfdf7dda73c840881358892f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_f069b6bcfdf7dda73c840881358892f7 = L.map(
+                "map_f069b6bcfdf7dda73c840881358892f7",
+                {
+                    center: [36.128351211190015, 128.14072733322058],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bc3698788f5a27f294d409f0db1819a6 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            var locate_control_17c21c3fb460c9904e446338ed0ae8de = L.control.locate(
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+            
+        
+    
+            var marker_ff8f40ab8f08e425827ec56f96f5d322 = L.marker(
+                [36.157520753341736, 128.21341457781028],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_ff8f40ab8f08e425827ec56f96f5d322.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아포대로주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 김천시 아포읍 봉산리 1062<br>
+        경북 김천시 아포읍 아포대로 775<br>
+        > <b>가격: 1,573 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_719b5718ad4609082c5f25f0f74f8590 = L.marker(
+                [36.12230196522323, 128.12850573987603],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_719b5718ad4609082c5f25f0f74f8590.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영풍주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 김천시 용두동 35-1<br>
+        경북 김천시 용암로 40 (용두동)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c9fde7f6d024c54bcdec9b0b798de4e = L.marker(
+                [36.113672777027816, 128.15807611789882],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_4c9fde7f6d024c54bcdec9b0b798de4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김여사네self주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 덕곡동 757-3<br>
+        경북 김천시 무실7길 7<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69b4a58c862ebc72101d8c1803510e60 = L.marker(
+                [36.12550245565491, 128.0887326941134],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_69b4a58c862ebc72101d8c1803510e60.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이엠12주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 김천시 부곡동 919-2<br>
+        경북 김천시 영남대로 1394<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af7e4d8a121f8d7cc35543c06d390c95 = L.marker(
+                [36.12903737729091, 128.09973170656775],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_af7e4d8a121f8d7cc35543c06d390c95.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행운주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 부곡동 485-1<br>
+        경북 김천시 영남대로 1500 (부곡동)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bac1c9287f689ffe510a31b079c0d4eb = L.marker(
+                [36.112633945704474, 128.16372723791662],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_bac1c9287f689ffe510a31b079c0d4eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복한주유충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 김천시 덕곡동 803<br>
+        경북 김천시 영남대로 2159<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a6a6e81a1183dd3f07b6ad5ffe13fe4 = L.marker(
+                [36.15608012987993, 128.19665085238609],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_8a6a6e81a1183dd3f07b6ad5ffe13fe4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대신주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 김천시 아포읍 대신리 883-3<br>
+        경북 김천시 아포읍 아포대로 623<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6a1d3e1f447b240eaff3889ac77dbbe = L.marker(
+                [36.116444634215554, 128.1359105379803],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_e6a1d3e1f447b240eaff3889ac77dbbe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김천주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 지좌동 710-10<br>
+        경상북도 김천시  황산로 48 (지좌동)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2af729e062c2ce77c680f69528ab399 = L.marker(
+                [36.13029400690156, 128.11767844785234],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_f2af729e062c2ce77c680f69528ab399.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신도시주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 신음동 422-3<br>
+        경북 김천시 시청로 21 (신음동)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce69a3dfc9c5a63d8b7989af2a28fdd2 = L.marker(
+                [36.060696797692515, 128.2949531122792],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_ce69a3dfc9c5a63d8b7989af2a28fdd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반가운주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 김천시 남면 부상리141-2<br>
+        경북 김천시 남면 영남대로 3529<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_939fbe411bac7958165f2d58201db0c8 = L.marker(
+                [36.11302196415872, 128.18658196251457],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_939fbe411bac7958165f2d58201db0c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>율곡이룸주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 김천시 율곡동 995<br>
+        경북 김천시 혁신1로 3 (율곡동)<br>
+        > <b>가격: 1,592 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_550cd49cba59b182f66d041a0b9505ba = L.marker(
+                [36.12869533818678, 128.0972688658551],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_550cd49cba59b182f66d041a0b9505ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김천IC주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 부곡동 490-1<br>
+        경북 김천시 영남대로 1479 (부곡동)<br>
+        > <b>가격: 1,593 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ed8ebda27f05ee81a0c95da814fa81a7 = L.marker(
+                [36.130751387153914, 128.10645969260577],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_ed8ebda27f05ee81a0c95da814fa81a7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 김천시 평화동 106-56<br>
+        경북 김천시 영남대로 1564 (평화동)<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32eaa365333e8eaa9619ae743241c136 = L.marker(
+                [36.12888207681625, 128.11433864966105],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_32eaa365333e8eaa9619ae743241c136.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김천행복주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 김천시 평화동 78-1<br>
+        경북 김천시 영남대로 1650 (평화동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_95da589afbbeb5ace77479d47b3d5ffb = L.marker(
+                [36.129817070913546, 128.10303646936035],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_95da589afbbeb5ace77479d47b3d5ffb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강변공원주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 김천시 부곡동 466-3<br>
+        경북 김천시 영남대로 1530<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa9da3e5b5c0774946f55ff4216b8816 = L.marker(
+                [36.12238236524507, 128.18134864877803],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_aa9da3e5b5c0774946f55ff4216b8816.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>율곡행복주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 율곡동 357<br>
+        경북 김천시 혁신로 250 (율곡동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee43340e89817d48c92444166365edcd = L.marker(
+                [36.12835375520654, 128.0961574378053],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_ee43340e89817d48c92444166365edcd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나들목주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 김천시 부곡동 491<br>
+        경북 김천시 영남대로 1475<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7989f0d9b2d59e40240ccbb3d8c6ace = L.marker(
+                [36.13059811787346, 128.1621301685103],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_c7989f0d9b2d59e40240ccbb3d8c6ace.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스피씨삼립김천(서울방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 김천시 농소면 신촌리 730<br>
+        경북 김천시 농소면 경부고속도로 194-2<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7170f79ce62c84147d2ec59dedca2770 = L.marker(
+                [36.12969958206396, 128.16669770132896],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_7170f79ce62c84147d2ec59dedca2770.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스피씨삼립김천(부산방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 김천시 농소면 신촌리 730-2<br>
+        경북 김천시 농소면 경부고속도로 193-2<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bb045198bf61da459722ed4fa6c4af3e = L.marker(
+                [36.200637723249564, 128.00314604331112],
+                {}
+            ).addTo(map_f069b6bcfdf7dda73c840881358892f7);
+        
+    
+            marker_bb045198bf61da459722ed4fa6c4af3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>추풍령(서울방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 김천시 봉산면 광천리 산180-2<br>
+        경북 김천시 봉산면 경부고속도로 214-2<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

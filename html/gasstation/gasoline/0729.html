@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbac741c81ebcc4ae0334c9410229466 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bbac741c81ebcc4ae0334c9410229466" ></div>
+        
+</body>
+<script>    
+    
+            var map_bbac741c81ebcc4ae0334c9410229466 = L.map(
+                "map_bbac741c81ebcc4ae0334c9410229466",
+                {
+                    center: [34.80375868168348, 127.18315973271338],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae195e040030a33da6047b23dfd27838 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            var locate_control_38b7eaef80afa93a264117eb443392d0 = L.control.locate(
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+            
+        
+    
+            var marker_e70543af4d2a649ee8f125a810622e7e = L.marker(
+                [34.840796627598785, 127.40290152083095],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_e70543af4d2a649ee8f125a810622e7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호동주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 보성군 벌교읍 호동리 205-9<br>
+        전남 보성군 벌교읍 녹색로 6112<br>
+        > <b>가격: 1,581 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2c0cb99eb693af0f62ac5a1e52fcf85d = L.marker(
+                [34.813952218209444, 127.12434679041124],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_2c0cb99eb693af0f62ac5a1e52fcf85d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보건설(주)보성(목포)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 보성군 미력면 화방리 196-7<br>
+        전남 보성군 미력면 남해고속도로 63<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d88b0470b16831bb4c7e7d952f26d9c6 = L.marker(
+                [34.80834306469028, 127.18220564572059],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_d88b0470b16831bb4c7e7d952f26d9c6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보건설(주)보성녹차(광양)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 보성군 겸백면 수남리 385-3<br>
+        전남 보성군 겸백면 남해고속도로 70<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_60b792a3af275bd8413170c7d9ba7f7a = L.marker(
+                [34.837441802990945, 127.3503073804144],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_60b792a3af275bd8413170c7d9ba7f7a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥진2주유소(SK)</b><br>
+        <b>SK에너지</b><br>
+        전남 보성군 벌교읍 장좌리 222-1<br>
+        전남 보성군 벌교읍 녹색로 5584<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e73680ebbde6030e0821b2cf3478c8b = L.marker(
+                [34.89058423686535, 127.13282080687156],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_3e73680ebbde6030e0821b2cf3478c8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북부농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 보성군 복내면 복내리 622<br>
+        전남 보성군 복내면 송재로 1792<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f53959669a23dea147cc48e1c496304 = L.marker(
+                [34.84316344749099, 127.36183410996611],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_7f53959669a23dea147cc48e1c496304.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원더풀주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 보성군 벌교읍 장양리 742<br>
+        전남 보성군 벌교읍 녹색로 5709<br>
+        > <b>가격: 1,643 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a7ecc6e2ac5529ffddd692da51ac60c = L.marker(
+                [34.828035486192604, 127.0899030140677],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_4a7ecc6e2ac5529ffddd692da51ac60c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광장주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 보성군 미력면 미력리 547<br>
+        전남 보성군 미력면 화보로 716<br>
+        > <b>가격: 1,648 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eb31d0e55372851c4fe487fde5bab1ba = L.marker(
+                [34.787462242000565, 127.09622111304269],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_eb31d0e55372851c4fe487fde5bab1ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성농협만평주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 보성군 보성읍 용문리 470<br>
+        전남 보성군 보성읍 송재로 417<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_67b195138f931697b1f40c8acd5f1c77 = L.marker(
+                [34.71406981345518, 127.01754650828325],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_67b195138f931697b1f40c8acd5f1c77.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성농협웅치주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 보성군 웅치면 중산리 221<br>
+        전남 보성군 웅치면 일림로 982-1<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e2ca2627512e62cf5f2b119e46c01a9 = L.marker(
+                [34.7677703755145, 127.08403362265719],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_3e2ca2627512e62cf5f2b119e46c01a9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 보성군 보성읍 보성리 93-18<br>
+        전남 보성군 보성읍 중앙로 55<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3dc27b62eb6e7e0485f22d36e84800b8 = L.marker(
+                [34.79808363521647, 127.06969323638363],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_3dc27b62eb6e7e0485f22d36e84800b8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성농협노동지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 보성군 노동면 광곡리 239-1<br>
+        전남 보성군 노동면 광곡길 7<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59ad92b72e4ffaf1a7853de5246f6070 = L.marker(
+                [34.776489922053536, 127.12834700291955],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_59ad92b72e4ffaf1a7853de5246f6070.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기러기주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 보성군 득량면 삼정리 822-1<br>
+        전남 보성군 득량면 녹색로 3159<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79808126cb24ae3b6db2a9bc2fc84ca6 = L.marker(
+                [34.77580878700495, 127.1567413736581],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_79808126cb24ae3b6db2a9bc2fc84ca6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>득량농협주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 보성군 득량면 송곡리 1076-1<br>
+        전남 보성군 득량면 녹색로 3444<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3bbe959a97a70d3a0e1276ea731e5911 = L.marker(
+                [34.77291992740753, 127.09913530238872],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_3bbe959a97a70d3a0e1276ea731e5911.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 보성군 보성읍 옥평리 455-1<br>
+        전남 보성군 보성읍 흥성로 2665<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e289528c43fa4ce2c8401b14f38c5c0 = L.marker(
+                [34.77802838897743, 127.13611073373849],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_5e289528c43fa4ce2c8401b14f38c5c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쇠실주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 보성군 득량면 삼정리 673-10<br>
+        전라남도 보성군 득량면 녹색로 3250<br>
+        > <b>가격: 1,665 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_368835343883191a926c9434ccc260bf = L.marker(
+                [34.76344910006162, 127.16546292941553],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_368835343883191a926c9434ccc260bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>득량주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 보성군 득량면 오봉리 896-1<br>
+        전남 보성군 득량면 충의로 1524<br>
+        > <b>가격: 1,665 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cd3edb6a0f210ac401bd91afd7cb05f = L.marker(
+                [34.84006120237096, 127.3423166230193],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_4cd3edb6a0f210ac401bd91afd7cb05f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>벌교주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 보성군 벌교읍 척령리 746-1<br>
+        전남 보성군 벌교읍 채동선로 190<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9af1089e2a71386934fb112c96ead2c1 = L.marker(
+                [34.84777654331444, 127.35218427326932],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_9af1089e2a71386934fb112c96ead2c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태백산맥주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 보성군 벌교읍 회정리 430-1<br>
+        전남 보성군 벌교읍 홍암로 91<br>
+        > <b>가격: 1,683 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_952d7a8250742328cabb2f3c19a0bf52 = L.marker(
+                [34.76088653347145, 127.10386957217735],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_952d7a8250742328cabb2f3c19a0bf52.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성녹차골주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 보성군 보성읍 옥평리 115-5<br>
+        전남 보성군 보성읍 녹색로 2846<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b29e459a5f373057318b268b8c135062 = L.marker(
+                [34.830050278782494, 127.26721309503209],
+                {}
+            ).addTo(map_bbac741c81ebcc4ae0334c9410229466);
+        
+    
+            marker_b29e459a5f373057318b268b8c135062.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>열가재제2주유소</b><br>
+        <b>자가상표</b><br>
+        전남 보성군 조성면 신월리 267<br>
+        전남 보성군 조성면 녹색로 4754<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

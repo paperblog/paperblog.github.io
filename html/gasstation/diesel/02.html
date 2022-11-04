@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1140030014d7c0f7efb93bab8699345b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1140030014d7c0f7efb93bab8699345b" ></div>
+        
+</body>
+<script>    
+    
+            var map_1140030014d7c0f7efb93bab8699345b = L.map(
+                "map_1140030014d7c0f7efb93bab8699345b",
+                {
+                    center: [37.68888866732588, 126.857163035408],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e40fa1cdaaf1f70f0372e0f82f2cdc5e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            var locate_control_48072cec28a5c32a57dd67f49098ef14 = L.control.locate(
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+            
+        
+    
+            var marker_8032cc59c7455f3dbd69c2943e691252 = L.marker(
+                [37.71066083091191, 126.90650136633442],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_8032cc59c7455f3dbd69c2943e691252.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥 고양동지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 덕양구 고양동 590<br>
+        경기 고양시 덕양구 호국로 1789<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e729bdae5b9f6f2387631af125fcfcb5 = L.marker(
+                [37.67578443351928, 126.79382231930177],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_e729bdae5b9f6f2387631af125fcfcb5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KH에너지(주)직영 애니골주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 일산동구 풍동 622-1<br>
+        경기 고양시 일산동구  무궁화로 307 (풍동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_91ff8f718f0ac05f830c4b1a8021d626 = L.marker(
+                [37.64652522394701, 126.85508013649985],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_91ff8f718f0ac05f830c4b1a8021d626.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕양제1주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 덕양구 성사동 277<br>
+        경기 고양시 덕양구 서오릉로 832 (성사동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e1e9703b037e8364bd184cbdef17426 = L.marker(
+                [37.649214975665025, 126.83977930131063],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_4e1e9703b037e8364bd184cbdef17426.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)어울림주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 고양시 덕양구 화정동 188-20<br>
+        경기 고양시 덕양구 충장로 407<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aef8cd7d9a1cfdd5d55aae745d0529f7 = L.marker(
+                [37.67538019905816, 126.79316996121766],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_aef8cd7d9a1cfdd5d55aae745d0529f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥 풍동지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 일산동구 풍동619-2<br>
+        경기 고양시 일산동구 무궁화로 299 (풍동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0da6c4684142f2c82f2ff5b9543ce077 = L.marker(
+                [37.69960873072075, 126.78170036065131],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_0da6c4684142f2c82f2ff5b9543ce077.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고봉산주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 일산동구 성석동 1305-9<br>
+        경기 고양시 일산동구 고봉로 464 (성석동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3749c72b851ef120ae5c72b897f2cf4a = L.marker(
+                [37.699442227946975, 126.90347948327468],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_3749c72b851ef120ae5c72b897f2cf4a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥.벽제동지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 덕양구 벽제동 245-1<br>
+        경기 고양시 덕양구 호국로 1664<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4012680722a6f4ec77d24339ec7e70d8 = L.marker(
+                [37.64014802414718, 126.8654371381813],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_4012680722a6f4ec77d24339ec7e70d8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥 원흥동지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 덕양구 원흥동 367<br>
+        경기 고양시 덕양구 서오릉로 712 (원흥동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e0813a4ecfb7d3a511b6e9bb90dbadbd = L.marker(
+                [37.71768646235137, 126.9189656846254],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_e0813a4ecfb7d3a511b6e9bb90dbadbd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KH에너지(주) 가나주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 덕양구 벽제동 159-9<br>
+        경기 고양시 덕양구 호국로 1941 (벽제동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac2fd439c8d7e75cf319c0ca31b5e0af = L.marker(
+                [37.681309449025015, 126.78797154099077],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_ac2fd439c8d7e75cf319c0ca31b5e0af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안곡주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 일산동구 중산동 산83-5<br>
+        경기 고양시 일산동구 고양대로 831<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_055215468101aa42fd7e8e0a1f7f165d = L.marker(
+                [37.676897871015164, 126.8761686274434],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_055215468101aa42fd7e8e0a1f7f165d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>너멍골알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 고양시 덕양구 신원동 437-4<br>
+        경기 고양시 덕양구 호국로 1259<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_197dc90443925f661f13badeebb45cf0 = L.marker(
+                [37.66983107373596, 126.80914160675336],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_197dc90443925f661f13badeebb45cf0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KH에너지(주)KH기쁨주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 일산동구 식사동 609-7<br>
+        경기 고양시 일산동구 고양대로 1064 (식사동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ed1174f29c92f6ecdae5683041337eb = L.marker(
+                [37.67684363060247, 126.78289048603907],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_6ed1174f29c92f6ecdae5683041337eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풍산셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 일산동구 중산동 1794<br>
+        경기 고양시 일산동구 중산로 55 (중산동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81fc5811162f82c4506474dc6f4e19c4 = L.marker(
+                [37.790242878294094, 127.04833574825983],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_81fc5811162f82c4506474dc6f4e19c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥 양주지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 산북동 198-3<br>
+        경기 양주시 평화로 1107 (산북동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_06ff85f5c39ec24b89a96cc50fea6961 = L.marker(
+                [37.696641707402335, 126.90265543900549],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_06ff85f5c39ec24b89a96cc50fea6961.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명성주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 고양시 덕양구 벽제동 228-2<br>
+        경기 고양시 덕양구 호국로 1628 (벽제동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_532cb88310b166d42d6c9ece2338b4a7 = L.marker(
+                [37.698919035921136, 126.96942728163177],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_532cb88310b166d42d6c9ece2338b4a7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)교현 알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 양주시 장흥면 교현리 333-3<br>
+        경기 양주시 장흥면 북한산로 863<br>
+        > <b>가격: 1,794 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0050bb0d976d1f2cc1661d520252fdcb = L.marker(
+                [37.73575905735496, 126.82816141610954],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_0050bb0d976d1f2cc1661d520252fdcb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파주경인주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 조리읍 봉일천리 15-10<br>
+        경기 파주시 조리읍 통일로 124<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_01d15b4d972e16f0149987c79606fe4f = L.marker(
+                [37.72289078618145, 126.84625925412952],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_01d15b4d972e16f0149987c79606fe4f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)내유셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 고양시 덕양구 내유동 569-5<br>
+        경기 고양시 덕양구 통일로 1228<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_958d3c098a67b65842f3afe649e57b2e = L.marker(
+                [37.67605953181675, 126.7999517993981],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_958d3c098a67b65842f3afe649e57b2e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경일석유(주) 신우주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 고양시 일산동구 식사동 838-7<br>
+        경기도 고양시 일산동구  고양대로 952 (식사동)<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cee2ab27a2e371734cc10c063ce6a8f8 = L.marker(
+                [37.637927216900636, 126.83436175700213],
+                {}
+            ).addTo(map_1140030014d7c0f7efb93bab8699345b);
+        
+    
+            marker_cee2ab27a2e371734cc10c063ce6a8f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성석유(주)스타주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 고양시 덕양구 화정동 907<br>
+        경기 고양시 덕양구 은빛로 59<br>
+        > <b>가격: 1,798 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

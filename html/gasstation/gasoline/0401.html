@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_194271b08e0e2b1939de7ef438b77857 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_194271b08e0e2b1939de7ef438b77857" ></div>
+        
+</body>
+<script>    
+    
+            var map_194271b08e0e2b1939de7ef438b77857 = L.map(
+                "map_194271b08e0e2b1939de7ef438b77857",
+                {
+                    center: [36.63133268913297, 127.44857002477288],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4ff59f4236285eb5f8d636df55279c6 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            var locate_control_8e16eb1d980a9ecbbef81a941f05ccbc = L.control.locate(
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+            
+        
+    
+            var marker_cabbc4fac8a4ab2edc15d3c617a2b4ed = L.marker(
+                [36.562747638545424, 127.44520091094495],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_cabbc4fac8a4ab2edc15d3c617a2b4ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 서원구 남이면 척산리 280<br>
+        충북 청주시 서원구 남이면 청남로 1309-18<br>
+        > <b>가격: 1,567 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e864c6fdad069b31d8c850270fde6998 = L.marker(
+                [36.594225882882604, 127.47520979011217],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_e864c6fdad069b31d8c850270fde6998.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장성주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 청주시 서원구 남이면 양촌리 9-3<br>
+        충북 청주시 서원구 남이면 양촌4길 3<br>
+        > <b>가격: 1,573 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78ec15f1086f3fbff0910cd4ca1de791 = L.marker(
+                [36.63341572009775, 127.4928608808416],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_78ec15f1086f3fbff0910cd4ca1de791.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문화주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 상당구 문화동 15-49<br>
+        충북 청주시 상당구 대성로 92<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2b76452f6496ce5d2f6765b4b51c58d = L.marker(
+                [36.640593931476815, 127.49012864107223],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_b2b76452f6496ce5d2f6765b4b51c58d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시청앞주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 청주시 상당구 북문로2가 116-170<br>
+        충북 청주시 상당구 상당로 138 (북문로2가)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3be0f47cea3ac21cb216e75fa086a02e = L.marker(
+                [36.64626854019053, 127.48911472359529],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_3be0f47cea3ac21cb216e75fa086a02e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우암셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 청주시 상당구 북문로3가 1-2<br>
+        충북 청주시 상당구 상당로 201<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5eaaa26889683cea47ec6b2c97e7d923 = L.marker(
+                [36.64557179275017, 127.4896683909377],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_5eaaa26889683cea47ec6b2c97e7d923.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수동셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 상당구 수동 448-1<br>
+        충북 청주시 상당구 상당로 192<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_586bb9150344ab3a32e79669fd8eb817 = L.marker(
+                [36.55621968732882, 127.43165546685687],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_586bb9150344ab3a32e79669fd8eb817.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상일주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 청주시 서원구 남이면 외천리 172-1<br>
+        충북 청주시 서원구 남이면 청남로 1162<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_035f74f948bcdc3e399e0d3e39d34086 = L.marker(
+                [36.73843464585837, 127.34428757037848],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_035f74f948bcdc3e399e0d3e39d34086.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿에너지</b><br>
+        <b>S-OIL</b><br>
+        충북 청주시 청원구 오창읍 두릉리 471-1<br>
+        충북 청주시 청원구 오창읍 두릉유리로 18<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_136c8187d3a6d35063c7b5a292352561 = L.marker(
+                [36.60784253669926, 127.50432739467134],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_136c8187d3a6d35063c7b5a292352561.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자유에너지(주)황제주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 청주시 상당구 용암동 1687<br>
+        충북 청주시 상당구 1순환로 1249<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4b8a65fc6d424604f4b603ad4d00b1e = L.marker(
+                [36.62331652390008, 127.37371605964314],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_e4b8a65fc6d424604f4b603ad4d00b1e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청주IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 강내면 월곡리 150-86<br>
+        충북 청주시 흥덕구 강내면 가로수로 668<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a5a2968722184366a69e1c36dc8c148f = L.marker(
+                [36.62502758653464, 127.36359604383864],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_a5a2968722184366a69e1c36dc8c148f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창현주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 청주시 흥덕구 강내면 탑연리 216-8<br>
+        충북 청주시 흥덕구 강내면 가로수로 567-9<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_546c4012b2c793f4e0f2c85df8ac70dd = L.marker(
+                [36.64263559316858, 127.41911917111948],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_546c4012b2c793f4e0f2c85df8ac70dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청주화물터미널주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 지동동 476<br>
+        충북 청주시 흥덕구 직지대로 240번길 38<br>
+        > <b>가격: 1,578 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93f6656919027f1cef49ad0823801628 = L.marker(
+                [36.645760072819144, 127.42029616352428],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_93f6656919027f1cef49ad0823801628.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)롯데마트 서청주점주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 청주시 흥덕구  2순환로 1004 (비하동)<br>
+        충북 청주시 흥덕구  직지대로240번길 25<br>
+        > <b>가격: 1,578 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74ce40d8b67f1ed2805fca704fe32179 = L.marker(
+                [36.64754804439439, 127.48367739301757],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_74ce40d8b67f1ed2805fca704fe32179.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청주주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 청주시 청원구 우암동 335-18<br>
+        충북 청주시 청원구 직지대로 830<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6bae0347502f9c987873a8be567307ea = L.marker(
+                [36.63373954042441, 127.44578352298686],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_6bae0347502f9c987873a8be567307ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무궁화주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 복대동 139-1<br>
+        충북 청주시 흥덕구 가로수로 1372 (복대동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_42ce1f9fcfa0eca1d6c0e72013fb8420 = L.marker(
+                [36.628851001879646, 127.4763432335804],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_42ce1f9fcfa0eca1d6c0e72013fb8420.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 청주시 서원구 모충동 431-27<br>
+        충북 청주시 서원구 모충로 123 (모충동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ddd4e99723dd5abd062d444bd617c97e = L.marker(
+                [36.64277060063758, 127.46501871634982],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_ddd4e99723dd5abd062d444bd617c97e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중도석유(주)금성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 청주시 흥덕구 봉명동 764<br>
+        충북 청주시 흥덕구 직지대로 650<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63ee5a0df4dc9ce2368e0eab6f93ff3c = L.marker(
+                [36.6337673000658, 127.44345039698848],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_63ee5a0df4dc9ce2368e0eab6f93ff3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복대동 관문주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 청주시 흥덕구 복대동 44-3<br>
+        충북 청주시 흥덕구 가로수로 1353 (복대동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_841789064605e7c79f953be911412d09 = L.marker(
+                [36.6428443516277, 127.46080241486459],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_841789064605e7c79f953be911412d09.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>라온셀프</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 봉명동 170-7<br>
+        충북 청주시 흥덕구 직지대로 612 (봉명동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cdb9e8e266ba9d291abbd482ef21b3ea = L.marker(
+                [36.63507279137769, 127.45714361013376],
+                {}
+            ).addTo(map_194271b08e0e2b1939de7ef438b77857);
+        
+    
+            marker_cdb9e8e266ba9d291abbd482ef21b3ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충북석유(주)충북주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 청주시 서원구 사창동 147-14<br>
+        충북 청주시 서원구 사직대로 89 (사창동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

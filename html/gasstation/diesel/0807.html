@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11092b562af19aa102e03997e7ac3ff2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_11092b562af19aa102e03997e7ac3ff2" ></div>
+        
+</body>
+<script>    
+    
+            var map_11092b562af19aa102e03997e7ac3ff2 = L.map(
+                "map_11092b562af19aa102e03997e7ac3ff2",
+                {
+                    center: [36.131476205092596, 128.37808811912166],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd85edee627eb8d8c8af407d3c9b85ad = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            var locate_control_53943cb74c3117999da9286b80273def = L.control.locate(
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+            
+        
+    
+            var marker_dbde8a23ecf0e3567b0334605d769c87 = L.marker(
+                [36.110402827659854, 128.4196283819222],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_dbde8a23ecf0e3567b0334605d769c87.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인동주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 구미시 황상동 358-5<br>
+        경북 구미시 수출대로 500 (황상동)<br>
+        > <b>가격: 1,808 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d4237bd6078fc9cb7b0b31b1cc26e7ea = L.marker(
+                [36.11108874688263, 128.4203873518051],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_d4237bd6078fc9cb7b0b31b1cc26e7ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>황상동양셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 황상동 382-1<br>
+        경북 구미시 수출대로 501<br>
+        > <b>가격: 1,808 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d363f5f1ba341a387132cd8619c0740b = L.marker(
+                [36.1137089327151, 128.36529523544124],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_d363f5f1ba341a387132cd8619c0740b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>롯데마트구미점 행복드림주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 구미시 신평동 465<br>
+        경북 구미시 구미대로22길 11 (신평동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2fc743f03981f7dbc96c7b75bacf976f = L.marker(
+                [36.10945542095064, 128.36509774719391],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_2fc743f03981f7dbc96c7b75bacf976f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스㈜ 이마트주유소구미점</b><br>
+        <b>GS칼텍스</b><br>
+        경북 구미시 광평동 67-2<br>
+        경북 구미시 구미대로18길 18 (광평동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7de96145c460ccc5033b08c615c6ad7c = L.marker(
+                [36.17385665370707, 128.3517798613171],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_7de96145c460ccc5033b08c615c6ad7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대연주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 고아읍 봉한리 708<br>
+        경상북도 구미시 고아읍 선산대로 503<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4bac92b8a889b64d8ba451b5ef90e2a = L.marker(
+                [36.116037344011566, 128.4849311976824],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_e4bac92b8a889b64d8ba451b5ef90e2a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이케이(주)KK중앙2주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 장천면 신장리 617-2<br>
+        경북 구미시 장천면 학신로 211<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a32d5dadd0fe975db027b5049e89651 = L.marker(
+                [36.111680099449806, 128.42443477940174],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_4a32d5dadd0fe975db027b5049e89651.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인동명품주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 인의동 286-7<br>
+        경북 구미시 검성로 9 (인의동)<br>
+        > <b>가격: 1,817 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74754dbea6373ae52b4fc6b3f993bafa = L.marker(
+                [36.110492270319234, 128.36498038243505],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_74754dbea6373ae52b4fc6b3f993bafa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구도일주유소구미</b><br>
+        <b>S-OIL</b><br>
+        경북 구미시 광평동 62-3<br>
+        경북 구미시 수출대로 6 (광평동)<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34fce92759ce9f451ad1056a8f330161 = L.marker(
+                [36.110908847510586, 128.42436286063125],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_34fce92759ce9f451ad1056a8f330161.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문화self주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 인의동 344-23<br>
+        경북 구미시 수출대로 541<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7deed41164d8edec8e2da6525efd9727 = L.marker(
+                [36.21483661955041, 128.319020167408],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_7deed41164d8edec8e2da6525efd9727.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명문셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 구미시 고아읍 오로리 166-7<br>
+        경북 구미시 고아읍 선산대로 1075<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_edf9e8fd5df35a36896b7f2a33314c2c = L.marker(
+                [36.08555771076367, 128.37229020016204],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_edf9e8fd5df35a36896b7f2a33314c2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 임은동 129-1<br>
+        경북 구미시 왕산로 102 (임은동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b3c69b4acf623aa97ecd3c32f7a7bbff = L.marker(
+                [36.079367061740456, 128.3776599540235],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_b3c69b4acf623aa97ecd3c32f7a7bbff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남구미행복주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 오태동 115<br>
+        경북 구미시 왕산로 196 (오태동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_04b19aea9e2005e5e38fdc6690ddf88c = L.marker(
+                [36.13607950286229, 128.33059891626112],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_04b19aea9e2005e5e38fdc6690ddf88c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양지주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 구미시 도량동 563-10<br>
+        경북 구미시 야은로 422 (도량동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b6e5969af1ce1903343750995860e355 = L.marker(
+                [36.15820036524695, 128.4766880190653],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_b6e5969af1ce1903343750995860e355.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정품정량주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 장천면 상림리 산155-2<br>
+        경북 구미시 장천면 낙동대로 1042<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ec06ac03725d3ec0a90295f0effc1216 = L.marker(
+                [36.09209343008512, 128.4533070859516],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_ec06ac03725d3ec0a90295f0effc1216.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인동농협주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 구평동 107-6<br>
+        경북 구미시 인동가산로 396 (구평동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d24b112392bddee307453aac237b54be = L.marker(
+                [36.1377408890568, 128.3246714863187],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_d24b112392bddee307453aac237b54be.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>관용주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 도량동 268-1<br>
+        경북 구미시 야은로 381 (도량동)<br>
+        > <b>가격: 1,832 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0598f2e7c1da5b8044c51ea8e9460490 = L.marker(
+                [36.223458382708905, 128.3119330148491],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_0598f2e7c1da5b8044c51ea8e9460490.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이엠8주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 구미시 고아읍 오로리 459-3<br>
+        경북 구미시 고아읍 선산대로 1198<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce5ee85168089d70e781776ade3ea2c3 = L.marker(
+                [36.14327296706184, 128.3053788426006],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_ce5ee85168089d70e781776ade3ea2c3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에이원주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 구미시 부곡동 132<br>
+        경북 구미시 야은로 191 (부곡동)<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_648f4616676978b133e365793cee92c1 = L.marker(
+                [36.138106154461795, 128.3183967111013],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_648f4616676978b133e365793cee92c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>코끼리주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 구미시 도량동 307-5<br>
+        경북 구미시 야은로 322<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba44911b329397b9f24a1da47c5bca5c = L.marker(
+                [36.15317987510703, 128.35092018686206],
+                {}
+            ).addTo(map_11092b562af19aa102e03997e7ac3ff2);
+        
+    
+            marker_ba44911b329397b9f24a1da47c5bca5c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문성셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 구미시 고아읍 문성리 778-1<br>
+        경북 구미시 고아읍 선산대로 261<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

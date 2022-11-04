@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1c5e4a3031570360f514d4a075320c7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c1c5e4a3031570360f514d4a075320c7" ></div>
+        
+</body>
+<script>    
+    
+            var map_c1c5e4a3031570360f514d4a075320c7 = L.map(
+                "map_c1c5e4a3031570360f514d4a075320c7",
+                {
+                    center: [37.648809739889806, 127.07190778545178],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b84a8a7359d01786b3cf88899f9449d8 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            var locate_control_b25c56b469ec377ca9a518e64f3c8d1d = L.control.locate(
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+            
+        
+    
+            var marker_2fef7e7c47958ae400233a0d551bc054 = L.marker(
+                [37.62910869503517, 127.07083240685112],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_2fef7e7c47958ae400233a0d551bc054.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 신성에너지충전소</b><br>
+        <b>SK가스</b><br>
+        서울 노원구 공릉동 711-1<br>
+        서울 노원구 동일로 1113 (공릉동)<br>
+        > <b>가격: 1,089 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c42708ff961b4800c7aac6182d3f042c = L.marker(
+                [37.638950984081205, 127.10959914079122],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_c42708ff961b4800c7aac6182d3f042c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복지공릉충전소</b><br>
+        <b>E1</b><br>
+        서울 노원구 공릉동 26-69<br>
+        서울 노원구 화랑로 826 (공릉동)<br>
+        > <b>가격: 1,089 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d4d897e3b4dcd9b639b51c32f690f8c = L.marker(
+                [37.671419352889764, 127.05558662676903],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_4d4d897e3b4dcd9b639b51c32f690f8c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 노일가스충전소</b><br>
+        <b>SK가스</b><br>
+        서울 노원구 상계동 1034-1<br>
+        서울 노원구 동일로 1601 (상계동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2e406cf4733ff40b88458be4855457d = L.marker(
+                [37.616968774681844, 127.07252605627633],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_d2e406cf4733ff40b88458be4855457d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태능가스(주)</b><br>
+        <b>S-OIL</b><br>
+        서울 노원구 공릉동 690-11<br>
+        서울 노원구 화랑로 405 (공릉동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd49813e51fa57c124182632af70059a = L.marker(
+                [37.64926391218072, 127.06704834131017],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_fd49813e51fa57c124182632af70059a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)평안에너지 상계충전소</b><br>
+        <b>E1</b><br>
+        서울 노원구 중계동 515-5<br>
+        서울 노원구 동일로210길 86 (중계동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7fd15bd4fc0415d481faf5c06de0eca1 = L.marker(
+                [37.68714672047014, 127.05585414071278],
+                {}
+            ).addTo(map_c1c5e4a3031570360f514d4a075320c7);
+        
+    
+            marker_7fd15bd4fc0415d481faf5c06de0eca1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복지노원충전소</b><br>
+        <b>E1</b><br>
+        서울 노원구 상계동 1205-8<br>
+        서울 노원구 동일로 1778<br>
+        > <b>가격: 1,091 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

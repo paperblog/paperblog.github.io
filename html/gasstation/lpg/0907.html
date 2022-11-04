@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ae12c3f599e58c35d93c7103bb01560 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2ae12c3f599e58c35d93c7103bb01560" ></div>
+        
+</body>
+<script>    
+    
+            var map_2ae12c3f599e58c35d93c7103bb01560 = L.map(
+                "map_2ae12c3f599e58c35d93c7103bb01560",
+                {
+                    center: [35.03774693704143, 128.0530065613068],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7127724006c1d5f0193b924bb85ad96 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            var locate_control_f41ca297a87b7bdadd91cc8d8ef7a5e5 = L.control.locate(
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+            
+        
+    
+            var marker_20c60cd85421cecd7f11ef65130d0404 = L.marker(
+                [35.010254586238396, 128.0017006887962],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_20c60cd85421cecd7f11ef65130d0404.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남양에너지충전소</b><br>
+        <b>S-OIL</b><br>
+        경남 사천시 서포면 자혜리 1138-3<br>
+        경남 사천시 서포면 사천대교로 490-7<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b3c7f337cf012d2523bb010b27c7699 = L.marker(
+                [34.95496090440106, 128.07570531157356],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_8b3c7f337cf012d2523bb010b27c7699.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼천포가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 사천시 좌룡동 273-1<br>
+        경남 사천시 삼천포대교로 648<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a7056acdf81234f54f78080af00fb21 = L.marker(
+                [34.945204852584695, 128.07891490180478],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_6a7056acdf81234f54f78080af00fb21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼천포오렌지충전소</b><br>
+        <b>E1</b><br>
+        경남 사천시 용강동 664-1<br>
+        경남 사천시 벌용길 94 (용강동)<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a009c03f93721122d36b1770c735ac7c = L.marker(
+                [34.984738027101415, 128.05692637921862],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_a009c03f93721122d36b1770c735ac7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동아가스산업</b><br>
+        <b>GS칼텍스</b><br>
+        경남 사천시 노룡동 449-1<br>
+        경남 사천시 사천대로 718 (노룡동)<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba3eb9c2a79bc5192bc70d8987ced896 = L.marker(
+                [34.94704574328652, 128.07742444370473],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_ba3eb9c2a79bc5192bc70d8987ced896.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남일에너지</b><br>
+        <b>S-OIL</b><br>
+        경남 사천시 좌룡동 429-8<br>
+        경남 사천시 삼천포대교로 551 (좌룡동)<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_18b342353ba4d3048b07091a9b208c57 = L.marker(
+                [35.04596701209659, 127.96880662238915],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_18b342353ba4d3048b07091a9b208c57.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 태영가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 사천시 서포면 외구리 236-8<br>
+        경남 사천시 서포면 서포로 744<br>
+        > <b>가격: 941 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7825b9ff53202ab9894754d48ba16549 = L.marker(
+                [35.14098387533499, 127.9931348646407],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_7825b9ff53202ab9894754d48ba16549.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한일에너지 LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 사천시 곤명면 신흥리 17-1<br>
+        경남 사천시 곤명면 경서대로 3603<br>
+        > <b>가격: 975 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05ff054550798efefeefe54b0d75e92b = L.marker(
+                [35.07573548765457, 128.08156473476663],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_05ff054550798efefeefe54b0d75e92b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사천LPG충전소</b><br>
+        <b>E1</b><br>
+        경남 사천시 사천읍 사주리 108-1<br>
+        경남 사천시 사천읍 사천대로 1783<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_afe3174b9cbcd8675d624b9ed5d988ec = L.marker(
+                [35.09327021357413, 128.08964713567173],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_afe3174b9cbcd8675d624b9ed5d988ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 공항LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경남 사천시 사천읍 구암리 1683<br>
+        경남 사천시 사천읍 사천대로 2000<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c862ef45217c1be062a951c518bd11a2 = L.marker(
+                [35.10718465575111, 128.0877516973466],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_c862ef45217c1be062a951c518bd11a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서흥LPG</b><br>
+        <b>GS칼텍스</b><br>
+        경남 사천시 축동면 배춘리 799-6<br>
+        경남 사천시 축동면 사천대로 2168<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fe12596f292a7a07e3fefcf7e4438e72 = L.marker(
+                [35.03712879112925, 128.1539261563881],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_fe12596f292a7a07e3fefcf7e4438e72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>학동주유소</b><br>
+        <b>E1</b><br>
+        경남 사천시 정동면 학촌리 183-9<br>
+        경남 사천시 정동면 상정대로 2061<br>
+        > <b>가격: 1,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2fd93a64175071f79e09375631bda098 = L.marker(
+                [35.07465441227748, 128.01152810087981],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_2fd93a64175071f79e09375631bda098.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사천(순천방향)주유소/충전소</b><br>
+        <b>E1</b><br>
+        경남 사천시 곤양면 묵곡리 산 54-3<br>
+        경남 사천시 곤양면 묵실길 31-13<br>
+        > <b>가격: 1,077 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9aad5f5f0df499bcf74e179cd012786e = L.marker(
+                [35.07358162010838, 128.01205425980797],
+                {}
+            ).addTo(map_2ae12c3f599e58c35d93c7103bb01560);
+        
+    
+            marker_9aad5f5f0df499bcf74e179cd012786e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사천(부산방향)주유소/충전소</b><br>
+        <b>E1</b><br>
+        경남 사천시 곤양면 묵곡리 171-37<br>
+        경남 사천시 곤양면 서삼로 637<br>
+        > <b>가격: 1,077 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

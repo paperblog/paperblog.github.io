@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_279789be47a2bd19c6e5353156803ad2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_279789be47a2bd19c6e5353156803ad2" ></div>
+        
+</body>
+<script>    
+    
+            var map_279789be47a2bd19c6e5353156803ad2 = L.map(
+                "map_279789be47a2bd19c6e5353156803ad2",
+                {
+                    center: [37.27842606468639, 127.14326248552095],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b998f9b181b28cb79648109746a2c1a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            var locate_control_b533564a8845e4ffb667070152dfd8ea = L.control.locate(
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+            
+        
+    
+            var marker_6bf406efe9d7c0be26caa3d6216876ca = L.marker(
+                [37.27381589493088, 127.12212729466106],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_6bf406efe9d7c0be26caa3d6216876ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강남주유소</b><br>
+        <b>자가상표</b><br>
+        경기 용인시 기흥구 구갈동 210-3<br>
+        경기 용인시 기흥구 중부대로 520<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c81930e44855f668fa604af11b22a24 = L.marker(
+                [37.333378825675126, 127.10432059066738],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_6c81930e44855f668fa604af11b22a24.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서창산업㈜죽전(상)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 용인시 수지구 죽전동 866-2<br>
+        경기 용인시 수지구 용구대로2771번길 37 (죽전동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8045446328caf0a5bc3bf9345faac50 = L.marker(
+                [37.24799052301919, 127.23682108730188],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_f8045446328caf0a5bc3bf9345faac50.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서창산업(주) 용인(인천방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 용인시 처인구 고림동 88-1<br>
+        경기 용인시 처인구 주북로 66-16 (고림동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d76b5d5565c153e08f01dc15f882048 = L.marker(
+                [37.245926610063236, 127.243865532637],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_6d76b5d5565c153e08f01dc15f882048.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서창산업(주) 용인(강릉방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 용인시 처인구 양지면 주북리 958-3<br>
+        경기 용인시 처인구 양지면 주북로94번길 30<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3a6f1234a91cc620d5bd916a0d6f1cc = L.marker(
+                [37.23361425577878, 127.10617742930631],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_a3a6f1234a91cc620d5bd916a0d6f1cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜한미석유 기흥주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 용인시 기흥구 공세동 277-7<br>
+        경기 용인시 기흥구 공세로 173<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b8dc44702a94da79e231c53d5c6d2287 = L.marker(
+                [37.301995359199495, 127.12201456118153],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_b8dc44702a94da79e231c53d5c6d2287.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)남경석유 마북로주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 마북동 169-2<br>
+        경기 용인시 기흥구 마북로 130 (마북동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8e4af2f2a60f04a7356c67fb67bec4a1 = L.marker(
+                [37.31474313770713, 127.10894131860162],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_8e4af2f2a60f04a7356c67fb67bec4a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜소모에너지 보정셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 보정동 1278<br>
+        경기 용인시 기흥구 용구대로 2570 (보정동)<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eb812394b986c241945b5f867283fc65 = L.marker(
+                [37.31152079734227, 127.10469648163875],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_eb812394b986c241945b5f867283fc65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미키주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 용인시 기흥구 보정동 614-4<br>
+        경기 용인시 기흥구  용구대로 2469번길 57<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb270e084d9593bf9ee7bd2ddbf0c6f9 = L.marker(
+                [37.28757912812863, 127.10727981402965],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_cb270e084d9593bf9ee7bd2ddbf0c6f9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜자연에너지 신갈주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 용인시 기흥구 신갈동 665<br>
+        경기 용인시 기흥구 용구대로 2245 (신갈동)<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bc82f7e46657750ee6c27b5d6157027a = L.marker(
+                [37.30347953943143, 127.10475824373009],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_bc82f7e46657750ee6c27b5d6157027a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이마트구성점주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 마북동 502-142<br>
+        경기 용인시 기흥구 용구대로 2441 (마북동)<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e100dc0da6180a25baa3690ceff08da3 = L.marker(
+                [37.32043026546164, 127.10457642374007],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_e100dc0da6180a25baa3690ceff08da3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보정꽃길주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 보정동 495-2<br>
+        경기 용인시 기흥구 용구대로2469번길 153<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2951650c3b147d4adfb87f5ac5b0e8ee = L.marker(
+                [37.32108104059771, 127.10440795809419],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_2951650c3b147d4adfb87f5ac5b0e8ee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청정에너지주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 용인시 기흥구 보정동 408-3<br>
+        경기 용인시 기흥구 용구대로2469번길 161<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d734056b2454232afb0ac1f68415c60a = L.marker(
+                [37.318316237409924, 127.10580778747767],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_d734056b2454232afb0ac1f68415c60a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지㈜직영 기쁨셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 보정동 547-4<br>
+        경기 용인시 기흥구 용구대로2469번길130 (보정동)<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c402bcbdaa59b8c9b1cbc754db16a0e = L.marker(
+                [37.320227462332625, 127.10515453032347],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_6c402bcbdaa59b8c9b1cbc754db16a0e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼표에너지 보정동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 보정동 498-2<br>
+        경기 용인시 기흥구 용구대로2469번길 150 (보정동)<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d686a882ddf0f41e9bb9985037268b3 = L.marker(
+                [37.113474141145744, 127.15030652411347],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_7d686a882ddf0f41e9bb9985037268b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남사농업협동조합</b><br>
+        <b>농협알뜰</b><br>
+        경기 용인시 처인구 남사면 봉무리 453-8<br>
+        경기도 용인시 처인구 남사면 처인성로185번길 11<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5bd2abe0f8e8bc48ccd1f6617e6ed2c5 = L.marker(
+                [37.233319076274434, 127.22835511203726],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_5bd2abe0f8e8bc48ccd1f6617e6ed2c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일스타(주)경기남부지점</b><br>
+        <b>자가상표</b><br>
+        경기 용인시 처인구 마평동 499-2<br>
+        경기 용인시 처인구 중부대로 1653 (마평동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fecd289704b9dc970bdcd4c9a65f9b61 = L.marker(
+                [37.21039882434161, 127.16976988577298],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_fecd289704b9dc970bdcd4c9a65f9b61.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용인대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 용인시 처인구 이동면 서리 633-2<br>
+        경기 용인시 처인구 이동읍 백자로 152<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_189185cab328ca60595df9b435b236ba = L.marker(
+                [37.27444184389141, 127.1220563876174],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_189185cab328ca60595df9b435b236ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 기흥셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 구갈동  203-1<br>
+        경기 용인시 기흥구 중부대로 519 (구갈동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce6155fd4c7e31add5a852e91210b914 = L.marker(
+                [37.28354113263695, 127.17163243111536],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_ce6155fd4c7e31add5a852e91210b914.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오션네트웍스(주) 동백지점</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 동백동 4-13<br>
+        경기 용인시 기흥구 석성로 666 (동백동)<br>
+        > <b>가격: 1,843 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_77a5a38cd2da8d060b5ef2d62804776d = L.marker(
+                [37.31924719835959, 127.24218031637155],
+                {}
+            ).addTo(map_279789be47a2bd19c6e5353156803ad2);
+        
+    
+            marker_77a5a38cd2da8d060b5ef2d62804776d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜에버에너지(갈담주유소)</b><br>
+        <b>자영알뜰</b><br>
+        경기 용인시 처인구 모현면 갈담리 447-6<br>
+        경기 용인시 처인구 모현면 백옥대로 2177<br>
+        > <b>가격: 1,843 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

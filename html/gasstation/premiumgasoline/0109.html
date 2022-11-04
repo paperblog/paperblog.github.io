@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_91d72405cad889543fff03a1235efb66 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_91d72405cad889543fff03a1235efb66" ></div>
+        
+</body>
+<script>    
+    
+            var map_91d72405cad889543fff03a1235efb66 = L.map(
+                "map_91d72405cad889543fff03a1235efb66",
+                {
+                    center: [37.55011612537684, 126.92946783510008],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_640763bec8fb8410b3d49866838ceea2 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            var locate_control_1258aac99d71f07f3e7ec26889e0f50a = L.control.locate(
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+            
+        
+    
+            var marker_94fb275ced67e1283fa061615c912fcf = L.marker(
+                [37.54202914477771, 126.94872983538885],
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            marker_94fb275ced67e1283fa061615c912fcf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지 양지주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 마포구 도화동 174-1<br>
+        서울 마포구 마포대로 69 (도화동)<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf89aadc3f5cfcb37378c0a8921a5bf6 = L.marker(
+                [37.563189256116, 126.9132646912872],
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            marker_cf89aadc3f5cfcb37378c0a8921a5bf6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 마포구 성산동 103-8<br>
+        서울 마포구 월드컵북로 113 (성산동)<br>
+        > <b>가격: 2,028 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2de0eaa57bb15f8e7e5f8d2b346eedba = L.marker(
+                [37.54932549167567, 126.91257263802781],
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            marker_2de0eaa57bb15f8e7e5f8d2b346eedba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 안국주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 마포구 합정동 383-4<br>
+        서울 마포구 양화로 33<br>
+        > <b>가격: 2,029 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_07b44363125d135a8a47a2bbae15d7b6 = L.marker(
+                [37.549913621928084, 126.93267919704681],
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            marker_07b44363125d135a8a47a2bbae15d7b6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스에스오토셀프</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 마포구 창전동 13-45<br>
+        서울 마포구 서강로 76 (창전동)<br>
+        > <b>가격: 2,088 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9dcdaa8e03dcd810cda8d3f98add7f72 = L.marker(
+                [37.54612311238675, 126.9400928137497],
+                {}
+            ).addTo(map_91d72405cad889543fff03a1235efb66);
+        
+    
+            marker_9dcdaa8e03dcd810cda8d3f98add7f72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)만성상사 대흥주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 마포구 대흥동 337-32<br>
+        서울 마포구 대흥로 61 (대흥동)<br>
+        > <b>가격: 2,150 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64ce737a11cd982d1aa61748741bff7d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_64ce737a11cd982d1aa61748741bff7d" ></div>
+        
+</body>
+<script>    
+    
+            var map_64ce737a11cd982d1aa61748741bff7d = L.map(
+                "map_64ce737a11cd982d1aa61748741bff7d",
+                {
+                    center: [37.76642853134479, 128.89309251050463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3a7cccdad6672ed65902b21391ab937 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            var locate_control_6f65e86ef92b73253056196c40f2b1e2 = L.control.locate(
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+            
+        
+    
+            var marker_1ae5de0ab8643bcef3a042091f4bc41c = L.marker(
+                [37.716997210693606, 128.97877455631368],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_1ae5de0ab8643bcef3a042091f4bc41c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하슬라충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 강동면 모전리 124-11<br>
+        강원 강릉시 강동면 동해대로 1885<br>
+        > <b>가격: 1,031 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ac89de2cf2ea766268e8f0cd46f0aea = L.marker(
+                [37.769031471458085, 128.92983676342834],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_0ac89de2cf2ea766268e8f0cd46f0aea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)강릉개인택시충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 두산동 228-3<br>
+         강원도 강릉시 강변로 636-5<br>
+        > <b>가격: 1,060 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc913841d095608d519606b381f131a5 = L.marker(
+                [37.8700507616387, 128.8378259982084],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_cc913841d095608d519606b381f131a5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 주문진충전소</b><br>
+        <b>SK가스</b><br>
+        강원 강릉시 연곡면 영진리 354-12<br>
+        강원 강릉시 연곡면 연주로 156<br>
+        > <b>가격: 1,064 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10262f1784cde53c8d959a39db41ac45 = L.marker(
+                [37.81616304718684, 128.85422146681876],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_10262f1784cde53c8d959a39db41ac45.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송은LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 사천면 미노리 443-1<br>
+        강원 강릉시 사천면 동해대로 3710<br>
+        > <b>가격: 1,066 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_595fb5fd43c3008c4d498bc91aef23f4 = L.marker(
+                [37.84607406460315, 128.8417241943727],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_595fb5fd43c3008c4d498bc91aef23f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동방엘티에스</b><br>
+        <b>E1</b><br>
+        강원 강릉시 연곡면 동덕리 258-2<br>
+        강원 강릉시 연곡면 동해대로 4076<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4f31063ac97296fc34a5f7982105ef4 = L.marker(
+                [37.74138380726704, 128.92018863320516],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_e4f31063ac97296fc34a5f7982105ef4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 동방가스충전소</b><br>
+        <b>SK가스</b><br>
+        강원 강릉시 청량동 552-23<br>
+        강원 강릉시 율곡로 2572<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b95506cf854e737032aa2df02a615663 = L.marker(
+                [37.765532160638685, 128.91146738765522],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_b95506cf854e737032aa2df02a615663.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강릉충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 포남동 1005-274<br>
+        강원 강릉시 성덕포남로149번길 1 (포남동)<br>
+        > <b>가격: 1,069 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4060712a2570df781f7e96253bab84a = L.marker(
+                [37.766261797304075, 128.92008638322258],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_c4060712a2570df781f7e96253bab84a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(합자)동아가스</b><br>
+        <b>S-OIL</b><br>
+        강원 강릉시 입암동 21-42<br>
+        강원 강릉시 강변로 548 (입암동)<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d16ca4ab207cc13ade26b862af36178e = L.marker(
+                [37.78355379186905, 128.87610486946562],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_d16ca4ab207cc13ade26b862af36178e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오죽헌충전소</b><br>
+        <b>E1</b><br>
+        강원 강릉시 죽헌동 290-5<br>
+        강원 강릉시 율곡로 3209 (죽헌동)<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98cdec9b12fb70fa927add7c9717178e = L.marker(
+                [37.77449984712569, 128.88914271768388],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_98cdec9b12fb70fa927add7c9717178e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 동해충전소</b><br>
+        <b>SK가스</b><br>
+        강원 강릉시 교동613-3<br>
+        강원 강릉시 율곡로 3054 (교동)<br>
+        > <b>가격: 1,072 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4bbdb4335bd3a2906fa08bdff3b32dd3 = L.marker(
+                [37.74708244397697, 128.8758329326324],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_4bbdb4335bd3a2906fa08bdff3b32dd3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 신일충전소</b><br>
+        <b>SK가스</b><br>
+        강원 강릉시 홍제동 306-3<br>
+        강원 강릉시 경강로 1885 (홍제동)<br>
+        > <b>가격: 1,072 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98b4a33d87ebabc3fad6686b22c304ec = L.marker(
+                [37.616306999539454, 129.05690144740018],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_98b4a33d87ebabc3fad6686b22c304ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥계(속초)주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        강원 강릉시 옥계면 주수리 88-14<br>
+        강원 강릉시 옥계면 동해고속도로 322<br>
+        > <b>가격: 1,120 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cda8865e6547bff9cc6a886fc775f67b = L.marker(
+                [37.75848975318993, 128.80728462095868],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_cda8865e6547bff9cc6a886fc775f67b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KIS정보통신㈜강릉(강릉방향)주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 성산면 보광리 120<br>
+        강원 강릉시 성산면 영동고속도로 232-1<br>
+        > <b>가격: 1,121 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9af6d6f47f57701fee91caea2bf442c9 = L.marker(
+                [37.75857228233584, 128.80390317569953],
+                {}
+            ).addTo(map_64ce737a11cd982d1aa61748741bff7d);
+        
+    
+            marker_9af6d6f47f57701fee91caea2bf442c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KIS정보통신㈜강릉(인천방향)주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 성산면 보광리 139<br>
+        강원 강릉시 영동고속도로 231-1<br>
+        > <b>가격: 1,141 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

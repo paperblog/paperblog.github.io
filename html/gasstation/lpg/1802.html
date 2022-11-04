@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c3753ec761ca905afdc0f33e25a670c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0c3753ec761ca905afdc0f33e25a670c" ></div>
+        
+</body>
+<script>    
+    
+            var map_0c3753ec761ca905afdc0f33e25a670c = L.map(
+                "map_0c3753ec761ca905afdc0f33e25a670c",
+                {
+                    center: [35.5303263641742, 129.32174356700693],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73072343de26eca68e7f95290c11afd7 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            var locate_control_9b04646ba8b2b19beb08266c9c90b252 = L.control.locate(
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+            
+        
+    
+            var marker_69f68341eab16458d73fb4b1f873110f = L.marker(
+                [35.50768208442544, 129.32250719866096],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_69f68341eab16458d73fb4b1f873110f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 남울산LPG충전소</b><br>
+        <b>SK가스</b><br>
+        울산 남구 상개동 73-3<br>
+        울산 남구 산업로 144 (상개동)<br>
+        > <b>가격: 1,037 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_469619a9a387da6945f8aae19e71833d = L.marker(
+                [35.52265510529491, 129.29135194915045],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_469619a9a387da6945f8aae19e71833d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)옥동엘피지수소복합충전소</b><br>
+        <b>S-OIL</b><br>
+        울산 남구 옥동 2<br>
+        울산 남구 남부순환도로 465<br>
+        > <b>가격: 1,054 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab9fe942130c233baeabacd99ba66c36 = L.marker(
+                [35.54439406681427, 129.294989090717],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_ab9fe942130c233baeabacd99ba66c36.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산가스충전소</b><br>
+        <b>S-OIL</b><br>
+        울산 남구 신정동 1545<br>
+        울산 남구 남산로 239 (신정동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a13312d92168a5f3f4c5ee7352027690 = L.marker(
+                [35.52630714782066, 129.343331430045],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_a13312d92168a5f3f4c5ee7352027690.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울산개인택시제1충전소</b><br>
+        <b>S-OIL</b><br>
+        울산 남구 야음동 155-5<br>
+        울산 남구 수암로155번길 4-5 (야음동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_515ac5dd22bc3db040ffd5070cc8e098 = L.marker(
+                [35.52587983464805, 129.34447093903793],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_515ac5dd22bc3db040ffd5070cc8e098.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주)창원충전소새울산가스</b><br>
+        <b>GS칼텍스</b><br>
+        울산 남구 여천동 1000-1<br>
+        울산광역시 남구  산업로 477 (야음장생포동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c0432bb6c66edd68d56c27fcd0ffd5d = L.marker(
+                [35.544387893384354, 129.29388619358411],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_4c0432bb6c66edd68d56c27fcd0ffd5d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양제2충전소</b><br>
+        <b>SK에너지</b><br>
+        울산 남구 무거동 1283<br>
+        울산 남구 남산로 231 (무거동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5985229e6e6fdc2d307ccd3010630154 = L.marker(
+                [35.539503865547786, 129.35020441923803],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_5985229e6e6fdc2d307ccd3010630154.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명진가스(주)삼산지점충전소</b><br>
+        <b>S-OIL</b><br>
+        울산 남구 삼산동 1639-1<br>
+        울산 남구 삼산로 394 (삼산동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71209ed332f896364a9e14aaa728c680 = L.marker(
+                [35.545595386722525, 129.2916740924546],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_71209ed332f896364a9e14aaa728c680.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>개인택시복지충전소</b><br>
+        <b>E1</b><br>
+        울산 남구 무거동 1312-1<br>
+        울산 남구 남산로 209 (무거동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e9c85c2064c748dad48febc27acb6b7d = L.marker(
+                [35.5204720421618, 129.34408573069203],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_e9c85c2064c748dad48febc27acb6b7d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울산LPG충전소</b><br>
+        <b>E1</b><br>
+        울산 남구 여천동 901-19<br>
+        울산 남구 장생포로 5 (여천동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d969d85e26ea9131e2116ab836c4fce = L.marker(
+                [35.53481483879455, 129.32957988788388],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_6d969d85e26ea9131e2116ab836c4fce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 울산제일충전소</b><br>
+        <b>SK가스</b><br>
+        울산 남구 달동 1272-8<br>
+        울산 남구 번영로 104 (달동)<br>
+        > <b>가격: 1,057 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b8b1affa6189ffca90040cda6a1e221 = L.marker(
+                [35.546739888207824, 129.3246046920429],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_3b8b1affa6189ffca90040cda6a1e221.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 SK울산충전소</b><br>
+        <b>SK가스</b><br>
+        울산 남구 삼산동 1497-5<br>
+        울산 남구 번영로 242 (삼산동)<br>
+        > <b>가격: 1,057 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f06acc441f2ae7755ab5ac7cbcaafd00 = L.marker(
+                [35.52688993928096, 129.34360576634586],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_f06acc441f2ae7755ab5ac7cbcaafd00.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양제1충전소</b><br>
+        <b>SK에너지</b><br>
+        울산 남구 여천동 1110-7<br>
+        울산 남구 화합로 18 (여천동)<br>
+        > <b>가격: 1,058 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b268538ef11fdd4aae95f7164ae5444d = L.marker(
+                [35.508920641161396, 129.30837498123714],
+                {}
+            ).addTo(map_0c3753ec761ca905afdc0f33e25a670c);
+        
+    
+            marker_b268538ef11fdd4aae95f7164ae5444d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울산두왕LPG충전소</b><br>
+        <b>E1</b><br>
+        울산 남구 두왕동 71-12<br>
+        울산 남구 두왕로 61 (두왕동)<br>
+        > <b>가격: 1,061 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

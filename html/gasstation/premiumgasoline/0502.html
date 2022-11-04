@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc7daf58b17923c74d37b9662d2fd895 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bc7daf58b17923c74d37b9662d2fd895" ></div>
+        
+</body>
+<script>    
+    
+            var map_bc7daf58b17923c74d37b9662d2fd895 = L.map(
+                "map_bc7daf58b17923c74d37b9662d2fd895",
+                {
+                    center: [36.81829985775116, 127.14068715573967],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b5ba0c5b8314f1c220a4ca7278dd2f5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            var locate_control_2104ae562424ea760179fd4ece81d342 = L.control.locate(
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+            
+        
+    
+            var marker_39aab73129a8db9df005112e2cc545ea = L.marker(
+                [36.799328396484725, 127.12840716160082],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_39aab73129a8db9df005112e2cc545ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍용셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 서북구 쌍용동 219-8<br>
+        충남 천안시 서북구 불당대로 294<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_415a8b2847047ad27abf2e838353adb1 = L.marker(
+                [36.82048595050962, 127.13178621142875],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_415a8b2847047ad27abf2e838353adb1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)서부대로주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 서북구 성정동 908<br>
+        충남 천안시 서북구 서부대로 596 (성정동)<br>
+        > <b>가격: 1,834 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f907bb6969bc1350d92659c8c44c9da = L.marker(
+                [36.789440036925015, 127.12847503376378],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_8f907bb6969bc1350d92659c8c44c9da.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)우리네주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 신방동 49-25<br>
+        충남 천안시 동남구 서부대로 235<br>
+        > <b>가격: 1,844 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aeddde3670921dbef4cc1f4c93ee0b09 = L.marker(
+                [36.79369153538673, 127.12581058649948],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_aeddde3670921dbef4cc1f4c93ee0b09.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 서북구 쌍용동 394-10<br>
+        충남 천안시 서북구 충무로 166 (쌍용동)<br>
+        > <b>가격: 1,894 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_94a10a5d945afb0f12947d57b93c962d = L.marker(
+                [36.85743439238473, 127.15258537804655],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_94a10a5d945afb0f12947d57b93c962d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 서북구 신당동 426-7<br>
+        충남 천안시 서북구 천안대로 1307 (신당동)<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ed6936a108857aaa836430ec3e27637 = L.marker(
+                [36.8050513574128, 127.12797695472254],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_2ed6936a108857aaa836430ec3e27637.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지㈜ 대한주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 서북구 쌍용동 922<br>
+        충남 천안시 서북구 서부대로 422<br>
+        > <b>가격: 1,896 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c4c8ded9d55f7fe41904d31cb39b9e9 = L.marker(
+                [36.824826862807015, 127.1268102089731],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_6c4c8ded9d55f7fe41904d31cb39b9e9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 글로벌주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 서북구 백석동 11-18<br>
+        충남 천안시 서북구 동서대로 27 (백석동)<br>
+        > <b>가격: 1,896 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb81f7deadb7f25234880dfcfb00a405 = L.marker(
+                [36.81679225783164, 127.10125260333038],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_fb81f7deadb7f25234880dfcfb00a405.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>불당행복주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 서북구 불당동 1799<br>
+        충남 천안시 서북구 불당19로 92 (불당동)<br>
+        > <b>가격: 1,896 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78c875de707431dbda2767f2a1aaf88d = L.marker(
+                [36.82484426060201, 127.10250031355335],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_78c875de707431dbda2767f2a1aaf88d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 불당현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 서북구 불당동 8029<br>
+        충남 천안시 서북구 불당19로 1<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aaa0767ae7d93a40d9ee9e099bc4e31b = L.marker(
+                [36.853674147040884, 127.18089959080724],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_aaa0767ae7d93a40d9ee9e099bc4e31b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>망향주유소 경부고속(부산방향)</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 천안시 성거읍 요방리 123-2<br>
+        충남 천안시 서북구 성거읍 석문길 98<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_227ca9a5d5c61e8e76d26a5923208821 = L.marker(
+                [36.838504822132734, 127.15793947918647],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_227ca9a5d5c61e8e76d26a5923208821.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 천안현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 서북구 두정동 4-8<br>
+        충남 천안시 서북구 삼성대로 346<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8bc32ad1e7f83e21e28def2dd0405338 = L.marker(
+                [36.81670114054344, 127.13476825471683],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_8bc32ad1e7f83e21e28def2dd0405338.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 중부주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 서북구 성정동 1099<br>
+        충남 천안시 서북구 쌍용대로 215 (성정동)<br>
+        > <b>가격: 1,906 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4753c57d314702b75f75b871dc7925bb = L.marker(
+                [36.788772467014226, 127.1726161487429],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_4753c57d314702b75f75b871dc7925bb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천안삼거리(서울방향)충전소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 동남구 구성동 153-51<br>
+        충남 천안시 동남구 쉼1길 40<br>
+        > <b>가격: 1,918 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08815c44289ecec04379387bbcd8fe96 = L.marker(
+                [36.82599042718711, 127.13015792229332],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_08815c44289ecec04379387bbcd8fe96.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두정탑주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 서북구 두정동 632<br>
+        충남 천안시 서북구 동서대로 61<br>
+        > <b>가격: 1,948 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bea5eedef8dc26d27a38ebbed2280bd5 = L.marker(
+                [36.82236877080303, 127.11657822280611],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_bea5eedef8dc26d27a38ebbed2280bd5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 종합운동장셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 서북구 백석동 268-2<br>
+        충남 천안시 서북구 백석로 42백석동)<br>
+        > <b>가격: 1,964 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6713a06a482472efa740d61c6c28400e = L.marker(
+                [36.76874901878308, 127.16624460579311],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_6713a06a482472efa740d61c6c28400e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광명주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 동남구 삼룡동 385-1<br>
+        충남 천안시 동남구 천안대로 220 (삼룡동)<br>
+        > <b>가격: 1,965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f95a70c94d86afabcc30a853feda5c66 = L.marker(
+                [36.84885205548045, 127.15480748205707],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_f95a70c94d86afabcc30a853feda5c66.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>베스트오일주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 서북구 신당동 905<br>
+        충남 천안시 서북구 천안대로 1207 (신당동)<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4338c08a47efcf94ee93be42c3811e19 = L.marker(
+                [36.823216158728485, 127.16383468998222],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_4338c08a47efcf94ee93be42c3811e19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>맘모스주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 천안시 동남구 신부동 38-7<br>
+        충남 천안시 동남구 만남로 126 (신부동)<br>
+        > <b>가격: 2,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1da7b1ae36db9d2a38c68d7735777a3f = L.marker(
+                [36.82897323921426, 127.16960511074947],
+                {}
+            ).addTo(map_bc7daf58b17923c74d37b9662d2fd895);
+        
+    
+            marker_1da7b1ae36db9d2a38c68d7735777a3f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>캠퍼스주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 동남구 신부동 16-11<br>
+        충남 천안시 동남구 망향로 53<br>
+        > <b>가격: 2,330 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

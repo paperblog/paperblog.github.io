@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d601c3fde480b07f9cbe6cdcb816eaad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d601c3fde480b07f9cbe6cdcb816eaad" ></div>
+        
+</body>
+<script>    
+    
+            var map_d601c3fde480b07f9cbe6cdcb816eaad = L.map(
+                "map_d601c3fde480b07f9cbe6cdcb816eaad",
+                {
+                    center: [34.88057238514905, 128.4216330003648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ff08e49e3d34b59b9b11df9bcfdf5df = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            var locate_control_c1026771d9e1303df181694070c3836c = L.control.locate(
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+            
+        
+    
+            var marker_a0f3adc8887df23a21cd94807835052c = L.marker(
+                [34.89129723336871, 128.4707088733859],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_a0f3adc8887df23a21cd94807835052c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해양셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 용남면 장평리 31<br>
+        경남 통영시 용남면 남해안대로 48<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e0b61a3b00ae0604b5104463c346602e = L.marker(
+                [34.9016156694017, 128.37375501483433],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_e0b61a3b00ae0604b5104463c346602e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)통영알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 통영시 도산면 관덕리 944-1<br>
+        경남 통영시 도산면 남해안대로 1574<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b82b431ebaeaac6a5eecfbb95a22c89f = L.marker(
+                [34.884776141184396, 128.45115586338875],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_b82b431ebaeaac6a5eecfbb95a22c89f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통영축산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 통영시 용남면 삼화리 234-1<br>
+        경남 통영시 용남면 남해안대로 246<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a134c6656e32fcb304231e5bb08bb182 = L.marker(
+                [34.87824079049852, 128.44982301548148],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_a134c6656e32fcb304231e5bb08bb182.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통영관광주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 통영시 용남면 동달리 428-1<br>
+        경남 통영시 용남면 남해안대로 325<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b203efd978d9c867743e67f31655a131 = L.marker(
+                [34.93585315999337, 128.34749771506688],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_b203efd978d9c867743e67f31655a131.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성림주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 도산면 원산리 1186-6<br>
+        경남 통영시 도산면 남해안대로 2119<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e5ff99987142ad3208ddeab2b2f1dca = L.marker(
+                [34.93895077540981, 128.34787072138639],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_5e5ff99987142ad3208ddeab2b2f1dca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 통영시 도산면 원산리 1163-1<br>
+        경남 통영시 도산면 남해안대로 2152<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_937a665e3f71a8ca556d3c01775f88dd = L.marker(
+                [34.8897610405433, 128.46189882220327],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_937a665e3f71a8ca556d3c01775f88dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 용남면 원평리 892-1<br>
+        경남 통영시 용남면 견내량로 29<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf9f892428a1666d0390df3f3c3e9071 = L.marker(
+                [34.8990533352551, 128.39928055574393],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_bf9f892428a1666d0390df3f3c3e9071.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호반주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 통영시 광도면 노산리 665<br>
+        경남 통영시 광도면 남해안대로 1309<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05ddfda55fbd82010518b5c1f2498580 = L.marker(
+                [34.89046179702418, 128.47164870972097],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_05ddfda55fbd82010518b5c1f2498580.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대교주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 용남면 장평리 118<br>
+        경남 통영시 용남면 남해안대로 47<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c22a886c4f71aa7df656913070704957 = L.marker(
+                [34.886982006555165, 128.4176245293654],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_c22a886c4f71aa7df656913070704957.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)이마트 통영점</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 광도면 죽림리 1566-2<br>
+        경상남도 통영시 광도면 죽림4로 9 (광도면)<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2170357070d5d31f1a829ad376f7d54b = L.marker(
+                [34.84820550952129, 128.4203661634595],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_2170357070d5d31f1a829ad376f7d54b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜통제영주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 통영시 문화동 269-4<br>
+        경남 통영시 여황로 290<br>
+        > <b>가격: 1,614 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ece65bb0811738c8acd73947fb009ef = L.marker(
+                [34.8354741354705, 128.40727181524213],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_8ece65bb0811738c8acd73947fb009ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신나폴리(주) 주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 통영시 당동 235<br>
+        경남 통영시 여황로 78 (당동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ff33376114536762877c8a41e1deb3b2 = L.marker(
+                [34.83788470881044, 128.40809494791944],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_ff33376114536762877c8a41e1deb3b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)통영IC 직영</b><br>
+        <b>SK에너지</b><br>
+        경남 통영시 도천동 853<br>
+        경남 통영시 통영터널로 32<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ffac373c94daefc09fb2f414c4a3f2e1 = L.marker(
+                [34.854034631240516, 128.43608118677685],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_ffac373c94daefc09fb2f414c4a3f2e1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세인리무진직영주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 통영시 무전동 272-3<br>
+        경남 통영시 통영해안로 532<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05a1041913de9895c244b39515f30f69 = L.marker(
+                [34.95541451638048, 128.41227084854472],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_05a1041913de9895c244b39515f30f69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔복주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 통영시 광도면 황리1588-3<br>
+        경남 통영시 광도면 안정로 898<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fcefe53bda522b17f92b75607bc7469f = L.marker(
+                [34.85741794753316, 128.4307967598664],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_fcefe53bda522b17f92b75607bc7469f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 통영주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 통영시 무전동 993-9<br>
+        경남 통영시 안개로 22 (무전동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6fe158751b06e4e50233e08bfccb1cc2 = L.marker(
+                [34.855370597135796, 128.4380895553946],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_6fe158751b06e4e50233e08bfccb1cc2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 천일주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 통영시 무전동 63-1<br>
+        경남 통영시 통영해안로 559 (무전동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59d0d48cab13c173a69030fd13739431 = L.marker(
+                [34.877727951360185, 128.44875044243457],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_59d0d48cab13c173a69030fd13739431.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용남주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 통영시 용남면 동달리 432-1<br>
+        경남 통영시 용남면 남해안대로 332<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1580a323d53694e84a04220ea10fcd30 = L.marker(
+                [34.85477933849971, 128.42854697790096],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_1580a323d53694e84a04220ea10fcd30.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 거북셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 통영시 북신동 663-8<br>
+        경남 통영시 중앙로 275 (북신동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ac6f833dde21c4228bd88738b72c5fc = L.marker(
+                [34.83814641779474, 128.4111274891795],
+                {}
+            ).addTo(map_d601c3fde480b07f9cbe6cdcb816eaad);
+        
+    
+            marker_0ac6f833dde21c4228bd88738b72c5fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 통영시 도천동 114-8<br>
+        경남 통영시 여황로 128 (도천동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

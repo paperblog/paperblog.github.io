@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_935147b246bb00b51344236f79011900 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_935147b246bb00b51344236f79011900" ></div>
+        
+</body>
+<script>    
+    
+            var map_935147b246bb00b51344236f79011900 = L.map(
+                "map_935147b246bb00b51344236f79011900",
+                {
+                    center: [33.427107236291825, 126.57589897578424],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0225448dbd1c1d78d77266f332262d41 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            var locate_control_8b3b39a35fa4c5e111d0290c9f792d00 = L.control.locate(
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+            
+        
+    
+            var marker_fc5e7a42584eb52e80e2b161e897c187 = L.marker(
+                [33.262983681305016, 126.39788195438511],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_fc5e7a42584eb52e80e2b161e897c187.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가까운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 서귀포시 상예동 260-4<br>
+        제주특별자치도 서귀포시 일주서로 1080(상예동)<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_101560f832a7763a2532f0ce50327d95 = L.marker(
+                [33.4271238767036, 126.90740513388826],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_101560f832a7763a2532f0ce50327d95.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해맞이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 서귀포시 성산읍 고성리 1914-1<br>
+        제주특별자치도 서귀포시 성산읍 일주동로 4501<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b25e8256845937b9d105bfef1e28e82 = L.marker(
+                [33.47116072166965, 126.46079838823634],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_9b25e8256845937b9d105bfef1e28e82.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평화로주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 제주시 노형동 3534-1<br>
+        제주특별자치도 제주시 노형로 177 (노형동)<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cd0b4e8600754d34a86d7bd29f13926 = L.marker(
+                [33.536734710672604, 126.66376513024696],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_4cd0b4e8600754d34a86d7bd29f13926.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주특별자치도 제주시 조천읍 함덕리 1582<br>
+        제주특별자치도 제주시 조천읍 일주동로 1152<br>
+        > <b>가격: 1,927 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_618c2aaeb18bdcb4094f8b1c348e9f98 = L.marker(
+                [33.484627182043155, 126.53607691291091],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_618c2aaeb18bdcb4094f8b1c348e9f98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 연북로주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주특별자치도 제주시 아라일동 2605-1<br>
+        제주특별자치도 제주시 연북로 524 (아라일동)<br>
+        > <b>가격: 1,927 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34b3bc5684dfc98de1c226e8c768337f = L.marker(
+                [33.248084338998275, 126.51624025448733],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_34b3bc5684dfc98de1c226e8c768337f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>혁신도시주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 서귀포시 서호동 1549<br>
+        제주특별자치도 서귀포시 일주동로 9144 (서호동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c59da89f70044a40dfbe657c3e11784e = L.marker(
+                [33.49412685100929, 126.53461636861395],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_c59da89f70044a40dfbe657c3e11784e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 남부주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주 제주시 이도2동 1066-5<br>
+        제주 제주시 중앙로 301 (이도이동)<br>
+        > <b>가격: 2,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14f2e7139edb4f4c719a53e4bf22a255 = L.marker(
+                [33.492016527933025, 126.59040766350515],
+                {}
+            ).addTo(map_935147b246bb00b51344236f79011900);
+        
+    
+            marker_14f2e7139edb4f4c719a53e4bf22a255.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 봉아름주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주특별자치도 제주시 봉개동 2573-1<br>
+        제주특별자치도 제주시 번영로 452 (봉개동)<br>
+        > <b>가격: 2,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

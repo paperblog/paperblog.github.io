@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6fb72e07f16f10078dc8539e535aab6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6fb72e07f16f10078dc8539e535aab6d" ></div>
+        
+</body>
+<script>    
+    
+            var map_6fb72e07f16f10078dc8539e535aab6d = L.map(
+                "map_6fb72e07f16f10078dc8539e535aab6d",
+                {
+                    center: [35.1819866272647, 128.10094802687],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24e3f0f6c94990d9515982c50dc8483d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            var locate_control_ead396f5cc49dd022b6cf90eb78794a0 = L.control.locate(
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+            
+        
+    
+            var marker_cdf23167032d0642466112e5377ff13d = L.marker(
+                [35.14566407221499, 128.101236740256],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_cdf23167032d0642466112e5377ff13d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대풍엘피가스</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 가좌동 1011-5<br>
+        경남 진주시 진주대로 405 (가좌동)<br>
+        > <b>가격: 974 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c0a01ba77dcceee232806ed24481ed9 = L.marker(
+                [35.131929289650394, 128.09729116309518],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_4c0a01ba77dcceee232806ed24481ed9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 미래로가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 진주시 정촌면 관봉리 159<br>
+        경남 진주시 정촌면 진주대로 249<br>
+        > <b>가격: 974 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9e2df7c38c52cc29d6df596176e54fde = L.marker(
+                [35.1701869681979, 128.0968982634537],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_9e2df7c38c52cc29d6df596176e54fde.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대천충전소</b><br>
+        <b>SK가스</b><br>
+        경남 진주시 주약동 776-39<br>
+        경남 진주시 강남로 15 (주약동)<br>
+        > <b>가격: 980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6be60dd59f0de6825dbfe72f74ee6088 = L.marker(
+                [35.23284758874811, 128.00886703219848],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_6be60dd59f0de6825dbfe72f74ee6088.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 경남가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 진주시 명석면 용산리 756-1<br>
+        경남 진주시 명석면 진주대로 1968<br>
+        > <b>가격: 990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3d879ecc1d8854e1f6d41e971e934e3d = L.marker(
+                [35.19445904715135, 128.06199568046404],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_3d879ecc1d8854e1f6d41e971e934e3d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진주오렌지충전소</b><br>
+        <b>E1</b><br>
+        경남 진주시 유곡동 122-2<br>
+        경남 진주시 진주대로 1298 (유곡동)<br>
+        > <b>가격: 990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d636aaf14be408623b07bff7f89dbf24 = L.marker(
+                [35.19873643568099, 128.10649795836974],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_d636aaf14be408623b07bff7f89dbf24.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진주LPG충전소</b><br>
+        <b>E1</b><br>
+        경남 진주시 초전동 1495-1<br>
+        경남 진주시 말티고개로 46 (초전동)<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e2f72dba05afd0c63e43f2be110682ab = L.marker(
+                [35.19823739091056, 128.1100883803703],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_e2f72dba05afd0c63e43f2be110682ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유천LPG충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 진주시 초전동 1498-5<br>
+        경남 진주시 말티고개로 69 (초전동)<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5c595a08007d5505dfdc114244547911 = L.marker(
+                [35.17538711029483, 128.15744177491462],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_5c595a08007d5505dfdc114244547911.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대륙가스충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 진주시 문산읍 소문리 422-3<br>
+        경남 진주시 문산읍 월아산로 1183<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_80a23f3dd1ff3cef544cdf924b5b88c7 = L.marker(
+                [35.1698923516045, 128.20709042360215],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_80a23f3dd1ff3cef544cdf924b5b88c7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 동명가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 진주시 문산읍 상문리 35-2<br>
+        경남 진주시 문산읍 진마대로 1062<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_607714f595a3a6f777889e352360cb9d = L.marker(
+                [35.21473594991664, 128.13515803557362],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_607714f595a3a6f777889e352360cb9d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금산LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 금산면 중천리 704<br>
+        경남 진주시 금산면 월아산로 1906<br>
+        > <b>가격: 1,015 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78d60e51dd2418f38276380cedf1f67b = L.marker(
+                [35.16135495002392, 128.0677438395505],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_78d60e51dd2418f38276380cedf1f67b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 동원가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 진주시 내동면 독산리 63-3<br>
+        경남 진주시 내동면 순환로 395<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1df72957c55f37140446bb7dda023b2b = L.marker(
+                [35.169565978684844, 128.1073211718716],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_1df72957c55f37140446bb7dda023b2b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)명성에너지</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 상평동 231-8<br>
+        경남 진주시 솔밭로 5 (상평동)<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_11fbd21256ee2ed17b96f733965783ca = L.marker(
+                [35.200029296414, 128.05213584564493],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_11fbd21256ee2ed17b96f733965783ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진주개인택시2 충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 이현동 686-3<br>
+        경남 진주시 진주대로 1409<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4bd64877b7cfb498eb0ed6243d1415d = L.marker(
+                [35.17219423641588, 128.10670439227107],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_f4bd64877b7cfb498eb0ed6243d1415d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림가스공업(주)</b><br>
+        <b>S-OIL</b><br>
+        경남 진주시 상평동 235-3<br>
+        경남 진주시 솔밭로31번길 6 (상평동)<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_47ee2754350f4f8a7e6efc1452c1272f = L.marker(
+                [35.173550367030046, 128.11221743632797],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_47ee2754350f4f8a7e6efc1452c1272f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대창가스</b><br>
+        <b>S-OIL</b><br>
+        경남 진주시 상평동 214-17<br>
+        경남 진주시 돗골로 61 (상평동)<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2844cea8e3256369ab46ed04f466dcf = L.marker(
+                [35.21266439904632, 128.11539682903108],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_d2844cea8e3256369ab46ed04f466dcf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진주개인택시조합충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 초전동 1098<br>
+        경남 진주시 월아산로 2092<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6e7aa4bf57a4c9d0b241764b735b923e = L.marker(
+                [35.20165223305607, 128.1017354705898],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_6e7aa4bf57a4c9d0b241764b735b923e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태일가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 장재동 224-1<br>
+        경남 진주시 진산로 161 (장재동)<br>
+        > <b>가격: 1,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8888453e6272e1e45e4e2c0c9e40df3e = L.marker(
+                [35.17232064203245, 128.10947002290447],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_8888453e6272e1e45e4e2c0c9e40df3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)합동가스</b><br>
+        <b>SK에너지</b><br>
+        경남 진주시 상평동 224-3<br>
+        경남 진주시 솔밭로32번길 19 (상평동)<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7bbf934e8b1ca0857a69b920a3d37d27 = L.marker(
+                [35.183798235702234, 128.03996048632908],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_7bbf934e8b1ca0857a69b920a3d37d27.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서진주충전소</b><br>
+        <b>S-OIL</b><br>
+        경남 진주시 판문동 517-1<br>
+        경남 진주시 판문로 194 (판문동)<br>
+        > <b>가격: 1,032 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9ab02cacd432faf5bc811c09e53953ee = L.marker(
+                [35.16052600251802, 128.12370959058094],
+                {}
+            ).addTo(map_6fb72e07f16f10078dc8539e535aab6d);
+        
+    
+            marker_9ab02cacd432faf5bc811c09e53953ee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진주(부산방향)주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 진주시 호탄동 382<br>
+        경남 진주시 남해고속도로 194<br>
+        > <b>가격: 1,076 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

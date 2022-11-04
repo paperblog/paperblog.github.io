@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f8b7ec5981c159851e7612484830c3fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f8b7ec5981c159851e7612484830c3fd" ></div>
+        
+</body>
+<script>    
+    
+            var map_f8b7ec5981c159851e7612484830c3fd = L.map(
+                "map_f8b7ec5981c159851e7612484830c3fd",
+                {
+                    center: [36.35598338944887, 126.59025794563841],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3f6d512d235051caa834cb2490738e4a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            var locate_control_139ad3bbb83f70445e85fa4a7a691663 = L.control.locate(
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+            
+        
+    
+            var marker_62289aaea1fb5e703f083e045c3235fd = L.marker(
+                [36.37012523289398, 126.62586499375593],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_62289aaea1fb5e703f083e045c3235fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보령머드LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 화산동 547-24<br>
+        충남 보령시 대청로 379 (화산동)<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8c8291df10414c6df9beaa46b9957f40 = L.marker(
+                [36.33264714230793, 126.5997308223411],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_8c8291df10414c6df9beaa46b9957f40.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주) 보령충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 명천동 624-1<br>
+        충남 보령시 보령남로 130-17 (명천동)<br>
+        > <b>가격: 1,049 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c9fa46e35f0f1c7e288ea40b30aabb60 = L.marker(
+                [36.345768769078965, 126.58374446867825],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_c9fa46e35f0f1c7e288ea40b30aabb60.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내항LPG충전소</b><br>
+        <b>E1</b><br>
+        충남 보령시 내항동 890-7<br>
+        충남 보령시  해안로 71 (내항동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_241dad34d8cc251b65afc78c55031023 = L.marker(
+                [36.35872908794685, 126.6168175643636],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_241dad34d8cc251b65afc78c55031023.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스케이 보령충전소</b><br>
+        <b>SK가스</b><br>
+        충남 보령시 화산동 705-8<br>
+        충남 보령시 대청로 224 (화산동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a12478c2f8111f02dd7b8869ec99a5c6 = L.marker(
+                [36.35655391885577, 126.611864682485],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_a12478c2f8111f02dd7b8869ec99a5c6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK서해에너지</b><br>
+        <b>SK가스</b><br>
+        충남 보령시 동대동 290-1<br>
+        충남 보령시 대청로 177 (동대동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de3dab63f91f5adfafba25d6b019bc4a = L.marker(
+                [36.336238623646786, 126.57033325850979],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_de3dab63f91f5adfafba25d6b019bc4a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천IC충전소</b><br>
+        <b>E1</b><br>
+        충남 보령시 대해로 286 (남곡동)<br>
+        충남 보령시 대해로 286 (남곡동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f8ab3c49e9c36ca7aafc15484ef6d3c = L.marker(
+                [36.37237760255958, 126.55632108661584],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_7f8ab3c49e9c36ca7aafc15484ef6d3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천유통(주)대천(하)주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 주교리 903-15 대천휴게소 주유소(하행선)<br>
+        충남 보령시 주교면 서해안고속도로 199-1<br>
+        > <b>가격: 1,129 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a498ce79da2888bded88a7937cf4661a = L.marker(
+                [36.37542673830113, 126.55738668835777],
+                {}
+            ).addTo(map_f8b7ec5981c159851e7612484830c3fd);
+        
+    
+            marker_a498ce79da2888bded88a7937cf4661a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천유통㈜대천(상)시흥방향</b><br>
+        <b>E1</b><br>
+        충남 보령시 주교면 주교리 903-31 대천휴게소 주유소(상행선)<br>
+        충남 보령시 주교면 서해안고속도로 200-1<br>
+        > <b>가격: 1,129 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

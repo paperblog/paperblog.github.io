@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15bfeaeb584ee91a989b7788e904d919 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_15bfeaeb584ee91a989b7788e904d919" ></div>
+        
+</body>
+<script>    
+    
+            var map_15bfeaeb584ee91a989b7788e904d919 = L.map(
+                "map_15bfeaeb584ee91a989b7788e904d919",
+                {
+                    center: [34.95362166210279, 127.6522316096968],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47d39680ffcf0ca2f36c1d7d29f72154 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            var locate_control_50f7813c4f4f9b83e8f893f51dc84dc8 = L.control.locate(
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+            
+        
+    
+            var marker_ca8dce39749e9936787237c2a878da62 = L.marker(
+                [34.91711422300445, 127.62403090594005],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_ca8dce39749e9936787237c2a878da62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일원황금주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 광양시 황금동 991-3<br>
+        전남 광양시 제철로 661<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7f139501743f291b565443c7ca11d24 = L.marker(
+                [34.965832889088304, 127.72528994818798],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_e7f139501743f291b565443c7ca11d24.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)백운에너지</b><br>
+        <b>자가상표</b><br>
+        전남 광양시 옥곡면 신금리 1507-84<br>
+        전남 광양시 옥곡면 의암공단길 7<br>
+        > <b>가격: 1,044 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f0b1851a524c27d8832b5d1c6d0e5cc = L.marker(
+                [34.96319902294597, 127.61018813945267],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_7f0b1851a524c27d8832b5d1c6d0e5cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거성LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 광양시 광양읍 용강리 230-5<br>
+        전남 광양시 광양읍 백운로 226<br>
+        > <b>가격: 1,046 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e82af55c29516d0dae155f7fe90c3de3 = L.marker(
+                [34.9552053428534, 127.72968407323764],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_e82af55c29516d0dae155f7fe90c3de3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대성에너지 직영 동광양충전소</b><br>
+        <b>SK가스</b><br>
+        전남 광양시 광영동 556-2<br>
+        전남 광양시 강변로 98 (광영동)<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30703fd373b4aa47104a54c358dba1bc = L.marker(
+                [34.94796472152051, 127.6773493458242],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_30703fd373b4aa47104a54c358dba1bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부광LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 광양시 성황동 75-3<br>
+        전남 광양시 백운로 955-4 (성황동)<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a97495f3006b96a1c5b4c1253ae5a8a = L.marker(
+                [34.945511061960694, 127.67737356616702],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_9a97495f3006b96a1c5b4c1253ae5a8a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>희망찬충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 광양시 성황동 567<br>
+        전남 광양시 백운로 978<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c80dd7895975ddbb15821ea0a58bb83b = L.marker(
+                [34.96629613567362, 127.60116869888836],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_c80dd7895975ddbb15821ea0a58bb83b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)반디가스 광양점</b><br>
+        <b>E1</b><br>
+        전남 광양시 광양읍 용강리 793<br>
+        전남 광양시 광양읍 용두길 14<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6508419ca81dbafa21e74a8b41d5cec0 = L.marker(
+                [34.96787782998267, 127.72629068249532],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_6508419ca81dbafa21e74a8b41d5cec0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대륙엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        전남 광양시 옥곡면 신금리 1507-60<br>
+        전남 광양시 옥곡면 강변로 247<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_397753db1ce272d87f6309a771330a50 = L.marker(
+                [34.94037838657615, 127.70571290859881],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_397753db1ce272d87f6309a771330a50.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 가야산에너지충전소</b><br>
+        <b>SK가스</b><br>
+        전남 광양시 마동 421-2<br>
+        전남 광양시 백운로 1265 (마동)<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d938e102dbb7ec0fe5e1f25be37f88f = L.marker(
+                [34.96471791402249, 127.58161094397045],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_8d938e102dbb7ec0fe5e1f25be37f88f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아폴론LPG충전소</b><br>
+        <b>E1</b><br>
+        전남 광양시 광양읍 덕례리 2-7<br>
+        전남 광양시 광양읍 순광로 591<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3d50250e40d23fc658a6e0a945bc3e92 = L.marker(
+                [34.964988364310265, 127.5586133339434],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_3d50250e40d23fc658a6e0a945bc3e92.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금당LPG충전소</b><br>
+        <b>E1</b><br>
+        전남 광양시 광양읍 덕례리  1374-12<br>
+        전남 광양시 광양읍 동주1길 7<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d15341be4d91b023510cda80d9a0361c = L.marker(
+                [34.944374053294936, 127.60946676965571],
+                {}
+            ).addTo(map_15bfeaeb584ee91a989b7788e904d919);
+        
+    
+            marker_d15341be4d91b023510cda80d9a0361c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금선</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 광양시 광양읍 초남리 557-4<br>
+        전남 광양시 광양읍 제철로 237-1<br>
+        > <b>가격: 1,255 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

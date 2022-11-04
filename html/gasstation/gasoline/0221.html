@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c3ffac46a8c5427fb3e4185568e5f03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6c3ffac46a8c5427fb3e4185568e5f03" ></div>
+        
+</body>
+<script>    
+    
+            var map_6c3ffac46a8c5427fb3e4185568e5f03 = L.map(
+                "map_6c3ffac46a8c5427fb3e4185568e5f03",
+                {
+                    center: [37.80009409781384, 127.02566376276498],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7d811958de2bc8a06176cc492ab4727 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            var locate_control_9cf72fb1b75f6c103eed90dbb8d89061 = L.control.locate(
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+            
+        
+    
+            var marker_635c7f14d92367480cd05c68c797a5b5 = L.marker(
+                [37.790242878294094, 127.04833574825983],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_635c7f14d92367480cd05c68c797a5b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원흥 양주지점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 산북동 198-3<br>
+        경기 양주시 평화로 1107 (산북동)<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f671fb75ed4a09cd5331de354f9b3c92 = L.marker(
+                [37.82443337249751, 127.05058520039854],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_f671fb75ed4a09cd5331de354f9b3c92.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>회천주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양주시 덕계동 505-1<br>
+        경기 양주시 평화로 1505 (덕계동)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee19b4a990de4b75a32d214f6d940baa = L.marker(
+                [37.81163290415631, 126.99230997035167],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_ee19b4a990de4b75a32d214f6d940baa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광적주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양주시 광적면 가납리 444-25<br>
+        경기 양주시 광적면 부흥로 917<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d5d4726becbd1716d57cfb7251a6d85 = L.marker(
+                [37.81326762067355, 126.99034077810119],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_8d5d4726becbd1716d57cfb7251a6d85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)호호클린주유소</b><br>
+        <b>자가상표</b><br>
+        경기 양주시 광적면 가납리 434-1<br>
+        경기 양주시 광적면 부흥로 889<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ebf6db1ad4bc1af5f06d33a309ed0cbb = L.marker(
+                [37.805494302446675, 127.0012456946128],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_ebf6db1ad4bc1af5f06d33a309ed0cbb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하나셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양주시 백석읍 방성리 86-3<br>
+        경기 양주시 백석읍 부흥로 1024<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d39f5511e91afb3e7dc62025b8903d1 = L.marker(
+                [37.72434597873089, 126.94900878055469],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_1d39f5511e91afb3e7dc62025b8903d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>셀프제일주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 양주시 장흥면 일영리 46-2<br>
+        경기 양주시 장흥면 권율로 111<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a85ee4e92fcac89691c6cd2b7da72fd2 = L.marker(
+                [37.698919035921136, 126.96942728163177],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_a85ee4e92fcac89691c6cd2b7da72fd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)교현 알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 양주시 장흥면 교현리 333-3<br>
+        경기 양주시 장흥면 북한산로 863<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7d8635977db98cbf66cac1135c5de90 = L.marker(
+                [37.80165358057173, 127.07370765200352],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_e7d8635977db98cbf66cac1135c5de90.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>킹콩주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 고읍동 432, 432-1<br>
+        경기 양주시 고덕로 304 (고읍동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a894565c0476fdd91b640a9ab48ea9c5 = L.marker(
+                [37.84997377183808, 127.05448136283505],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_a894565c0476fdd91b640a9ab48ea9c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일석유(주) 덕정IC주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 회정동 17-8<br>
+        경기 양주시 평화로 1803<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e87c866e5e3ae6e9f8d7d67fbb4d29b2 = L.marker(
+                [37.84731888226621, 127.05481328866605],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_e87c866e5e3ae6e9f8d7d67fbb4d29b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서울에너지 하늘주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 회정동 60-8<br>
+        경기 양주시 평화로 1772 (회정동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93bac583e90e0ac2c7042ed241cd9250 = L.marker(
+                [37.81221714429459, 126.95757304145005],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_93bac583e90e0ac2c7042ed241cd9250.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태영주유소</b><br>
+        <b>자가상표</b><br>
+        경기 양주시 백석읍 연곡리 127-1<br>
+        경기 양주시 백석읍 월암로 208<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3970fc3e48e0e0a3d10a5ac6a7c0855d = L.marker(
+                [37.87197025050104, 126.99532709745762],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_3970fc3e48e0e0a3d10a5ac6a7c0855d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하나주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 남면 상수리 111-4<br>
+        경기 양주시 남면 화합로 591<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_598db8c865831d64b3a4398504535901 = L.marker(
+                [37.78726929992959, 127.01999195037898],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_598db8c865831d64b3a4398504535901.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)어하둥둥알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 양주시 유양동 612-4<br>
+        경기 양주시 부흥로 1300<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_85d021227f1e0f916db512ef9123d27d = L.marker(
+                [37.80721924177331, 126.99853106051509],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_85d021227f1e0f916db512ef9123d27d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사랑주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 백석읍 방성리 51-16<br>
+        경기 양주시 백석읍 부흥로 991<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b798eec6326a31e2832182e0ad09aa0 = L.marker(
+                [37.795529396383905, 127.07763652856252],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_9b798eec6326a31e2832182e0ad09aa0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고읍주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 양주시 광사동233-6<br>
+        경기 양주시 부흥로 1941 (광사동)<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_be34d0f46c243c5be098cf3594c51c35 = L.marker(
+                [37.79248313865838, 127.085633548377],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_be34d0f46c243c5be098cf3594c51c35.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서울주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 광사동 659-3<br>
+        경기 양주시 고읍로 146<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0fe72af85b5c3c3f2da2f99863580ed2 = L.marker(
+                [37.791536779647494, 127.07289473578015],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_0fe72af85b5c3c3f2da2f99863580ed2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사과나무주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 광사동 317-9<br>
+        경기 양주시 부흥로 1881 (광사동)<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9ad14666dcd2c4d4c55899a70eea7418 = L.marker(
+                [37.78979114215705, 127.07090010627111],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_9ad14666dcd2c4d4c55899a70eea7418.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>로뎀에너지(주) 광사IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양주시 광사동 339-6<br>
+        경기 양주시 부흥로 1848<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_286b505b7ee90a96c866297e0544d7a0 = L.marker(
+                [37.787298916754054, 127.07058376015863],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_286b505b7ee90a96c866297e0544d7a0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양주제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양주시 광사동 373-2<br>
+        경기 양주시 부흥로 1820 (광사동)<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d1d255ebb8db9424419904aef16d993 = L.marker(
+                [37.79928431878132, 126.97994766893369],
+                {}
+            ).addTo(map_6c3ffac46a8c5427fb3e4185568e5f03);
+        
+    
+            marker_4d1d255ebb8db9424419904aef16d993.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼우 양주지점</b><br>
+        <b>SK에너지</b><br>
+        경기 양주시 백석읍 오산리 456-7<br>
+        경기 양주시 백석읍 중앙로 308<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

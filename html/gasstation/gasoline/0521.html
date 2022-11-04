@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_578e6f5bb3ab052a3c621a34bad58ea6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_578e6f5bb3ab052a3c621a34bad58ea6" ></div>
+        
+</body>
+<script>    
+    
+            var map_578e6f5bb3ab052a3c621a34bad58ea6 = L.map(
+                "map_578e6f5bb3ab052a3c621a34bad58ea6",
+                {
+                    center: [36.13254676980505, 127.48884221185116],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69e52b253b184d538bb5001d17c899a0 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            var locate_control_f8c7fdcbe2ecca6f10a7afe3f0a1a94e = L.control.locate(
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+            
+        
+    
+            var marker_c97ee1cd80d4d44aeb607101951b1ee2 = L.marker(
+                [36.1552420776897, 127.49596133649705],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_c97ee1cd80d4d44aeb607101951b1ee2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜케이알산업 인삼랜드(하남)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 금산군 군북면 외부리 721-3<br>
+        충남 금산군 군북면 대암길 34-30<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_82718a26e69a591958368e382bdeb245 = L.marker(
+                [36.152763599087265, 127.49767283976576],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_82718a26e69a591958368e382bdeb245.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인삼랜드(하)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 금산군 군북면 외부리 718<br>
+        충청남도 금산군 군북면 어필각로 300<br>
+        > <b>가격: 1,608 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_022197913810437f360c0af85971609e = L.marker(
+                [36.099939595630396, 127.51750432128466],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_022197913810437f360c0af85971609e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 금산군 금산읍 신대리 4-3<br>
+        충남 금산군 금산읍 인삼로 332<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_359f609e904ef04988890a28cee9bf93 = L.marker(
+                [36.154080843621564, 127.38833769056654],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_359f609e904ef04988890a28cee9bf93.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 금산군 진산면 교촌리 156-3<br>
+        충남 금산군 진산면 대둔산로 604<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73333ce7f120bbcb5ba239c5d557b360 = L.marker(
+                [36.11290022601248, 127.48148871084383],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_73333ce7f120bbcb5ba239c5d557b360.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아인주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 금산군 금산읍 상리 331-2<br>
+        충남 금산군 금산읍 진산로 31<br>
+        > <b>가격: 1,620 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cfdc962fac19edbaa01633c7ea1440f5 = L.marker(
+                [36.11403523093928, 127.49379030929298],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_cfdc962fac19edbaa01633c7ea1440f5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼삼주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 금산군 금산읍 중도리 188-109<br>
+        충남 금산군 금성면 금산로 1578<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f4de2533fb3e62bc647c5cbb73a2050 = L.marker(
+                [36.17310380864359, 127.47435697609932],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_7f4de2533fb3e62bc647c5cbb73a2050.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금정주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 금산군 추부면 추정리 413-7<br>
+        충남 금산군 추부면 금산로 2341<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e8db0c409853d9a12058e7c8a97f114 = L.marker(
+                [36.17889751119244, 127.44013840184654],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_7e8db0c409853d9a12058e7c8a97f114.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공단주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 금산군 복수면 155-3<br>
+        충남 금산군 복수면 다복로 477<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a453c0c6cd84c913ce83cf544ce4893 = L.marker(
+                [36.10266584109302, 127.52637468468164],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_7a453c0c6cd84c913ce83cf544ce4893.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)청정에너지</b><br>
+        <b>SK에너지</b><br>
+        충남 금산군 제원면 수당리 217-26<br>
+        충남 금산군 제원면 인삼로 416<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_378caeaffebffbdfe61a8c43cd18f45c = L.marker(
+                [36.062309362667094, 127.55707520053981],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_378caeaffebffbdfe61a8c43cd18f45c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부리농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 금산군 부리면 양곡리 128-2<br>
+        충남 금산군 부리면 무금로 1585<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_26d1dba2e680ab845fb776079240d5d0 = L.marker(
+                [36.149327426537845, 127.49309588702727],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_26d1dba2e680ab845fb776079240d5d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>범아주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 금산군 군북면 외부리 692<br>
+        충남 금산군 군북면 어필각로 241<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5527914a4098177933878ea5d185e030 = L.marker(
+                [36.08402665813152, 127.50551724916882],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_5527914a4098177933878ea5d185e030.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 금산군 남일면 황풍리 370-1<br>
+        충남 금산군 남일면 무금로 2161<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5fa63ebb8f3d9028b331cea0a40752e3 = L.marker(
+                [36.18017937066464, 127.47241992256969],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_5fa63ebb8f3d9028b331cea0a40752e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>깻잎셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충청남도 금산군 추부면 추정리 290-5<br>
+        충청남도 금산군 추부면 금산로 2426<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ec0ea4b39300afa8726a0258c768482e = L.marker(
+                [36.16821729455178, 127.47543993131357],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_ec0ea4b39300afa8726a0258c768482e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>추정주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 금산군 추부면 추정리 595-1<br>
+        충남 금산군 추부면 금산로 2284<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_807c9f199c40371c2157d19d0c636ea8 = L.marker(
+                [36.120159402558, 127.49686707470434],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_807c9f199c40371c2157d19d0c636ea8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼마주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 금산군 금성면 양전리 22-4<br>
+        충남 금산군 금성면 금산로 1654<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e41744fa308008251de8c674f4820acc = L.marker(
+                [36.128658448809944, 127.49861684257665],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_e41744fa308008251de8c674f4820acc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새말주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 금산군 군북면 내부리 669-20<br>
+        충남 금산군 군북면 금산로 1748<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e09debb4bd31e432bb31855751ef60f8 = L.marker(
+                [36.13868507210931, 127.49572811836914],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_e09debb4bd31e432bb31855751ef60f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가까운주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 금산군 군북면 외부리 551-8<br>
+        충남 금산군 군북면 어필각로 117<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e38830a99d76566149e436ebac1edaf = L.marker(
+                [36.110032085086395, 127.55265426446968],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_0e38830a99d76566149e436ebac1edaf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉황주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 금산군 제원면 제원리  62-6<br>
+        충남 금산군 제원면 금강로 172<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_edc14aeea69a2f2d69cbc2d613eb3885 = L.marker(
+                [36.163234923227506, 127.4103571749618],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_edc14aeea69a2f2d69cbc2d613eb3885.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대둔주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 금산군 복수면 다복리 477<br>
+        충남 금산군 복수면 다복로 121<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_723e50272e763f4452722acc2377feb9 = L.marker(
+                [36.10247661784739, 127.50344730044382],
+                {}
+            ).addTo(map_578e6f5bb3ab052a3c621a34bad58ea6);
+        
+    
+            marker_723e50272e763f4452722acc2377feb9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜주운 금산인삼주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 금산군 금산읍 신대리 643<br>
+        충남 금산군 금산읍 인삼로 198<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

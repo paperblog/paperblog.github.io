@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20eb752756cf59bd550c48bd5f231310 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_20eb752756cf59bd550c48bd5f231310" ></div>
+        
+</body>
+<script>    
+    
+            var map_20eb752756cf59bd550c48bd5f231310 = L.map(
+                "map_20eb752756cf59bd550c48bd5f231310",
+                {
+                    center: [34.46135106206827, 126.25432812610002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe7fbab000f58d7ed897769b35acfa7c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            var locate_control_ebeff22575d73fd9b48b58234d3758c3 = L.control.locate(
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+            
+        
+    
+            var marker_3c8af85a58056084d6f0262febd352a3 = L.marker(
+                [34.502085341638924, 126.31476110048825],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_3c8af85a58056084d6f0262febd352a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진일주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 진도군 고군면 고성리 310-13<br>
+        전남 진도군 고군면 오일시1길 51<br>
+        > <b>가격: 1,665 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b781d3031f0b4f9f6c970be82a95395f = L.marker(
+                [34.51452011414807, 126.3171048292763],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_b781d3031f0b4f9f6c970be82a95395f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진고개주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 진도군 군내면 송산리 2-1<br>
+        전남 진도군 군내면 송산길 124<br>
+        > <b>가격: 1,665 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c2a26ccf1cdefc6d6f0fe44c2187e2fd = L.marker(
+                [34.50377907580098, 126.3168765004169],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_c2a26ccf1cdefc6d6f0fe44c2187e2fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>선진농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 고군면 고성리 271-1<br>
+        전남 진도군 고군면 오일시1길 82<br>
+        > <b>가격: 1,665 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13c4078830cc5bdd025c2e14d377c8ac = L.marker(
+                [34.48311502727215, 126.26673763131248],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_13c4078830cc5bdd025c2e14d377c8ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진도주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 진도군 진도읍 쌍정리 1-4<br>
+        전남 진도군 진도읍 옥주길 44<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c661fe6b8ac2a1ee00ece69bf0346ad8 = L.marker(
+                [34.45459950437335, 126.22558278880071],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_c661fe6b8ac2a1ee00ece69bf0346ad8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하늘주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 진도군 진도읍 염장리 166<br>
+        전남 진도군 진도읍 진도대로 6650<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_11efaecc24fc41c4fae49056bca7ea73 = L.marker(
+                [34.42645179508212, 126.23200805394754],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_11efaecc24fc41c4fae49056bca7ea73.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서진도농협광석지소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 임회면 삼막리238<br>
+        전남 진도군 임회면 광석길 53<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28a6bb892a1704050792a11982b40b21 = L.marker(
+                [34.423827349503945, 126.16832982778149],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_28a6bb892a1704050792a11982b40b21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서진도농협 지산지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 지산면 인지리 309-26<br>
+        전남 진도군 지산면 인지인천1길 12<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee8db09caca4e317b6587c0c96f116de = L.marker(
+                [34.297008837375564, 126.05062592954593],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_ee8db09caca4e317b6587c0c96f116de.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서진도농협 조도지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 조도면 창유리 225-1<br>
+        전남 진도군 조도면 조도대로 419<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_392f6423bcdb4669865f0f78eb332ec5 = L.marker(
+                [34.53716468392437, 126.29742905493039],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_392f6423bcdb4669865f0f78eb332ec5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금골산주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 진도군 군내면 둔전리 1844<br>
+        전남 진도군 군내면 진도대로 7955<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a6cf5805870cad17c6c8db02781e3148 = L.marker(
+                [34.48133745519125, 126.26837638872091],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_a6cf5805870cad17c6c8db02781e3148.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진도농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 진도읍 동외리 1184-8<br>
+        전남 진도군 진도읍 동외2길 2<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa4521c0f3dd3a99232db47319cf89e0 = L.marker(
+                [34.44178287194454, 126.28014445429037],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_fa4521c0f3dd3a99232db47319cf89e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진도농협의신지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 진도군 의신면 돈지리 576-1<br>
+        전남 진도군 의신면 돈지로 6<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4515faca5a845bf5d196ab783e275243 = L.marker(
+                [34.41040060266006, 126.19391110130711],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_4515faca5a845bf5d196ab783e275243.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>임회주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 진도군 임회면 석교리 236-1<br>
+        전남 진도군 임회면 진도대로 5861<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08bb7a61d12481dc09cefa353772b50a = L.marker(
+                [34.408400827627474, 126.1942444181271],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_08bb7a61d12481dc09cefa353772b50a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사거리주유소(S)</b><br>
+        <b>S-OIL</b><br>
+        전남 진도군 임회면 석교리 321<br>
+        전남 진도군 임회면 진도대로 5838<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0aa80933944de57eb571c8afb7e49b8 = L.marker(
+                [34.48755934267323, 126.35092470628437],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_b0aa80933944de57eb571c8afb7e49b8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 진도군 고군면 지막리 1192<br>
+        전남 진도군 고군면 진도대로 385<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d88c77d67252de3dd4358be8fe1db6eb = L.marker(
+                [34.47744899966326, 126.26840418810536],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_d88c77d67252de3dd4358be8fe1db6eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나라주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 진도군 진도읍 쌍정리 167<br>
+        전남 진도군 진도읍 남산로 130-48<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1e847c65565293c68f8bbabc7012c7fd = L.marker(
+                [34.46773200670768, 126.27467267074444],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_1e847c65565293c68f8bbabc7012c7fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>왕고개주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 진도군 의신면 침계리 878-6<br>
+        전남 진도군 의신면 왕온로 22<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f44cf1e6a2d9072d851fe066de4003b9 = L.marker(
+                [34.48455935955256, 126.27798664109213],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_f44cf1e6a2d9072d851fe066de4003b9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수정주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 진도군 진도읍 동외리 289<br>
+        전남 진도군 진도읍 진도대로 7290<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f3c3f6270cb72a7df566c19d6fadcca7 = L.marker(
+                [34.48147629978294, 126.26184917956391],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_f3c3f6270cb72a7df566c19d6fadcca7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)신코끼리주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 진도군 진도읍 남동리 745-11<br>
+        전남 진도군 진도읍 남동1길 31<br>
+        > <b>가격: 1,769 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f590f7f96adb195d1a7678dd46373299 = L.marker(
+                [34.482420684374574, 126.27226493116477],
+                {}
+            ).addTo(map_20eb752756cf59bd550c48bd5f231310);
+        
+    
+            marker_f590f7f96adb195d1a7678dd46373299.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>바다주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 진도군 진도읍 동외리 1039-4<br>
+        전남 진도군 진도읍 동외1길 44<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56e6918a00fd024aebe5abc97b17ad04 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_56e6918a00fd024aebe5abc97b17ad04" ></div>
+        
+</body>
+<script>    
+    
+            var map_56e6918a00fd024aebe5abc97b17ad04 = L.map(
+                "map_56e6918a00fd024aebe5abc97b17ad04",
+                {
+                    center: [37.570901445137, 126.93803227026639],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05d43e2e2a9b7221d42d3369999aa51d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            var locate_control_cd371749cd1a1644b87f78d55ab73e8d = L.control.locate(
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+            
+        
+    
+            var marker_4b30bacaffd938335e79c698f0995a03 = L.marker(
+                [37.583543487163915, 126.95012844229052],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_4b30bacaffd938335e79c698f0995a03.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)성림에너지 홍제동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서대문구 홍제동 22-3<br>
+        서울 서대문구 통일로 372<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_267214334d0f7c40ad766eaa3803ce2c = L.marker(
+                [37.56501822634281, 126.92982092597978],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_267214334d0f7c40ad766eaa3803ce2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)안국에너지 삼보셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서대문구 연희동 194-32<br>
+        서울 서대문구 연희로 78 (연희동)<br>
+        > <b>가격: 1,938 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ac62c59d3424ece02814150f85117f3 = L.marker(
+                [37.55979658951405, 126.92682124815794],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_1ac62c59d3424ece02814150f85117f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙에너비스 동교지점</b><br>
+        <b>SK에너지</b><br>
+        서울 서대문구 창천동 512-3<br>
+        서울 서대문구 연희로 12 (창천동)<br>
+        > <b>가격: 1,958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc7dc92462f146a8c85c0df493824ea6 = L.marker(
+                [37.57345908070632, 126.93592211237802],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_cc7dc92462f146a8c85c0df493824ea6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 연세주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서대문구 연희동 76-11<br>
+        서울 서대문구 연희로 184<br>
+        > <b>가격: 1,978 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8789ad40a42d3feb86c158f6394d465 = L.marker(
+                [37.569239976874016, 126.9325428605904],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_d8789ad40a42d3feb86c158f6394d465.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연희주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서대문구 연희동 89-7<br>
+        서울 서대문구 연희로 129 (연희동 89-7번지)<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33d1667042d2638196693e9129317ed7 = L.marker(
+                [37.58423834523662, 126.9494578519475],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_33d1667042d2638196693e9129317ed7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 독립문주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서대문구 홍제동 103-9<br>
+        서울 서대문구 통일로 384 (홍제동)<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b07953eb249fd9c18acde0a68e4ad073 = L.marker(
+                [37.56101441012123, 126.94153245052053],
+                {}
+            ).addTo(map_56e6918a00fd024aebe5abc97b17ad04);
+        
+    
+            marker_b07953eb249fd9c18acde0a68e4ad073.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행촌제2주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서대문구 대신동 16-7<br>
+        서울 서대문구 성산로 490 (대신동)<br>
+        > <b>가격: 2,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

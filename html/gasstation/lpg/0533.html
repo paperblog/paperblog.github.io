@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07c4890df8520da7a9d730a9ff8c164a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_07c4890df8520da7a9d730a9ff8c164a" ></div>
+        
+</body>
+<script>    
+    
+            var map_07c4890df8520da7a9d730a9ff8c164a = L.map(
+                "map_07c4890df8520da7a9d730a9ff8c164a",
+                {
+                    center: [36.879345095360996, 126.72456588808278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31b4d6f4c547e4b9cfeab9ed9246e7e0 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            var locate_control_57f9db02be0f2ad2087166f312c65f2b = L.control.locate(
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+            
+        
+    
+            var marker_c05f37fd0c73c52dea3aa9bbe159b7a4 = L.marker(
+                [36.88091067291058, 126.81129450497308],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_c05f37fd0c73c52dea3aa9bbe159b7a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운정LPG충전소</b><br>
+        <b>자가상표</b><br>
+        충남 당진시 신평면 운정리 715-2<br>
+        충남 당진시 신평면 서해로 7516-3<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d0237155c413bfba3e5bd9c7e7ae9da1 = L.marker(
+                [36.89378104288148, 126.80881766707941],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_d0237155c413bfba3e5bd9c7e7ae9da1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 효성LPG충전소</b><br>
+        <b>SK가스</b><br>
+        충남 당진시 신평면 부수리 362-7<br>
+        충남 당진시 신평면 북부산업로 135<br>
+        > <b>가격: 1,001 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4fbca3f816b924865fc1470493935c6c = L.marker(
+                [36.894267642215866, 126.71781061468751],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_4fbca3f816b924865fc1470493935c6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>당진IC충전소</b><br>
+        <b>SK에너지</b><br>
+        충남 당진시 송악읍 광명리 236-36<br>
+        충남 당진시 서해로 6622<br>
+        > <b>가격: 1,006 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1104c548c6d1f108e71fd2e1b81787e7 = L.marker(
+                [36.88542468645235, 126.74541985975002],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_1104c548c6d1f108e71fd2e1b81787e7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신평엘피지충전소</b><br>
+        <b>SK에너지</b><br>
+        충남 당진시 신평면 거산리 363-1<br>
+        충남 당진시 서해로 6923-5<br>
+        > <b>가격: 1,007 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d01a6f1fb94e48935310d02cf4a204eb = L.marker(
+                [36.90222689593283, 126.67244950164444],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_d01a6f1fb94e48935310d02cf4a204eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 21세기충전소</b><br>
+        <b>SK가스</b><br>
+        충남 당진시 시곡동 148(당진3동)<br>
+        충남 당진시 서해로 6176<br>
+        > <b>가격: 1,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f913bb94c28c8929cb6e55e2f5dd256 = L.marker(
+                [36.796308359018, 126.78150774522106],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_8f913bb94c28c8929cb6e55e2f5dd256.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대우가스충전소</b><br>
+        <b>S-OIL</b><br>
+        충남 당진시 합덕읍 운산리 73-2<br>
+        충남 당진시 합덕읍 남부로 1985<br>
+        > <b>가격: 1,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_678c27dfffe544e024ae1225016d151f = L.marker(
+                [36.79740001159554, 126.78252140874936],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_678c27dfffe544e024ae1225016d151f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)비티비가스</b><br>
+        <b>자가상표</b><br>
+        충남 당진시 합덕읍 운산리 62<br>
+        충남 당진시 합덕읍 덕평로 413<br>
+        > <b>가격: 1,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_300b9628fadf74718da6edcb94178ef1 = L.marker(
+                [36.86558903463803, 126.61139980101832],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_300b9628fadf74718da6edcb94178ef1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영일충전소</b><br>
+        <b>SK에너지</b><br>
+        충남 당진시 용연동 911-2<br>
+        충남 당진시 역천로 581<br>
+        > <b>가격: 1,025 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f17bf3f9563b3688c3b02c03fb2c06b7 = L.marker(
+                [36.90385073506226, 126.64030705452043],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_f17bf3f9563b3688c3b02c03fb2c06b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)당진엘피지</b><br>
+        <b>SK에너지</b><br>
+        충남 당진시 원당동 957-5<br>
+        충남 당진시 원당로 17<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6fd64d7171be206d34ece81ab8c454a0 = L.marker(
+                [36.88611122347159, 126.64850760232333],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_6fd64d7171be206d34ece81ab8c454a0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>당진가스충전소</b><br>
+        <b>E1</b><br>
+        충남 당진시 수청동 760-1<br>
+        충남 당진시 대덕로 238<br>
+        > <b>가격: 1,031 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f0ffef2435fe8acb861d0782b1946348 = L.marker(
+                [36.838389486663424, 126.58369361405222],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_f0ffef2435fe8acb861d0782b1946348.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 거룡엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        충남 당진시 정미면 사관리 96-12<br>
+        충남 당진시 정미면 서해로 4912<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_779c26610be2b4532fc0cfde3e4155ca = L.marker(
+                [36.943875834169894, 126.80804260068297],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_779c26610be2b4532fc0cfde3e4155ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)KLP 행담도하행지점</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 당진시 신평면 매산리 산 1-28<br>
+        충남 당진시 신평면 서해안고속도로 275<br>
+        > <b>가격: 1,222 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da5862fafac808a561c9410ce1c08a37 = L.marker(
+                [36.94335061468123, 126.80758457037398],
+                {}
+            ).addTo(map_07c4890df8520da7a9d730a9ff8c164a);
+        
+    
+            marker_da5862fafac808a561c9410ce1c08a37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)KLP 행담도상행지점</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 당진시 신평면 매산리 산 1-30<br>
+        충남 당진시 신평면 서해안고속도로 275<br>
+        > <b>가격: 1,222 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_976442d99a7c7dc9724a1629db8a257a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_976442d99a7c7dc9724a1629db8a257a" ></div>
+        
+</body>
+<script>    
+    
+            var map_976442d99a7c7dc9724a1629db8a257a = L.map(
+                "map_976442d99a7c7dc9724a1629db8a257a",
+                {
+                    center: [36.810374225495856, 126.99802117609666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbcd50e312c8737502d4ed24d237a656 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            var locate_control_af7484d852e0171f69bb8a3d7b3433f1 = L.control.locate(
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+            
+        
+    
+            var marker_6d4ea2ce32423be5f89c7384bbc82eb3 = L.marker(
+                [36.83457227174096, 127.08159609656249],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_6d4ea2ce32423be5f89c7384bbc82eb3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 삼성충전소</b><br>
+        <b>SK가스</b><br>
+        충남 아산시 음봉면 덕지리 46-1<br>
+        충남 아산시 음봉면 덕지리 46-1<br>
+        > <b>가격: 962 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_281cb660c8b107d372794ec34610cb68 = L.marker(
+                [36.84589885742886, 126.96329234811186],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_281cb660c8b107d372794ec34610cb68.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아산오렌지충전소</b><br>
+        <b>E1</b><br>
+        충남 아산시 염치읍 서원리 5-8<br>
+        충남 아산시 염치읍 아산로 809<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_992590b86f4276387c6fa17fc251864d = L.marker(
+                [36.85015640547131, 126.96169875239524],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_992590b86f4276387c6fa17fc251864d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>25시LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        충남 아산시 영인면 아산리 44-2<br>
+        충남 아산시 영인면 아산로 854<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43f9de8904c2fde3b06a5bfe0af9e234 = L.marker(
+                [36.79844297763938, 127.09328259237417],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_43f9de8904c2fde3b06a5bfe0af9e234.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KTX LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 아산시 배방읍 장재리1196<br>
+        충남 아산시 배방읍 이순신대로 832<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8ad33fc4151edb27f5d7d6cd5105b1b = L.marker(
+                [36.82957872262023, 126.967402182141],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_d8ad33fc4151edb27f5d7d6cd5105b1b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)이순신휴게소</b><br>
+        <b>SK에너지</b><br>
+        충남 아산시 염치읍 서원리<br>
+        충남 아산시 염치읍 아산로 625<br>
+        > <b>가격: 1,001 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da27e203e994e8d1fd5752a0ce721aaf = L.marker(
+                [36.7581789448091, 126.90450534144595],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_da27e203e994e8d1fd5752a0ce721aaf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스케이가스 도고충전소</b><br>
+        <b>SK가스</b><br>
+        충남 아산시 도고면 향산리 276-4<br>
+        충남 아산시 도고면 온천대로 469<br>
+        > <b>가격: 1,029 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e366ff9200f0e7def0de5ed53c43b24b = L.marker(
+                [36.76664941323722, 126.9244389460758],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_e366ff9200f0e7def0de5ed53c43b24b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신창에너지</b><br>
+        <b>E1</b><br>
+        충남 아산시 도고면 와산리 51-5<br>
+        충남 아산시 도고면 온천대로 691<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c9f6966daded4585059d120b03455f2d = L.marker(
+                [36.78486681180136, 126.98805592570667],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_c9f6966daded4585059d120b03455f2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)아산제일충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 아산시 방축동 141-12<br>
+        충남 아산시 온천대로 1346 (방축동)<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2a8031ab8fe62e148be0c862bad808bf = L.marker(
+                [36.786405873491404, 126.96829358010092],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_2a8031ab8fe62e148be0c862bad808bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)온양LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        충남 아산시 득산동 304-2<br>
+        충청남도 아산시 온천대로 1166<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb9734d344e9c4132eaeacf99ed36f7d = L.marker(
+                [36.77632632877217, 127.02697286788202],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_fb9734d344e9c4132eaeacf99ed36f7d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통일LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        충남 아산시 모종동 69-1<br>
+        충청남도 아산시 온천대로 1705 (모종동)<br>
+        > <b>가격: 1,041 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_11b0edb57c6936e473c1aec02c9ec6c9 = L.marker(
+                [36.82451376051476, 127.01194873614541],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_11b0edb57c6936e473c1aec02c9ec6c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충무LPG충전소</b><br>
+        <b>E1</b><br>
+        충남 아산시 염치읍 방현리 229<br>
+        충남 아산시 염치읍 충무로 504<br>
+        > <b>가격: 1,041 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4672a6ddd90e2b913723af8f4fa68a91 = L.marker(
+                [36.773128785963294, 127.03715091731709],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_4672a6ddd90e2b913723af8f4fa68a91.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아산LPG충전소</b><br>
+        <b>E1</b><br>
+        충남 아산시 남동 178-15<br>
+        충남 아산시 온천대로 1808(남동)<br>
+        > <b>가격: 1,042 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b3f31e12e077d87a84341ad81627723 = L.marker(
+                [36.79545108630131, 126.9989539190261],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_1b3f31e12e077d87a84341ad81627723.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아산온천LPG충전소</b><br>
+        <b>E1</b><br>
+        충남 아산시 온천동 942<br>
+        충남 아산시 곡교천로 177<br>
+        > <b>가격: 1,042 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da882dc5c088ed1c9b73e9b60d4ecc27 = L.marker(
+                [36.921068917150585, 127.04470426006857],
+                {}
+            ).addTo(map_976442d99a7c7dc9724a1629db8a257a);
+        
+    
+            marker_da882dc5c088ed1c9b73e9b60d4ecc27.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아산둔포충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 아산시 둔포면 둔포리 344<br>
+        충남 아산시 둔포면 장영실로 1288<br>
+        > <b>가격: 1,045 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

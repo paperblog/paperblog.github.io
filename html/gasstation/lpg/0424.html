@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e502836dc10bfdda137041f94868c223 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e502836dc10bfdda137041f94868c223" ></div>
+        
+</body>
+<script>    
+    
+            var map_e502836dc10bfdda137041f94868c223 = L.map(
+                "map_e502836dc10bfdda137041f94868c223",
+                {
+                    center: [36.200601745885116, 127.79992335774796],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b02a9d210a07c00846913745f535771 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+        
+    
+            var locate_control_230e1d97eaf46fa96b55c702c9fd102f = L.control.locate(
+                {}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+            
+        
+    
+            var marker_3ced2f7a20e156548bdcab7689ce8bae = L.marker(
+                [36.19704466951106, 127.75261058248397],
+                {}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+        
+    
+            marker_3ced2f7a20e156548bdcab7689ce8bae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우성LPG충전소</b><br>
+        <b>E1</b><br>
+        충북 영동군 영동읍 오탄리 717-6<br>
+        충북 영동군 영동읍 난계로 841<br>
+        > <b>가격: 1,046 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_538e5f14e5a99f50faaf37679df66078 = L.marker(
+                [36.18889367346721, 127.7836345197112],
+                {}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+        
+    
+            marker_538e5f14e5a99f50faaf37679df66078.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유원산업주식회사</b><br>
+        <b>S-OIL</b><br>
+        충북 영동군 영동읍 설계리 635-1<br>
+        충북 영동군 영동읍 대학로 143<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e001d280c609e6658ed9a2a0f3286d5 = L.marker(
+                [36.168343922952644, 127.8101791851685],
+                {}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+        
+    
+            marker_3e001d280c609e6658ed9a2a0f3286d5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영가스충전소</b><br>
+        <b>SK에너지</b><br>
+        충북 영동군 영동읍 주곡리 451-9<br>
+        충북 영동군 영동읍 회동로 50<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_df45a91913b56fdc80a67469afb375c9 = L.marker(
+                [36.248124717609535, 127.85326914362818],
+                {}
+            ).addTo(map_e502836dc10bfdda137041f94868c223);
+        
+    
+            marker_df45a91913b56fdc80a67469afb375c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보령물산(주)황간(부산)주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 영동군 황간면 회포리 산1-9<br>
+        충북 영동군 황간면 회포길 102<br>
+        > <b>가격: 1,122 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7809b3c446ee14960049b677689b5fc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7809b3c446ee14960049b677689b5fc1" ></div>
+        
+</body>
+<script>    
+    
+            var map_7809b3c446ee14960049b677689b5fc1 = L.map(
+                "map_7809b3c446ee14960049b677689b5fc1",
+                {
+                    center: [35.14851328676531, 128.97966548808054],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0c71a874b2fdb5fb1e52a41b3815c96 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            var locate_control_764b4078e2a7801b20e537fa1fe2564e = L.control.locate(
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+            
+        
+    
+            var marker_3eaf6609066b6c76ac84c9b8750b5604 = L.marker(
+                [35.142754656218834, 128.9851978133985],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_3eaf6609066b6c76ac84c9b8750b5604.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)MS가스 학장충전소</b><br>
+        <b>S-OIL</b><br>
+        부산 사상구 학장동 264-5<br>
+        부산 사상구 학장로 165<br>
+        > <b>가격: 1,004 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57486c4b98a74107efcabe1f4b9cac57 = L.marker(
+                [35.140734875123215, 128.98969457525686],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_57486c4b98a74107efcabe1f4b9cac57.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)덕양에너지직영 구덕산충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 사상구 학장동 194-18<br>
+        부산 사상구 학감대로 102 (학장동)<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cd7393dbcefe165bdafd82b0969015d6 = L.marker(
+                [35.174944961386, 128.98392887291126],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_cd7393dbcefe165bdafd82b0969015d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업㈜ 대성충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 사상구 덕포동 394-4<br>
+        부산 사상구 사상로 339 (덕포동)<br>
+        > <b>가격: 1,021 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e233c39b4778a3df2e46b844b5ed01ef = L.marker(
+                [35.12196067203593, 128.9617301131277],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_e233c39b4778a3df2e46b844b5ed01ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)성은에너지 제2충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 사상구 엄궁동 651-91<br>
+        부산 사상구 강변대로 412<br>
+        > <b>가격: 1,022 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40f986730632297f3ce50418fcc17980 = L.marker(
+                [35.183656084735986, 128.97680956125922],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_40f986730632297f3ce50418fcc17980.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마라톤서부충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 사상구 삼락동 361-2<br>
+        부산 사상구 낙동대로 1384 (삼락동)<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e9627b9c2748dcb6d08f58806c1bcff = L.marker(
+                [35.14429620290856, 128.96915797536877],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_0e9627b9c2748dcb6d08f58806c1bcff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신가스㈜ 직영 낙동대로충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 사상구 감전동 500-1<br>
+        부산 사상구 낙동대로 935<br>
+        > <b>가격: 1,026 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_be08193ed08bc1bf95cbab8ce5a4f6eb = L.marker(
+                [35.15009614223152, 128.99461507420435],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_be08193ed08bc1bf95cbab8ce5a4f6eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>극동유화(주) 주례충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 사상구 주례1동 691-28<br>
+        부산 사상구 가야대로 203<br>
+        > <b>가격: 1,026 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_64037e2fa2af470683df67f350462b85 = L.marker(
+                [35.13911023428034, 128.9710420189871],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_64037e2fa2af470683df67f350462b85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>극동유화(주) 감전충전소</b><br>
+        <b>S-OIL</b><br>
+        부산 사상구 감전동 507-13<br>
+        부산 사상구 낙동대로 878 (감전동)<br>
+        > <b>가격: 1,026 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71775c5d716d7abc7e9f78095e4819ab = L.marker(
+                [35.13475933715208, 128.97316272014433],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_71775c5d716d7abc7e9f78095e4819ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>개인택시사상LPG충전소</b><br>
+        <b>E1</b><br>
+        부산 사상구 학장동 628-1<br>
+        부산 사상구 학장로 21 (학장동)<br>
+        > <b>가격: 1,049 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4526e3a23012f53d5ef471b5d732697e = L.marker(
+                [35.15132486936812, 128.9810209866351],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_4526e3a23012f53d5ef471b5d732697e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔성가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 사상구 감전동 163-13<br>
+        부산 사상구 가야대로 75 (감전동)<br>
+        > <b>가격: 1,049 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ec8bdc7765f7e9d23d3e78e39bb72bdd = L.marker(
+                [35.1500081189778, 128.98996065759303],
+                {}
+            ).addTo(map_7809b3c446ee14960049b677689b5fc1);
+        
+    
+            marker_ec8bdc7765f7e9d23d3e78e39bb72bdd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국가스 사상충전소 SK행복충전</b><br>
+        <b>SK가스</b><br>
+        부산 사상구 감전동 158-13<br>
+        부산 사상구 가야대로 157 (감전동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

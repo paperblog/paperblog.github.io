@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8de234b25704639db6964e1258d630db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8de234b25704639db6964e1258d630db" ></div>
+        
+</body>
+<script>    
+    
+            var map_8de234b25704639db6964e1258d630db = L.map(
+                "map_8de234b25704639db6964e1258d630db",
+                {
+                    center: [35.240734575364044, 128.87772209144305],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29ebb0ea16107151775fdef434655362 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            var locate_control_c36bfa42f370761da3bb7283814f0b51 = L.control.locate(
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+            
+        
+    
+            var marker_7560ceb33915e941588c8261f43ff2dd = L.marker(
+                [35.224001522735236, 128.8712925525555],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_7560ceb33915e941588c8261f43ff2dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥동스마트주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 김해시 흥동 4-8<br>
+        경남 김해시 전하로 223 (흥동)<br>
+        > <b>가격: 1,768 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f435f237b5aaea078d77dbfb4eae01ca = L.marker(
+                [35.215656564441, 128.887862382819],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_f435f237b5aaea078d77dbfb4eae01ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광동페트로(주) 다인셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 김해시 부원동 343-3<br>
+        경남 김해시 호계로 281 (부원동)<br>
+        > <b>가격: 1,778 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f083914ee2ff0562e15f8b770ffbefac = L.marker(
+                [35.214964290755695, 128.8888433671635],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_f083914ee2ff0562e15f8b770ffbefac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스㈜ 명품주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 부원동 526-6<br>
+        경남 김해시 호계로 272 (부원동)<br>
+        > <b>가격: 1,778 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98b731aec7c2e191545c799badc64347 = L.marker(
+                [35.24374469126153, 128.8819034332445],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_98b731aec7c2e191545c799badc64347.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스타주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 김해시 대성동 481-1<br>
+        경남 김해시 가야로 409<br>
+        > <b>가격: 1,787 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3dd96f6fdf7c91424e4266cc7c52d157 = L.marker(
+                [35.21606859313098, 128.88821836034398],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_3dd96f6fdf7c91424e4266cc7c52d157.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무지개셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 김해시 부원동 461<br>
+        경남 김해시 호계로 282 (부원동)<br>
+        > <b>가격: 1,788 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_64bbaccfa4deed5b257d8bfd522be34b = L.marker(
+                [35.23020801956792, 128.87172996087875],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_64bbaccfa4deed5b257d8bfd522be34b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이마트 김해점 셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 외동 1264<br>
+        경남 김해시 김해대로 2232<br>
+        > <b>가격: 1,788 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97fc131e6744f6623b49e4a2eb1400c3 = L.marker(
+                [35.2311004920596, 128.90496232909246],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_97fc131e6744f6623b49e4a2eb1400c3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한길주유소 인제대점</b><br>
+        <b>SK에너지</b><br>
+        경남 김해시 어방동 1110-11<br>
+        경남 김해시 인제로 29 (어방동)<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_304738b37dc01f3ecfdf70e8c7bb1010 = L.marker(
+                [35.23961337130554, 128.88640507816223],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_304738b37dc01f3ecfdf70e8c7bb1010.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>롯데주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경상남도 김해시 동상동 1103-20<br>
+        경남 김해시 가야로 469<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c027b802091ea3fa76a9973c9aba15a = L.marker(
+                [35.23060961389453, 128.90503157281512],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_9c027b802091ea3fa76a9973c9aba15a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동김해IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 김해시 어방동 1111-14<br>
+        경남 김해시 인제로 23<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b3da5dc975f2bf935f5c8bcc6ab39f0 = L.marker(
+                [35.23529163963153, 128.89685639769743],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_9b3da5dc975f2bf935f5c8bcc6ab39f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영남화훼원예농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 김해시 삼정동44-9 외 1필지<br>
+        경상남도 김해시  분성로 465 (활천동)<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d4030d3adc637de8f8f49c44d5f6cfd = L.marker(
+                [35.21972177391797, 128.88664355257941],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_7d4030d3adc637de8f8f49c44d5f6cfd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 김해시 부원동 442-33<br>
+        경남 김해시 호계로 326 (부원동)<br>
+        > <b>가격: 1,798 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_457aa203ca8c1bd39e8ab72153fe8dee = L.marker(
+                [35.236403440177895, 128.91677981592974],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_457aa203ca8c1bd39e8ab72153fe8dee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한길주유소 김해점</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 안동 248-4<br>
+        경남 김해시 분성로 647<br>
+        > <b>가격: 1,798 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_739753c46d9be68d7dd52b76aba80faa = L.marker(
+                [35.22381553665754, 128.87158385882174],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_739753c46d9be68d7dd52b76aba80faa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 전하동10-1<br>
+        경남 김해시 전하로 224 (전하동)<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b5057b439e3601cd3a338b2f185bd487 = L.marker(
+                [35.241887554144625, 128.91388592509466],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_b5057b439e3601cd3a338b2f185bd487.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화영삼방셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 김해시 삼방동 30-2<br>
+        경남 김해시 삼안로 151 (삼방동)<br>
+        > <b>가격: 1,805 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_336e49dcacb60b8f5e572c712b2efb76 = L.marker(
+                [35.22432424295739, 128.8181581687915],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_336e49dcacb60b8f5e572c712b2efb76.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주촌주유소 주식회사</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 주촌면 망덕리 844<br>
+        경남 김해시 주촌면 서부로 1419<br>
+        > <b>가격: 1,807 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d71684c013c2992081716691a4a2b975 = L.marker(
+                [35.28247890325961, 128.7686932080266],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_d71684c013c2992081716691a4a2b975.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대윤주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 김해시 진영읍 죽곡리 364<br>
+        경남 김해시 진영읍 서부로 166<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c0fbdff409e5d90c9570446369f471a6 = L.marker(
+                [35.347784080757314, 128.85139739156403],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_c0fbdff409e5d90c9570446369f471a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무척산주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 김해시 생림면 생철리 241-3<br>
+        경남 김해시 생림면 생림대로 1010<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_37e1be1ff71f2e3f17aa1272353f8200 = L.marker(
+                [35.2374767958341, 128.88815175392884],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_37e1be1ff71f2e3f17aa1272353f8200.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평화주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 김해시 동상동 1114-3<br>
+        경남 김해시 가야로 500 (동상동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d268da3b7fc888f4234ac19ce539c6a7 = L.marker(
+                [35.235530936685194, 128.8892877623439],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_d268da3b7fc888f4234ac19ce539c6a7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대윤에너지 가야탑주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 김해시 동상동 498-7<br>
+        경남 김해시 가야로 524 (동상동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e0c872bfdeae79b6b35888dcb7f5ca67 = L.marker(
+                [35.28400944410574, 128.86675495700783],
+                {}
+            ).addTo(map_8de234b25704639db6964e1258d630db);
+        
+    
+            marker_e0c872bfdeae79b6b35888dcb7f5ca67.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 김해시 삼계동 928-1<br>
+        경남 김해시 생림대로 166 (삼계동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9500b1c75112657ccb29314d470a64f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9500b1c75112657ccb29314d470a64f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_9500b1c75112657ccb29314d470a64f7 = L.map(
+                "map_9500b1c75112657ccb29314d470a64f7",
+                {
+                    center: [36.97743876227996, 127.59173322315326],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_152285d8f0fa42c8b4aae8d1077f931a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            var locate_control_af5679baa1fceda5e93ffd6459328cb3 = L.control.locate(
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+            
+        
+    
+            var marker_d9039bab1454e616eaafb8d6369aa51d = L.marker(
+                [36.88821350086657, 127.66548282465261],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_d9039bab1454e616eaafb8d6369aa51d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 한금령LPG충전소</b><br>
+        <b>SK가스</b><br>
+        충북 음성군 원남면 보룡리 180<br>
+        충북 음성군 원남면 충청대로 802<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc4fe4fe3ccdd5e126faf28474fa48fd = L.marker(
+                [36.839732776618376, 127.61739844165983],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_cc4fe4fe3ccdd5e126faf28474fa48fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백마산LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        충북 음성군 원남면 문암리 1110-1<br>
+        충북 음성군 원남면 충청대로 60-1<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dcbf8627b05fe6fe7cbf20fed962a147 = L.marker(
+                [36.97637642912063, 127.52247375239475],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_dcbf8627b05fe6fe7cbf20fed962a147.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서울LPG</b><br>
+        <b>자가상표</b><br>
+        충북 음성군 대소면 성본리 381-47<br>
+        충북 음성군 대소면 대금로 789<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4284a994b1a0d5ee7ce9f197c9ecb915 = L.marker(
+                [36.95729007651513, 127.64320116841603],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_4284a994b1a0d5ee7ce9f197c9ecb915.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>감우재LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        충북 음성군 음성읍 감우리 94-1<br>
+        충북 음성군 음성읍 생음대로 670<br>
+        > <b>가격: 1,006 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_96425b6adbe3791cd89d3be6c2df659a = L.marker(
+                [36.94537034423017, 127.7120638520586],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_96425b6adbe3791cd89d3be6c2df659a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일신에너지(주)</b><br>
+        <b>E1</b><br>
+        충북 음성군 음성읍 한벌리 274-4<br>
+        충북 음성군 음성읍 충청대로 1641<br>
+        > <b>가격: 1,007 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc73c7889a755349d2f2fa9d15e57ad8 = L.marker(
+                [36.96655757917905, 127.5018948959527],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_cc73c7889a755349d2f2fa9d15e57ad8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 음성군 대소면 삼정리 136-6<br>
+        충북 음성군 대소면 대금로 576<br>
+        > <b>가격: 1,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_15c32e50b0aca4f33a5e25571db6b56c = L.marker(
+                [36.99802967030405, 127.56066927391507],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_15c32e50b0aca4f33a5e25571db6b56c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주식회사 DY에너지</b><br>
+        <b>GS칼텍스</b><br>
+        충북 음성군 금왕읍 내송리 396-6<br>
+        충북 음성군 금왕읍 금일로 208<br>
+        > <b>가격: 1,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba9e483af1f8f0f8579d86b77594579d = L.marker(
+                [36.93106198117158, 127.68172813444811],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_ba9e483af1f8f0f8579d86b77594579d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대영에너지(음성)</b><br>
+        <b>GS칼텍스</b><br>
+        충북 음성군 음성읍 읍내리 783-2<br>
+        충북 음성군 음성읍 예술로 81<br>
+        > <b>가격: 1,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9751d8ff962dd930b2eb54e481158658 = L.marker(
+                [37.05459811696016, 127.60179334550683],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_9751d8ff962dd930b2eb54e481158658.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼한제1주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        충북 음성군 생극면 차평리 591-2<br>
+        충북 음성군 생극면 중원대로 792<br>
+        > <b>가격: 1,022 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c95498fadfd1d4205eb1bfb47c6472ff = L.marker(
+                [37.002852871451225, 127.65714294750403],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_c95498fadfd1d4205eb1bfb47c6472ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오생LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 음성군 생극면 오생리 50-10<br>
+        충북 음성군 생극면 중원대로 7<br>
+        > <b>가격: 1,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cbfd2ad02d326783f0dcbedb6cbef0ac = L.marker(
+                [36.98273094077549, 127.56571610470277],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_cbfd2ad02d326783f0dcbedb6cbef0ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오선가스충전소</b><br>
+        <b>E1</b><br>
+        충북 음성군 금왕읍 오선리 260-13<br>
+        충북 음성군 금왕읍 대금로 1193<br>
+        > <b>가격: 1,033 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dcae6df802eca8a9526e3a639b07a98f = L.marker(
+                [37.111813709344155, 127.71822066030644],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_dcae6df802eca8a9526e3a639b07a98f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명품주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 음성군 감곡면 문촌리 64-10<br>
+        충북 음성군 감곡면 북부로778-8<br>
+        > <b>가격: 1,035 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1343d3e931eeb6554f870d7d03b6bed = L.marker(
+                [36.980210549546975, 127.46481534304053],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_f1343d3e931eeb6554f870d7d03b6bed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>음성IC충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 음성군 대소면 오류리 605-1<br>
+        충북 음성군 대소면 대금로 195<br>
+        > <b>가격: 1,054 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8fdf89a8f1ede18a7a4c6be83a7a449 = L.marker(
+                [37.017052831654965, 127.48140664464177],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_d8fdf89a8f1ede18a7a4c6be83a7a449.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국도로공사 음성(남이)주유/충전소</b><br>
+        <b>E1</b><br>
+        충북 음성군 삼성면 용성리 산 40-1<br>
+        충북 음성군 삼성면 중부고속도로 51<br>
+        > <b>가격: 1,062 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14fe832e6e5f88ba328f0723e1974153 = L.marker(
+                [36.97062019627982, 127.59054015059203],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_14fe832e6e5f88ba328f0723e1974153.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)바이오시스 금왕(평택)주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        충북 음성군 금왕읍 용계리 산25-6<br>
+        충북 음성군 금왕읍 평택제천고속도로 69<br>
+        > <b>가격: 1,069 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc59b2b924bca0e36c004331642f2d18 = L.marker(
+                [36.97043948857361, 127.59103429317072],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_cc59b2b924bca0e36c004331642f2d18.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)바이오시스 금왕(제천)주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        충북 음성군 금왕읍 용계리 185-20<br>
+        충북 음성군 금왕읍 평택제천고속도로 70<br>
+        > <b>가격: 1,069 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dfba4a46e1dbe265b662d4cd0eed9721 = L.marker(
+                [37.023507896167345, 127.48388296064282],
+                {}
+            ).addTo(map_9500b1c75112657ccb29314d470a64f7);
+        
+    
+            marker_dfba4a46e1dbe265b662d4cd0eed9721.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보디앤에스(주) 음성(하남)주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 음성군 삼성면 양덕리 산98-5<br>
+        충북 음성군 삼성면 중부고속도로 52<br>
+        > <b>가격: 1,102 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

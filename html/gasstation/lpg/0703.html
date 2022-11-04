@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d48e6316c9b6a3913b0bfc63e7349d3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d48e6316c9b6a3913b0bfc63e7349d3f" ></div>
+        
+</body>
+<script>    
+    
+            var map_d48e6316c9b6a3913b0bfc63e7349d3f = L.map(
+                "map_d48e6316c9b6a3913b0bfc63e7349d3f",
+                {
+                    center: [34.784030865381105, 127.6731510429431],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_105b338e0643b1a26862149a5caf1789 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            var locate_control_ab44e0f9454ea5529fedc7128922f1a3 = L.control.locate(
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+            
+        
+    
+            var marker_d90ffa0e48b6a67c0a9ca9e8619125e9 = L.marker(
+                [34.84896574343669, 127.60566583143448],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_d90ffa0e48b6a67c0a9ca9e8619125e9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여수공항LPG충전소</b><br>
+        <b>E1</b><br>
+        전남 여수시 율촌면 신풍리 884-2<br>
+        전남 여수시 율촌면 여순로 514<br>
+        > <b>가격: 996 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3174fbbb3d27e30cf2f4baa127e42f62 = L.marker(
+                [34.86903533305704, 127.58795987204222],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_3174fbbb3d27e30cf2f4baa127e42f62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대상LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 율촌면 취적리1029-6<br>
+        전남 여수시 율촌면 여순로 800<br>
+        > <b>가격: 996 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3ad83b60446bf2d7dccd772949559e0f = L.marker(
+                [34.782267350561774, 127.69595703551116],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_3ad83b60446bf2d7dccd772949559e0f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구봉가스2충전소</b><br>
+        <b>E1</b><br>
+        전남 여수시 둔덕동 275-3<br>
+        전남 여수시 좌수영로 656 (둔덕동)<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c53318870bde3f0eec8cfc853fb8a7a1 = L.marker(
+                [34.778379157612186, 127.69508564889891],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_c53318870bde3f0eec8cfc853fb8a7a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>둔덕LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 여수시 둔덕동 산 113-11<br>
+        전남 여수시 좌수영로 617<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2f4a7e8d2a028ac08d0fa0701902e5f = L.marker(
+                [34.779892961234744, 127.69638198963672],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_a2f4a7e8d2a028ac08d0fa0701902e5f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여수충전/둔덕주유</b><br>
+        <b>SK가스</b><br>
+        전남 여수시 둔덕동 287<br>
+        전남 여수시 좌수영로 632 (둔덕동)<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b9466b226a89e8ae0107d37c216dc712 = L.marker(
+                [34.74888514045095, 127.71096993625679],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_b9466b226a89e8ae0107d37c216dc712.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여수오렌지충전소</b><br>
+        <b>E1</b><br>
+        전남 여수시 여서동 144<br>
+        전남 여수시 한재로 9 (여서동)<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b9b4b765b97dc7e14723af7584f33f9 = L.marker(
+                [34.79701618183123, 127.65181480150913],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_9b9b4b765b97dc7e14723af7584f33f9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수달LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 여수시 주삼동 624<br>
+        전남 여수시 좌수영로 1162<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a54bb6542c375294506a70bf4ca5e287 = L.marker(
+                [34.755764028701, 127.72324971346917],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_a54bb6542c375294506a70bf4ca5e287.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동화가스(주)여수영업소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 연등동 716-2<br>
+        전남 여수시 좌수영로 196 (연등동)<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ffe894b45a66ea1db25c014730636212 = L.marker(
+                [34.78215221475611, 127.64488849560595],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_ffe894b45a66ea1db25c014730636212.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구봉가스3충전소</b><br>
+        <b>E1</b><br>
+        전남 여수시 화장동 317-3<br>
+        전남 여수시 무선로 280 (화장동)<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1b60df964126ab888e7455f31bb1a00 = L.marker(
+                [34.73021438092247, 127.722263269513],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_f1b60df964126ab888e7455f31bb1a00.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구봉가스충전소</b><br>
+        <b>E1</b><br>
+        전남 여수시 국동 37-497<br>
+        전남 여수시 국동남9길 14 (국동)<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7300d2d53e9a43c1806651a67f1b50b7 = L.marker(
+                [34.777364670926005, 127.66170818527677],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_7300d2d53e9a43c1806651a67f1b50b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 여천동 919-3<br>
+        전남 여수시 반월길 13 (여천동)<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4848d7298bed09b68489101c95374f4 = L.marker(
+                [34.76437382738875, 127.68398508996573],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_c4848d7298bed09b68489101c95374f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여천가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 시전동 1112<br>
+        전남 여수시 쌍봉로 258 (시전동)<br>
+        > <b>가격: 1,035 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0a076e9c200b15bf51aa34396387d3c = L.marker(
+                [34.76442231046072, 127.68182193687856],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_b0a076e9c200b15bf51aa34396387d3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)개인가스충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 여수시 학용동 18-2<br>
+        전남 여수시 쌍봉로 249 (학용동)<br>
+        > <b>가격: 1,035 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9217b85950f5fb8fd9ec4e649fc3eea1 = L.marker(
+                [34.7976988139958, 127.66236279520483],
+                {}
+            ).addTo(map_d48e6316c9b6a3913b0bfc63e7349d3f);
+        
+    
+            marker_9217b85950f5fb8fd9ec4e649fc3eea1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내트럭(주) 여수사업소</b><br>
+        <b>SK에너지</b><br>
+        전남 여수시 주삼동 1020<br>
+        전남 여수시 여수산단로 140<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

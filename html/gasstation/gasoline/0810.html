@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a9944a70e5143d8e2240b115ecdb3737 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a9944a70e5143d8e2240b115ecdb3737" ></div>
+        
+</body>
+<script>    
+    
+            var map_a9944a70e5143d8e2240b115ecdb3737 = L.map(
+                "map_a9944a70e5143d8e2240b115ecdb3737",
+                {
+                    center: [35.878255545437064, 128.79591650950925],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_168773e4120cfa2619e3174f8418d56d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            var locate_control_245a5390a4882bf8cc52f6005726c264 = L.control.locate(
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+            
+        
+    
+            var marker_b26885d404ac765301ad04b0afe00ebf = L.marker(
+                [35.96287742035831, 128.74700734884425],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_b26885d404ac765301ad04b0afe00ebf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경산시 와촌면 음양리 1017<br>
+        경북 경산시 와촌면 팔공로 36<br>
+        > <b>가격: 1,549 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_720ef8d7ae0f74c7b3f35b9035984019 = L.marker(
+                [35.90179519549597, 128.80558807506614],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_720ef8d7ae0f74c7b3f35b9035984019.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태산이앤엘 제2강변주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경산시 하양읍 부호리 143-1<br>
+        경북 경산시 대경로 559<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fc789b6c65912fd97ffcda294f0fde9e = L.marker(
+                [35.871812593711894, 128.77963490223922],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_fc789b6c65912fd97ffcda294f0fde9e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)미니에너지</b><br>
+        <b>자영알뜰</b><br>
+        경북 경산시 압량면 현흥리 24-8<br>
+        경북 경산시 압량면 대학로 754<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f014d1c297f54599c3ae9e03cde7b758 = L.marker(
+                [35.92194381471035, 128.8390902602884],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_f014d1c297f54599c3ae9e03cde7b758.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경산시 와촌면 용천리 894-2<br>
+        경북 경산시 와촌면 대경로 940<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fe2aefa27d36e0624599bd780d67e1e5 = L.marker(
+                [35.92563449982549, 128.84619470991794],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_fe2aefa27d36e0624599bd780d67e1e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에이치씨대하에너지 와촌주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경산시 와촌면 시천리 388-2<br>
+        경북 경산시 와촌면 대경로 1013<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49b3120e61ee509b5be5f3101a29d0f1 = L.marker(
+                [35.81452753888704, 128.7697511295513],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_49b3120e61ee509b5be5f3101a29d0f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림SELF주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경산시 평산동 210-2<br>
+        경북 경산시 원효로 316<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40908f1f0f69bd500bbdf406e506abd2 = L.marker(
+                [35.87593309448867, 128.80047293575987],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_40908f1f0f69bd500bbdf406e506abd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신성주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경산시 진량읍 선화리 701-1<br>
+        경북 경산시 진량읍 대학로 951<br>
+        > <b>가격: 1,573 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab4a5ab41ebb0a0b648d9de7c1d57a89 = L.marker(
+                [35.916746500395554, 128.8300851007146],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_ab4a5ab41ebb0a0b648d9de7c1d57a89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하양우성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경산시 하양읍 동서리 899<br>
+        경북 경산시 하양읍 대경로 838<br>
+        > <b>가격: 1,574 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e469063134660815719fae15dc8a2e5 = L.marker(
+                [35.91896487401833, 128.83329699419036],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_0e469063134660815719fae15dc8a2e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)명가주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경산시 하양읍 동서리 872-3<br>
+        경북 경산시 하양읍 대경로 874<br>
+        > <b>가격: 1,574 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_589c8e986e179a55c79d260012fd3263 = L.marker(
+                [35.920218365542986, 128.83500130151643],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_589c8e986e179a55c79d260012fd3263.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동서고속주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경산시 하양읍 동서리 699-2<br>
+        경북 경산시 하양읍 대경로 895<br>
+        > <b>가격: 1,574 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89d86b6bfaee93a18de5ac428fb9d901 = L.marker(
+                [35.8514155663031, 128.76653940010797],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_89d86b6bfaee93a18de5ac428fb9d901.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천마고속주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경산시 압량면 부적리 62-1<br>
+        경북 경산시 압량면 대학로 496<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56df40fe445ab900b2b3c42dafdeca85 = L.marker(
+                [35.840460753651335, 128.76005781332606],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_56df40fe445ab900b2b3c42dafdeca85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기분좋은주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경산시 압량면 부적리 531-2<br>
+        경북 경산시 압량면 대학로 362<br>
+        > <b>가격: 1,577 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb09e3005745b5bf8fd02a023092d714 = L.marker(
+                [35.94787438953897, 128.83622018323481],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_cb09e3005745b5bf8fd02a023092d714.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>와촌IC주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경산시 와촌면 덕촌리 42<br>
+        경북 경산시 와촌면 금송로 430<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73a3367c8b770f46c092e19414898ef8 = L.marker(
+                [35.81830225107646, 128.75887489045536],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_73a3367c8b770f46c092e19414898ef8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경산시 사동 562-2<br>
+        경북 경산시 원효로 210<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_169234d9714477198b709633b0d29349 = L.marker(
+                [35.84743224584569, 128.763941639759],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_169234d9714477198b709633b0d29349.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경산대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경산시 압량면 부적리 111-10<br>
+        경북 경산시 압량면 대학로 445<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa9e361d1627c6871dcfee57faaae57c = L.marker(
+                [35.8120049235231, 128.7954223449304],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_aa9e361d1627c6871dcfee57faaae57c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성화주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경산시 압량면 당리리 18<br>
+        경북 경산시 압량면 원효로 557<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a32554eac5c31365b487d1198708c181 = L.marker(
+                [35.879222870219216, 128.81936420564384],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_a32554eac5c31365b487d1198708c181.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아이러브대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경산시 진량읍 신상리 297<br>
+        경북 경산시 진량읍 공단로 532<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ca5b817ef1f8e8a809f32284be864bfc = L.marker(
+                [35.83442011893695, 128.74162623342423],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_ca5b817ef1f8e8a809f32284be864bfc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영대주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경산시 계양동 270-1<br>
+        경북 경산시 대학로 205 (계양동)<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b8e1a41780ad506199c3cbf5db137119 = L.marker(
+                [35.83202658874716, 128.7639728608196],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_b8e1a41780ad506199c3cbf5db137119.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)동명주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경산시 갑제동 133-1<br>
+        경북 경산시 화랑로 194 (갑제동)<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b82f53f546a10925356ba2fc3143f800 = L.marker(
+                [35.871497303464665, 128.82618786039566],
+                {}
+            ).addTo(map_a9944a70e5143d8e2240b115ecdb3737);
+        
+    
+            marker_b82f53f546a10925356ba2fc3143f800.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진량셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경산시 진량읍 신상리 1195-2<br>
+        경북 경산시 진량읍 공단2로 66<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

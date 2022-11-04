@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08969db42eab5ae710ff8c9606bb204e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_08969db42eab5ae710ff8c9606bb204e" ></div>
+        
+</body>
+<script>    
+    
+            var map_08969db42eab5ae710ff8c9606bb204e = L.map(
+                "map_08969db42eab5ae710ff8c9606bb204e",
+                {
+                    center: [35.365204982205995, 129.0763519024042],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e282c7defd33efa6d1dbe021314aab5d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            var locate_control_a8b34971fa8f9081964cedd083490f91 = L.control.locate(
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+            
+        
+    
+            var marker_585eaa7ab05aaf9138beda9cba330483 = L.marker(
+                [35.46932850749938, 129.0834081448841],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_585eaa7ab05aaf9138beda9cba330483.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>참조은주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 양산시 하북면 백록리 700-2<br>
+        경남 양산시 하북면 양산대로 2325<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf09792c7eb957629dc2430992e5c1e3 = L.marker(
+                [35.37442897543852, 129.1635050333205],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_cf09792c7eb957629dc2430992e5c1e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신덕계클린주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 양산시 덕계동 177-34<br>
+        경남 양산시 덕명로 48 (덕계동 177-34)<br>
+        > <b>가격: 1,814 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a2a9f5cbe6a9166cd582772ee8e5a47 = L.marker(
+                [35.37646332400929, 129.15571010424713],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_9a2a9f5cbe6a9166cd582772ee8e5a47.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕계대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 양산시 덕계동 322-2<br>
+        경남 양산시 웅상대로 862 (덕계동)<br>
+        > <b>가격: 1,814 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3066f7f09ea04949dbc2db2b34f54f3d = L.marker(
+                [35.38852569209963, 129.1568420293328],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_3066f7f09ea04949dbc2db2b34f54f3d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동해고속주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 양산시 주진동 161-1<br>
+        경남 양산시 웅상대로 1000 (주진동)<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71e33611607dd086a4a20d788e338040 = L.marker(
+                [35.411613361048396, 129.16567675264],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_71e33611607dd086a4a20d788e338040.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)성우에너지 고품격월드주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 양산시 삼호동 1005-25<br>
+        경남 양산시 웅상대로 1272 (삼호동)<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e9a86e37c784aad07f35384923d29f3 = L.marker(
+                [35.407604257127595, 129.16464541985854],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_0e9a86e37c784aad07f35384923d29f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태영에너지 웅상주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 양산시 명동 1029-11<br>
+        경남 양산시 웅상대로 1228<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da0131b15fa3c25810f5183d036c257a = L.marker(
+                [35.3692443067171, 129.04386398740027],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_da0131b15fa3c25810f5183d036c257a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신홀딩스㈜ 직영 양산대로주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 양산시 북정동 210-58<br>
+        경남 양산시 양산대로 1115<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ece3acd63097ec1922c5db3bcf2c97c9 = L.marker(
+                [35.361561888068266, 129.04152724517047],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_ece3acd63097ec1922c5db3bcf2c97c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)부성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 양산시 북정동 290-6<br>
+        경남 양산시 양산대로 1024 (북정동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f40051a516c19677a201b143bc24f80 = L.marker(
+                [35.325599504169915, 129.03246149480512],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_7f40051a516c19677a201b143bc24f80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>비케이에너지(주) 석산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 양산시 동면 석산리 1106-3<br>
+        경남 양산시 동면 양산대로 602<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6693cbdb0310f6e723b478e13c06e3b2 = L.marker(
+                [35.40337690943787, 129.1637148322066],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_6693cbdb0310f6e723b478e13c06e3b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오케이주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 양산시 명동 749-20<br>
+        경남 양산시 웅상대로 1180 (명동)<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1164a650644badab13b745c733ba9835 = L.marker(
+                [35.355651768124034, 129.0401529435841],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_1164a650644badab13b745c733ba9835.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양산IC주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 양산시 북정동 915-7<br>
+        경남 양산시 공단로 51 (북정동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6237947d259197a7ae1ef42e9d0267cc = L.marker(
+                [35.335713555543705, 129.0386583153752],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_6237947d259197a7ae1ef42e9d0267cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>위드에너지주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 양산시 남부동 473-3<br>
+        경남 양산시 중앙로 51<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74c3238374b5009d6a6fd29e251a9551 = L.marker(
+                [35.336364797026235, 129.02513244003268],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_74c3238374b5009d6a6fd29e251a9551.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양산에너지마트주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 양산시 중부동 707-1<br>
+        경남 양산시 양산역5길 2 (중부동)<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a151713f11d87a3f1426f6a55a7f247c = L.marker(
+                [35.33500748945318, 129.02885151756863],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_a151713f11d87a3f1426f6a55a7f247c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신도시햇살주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 양산시 중부동 693-5<br>
+        경남 양산시 삽량로 201 (중부동)<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba2528ba438284e3cec4a1e3e0dec97a = L.marker(
+                [35.36970791335463, 129.04492236994943],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_ba2528ba438284e3cec4a1e3e0dec97a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한솔유화㈜양산점 한길주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 양산시 북정동 208-2<br>
+        경남 양산시 양산대로 1120 (북정동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9bf77a59d657a3bb195f3d3bedea0efd = L.marker(
+                [35.309748400293216, 129.0276792655285],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_9bf77a59d657a3bb195f3d3bedea0efd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주) 양산스마일주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 양산시 동면 금산리 570-11<br>
+        경남 양산시 동면 양산대로 414<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ed5970736606c6b8903281b0a4d2aefc = L.marker(
+                [35.33534066837846, 129.01154745948295],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_ed5970736606c6b8903281b0a4d2aefc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)범어주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 양산시 물금읍 범어리 2232<br>
+        경남 양산시 물금읍 황산로 743<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f648b1305d67f4d93f301430e5d10def = L.marker(
+                [35.347325482507, 129.0398810255937],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_f648b1305d67f4d93f301430e5d10def.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양산주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 양산시 북부동 148-13<br>
+        경남 양산시 중앙로 192 (북부동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_95217c6a82914ef49ba95c3c5d638d44 = L.marker(
+                [35.32377749461252, 129.05475896180153],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_95217c6a82914ef49ba95c3c5d638d44.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풀무원식품(주) 양산(서울방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경남 양산시 동면 내송리 산86-2<br>
+        경남 양산시 동면 목장길 15-50<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f15166b65fcfc07fb1a3dcc17a6b7fa = L.marker(
+                [35.367715349210926, 129.044098705302],
+                {}
+            ).addTo(map_08969db42eab5ae710ff8c9606bb204e);
+        
+    
+            marker_4f15166b65fcfc07fb1a3dcc17a6b7fa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세종석유(주)성광주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 양산시 북정동 236-14<br>
+        경남 양산시 양산대로 1100 (북정동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

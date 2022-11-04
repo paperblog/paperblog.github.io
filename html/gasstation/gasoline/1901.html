@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_209bf4bb86aeb8592e54f38c411bbe50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_209bf4bb86aeb8592e54f38c411bbe50" ></div>
+        
+</body>
+<script>    
+    
+            var map_209bf4bb86aeb8592e54f38c411bbe50 = L.map(
+                "map_209bf4bb86aeb8592e54f38c411bbe50",
+                {
+                    center: [36.582580695075826, 127.25727782760505],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a48547db1f1fb12f169322aed4fa469e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            var locate_control_dbb5634ce249946f908199ae76ee208d = L.control.locate(
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+            
+        
+    
+            var marker_adda6fad9b10af6ce4eba82daae06449 = L.marker(
+                [36.731231978333064, 127.16827719970973],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_adda6fad9b10af6ce4eba82daae06449.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진영주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종 소정면 대곡리 371-4<br>
+        세종 소정면 세종로 4732<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32aed2eb26d2b64c3f70ea96a9c49a57 = L.marker(
+                [36.679399420275686, 127.18644511015461],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_32aed2eb26d2b64c3f70ea96a9c49a57.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충청에너지주유소</b><br>
+        <b>자영알뜰</b><br>
+        세종특별자치시 전의면 유천리 547-1<br>
+        세종특별자치시 전의면 세종로 3894<br>
+        > <b>가격: 1,600 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dc567bfc4df9524ecea5408797c7e041 = L.marker(
+                [36.54860630156737, 127.27905537679314],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_dc567bfc4df9524ecea5408797c7e041.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세종중앙농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        세종특별자치시 연기면 연기리 455<br>
+        세종특별자치시 연기면 잣띠길 4<br>
+        > <b>가격: 1,614 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_632dffdf2ccd16865c9a940b4fd2818c = L.marker(
+                [36.67156716673211, 127.2173035395196],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_632dffdf2ccd16865c9a940b4fd2818c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리나라주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종특별자치시 전의면 동교리 13-2<br>
+        세종특별자치시 전의면 운주산로 1032<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_abd235e83b46bd51e3bfa77a35733f62 = L.marker(
+                [36.62519558964661, 127.29043175590121],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_abd235e83b46bd51e3bfa77a35733f62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신안주유소</b><br>
+        <b>자영알뜰</b><br>
+        세종특별자치시 조치원읍 신안리 134-5<br>
+        세종특별자치시 조치원읍 세종로 2678<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ae17a47b6c6a3e4d4b83f8afac647b48 = L.marker(
+                [36.62803956910728, 127.28963759984599],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_ae17a47b6c6a3e4d4b83f8afac647b48.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿모닝주유소</b><br>
+        <b>자가상표</b><br>
+        세종특별자치시 조치원읍 신안리 207-6<br>
+        세종특별자치시 조치원읍 세종로 2712<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6e9b2812178a17591e02a402f7344c4d = L.marker(
+                [36.559285850612696, 127.28140306916134],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_6e9b2812178a17591e02a402f7344c4d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉암주유소</b><br>
+        <b>SK에너지</b><br>
+        세종시 연서면 봉암리 620-93<br>
+        세종시 연서면 세종로 1899<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_011c41b77fcc28700795dad9b26851fb = L.marker(
+                [36.52675521622855, 127.3693294522461],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_011c41b77fcc28700795dad9b26851fb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세종동부농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        세종특별자치시 부강면 부강리 523<br>
+        세종특별자치시 부강면 부강외천로 10<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cea09e562abf2a6e69a438046d04039e = L.marker(
+                [36.468986836368266, 127.26870987227777],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_cea09e562abf2a6e69a438046d04039e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이비주식회사 세종대평주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시 대평동 576-10<br>
+        세종특별자치시 종합운동장로 29<br>
+        > <b>가격: 1,623 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a430e5bf0f3b7a96e6487bc49bf7d7e5 = L.marker(
+                [36.49608343818328, 127.25733549793354],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_a430e5bf0f3b7a96e6487bc49bf7d7e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 청사셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종특별자치시 어진동 101-4<br>
+        세종특별자치시 다솜로 38 (어진동)<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ec4a479cc999abce77f9661dfb8f135 = L.marker(
+                [36.514272721128656, 127.23337615656915],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_2ec4a479cc999abce77f9661dfb8f135.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고운self주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시  고운동 1404<br>
+        세종특별자치시 마음안로 136  (고운동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c36242484bfd223896861fa00314cb98 = L.marker(
+                [36.631011840262246, 127.2879912967844],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_c36242484bfd223896861fa00314cb98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>베스트주유소</b><br>
+        <b>S-OIL</b><br>
+        세종 조치원읍 신안리 210<br>
+        세종 조치원읍 세종로 2749<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_161c6c1875656894cfd69d8d9d538616 = L.marker(
+                [36.654319389558296, 127.25929995167951],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_161c6c1875656894cfd69d8d9d538616.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>석곡주유소</b><br>
+        <b>GS칼텍스</b><br>
+        세종 전동면 석곡리 27-2<br>
+        세종 전동면 하석곡길 64-10<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb822614a73dd48749f0069119522d62 = L.marker(
+                [36.52081678951155, 127.24451975598396],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_fb822614a73dd48749f0069119522d62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영에너지㈜세종지점 다온알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        세종특별자치시 아름동 816<br>
+        세종특별자치시 세종로 1328 (아름동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0aa4c64fb7f2e86314e96a6530e5f93f = L.marker(
+                [36.494945127363714, 127.25545820041019],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_0aa4c64fb7f2e86314e96a6530e5f93f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통(주)세종셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        세종시 다정동 925<br>
+        세종시 다정북로 221(다정동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ccd865b8431b45a48f3cb83922ba7bc = L.marker(
+                [36.67888626111242, 127.18492483188133],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_8ccd865b8431b45a48f3cb83922ba7bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK세종전의주유소</b><br>
+        <b>SK에너지</b><br>
+        세종 전의면 유천리587-5<br>
+        세종 전의면 세종로 3907<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_87afb7849e134145357daa12bd35c35d = L.marker(
+                [36.4976009614406, 127.23516121445638],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_87afb7849e134145357daa12bd35c35d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아성알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        세종특별자치시 다정동 399<br>
+        세종특별자치시 다정북로 40<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_46576d7233c9c45acbd0225b6aba5e00 = L.marker(
+                [36.627544854673985, 127.28982525628972],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_46576d7233c9c45acbd0225b6aba5e00.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        세종 조치원읍 신안리 207-10<br>
+        세종 조치원읍 세종로 2706<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dfa74accbd354d70ef1ddfa9025c227f = L.marker(
+                [36.482157160670916, 127.25399633135316],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_dfa74accbd354d70ef1ddfa9025c227f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새롬주유소</b><br>
+        <b>SK에너지</b><br>
+        세종시 새롬동341-13<br>
+        세종시 어울로 77 (새롬동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_731ca54efab6a1d6801a091f83f1dad5 = L.marker(
+                [36.61490742873925, 127.29307508315017],
+                {}
+            ).addTo(map_209bf4bb86aeb8592e54f38c411bbe50);
+        
+    
+            marker_731ca54efab6a1d6801a091f83f1dad5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신원self주유소</b><br>
+        <b>SK에너지</b><br>
+        세종특별자치시 조치원읍 신안리 88-1<br>
+        세종특별자치시 조치원읍 세종로 2562<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

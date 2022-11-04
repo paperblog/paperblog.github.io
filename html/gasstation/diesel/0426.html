@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99f33928bb3cf7a86ba2da527c2c6ce1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_99f33928bb3cf7a86ba2da527c2c6ce1" ></div>
+        
+</body>
+<script>    
+    
+            var map_99f33928bb3cf7a86ba2da527c2c6ce1 = L.map(
+                "map_99f33928bb3cf7a86ba2da527c2c6ce1",
+                {
+                    center: [36.772821510803325, 127.80534588479964],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca6bb228fb49b54a45fab935f6bd39b0 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            var locate_control_7be107073c8edaeb7f517af48530c0d1 = L.control.locate(
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+            
+        
+    
+            var marker_029a8f1a26c41a0c9311e008763c45e2 = L.marker(
+                [36.78066334308135, 127.9516021259019],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_029a8f1a26c41a0c9311e008763c45e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금대주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 괴산군 연풍면 갈금리 255-13<br>
+        충북 괴산군 연풍면 연풍로 805<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e567c35c9be9830b1c41e2c34a85b99c = L.marker(
+                [36.832466996387325, 127.95973204526804],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_e567c35c9be9830b1c41e2c34a85b99c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)괴산(상)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 괴산군 장연면 오가리 293-2<br>
+        충북 괴산군 장연면 중부내륙고속도로 204<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6b064cf1f339727045bdf2406d8621ca = L.marker(
+                [36.83040509894191, 127.95854406132308],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_6b064cf1f339727045bdf2406d8621ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>괴산(마산)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 괴산군 장연면 오가리 104<br>
+        충북 괴산군 장연면 중부내륙고속도로 205<br>
+        > <b>가격: 1,834 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_878ae55ae0b3d1d1bc12a6fa76cb8c74 = L.marker(
+                [36.78562414283744, 127.76912849932948],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_878ae55ae0b3d1d1bc12a6fa76cb8c74.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>맹꽁이주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 괴산군 문광면 송평리 116-3<br>
+        충북 괴산군 문광면 괴산로 3314<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6eb6c2c8c7aa747093260e0b893c1363 = L.marker(
+                [36.809007426549236, 127.6516847999578],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_6eb6c2c8c7aa747093260e0b893c1363.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>너구리주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 괴산군 사리면 방축리 236<br>
+        충북 괴산군 사리면 중부로 321<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8bf871762db493421984d8cbf4904dda = L.marker(
+                [36.7646168778585, 127.9770682804301],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_8bf871762db493421984d8cbf4904dda.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청수주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 괴산군 연풍면 적석리 290-6<br>
+        충북 괴산군 연풍면 연풍로 1169<br>
+        > <b>가격: 1,847 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4bcbbf50314dcf59fa5158a5181ca91 = L.marker(
+                [36.78161509051042, 127.92532728714188],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_f4bcbbf50314dcf59fa5158a5181ca91.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>형제주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 괴산군 장연면 송덕리 494-1<br>
+        충북 괴산군 장연면 연풍로 452<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_adbc8c5092e4d6e0cca1171ba867036e = L.marker(
+                [36.78318699481318, 127.87829953096676],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_adbc8c5092e4d6e0cca1171ba867036e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>칠성알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 괴산군 칠성면 사평리 8-1번지 외 3필지<br>
+        충북 괴산군 칠성면 중부로 5609<br>
+        > <b>가격: 1,853 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0fca3487a899e186da551b8f8169f4ce = L.marker(
+                [36.811561498173525, 127.65639860974724],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_0fca3487a899e186da551b8f8169f4ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사리주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 괴산군 사리면 방축리 21-5<br>
+        충북 괴산군 사리면 중부로 367<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b5610f5a3e9723d2f0bb3ff6136784d = L.marker(
+                [36.793412727985235, 127.63602955552018],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_3b5610f5a3e9723d2f0bb3ff6136784d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두꺼비주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 괴산군 청안면 청용리 202<br>
+        충북 괴산군 중부로 2974<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2edf9c8d46d7d4f17b2b9ce28b54e6ed = L.marker(
+                [36.74323143615551, 127.68935735720378],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_2edf9c8d46d7d4f17b2b9ce28b54e6ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문당주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 괴산군 청안면 문당리 80-8<br>
+        충북 괴산군 청안면 질마로 865<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b54e3009336ac2ecc2512d038c4e2a1 = L.marker(
+                [36.79408352149562, 127.63576504726203],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_5b54e3009336ac2ecc2512d038c4e2a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청용주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 괴산군 청안면 청용리 180-2<br>
+        충북 괴산군 청안면 중부로 2973<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a485ca580fd0fb4e338a62324613463 = L.marker(
+                [36.758254911306985, 127.97385511974446],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_4a485ca580fd0fb4e338a62324613463.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연풍IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 괴산군 연풍면 적석리 195-1<br>
+        충북 괴산군 연풍면 중부로 6534<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_39391efcfa1edc9f973aa21a7ffcd0ab = L.marker(
+                [36.75463693067039, 128.00739694990747],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_39391efcfa1edc9f973aa21a7ffcd0ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조령주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 괴산군 연풍면 삼풍리 19-2<br>
+        충북 괴산군 연풍면 중원대로 229<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4375c083becc3bc1cbffae9d88a6099d = L.marker(
+                [36.79947225433238, 127.70781412663905],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_4375c083becc3bc1cbffae9d88a6099d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보광산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 괴산군 사리면 수암리 14-2<br>
+        충북 괴산군 사리면 중부로 843<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5aa9f104067bfdef8f02ca6d7e24112c = L.marker(
+                [36.706594114264085, 127.72970198453382],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_5aa9f104067bfdef8f02ca6d7e24112c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부흥주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 괴산군 청안면 부흥리 161-1<br>
+        충북 괴산군 청안면 질마로 1465<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bbd59056198ab1a0302495bd5d48222c = L.marker(
+                [36.66483194557311, 127.72087063152374],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_bbd59056198ab1a0302495bd5d48222c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>학주유소</b><br>
+        <b>자가상표</b><br>
+        충북 괴산군 청천면 174-3<br>
+        충청북도 괴산군 청천면 괴산로 1504<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6b8707e3b8d34ae9a1fec2f8b1ad89ab = L.marker(
+                [36.67132121574657, 127.86255162775221],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_6b8707e3b8d34ae9a1fec2f8b1ad89ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송면주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 괴산군 청천면 송면리 151-3<br>
+        충북 괴산군 청천면 문장로 3097<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ebb9b7958e155eca33231bbc58f52b46 = L.marker(
+                [36.81705235641381, 127.77913600577757],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_ebb9b7958e155eca33231bbc58f52b46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서부주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 괴산군 괴산읍 서부리 716<br>
+        충북 괴산군 괴산읍 임꺽정로 162<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6941d8e057fd04202f513270c4fb1cd8 = L.marker(
+                [36.774391332969664, 127.63665405006194],
+                {}
+            ).addTo(map_99f33928bb3cf7a86ba2da527c2c6ce1);
+        
+    
+            marker_6941d8e057fd04202f513270c4fb1cd8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공원주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 괴산군 청안면 읍내리 552-3<br>
+        충북 괴산군 청안면 청안읍내로6길 14<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

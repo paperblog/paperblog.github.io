@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8776c6ad07c192b041b91f4c326cdebf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8776c6ad07c192b041b91f4c326cdebf" ></div>
+        
+</body>
+<script>    
+    
+            var map_8776c6ad07c192b041b91f4c326cdebf = L.map(
+                "map_8776c6ad07c192b041b91f4c326cdebf",
+                {
+                    center: [35.87277881539098, 127.14146859825469],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e5ab27d46d8d34dd2d1f8d28bf3065c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            var locate_control_cc03981880be85a09aa2beb67511bf0c = L.control.locate(
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+            
+        
+    
+            var marker_86e242ebc4c6aa615110b02a6f3e9631 = L.marker(
+                [35.90843125758603, 127.12548509241182],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_86e242ebc4c6aa615110b02a6f3e9631.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일스타 착한10주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 삼례읍 신탁리 177-4<br>
+        전북 완주군 삼례읍 과학로 448<br>
+        > <b>가격: 1,559 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0543e7c231d01dcf8f623a83f8572bcd = L.marker(
+                [35.911347589687615, 127.12479068458482],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_0543e7c231d01dcf8f623a83f8572bcd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>탱크셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 완주군 삼례읍 신탁리 302-4<br>
+        전북 완주군 삼례읍 과학로 481<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ced3c57cde42db672e1ca47ce03d66ef = L.marker(
+                [35.91398138537952, 127.12480559232971],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_ced3c57cde42db672e1ca47ce03d66ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼봉에너지 주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 삼례읍 신탁리 359<br>
+        전북 완주군 삼례읍 과학로 509<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7cd2bc9d075b36c47405885fe725162f = L.marker(
+                [35.90310366985663, 127.15712352879177],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_7cd2bc9d075b36c47405885fe725162f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>탄탄대로주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 봉동읍 구만리 322-1<br>
+        전북 완주군 봉동읍 완주로 420<br>
+        > <b>가격: 1,577 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5246340888fc66176b50bc91eb9fe8a8 = L.marker(
+                [35.8781139781293, 127.15684634236911],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_5246340888fc66176b50bc91eb9fe8a8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용진주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 용진면 구억리 787-1<br>
+        전북 완주군 용진읍 초포다리로 258<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f70b574005446d7ef475805104f8d9e = L.marker(
+                [35.94049986983148, 127.16428725002214],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_4f70b574005446d7ef475805104f8d9e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 완주군 봉동읍 장기리 376<br>
+        전북 완주군 봉동읍 삼봉로 915<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f9c7a80d92b8eb6e0eaf1a3d2f1ce11c = L.marker(
+                [35.91213678390494, 127.1254795835301],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_f9c7a80d92b8eb6e0eaf1a3d2f1ce11c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>참조은주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 완주군 삼례읍 신탁리 319<br>
+        전북 완주군 삼례읍 과학로 488<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b11693e43a0ed9246e271d1b7a2a584 = L.marker(
+                [35.955203848015145, 127.14556625389076],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_1b11693e43a0ed9246e271d1b7a2a584.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은하주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 봉동읍 은하리 292-1<br>
+        전북 완주군 봉동읍 봉동로 428<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_395bdbee603beff7f88644a73cb3d1d1 = L.marker(
+                [35.71560320823973, 127.11563436449268],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_395bdbee603beff7f88644a73cb3d1d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>모악산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 구이면 항가리 604-2<br>
+        전북 완주군 구이면 모악로 3850<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a5a10759d6ef528b20556f4b639e3da = L.marker(
+                [35.802971049643645, 127.02432270619042],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_6a5a10759d6ef528b20556f4b639e3da.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이서(순천방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 완주군 이서면 은교리 183-25<br>
+        전북 완주군 이서면 호남고속도로 161-1<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6956666b16a1249c4a35df1c03a87bf7 = L.marker(
+                [35.801688212978604, 127.025041407209],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_6956666b16a1249c4a35df1c03a87bf7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이서(천안방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 완주군 이서면 은교리 183-34<br>
+        전북 완주군 이서면 호남고속도로 162<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4fba4b94826c95006875d93fd2d18d88 = L.marker(
+                [35.72100861492581, 127.23317161088218],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_4fba4b94826c95006875d93fd2d18d88.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남관주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 완주군 상관면 용암리 327-1<br>
+        전북 완주군 상관면 춘향로 4126<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_008c310d52240624189ecdc72dd43692 = L.marker(
+                [35.71765782819138, 127.23467686494672],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_008c310d52240624189ecdc72dd43692.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정품2주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 상관면 용암리 336-6<br>
+        전북 완주군 상관면 춘향로 4088<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ae46b20daa4b19b22eeba012fff8d8be = L.marker(
+                [35.90338531110483, 127.09587097269704],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_ae46b20daa4b19b22eeba012fff8d8be.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 삼례읍 하리 1290-242<br>
+        전북 완주군 삼례읍 삼례나들목로 100<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e8ca941bb64a896a53437c74d18292fe = L.marker(
+                [35.98839727400242, 127.2211707102159],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_e8ca941bb64a896a53437c74d18292fe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 고산면 삼기리 806-3<br>
+        전북 완주군 고산면 고산천로 798<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e0540f5c1b3fd58cc9f442c16fa05aa9 = L.marker(
+                [35.942465323831925, 127.16957559073633],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_e0540f5c1b3fd58cc9f442c16fa05aa9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 완주군 봉동읍 장기리 118<br>
+        전북 완주군 봉동읍 삼봉로 965<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db1a6e6effa4c6557457f07cefae8039 = L.marker(
+                [35.91191575407504, 127.16021602690283],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_db1a6e6effa4c6557457f07cefae8039.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유한회사 완주IC투주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 완주군 봉동읍 구만리 220-1<br>
+        전북 완주군 봉동읍 완주로 533<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e9a52a39c709014110bd8740150737c = L.marker(
+                [35.73212737738601, 127.1202256779187],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_5e9a52a39c709014110bd8740150737c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 구이면 원기리 524<br>
+        전북 완주군 구이면 구이로 1488<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a589375be8f2edc4abd4607d0563d8ab = L.marker(
+                [35.95830588292281, 127.13698422263454],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_a589375be8f2edc4abd4607d0563d8ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광일주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 완주군 봉동읍 용암리 106-4<br>
+        전북 완주군 봉동읍 봉동로 516<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_95630f0bdf08f214310ceb78165fb407 = L.marker(
+                [35.9372320881267, 127.16809748233723],
+                {}
+            ).addTo(map_8776c6ad07c192b041b91f4c326cdebf);
+        
+    
+            marker_95630f0bdf08f214310ceb78165fb407.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 완주군 봉동읍 장기리 235-3<br>
+        전북 완주군 봉동읍 봉동로 137 (봉동읍)<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43339640cd84e3bd403d9809cd60bdcc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_43339640cd84e3bd403d9809cd60bdcc" ></div>
+        
+</body>
+<script>    
+    
+            var map_43339640cd84e3bd403d9809cd60bdcc = L.map(
+                "map_43339640cd84e3bd403d9809cd60bdcc",
+                {
+                    center: [36.27734952327054, 127.25037835825715],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1cf3688c288927d3c1aaf5afb81a71af = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            var locate_control_59600010570854228b9ed75f7de9b27d = L.control.locate(
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+            
+        
+    
+            var marker_0b4375b38fa78c6a9c2853597eb1de3c = L.marker(
+                [36.28244497710634, 127.24133273305272],
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            marker_0b4375b38fa78c6a9c2853597eb1de3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양정주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 계룡시 두마면 엄사리 216-4<br>
+        충남 계룡시 엄사면 계백로 3107<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa743c21564a09fb3bfda13b7e773017 = L.marker(
+                [36.25938732998919, 127.2793023519763],
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            marker_aa743c21564a09fb3bfda13b7e773017.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우체국물류주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 계룡시 두마면 왕대리 79-2<br>
+        충남 계룡시 두마면 왕대로 102<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7fe9d025ef1302596a354d33ed05578 = L.marker(
+                [36.276364005007395, 127.23647392950171],
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            marker_e7fe9d025ef1302596a354d33ed05578.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두마주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 계룡시 엄사면 유동리 27-1<br>
+        충청남도 계룡시 엄사면 계백로 3025<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5db0856a77782c13de608fbda6669835 = L.marker(
+                [36.28368986275275, 127.24795058366041],
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            marker_5db0856a77782c13de608fbda6669835.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>참좋은셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 계룡시 엄사면 엄사리 32-1<br>
+        충남 계룡시 엄사면 계룡대로 449<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d52db99d2d032444d6eec7c23f4e9ab5 = L.marker(
+                [36.28486144149701, 127.24683219309465],
+                {}
+            ).addTo(map_43339640cd84e3bd403d9809cd60bdcc);
+        
+    
+            marker_d52db99d2d032444d6eec7c23f4e9ab5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 신도시주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 계룡시 엄사면 엄사리 28-2<br>
+        충남 계룡시 엄사면 계룡대로 465<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

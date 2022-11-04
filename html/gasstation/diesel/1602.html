@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_adb4b212cdfb86e6fb3717105051ba14 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_adb4b212cdfb86e6fb3717105051ba14" ></div>
+        
+</body>
+<script>    
+    
+            var map_adb4b212cdfb86e6fb3717105051ba14 = L.map(
+                "map_adb4b212cdfb86e6fb3717105051ba14",
+                {
+                    center: [35.141266411189804, 126.85457836378627],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7896ff939e6dfe453c1bfbe37a37af5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            var locate_control_2e5beeccbd5d6ff4a221e0d88e8f9349 = L.control.locate(
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+            
+        
+    
+            var marker_69d2febe0abd84e4492925545f2fc469 = L.marker(
+                [35.15212898699509, 126.83510330216704],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_69d2febe0abd84e4492925545f2fc469.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대원 강변주유소</b><br>
+        <b>S-OIL</b><br>
+        광주 서구 치평동 887-6<br>
+        광주 서구 천변좌하로 142 (치평동)<br>
+        > <b>가격: 1,796 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e6928c6df2fbba8f4f58b8331feadf4 = L.marker(
+                [35.15352714327002, 126.83614798513415],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_4e6928c6df2fbba8f4f58b8331feadf4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반디석유시청점</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 치평동 887-1<br>
+        광주 서구 천변좌하로 160 (치평동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3a99b9bfd84b0af25b0f75438d9bc0c9 = L.marker(
+                [35.151154124198726, 126.85598706003005],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_3a99b9bfd84b0af25b0f75438d9bc0c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)일프로주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 치평동 203-5<br>
+        광주 서구 운천로 206 (치평동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ccce2c4abf4589bdd43190f449650d82 = L.marker(
+                [35.15422005888054, 126.83651993685841],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_ccce2c4abf4589bdd43190f449650d82.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)아프리카주유소</b><br>
+        <b>SK에너지</b><br>
+        광주 서구 치평동 649-5<br>
+        광주광역시 서구  천변좌하로 168 (치평동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6d8cfa4f8bb475bf4cf4d7e247370bf = L.marker(
+                [35.14456698386943, 126.86464304166161],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_f6d8cfa4f8bb475bf4cf4d7e247370bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 쌍촌동 429<br>
+        광주 서구 화정로 68 (쌍촌동)<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_09fadaef679055c706c7803daf21a4cc = L.marker(
+                [35.15163370561885, 126.86395820404393],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_09fadaef679055c706c7803daf21a4cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부일주유소</b><br>
+        <b>S-OIL</b><br>
+        광주 서구 쌍촌동 964-4<br>
+        광주 서구 상무대로 933<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14bde8d1d7c1b172ba06879a4b8e2cba = L.marker(
+                [35.15531650788185, 126.89327988226484],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_14bde8d1d7c1b172ba06879a4b8e2cba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가람주유소</b><br>
+        <b>S-OIL</b><br>
+        광주 서구 농성동 8<br>
+        광주 서구 상무대로1206번길 3 (농성동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf77b24ceacdb76b84657d48cb87a77f = L.marker(
+                [35.15546880843812, 126.8835341739657],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_bf77b24ceacdb76b84657d48cb87a77f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        광주 서구 농성동 393-52<br>
+        광주 서구 죽봉대로 24 (농성동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41d8342873d81ecb348d6cc0738a9ae1 = L.marker(
+                [35.15438560040276, 126.89060513440396],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_41d8342873d81ecb348d6cc0738a9ae1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상록주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 농성동 323-8<br>
+        광주 서구 상무대로 1180<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_363f07d0adc1ab8f60817e0530c72980 = L.marker(
+                [35.167180246388575, 126.88437334074769],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_363f07d0adc1ab8f60817e0530c72980.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한강주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 서구 광천동 607-57<br>
+        광주 서구 천변좌로 6 (광천동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a81c93b29bf21983489f568dae639b19 = L.marker(
+                [35.11073824774395, 126.82490902357925],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_a81c93b29bf21983489f568dae639b19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시민주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 서구 세하동 608-3<br>
+        광주 서구 눌재로 328<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0abc89efaa657be4f9a1e28a41dc0e6a = L.marker(
+                [35.119940505117306, 126.85833948262334],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_0abc89efaa657be4f9a1e28a41dc0e6a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)매월주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 서구 매월동 109-2<br>
+        광주 서구  회재로 845<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e85b01d9f2c5ca855d89c3d5ca4974a2 = L.marker(
+                [35.1209940355411, 126.85870219697685],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_e85b01d9f2c5ca855d89c3d5ca4974a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풍암대림주유소</b><br>
+        <b>S-OIL</b><br>
+        광주 서구 매월동 132<br>
+        광주 서구 풍서좌로 83 (매월동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27a5b635463e9ece089878959bd7803f = L.marker(
+                [35.14525095114538, 126.84637275169278],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_27a5b635463e9ece089878959bd7803f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 마륵동 166-45<br>
+        광주 서구 상무대로 758<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2a3c713320c5950a9718632634779d7 = L.marker(
+                [35.139764642282636, 126.8324926581193],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_f2a3c713320c5950a9718632634779d7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>벽진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 서구 벽진동 178-36<br>
+        광주 서구 상무대로 616 (벽진동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b34d528950e04404c6d198335f1da32 = L.marker(
+                [35.14199168061554, 126.8332414429535],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_4b34d528950e04404c6d198335f1da32.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상무주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 서구 마륵동 181-1<br>
+        광주 서구 풍서우로 408<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_02f251a3e8b38288afa61e1e489d97df = L.marker(
+                [35.116247461316064, 126.85310569414213],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_02f251a3e8b38288afa61e1e489d97df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대동에너지주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 매월동 579-12<br>
+        광주 서구 회재로 783<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71140e4d9a9bfae0409e7cb853586408 = L.marker(
+                [35.105494043975426, 126.82529568758142],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_71140e4d9a9bfae0409e7cb853586408.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서창동화주유소</b><br>
+        <b>S-OIL</b><br>
+        광주 서구 서창동 288<br>
+        광주 서구 회재로 490<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38d14e08d9d59afde21851189232993e = L.marker(
+                [35.12779558340181, 126.84548815505585],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_38d14e08d9d59afde21851189232993e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서광주역주유소(SK)</b><br>
+        <b>SK에너지</b><br>
+        광주 서구 매월동 320-6<br>
+        광주 서구 풍서우로 152<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_336179a5d27d346f59102cc1decff051 = L.marker(
+                [35.1575289067128, 126.8694681217237],
+                {}
+            ).addTo(map_adb4b212cdfb86e6fb3717105051ba14);
+        
+    
+            marker_336179a5d27d346f59102cc1decff051.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아세아주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        광주 서구 쌍촌동275-1<br>
+        광주 서구 내방로 264 (쌍촌동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_35c2b084e45f3f6b74f93984b706f313 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_35c2b084e45f3f6b74f93984b706f313" ></div>
+        
+</body>
+<script>    
+    
+            var map_35c2b084e45f3f6b74f93984b706f313 = L.map(
+                "map_35c2b084e45f3f6b74f93984b706f313",
+                {
+                    center: [37.65390024080364, 126.64420430043995],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d75d1bea619c1427cfac94503e2f09db = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            var locate_control_50ad675b255c2abec2f9afd2288df169 = L.control.locate(
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+            
+        
+    
+            var marker_8f1c54a95584653ed46f510ae8b0aed7 = L.marker(
+                [37.67597164985, 126.57606807007011],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_8f1c54a95584653ed46f510ae8b0aed7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화곡주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 김포시 대곶면 석정리46-21<br>
+        경기 김포시 대곶면 대곶북로 347<br>
+        > <b>가격: 1,564 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bac03d0f74ddd1107bd93af59295b404 = L.marker(
+                [37.63356175232645, 126.69568796824443],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_bac03d0f74ddd1107bd93af59295b404.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김포감정주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 김포시 감정동 400-5 외 2필지<br>
+        경기 김포시 김포대로 1135<br>
+        > <b>가격: 1,573 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20927f1b9ade30c5564fff89cdfc5a55 = L.marker(
+                [37.63256978285773, 126.69775627649214],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_20927f1b9ade30c5564fff89cdfc5a55.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수지Self주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 걸포동 165-8<br>
+        경기 김포시 김포대로 1115 (걸포동)<br>
+        > <b>가격: 1,583 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_17eb1837506e7e875bf092c86c04bf3e = L.marker(
+                [37.589403502205855, 126.79997133345631],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_17eb1837506e7e875bf092c86c04bf3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)유카스 에너지 올림픽점</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 고촌면 전호리 333-7<br>
+        경기 김포시 고촌읍 벌말로 768-70<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ae7015d7699d98339c1d7c9cfa7398f0 = L.marker(
+                [37.603514425078785, 126.5610513051299],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_ae7015d7699d98339c1d7c9cfa7398f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유카스에너지 대벽주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 김포시 대곶면 대벽리 871-5<br>
+        경기 김포시 대곶면 약암로 505<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b9617576674c9d4a047413bb5322b9dd = L.marker(
+                [37.697818561767626, 126.66210446127621],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_b9617576674c9d4a047413bb5322b9dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일파크 하성주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 김포시 하성면 전류리 68-3<br>
+        경기도 김포시 금포로 1925<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a03869ce0a92a45238e7be475eb4ff46 = L.marker(
+                [37.65595009174043, 126.59698913975208],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_a03869ce0a92a45238e7be475eb4ff46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태평석유직영 에덴주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 대곶면 초원지리 360-2<br>
+        경기 김포시 대곶면 대곶북로 31<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eb1de96fdc87441ae7cbc43b2520b1ac = L.marker(
+                [37.585292837305886, 126.79511070217244],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_eb1de96fdc87441ae7cbc43b2520b1ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미광셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 고촌면 전호리 386-3<br>
+        경기 김포시 고촌읍 김포대로 55-12<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34348c2d32c612aea393783ddb0a4c63 = L.marker(
+                [37.71027714285616, 126.64143993953557],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_34348c2d32c612aea393783ddb0a4c63.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)윈통상 하성제일셀프주요소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 김포시 하성면 마곡리 404-3<br>
+        경기 김포시 하성면 월하로 782<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1de80fbc8c67f09da79c271e29a495f9 = L.marker(
+                [37.6622847808714, 126.66173693475957],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_1de80fbc8c67f09da79c271e29a495f9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)유카스에너지 김포뉴타운</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 양촌읍 누산리 295-7<br>
+        경기 김포시 양촌읍 김포대로 1581<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7fa64431c3c82bce6c5f6de11be420e = L.marker(
+                [37.670896627230015, 126.59888025778687],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_e7fa64431c3c82bce6c5f6de11be420e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부자주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 김포시 대곶면 거물대리 224-6<br>
+        경기 김포시 대곶면 율마로 220<br>
+        > <b>가격: 1,590 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35dfda177e66c13cd348b3ec9180f713 = L.marker(
+                [37.67327544775925, 126.59763181384365],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_35dfda177e66c13cd348b3ec9180f713.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통진셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 김포시 통진읍 가현리 431-2<br>
+        경기 김포시 통진읍 율마로 247<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9858b978219bda5a91120ec7caab208d = L.marker(
+                [37.610956450124384, 126.78150057859013],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_9858b978219bda5a91120ec7caab208d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신곡주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 김포시 고촌면 신곡리 92<br>
+        경기 김포시 고촌읍 금포로 323<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4fd2efefe67c3db4c9865a64ccbd9ce = L.marker(
+                [37.71199857361191, 126.54757294941965],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_c4fd2efefe67c3db4c9865a64ccbd9ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미상사(주) 유명셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 김포시 월곶면 군하리 378-3<br>
+        경기 김포시 월곶면 김포대로 2759 (월곶면)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_37d6b5d9a96637a2c03d70e9432380bf = L.marker(
+                [37.646007496288796, 126.70686812129804],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_37d6b5d9a96637a2c03d70e9432380bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>걸포주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 김포시 걸포동 2-82<br>
+        경기 김포시 금포로 1117-6 (걸포동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43d1de129904c3dc366858197dcd020a = L.marker(
+                [37.625981977359494, 126.69659146456644],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_43d1de129904c3dc366858197dcd020a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김포대성 주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 김포시 감정동 520-8<br>
+        경기 김포시 중봉로 37 (감정동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71fa054cb0bc4fd40bfe295db189b48d = L.marker(
+                [37.70272953229701, 126.56775497851025],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_71fa054cb0bc4fd40bfe295db189b48d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수현주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 김포시 월곶면 갈산리 466-14<br>
+        경기 김포시 월곶면 김포대로 2553<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ec69f313432e22e50366c477bd11ea46 = L.marker(
+                [37.6969399269803, 126.58299244097708],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_ec69f313432e22e50366c477bd11ea46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한울에너지(주)마송주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 김포시 통진읍 옹정리 54-6<br>
+        경기 김포시 통진읍 김포대로 2397<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ea7601d950f900dd76531c1ef3079b57 = L.marker(
+                [37.646119803162826, 126.56333766715697],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_ea7601d950f900dd76531c1ef3079b57.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)디오티디 김포햇님이주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 김포시 대곶면 대명리 390-10<br>
+        경기 김포시 대곶면 대명항로 530<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d92a5f0d6894adb91ec8963cfda020b5 = L.marker(
+                [37.646454454398395, 126.55303960576045],
+                {}
+            ).addTo(map_35c2b084e45f3f6b74f93984b706f313);
+        
+    
+            marker_d92a5f0d6894adb91ec8963cfda020b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명탑주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 김포시 대곶면 대명리 416-6<br>
+        경기 김포시 대곶면 대곶로 14<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

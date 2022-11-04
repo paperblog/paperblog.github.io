@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08c3853855b0e4a1994c526a72600a53 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_08c3853855b0e4a1994c526a72600a53" ></div>
+        
+</body>
+<script>    
+    
+            var map_08c3853855b0e4a1994c526a72600a53 = L.map(
+                "map_08c3853855b0e4a1994c526a72600a53",
+                {
+                    center: [36.17618694258434, 128.61321891896642],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ba4b806ea50705df404a7738314bb0e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            var locate_control_c5aeca524d51bbee82bf830b5c0f1c6d = L.control.locate(
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+            
+        
+    
+            var marker_9f4339c3fa61ccf9704b03e7ed246c54 = L.marker(
+                [36.115444582951085, 128.57524427801494],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_9f4339c3fa61ccf9704b03e7ed246c54.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>효령주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 군위군 효령면 고곡리 471<br>
+        경북 군위군 효령면 경북대로 2164<br>
+        > <b>가격: 1,511 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb77ad53e14c254a4912bb23f0607af6 = L.marker(
+                [36.15369034105653, 128.58677064796373],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_fb77ad53e14c254a4912bb23f0607af6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중부주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 군위군 효령면 중구리 137-6<br>
+        경북 군위군 효령면 경북대로 2656-11<br>
+        > <b>가격: 1,511 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_83fd9eb2cc0304fe1b4670785afc2743 = L.marker(
+                [36.07127309620578, 128.708099109628],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_83fd9eb2cc0304fe1b4670785afc2743.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군위영천주유소(영천방향)</b><br>
+        <b>SK에너지</b><br>
+        경북 군위군 산성면 백학리 90<br>
+        경북 군위군 산성면 치산효령로 865-43<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5cd542cef217461ccb1302ff3a5e256e = L.marker(
+                [36.07953618888664, 128.69543729824017],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_5cd542cef217461ccb1302ff3a5e256e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼국유사군위주유소(상주방향)</b><br>
+        <b>SK에너지</b><br>
+        경북 군위군 부계면 창평리 161<br>
+        경북 군위군 부계면 치산효령로 989-23<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_95df2213b888b60208997bedd29817b7 = L.marker(
+                [36.18405151490679, 128.57634788661258],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_95df2213b888b60208997bedd29817b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 군위군 군위읍 무성리 46-2<br>
+        경북 군위군 군위읍 경북대로 3091<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d0bd550d4f2a71d5f99771ed758d61a3 = L.marker(
+                [36.26699513430714, 128.5769243472169],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_d0bd550d4f2a71d5f99771ed758d61a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군위(춘천방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 군위군 군위읍 오곡리 산68-8<br>
+        경북 군위군 군위읍 경북대로 4082<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74263caed2fc6a7f832965458c89ad76 = L.marker(
+                [36.265134529451934, 128.57496651159573],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_74263caed2fc6a7f832965458c89ad76.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜부자 군위(부산방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 군위군 군위읍 오곡리 산67-5<br>
+        경북 군위군 군위읍 경북대로 4084<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8cca958fb4f4bc2481615c3a49139bc8 = L.marker(
+                [36.117601525113145, 128.57470126443306],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_8cca958fb4f4bc2481615c3a49139bc8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>농협경제지주군위주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 군위군 효령면 고곡리 438-2<br>
+        경북 군위군 효령면 경북대로 2185-1<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_00130183b8ea3970a39316cd589d5319 = L.marker(
+                [36.24125152244554, 128.56892416746268],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_00130183b8ea3970a39316cd589d5319.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군위농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 군위군 군위읍 동부리 331<br>
+        경북 군위군 군위읍 중앙길 146<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_980575a7266f6f621c646c0bdcc536b4 = L.marker(
+                [36.255734681651795, 128.4771702915156],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_980575a7266f6f621c646c0bdcc536b4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군위농협소보주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 군위군 소보면 송원리 678-11<br>
+        경북 군위군 소보면 송원3길 18<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a7638ed418a837e1eb3719d9f8e8cd6 = L.marker(
+                [36.2021847020463, 128.56346663987713],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_1a7638ed418a837e1eb3719d9f8e8cd6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세교주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 군위군 군위읍 금구리 877-6<br>
+        경북 군위군 군위읍 경북대로 3335<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e377444fbf6c4ce880196c3b902b3914 = L.marker(
+                [36.18477769749348, 128.57629665857135],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_e377444fbf6c4ce880196c3b902b3914.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>길상주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 군위군 군위읍 무성리 55-6<br>
+        경북 군위군 군위읍 경북대로 3092<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c0abe90071441f606868c53ba5c2f943 = L.marker(
+                [36.18886899171122, 128.56969085434008],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_c0abe90071441f606868c53ba5c2f943.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 군위군 군위읍 무성리 453-1<br>
+        경북 군위군 군위읍 경북대로 3169<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a2234b25f42f4da03950bef88dfbd98 = L.marker(
+                [36.18534945985713, 128.5744126092084],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_1a2234b25f42f4da03950bef88dfbd98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화평주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 군위군 군위읍 무성리 59<br>
+        경상북도 군위군 군위읍 경북대로 3111 (군위읍)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_48c13d7c00688ec55ad8a98a366e6360 = L.marker(
+                [36.096768507078785, 128.67228025586553],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_48c13d7c00688ec55ad8a98a366e6360.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 군위군 부계면 창평리 757-1<br>
+        경북 군위군 부계면 치산효령로 1274<br>
+        > <b>가격: 1,657 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cdb8371b9216cc086d44eaf22a47164 = L.marker(
+                [36.18554801880159, 128.61115706288257],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_3cdb8371b9216cc086d44eaf22a47164.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 군위군 효령면 오천리 89<br>
+        경북 군위군 효령면 효우로 309<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c09df585fdb62f127e417dc6e4eecee = L.marker(
+                [36.17606746733592, 128.71404779216252],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_3c09df585fdb62f127e417dc6e4eecee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔공주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 군위군 의흥면 읍내리 465-1<br>
+        경북 군위군 의흥면 465-1<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f493f1903306022f1c29bc3877613fa4 = L.marker(
+                [36.12703713234572, 128.7527464682687],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_f493f1903306022f1c29bc3877613fa4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화수주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 군위군 삼국유사면 화수리 939-1<br>
+        경북 군위군 삼국유사면 동부로 305<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4b45a197a4b426c684b1f768533c526 = L.marker(
+                [36.16835643144827, 128.74403445382669],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_f4b45a197a4b426c684b1f768533c526.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>군위연계주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 군위군 의흥면 연계리 1149-1<br>
+        경북 군위군 의흥면 동부로 788<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3339db8b24fd2fa65382d305e669973b = L.marker(
+                [36.25806732659195, 128.57165978164116],
+                {}
+            ).addTo(map_08c3853855b0e4a1994c526a72600a53);
+        
+    
+            marker_3339db8b24fd2fa65382d305e669973b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백령주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 군위군 군위읍 정리 679<br>
+        경북 군위군 군위읍 경북대로 3986<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

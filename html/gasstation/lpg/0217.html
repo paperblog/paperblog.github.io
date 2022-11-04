@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c010c80aeeca9926bba5249fd35fc53 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0c010c80aeeca9926bba5249fd35fc53" ></div>
+        
+</body>
+<script>    
+    
+            var map_0c010c80aeeca9926bba5249fd35fc53 = L.map(
+                "map_0c010c80aeeca9926bba5249fd35fc53",
+                {
+                    center: [37.66184135210028, 127.19142308775137],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_081b17c91c011a950f0fc24780d449d7 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            var locate_control_ead6ab492099e3dc6600fb238e7a4740 = L.control.locate(
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+            
+        
+    
+            var marker_c032a817e21cd2f6c93baeb8af7d8538 = L.marker(
+                [37.75378614501006, 127.21615976915591],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_c032a817e21cd2f6c93baeb8af7d8538.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광릉충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 진접읍 팔야리 582-1<br>
+        경기 남양주시 진접읍 금강로 1937<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8c3b41dcc1f7673bf83f7933db67e54a = L.marker(
+                [37.70632772040703, 127.17369924195255],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_8c3b41dcc1f7673bf83f7933db67e54a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 태진에너지 내각충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 진접읍 내각리 68<br>
+        경기 남양주시 진접읍 금강로유연들1길 52<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3db199c62db8301e9fff4716c02a6a78 = L.marker(
+                [37.67337350867891, 127.20192009177153],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_3db199c62db8301e9fff4716c02a6a78.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>GS송능충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 남양주시 진건읍 송능리 157-5<br>
+        경기 남양주시 진건읍 진건오남로 405-12<br>
+        > <b>가격: 1,034 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3519cd520a848d7cf4362b8cd1329132 = L.marker(
+                [37.70601333747806, 127.18944395250018],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_3519cd520a848d7cf4362b8cd1329132.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남양주고려LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 남양주시 오남읍 양지리 724-1<br>
+        경기 남양주시 오남읍 양지로 356<br>
+        > <b>가격: 1,061 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69efed2291f7bcc902f8d8d16798ebb1 = L.marker(
+                [37.604201287274876, 127.19304646532875],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_69efed2291f7bcc902f8d8d16798ebb1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕소충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 이패동 413-13<br>
+        경기 남양주시  경강로 228<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23fcfb27ec7e64f5f69cf412eb2dca1b = L.marker(
+                [37.594349589990514, 127.18290012734428],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_23fcfb27ec7e64f5f69cf412eb2dca1b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 삼패메가충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 삼패동 607-6<br>
+        경기 남양주시 고산로 150  (삼패동)<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6778a4f62a764052cad447a023296775 = L.marker(
+                [37.70870954885127, 127.17318367331667],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_6778a4f62a764052cad447a023296775.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜세지에너지 진접LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 진접읍 내각리 산 21-3<br>
+        경기 남양주시 진접읍 금강로 1255<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20c050121462bffaf4c58f5b3f88684c = L.marker(
+                [37.654557774655636, 127.25846615936959],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_20c050121462bffaf4c58f5b3f88684c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호평LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 남양주시 호평동 산30-1<br>
+        경기 남양주시 경춘로 1510<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9dbb2c61c678a6ab2a3643363a387514 = L.marker(
+                [37.69150845890479, 127.12992309919947],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_9dbb2c61c678a6ab2a3643363a387514.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)케이엘페트로 남양주별내주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 별내면 광전리 산 110-5<br>
+        경기 남양주시 별내면 구리포천고속도로 14<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_180e7028653838390e23dae7387cb192 = L.marker(
+                [37.65502806789184, 127.33205286296246],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_180e7028653838390e23dae7387cb192.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화도에너지</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 화도읍 월산리 358<br>
+        경기 남양주시 화도읍 경춘로 2205<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4fb6fae24427a798ed6d79879aaa4db = L.marker(
+                [37.63128161917696, 127.19479809679267],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_f4fb6fae24427a798ed6d79879aaa4db.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남양주LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 일패동 10-3<br>
+        경기 남양주시 경춘로 833 (일패동)<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fcea09cfd767aa6ac05c4a8f885dde1c = L.marker(
+                [37.645513216083394, 127.13730931988859],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_fcea09cfd767aa6ac05c4a8f885dde1c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 퇴계원IC충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 퇴계원면 퇴계원리 343-1<br>
+        경기 남양주시 퇴계원면 경춘북로 477<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2302a9a1510ccdb2ea4025d516138d06 = L.marker(
+                [37.69853534860164, 127.17803536739848],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_2302a9a1510ccdb2ea4025d516138d06.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 연평충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 진접읍 연평리 219-28<br>
+        경기 남양주시 진접읍 양진로 886<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_584b9e911f86890bdc8c51ea5bb67929 = L.marker(
+                [37.69663534221473, 127.12723082654992],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_584b9e911f86890bdc8c51ea5bb67929.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광전충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 별내면 광전리 216<br>
+        경기 남양주시 별내면 송산로 638<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5012be30c76e14373ddc89ece0221c13 = L.marker(
+                [37.656026696443185, 127.16006675202695],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_5012be30c76e14373ddc89ece0221c13.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대성충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 진건읍 진관리 520<br>
+        경기 남양주시 진건읍 금강로 586<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c06d21e58ecac798c36282c7fbd34ea6 = L.marker(
+                [37.68172014376487, 127.10800059158687],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_c06d21e58ecac798c36282c7fbd34ea6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 별내충전소</b><br>
+        <b>SK가스</b><br>
+        경기 남양주시 별내동 2233-35<br>
+        경기 남양주시 덕릉로 1123<br>
+        > <b>가격: 1,074 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7db7b8dfd31142de866daa84b0517f08 = L.marker(
+                [37.55276719753998, 127.23895289313415],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_7db7b8dfd31142de866daa84b0517f08.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔당LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 와부읍 팔당리 564<br>
+        경기 남양주시 와부읍 경강로 957<br>
+        > <b>가격: 1,075 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2409e1312cb02f13b684d5374391ec1c = L.marker(
+                [37.602809334837396, 127.25042628924578],
+                {}
+            ).addTo(map_0c010c80aeeca9926bba5249fd35fc53);
+        
+    
+            marker_2409e1312cb02f13b684d5374391ec1c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕소마석간충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 와부읍 월문리 402-2<br>
+        경기 남양주시 와부읍 수레로 400<br>
+        > <b>가격: 1,084 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

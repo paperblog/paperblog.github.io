@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2b12ba0b5402c9b2844a29e096faaf1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f2b12ba0b5402c9b2844a29e096faaf1" ></div>
+        
+</body>
+<script>    
+    
+            var map_f2b12ba0b5402c9b2844a29e096faaf1 = L.map(
+                "map_f2b12ba0b5402c9b2844a29e096faaf1",
+                {
+                    center: [34.626416215622044, 127.29031800963216],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41ec7cf31889cd559ba4ee859380131d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            var locate_control_6ee82cb6ec7753fcd5ac90eb4f63ef6d = L.control.locate(
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+            
+        
+    
+            var marker_8f118656ed28c903175e3e20b56f6d0f = L.marker(
+                [34.65633683256655, 127.35383764847808],
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            marker_8f118656ed28c903175e3e20b56f6d0f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파랑새LPG충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 고흥군 점암면 연봉리 483-1<br>
+        전남 고흥군 점암면 우주항공로 2878<br>
+        > <b>가격: 1,003 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38370896a0f22ead46adb66343935ec9 = L.marker(
+                [34.68700050461083, 127.36834448347389],
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            marker_38370896a0f22ead46adb66343935ec9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금성LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 고흥군 과역면 석봉리 1238-5<br>
+        전남 고흥군 과역면 우주항공로 3256<br>
+        > <b>가격: 1,003 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_afc2e3da7d53d67769da64300f8e75a4 = L.marker(
+                [34.64044827021163, 127.30157542514476],
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            marker_afc2e3da7d53d67769da64300f8e75a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우주주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 고흥군 두원면 용반리 1039-9<br>
+        전남 고흥군 두원면 우주항공로 2333<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fbb93ade45b3b8138576d3edbe94f3cd = L.marker(
+                [34.59131771402359, 127.27155688173298],
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            marker_fbb93ade45b3b8138576d3edbe94f3cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 등암엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        전남 고흥군 고흥읍 등암리 1145-1<br>
+        전남 고흥군 고흥읍 고흥로 1520<br>
+        > <b>가격: 1,016 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a31011b826b5c1719d69d3f7047b6e37 = L.marker(
+                [34.556977756697606, 127.1562756093311],
+                {}
+            ).addTo(map_f2b12ba0b5402c9b2844a29e096faaf1);
+        
+    
+            marker_a31011b826b5c1719d69d3f7047b6e37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>녹동LPG충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 고흥군 도양읍 관리 710-3<br>
+        전남 고흥군 도양읍 우주항공로 446<br>
+        > <b>가격: 1,068 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca7cd431f0465c9ebec58598d0090bb0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ca7cd431f0465c9ebec58598d0090bb0" ></div>
+        
+</body>
+<script>    
+    
+            var map_ca7cd431f0465c9ebec58598d0090bb0 = L.map(
+                "map_ca7cd431f0465c9ebec58598d0090bb0",
+                {
+                    center: [35.597230848399015, 127.28185492278519],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_426eb6454eeb0561804e06b5cb0d1cea = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            var locate_control_13bdef238a6af61ca354153e19ca86e4 = L.control.locate(
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+            
+        
+    
+            var marker_0a281ba0c5cef55f5c5de57bc654a042 = L.marker(
+                [35.54409907728893, 127.32955073687683],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_0a281ba0c5cef55f5c5de57bc654a042.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 임실군 오수면 오수리 405-39<br>
+        전북 임실군 오수면 충효로 2077<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0f5bb287ade0c3c99e9480fb1313ffa2 = L.marker(
+                [35.569875353786166, 127.3114313767217],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_0f5bb287ade0c3c99e9480fb1313ffa2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하나에너지 봉천주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 임실군 오수면 봉천리 636-41<br>
+        전북 임실군 오수면 춘향로 2036<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab488f06eabbb3d60630e6303c040696 = L.marker(
+                [35.53919463198711, 127.3092474470673],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_ab488f06eabbb3d60630e6303c040696.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오수(순천방향)주유소(하)</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 임실군 오수면 오산리 678-1<br>
+        전북 임실군 오수면 순천완주고속도로 73<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1567dec63cf560dd0964e281a31e078e = L.marker(
+                [35.5597857857304, 127.32039725207548],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_1567dec63cf560dd0964e281a31e078e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만남주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 임실군 오수면 대명리 304-2<br>
+        전북 임실군 오수면 춘향로 1840<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc2e76887db786a28cc01cda7b1d4470 = L.marker(
+                [35.599202234351985, 127.32038495171896],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_cc2e76887db786a28cc01cda7b1d4470.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이도령주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 임실군 성수면 오류리 291-1<br>
+        전북 임실군 성수면 춘향로 2377<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63ad9f5cdf1e52e1906131e6856a5161 = L.marker(
+                [35.541913290047766, 127.31163022439391],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_63ad9f5cdf1e52e1906131e6856a5161.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오수(완주방향)주유소(상)</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 임실군 오수면 대명리 783-16<br>
+        전북 임실군 오수면 순천완주고속도로 74<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d636373cafb355e695af7b8101b69b52 = L.marker(
+                [35.618432533641986, 127.28371738768858],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_d636373cafb355e695af7b8101b69b52.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 임실군 임실읍 이도리 172-6<br>
+        전북 임실군 임실읍 봉황로 213<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2d49370c2ef27c97d7551e079195a045 = L.marker(
+                [35.614220902548304, 127.32235546939154],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_2d49370c2ef27c97d7551e079195a045.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 임실군 성수면 월평리 442-1<br>
+        전북 임실군 성수면 춘향로 2554<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72f339e2378dd1e1ae3f1eb7d4c9d401 = L.marker(
+                [35.68326102643317, 127.26417537876148],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_72f339e2378dd1e1ae3f1eb7d4c9d401.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>닛시2주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 임실군 관촌면 관촌리 741-2<br>
+        전북 임실군 관촌면 춘향로 3596<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f60765ed84e002a7f99adf95820a9e11 = L.marker(
+                [35.536614391102525, 127.33220436790398],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_f60765ed84e002a7f99adf95820a9e11.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금암주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 임실군 오수면 금암리 404-2<br>
+        전북 임실군 오수로 112<br>
+        > <b>가격: 1,837 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3a005836c89a2dab8a4ec9c80008dfef = L.marker(
+                [35.55888846821551, 127.31397141245998],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_3a005836c89a2dab8a4ec9c80008dfef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼각지주유소</b><br>
+        <b>자가상표</b><br>
+        전북 임실군 오수면 대명리 881-1<br>
+        전북 임실군 오수면 오수로 460<br>
+        > <b>가격: 1,837 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c069f2e2affe6463858ccdc20a018c1d = L.marker(
+                [35.54186267236877, 127.32541499349827],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_c069f2e2affe6463858ccdc20a018c1d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 임실군 오수면 오수리 539-5<br>
+        전북 임실군 오수면 오수로 200<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b28fb55809bcdf51bfbfd6f1a15b610c = L.marker(
+                [35.69063105602687, 127.25407094813873],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_b28fb55809bcdf51bfbfd6f1a15b610c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>슬치주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 임실군 관촌면 슬치리 249-2<br>
+        전북 임실군 관촌면 춘향로 3730<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e25a66c905dc415c6b282b649b1b5434 = L.marker(
+                [35.68349683184465, 127.26374923722771],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_e25a66c905dc415c6b282b649b1b5434.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>닛시오일</b><br>
+        <b>SK에너지</b><br>
+        전북 임실군 관촌면 관촌리 744-4<br>
+        전북 임실군 관촌면 춘향로 3602<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cd7c31f3628b0cd4b8b3ce0e7f411d69 = L.marker(
+                [35.67374633940649, 127.16197001844336],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_cd7c31f3628b0cd4b8b3ce0e7f411d69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새희망주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 임실군 신덕면 신흥리 411-1<br>
+        전북 임실군 신덕면 신덕평로 713<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6837f519e819b2b9a9ce2b9bf463008 = L.marker(
+                [35.61623250684659, 127.2899105480587],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_e6837f519e819b2b9a9ce2b9bf463008.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>임실농협 주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 임실군 임실읍 이도리 36<br>
+        전라북도 임실군 임실읍 호국로 1721<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_46b582342a4064710de86eeae1f19906 = L.marker(
+                [35.660392797810516, 127.27722217118624],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_46b582342a4064710de86eeae1f19906.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오수관촌농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 임실군 관촌면 병암리 349-44<br>
+        전북 임실군 관촌면 춘향로 3306<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2f7a996777a7c942d8ce0f87d038401 = L.marker(
+                [35.570188394587625, 127.20259677999685],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_a2f7a996777a7c942d8ce0f87d038401.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>임실농협 청웅지점 주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 임실군 청웅면 구고리 415-5<br>
+        전북 임실군 청웅면 구고6길 66<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_870c14bedee19c7dfbf487be27122ad6 = L.marker(
+                [35.612937757000275, 127.28294591100133],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_870c14bedee19c7dfbf487be27122ad6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신안주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 임실군 임실읍 이도리 256-3<br>
+        전북 임실군 임실읍 중동로 49<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_53b07636a0d286f1e5460f7033821823 = L.marker(
+                [35.529640916954676, 127.16015184309305],
+                {}
+            ).addTo(map_ca7cd431f0465c9ebec58598d0090bb0);
+        
+    
+            marker_53b07636a0d286f1e5460f7033821823.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 임실군 강진면 갈담리 516-1<br>
+        전북 임실군 강진면 호국로 7<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

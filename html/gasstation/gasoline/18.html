@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_084a25de1f16dcd1c54a14b3a028dab4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_084a25de1f16dcd1c54a14b3a028dab4" ></div>
+        
+</body>
+<script>    
+    
+            var map_084a25de1f16dcd1c54a14b3a028dab4 = L.map(
+                "map_084a25de1f16dcd1c54a14b3a028dab4",
+                {
+                    center: [35.51327130519868, 129.28100673112732],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f091b52fd7f0f5dc45bbad2847e17ea = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            var locate_control_205f8c32997b4861960a35e14eba19fd = L.control.locate(
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+            
+        
+    
+            var marker_7e48649c82a266036bceaaf9fc902aa6 = L.marker(
+                [35.48749181051163, 129.2248607254425],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_7e48649c82a266036bceaaf9fc902aa6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)좋은기름나라 웅촌지점</b><br>
+        <b>S-OIL</b><br>
+        울산 울주군 웅촌면 대복리 8-2<br>
+        울산 울주군 웅촌면 웅촌로 724<br>
+        > <b>가격: 1,535 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e253c67910304ec5dd0ec63824c823b3 = L.marker(
+                [35.472806853373754, 129.2193775906952],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_e253c67910304ec5dd0ec63824c823b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>웅촌구도일주유소</b><br>
+        <b>S-OIL</b><br>
+        울산 울주군 웅촌면 곡천리 1-19<br>
+        울산 울주군 웅촌면 웅촌로 504<br>
+        > <b>가격: 1,535 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33fd8121a88e45c84e126541c701c475 = L.marker(
+                [35.51182473365836, 129.23712071984107],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_33fd8121a88e45c84e126541c701c475.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>율리셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        울산 울주군 청량면 율리 772-3<br>
+        울산 울주군 청량면 웅촌로 1044<br>
+        > <b>가격: 1,535 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5395d05caf2e38744bccb75de7b4c714 = L.marker(
+                [35.486464107846935, 129.2191390104713],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_5395d05caf2e38744bccb75de7b4c714.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신석유(주)직영 웅촌대로주유소</b><br>
+        <b>SK에너지</b><br>
+        울산 울주군 웅촌면 대복리 451-1<br>
+        울산 울주군 웅촌면 웅촌로 676<br>
+        > <b>가격: 1,539 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2216b5ac84e01dd76ed6e406e530b5c1 = L.marker(
+                [35.452099221917635, 129.20272876396973],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_2216b5ac84e01dd76ed6e406e530b5c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스씨1주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        울산 울주군 웅촌면 대대리145-9<br>
+        울산 울주군 웅촌면 웅촌로 217<br>
+        > <b>가격: 1,540 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf1784a4702c943de122891f0743e792 = L.marker(
+                [35.464841804036936, 129.20926459692527],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_cf1784a4702c943de122891f0743e792.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)흥연주유소</b><br>
+        <b>자영알뜰</b><br>
+        울산 울주군 웅촌면 곡천리 252-1<br>
+        울산 울주군 웅촌면 웅촌로 377<br>
+        > <b>가격: 1,540 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84b5c5c3f37f3173d6ff61660df8b193 = L.marker(
+                [35.442267500221234, 129.19437680039627],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_84b5c5c3f37f3173d6ff61660df8b193.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 울주군 웅촌면 대대리 1084-18<br>
+        울산 울주군 웅촌면 웅촌로 81<br>
+        > <b>가격: 1,545 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_563d56c1bb964c4a459c454b040667d0 = L.marker(
+                [35.51088592320124, 129.23637878260863],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_563d56c1bb964c4a459c454b040667d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>율선주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 울주군 청량면 율리 767-2<br>
+        울산 울주군 청량면 웅촌로 1035<br>
+        > <b>가격: 1,545 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2b9ca210cb22bfaf21e79a11e8a35a32 = L.marker(
+                [35.4996704359516, 129.30762740178267],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_2b9ca210cb22bfaf21e79a11e8a35a32.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 남구 두왕동 459-2<br>
+        울산 남구 온산로 820 (두왕동)<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a26636de131dcb122cb50cbf8e8528a = L.marker(
+                [35.52810346136912, 129.3469602135704],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_4a26636de131dcb122cb50cbf8e8528a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무지개주유소</b><br>
+        <b>SK에너지</b><br>
+        울산 남구 여천동 1186-3<br>
+        울산 남구 산업로 515 (여천동)<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c0fb13312081ca661402b24c1f6adf1 = L.marker(
+                [35.47857610546615, 129.21988902752463],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_4c0fb13312081ca661402b24c1f6adf1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천년에너지 광명주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        울산 울주군 웅촌면 대복리 635-2<br>
+        울산 울주군 웅촌면 웅촌로 567<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ca76991114b1d1fa840104c328ec742 = L.marker(
+                [35.536473951718406, 129.3513852803809],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_5ca76991114b1d1fa840104c328ec742.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대창주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 남구 삼산동 1651-5<br>
+        울산 남구 산업로 617 (삼산동)<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d18575a22d4604c879761176f5d99516 = L.marker(
+                [35.530285290336835, 129.34104739371088],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_d18575a22d4604c879761176f5d99516.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다운타운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 남구 야음동 20-10<br>
+        울산 남구 화합로 61<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_467320a627bc7b711a33ba9b9236c49d = L.marker(
+                [35.50557207740253, 129.31765567544366],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_467320a627bc7b711a33ba9b9236c49d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)일광주유소</b><br>
+        <b>GS칼텍스</b><br>
+        울산 남구 상개동 311-1<br>
+        울산 남구 산업로 93<br>
+        > <b>가격: 1,564 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_86b70499661ae5983b9da97b8e8c5e11 = L.marker(
+                [35.53359859158752, 129.34148900730273],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_86b70499661ae5983b9da97b8e8c5e11.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)남울산주유소</b><br>
+        <b>SK에너지</b><br>
+        울산 남구 삼산동 1604-8<br>
+        울산 남구 꽃대나리로 105 (삼산동)<br>
+        > <b>가격: 1,564 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb07a19f8bbd07b4059e52f36d05f369 = L.marker(
+                [35.55343035289496, 129.31514154080764],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_fb07a19f8bbd07b4059e52f36d05f369.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우정주유소</b><br>
+        <b>자영알뜰</b><br>
+        울산 중구 성남동 311-1<br>
+        울산 중구 중앙길 14 (성남동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_94033dba3156ab336656dd20c45653e8 = L.marker(
+                [35.55968143859305, 129.34067900992704],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_94033dba3156ab336656dd20c45653e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>차세대주유소(주)</b><br>
+        <b>GS칼텍스</b><br>
+        울산 중구 반구동 262-32<br>
+        울산 중구 구교로 170 (반구동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1209e4a2ed6942040da3b83ff581b595 = L.marker(
+                [35.54286679925484, 129.33985842345598],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_1209e4a2ed6942040da3b83ff581b595.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구도일주유소동운</b><br>
+        <b>S-OIL</b><br>
+        울산 남구 삼산동 1551-4<br>
+        울산 남구 화합로 202 (삼산동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5942c4c26785a4ed4795f1a468f61e30 = L.marker(
+                [35.61570915625696, 129.35266426799734],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_5942c4c26785a4ed4795f1a468f61e30.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        울산 북구 창평동 1098-4<br>
+        울산 북구 산업로 1274 (창평동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c55518ef3ba575dd51bd750594a1c379 = L.marker(
+                [35.55277648837386, 129.30249039029275],
+                {}
+            ).addTo(map_084a25de1f16dcd1c54a14b3a028dab4);
+        
+    
+            marker_c55518ef3ba575dd51bd750594a1c379.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)화주유소</b><br>
+        <b>S-OIL</b><br>
+        울산 중구 태화동 122-2<br>
+        울산 중구 태화로 248<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

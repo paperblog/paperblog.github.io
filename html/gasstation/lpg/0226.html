@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2761cd4b550fd8f234592ed36ae1afdb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2761cd4b550fd8f234592ed36ae1afdb" ></div>
+        
+</body>
+<script>    
+    
+            var map_2761cd4b550fd8f234592ed36ae1afdb = L.map(
+                "map_2761cd4b550fd8f234592ed36ae1afdb",
+                {
+                    center: [37.78505225293428, 126.78380492473018],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7381257d012db809ef01914055e2689f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            var locate_control_428e3caf718600a5a7bdf81784baf73c = L.control.locate(
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+            
+        
+    
+            var marker_e2a19ae820e606c56c382efdf88d7d95 = L.marker(
+                [37.74571347758463, 126.76392653382521],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_e2a19ae820e606c56c382efdf88d7d95.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운정드림주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 파주시 교하동 70-44<br>
+        경기 파주시 파주로 721<br>
+        > <b>가격: 925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6dc130e515b7da0f93c7dfeb7f62c3e2 = L.marker(
+                [37.767598004283414, 126.79275581915482],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_6dc130e515b7da0f93c7dfeb7f62c3e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이케이에너지(주) 파동충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 파주시 아동동 114-1<br>
+        경기 파주시 통일로 647<br>
+        > <b>가격: 925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e663b56cc9d2a8bc24c55e7d424ddbc = L.marker(
+                [37.76914561802279, 126.7658630493622],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_7e663b56cc9d2a8bc24c55e7d424ddbc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파주LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 파주시 야동동 94-18<br>
+        경기 파주시 시청로 302 (야동동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b08baed5f9104b715afdb46a93b4102c = L.marker(
+                [37.76349657784838, 126.79552189865363],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_b08baed5f9104b715afdb46a93b4102c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 신성석유 금촌충전소</b><br>
+        <b>SK가스</b><br>
+        경기 파주시 아동동 91-7<br>
+        경기 파주시 통일로 598 (아동동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f97673c076a6b554bba4b8be8bea58e2 = L.marker(
+                [37.76883696904392, 126.78281327016123],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_f97673c076a6b554bba4b8be8bea58e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이와이에너지㈜ 아동주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 파주시 아동동 322-19<br>
+        경기 파주시 새꽃로 279 (아동동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d598ba6ce586c26a552100d73640c882 = L.marker(
+                [37.769536478024904, 126.78623470885395],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_d598ba6ce586c26a552100d73640c882.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대일충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 아동동 146-8<br>
+        경기 파주시 새꽃로 312 (아동동)<br>
+        > <b>가격: 953 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_26063c934c3cf1a6a92297673b26361f = L.marker(
+                [37.743104508010035, 126.75181055295052],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_26063c934c3cf1a6a92297673b26361f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)교하충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 당하동 338<br>
+        경기 파주시  천정구로 82 (당하동)<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc7bbdff675cb0b5ddb882d0d9c674b5 = L.marker(
+                [37.724983020070944, 126.69670864392323],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_cc7bbdff675cb0b5ddb882d0d9c674b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)청담산업 문발 충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 문발동 233-2<br>
+        경기 파주시 파주로 65<br>
+        > <b>가격: 980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3a999bcd48af4fd4216f27feaeabd0d2 = L.marker(
+                [37.764969153835445, 126.76539895252256],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_3a999bcd48af4fd4216f27feaeabd0d2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금촌LPG㈜</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 금촌동 466-114<br>
+        경기 파주시 아리랑로 54 (금촌동)<br>
+        > <b>가격: 1,021 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c2ce92e3eceec79c73fac29b5217ca75 = L.marker(
+                [37.70408083545428, 126.74671052214947],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_c2ce92e3eceec79c73fac29b5217ca75.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미상사(주) 미래로충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 동패동 20-1<br>
+        경기 파주시 미래로 292 (동패동)<br>
+        > <b>가격: 1,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bfb5c58efc4f1e5d011d16f9147c3148 = L.marker(
+                [37.80826794809861, 126.79408754683695],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_bfb5c58efc4f1e5d011d16f9147c3148.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태광에너지</b><br>
+        <b>SK에너지</b><br>
+        경기 파주시 파주읍 봉암리 988-2<br>
+        경기 파주시 파주읍 통일로 1120<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b6dbe02e1a515b40f89e62d40e3649d = L.marker(
+                [37.95493127923756, 126.85239862040021],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_5b6dbe02e1a515b40f89e62d40e3649d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통일충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 파주시 적성면 답곡리 470-3<br>
+        경기 파주시 적성면 율곡로 1468<br>
+        > <b>가격: 1,037 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_012576ecb0feaa9567668688c664d42f = L.marker(
+                [37.84577898079862, 126.88951360702863],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_012576ecb0feaa9567668688c664d42f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥안LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 파주시 법원읍 법원리 401-2<br>
+        경기 파주시 법원읍 화합로 202<br>
+        > <b>가격: 1,064 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22d807b26a017f6e90b34847ed686b60 = L.marker(
+                [37.860288690766275, 126.78952522040014],
+                {}
+            ).addTo(map_2761cd4b550fd8f234592ed36ae1afdb);
+        
+    
+            marker_22d807b26a017f6e90b34847ed686b60.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신성석유(주)</b><br>
+        <b>SK가스</b><br>
+        경기 파주시 문산읍 선유리 966-1<br>
+        경기 파주시 문산읍 통일로 1712<br>
+        > <b>가격: 1,064 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

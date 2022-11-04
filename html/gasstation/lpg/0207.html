@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e078e223e4614133c76f48004a7d2299 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e078e223e4614133c76f48004a7d2299" ></div>
+        
+</body>
+<script>    
+    
+            var map_e078e223e4614133c76f48004a7d2299 = L.map(
+                "map_e078e223e4614133c76f48004a7d2299",
+                {
+                    center: [37.45305179920258, 126.85197775818892],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f3112ec4e05a51de9d43c311d3107abe = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+        
+    
+            var locate_control_11ee2ed89352b15d7c629e8e81baa88c = L.control.locate(
+                {}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+            
+        
+    
+            var marker_04a1f1ebfd11415d152d358591977150 = L.marker(
+                [37.415641131109446, 126.84933080618501],
+                {}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+        
+    
+            marker_04a1f1ebfd11415d152d358591977150.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 가학충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광명시 가학동 563<br>
+        경기 광명시 광명로 159 (가학동)<br>
+        > <b>가격: 1,063 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40e1b521b3cef90d6ff4ead5e556ea10 = L.marker(
+                [37.460705709258086, 126.84492594844144],
+                {}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+        
+    
+            marker_40e1b521b3cef90d6ff4ead5e556ea10.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다원FNC 광명충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 광명동 621-7<br>
+        경기 광명시 광명로 675 (광명동)<br>
+        > <b>가격: 1,078 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c83ff5a6ccd9ec6e413bfe915bba1c1 = L.marker(
+                [37.481653629777824, 126.847554954802],
+                {}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+        
+    
+            marker_3c83ff5a6ccd9ec6e413bfe915bba1c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 헵시바LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광명시 광명동 162-5<br>
+        경기 광명시 오리로 1044(광명동)<br>
+        > <b>가격: 1,081 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bb5ea1ab64daac4066ceede9b2a86149 = L.marker(
+                [37.45420672666498, 126.86609932332729],
+                {}
+            ).addTo(map_e078e223e4614133c76f48004a7d2299);
+        
+    
+            marker_bb5ea1ab64daac4066ceede9b2a86149.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>극동실업(주)충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 하안동 501-6<br>
+        경기 광명시 범안로 903 (하안동)<br>
+        > <b>가격: 1,083 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

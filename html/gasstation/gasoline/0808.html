@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b2326d89796d095c5c7d49bde1e2e98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3b2326d89796d095c5c7d49bde1e2e98" ></div>
+        
+</body>
+<script>    
+    
+            var map_3b2326d89796d095c5c7d49bde1e2e98 = L.map(
+                "map_3b2326d89796d095c5c7d49bde1e2e98",
+                {
+                    center: [36.630380494425296, 128.17471776965337],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d572eac1c23208020775027960f587cd = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            var locate_control_4e10a8efff31831d6a019a37e887d9ee = L.control.locate(
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+            
+        
+    
+            var marker_7f15ddf1109b1195eb5e158815bc1757 = L.marker(
+                [36.6201853636974, 128.15048973356397],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_7f15ddf1109b1195eb5e158815bc1757.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서원문경(하)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 문경시 유곡동 460-10<br>
+        경북 문경시 중부내륙고속도로 173-1<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_65abbaa7292fb933eb498aa041f5b4af = L.marker(
+                [36.619967061283816, 128.152725362502],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_65abbaa7292fb933eb498aa041f5b4af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국도로공사 문경(양평방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 문경시 유곡동 458<br>
+        경북 문경시 중부내륙고속도로 174-1<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6fcaff6ddc1ea9caa7980922ebb45297 = L.marker(
+                [36.640892050555685, 128.1495789019719],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_6fcaff6ddc1ea9caa7980922ebb45297.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>불정주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 문경시 불정동 48-3<br>
+        경북 문경시 문경대로 949<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6f057a85e0fa2bd241f80426d3d8f59c = L.marker(
+                [36.61241358523318, 128.2144932065076],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_6f057a85e0fa2bd241f80426d3d8f59c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이케이(주)영강주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 문경시 산양면 반곡리 636-3<br>
+        경북 문경시 산양면 중앙로 358<br>
+        > <b>가격: 1,620 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38589e5688b89767a78b858f367a3587 = L.marker(
+                [36.71973846260678, 128.10640426241997],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_38589e5688b89767a78b858f367a3587.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문경새재IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 문경시 문경읍 마원리 426<br>
+        경북 문경시 문경읍 문경대로 2094<br>
+        > <b>가격: 1,631 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52eef2fe8035c63fde9e1d3dd537abf2 = L.marker(
+                [36.583995877482074, 128.18122139133052],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_52eef2fe8035c63fde9e1d3dd537abf2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양지셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 문경시 모전동 933<br>
+        경북 문경시 당교로 162 (모전동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b87a492cc570424234d9e5f0f35ad635 = L.marker(
+                [36.597109618537296, 128.19188425751034],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_b87a492cc570424234d9e5f0f35ad635.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금성주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 모전동 556-1<br>
+        경북 문경시 상신로 70 (모전동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd0aa07b8de865bb9c28ed37d0a0fa99 = L.marker(
+                [36.58424989466533, 128.18055206158016],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_fd0aa07b8de865bb9c28ed37d0a0fa99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>점촌셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 문경시 모전동 930<br>
+        경북 문경시 당교로 159<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad23c8e260a839ec26c107fbbb063ded = L.marker(
+                [36.59296560010303, 128.19842800848113],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_ad23c8e260a839ec26c107fbbb063ded.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>알뜰성일주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 문경시 점촌동 278-3<br>
+        경북 문경시 중앙2길 24 (점촌동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7823b635ddb2db22b6182c7110d624f0 = L.marker(
+                [36.584706644258915, 128.18200531772416],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_7823b635ddb2db22b6182c7110d624f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명품셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 모전동  925<br>
+        경북 문경시 매봉로 1 (모전동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_763ba6cb8d8bb01cbf2233559d3aac0c = L.marker(
+                [36.609230392800406, 128.20847831713843],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_763ba6cb8d8bb01cbf2233559d3aac0c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태광셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 흥덕동 568-1<br>
+        경북 문경시 중앙로 293 (흥덕동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aca0e7017caa1120d507bc0f8e4b0f99 = L.marker(
+                [36.58433322172016, 128.18099646587294],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_aca0e7017caa1120d507bc0f8e4b0f99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서울주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 문경시 모전동 925-3<br>
+        경북 문경시 당교로 163 (모전동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d6bfb3bf077bb3cf577eac2ee257871 = L.marker(
+                [36.61141382985201, 128.2339914886518],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_8d6bfb3bf077bb3cf577eac2ee257871.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 문경시 산양면 진정리 388-1<br>
+        경북 문경시 산양면 추산로 1<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0190e1492e6c6beb1114b2297e70ba18 = L.marker(
+                [36.61101838731737, 128.23991799919247],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_0190e1492e6c6beb1114b2297e70ba18.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>붕붕주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 산양면 진정리 452-4<br>
+        경북 문경시 산양면 경서로 589<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c570ba478f3d5640db36a22cc392931f = L.marker(
+                [36.61094014336605, 128.27005736279804],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_c570ba478f3d5640db36a22cc392931f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새길주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 산양면 연소리 82-11<br>
+        경상북도 문경시 산양면 경서로 873 (산양면)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3973070d029b1687e25f2bd59afb08f4 = L.marker(
+                [36.72509361660043, 128.10720213756105],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_3973070d029b1687e25f2bd59afb08f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문경주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 문경시 문경읍 하리 305-7<br>
+        경상북도 문경시 문경읍 새재로 355 (문경읍)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f4b2b7ee9f1933b965c36ffdecf5854 = L.marker(
+                [36.608108308735886, 128.18310714479873],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_8f4b2b7ee9f1933b965c36ffdecf5854.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공평주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 문경시 공평동 327<br>
+        경북 문경시 공평로 98 (공평동)<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ccc83b978fba53d5d5a9ecec8f0cb6c = L.marker(
+                [36.740037061104786, 128.08417012178094],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_7ccc83b978fba53d5d5a9ecec8f0cb6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새재주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 문경시 문경읍 진안리 141-2<br>
+        경북 문경시 문경읍 문경대로 2403<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f481ad7fc641806b85a285fc299527fe = L.marker(
+                [36.61450651378549, 128.172428099568],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_f481ad7fc641806b85a285fc299527fe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문경행복주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 공평동 676-25<br>
+        경북 문경시 공평로 216 (공평동)<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_663bc3e70a403cb1e4954abb059c73e0 = L.marker(
+                [36.736704254799896, 128.10622375211315],
+                {}
+            ).addTo(map_3b2326d89796d095c5c7d49bde1e2e98);
+        
+    
+            marker_663bc3e70a403cb1e4954abb059c73e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문희주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 문경시 문경읍 상리 526-10<br>
+        경북 문경시 문경읍 청운로 47<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

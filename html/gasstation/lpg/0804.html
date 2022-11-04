@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3a57875c6de60948f4c18114bbafeba1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3a57875c6de60948f4c18114bbafeba1" ></div>
+        
+</body>
+<script>    
+    
+            var map_3a57875c6de60948f4c18114bbafeba1 = L.map(
+                "map_3a57875c6de60948f4c18114bbafeba1",
+                {
+                    center: [36.82169887133521, 128.62340154947083],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4e5069446a878c12feb578888628ed3 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            var locate_control_f1466b16391839eb894e05d093f100c6 = L.control.locate(
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+            
+        
+    
+            var marker_d9dbc68d766f309c8104c2498be5e268 = L.marker(
+                [36.766445148103045, 128.67877623618367],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_d9dbc68d766f309c8104c2498be5e268.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송리원LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영주시 이산면 운문리 43-7<br>
+        경북 영주시 이산면 경북대로 2932<br>
+        > <b>가격: 1,010 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f0fa3813a01a78645ffbc3d0a61f3e40 = L.marker(
+                [36.837801039570415, 128.64804884426727],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_f0fa3813a01a78645ffbc3d0a61f3e40.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 우성충전소</b><br>
+        <b>SK가스</b><br>
+        경북 영주시 상망동 252-1<br>
+        경북 영주시 원당로 389 (상망동)<br>
+        > <b>가격: 1,050 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_15b78a98783796e0450cb401ff419040 = L.marker(
+                [36.83664697579215, 128.64484384220543],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_15b78a98783796e0450cb401ff419040.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대영가스충전소</b><br>
+        <b>SK가스</b><br>
+        경북 영주시 상망동 493-2<br>
+        경북 영주시 원당로 358-8 (상망동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eb20ebe1db2586ffff01286d568ce4b8 = L.marker(
+                [36.83096330646911, 128.63766611877526],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_eb20ebe1db2586ffff01286d568ce4b8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동진충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영주시 상망동 625-17<br>
+        경북 영주시 원당로 258 (상망동)<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bd3bbedd4dc99d1e110dcc68b5b5a22c = L.marker(
+                [36.81970651038801, 128.62807183520056],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_bd3bbedd4dc99d1e110dcc68b5b5a22c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영주가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영주시 휴천동 709-31<br>
+        경북 영주시 구성로294번길 6 (휴천동)<br>
+        > <b>가격: 1,058 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f9f8accfa5ccf4bd061c17604686f832 = L.marker(
+                [36.806326772760016, 128.60851370784445],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_f9f8accfa5ccf4bd061c17604686f832.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영주IC충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 영주시 문정동 172-6<br>
+        경북 영주시 가흥로 81 (문정동)<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b56fec160a48309c4fe0a621546a334b = L.marker(
+                [36.81269717366023, 128.612550892986],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_b56fec160a48309c4fe0a621546a334b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영주시민충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 영주시 가흥동 278-1<br>
+        경북 영주시 가흥로 167 (가흥동)<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_078ed0d42f104e6e448efa6c062aa9a6 = L.marker(
+                [36.863004043938716, 128.52874091830387],
+                {}
+            ).addTo(map_3a57875c6de60948f4c18114bbafeba1);
+        
+    
+            marker_078ed0d42f104e6e448efa6c062aa9a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풍기LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 영주시 봉현면 오현리 225<br>
+        경북 영주시 봉현면 신재로 860<br>
+        > <b>가격: 1,070 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

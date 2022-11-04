@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa02348fe04c67e3c556b0cd546ea79e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aa02348fe04c67e3c556b0cd546ea79e" ></div>
+        
+</body>
+<script>    
+    
+            var map_aa02348fe04c67e3c556b0cd546ea79e = L.map(
+                "map_aa02348fe04c67e3c556b0cd546ea79e",
+                {
+                    center: [34.921757408019616, 126.75443922303653],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0720d5ddfbb4f47d99ea7e241ace128f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            var locate_control_a449414b8c5b327d0f02da808d105d06 = L.control.locate(
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+            
+        
+    
+            var marker_9999c1344842350b60a5a18f6d14a480 = L.marker(
+                [35.07613429381247, 126.76107926687344],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_9999c1344842350b60a5a18f6d14a480.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜대원 노안제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 나주시 노안면 도산리 69<br>
+        전남 나주시 노안면 건재로 683<br>
+        > <b>가격: 1,554 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_251617465200569b6c321901809c8f36 = L.marker(
+                [35.04467363372742, 126.7763681260996],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_251617465200569b6c321901809c8f36.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신도시주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 나주시 금천면 신가리 493-1<br>
+        전남 나주시 금천면 빛가람장성로 2045<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20b0bf10293e09370e591a99eff4c2cc = L.marker(
+                [35.04293268002884, 126.7151375665368],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_20b0bf10293e09370e591a99eff4c2cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜대원 동신주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 나주시 대호동 867<br>
+        전남 나주시 건재로 89 (대호동)<br>
+        > <b>가격: 1,564 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_62cab9ee1e0e3f33644c9a2993f0d083 = L.marker(
+                [35.04525919412149, 126.77621862257882],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_62cab9ee1e0e3f33644c9a2993f0d083.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)남현주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 나주시 금천면 신가리 458-6<br>
+        전남 나주시 금천면 빛가람장성로 2055<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_799d99981b276af68db2df19a9b62859 = L.marker(
+                [34.788487496281896, 126.40337930837984],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_799d99981b276af68db2df19a9b62859.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조은주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 목포시 산정동 1391-1<br>
+        전남 목포시 삼학로183번길 1 (산정동)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35e9d1f95f948f7285bd54193af41b6f = L.marker(
+                [34.798370534251234, 126.38202641204009],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_35e9d1f95f948f7285bd54193af41b6f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)대성주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 목포시 대성동 127-114<br>
+        전남 목포시 청호로 57<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0d5d7f91580bd2c8c4271895b34efe1e = L.marker(
+                [34.9435973959716, 127.49596052448162],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_0d5d7f91580bd2c8c4271895b34efe1e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시장주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 순천시 풍덕동 1268-13<br>
+        전남 순천시 풍덕8길 19 (풍덕동)<br>
+        > <b>가격: 1,577 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d11a610fd75d81e7601efcaea4b36f71 = L.marker(
+                [35.17799454412852, 126.59487119494527],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_d11a610fd75d81e7601efcaea4b36f71.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함평나비주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 해보면 해보리 212-27<br>
+        전남 함평군 해보면 영광로 2538<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20d8c16feb0b544d19d403ca2c5cc46f = L.marker(
+                [34.93281383699918, 126.43334063596639],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_20d8c16feb0b544d19d403ca2c5cc46f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 무안군 청계면 송현리 122-1<br>
+        전남 무안군 청계면 영산로 1968<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a86e3ebdcf3e157e13b0b4475cef058 = L.marker(
+                [34.944204529714966, 126.44226452242012],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_4a86e3ebdcf3e157e13b0b4475cef058.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)삼거리주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 무안군 청계면 청수리 158-1<br>
+        전남 무안군 청계면 영산로 2120<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_290a7b846643c64159de7171725ecff8 = L.marker(
+                [34.81461327118186, 126.42953570228379],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_290a7b846643c64159de7171725ecff8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도청주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 목포시 옥암동 817-2<br>
+        전남 목포시 녹색로 139 (옥암동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_177f6275f9740e4b1f94c721d9fd8678 = L.marker(
+                [34.84898937269305, 127.43083090948403],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_177f6275f9740e4b1f94c721d9fd8678.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대광주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 순천시 별량면 두고리 335-2<br>
+        전남 순천시 별량면 녹색로 558<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f33c6ec10ad382c2c10576cd766a5041 = L.marker(
+                [34.92768122617515, 126.70865299665309],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_f33c6ec10ad382c2c10576cd766a5041.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세지예향주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 나주시 세지면 송제리 790-13<br>
+        전남 나주시 세지면 예향로 3014<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14f274d9cff977b46e732d02b62bec05 = L.marker(
+                [34.840796627598785, 127.40290152083095],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_14f274d9cff977b46e732d02b62bec05.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호동주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 보성군 벌교읍 호동리 205-9<br>
+        전남 보성군 벌교읍 녹색로 6112<br>
+        > <b>가격: 1,581 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1c7fd84ec7d952ea14a03c6ba1bc743e = L.marker(
+                [34.8414417528121, 127.42499529168485],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_1c7fd84ec7d952ea14a03c6ba1bc743e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜현대그린우드 사계절주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 순천시 별량면 구룡리 295-1<br>
+        전남 순천시 별량면 녹색로 456<br>
+        > <b>가격: 1,581 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d25943207a9e9c6d45044eb109a04493 = L.marker(
+                [34.73326902533618, 126.52524850386146],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_d25943207a9e9c6d45044eb109a04493.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼호주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 영암군 삼호읍 망산리 653-7<br>
+        전남 영암군 삼호읍 녹색로 1530<br>
+        > <b>가격: 1,584 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2bd8499be9743badb07e608d82b1d7f = L.marker(
+                [34.73291363512594, 126.53539830742628],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_b2bd8499be9743badb07e608d82b1d7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>OK주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영암군 삼호읍 서창리 435-4<br>
+        전남 영암군 삼호읍 녹색로 1627<br>
+        > <b>가격: 1,584 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6365851dee04c446e59f055caf193581 = L.marker(
+                [34.7418625656661, 126.49001916001289],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_6365851dee04c446e59f055caf193581.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동암주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영암군 삼호읍 산호리 85-1<br>
+        전남 영암군 삼호읍 녹색로 1187<br>
+        > <b>가격: 1,584 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b540feaefd9783d746371a82aa3a5684 = L.marker(
+                [34.72756121888605, 126.5503501635769],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_b540feaefd9783d746371a82aa3a5684.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영암군 삼호읍 서창리 146<br>
+        전남 영암군 삼호읍 녹색로 1776<br>
+        > <b>가격: 1,584 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7c0dd5ce0d37bd42b12ba0ee59fd7451 = L.marker(
+                [35.43155132587933, 126.81020572459447],
+                {}
+            ).addTo(map_aa02348fe04c67e3c556b0cd546ea79e);
+        
+    
+            marker_7c0dd5ce0d37bd42b12ba0ee59fd7451.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공원주유소</b><br>
+        <b>자영알뜰</b><br>
+        전남 장성군 북이면 사거리 609번지<br>
+        전남 장성군 북이면 방장로 995<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

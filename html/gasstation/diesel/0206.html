@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e9c1e0a3f008f3f08ae74154a2d4630 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5e9c1e0a3f008f3f08ae74154a2d4630" ></div>
+        
+</body>
+<script>    
+    
+            var map_5e9c1e0a3f008f3f08ae74154a2d4630 = L.map(
+                "map_5e9c1e0a3f008f3f08ae74154a2d4630",
+                {
+                    center: [37.91782871866928, 127.0554193704523],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6937c4d4dfb65451ede48930011d952 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            var locate_control_44f557fc73d049c5b32df33ba1cefb0f = L.control.locate(
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+            
+        
+    
+            var marker_4fa4ff37e46e4e82b86bb2c7a6902c9d = L.marker(
+                [37.96500623687289, 127.06679814733265],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_4fa4ff37e46e4e82b86bb2c7a6902c9d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨엘무역동두천지점 주식회사</b><br>
+        <b>자영알뜰</b><br>
+        경기 동두천시 하봉암동 70-5<br>
+        경기 동두천시 평화로 3122 (하봉암동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c56491f1030a543810ac24c775c2cb0b = L.marker(
+                [37.89000053236977, 127.05720181670169],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_c56491f1030a543810ac24c775c2cb0b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>자가상표</b><br>
+        경기 동두천시 지행동 478-1<br>
+        경기 동두천시 평화로 2266 (지행동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb60298765749bcf3363015d34499b9a = L.marker(
+                [37.959862173542504, 127.0629160394963],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_fb60298765749bcf3363015d34499b9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복가득주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 동두천시 하봉암동 312-1<br>
+        경기 동두천시 평화로 3059 (하봉암동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_847d9def38ab64fb86163a2a086b970f = L.marker(
+                [37.94144759842276, 127.05544468361936],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_847d9def38ab64fb86163a2a086b970f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대경석유(주) 동성셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 동두천시 동두천동 403<br>
+        경기 동두천시 강변로 858 (동두천동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_df71d531ed34a01f0752cad4eb0126f7 = L.marker(
+                [37.87843976581915, 127.05337386274117],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_df71d531ed34a01f0752cad4eb0126f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 송내동 513<br>
+        경기 동두천시 강변로 74 (송내동)<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c8435e8ee1fff44e3d4045e79a4154dd = L.marker(
+                [37.907046948002154, 127.0381873569625],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_c8435e8ee1fff44e3d4045e79a4154dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신동천</b><br>
+        <b>자영알뜰</b><br>
+        경기 동두천시 상패동 196-4<br>
+        경기도 동두천시  삼육사로 770 (상패동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5882be16e97a245df3d0695ba0e7e084 = L.marker(
+                [37.97080672920847, 127.06804166677357],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_5882be16e97a245df3d0695ba0e7e084.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 하봉암동 142-13<br>
+        경기 동두천시 평화로 3188 (하봉암동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93523216e8b6a9caa7dffd5a2421df4b = L.marker(
+                [37.904129184128216, 127.04612824967552],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_93523216e8b6a9caa7dffd5a2421df4b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이섬주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 동두천시 상패동 69-22<br>
+        경기 동두천시 어수로 30 (상패동)<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8568c16adcf88082fae01739ef22789 = L.marker(
+                [37.896000291575035, 127.07184948384767],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_f8568c16adcf88082fae01739ef22789.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자영에너지</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 생연동 43<br>
+        경기 동두천시 삼육사로 1109(생연동)<br>
+        > <b>가격: 1,847 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a61f0e69e22aa3028d936e88a7431f2c = L.marker(
+                [37.879532486190094, 127.05579299935829],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_a61f0e69e22aa3028d936e88a7431f2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장미주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 동두천시 송내동 494-10<br>
+        경기 동두천시 평화로 2149<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f312e45abcce13d488600191fff21b9 = L.marker(
+                [37.93950738754724, 127.05572880125906],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_8f312e45abcce13d488600191fff21b9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 동두천시 동두천동 385-3<br>
+        경기 동두천시 평화로 2817 (동두천동)<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f7b3361549fd2a2bfd13fa4d5028b9f6 = L.marker(
+                [37.89632375056466, 127.04606543176973],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_f7b3361549fd2a2bfd13fa4d5028b9f6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)후암직영 만땅주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 동두천시 지행동 661-1<br>
+        경기 동두천시 강변로 290<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9047b14f1baf1f9feffe169db14328e2 = L.marker(
+                [37.938342908815365, 127.05169270036406],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_9047b14f1baf1f9feffe169db14328e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙IC주유소</b><br>
+        <b>SK에너지</b><br>
+        경기도 동두천시 동두천동 420-2<br>
+        경기도 동두천시 강변로 814 (동두천동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63f80a0198e3ecc9abe9538352a087bc = L.marker(
+                [37.90834063876649, 127.03513088026374],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_63f80a0198e3ecc9abe9538352a087bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이담주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 동두천시 상패동 201-24<br>
+        경기 동두천시 삼육사로 733 (상패동)<br>
+        > <b>가격: 1,864 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a6ffe649c1a472f406d74854cafad14 = L.marker(
+                [37.904778851615944, 127.04542075970889],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_8a6ffe649c1a472f406d74854cafad14.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무궁화주유소</b><br>
+        <b>자가상표</b><br>
+        경기 동두천시 상패동 79-2<br>
+        경기 동두천시 어수로 22 (상패동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e31a8ca3d4d92aa2cfa65da2db19ecab = L.marker(
+                [37.900824920681735, 127.05763251419074],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_e31a8ca3d4d92aa2cfa65da2db19ecab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동두천주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 생연동 728-5<br>
+        경기 동두천시 평화로 2385 (생연동)<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33c03273891ce08796614f0b651f3f89 = L.marker(
+                [37.91068804038742, 127.05840526755237],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_33c03273891ce08796614f0b651f3f89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)동두천주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 동두천시 생연동 493-1<br>
+        경기 동두천시 평화로 2496<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_484da17f392b8ea602e285628188f2ff = L.marker(
+                [37.89506419993621, 127.07180478077204],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_484da17f392b8ea602e285628188f2ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>생연주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 동두천시 생연동 45-3<br>
+        경기 동두천시 삼육사로 1118 (생연동)<br>
+        > <b>가격: 1,888 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a64093c1d186f86a0d8f494ca1051d83 = L.marker(
+                [37.9440382059727, 127.06008527980822],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_a64093c1d186f86a0d8f494ca1051d83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스마트주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 상봉암동 153-4<br>
+        경기 동두천시 평화로 2882<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cd1ec1035ca34c02563f0860516ef616 = L.marker(
+                [37.92639352296679, 127.05068668684824],
+                {}
+            ).addTo(map_5e9c1e0a3f008f3f08ae74154a2d4630);
+        
+    
+            marker_cd1ec1035ca34c02563f0860516ef616.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>엄지주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 동두천시 동두천동 521-108<br>
+        경기 동두천시 강변로 670 (동두천동)<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

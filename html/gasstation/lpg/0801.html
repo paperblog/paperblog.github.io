@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c57f18e3ffd8961282d81e8f3f095ff4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c57f18e3ffd8961282d81e8f3f095ff4" ></div>
+        
+</body>
+<script>    
+    
+            var map_c57f18e3ffd8961282d81e8f3f095ff4 = L.map(
+                "map_c57f18e3ffd8961282d81e8f3f095ff4",
+                {
+                    center: [36.037143821655704, 129.36543897908194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e857ecfa47634c9d0ee9b43b161eff6f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            var locate_control_560767da0e7165f5cca1542bbe741052 = L.control.locate(
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+            
+        
+    
+            var marker_faeefaf39835789b1ba8d2bc3fb187c2 = L.marker(
+                [36.00790192208622, 129.30512019215743],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_faeefaf39835789b1ba8d2bc3fb187c2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>매일에너지 자명LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경북 포항시 남구 연일읍 자명리 728-1<br>
+        경북 포항시 남구 연일읍 자명로 104<br>
+        > <b>가격: 985 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4628f6507111c8b506cff127bb423fa3 = L.marker(
+                [36.00449257626869, 129.3231911057829],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_4628f6507111c8b506cff127bb423fa3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 관문LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경북 포항시 남구 연일읍 유강리 32-1<br>
+        경상북도 포항시 남구 연일읍 새천년대로 200 관문LPG충전소<br>
+        > <b>가격: 985 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9fc6d7a61b3ff6b6f67dbbc12203e203 = L.marker(
+                [36.00486473341658, 129.32490878659394],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_9fc6d7a61b3ff6b6f67dbbc12203e203.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대동LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 남구 효자동 381<br>
+        경북 포항시 남구 새천년대로 216 (효자동)<br>
+        > <b>가격: 985 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74ede708f8649b7833c9aa3174cdfef8 = L.marker(
+                [35.987896849886084, 129.35920569294416],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_74ede708f8649b7833c9aa3174cdfef8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대송LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 남구 대송면 제내리 776번지<br>
+        경북 포항시 남구 대송면 철강로 154<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f242ce325b60c72babd94373e031d611 = L.marker(
+                [36.04487449155447, 129.32540152646493],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_f242ce325b60c72babd94373e031d611.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>포항IC주유소/충전소 (주)신일</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 북구 흥해읍 대련리 333-1<br>
+        경북 포항시 북구 흥해읍 새마을로 362<br>
+        > <b>가격: 1,007 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c7a2b1e6dd71f769b33ff537a868061 = L.marker(
+                [36.00222097862697, 129.38175636602134],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_3c7a2b1e6dd71f769b33ff537a868061.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이케이(주)단지충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 포항시 남구 동촌동 1011-9<br>
+        경북 포항시 남구 대송로 290 (동촌동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2073d22faebf2d838faf0bca915a3b3 = L.marker(
+                [35.99147122174036, 129.42604964334694],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_f2073d22faebf2d838faf0bca915a3b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구옥충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 포항시 남구 일월동 190-73<br>
+        경북 포항시 남구 동해안로 5826 (일월동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de09933233e2ae579d6f8b83a6964802 = L.marker(
+                [36.01025348641484, 129.345910599447],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_de09933233e2ae579d6f8b83a6964802.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대잠충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 포항시 남구 상도동 453-3<br>
+        경북 포항시 남구 희망대로 666 (상도동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1065a13a0be10af99fe62fac36bac07 = L.marker(
+                [36.0108374107172, 129.34607805108854],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_b1065a13a0be10af99fe62fac36bac07.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>포항충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 포항시 남구 대잠동 959-4<br>
+        경북 포항시 남구 희망대로 663 (대잠동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_542917c1ba07954bba7fd59185c47c77 = L.marker(
+                [35.97863233724671, 129.3798419524271],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_542917c1ba07954bba7fd59185c47c77.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>철강공단주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 남구 호동 627-1<br>
+        경북 포항시 남구 철강로 380 (호동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4fdb80d63d972b1677e94cbbcc118f0 = L.marker(
+                [35.986296041255194, 129.40762739072326],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_e4fdb80d63d972b1677e94cbbcc118f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오천LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 남구 오천읍 구정리 275-2<br>
+        경북 포항시 남구 오천읍 정몽주로 789<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d96517d5ac43d0cf30a64452ada4efc = L.marker(
+                [36.14225925937222, 129.34967776683212],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_1d96517d5ac43d0cf30a64452ada4efc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주식회사 한승에너지</b><br>
+        <b>S-OIL</b><br>
+        경북 포항시 북구 흥해읍 용천리 1147-29<br>
+        경북 포항시 북구 흥해읍 동해대로 1916<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_558e79f652a4f6e990da02a5b84c1db1 = L.marker(
+                [35.97840951042734, 129.5015991538898],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_558e79f652a4f6e990da02a5b84c1db1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해맞이충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 포항시 남구 동해면 상정리 84-3<br>
+        경북 포항시 남구 동해면 동해안로 5099<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e644e608bf724c41136eb3f14319201d = L.marker(
+                [36.182354444286034, 129.34214857433548],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_e644e608bf724c41136eb3f14319201d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)청하가스충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 포항시 북구 청하면 미남리 135-9<br>
+        경북 포항시 북구 청하면 동해대로 2394<br>
+        > <b>가격: 1,012 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_080d4f9203ddc8d447f4ca7b212988bf = L.marker(
+                [36.09050271672221, 129.3808687195921],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_080d4f9203ddc8d447f4ca7b212988bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양덕스마일충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 포항시 북구 양덕동 824-1<br>
+        경북 포항시 북구 삼흥로 325<br>
+        > <b>가격: 1,013 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d027442ccf79193f51f882112be57a8e = L.marker(
+                [36.071617845731346, 129.37382550009184],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_d027442ccf79193f51f882112be57a8e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 우천LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경북 포항시 북구 장성동 831-2<br>
+        경북 포항시 북구 새천년대로 1155 (장성동)<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_693d4692ea08f9a2bbdbdd3be369fa4b = L.marker(
+                [36.05043460394943, 129.3723981337542],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_693d4692ea08f9a2bbdbdd3be369fa4b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국광유(주)항구충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 포항시 북구 항구동 97-7<br>
+        경북 포항시 북구 해동로 347<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ee4999a818d891701c1d7ebab0b9376 = L.marker(
+                [36.00026210135804, 129.35934378473073],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_7ee4999a818d891701c1d7ebab0b9376.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)포항개인택시충전소</b><br>
+        <b>E1</b><br>
+        경북 포항시 남구 연일읍 오천리 92-1<br>
+        경북 포항시 남구 연일읍 형산강남로418번길 1<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8460c81b0bb5fba757dc2f5cf3a8e87 = L.marker(
+                [36.139476202963294, 129.34856675638306],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_f8460c81b0bb5fba757dc2f5cf3a8e87.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 삼양산업충전소</b><br>
+        <b>SK가스</b><br>
+        경북 포항시 북구 흥해읍 덕장리 79-37<br>
+        경북 포항시 북구 흥해읍 동해대로 1887<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1130ebc12e8d5dd202e8b30e890b1995 = L.marker(
+                [36.05781769909095, 129.35525988503147],
+                {}
+            ).addTo(map_c57f18e3ffd8961282d81e8f3f095ff4);
+        
+    
+            marker_1130ebc12e8d5dd202e8b30e890b1995.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>포항유업충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 포항시 북구 우현동 298<br>
+        경북 포항시 북구 소티재로 70 (우현동)<br>
+        > <b>가격: 1,014 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

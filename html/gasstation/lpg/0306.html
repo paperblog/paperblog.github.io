@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8dfa501e6647a69587591dfa24e8581 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a8dfa501e6647a69587591dfa24e8581" ></div>
+        
+</body>
+<script>    
+    
+            var map_a8dfa501e6647a69587591dfa24e8581 = L.map(
+                "map_a8dfa501e6647a69587591dfa24e8581",
+                {
+                    center: [37.165857121655826, 128.9933018862326],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2007233a526b52dbafd13af2768a9bdd = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            var locate_control_b9d68dc1c2419eb2d8759ba035c08ef8 = L.control.locate(
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+            
+        
+    
+            var marker_b39f4a41a2a1ac85e1678b7f1f7ba4c9 = L.marker(
+                [37.136586750643836, 129.00007280240075],
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            marker_b39f4a41a2a1ac85e1678b7f1f7ba4c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(자)태백가스상사</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 문곡동 16-6<br>
+        강원도 태백시 태백로 1430 (문곡동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9f8337a8c7f4fda3b134b72ccfbae710 = L.marker(
+                [37.14662188736332, 128.98757507075706],
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            marker_9f8337a8c7f4fda3b134b72ccfbae710.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 황지가스충전소</b><br>
+        <b>SK가스</b><br>
+        강원 태백시 황지동 171-2<br>
+        강원 태백시 상장남1길 9-1 (황지동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2f6581bb99c85eff3dae90d6d76a99b = L.marker(
+                [37.20057813635293, 128.95954558572657],
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            marker_a2f6581bb99c85eff3dae90d6d76a99b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)화전LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 태백시 화전동 119-2<br>
+        강원 태백시 태백로 398-11 (화전동)<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d0304c996ea22793f040d3e637a64185 = L.marker(
+                [37.16479473312671, 129.03128207406604],
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            marker_d0304c996ea22793f040d3e637a64185.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>OK에너지</b><br>
+        <b>S-OIL</b><br>
+        강원 태백시 통동 92<br>
+        강원 태백시 동태백로 1141 (통동)<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ab9f61041e6d9e832034d58fce243f5 = L.marker(
+                [37.18070410079232, 128.98803389821265],
+                {}
+            ).addTo(map_a8dfa501e6647a69587591dfa24e8581);
+        
+    
+            marker_5ab9f61041e6d9e832034d58fce243f5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 한길충전소</b><br>
+        <b>SK가스</b><br>
+        강원 태백시 황지동 274-915<br>
+        강원 태백시 태백로 853<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66d8d9ac9a37149f9a2e2c30a6e76212 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_66d8d9ac9a37149f9a2e2c30a6e76212" ></div>
+        
+</body>
+<script>    
+    
+            var map_66d8d9ac9a37149f9a2e2c30a6e76212 = L.map(
+                "map_66d8d9ac9a37149f9a2e2c30a6e76212",
+                {
+                    center: [37.51243937584162, 126.78583539351123],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c56762637342ece15c819ccb8da834fa = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            var locate_control_727c212dc2159811c8f4894312484486 = L.control.locate(
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+            
+        
+    
+            var marker_baf763fe7cf58ecf18eb01e9dbe972cc = L.marker(
+                [37.544300575975306, 126.76445139802873],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_baf763fe7cf58ecf18eb01e9dbe972cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)자연에너지 명품주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 부천시 오정구 대장동 667-9<br>
+        경기 부천시 오정구 벌말로 143 (대장동)<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5bea9b3590612ac5d025fc5ca431de1a = L.marker(
+                [37.505758462644465, 126.81331410445463],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_5bea9b3590612ac5d025fc5ca431de1a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계남주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 원미구 춘의동 408<br>
+        경기 부천시 원미구 길주로 640 (춘의동)<br>
+        > <b>가격: 1,569 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_adc34c9e9ca3c3ab7827507eff48e871 = L.marker(
+                [37.50258013478464, 126.78655670475099],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_adc34c9e9ca3c3ab7827507eff48e871.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK이화주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 부천시 원미구 춘의동 167-1<br>
+        경기 부천시 원미구 부천로 207 (춘의동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e338cafed9961203447c48a33dafb8c = L.marker(
+                [37.524676919833425, 126.81550031917189],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_5e338cafed9961203447c48a33dafb8c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계동주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 오정구 고강동 480-2<br>
+        경기 부천시 오정구 역곡로 449 (고강동)<br>
+        > <b>가격: 1,582 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c9d0a879362d6d7da2b993fcf6ef533 = L.marker(
+                [37.52545904589207, 126.81603411675451],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_4c9d0a879362d6d7da2b993fcf6ef533.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부강주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 부천시 오정구 고강동 346-7<br>
+        경기 부천시 오정구 역곡로 458<br>
+        > <b>가격: 1,582 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41b34f06557d2f5126b1a4d1f03e16e2 = L.marker(
+                [37.49869305070352, 126.78558190206748],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_41b34f06557d2f5126b1a4d1f03e16e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>프로Self주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 원미구 춘의동 212-2<br>
+        경기 부천시 원미구 부천로 161<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d3e0c514bb9a7148f25faeba971c5250 = L.marker(
+                [37.53496333443839, 126.81660053630749],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_d3e0c514bb9a7148f25faeba971c5250.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)광역주유소 고강</b><br>
+        <b>SK에너지</b><br>
+        경기 부천시 오정구 고강본동26<br>
+        경기 부천시 오정구 역곡로 560 (고강동)<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d826647d8e351bbc01aef9d841057e6d = L.marker(
+                [37.516229867050264, 126.7605792342073],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_d826647d8e351bbc01aef9d841057e6d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부천하이웨이주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 부천시 원미구 상동 499-6<br>
+        경기 부천시 원미구 송내대로 369, 1층(상동)<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_75fb84dd511fa72266140c84ec0b6c40 = L.marker(
+                [37.53902986310576, 126.76325076468812],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_75fb84dd511fa72266140c84ec0b6c40.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>벌말주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 부천시 대장동 685-6<br>
+        경기 부천시 벌말로 78 (대장동)<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b9b1a21af63bca63e808120476d63aa = L.marker(
+                [37.49134098398308, 126.74667422516468],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_9b9b1a21af63bca63e808120476d63aa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통㈜ 송내드림주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 원미구 상동 621-1<br>
+        경기 부천시 원미구 상일로 42<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3a15e07adea96ec132e35fbff57b7ba = L.marker(
+                [37.488035280627734, 126.76045670506505],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_a3a15e07adea96ec132e35fbff57b7ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)유카스에너지 상동SELF</b><br>
+        <b>SK에너지</b><br>
+        경기 부천시 원미구 상동 321-1<br>
+        경기 부천시 원미구 부일로 274 (상동)<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b93962e862ca631d50115c5b0cae80a8 = L.marker(
+                [37.51780561098544, 126.76047398208357],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_b93962e862ca631d50115c5b0cae80a8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통(주) 서해상동 주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 원미구 상동 499-22<br>
+        경기 부천시 원미구  송내대로 389 (상동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52eb086f28717783f43a878a768cc60c = L.marker(
+                [37.48999865797629, 126.81928271399337],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_52eb086f28717783f43a878a768cc60c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)역곡주유소</b><br>
+        <b>자가상표</b><br>
+        경기 부천시 원미구 역곡동247-7<br>
+        경기 부천시 원미구 부일로 820 (역곡동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35cd0f2deb055dacca428d147e038194 = L.marker(
+                [37.48266073999029, 126.80722482090657],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_35cd0f2deb055dacca428d147e038194.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>역곡역주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 소사구 괴안동 111-61<br>
+        경기 부천시 소사구 경인로 463 (괴안동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d3b6c0a33428d6182a0cc667d2648ec = L.marker(
+                [37.520355805401564, 126.77794620569357],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_5d3b6c0a33428d6182a0cc667d2648ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동우주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 부천시 오정구 내동 117-1<br>
+        경기 부천시 오정구 삼작로 151 (내동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7b0a24b085dfedfd3ebce1aa3669ba84 = L.marker(
+                [37.48324887590283, 126.75953155410001],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_7b0a24b085dfedfd3ebce1aa3669ba84.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 복사골주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 부천시 소사구 송내동 403-4<br>
+        경기 부천시 소사구 경인로 36 (송내동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_50bd5a559f817bba697ed329643cd435 = L.marker(
+                [37.52645477752062, 126.7817279131333],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_50bd5a559f817bba697ed329643cd435.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 부천시 오정구 내동 219-14<br>
+        경기 부천시 오정구 오정로 191 (내동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7cc0abe77beff2766d5642eb57354002 = L.marker(
+                [37.5042044802868, 126.7914711444998],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_7cc0abe77beff2766d5642eb57354002.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양산업(주)직영 일광주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 부천시 원미구 춘의동 155-1<br>
+        경기 부천시 원미구 길주로 442<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_777042a84ed09d65a81abf8eb017a75d = L.marker(
+                [37.51605072981571, 126.77502984337309],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_777042a84ed09d65a81abf8eb017a75d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>약대주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 오정구 내동 55<br>
+        경기 부천시 오정구 신흥로 385 (내동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4ea84c9d0d07c0f9fa0331462599a73 = L.marker(
+                [37.536940319914144, 126.81501968178095],
+                {}
+            ).addTo(map_66d8d9ac9a37149f9a2e2c30a6e76212);
+        
+    
+            marker_f4ea84c9d0d07c0f9fa0331462599a73.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수현주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 부천시 오정구 고강본동 15-2<br>
+        경기 부천시 오정구 봉오대로 494 (고강동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

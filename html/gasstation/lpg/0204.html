@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c45561aceeb67bdc73353ecf90f57825 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c45561aceeb67bdc73353ecf90f57825" ></div>
+        
+</body>
+<script>    
+    
+            var map_c45561aceeb67bdc73353ecf90f57825 = L.map(
+                "map_c45561aceeb67bdc73353ecf90f57825",
+                {
+                    center: [37.39546113795092, 126.9360958798097],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af655a5f91aea537176afcfe60c05429 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            var locate_control_b10f87c41425237636da86b6ed5dd68b = L.control.locate(
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+            
+        
+    
+            var marker_3cd5ec351133f9072af5380389247370 = L.marker(
+                [37.37094631379718, 126.94982046026072],
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            marker_3cd5ec351133f9072af5380389247370.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일석유(주)신안충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 동안구 호계동 1028-7<br>
+        경기 안양시 동안구 엘에스로 101<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a728f4ec32425ac62765bab491ca100b = L.marker(
+                [37.38399713096305, 126.93937987955215],
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            marker_a728f4ec32425ac62765bab491ca100b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼표에너지 안양사업소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안양시 만안구 안양동 206-12<br>
+        경기 안양시 만안구 시민대로 45 (안양동)<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_96dad802f7b0d28b7608128877dfc02c = L.marker(
+                [37.399269986947225, 126.93084328541215],
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            marker_96dad802f7b0d28b7608128877dfc02c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안양LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 안양시 동안구 비산동 1083<br>
+        경기 안양시 동안구 경수대로 957 (비산동)<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_126ec76092661effd1f02c1dc5662bd2 = L.marker(
+                [37.420194414529576, 126.90657642130589],
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            marker_126ec76092661effd1f02c1dc5662bd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 안양충전소</b><br>
+        <b>SK가스</b><br>
+        경기 안양시 만안구 석수동 252-2<br>
+        경기 안양시 만안구 안양로 575<br>
+        > <b>가격: 1,074 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63c91d4b62b5d97fec627c58a1b2e25d = L.marker(
+                [37.40289784351757, 126.95385935251757],
+                {}
+            ).addTo(map_c45561aceeb67bdc73353ecf90f57825);
+        
+    
+            marker_63c91d4b62b5d97fec627c58a1b2e25d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상신가스충전소</b><br>
+        <b>E1</b><br>
+        경기 안양시 동안구 관양동 1383-6<br>
+        경기 안양시 동안구 관악대로 283 (관양동)<br>
+        > <b>가격: 1,080 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

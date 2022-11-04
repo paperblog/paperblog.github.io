@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7c3267153904b9db83f12f9390e1ea9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7c3267153904b9db83f12f9390e1ea9f" ></div>
+        
+</body>
+<script>    
+    
+            var map_7c3267153904b9db83f12f9390e1ea9f = L.map(
+                "map_7c3267153904b9db83f12f9390e1ea9f",
+                {
+                    center: [35.38241055625943, 128.28226267414664],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_654a7087d81002679d43687e844b5c0f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            var locate_control_d20ed77224ade3c2099a1c1aa09f3e74 = L.control.locate(
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+            
+        
+    
+            var marker_681ce6e823c5cc1cbc0028f2f2e67f07 = L.marker(
+                [35.365125300431075, 128.1023392086655],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_681ce6e823c5cc1cbc0028f2f2e67f07.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만남주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 의령군 대의면 추산리 336<br>
+        경남 의령군 대의면 합천대로 228<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5c9e2075f8cd06404e722818fdba0f7b = L.marker(
+                [35.31680431551882, 128.26072521652648],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_5c9e2075f8cd06404e722818fdba0f7b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 의령군 의령읍 중동리 243-12<br>
+        경남 의령군 의령읍 의령대로 1649<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08e83072e4831a19850a75f569ef9a06 = L.marker(
+                [35.38082114280785, 128.32691855490967],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_08e83072e4831a19850a75f569ef9a06.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의령농협주유소</b><br>
+        <b>자가상표</b><br>
+        경남 의령군 정곡면 중교리 495-9<br>
+        경남 의령군 정곡면 법정로 932-13<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bdafbb00b06cb4cbac2a81b32814a1fc = L.marker(
+                [35.34718488008137, 128.29452129743567],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_bdafbb00b06cb4cbac2a81b32814a1fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대복주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 의령군 용덕면 교암리 368번지<br>
+        경남 의령군 용덕면 의합대로 128<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6306272f5667b44310164a282fbd4e71 = L.marker(
+                [35.31919869665882, 128.2554189053737],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_6306272f5667b44310164a282fbd4e71.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의령농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 의령군 의령읍 서동리 287-4<br>
+        경남 의령군 의령읍 의병로 171<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b24c798945fa05939a7f36bead51fa9a = L.marker(
+                [35.378026611576495, 128.39381026694872],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_b24c798945fa05939a7f36bead51fa9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 의령군 지정면 봉곡리 489<br>
+        경남 의령군 지정면 함의로 1448번지<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d594658f3811cdac3c4fd48d9ab32928 = L.marker(
+                [35.314617834413085, 128.28574220592873],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_d594658f3811cdac3c4fd48d9ab32928.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 의령군 의령읍 정암리 421-2<br>
+        경남 의령군 의령읍 남강로 761<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_15fadc0432b34c24a3b1eea954e00ba3 = L.marker(
+                [35.39480207777723, 128.3731301680107],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_15fadc0432b34c24a3b1eea954e00ba3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창인주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 의령군 지정면 태부리 286-1<br>
+        경남 의령군 지정면 함의로 1714<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b293babcf395fa0a68d67c9852a9567 = L.marker(
+                [35.33622421444206, 128.20414546919957],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_8b293babcf395fa0a68d67c9852a9567.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)의령주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 의령군 가례면 대천리 452<br>
+        경남 의령군 가례면 의령대로 1166<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ec2abc1e2d6d8f6902be0cb2fa97316 = L.marker(
+                [35.38935015703592, 128.3302521228469],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_6ec2abc1e2d6d8f6902be0cb2fa97316.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>큰길주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 의령군 정곡면 석곡리 176-1<br>
+        경남 의령군 정곡면 의합대로 1157<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_338442513af105973cb3fcf3a6982e17 = L.marker(
+                [35.320309739007996, 128.2644736617728],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_338442513af105973cb3fcf3a6982e17.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 의령군 의령읍 동동리 1025<br>
+        경남 의령군 의령읍 백산로 4<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b92fc0111d2a1a8804e4c175cf89cb15 = L.marker(
+                [35.35319719232885, 128.3018380821035],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_b92fc0111d2a1a8804e4c175cf89cb15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진등재주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 의령군 용덕면 정동리 475-1<br>
+        경남 의령군 용덕면 의합대로 496<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f7adc973df7c2d7119677d6936d64c58 = L.marker(
+                [35.36811142534141, 128.12126794034117],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_f7adc973df7c2d7119677d6936d64c58.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이광주주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 의령군 대의면 마쌍리 17-4<br>
+        경남 의령군 대의면 의령대로 173<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a059419eddff6a1bea1982c0cbe8e83b = L.marker(
+                [35.47526452206483, 128.25180666395596],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_a059419eddff6a1bea1982c0cbe8e83b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신흥주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 의령군 봉수면 신현리 628-1<br>
+        경남 의령군 봉수면 대한로 1047<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e27a41cce2a7b2c0d2efcb152af222f0 = L.marker(
+                [35.46746613040926, 128.32670510853345],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_e27a41cce2a7b2c0d2efcb152af222f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신반주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 의령군 부림면 신반리 507-8<br>
+        경남 의령군 부림면 대한로 1781<br>
+        > <b>가격: 1,918 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0302b87115c3e95259e25b02cffb60e6 = L.marker(
+                [35.46405942353974, 128.3132740852519],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_0302b87115c3e95259e25b02cffb60e6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 의령군 부림면 신반리867<br>
+        경남 의령군 부림면 대한로 1658<br>
+        > <b>가격: 1,918 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8e6e7c542953b1b278063973e1970250 = L.marker(
+                [35.43101377612676, 128.34599575011282],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_8e6e7c542953b1b278063973e1970250.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 의령군 유곡면 세간리 192-4<br>
+        경남 의령군 유곡면 함의로 2274<br>
+        > <b>가격: 1,919 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_53aa39b7fc344a2bbacfad85b18fe04a = L.marker(
+                [35.46181257310815, 128.32836342672277],
+                {}
+            ).addTo(map_7c3267153904b9db83f12f9390e1ea9f);
+        
+    
+            marker_53aa39b7fc344a2bbacfad85b18fe04a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 의령군 부림면 신반리 24-2<br>
+        경상남도 의령군 부림면 신번로 85<br>
+        > <b>가격: 1,919 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

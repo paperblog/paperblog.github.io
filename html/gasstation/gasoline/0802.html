@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0363003ab214f0da11db7f149de8c2a5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0363003ab214f0da11db7f149de8c2a5" ></div>
+        
+</body>
+<script>    
+    
+            var map_0363003ab214f0da11db7f149de8c2a5 = L.map(
+                "map_0363003ab214f0da11db7f149de8c2a5",
+                {
+                    center: [35.854694088971925, 129.21747667193142],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_708bdd0919b73c8c4ea7ddfe318340d5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            var locate_control_088bb2b4a2d6738175e1b8f607a1a91b = L.control.locate(
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+            
+        
+    
+            var marker_61a52e60c282b78868050ee2632c1675 = L.marker(
+                [35.810267182229914, 129.25675313628827],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_61a52e60c282b78868050ee2632c1675.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경주알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경주시 동방동 307-1<br>
+        경북 경주시 산업로 3585 (동방동)<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8eb8232a66e91a688ca64903d30d56b = L.marker(
+                [35.73696839530537, 129.31935741344586],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_d8eb8232a66e91a688ca64903d30d56b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남경주IC주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경주시 외동읍 개곡리 1347-1<br>
+        경북 경주시 산업로 2536<br>
+        > <b>가격: 1,563 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8895b1ddb4fc01cf94fd1c0c098e5e51 = L.marker(
+                [35.80684519545749, 129.2594932149955],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_8895b1ddb4fc01cf94fd1c0c098e5e51.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서라벌셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경주시 동방동 271-1<br>
+        경북 경주시 산업로 3533<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ea48f33f1f9fa749d0399af6b45d04c4 = L.marker(
+                [35.74278419329584, 129.31769953797587],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_ea48f33f1f9fa749d0399af6b45d04c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이엠 외동self주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 외동읍 죽동리 298-7<br>
+        경북 경주시 외동읍 산업로 2604<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e8d72315c2f252f7491f360467a690a6 = L.marker(
+                [35.95851884184285, 129.24618596982987],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_e8d72315c2f252f7491f360467a690a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이엠11주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경주시 강동면 모서리 739-1<br>
+        경북 경주시 강동면 산업로 5406<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7b3766f31fa1db516497da318593a7a2 = L.marker(
+                [35.77338695729936, 129.30159343948677],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_7b3766f31fa1db516497da318593a7a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>불국에너지(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경주시 시래동 308-9<br>
+        경북 경주시 산업로 2987(시래동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_70993d093ed06836e7a62b8bcefaba31 = L.marker(
+                [35.98311814443294, 129.2570187495478],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_70993d093ed06836e7a62b8bcefaba31.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보성셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경주시 강동면 오금리 809-5<br>
+        경북 경주시 강동면 산업로 5762<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8eb4cf864d16f0b3141539fa6e280b7 = L.marker(
+                [35.7961865549718, 129.26864494527604],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_a8eb4cf864d16f0b3141539fa6e280b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>햇살가득주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 도지동 985-6<br>
+        경북 경주시 산업로 3389 (도지동)<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_663a40c444b1da222f5c26bc7376df45 = L.marker(
+                [35.980769361755584, 129.14272312075852],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_663a40c444b1da222f5c26bc7376df45.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대박주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경주시 안강읍 하곡리 385-1<br>
+        경북 경주시 안강읍 호국로 2083<br>
+        > <b>가격: 1,574 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e43aa079293b76c740afbb97a841120 = L.marker(
+                [35.785569941158336, 129.27871399200953],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_5e43aa079293b76c740afbb97a841120.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥부주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 조양동 687<br>
+        경북 경주시 산업로 3241<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_746694c0b04df8aa35655f64a74a267d = L.marker(
+                [35.98438234339673, 129.15092789381362],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_746694c0b04df8aa35655f64a74a267d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만남의셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 안강읍 두류리 232<br>
+        경북 경주시 안강읍 호국로 2170<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_660fb300f721cdd2cb9f56b856e54c6e = L.marker(
+                [35.97313200010139, 129.24852014349665],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_660fb300f721cdd2cb9f56b856e54c6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍용주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 강동면 호명리 238-1<br>
+        경북 경주시 강동면 산업로 5570<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23f3516edf82624b615e8ea52c32efbd = L.marker(
+                [35.98620018538966, 129.1522860815405],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_23f3516edf82624b615e8ea52c32efbd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태산이앤엘 호반셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 안강읍 두류리 150-16<br>
+        경북 경주시 안강읍 호국로 2191<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3222ffa48196b7c8be49ba923d2f273f = L.marker(
+                [35.65581944329912, 129.29412523670496],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_3222ffa48196b7c8be49ba923d2f273f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>녹동주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 외동읍 녹동리 195<br>
+        경북 경주시 외동읍 관문로 875<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a4e4b63b0ea129b2bc6b24e2c99d511b = L.marker(
+                [35.894051946423566, 129.06207711943233],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_a4e4b63b0ea129b2bc6b24e2c99d511b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)건천경마장주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 서면 도리 1138-2<br>
+        경북 경주시 대경로 3241<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_09e59f6e9514b209094454c9a7a9d8f7 = L.marker(
+                [35.897646018368306, 129.05874906071278],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_09e59f6e9514b209094454c9a7a9d8f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북안IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 경주시 서면 심곡리 990-1<br>
+        경북 경주시 서면 대경로 3189<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69d85338f47d91b490b55153b96a6dbe = L.marker(
+                [35.90187938096536, 129.04155755567294],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_69d85338f47d91b490b55153b96a6dbe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)아화만남주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 서면 아화리 716-6<br>
+        경북 경주시 서면 대경로 3004<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_260c70b0b96b9fb92ba61b2aee186f97 = L.marker(
+                [35.70557412322633, 129.29775681323073],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_260c70b0b96b9fb92ba61b2aee186f97.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)푸른에너지 구어2산단주유소</b><br>
+        <b>S-OIL</b><br>
+        경상북도 경주시 외동읍 냉천리 342-3<br>
+        경상북도 경주시 외동읍 구어2산단로 57<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a1abb51921ab3b7bcad3a93f38dc76b1 = L.marker(
+                [35.88299608470906, 129.23157101014976],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_a1abb51921ab3b7bcad3a93f38dc76b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)천년애주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 경주시 용강동 437<br>
+        경북 경주시 산업로 4534 (용강동)<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30f49cc3233c6d9287dbaac46fa161d6 = L.marker(
+                [35.83778548580961, 129.16377900425996],
+                {}
+            ).addTo(map_0363003ab214f0da11db7f149de8c2a5);
+        
+    
+            marker_30f49cc3233c6d9287dbaac46fa161d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)기분좋은주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경주시 충효동 1766-1<br>
+        경북 경주시 태종로 269<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

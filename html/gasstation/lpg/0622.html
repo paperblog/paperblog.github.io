@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f1b5889ada18094feae647b9c482f00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f1b5889ada18094feae647b9c482f00" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f1b5889ada18094feae647b9c482f00 = L.map(
+                "map_0f1b5889ada18094feae647b9c482f00",
+                {
+                    center: [35.77941806675142, 127.41072357009482],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7a599ebe0deedb9bb049d2827924e58 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            var locate_control_0d5007209f7148751e802ca60f6cf54e = L.control.locate(
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+            
+        
+    
+            var marker_32c25af338a4095d619775862076c842 = L.marker(
+                [35.77782369689841, 127.36401389074712],
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            marker_32c25af338a4095d619775862076c842.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반석충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 진안군 부귀면 신정리 133-10<br>
+        전북 진안군 부귀면 전진로 2721<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c9d261d6cfc4ef3ad46b8c75d1a28d2d = L.marker(
+                [35.77779508963046, 127.3966734254711],
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            marker_c9d261d6cfc4ef3ad46b8c75d1a28d2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마이산LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        전북 진안군 진안읍 연장리 212-5<br>
+        전북 진안군 진안읍 전진로 3067<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29d41fbde15b08068f70a5a83f92756f = L.marker(
+                [35.78879183399448, 127.44127588958841],
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            marker_29d41fbde15b08068f70a5a83f92756f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 진안가스충전소</b><br>
+        <b>SK가스</b><br>
+        전북 진안군 진안읍 구룡리 704-12<br>
+        전북 진안군 진안읍 진장로 112<br>
+        > <b>가격: 978 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef3ca3ec4e61c0133188d3ef4160c608 = L.marker(
+                [35.775748949947484, 127.42517528977105],
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            marker_ef3ca3ec4e61c0133188d3ef4160c608.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한화리조트(주)진안(하)주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 진안군 진안읍 단양리 333-75<br>
+        전북 진안군 진안읍 익산장수고속도로 42-1<br>
+        > <b>가격: 1,187 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_94196ec9fa1858106f6f5d4335eec572 = L.marker(
+                [35.77693076328625, 127.42647935489643],
+                {}
+            ).addTo(map_0f1b5889ada18094feae647b9c482f00);
+        
+    
+            marker_94196ec9fa1858106f6f5d4335eec572.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한화리조트(주)진안(상)주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 진안군 진안읍 단양리 171-110<br>
+        전북 진안군 진안읍 익산장수고속도로 41-1<br>
+        > <b>가격: 1,187 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

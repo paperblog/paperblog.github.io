@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3750dd649c94b7e559547ae63f765dd6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3750dd649c94b7e559547ae63f765dd6" ></div>
+        
+</body>
+<script>    
+    
+            var map_3750dd649c94b7e559547ae63f765dd6 = L.map(
+                "map_3750dd649c94b7e559547ae63f765dd6",
+                {
+                    center: [35.44222530994802, 126.63889739945007],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_608229f72ffaf4c4e9ee1cb9ed03bdad = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            var locate_control_934605f1e45535c83ee7d8bf2142acc5 = L.control.locate(
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+            
+        
+    
+            var marker_d83ef9b1f032491259766c861d4e5a93 = L.marker(
+                [35.49558678611293, 126.70122028682911],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_d83ef9b1f032491259766c861d4e5a93.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고산주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 고창군 신림면 무림리559<br>
+        전북 고창군 신림면 고인돌대로 2430<br>
+        > <b>가격: 1,805 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_930e40909a4a66cbb0bd5744fbae8317 = L.marker(
+                [35.45117693996569, 126.6968830950628],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_930e40909a4a66cbb0bd5744fbae8317.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고창노을주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 고창군 고창읍 성두리 464-1<br>
+        전북 고창군 고인돌대로 1926<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0b37a74e44d17ebb157c991b600d4ea9 = L.marker(
+                [35.457652400106, 126.6963784443449],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_0b37a74e44d17ebb157c991b600d4ea9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기분좋은주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 고창군 신림면 부송리 50-11<br>
+        전북 고창군 신림면 고인돌대로 1997<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e13ea1ae248e2cc409a4a6d229fe0b5 = L.marker(
+                [35.47685030138863, 126.69741044096841],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_5e13ea1ae248e2cc409a4a6d229fe0b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신림주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 고창군 신림면 자포리 160<br>
+        전북 고창군 고창읍 고인돌대로 2222<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5170f6a40ca9ed2120e52d86b218b8d6 = L.marker(
+                [35.419150899945954, 126.68855531362877],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_5170f6a40ca9ed2120e52d86b218b8d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 일등주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 고창군 고창읍 내동리 340-1<br>
+        전북 고창군 고창읍 고인돌대로 1554<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3bf3685dd315621279ca5bc7b7710cc = L.marker(
+                [35.43528821557519, 126.6919920276721],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_e3bf3685dd315621279ca5bc7b7710cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광진주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 고창군 고창읍 읍내리 1023-2<br>
+        전북 고창군 고창읍 중앙로 148<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49664e2dbd110212b114b7027101a6f1 = L.marker(
+                [35.41116990911939, 126.67932787010056],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_49664e2dbd110212b114b7027101a6f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남고창주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 고창군 고수면 봉산리 340-1<br>
+        전북 고창군 고수면 고인돌대로 1428<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c41ff55e4a7117ea4acba1c959eefa4 = L.marker(
+                [35.434730174062494, 126.5687384284949],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_3c41ff55e4a7117ea4acba1c959eefa4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>선운산농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 무장면 교흥리 510-2<br>
+        전북 고창군 무장면 동서대로 906<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7c69b11fd5a2242d73debcc699e17139 = L.marker(
+                [35.43785932518371, 126.69304081195237],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_7c69b11fd5a2242d73debcc699e17139.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고창농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 고창읍 읍내리 671-2<br>
+        전북 고창군 고창읍 고인돌대로 1772<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cfd931d1c22851a08729996b6f1c4930 = L.marker(
+                [35.46661488594762, 126.69850406446928],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_cfd931d1c22851a08729996b6f1c4930.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새천년주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 고창군 신림면 자포리 723-3<br>
+        전북 고창군 신림면 고인돌대로 2104<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fbf84906f74c7e03ab3361e417b82cf4 = L.marker(
+                [35.51569232653563, 126.67439694652825],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_fbf84906f74c7e03ab3361e417b82cf4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고창농협부안지점</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 부안면 중흥리 229-9<br>
+        전북 고창군 부안면 인촌로 1230<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b3c6a7148efd051c58f206fd928505d1 = L.marker(
+                [35.5242772378608, 126.55156659961044],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_b3c6a7148efd051c58f206fd928505d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>심원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 고창군 심원면 월산리 768-2<br>
+        전북 고창군 심원면 심원로 215<br>
+        > <b>가격: 1,830 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a68330afff7b05f8d00a8cfc23b3ca43 = L.marker(
+                [35.36235805248206, 126.64419341152737],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_a68330afff7b05f8d00a8cfc23b3ca43.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 성송면 판정리 38-2<br>
+        전북 고창군 성송면 대성로 741<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f6ee56601fdb11046cc2f3ae85223f3 = L.marker(
+                [35.424428953395626, 126.69298448464707],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_1f6ee56601fdb11046cc2f3ae85223f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>황금주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 고창군 고창읍 덕산리 115-1<br>
+        전북 고창군 고창읍 중거리당산로 29<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_449dba388f48bd37543f0355f9a02657 = L.marker(
+                [35.34085375009062, 126.60436886174567],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_449dba388f48bd37543f0355f9a02657.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성농협주유소 대산지소</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 대산면 매산리 1123-1<br>
+        전북 고창군 대산면 대성로 284<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_80824fe7bb1f22663a5766f235dcecc4 = L.marker(
+                [35.51884967674696, 126.69867602161189],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_80824fe7bb1f22663a5766f235dcecc4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서부주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 고창군 흥덕면 흥덕리 380-2<br>
+        전북 고창군 흥덕면 선운대로 3719<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a57b5bdde6e9106c6aa6fa878aa782a7 = L.marker(
+                [35.46440473073384, 126.53746091769801],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_a57b5bdde6e9106c6aa6fa878aa782a7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해리주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 고창군 해리면 하련리 608-4<br>
+        전북 고창군 해리면 해리중앙로 142<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9ccc9276bead91a2f2c1d2de77d3bd65 = L.marker(
+                [35.319957718990445, 126.57654191034847],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_9ccc9276bead91a2f2c1d2de77d3bd65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오성주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 고창군 대산면 춘산리 176-4<br>
+        전북 고창군 대산면 영대로 1032<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9d34b584c3a611c8223b58eab7cb6885 = L.marker(
+                [35.442869467238815, 126.49162804244918],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_9d34b584c3a611c8223b58eab7cb6885.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상하주유소</b><br>
+        <b>자가상표</b><br>
+        전북 고창군 상하면 하장리 954-3<br>
+        전북 고창군 상하면 상하로 50<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cf40e268ad3f81c1d86be05331e89ed = L.marker(
+                [35.44473444747814, 126.49408000931174],
+                {}
+            ).addTo(map_3750dd649c94b7e559547ae63f765dd6);
+        
+    
+            marker_3cf40e268ad3f81c1d86be05331e89ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해리농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 고창군 상하면 하장리 918-3<br>
+        전북 고창군 상하면 상하로 78<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

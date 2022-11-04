@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8085c108b340b27f464dd978ea4af9cd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8085c108b340b27f464dd978ea4af9cd" ></div>
+        
+</body>
+<script>    
+    
+            var map_8085c108b340b27f464dd978ea4af9cd = L.map(
+                "map_8085c108b340b27f464dd978ea4af9cd",
+                {
+                    center: [33.30087288499005, 126.62647745801526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d5b6c8a6ff8917703b84abd0295e811 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            var locate_control_e00f2bf3a8274cffd9f794338b936754 = L.control.locate(
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+            
+        
+    
+            var marker_a1068da9c8bc118e88373c3e491aa5e5 = L.marker(
+                [33.26127532330705, 126.58229586569684],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_a1068da9c8bc118e88373c3e491aa5e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>탐라주유소</b><br>
+        <b>S-OIL</b><br>
+        제주특별자치도 서귀포시 토평동 1002-1<br>
+        제주특별자치도 서귀포시 516로 86<br>
+        > <b>가격: 1,960 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d28cf6c5473faf991d76bf5ccfa5a694 = L.marker(
+                [33.26191603149136, 126.39986680857906],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_d28cf6c5473faf991d76bf5ccfa5a694.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)금영에너지주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주특별자치도 서귀포시 상예동 263-1<br>
+        제주특별자치도 서귀포시 일주서로 1057<br>
+        > <b>가격: 1,960 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_51e3bf045db803526171b802d1c93c32 = L.marker(
+                [33.25575141593775, 126.41392660489791],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_51e3bf045db803526171b802d1c93c32.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수도석유(주)한신주유소</b><br>
+        <b>SK에너지</b><br>
+        제주 서귀포시 색달동 2522-1<br>
+        제주 서귀포시 천제연로 77<br>
+        > <b>가격: 1,960 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1adf4174ccb1fd9f42d792429c253188 = L.marker(
+                [33.267028627090745, 126.58263428387436],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_1adf4174ccb1fd9f42d792429c253188.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>토평주유소</b><br>
+        <b>자영알뜰</b><br>
+        제주특별자치도 서귀포시 토평동 2272-4<br>
+        제주특별자치도 서귀포시 중산간동로 7801<br>
+        > <b>가격: 1,960 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6b9d8df71b945d8fefcd8faed95069ed = L.marker(
+                [33.249752432452496, 126.5049743788681],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_6b9d8df71b945d8fefcd8faed95069ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>초원주유소</b><br>
+        <b>자영알뜰</b><br>
+        제주특별자치도 서귀포시 강정동 252-1<br>
+        제주특별자치도 서귀포시 일주서로 27 (강정동)<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49a9f9e15d1d8cfcf1d9f393234abfb5 = L.marker(
+                [33.25360276337636, 126.45766386683992],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_49a9f9e15d1d8cfcf1d9f393234abfb5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주 서귀포시 하원동 1338-1<br>
+        제주 서귀포시 일주서로 479 (하원동)<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_04d5b0b2923a62441356ea16fbc21ffd = L.marker(
+                [33.4271238767036, 126.90740513388826],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_04d5b0b2923a62441356ea16fbc21ffd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해맞이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 서귀포시 성산읍 고성리 1914-1<br>
+        제주특별자치도 서귀포시 성산읍 일주동로 4501<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b076052064371b03c0a8954b3502fdd8 = L.marker(
+                [33.4387519605573, 126.87595488283348],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_b076052064371b03c0a8954b3502fdd8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수산주유소</b><br>
+        <b>자영알뜰</b><br>
+        제주 서귀포시 성산읍 수산리 1677-1<br>
+        제주 서귀포시 성산읍 서성일로 898<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_863c999188092cf91bfc2bbb45d59dbe = L.marker(
+                [33.247905849580405, 126.51258432474354],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_863c999188092cf91bfc2bbb45d59dbe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼화석유(주) 법환주유소</b><br>
+        <b>SK에너지</b><br>
+        제주특별자치도 서귀포시 법환동 726<br>
+        제주특별자치도 서귀포시 일주동로 9173<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_47d76b910b45b70ac6379a6e43f4c9e5 = L.marker(
+                [33.233926235662416, 126.48378953149162],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_47d76b910b45b70ac6379a6e43f4c9e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강정천주유소</b><br>
+        <b>SK에너지</b><br>
+        제주 서귀포시 강정동 2867-10<br>
+        제주 서귀포시 이어도로 634 (강정동)<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89c3da5a3881c79108a098a57fb121d0 = L.marker(
+                [33.250224555814704, 126.49311428219163],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_89c3da5a3881c79108a098a57fb121d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>염돈주유소</b><br>
+        <b>S-OIL</b><br>
+        제주특별자치도 서귀포시 강정동 2090-3<br>
+        제주특별자치도 서귀포시 일주서로 136 (강정동)<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e57354bdc8b5ed7180d97588eb84dbc = L.marker(
+                [33.33627205420044, 126.82861278165711],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_7e57354bdc8b5ed7180d97588eb84dbc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우수주유소</b><br>
+        <b>자영알뜰</b><br>
+        제주특별자치도 서귀포시 표선면 표선리 1878-16<br>
+        제주특별자치도 서귀포시 표선면 번영로 3497<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c35e72aee751273ac0cf8bad9842f0d = L.marker(
+                [33.28892598893409, 126.75012663343234],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_6c35e72aee751273ac0cf8bad9842f0d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태흥주유소</b><br>
+        <b>자영알뜰</b><br>
+        제주특별자치도 서귀포시 남원읍 태흥리 366-1<br>
+        제주특별자치도 서귀포시 남원읍 태위로 990<br>
+        > <b>가격: 1,980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d3f50e9772715a7f4e9c6263ecaaabe = L.marker(
+                [33.447003124905926, 126.91439466276209],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_8d3f50e9772715a7f4e9c6263ecaaabe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 동남주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주 서귀포시 성산읍 고성리 1115<br>
+        제주 서귀포시 성산읍 고성오조로 35<br>
+        > <b>가격: 1,980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da0b1e84c08a6f84ddcebf383e7e6f65 = L.marker(
+                [33.26438993186767, 126.55888633720998],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_da0b1e84c08a6f84ddcebf383e7e6f65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한진주유소</b><br>
+        <b>SK에너지</b><br>
+        제주특별자치도 서귀포시 서홍동 249<br>
+        제주특별자치도 서귀포시 중산간동로 8028 (서홍동)<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_594332bff1e770543ef0ec65fa523463 = L.marker(
+                [33.38498914906574, 126.87880262690564],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_594332bff1e770543ef0ec65fa523463.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>난산입구주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        제주도 서귀포시 성산읍 신산리 620<br>
+        제주도 서귀포시 성산읍 일주동로 5058<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0fffd2b6133f78510c3618092bc5694b = L.marker(
+                [33.27176590886127, 126.58558477001849],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_0fffd2b6133f78510c3618092bc5694b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월드컵주유소</b><br>
+        <b>SK에너지</b><br>
+        제주 서귀포시 토평동 2176-7<br>
+        제주 서귀포시 516로 206-3 (토평동)<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2fd71edd74fb0bc8d5a40dc58aa260b7 = L.marker(
+                [33.262983681305016, 126.39788195438511],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_2fd71edd74fb0bc8d5a40dc58aa260b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가까운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        제주특별자치도 서귀포시 상예동 260-4<br>
+        제주특별자치도 서귀포시 일주서로 1080(상예동)<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fc394f038c397a95f802e3cc6df14e9b = L.marker(
+                [33.25491882737389, 126.57866247161034],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_fc394f038c397a95f802e3cc6df14e9b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼화석유(주)에이스주유소</b><br>
+        <b>SK에너지</b><br>
+        제주 서귀포시 토평동 830<br>
+        제주 서귀포시 일주동로 8513 (토평동)<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33e787a1df0613b4ba10a2e18c6b6d23 = L.marker(
+                [33.35894996131278, 126.82238695841941],
+                {}
+            ).addTo(map_8085c108b340b27f464dd978ea4af9cd);
+        
+    
+            marker_33e787a1df0613b4ba10a2e18c6b6d23.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유진주유소</b><br>
+        <b>S-OIL</b><br>
+        제주특별자치도 서귀포시 표선면 하천리 1484-2<br>
+        제주특별자치도 서귀포시 표선면 번영로 3239<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

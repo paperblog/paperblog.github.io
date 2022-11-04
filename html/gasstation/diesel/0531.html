@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28dc23d77339505d593a379709b7f2fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_28dc23d77339505d593a379709b7f2fe" ></div>
+        
+</body>
+<script>    
+    
+            var map_28dc23d77339505d593a379709b7f2fe = L.map(
+                "map_28dc23d77339505d593a379709b7f2fe",
+                {
+                    center: [36.69250173287032, 126.81219161629788],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7f1ab893da6b08b386f29521ac753755 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            var locate_control_dbfc37f9f9e71e8f1967ef1c4137cab2 = L.control.locate(
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+            
+        
+    
+            var marker_e6406bc2886addb18600f37352d5309d = L.marker(
+                [36.62070482851151, 126.84410590316402],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_e6406bc2886addb18600f37352d5309d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜선인상사 예산(당진방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 예산군 신양면 서계양리 680-1<br>
+        충남 예산군 신양면 당진영덕고속도로 33<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f371ef6c67338eb8f3f4595a40d4a8d = L.marker(
+                [36.62253875050823, 126.841214824658],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_2f371ef6c67338eb8f3f4595a40d4a8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜선인상사 예산(대전방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 예산군 신양면 서계양리 661-1<br>
+        충남 예산군 신양면 당진영덕고속도로 34<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1108688cdc060827dbde8611b7d4405b = L.marker(
+                [36.764982200338075, 126.80438147437837],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_1108688cdc060827dbde8611b7d4405b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오일네트워크 예산훼미리</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 신암면 신택리 287-1<br>
+        충남 예산군 예당평야로 598<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce8636b346735681e80ce2a4240d33e2 = L.marker(
+                [36.70249593720418, 126.83896788217955],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_ce8636b346735681e80ce2a4240d33e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신벚꽃주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 예산읍 석양리 184-7<br>
+        충남 예산군 예산읍 벚꽃로 248<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a771e1cade7c4336712d0fbf6a688480 = L.marker(
+                [36.55132835672222, 126.77526073635137],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_a771e1cade7c4336712d0fbf6a688480.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광시농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 예산군 광시면 광시리 71-2<br>
+        충남 예산군 광시면 예당로 187<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_be14b2b7822745dce43aaab3866f8028 = L.marker(
+                [36.696411899374965, 126.82891445882649],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_be14b2b7822745dce43aaab3866f8028.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>코리아주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 예산군 예산읍 발연리 381-4<br>
+        충청남도 예산군 예산읍 충서로 994<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_82dd6a498135e2018f13b994cb3a87b3 = L.marker(
+                [36.775190551662, 126.71903282143526],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_82dd6a498135e2018f13b994cb3a87b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고덕농협주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 예산군 고덕면 몽곡리 43-1<br>
+        충남 예산군 고덕면 예덕로 945<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b292b7d47431b400b95db45eda222e8 = L.marker(
+                [36.73677981794805, 126.8573628925678],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_8b292b7d47431b400b95db45eda222e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서경주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 예산군 예산읍 간양리 297-10<br>
+        충남 예산군 예산읍 충서로 1600<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2708513b42443e7eb9a019788e607403 = L.marker(
+                [36.72072595687504, 126.83203196745396],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_2708513b42443e7eb9a019788e607403.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신례원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 예산읍 창소리 413-3<br>
+        충남 예산군 예산읍 충서로 1266<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_afdcb548420b410f9b2719bcde9c4051 = L.marker(
+                [36.68384233826573, 126.82704112092507],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_afdcb548420b410f9b2719bcde9c4051.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>예산능금농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 예산군 예산읍 산성리 412<br>
+        충청남도 예산군 예산읍 충서로 854<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_00ed553460775452fa88af00accccbb6 = L.marker(
+                [36.732183073619076, 126.84577638339856],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_00ed553460775452fa88af00accccbb6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통큰주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 예산읍 창소리 19-5<br>
+        충남 예산군 예산읍 충서로 1478<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3231418e43c39468e1464332366ad54f = L.marker(
+                [36.708789555268105, 126.84026119605284],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_3231418e43c39468e1464332366ad54f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세계주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 예산군 예산읍 관작리 249-2<br>
+        충남 예산군 예산읍 벚꽃로 320<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4771658af8041e0a7735e6e9e6452d65 = L.marker(
+                [36.71532942878582, 126.83261875318865],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_4771658af8041e0a7735e6e9e6452d65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 예산군 예산읍 창소리 644-7<br>
+        충남 예산군 예산읍 충서로 1204<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29cd8776f88d0f6c421d69804dcc6047 = L.marker(
+                [36.72761406810813, 126.83405950315067],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_29cd8776f88d0f6c421d69804dcc6047.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태성주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 예산군 예산읍 창소리 159<br>
+        충청남도 예산군 예산읍 충서로 1349 (예산읍)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c804a1dfa23b0c269f794aaa397e55ec = L.marker(
+                [36.68576612765056, 126.82656438160475],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_c804a1dfa23b0c269f794aaa397e55ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>예흥주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 예산군 예산읍 산성리 422<br>
+        충남 예산군 예산읍 충서로 873<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_102cc91df4b861974cced393c5d6b5cf = L.marker(
+                [36.74887699930078, 126.70011978586712],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_102cc91df4b861974cced393c5d6b5cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고덕IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 고덕면 대천리 604<br>
+        충남 예산군 고덕면 예덕로 588<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7926270655c8de30fe5efb11495c260c = L.marker(
+                [36.72021775425895, 126.84638325054038],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_7926270655c8de30fe5efb11495c260c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>효자주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 예산군 예산읍 신례원리 611-13<br>
+        충남 예산군 예산읍 벚꽃로 459<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e611d103d640e90e074d0383ed068d48 = L.marker(
+                [36.601593228939066, 126.79238219236176],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_e611d103d640e90e074d0383ed068d48.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대흥주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 예산군 대흥면 상중리 101-1<br>
+        충남 예산군 대흥면 예당로 806<br>
+        > <b>가격: 1,876 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a32ff4741eacaceb6929b1c0acb24bb6 = L.marker(
+                [36.65579436302544, 126.7637892450604],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_a32ff4741eacaceb6929b1c0acb24bb6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK예당주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 예산군 응봉면 노화리 82-2<br>
+        충남 예산군 응봉면 충서로 159<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9359f04eda561af761497e31d4e2cc3e = L.marker(
+                [36.67886942104061, 126.79356355279235],
+                {}
+            ).addTo(map_28dc23d77339505d593a379709b7f2fe);
+        
+    
+            marker_9359f04eda561af761497e31d4e2cc3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한빛주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 예산군 오가면 신장리 450-45<br>
+        충청남도 예산군 오가면 충서로 530<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

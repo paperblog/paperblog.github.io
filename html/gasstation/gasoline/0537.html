@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d414b04b1448971d9b0b3637b2692b03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d414b04b1448971d9b0b3637b2692b03" ></div>
+        
+</body>
+<script>    
+    
+            var map_d414b04b1448971d9b0b3637b2692b03 = L.map(
+                "map_d414b04b1448971d9b0b3637b2692b03",
+                {
+                    center: [36.667357216646124, 126.32049068272909],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_487f6c78e05851110f8e96ecff7153aa = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            var locate_control_7113cd5c799beccc1125696f08e7d7d9 = L.control.locate(
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+            
+        
+    
+            var marker_d488a1f9459d24eddb10e1f027eb2dc1 = L.marker(
+                [36.76636105776485, 126.2856959511974],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_d488a1f9459d24eddb10e1f027eb2dc1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행운오일뱅크</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 태안읍 삭선리 478-4<br>
+        충청남도 태안군 태안읍 원이로 111<br>
+        > <b>가격: 1,618 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_932ba713b872667f52540e9015bf3852 = L.marker(
+                [36.763691520110136, 126.28888062945175],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_932ba713b872667f52540e9015bf3852.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대한주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 태안군 태안읍 삭선리 513-3<br>
+        충남 태안군 태안읍 원이로 82<br>
+        > <b>가격: 1,618 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2a05e87989e007dc36cf89c38dc39b4e = L.marker(
+                [36.78266024098912, 126.27660901610489],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_2a05e87989e007dc36cf89c38dc39b4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿모닝주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 태안군 태안읍 삭선리 745-6<br>
+        충남 태안군 태안읍 원이로 307<br>
+        > <b>가격: 1,618 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84d525914004adef24e92b04f414b9ec = L.marker(
+                [36.76028976966173, 126.34075184336096],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_84d525914004adef24e92b04f414b9ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태평주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 태안군 태안읍 인평2리361-8<br>
+        충남 태안군 태안읍 서해로 2139<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_372017dad7cbe22a62b204a2e6a76db5 = L.marker(
+                [36.75441533903223, 126.32599580454617],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_372017dad7cbe22a62b204a2e6a76db5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해바라기주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 태안읍 평천리 611-5<br>
+        충남 태안군 태안읍 서해로 1990<br>
+        > <b>가격: 1,626 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de9e6566a401de1309dae5fc3fa661a0 = L.marker(
+                [36.71963948036604, 126.28402603572304],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_de9e6566a401de1309dae5fc3fa661a0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태안주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 태안군 태안읍 남산리 680-1<br>
+        충남 태안군 태안읍 안면대로 334<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c30727d1ac82defad40679775e743a21 = L.marker(
+                [36.626213168569706, 126.31240369882221],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_c30727d1ac82defad40679775e743a21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남면농협청포대주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 태안군 남면 원청리 94-3<br>
+        충남 태안군 남면 안면대로 1480<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_01efffaa66c653b2208b615fd2a7a02a = L.marker(
+                [36.62512528813059, 126.31346994233915],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_01efffaa66c653b2208b615fd2a7a02a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태안반도남면농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 태안군 남면 원청리 838-1<br>
+        충남 태안군 남면 안면대로 1501-4<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef8092da66bc3038d25ef4277b98f53b = L.marker(
+                [36.62939390496026, 126.31493935265966],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_ef8092da66bc3038d25ef4277b98f53b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 남면 원청리 50-9<br>
+        충남 태안군 남면 천수만로 34<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ed0ed5fff76444334cd96ac0d05edb07 = L.marker(
+                [36.62535272913124, 126.32551365061823],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_ed0ed5fff76444334cd96ac0d05edb07.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천수만주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 태안군 남면 당암리 622<br>
+        충남 태안군 남면 천수만로 134-3<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6646767648cb62743b459fd50e698a69 = L.marker(
+                [36.754319889553514, 126.32355924189412],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_6646767648cb62743b459fd50e698a69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 태안읍 평천리 616-1<br>
+        충남 태안군 태안읍 서해로 1973<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_adb5077ba7254846c7bce73e3761e097 = L.marker(
+                [36.74565856158475, 126.31144847280648],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_adb5077ba7254846c7bce73e3761e097.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조은주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 태안군 태안읍 평천리 807<br>
+        충남 태안군 태안읍 동백로 382<br>
+        > <b>가격: 1,648 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8f7160b9c4bec6a35b03ab62cbec0a5 = L.marker(
+                [36.610118055095185, 126.31637227655972],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_d8f7160b9c4bec6a35b03ab62cbec0a5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안면도주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 태안군 남면 신온리 544-67<br>
+        충남 태안군 남면 안면대로 1685<br>
+        > <b>가격: 1,658 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_12666246b8b3fcba4fe57d9c2d6d177e = L.marker(
+                [36.602670425974615, 126.31965560361604],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_12666246b8b3fcba4fe57d9c2d6d177e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대신주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 태안군 남면 신온리 701-32<br>
+        충남 태안군 남면 안면대로 1722-91<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b319abc8a575f043eb8c18042186b33f = L.marker(
+                [36.746497889590074, 126.30727322479406],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_b319abc8a575f043eb8c18042186b33f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신성주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 태안군 태안읍 동문리 107<br>
+        충남 태안군 태안읍 동백로 344<br>
+        > <b>가격: 1,678 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a75151a5a101923071ba3fe7e4cb02b4 = L.marker(
+                [36.75285313049748, 126.32172744941236],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_a75151a5a101923071ba3fe7e4cb02b4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태안농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 태안군 태안읍 평천리 699-5<br>
+        충남 태안군 태안읍 서해로 1948<br>
+        > <b>가격: 1,678 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a143777ff836301cd7892ea6d072060 = L.marker(
+                [36.62222097945095, 126.32966170644701],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_9a143777ff836301cd7892ea6d072060.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>당암주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 태안읍 당암리 89-17<br>
+        충남 태안군 남면 천수만로 181<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5368b0d828feb05fe16df7dbd0f96a55 = L.marker(
+                [36.417268221285134, 126.41360016995367],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_5368b0d828feb05fe16df7dbd0f96a55.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고남주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 고남면 고남리 712-2<br>
+        충남 태안군 고남면 안면대로 4310<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e02bc27176c3d9323fc534292acb93c = L.marker(
+                [36.50954976416618, 126.34839056619525],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_0e02bc27176c3d9323fc534292acb93c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 안면읍 승언리 339-360<br>
+        충남 태안군 안면읍 안면대로 3004<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4bae2a8b3d0d33242ef61d8d60b1b98d = L.marker(
+                [36.532844917008724, 126.34983901807962],
+                {}
+            ).addTo(map_d414b04b1448971d9b0b3637b2692b03);
+        
+    
+            marker_4bae2a8b3d0d33242ef61d8d60b1b98d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>꽃지주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 태안군 안면읍 승언리 755-4<br>
+        충남 태안군 안면읍 안면대로 2672<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

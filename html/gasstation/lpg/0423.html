@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b44a70e27d1c2eda9bee75064665db3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b44a70e27d1c2eda9bee75064665db3c" ></div>
+        
+</body>
+<script>    
+    
+            var map_b44a70e27d1c2eda9bee75064665db3c = L.map(
+                "map_b44a70e27d1c2eda9bee75064665db3c",
+                {
+                    center: [36.30931300437233, 127.57072730208066],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29a50dedffd9e3e9eef3211a64d597fc = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            var locate_control_a8b4d6172c3bb0b2fe74034066219254 = L.control.locate(
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+            
+        
+    
+            var marker_e5e627021f1564ebc5cf30057d142de7 = L.marker(
+                [36.29797315589265, 127.5972176693751],
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            marker_e5e627021f1564ebc5cf30057d142de7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보령물산(주)옥천(서울)주유소/충전소</b><br>
+        <b>E1</b><br>
+        충북 옥천군 옥천읍 매화리 43-7<br>
+        충북 옥천군 옥천읍 옥천동이로 242-34<br>
+        > <b>가격: 1,035 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6515b36428065cd283fa12f7e67da092 = L.marker(
+                [36.33718353077064, 127.51105703163442],
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            marker_6515b36428065cd283fa12f7e67da092.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 한밭엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        충북 옥천군 군북면 증약리 997<br>
+        충북 옥천군 군북면 옥천로 882<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ed30ebb3825f75c1ddc61a7ab8173ee = L.marker(
+                [36.31180372050318, 127.56649127840913],
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            marker_6ed30ebb3825f75c1ddc61a7ab8173ee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼양가스충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 옥천군 옥천읍 삼양리 3-6<br>
+        충북 옥천군 옥천읍 성왕로 1141<br>
+        > <b>가격: 1,042 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5a124c683c209be0c13a24603f15deee = L.marker(
+                [36.30276525577973, 127.58200433774365],
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            marker_5a124c683c209be0c13a24603f15deee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥천IC충전소</b><br>
+        <b>E1</b><br>
+        충북 옥천군 옥천읍 문정리 323<br>
+        충북 옥천군 옥천읍 동부로 95<br>
+        > <b>가격: 1,042 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_753909d1468ebe1e58da892445d57544 = L.marker(
+                [36.29683935891542, 127.59686619324094],
+                {}
+            ).addTo(map_b44a70e27d1c2eda9bee75064665db3c);
+        
+    
+            marker_753909d1468ebe1e58da892445d57544.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥천(부산방향)주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        충북 옥천군 옥천읍 매화리 236-16<br>
+        충북 옥천군 옥천읍 서대구일로 265-19<br>
+        > <b>가격: 1,101 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

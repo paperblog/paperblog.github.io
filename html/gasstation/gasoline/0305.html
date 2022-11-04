@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15315c0759aa9c91795af75093fc09f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_15315c0759aa9c91795af75093fc09f3" ></div>
+        
+</body>
+<script>    
+    
+            var map_15315c0759aa9c91795af75093fc09f3 = L.map(
+                "map_15315c0759aa9c91795af75093fc09f3",
+                {
+                    center: [37.521956984321285, 129.10992170279488],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45b53f6fca916c1a94b1c8697d0a35da = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            var locate_control_72d75e9fa1e1525b4424e797af1dd81a = L.control.locate(
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+            
+        
+    
+            var marker_4fbd287a9f84b447b4760b504a9ade7f = L.marker(
+                [37.56228817820815, 129.1014682318641],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_4fbd287a9f84b447b4760b504a9ade7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해오름주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 발한동 382-29<br>
+        강원 동해시 발한로 384 (발한동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ae08b7f8d2d0cb58bea9c5bf00cd312a = L.marker(
+                [37.60084979671682, 129.07507033584875],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_ae08b7f8d2d0cb58bea9c5bf00cd312a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국도로공사 동해주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 동해시 망상동 산 3-1<br>
+        강원 동해시 동해대로 6427 (망상동)<br>
+        > <b>가격: 1,610 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9df730baab0dfc343bfd07872937c4df = L.marker(
+                [37.5765486465944, 129.09601725547012],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_9df730baab0dfc343bfd07872937c4df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 초구동 70-1<br>
+        강원 동해시 동해대로 6036 (초구동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f812296cec0ec23b2475645af1682c59 = L.marker(
+                [37.521159098527164, 129.10210619579416],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_f812296cec0ec23b2475645af1682c59.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)명진에너지 동해지점</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 천곡동 569-2<br>
+        강원 동해시 동해대로 5361 (천곡동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c53e29eb4f5350d354d4b8b815662ebf = L.marker(
+                [37.5829480141176, 129.1004033422604],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_c53e29eb4f5350d354d4b8b815662ebf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>망상IC주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 망상동 54-1<br>
+        강원 동해시 동해대로 6124 (망상동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_060a23825a99bcd8a150e52cc1265d92 = L.marker(
+                [37.5833971312997, 129.10004048530607],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_060a23825a99bcd8a150e52cc1265d92.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고객사랑주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 망상동 630-1<br>
+        강원 동해시 동해대로 6121<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ff2eb388a828b6b19113b2b5ab84f1b7 = L.marker(
+                [37.55305067543943, 129.10430511209935],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_ff2eb388a828b6b19113b2b5ab84f1b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>묵호주유소</b><br>
+        <b>S-OIL</b><br>
+        강원도 동해시 발한동 332-3<br>
+        강원도 동해시 해안로 595 (발한동)<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f188bab710c5df331203c62e73a5e0f = L.marker(
+                [37.531385822790256, 129.10500620257733],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_2f188bab710c5df331203c62e73a5e0f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>늘푸른초록봉주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 평릉동 209-24<br>
+        강원도 동해시  동해대로 5480 (평릉동)<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1239861c0770aa91451355dc3a8e49bc = L.marker(
+                [37.5361074556439, 129.1030619045166],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_1239861c0770aa91451355dc3a8e49bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>묵호농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 동해시 부곡동 75-5<br>
+        강원 동해시 발한로 39 (부곡동)<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a43db747a26d0abface520528665926 = L.marker(
+                [37.50923444281628, 129.125263147048],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_1a43db747a26d0abface520528665926.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK해안로주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 용정동 256-2<br>
+        강원 동해시 해안로 63 (용정동)<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33bf9af71b1b25bca5ab9773cd604955 = L.marker(
+                [37.56195158731556, 129.10184736015754],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_33bf9af71b1b25bca5ab9773cd604955.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 동해시 발한동 377-7<br>
+        강원 동해시 발한로 369 (발한동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8cd7c24d5d087308522373b8f7033f49 = L.marker(
+                [37.46559916073082, 129.1156793764608],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_8cd7c24d5d087308522373b8f7033f49.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>관동주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 단봉동 458-1<br>
+        강원 동해시 강원남부로 4650 (단봉동)<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eda9e9e66219bd36beddca104613f348 = L.marker(
+                [37.47395822068712, 129.12922342389695],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_eda9e9e66219bd36beddca104613f348.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기업주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 대구동 351-4<br>
+        강원 동해시 동해대로 4683<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c98801f10d1ed192f393b9f3adcd9ff7 = L.marker(
+                [37.476691323284705, 129.12019882570326],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_c98801f10d1ed192f393b9f3adcd9ff7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동해삼거리주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 단봉동 75-1<br>
+        강원 동해시 동해대로 4772 (단봉동)<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34aaf9112999a6cbb26f9c9bab1e3d6e = L.marker(
+                [37.470627880829994, 129.14112331961664],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_34aaf9112999a6cbb26f9c9bab1e3d6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공단주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 동해시 구호동 240-3<br>
+        강원 동해시 공단1로 7-13 (구호동)<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33f13b9ecd2ed16bf6cafbd7d09d0d8b = L.marker(
+                [37.49120856527329, 129.1041263660388],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_33f13b9ecd2ed16bf6cafbd7d09d0d8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북삼주유소</b><br>
+        <b>자영알뜰</b><br>
+        강원 동해시 동회동 255-6<br>
+        강원 동해시 효자로 636<br>
+        > <b>가격: 1,653 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3712fd65981477e19e1967c2e66ad1a4 = L.marker(
+                [37.493014103440125, 129.12463670655288],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_3712fd65981477e19e1967c2e66ad1a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴시티동해항주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 송정동 1050-1<br>
+        강원 동해시 대동로 263 (송정동)<br>
+        > <b>가격: 1,658 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_384d3bf9c9244d4b65866c9acc45f35f = L.marker(
+                [37.49670798846047, 129.11093124687687],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_384d3bf9c9244d4b65866c9acc45f35f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동북주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 효가동 282-2<br>
+        강원 동해시 동해대로 5050 (효가동)<br>
+        > <b>가격: 1,658 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f0c1e0fe52322af72b4dfca206d64d8 = L.marker(
+                [37.4919773272053, 129.12300088964383],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_5f0c1e0fe52322af72b4dfca206d64d8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동해농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 동해시 송정동 1128<br>
+        강원 동해시 대동로 249 (송정동)<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f1197eded5a837d0aa9d6812f63bfb3 = L.marker(
+                [37.46043426704462, 129.1149243281647],
+                {}
+            ).addTo(map_15315c0759aa9c91795af75093fc09f3);
+        
+    
+            marker_5f1197eded5a837d0aa9d6812f63bfb3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>CJ대한통운㈜ 동해주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 동해시 단봉동 453-2<br>
+        강원 동해시 강원남부로 4591 (단봉동)<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

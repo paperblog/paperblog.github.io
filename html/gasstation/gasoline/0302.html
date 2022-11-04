@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4dc4ddba78d3713f1b576dc75d12813 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b4dc4ddba78d3713f1b576dc75d12813" ></div>
+        
+</body>
+<script>    
+    
+            var map_b4dc4ddba78d3713f1b576dc75d12813 = L.map(
+                "map_b4dc4ddba78d3713f1b576dc75d12813",
+                {
+                    center: [37.33161294732331, 127.91910237360635],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dfce056fdddd5779821524dbef58b2b9 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            var locate_control_1404d5b366dc18f98960fc34802793e4 = L.control.locate(
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+            
+        
+    
+            var marker_138bab547517e3cfdee403cbd628c7ec = L.marker(
+                [37.253318844569705, 128.05025775204246],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_138bab547517e3cfdee403cbd628c7ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>치악(부산방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 원주시 신림면 금창리 550<br>
+        강원 원주시 신림면 치악로 416<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29c6779ebf6dc336df89f7b927c226aa = L.marker(
+                [37.25601695033811, 128.04791041932316],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_29c6779ebf6dc336df89f7b927c226aa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>치악(춘천방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 원주시 신림면 금창리 500<br>
+        강원 원주시 신림면 다리실2길 32<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bdf00a7c921d5b18f51b05dc5b109adf = L.marker(
+                [37.33657305469253, 127.85867768437826],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_bdf00a7c921d5b18f51b05dc5b109adf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문막(하)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 원주시 문막읍 동화리 116<br>
+        강원 원주시 문막읍 원문로 1234-1<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_978ad18973b129b4dc076ebde3ce6999 = L.marker(
+                [37.29705343427704, 127.817354428421],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_978ad18973b129b4dc076ebde3ce6999.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문막(인천방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 원주시 문막읍 포진리 926-1<br>
+        강원도 원주시 문막읍 개나루길 13<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb6b02d9676236aabc4d1272f8b0705f = L.marker(
+                [37.25545020683875, 128.04553137398665],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_fb6b02d9676236aabc4d1272f8b0705f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태강주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 원주시 신림면 금창리 544-1<br>
+        강원 원주시 신림면 치악로 447<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d3cc41bf230ac985b6997ada750e5e02 = L.marker(
+                [37.38135775614679, 127.94713524945617],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_d3cc41bf230ac985b6997ada750e5e02.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)따스한놈들 원주지점</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 태장동 1401<br>
+        강원 원주시 북원로 2664 (태장동)<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c35fdd16321e6600cba94353f741af3 = L.marker(
+                [37.36496458676389, 127.94903671274595],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_6c35fdd16321e6600cba94353f741af3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복가득self주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 원주시 학성동 1-15<br>
+        강원 원주시 강변로 685 (학성동)<br>
+        > <b>가격: 1,612 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_65274f01ed29722212fc74effe2b4745 = L.marker(
+                [37.37904630220824, 127.9492587641383],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_65274f01ed29722212fc74effe2b4745.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고구려주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 원주시 태장동 1039-7<br>
+        강원 원주시 현충로 288 (태장동)<br>
+        > <b>가격: 1,616 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_75e0376c5008e78dee44df2ec8ac2f07 = L.marker(
+                [37.36983518324107, 127.94681228079747],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_75e0376c5008e78dee44df2ec8ac2f07.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정지뜰주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 학성동 751-5<br>
+        강원 원주시 강변로 745 (학성동)<br>
+        > <b>가격: 1,617 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_86c42f0e521d81047dcc0e23e34dffc7 = L.marker(
+                [37.387378672769394, 127.94856429137728],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_86c42f0e521d81047dcc0e23e34dffc7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK원주주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 원주시 태장동 1353-1<br>
+        강원 원주시 북원로 2732 (태장동)<br>
+        > <b>가격: 1,617 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_67da045112b59ddf70a00b117276e67c = L.marker(
+                [37.433726771852086, 127.93008223657212],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_67da045112b59ddf70a00b117276e67c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보건설(주) 원주(부산)주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 호저면 옥산리 211<br>
+        강원 원주시 호저면 마근거리길 120<br>
+        > <b>가격: 1,622 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fe527fee4b2c506d9fb988ecf5e55da0 = L.marker(
+                [37.324690710179816, 127.84188008754796],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_fe527fee4b2c506d9fb988ecf5e55da0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)디오티디 원주꼬끼오주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 원주시 문막읍 동화리 523<br>
+        강원 원주시 문막읍 원문로 1468 (문막읍)<br>
+        > <b>가격: 1,623 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9cec1d5dd866ead90d5b55bd8399c86e = L.marker(
+                [37.32505964076548, 127.84355062949972],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_9cec1d5dd866ead90d5b55bd8399c86e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)디오티디 원주베짱이주유소</b><br>
+        <b>자영알뜰</b><br>
+        강원 원주시 문막읍 동화리 520<br>
+        강원 원주시 문막읍 원문로 1449<br>
+        > <b>가격: 1,623 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6d8492f22ce7bdc8b8f5a03fd26ecb9 = L.marker(
+                [37.33253081736646, 127.83266648152991],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_e6d8492f22ce7bdc8b8f5a03fd26ecb9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>4289주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 문막읍 동화리 1091-1<br>
+        강원 원주시 문막읍 왕건로 161<br>
+        > <b>가격: 1,623 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_987ba0b676460027e639335e6a64c508 = L.marker(
+                [37.32831699807304, 127.84673487937167],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_987ba0b676460027e639335e6a64c508.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동국주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 문막읍 동화리 342-2<br>
+        강원 원주시 문막읍 원문로 1387<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b21210c4e967c73ab523cced16d1b82 = L.marker(
+                [37.279191745476574, 127.77529566410044],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_1b21210c4e967c73ab523cced16d1b82.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무내기주유소</b><br>
+        <b>자가상표</b><br>
+        강원 원주시 문막읍 반계리 779<br>
+        강원 원주시 문막읍 여원로 1479<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2a95d1b674dcb91b841282177dfb1b80 = L.marker(
+                [37.34526103051439, 127.89078929755004],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_2a95d1b674dcb91b841282177dfb1b80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 흥업면 사제리 218-26<br>
+        강원 원주시 흥업면 원문로 804<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_47f17ec20ceef40b442e3353d685368b = L.marker(
+                [37.28264524357762, 127.99997778030539],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_47f17ec20ceef40b442e3353d685368b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남원주주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 원주시 판부면 금대리 1290-2<br>
+        강원 원주시 판부면 치악로 991<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4ab15acdf7131506bfbf588978f11e3 = L.marker(
+                [37.34446680012576, 127.92820546789777],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_b4ab15acdf7131506bfbf588978f11e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>단계주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 단계동 879-2<br>
+        강원 원주시 서원대로 154 (단계동)<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_00742742a55bef32353aed66c074f44f = L.marker(
+                [37.35537419668949, 127.9323259910853],
+                {}
+            ).addTo(map_b4dc4ddba78d3713f1b576dc75d12813);
+        
+    
+            marker_00742742a55bef32353aed66c074f44f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원유주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 원주시 단계동 114-6<br>
+        강원 원주시 원문로 149 (단계동)<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f2a1db0e2c6b6cfdfb0d97544d28443 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3f2a1db0e2c6b6cfdfb0d97544d28443" ></div>
+        
+</body>
+<script>    
+    
+            var map_3f2a1db0e2c6b6cfdfb0d97544d28443 = L.map(
+                "map_3f2a1db0e2c6b6cfdfb0d97544d28443",
+                {
+                    center: [37.02574235039142, 127.52523669343492],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_633ecf1b83ecc51cdfbee9d4e773295b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3f2a1db0e2c6b6cfdfb0d97544d28443);
+        
+    
+            var locate_control_29d741593fc46edd05fa7048ef5afef2 = L.control.locate(
+                {}
+            ).addTo(map_3f2a1db0e2c6b6cfdfb0d97544d28443);
+            
+        
+    
+            var marker_1ff5b44159c7631bf22cfb8335b9e92f = L.marker(
+                [37.06676999591132, 127.6409085634319],
+                {}
+            ).addTo(map_3f2a1db0e2c6b6cfdfb0d97544d28443);
+        
+    
+            marker_1ff5b44159c7631bf22cfb8335b9e92f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상평주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 음성군 감곡면 상평리 300-2<br>
+        충북 음성군 감곡면 감노로 239<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57e715501ff1db1957a85652e25b95ab = L.marker(
+                [37.023507896167345, 127.48388296064282],
+                {}
+            ).addTo(map_3f2a1db0e2c6b6cfdfb0d97544d28443);
+        
+    
+            marker_57e715501ff1db1957a85652e25b95ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보디앤에스(주) 음성(하남)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 음성군 삼성면 양덕리 산98-5<br>
+        충북 음성군 삼성면 중부고속도로 52<br>
+        > <b>가격: 1,979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b37cb2c722374e812f3b32c777d73c3d = L.marker(
+                [36.9869491590956, 127.45091855623001],
+                {}
+            ).addTo(map_3f2a1db0e2c6b6cfdfb0d97544d28443);
+        
+    
+            marker_b37cb2c722374e812f3b32c777d73c3d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만세유통(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 음성군 대소면 대풍리 526-1<br>
+        충북 음성군 대소면 대금로 42<br>
+        > <b>가격: 1,995 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

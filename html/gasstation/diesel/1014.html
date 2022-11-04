@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31b0a6e7bc3ab8c7a100dd7888f11816 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_31b0a6e7bc3ab8c7a100dd7888f11816" ></div>
+        
+</body>
+<script>    
+    
+            var map_31b0a6e7bc3ab8c7a100dd7888f11816 = L.map(
+                "map_31b0a6e7bc3ab8c7a100dd7888f11816",
+                {
+                    center: [35.16570732436605, 129.11225889619462],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0467fab9042aa9ac2b6fa167ee9491bc = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            var locate_control_4795c1ee06ae1096ae409dfcb55124f3 = L.control.locate(
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+            
+        
+    
+            var marker_daec2bd506ff0f050e4c2961d8b46477 = L.marker(
+                [35.17288840516692, 129.10812974638918],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_daec2bd506ff0f050e4c2961d8b46477.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신영주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 수영구 망미동 427-3<br>
+        부산 수영구 과정로 23 (망미동)<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_553d32970e499f4fa66e11fea5dd8435 = L.marker(
+                [35.156441216052386, 129.11954049389144],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_553d32970e499f4fa66e11fea5dd8435.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세왕에너지 세진주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 수영구 민락동 167-30<br>
+        부산 수영구 광남로 176 (민락동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a23ca2345ae8bdc720cd89a591324e37 = L.marker(
+                [35.173532904318435, 129.0967544224959],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_a23ca2345ae8bdc720cd89a591324e37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주) 언덕주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 수영구 망미동 837-2<br>
+        부산 수영구 연수로 239<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_edd869cfb878593aaf0a8cc75130d7cf = L.marker(
+                [35.155214844890644, 129.11287068967783],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_edd869cfb878593aaf0a8cc75130d7cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)부산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 수영구 광안동 164-1<br>
+        부산 수영구 수영로 558 (광안동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5866a26e8ec159d7b3a0126b1604a446 = L.marker(
+                [35.149635584294245, 129.1136964219569],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_5866a26e8ec159d7b3a0126b1604a446.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광안리주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 수영구 광안동 190-1<br>
+        부산 수영구 광남로 83<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d265adb016050ff955e5d486d7371423 = L.marker(
+                [35.173164309114355, 129.09724346924162],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_d265adb016050ff955e5d486d7371423.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 수영구 망미동 962-3<br>
+        부산 수영구 연수로 250 (망미동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7414e162f7fa6f940b9fe6e742186e81 = L.marker(
+                [35.15933327294393, 129.1252615975732],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_7414e162f7fa6f940b9fe6e742186e81.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마린타이거주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 수영구 민락동 30-4<br>
+        부산 수영구 광남로 241 (민락동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f288b5cd39dbb4f8d0f6676a6f5ec5a = L.marker(
+                [35.17295690007126, 129.09852656844964],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_3f288b5cd39dbb4f8d0f6676a6f5ec5a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>땡큐망미주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 수영구 망미동 825-2<br>
+        부산 수영구  연수로 254 (망미동)<br>
+        > <b>가격: 1,837 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d69459acfa69321d59a0c2bba3092539 = L.marker(
+                [35.159483037544014, 129.12860214964874],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_d69459acfa69321d59a0c2bba3092539.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>센텀타이거주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 수영구 민락동 55-1<br>
+        부산 수영구 민락본동로 30<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0db7fc0cbcd2b884033fcb9f975c4008 = L.marker(
+                [35.168665527306125, 129.11928979839118],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_0db7fc0cbcd2b884033fcb9f975c4008.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양산업(주)대영주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 수영구 수영동 560<br>
+        부산 수영구 수영로 731<br>
+        > <b>가격: 1,844 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d77f5b2c012a47314593fd5d79fedb41 = L.marker(
+                [35.16913042150208, 129.11295261161808],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_d77f5b2c012a47314593fd5d79fedb41.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주)강일주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 수영구 수영동 450-9<br>
+        부산 수영구 연수로 411<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b20a81bdda266e065736344c6a14fc21 = L.marker(
+                [35.14980933709199, 129.11048320601807],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_b20a81bdda266e065736344c6a14fc21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금련산주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 수영구 남천동 40-2<br>
+        부산 수영구 수영로 491 (남천동)<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9395eef081f478fa5d3ff4de401d4de2 = L.marker(
+                [35.1772654851048, 129.1170531737415],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_9395eef081f478fa5d3ff4de401d4de2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)호유주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 수영구 망미동 202-12<br>
+        부산 수영구 좌수영로 151 (망미동)<br>
+        > <b>가격: 1,938 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_37bb6a9aa425594c82deb81959b06eb9 = L.marker(
+                [35.17210952066435, 129.10934617987888],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_37bb6a9aa425594c82deb81959b06eb9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금호주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 수영구 망미2동 423-3<br>
+        부산 수영구 과정로 4,  (망미동)<br>
+        > <b>가격: 1,938 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3316b1eeb9c03c322486e27681b44fc = L.marker(
+                [35.17597909942523, 129.11413291394697],
+                {}
+            ).addTo(map_31b0a6e7bc3ab8c7a100dd7888f11816);
+        
+    
+            marker_e3316b1eeb9c03c322486e27681b44fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)청유주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 수영구 망미2동 205-7<br>
+        부산 수영구 좌수영로 147 (망미동)<br>
+        > <b>가격: 1,948 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

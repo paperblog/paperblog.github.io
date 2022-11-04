@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_34beeefecd06782b81973a8cf508bc92 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_34beeefecd06782b81973a8cf508bc92" ></div>
+        
+</body>
+<script>    
+    
+            var map_34beeefecd06782b81973a8cf508bc92 = L.map(
+                "map_34beeefecd06782b81973a8cf508bc92",
+                {
+                    center: [37.49085194206792, 126.72682603447166],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6486338bf4c5cb28d4b1031435b5607b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            var locate_control_0d91c59fc5039b2d2b21d8503ad8f8bd = L.control.locate(
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+            
+        
+    
+            var marker_ed49b0870be4121422d9a48e74b4e1df = L.marker(
+                [37.48108310000452, 126.69956200470298],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_ed49b0870be4121422d9a48e74b4e1df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유카스에너지 열우물주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 십정동 168-29<br>
+        인천 부평구 경원대로 1132 (십정동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5be48f9ee11f11b6844f1ccc8a1c1844 = L.marker(
+                [37.479173297402085, 126.6955022286251],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_5be48f9ee11f11b6844f1ccc8a1c1844.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주식회사 인에너지</b><br>
+        <b>S-OIL</b><br>
+        인천 부평구 십정동 134-2<br>
+        인천 부평구 경원대로 1091<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3db284b8e52ba6261322aabc3c6632ce = L.marker(
+                [37.475250897387326, 126.69197519214242],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_3db284b8e52ba6261322aabc3c6632ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>십정주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 부평구 십정동 251<br>
+        인천광역시 부평구 경원대로 1037<br>
+        > <b>가격: 1,826 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41d7bf4915b86458fce1af25f21935b2 = L.marker(
+                [37.4763072345193, 126.69239994663475],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_41d7bf4915b86458fce1af25f21935b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>푸른주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 십정동 246<br>
+        인천 부평구 경원대로 1049 (십정동)<br>
+        > <b>가격: 1,827 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23280461634bb2e8c27cd864c11951fb = L.marker(
+                [37.483293937831895, 126.75085634808508],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_23280461634bb2e8c27cd864c11951fb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태보에너지 송내I.C주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 일신동 3-17<br>
+        인천 부평구 경인로 1182-1 (일신동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_079a37bba55d61f8e4163f8901afd55d = L.marker(
+                [37.47504086455508, 126.75345818878978],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_079a37bba55d61f8e4163f8901afd55d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아크로셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 부평구 구산동 62-1<br>
+        인천 부평구 무네미로 431 (구산동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3766bc3ac8cf8471571e2835ef71e7ea = L.marker(
+                [37.478693794319014, 126.75072683738824],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_3766bc3ac8cf8471571e2835ef71e7ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보보프라자주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 구산동 93-1<br>
+        인천 부평구 무네미로 471 (구산동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2200369a46ef891b68f477b70692362f = L.marker(
+                [37.51541593826442, 126.7318433675039],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_2200369a46ef891b68f477b70692362f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿데이셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 부평구 삼산동 275-11<br>
+        인천 부평구 장제로 335 (갈산1동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57abcab5568064fabac6bb6916c98e98 = L.marker(
+                [37.4848600496776, 126.74542400735174],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_57abcab5568064fabac6bb6916c98e98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜소모에너지 동양7주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 부평구 일신동 109-12<br>
+        인천 부평구 경인로 1130 (일신동)<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa4b6e65f9ea2bea4e433c6dff98802d = L.marker(
+                [37.48648475177629, 126.73654482717949],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_aa4b6e65f9ea2bea4e433c6dff98802d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부개주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 부개동 269-4<br>
+        인천 부평구 경인로 1050 (부개동)<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ababe579620da12f4d6a4d189fc4da5a = L.marker(
+                [37.486833906636456, 126.73296584682461],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_ababe579620da12f4d6a4d189fc4da5a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구도일주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 부평구 부개동 232-1<br>
+        인천 부평구 경인로 1020<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_542b316f34a6334d664558c34c9e2463 = L.marker(
+                [37.51663373881921, 126.73195040242226],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_542b316f34a6334d664558c34c9e2463.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 삼산주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 삼산동 270-4<br>
+        인천 부평구 장제로 347 (삼산동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10ac2c37e576b0f7aae4455f7d9c12d6 = L.marker(
+                [37.518397883280194, 126.73259368384585],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_10ac2c37e576b0f7aae4455f7d9c12d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>갈산셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 삼산동 45-1<br>
+        인천 부평구 장제로 362<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c1225ca0a528300f8478fff30709233 = L.marker(
+                [37.51940216055722, 126.73224557013876],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_6c1225ca0a528300f8478fff30709233.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신화삼정주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 부평구 삼산동 225-6<br>
+        인천 부평구 장제로 379 (삼산동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d1a966eb5c1c374cc830a193d1dd3934 = L.marker(
+                [37.482721131236346, 126.75492086466357],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_d1a966eb5c1c374cc830a193d1dd3934.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새현에너지(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 부평구 구산동 7-3<br>
+        인천 부평구 경인로 1216 (구산동)<br>
+        > <b>가격: 1,864 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d28c7d4e3207933d385361681b8f21bd = L.marker(
+                [37.47032441389153, 126.69625505887805],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_d28c7d4e3207933d385361681b8f21bd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장수셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 십정동 316-49<br>
+        인천 부평구 백범로 502<br>
+        > <b>가격: 1,872 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_50de1b6dc6f77bbd179279c39a47131b = L.marker(
+                [37.49888578126613, 126.73020072772509],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_50de1b6dc6f77bbd179279c39a47131b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제일주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 부평동 378-2<br>
+        인천 부평구  장제로 151 (부평동)<br>
+        > <b>가격: 1,874 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a08728d9670f02aa05232e5bfc65a80 = L.marker(
+                [37.49335287370376, 126.70352862768054],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_4a08728d9670f02aa05232e5bfc65a80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미상사(주) 부평마장셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 부평구 산곡동 369-146<br>
+        인천 부평구 마장로 173 (산곡동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c601ca55eb90844a2b1f5dee7d304076 = L.marker(
+                [37.48380432534053, 126.75247663184597],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_c601ca55eb90844a2b1f5dee7d304076.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 싸이클셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 부평구 구산동 2-6<br>
+        인천 부평구 경인로 1195 (구산동)<br>
+        > <b>가격: 1,876 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_605b9d7de05574b9f4ff28fdcb3db2bd = L.marker(
+                [37.511078760889426, 126.72109032700475],
+                {}
+            ).addTo(map_34beeefecd06782b81973a8cf508bc92);
+        
+    
+            marker_605b9d7de05574b9f4ff28fdcb3db2bd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 부평구 갈산동 185-5<br>
+        인천 부평구 부평대로 222<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17a099c1fbd2dce8304674dd9f76e4e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_17a099c1fbd2dce8304674dd9f76e4e5" ></div>
+        
+</body>
+<script>    
+    
+            var map_17a099c1fbd2dce8304674dd9f76e4e5 = L.map(
+                "map_17a099c1fbd2dce8304674dd9f76e4e5",
+                {
+                    center: [35.20379267803361, 129.0774867350098],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ebd63024a806e0531f60927844764b1b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            var locate_control_a417adbac4c53b9ca44f3d4bb8503a46 = L.control.locate(
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+            
+        
+    
+            var marker_40693d2beda6bc369c7eecbd632e7f8f = L.marker(
+                [35.235413737827386, 129.21568142274242],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_40693d2beda6bc369c7eecbd632e7f8f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국에너지산업(주)</b><br>
+        <b>자가상표</b><br>
+        부산 기장군 기장읍 청강리 705-8<br>
+        부산 기장군 기장읍 기장대로413번길 38<br>
+        > <b>가격: 933 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_300b1f0c77f351455cc440277ac2b35f = L.marker(
+                [35.24265953884299, 129.22089537223448],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_300b1f0c77f351455cc440277ac2b35f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 기장읍 청강리 12-1<br>
+        부산 기장군 기장읍 기장대로 530<br>
+        > <b>가격: 938 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_383c2eb3d21158f3379d273b4a757d01 = L.marker(
+                [35.1264865451286, 129.0472000447268],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_383c2eb3d21158f3379d273b4a757d01.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문화가스</b><br>
+        <b>SK에너지</b><br>
+        부산 동구 초량동1149-3<br>
+        부산 동구 중앙대로 348 (초량동)<br>
+        > <b>가격: 977 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bb689f76089dce19456bafdc8c647aa3 = L.marker(
+                [35.324734614316185, 129.21040552525554],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_bb689f76089dce19456bafdc8c647aa3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정관신도시주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        부산 기장군 정관면 예림리 329-12<br>
+        부산 기장군 정관면 정관로 901<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_45c7679ab917501cd05fbec79d606f91 = L.marker(
+                [35.328606430698464, 129.20268723201067],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_45c7679ab917501cd05fbec79d606f91.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정림에너지</b><br>
+        <b>S-OIL</b><br>
+        부산 기장군 정관면 예림리 384-2<br>
+        부산 기장군 정관면 신정관로 187<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1d1b9849a8ab11ed5240ce3d90a8963 = L.marker(
+                [35.282694608554, 129.23367140806926],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_b1d1b9849a8ab11ed5240ce3d90a8963.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신아시아드충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 일광면 화전리 90-1<br>
+        부산 기장군 일광면 기장대로 1000<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_facbf880ca25a1aa575927eaa5df8ddf = L.marker(
+                [35.25446630233202, 129.2236769160825],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_facbf880ca25a1aa575927eaa5df8ddf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼성가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 일광면 삼성리 512-9<br>
+        부산 기장군 일광면 기장대로 692<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c3c16d179bff28e129a99d5d3fd2763f = L.marker(
+                [35.3216464509408, 129.24114318577222],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_c3c16d179bff28e129a99d5d3fd2763f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 선암가스충전소</b><br>
+        <b>SK가스</b><br>
+        부산 기장군 장안읍 덕선리 270-6<br>
+        부산광역시 기장군 장안읍 기장대로 1451<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a27850653cb29cabd4c9b864149a64c4 = L.marker(
+                [35.30159232573865, 129.2384165048402],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_a27850653cb29cabd4c9b864149a64c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 월드컵LPG충전소</b><br>
+        <b>SK가스</b><br>
+        부산 기장군 일광면 원리 68-3<br>
+        부산 기장군 일광면 기장대로 1216<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_689f7194ad6a1bc7a51e03dff955aa79 = L.marker(
+                [35.11289887403542, 128.87510532003768],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_689f7194ad6a1bc7a51e03dff955aa79.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)GES신항만에너지</b><br>
+        <b>SK에너지</b><br>
+        부산 강서구 녹산동 604-7<br>
+        부산 강서구 낙동남로 507 (녹산동)<br>
+        > <b>가격: 988 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b4c4546421f63276572c17f8db39e6e = L.marker(
+                [35.11823296462395, 128.84541712160436],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_4b4c4546421f63276572c17f8db39e6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신항만LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 강서구 송정동 737-13<br>
+        부산 강서구 가락대로 397<br>
+        > <b>가격: 988 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_724020e3c173f746eb482571fc31e01a = L.marker(
+                [35.21900327833135, 129.0060559187847],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_724020e3c173f746eb482571fc31e01a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>비케이에너지(주)동양가스충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 북구 덕천동 547<br>
+        부산 북구 금곡대로 103 (덕천동)<br>
+        > <b>가격: 993 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_55869251b24c0dec405814220003eeec = L.marker(
+                [35.12433224042069, 129.04510981584195],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_55869251b24c0dec405814220003eeec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마라톤가스(주)초량충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 동구 초량3동 1157-10<br>
+        부산 동구 중앙대로 310<br>
+        > <b>가격: 997 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f71dd93b19fe8c30a7c60d40beb4a922 = L.marker(
+                [35.142754656218834, 128.9851978133985],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_f71dd93b19fe8c30a7c60d40beb4a922.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)MS가스 학장충전소</b><br>
+        <b>S-OIL</b><br>
+        부산 사상구 학장동 264-5<br>
+        부산 사상구 학장로 165<br>
+        > <b>가격: 1,004 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84c8a960879d1face98ca6efe0bd98f3 = L.marker(
+                [35.140734875123215, 128.98969457525686],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_84c8a960879d1face98ca6efe0bd98f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)덕양에너지직영 구덕산충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 사상구 학장동 194-18<br>
+        부산 사상구 학감대로 102 (학장동)<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_70c41c9c18e832cff5d76bcd3e9cfd45 = L.marker(
+                [35.225887713194666, 129.2139517011048],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_70c41c9c18e832cff5d76bcd3e9cfd45.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마라톤가스(주) 청강충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 기장읍 청강리 538-1<br>
+        부산 기장군 기장읍 기장대로 333<br>
+        > <b>가격: 1,015 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aee8fc82013669d66f5e04951c8194f8 = L.marker(
+                [35.200395474351936, 128.89366238663163],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_aee8fc82013669d66f5e04951c8194f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>죽림LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        부산 강서구 죽림동 497-1<br>
+        부산 강서구 호계로 102 (죽림동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_66454f5880f9f3c7ed69f9728d2efb3f = L.marker(
+                [35.208447622304945, 128.89037352582488],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_66454f5880f9f3c7ed69f9728d2efb3f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가락충전소</b><br>
+        <b>E1</b><br>
+        부산 강서구 죽동동 122-1<br>
+        부산 강서구 호계로 195 (죽동동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f600219038ab935cb5223f3ac18b1cd = L.marker(
+                [35.090001770307815, 128.9943335049801],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_2f600219038ab935cb5223f3ac18b1cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 은광가스충전소</b><br>
+        <b>SK가스</b><br>
+        부산 사하구 감천동 805-9<br>
+        부산 사하구 사하로 90<br>
+        > <b>가격: 1,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ebaed2eda52914eb1b0c1c9142c57acb = L.marker(
+                [35.07486353738022, 128.97705540499663],
+                {}
+            ).addTo(map_17a099c1fbd2dce8304674dd9f76e4e5);
+        
+    
+            marker_ebaed2eda52914eb1b0c1c9142c57acb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국가스 장림충전소 SK행복충전</b><br>
+        <b>SK가스</b><br>
+        부산 사하구 장림동 370<br>
+        부산 사하구 장림동 510-2<br>
+        > <b>가격: 1,020 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

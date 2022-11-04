@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19058fcd7b0dce66a1046ee82bc543e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_19058fcd7b0dce66a1046ee82bc543e3" ></div>
+        
+</body>
+<script>    
+    
+            var map_19058fcd7b0dce66a1046ee82bc543e3 = L.map(
+                "map_19058fcd7b0dce66a1046ee82bc543e3",
+                {
+                    center: [37.76638413205676, 127.43569473881925],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c795ab8ecdfffb8377f8803535615a8 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            var locate_control_4f7e04fe693a05ce9d4bc27b4b130322 = L.control.locate(
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+            
+        
+    
+            var marker_0203850251c3d8c1f148987dd16a5277 = L.marker(
+                [37.78536822681024, 127.36979804946048],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_0203850251c3d8c1f148987dd16a5277.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쉼터주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 가평군 상면 항사리 76-1<br>
+        경기 가평군 상면 청군로 824<br>
+        > <b>가격: 1,617 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1c7a79b43011b9473888ae78f86e8517 = L.marker(
+                [37.828839978299456, 127.29768424426555],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_1c7a79b43011b9473888ae78f86e8517.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>홀인원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 가평군 상면 율길리 139<br>
+        경기도 가평군 상면 조종로 1622<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0987bb30ea903cbd0bfe678fed6451f6 = L.marker(
+                [37.81272754104135, 127.34082058267862],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_0987bb30ea903cbd0bfe678fed6451f6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>국토셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 조종면 현리 444-3<br>
+        경기 가평군 조종면 비득재길 120<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e0218795ad175b057a30f3b9c0caf43 = L.marker(
+                [37.8728197298989, 127.52137535674717],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_7e0218795ad175b057a30f3b9c0caf43.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명지산주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 가평군 북면 이곡리 580-1<br>
+        경기 가평군 북면 가화로 687<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_25bc2eea310c8e162edc26808b956831 = L.marker(
+                [37.76361215983606, 127.44224691380973],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_25bc2eea310c8e162edc26808b956831.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평대박주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 가평군 청평면 상천리 1157-3<br>
+        경기 가평군 청평면 경춘로 1175<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f649fb174039cc3f39728185560dbb07 = L.marker(
+                [37.81599285133039, 127.50243323400036],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_f649fb174039cc3f39728185560dbb07.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평Self주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 가평군 가평읍 하색리 39-6<br>
+        경기 가평군 가평읍 경춘로 2065<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dc1388ead563188a406347e0e1eefbbd = L.marker(
+                [37.79755040480889, 127.48185195867141],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_dc1388ead563188a406347e0e1eefbbd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오일유업직영GS경춘주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 가평군 가평읍 상색리 273-3<br>
+        경기 가평군 가평읍 경춘로 1776<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf22fb4bed49c3b249929c7f3c70d2ae = L.marker(
+                [37.76438395581783, 127.44350098309359],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_cf22fb4bed49c3b249929c7f3c70d2ae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서울주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 상천리 1151-11<br>
+        경기 가평군 청평면 경춘로 1191<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7cac6101b020ff3bed4cb24eeff1419d = L.marker(
+                [37.81319362568301, 127.49920651558341],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_7cac6101b020ff3bed4cb24eeff1419d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이화주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 가평군 가평읍 하색리 290-1<br>
+        경기 가평군 가평읍 경춘로 2021<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d817f9159631ae3bde13d7d87dd6ed7 = L.marker(
+                [37.79591310102588, 127.47852402209213],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_1d817f9159631ae3bde13d7d87dd6ed7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오일릭주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 가평군 가평읍 상색리 314-2<br>
+        경기 가평군 가평읍 경춘로 1741<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_df9831d38522de9831a9fba9644cd641 = L.marker(
+                [37.79377229445777, 127.3656125182343],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_df9831d38522de9831a9fba9644cd641.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 상면 항사리 242-7<br>
+        경기 가평군 상면 청군로 927<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_be3b98b31096000befd8b08665aceca4 = L.marker(
+                [37.79846696653271, 127.48201860020069],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_be3b98b31096000befd8b08665aceca4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평군농협하나로주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 가평군 가평읍 상색리 271-3<br>
+        경기 가평군 가평읍 경춘로 1785<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23525606ef235029e4177cb97511c400 = L.marker(
+                [37.71039328493848, 127.4002769182758],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_23525606ef235029e4177cb97511c400.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호반주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 삼회리 85-1<br>
+        경기 가평군 청평면 북한강로 2187<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb783d349106f771662112695af5d6c0 = L.marker(
+                [37.75149869522329, 127.4324462509454],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_fb783d349106f771662112695af5d6c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경기주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 가평군 청평면 하천리 243-2<br>
+        경기 가평군 청평면 경춘로 1013<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c9d9e12dfb146b8372733601ea53a97 = L.marker(
+                [37.70188152189735, 127.54602845600542],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_4c9d9e12dfb146b8372733601ea53a97.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평(춘천방향)주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 설악면 미사리 149<br>
+        경기 가평군 설악면 미사리로540번길 51<br>
+        > <b>가격: 1,682 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_15167da97945b854ea0c2d9bd93e3b15 = L.marker(
+                [37.70164403270927, 127.5444685321364],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_15167da97945b854ea0c2d9bd93e3b15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평(서울방향)주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 설악면 미사리 287-10<br>
+        경기 가평군 설악면 미사리로 544<br>
+        > <b>가격: 1,682 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c2bb3d0ca1613977e9a59e63d48088a4 = L.marker(
+                [37.69831362655584, 127.38417595909092],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_c2bb3d0ca1613977e9a59e63d48088a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청풍주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 대성리 343-4<br>
+        경기 가평군 청평면 경춘로 257<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89fd76d1a668bf09c2680a9e712b3cef = L.marker(
+                [37.71813735628094, 127.40186602905949],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_89fd76d1a668bf09c2680a9e712b3cef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미상사(주)청평그린셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 대성리 56-1<br>
+        경기 가평군 청평면 경춘로 524<br>
+        > <b>가격: 1,686 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a44a3d73e57f706d6db23acdb8d59aa = L.marker(
+                [37.68637609407939, 127.37926302240349],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_6a44a3d73e57f706d6db23acdb8d59aa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화랑포주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 대성리 399-142<br>
+        경기 가평군 청평면 경춘로 113<br>
+        > <b>가격: 1,686 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24c58e1bdef8a20252bdf233ef8f368a = L.marker(
+                [37.71679719390794, 127.40029662963137],
+                {}
+            ).addTo(map_19058fcd7b0dce66a1046ee82bc543e3);
+        
+    
+            marker_24c58e1bdef8a20252bdf233ef8f368a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신청평주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 가평군 청평면 대성리 69-5<br>
+        경기 가평군 청평면 경춘로 508<br>
+        > <b>가격: 1,687 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

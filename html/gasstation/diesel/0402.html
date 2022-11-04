@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94cf17ee203c3da8a4bf9fff1cd1e58d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_94cf17ee203c3da8a4bf9fff1cd1e58d" ></div>
+        
+</body>
+<script>    
+    
+            var map_94cf17ee203c3da8a4bf9fff1cd1e58d = L.map(
+                "map_94cf17ee203c3da8a4bf9fff1cd1e58d",
+                {
+                    center: [36.98709893657349, 127.92719297883323],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0dbc9e19f5f300213a08cc29bea4e4f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            var locate_control_442b89f7e97f408061951c62592a2889 = L.control.locate(
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+            
+        
+    
+            var marker_63c15a77090617aed1decdeb10874ea4 = L.marker(
+                [37.097245461928054, 127.97042653522566],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_63c15a77090617aed1decdeb10874ea4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다릿재주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 충주시 산척면 송강리 652-2<br>
+        충북 충주시 산척면 북부로 3293<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5256b0fdde10404d744697cdedd661d4 = L.marker(
+                [36.969787461241104, 127.91454396555353],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_5256b0fdde10404d744697cdedd661d4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충주주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 충주시 봉방동 337-20<br>
+        충북 충주시 중원대로 3506 (봉방동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27998b5a89058c25fac75db80113554b = L.marker(
+                [36.98257044573235, 127.91431290462653],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_27998b5a89058c25fac75db80113554b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>롯데마트충주점주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 충주시 칠금동 849<br>
+        충북 충주시 충원대로 626(칠금동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4519d43f09ae63fdfe6caa6e48704041 = L.marker(
+                [37.021158025610134, 127.83916379598178],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_4519d43f09ae63fdfe6caa6e48704041.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)인엔아웃 충주(창원)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 충주시 중앙탑면 용전리 산 50-3<br>
+        충북 충주시 중앙탑면 중부내륙고속도로 231-1<br>
+        > <b>가격: 1,822 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_58fa27729d036b0393572f7c31b1af94 = L.marker(
+                [36.96313007798276, 127.93969859146041],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_58fa27729d036b0393572f7c31b1af94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서림주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 충주시 용산동 1527<br>
+        충북 충주시 형설로 102 (용산동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_887b05e1779efd6d1f6db924b29233f6 = L.marker(
+                [36.97034441901213, 127.94720387940875],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_887b05e1779efd6d1f6db924b29233f6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>희망주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 충주시 안림동 1091<br>
+        충북 충주시 금봉대로 398<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a876f978100733596a7a67f0c936c2e2 = L.marker(
+                [36.97767561890732, 127.94029158590958],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_a876f978100733596a7a67f0c936c2e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수재주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 충주시 교현동 446<br>
+        충북 충주시 갱고개로 74 (교현동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a6ab71da12a164f54e0728781b2e9eb0 = L.marker(
+                [37.076023864667974, 127.98700597597768],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_a6ab71da12a164f54e0728781b2e9eb0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)파리크라상 천등산(평택방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 충주시 산청면 영덕리 산 2-38<br>
+        충북 충주시 산척면 평택제천고속도로 109<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_77c14a8a0c0967346ade6a91de89ee7f = L.marker(
+                [37.06160952757693, 127.94117349127109],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_77c14a8a0c0967346ade6a91de89ee7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)파리크라상 천등산(제천방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 충주시 산척면 영덕리 산 182-46<br>
+        충북 충주시 산척면 평택제천고속도로 106<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce09347084c3d616ba5657640a92d870 = L.marker(
+                [36.981517896290654, 127.94619719923026],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_ce09347084c3d616ba5657640a92d870.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연수주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 충주시 연수동 51-3<br>
+        충북 충주시 금봉대로 524 (연수동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b04d3f41c713725a8dfe7e15b45b8352 = L.marker(
+                [36.98723674665324, 127.89394939847284],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_b04d3f41c713725a8dfe7e15b45b8352.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충주농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충북 충주시 칠금동 420-52<br>
+        충북 충주시 탄금대로 364<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3166aca9a6b35323059652e95ca46783 = L.marker(
+                [36.96612548462504, 127.94727690062922],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_3166aca9a6b35323059652e95ca46783.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산클린주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 충주시 교현동 89-1<br>
+        충북 충주시 금봉대로 352 (교현동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cca9acabe3d6787701ea284dacbbc797 = L.marker(
+                [37.02403796133487, 127.83745035151074],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_cca9acabe3d6787701ea284dacbbc797.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)부자충주(상)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 충주시 중앙탑면 용전리 380-4<br>
+        충북 충주시 중앙탑면 중부내륙고속도로 230-1<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_11a5537c9985ac912fff38524c39a5b1 = L.marker(
+                [36.865769254057376, 127.97174977886148],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_11a5537c9985ac912fff38524c39a5b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수안보 만남의광장주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 충주시 수안보면 수회리 817-2<br>
+        충북 충주시 수안보면 중원대로 1773<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eaa7cdf84e9a87528bc9ca0b50409bda = L.marker(
+                [36.98400175043923, 127.82950189071016],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_eaa7cdf84e9a87528bc9ca0b50409bda.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 서충주주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 충주시 이류면 본리 1100<br>
+        충청북도 충주시 대소원면 첨단산업로 123 (대소원면)<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57ac6324e540386fb0be6b0833bd8bd1 = L.marker(
+                [36.89004040835569, 127.98495772130819],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_57ac6324e540386fb0be6b0833bd8bd1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>푸른솔주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 충주시 살미면 용천리 267<br>
+        충북 충주시 살미면 중원대로 2144<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ca56045a9da1d43fb0937e24dc9b23a = L.marker(
+                [36.90278705031709, 127.96140206682992],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_1ca56045a9da1d43fb0937e24dc9b23a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한마음주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 충주시 살미면 세성리 264<br>
+        충북 충주시 살미면 중원대로 2410<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cc75a9f0ef031ce23ee81bf80e4f241 = L.marker(
+                [37.05785613415517, 127.92997978422937],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_3cc75a9f0ef031ce23ee81bf80e4f241.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>늘품주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 충주시 금가면 도촌리 15-4<br>
+        충북 충주시 금가면 충원대로 1507<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_989e508c5471e9982a2a2b54594deebc = L.marker(
+                [36.96719786273407, 127.91938248939886],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_989e508c5471e9982a2a2b54594deebc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문화주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 충주시 문화동 243<br>
+        충북 충주시 사직로 59 (문화동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d5f5d3e421f3d7e37df4e88193c4ede3 = L.marker(
+                [36.99586327984849, 127.92819127006857],
+                {}
+            ).addTo(map_94cf17ee203c3da8a4bf9fff1cd1e58d);
+        
+    
+            marker_d5f5d3e421f3d7e37df4e88193c4ede3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스카이주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 충주시 금능동 12-9<br>
+        충북 충주시 국원대로 272 (금릉동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08c022c893512bf5b25a64e8e72556f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_08c022c893512bf5b25a64e8e72556f2" ></div>
+        
+</body>
+<script>    
+    
+            var map_08c022c893512bf5b25a64e8e72556f2 = L.map(
+                "map_08c022c893512bf5b25a64e8e72556f2",
+                {
+                    center: [34.90247422126333, 128.61289741663072],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b7c9d758a602b3f49a0f8054728ba42 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            var locate_control_975acc8903d81dd1c8bb39cefb92948d = L.control.locate(
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+            
+        
+    
+            var marker_ee26e2abcfef51f64bcf4c65272eb946 = L.marker(
+                [34.897435410791765, 128.68330555379166],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_ee26e2abcfef51f64bcf4c65272eb946.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은마석유(주)거제대로주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 거제시 옥포동 1416-2<br>
+        경남 거제시 거제대로 3855-14<br>
+        > <b>가격: 1,834 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2fe55a118db4c7116edd2c4234be1bb = L.marker(
+                [34.90144612474087, 128.5108242907122],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_f2fe55a118db4c7116edd2c4234be1bb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새시민주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 사등면 청곡리 90-1<br>
+        경남 거제시 사등면 거제대로 5948<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_64cc59bf7690170d1b4a0fa65cabb4ea = L.marker(
+                [34.91010156459027, 128.54502196932074],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_64cc59bf7690170d1b4a0fa65cabb4ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사등주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 거제시 사등면 사등리 1922-1<br>
+        경남 거제시 사등면 거제대로 5486<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0a0b7f9811acd09da8e1bfa51c333f71 = L.marker(
+                [34.89533082340972, 128.4999570999067],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_0a0b7f9811acd09da8e1bfa51c333f71.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청포주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 사등면 청곡리 700-7<br>
+        경남 거제시 사등면 거제대로 6070<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab7169b2ac93472e3bf70d5d6a74246f = L.marker(
+                [34.91762590975691, 128.52240750233386],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_ab7169b2ac93472e3bf70d5d6a74246f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사등농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 거제시 사등면 성포리 394<br>
+        경남 거제시 사등면 거제대로 5733<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7c5bc25c10463d66b429a0b93f36d3d = L.marker(
+                [34.91524912746869, 128.51959075576744],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_c7c5bc25c10463d66b429a0b93f36d3d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오엘르주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 거제시 사등면 성포리 472-8<br>
+        경남 거제시 사등면 거제대로 5770<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_875953dfd3b83c3abd490b0125007b1d = L.marker(
+                [34.8750460775382, 128.4772998781961],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_875953dfd3b83c3abd490b0125007b1d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제2장진주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 거제시 사등면 덕호리 225-17<br>
+        경남 거제시 사등면 거제남서로 5252<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c084bf9c304b370f94ae9c1f4e1a14e = L.marker(
+                [34.901402404000805, 128.56030522625292],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_9c084bf9c304b370f94ae9c1f4e1a14e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일플러스</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 사등면 사등리 70-1<br>
+        경남 거제시 사등면 거제대로 5308<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2d4800f0f9f1bd54801a3ef270698562 = L.marker(
+                [34.89846941639116, 128.50862298762524],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_2d4800f0f9f1bd54801a3ef270698562.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조은주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 거제시 사등면 청곡리 170<br>
+        경남 거제시 사등면 거제대로 5989<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ce5ecc074b853dd3e6957c8e88bac99 = L.marker(
+                [34.838946579809694, 128.5088290967327],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_2ce5ecc074b853dd3e6957c8e88bac99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>둔덕농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 거제시 둔덕면 하둔리 48-135<br>
+        경남 거제시 둔덕면 거제남서로 4576-6<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41c01d5297af86e685838ac81a9af2f4 = L.marker(
+                [34.98836675627317, 128.68142209207758],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_41c01d5297af86e685838ac81a9af2f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장목주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 장목면 장목리 302-9<br>
+        경남 거제시 장목면 거제북로 1179<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23bb127e0ea4d30a37980d3f1be350ad = L.marker(
+                [34.87234230524655, 128.69062287266013],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_23bb127e0ea4d30a37980d3f1be350ad.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장승포농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 거제시 아주동 607-4<br>
+        경남 거제시 거제대로 3513 (아주동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f752385b1b0b6edb134742ef39f34e4 = L.marker(
+                [34.888527220000235, 128.6918850092374],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_1f752385b1b0b6edb134742ef39f34e4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥포주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 옥포1동 551-1<br>
+        경남 거제시 거제대로 3712 (옥포동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_712a43fc4ebc50ab78819ebc24ed6d83 = L.marker(
+                [34.866113069291835, 128.69607929876943],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_712a43fc4ebc50ab78819ebc24ed6d83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 조선해양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 거제시 아주동 246-7<br>
+        경남 거제시 거제대로 3417 (아주동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b2aea76666a42a0ad0de20335fd317e = L.marker(
+                [34.9921536634659, 128.68766445661748],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_4b2aea76666a42a0ad0de20335fd317e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경인산업(주)거가대교주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 장목면 관포리 618<br>
+        경남 거제시 장목면 거제북로 2859<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9231e23a48eee1c4289af89f322d77a6 = L.marker(
+                [34.850651948877974, 128.70987095638796],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_9231e23a48eee1c4289af89f322d77a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>바다애 주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 거제시 일운면 옥림리 514-3<br>
+        경남 거제시 일운면 거제대로 2802<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40b1e9ddfe892241b64240a30c1c39f3 = L.marker(
+                [34.91162760315692, 128.7063496472043],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_40b1e9ddfe892241b64240a30c1c39f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거가주유소충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 거제시 덕포동 287-3<br>
+        경남 거제시 옥포대첩로 338<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_94b964840dd5b86d19e9349c1bda393a = L.marker(
+                [34.90442208816107, 128.68324317829496],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_94b964840dd5b86d19e9349c1bda393a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아리랑주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 거제시 연초면 송정리 156-6<br>
+        경남 거제시 연초면 거제대로 3916<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_707e1ca02a68474210af2a44a67c29f3 = L.marker(
+                [34.91210161374613, 128.66852235803682],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_707e1ca02a68474210af2a44a67c29f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신거제주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 거제시 연초면 송정리 715-12<br>
+        경남 거제시 연초면 거제대로 4131 (연초면)<br>
+        > <b>가격: 1,887 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e68e4cb50ac5e1bbae4e722922c26b4a = L.marker(
+                [34.912124718548775, 128.70612410268905],
+                {}
+            ).addTo(map_08c022c893512bf5b25a64e8e72556f2);
+        
+    
+            marker_e68e4cb50ac5e1bbae4e722922c26b4a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동백주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 거제시 덕포동 289<br>
+        경남 거제시 옥포대첩로 343 (덕포동)<br>
+        > <b>가격: 1,888 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

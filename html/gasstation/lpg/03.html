@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_623eaa82c85c326f8995267692972329 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_623eaa82c85c326f8995267692972329" ></div>
+        
+</body>
+<script>    
+    
+            var map_623eaa82c85c326f8995267692972329 = L.map(
+                "map_623eaa82c85c326f8995267692972329",
+                {
+                    center: [37.72974921060701, 128.16848759776556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a62231d601e537d41f023e36f148040e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            var locate_control_8b59595daf1781e27c959574b152a6d3 = L.control.locate(
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+            
+        
+    
+            var marker_d1ab344ef65896b9870f7d2f79376767 = L.marker(
+                [38.079552930833465, 128.0158120551164],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_d1ab344ef65896b9870f7d2f79376767.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양구가스충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 양구군 국토정중앙면 창리 394-4<br>
+        강원 양구군 국토정중앙면 정중앙로 182<br>
+        > <b>가격: 987 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_efa21f71264b350d5b72ba23a15b7b03 = L.marker(
+                [37.653449282577476, 128.5176721569665],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_efa21f71264b350d5b72ba23a15b7b03.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 강원엘피지</b><br>
+        <b>SK가스</b><br>
+        강원 평창군 진부면 하진부리 1281-7<br>
+        강원도 평창군 진부면 속사재길 292<br>
+        > <b>가격: 993 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab9c3019eaf3e28013295cd3f906467c = L.marker(
+                [37.31323658551107, 127.93110842002284],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_ab9c3019eaf3e28013295cd3f906467c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원주역충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 원주시 판부면 서곡리 621-1<br>
+        강원 원주시 판부면 남원로 259<br>
+        > <b>가격: 1,012 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a29e6d803ea0e02678dd0bc65bd1785 = L.marker(
+                [38.138030998785744, 128.24537278452277],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_1a29e6d803ea0e02678dd0bc65bd1785.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>설악한계충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 북면 한계리 1468<br>
+        강원 인제군 북면 설악로 3254<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a175367a178b49dee57cc7672bb2dcd3 = L.marker(
+                [38.1391446832198, 128.24705349873366],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_a175367a178b49dee57cc7672bb2dcd3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그린에너지</b><br>
+        <b>S-OIL</b><br>
+        강원 인제군 북면 한계리 1466-2<br>
+        강원 인제군 북면 설악로 3251-28<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8976bc21ba4d5ff3a38e57df1940e693 = L.marker(
+                [38.084500388926074, 127.99570291305655],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_8976bc21ba4d5ff3a38e57df1940e693.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 배꼽에너지충전소</b><br>
+        <b>SK가스</b><br>
+        강원 양구군 국토정중앙면 죽리 631-43<br>
+        강원 양구군 국토정중앙면 춘양로 2888<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_99aac66532120876e002ba4a90a3ff72 = L.marker(
+                [37.5749136547515, 129.09655703673843],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_99aac66532120876e002ba4a90a3ff72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 초구동 61-5<br>
+        강원 동해시 발한로 531 (초구동)<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f1fad93c3fc455f7c612e8f7c6a6748 = L.marker(
+                [37.47131641627355, 129.14064700578015],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_3f1fad93c3fc455f7c612e8f7c6a6748.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공단가스 충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 동해시 구호동 240<br>
+        강원도 동해시 공단2로 15-9 (구호동)<br>
+        > <b>가격: 1,024 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41e9e1a4e1317f085ee9e178e7161e9f = L.marker(
+                [37.504281828407656, 129.10468752202956],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_41e9e1a4e1317f085ee9e178e7161e9f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대경가스충전소(주)</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 효가동 363<br>
+        강원 동해시 동해대로 5165 (효가동)<br>
+        > <b>가격: 1,025 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f1e1a64516ae483f68ad3e5e1e675d9 = L.marker(
+                [37.82706269266187, 127.62021035030715],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_4f1e1a64516ae483f68ad3e5e1e675d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강촌가스충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 춘천시 서면 당림리 318-2<br>
+        강원 춘천시 서면 경춘로 1014<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_044b6af9b0b451a740028b9838eac067 = L.marker(
+                [37.83439198027283, 127.59374089635914],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_044b6af9b0b451a740028b9838eac067.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 안보충전소</b><br>
+        <b>SK가스</b><br>
+        강원 춘천시 서면 안보리 63-1<br>
+        강원 춘천시 서면 경춘로 751<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_47b50af5b0d59ed0253bb2a62f69936e = L.marker(
+                [37.716997210693606, 128.97877455631368],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_47b50af5b0d59ed0253bb2a62f69936e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하슬라충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 강릉시 강동면 모전리 124-11<br>
+        강원 강릉시 강동면 동해대로 1885<br>
+        > <b>가격: 1,031 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_731be96183492e1014bab04677501d21 = L.marker(
+                [37.34002139132656, 127.87485409558904],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_731be96183492e1014bab04677501d21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)덕일</b><br>
+        <b>SK에너지</b><br>
+        강원 원주시 지정면 보통리 251-1<br>
+        강원 원주시 지정면 보통로 380<br>
+        > <b>가격: 1,033 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f33d53925932fab59e747c0ec689098d = L.marker(
+                [38.194626193375974, 128.32295580370598],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_f33d53925932fab59e747c0ec689098d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>LP가스산업(주)충전소</b><br>
+        <b>E1</b><br>
+        강원 인제군 북면 용대리 1109-2<br>
+        강원 인제군 북면 미시령로 967<br>
+        > <b>가격: 1,037 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af07537ffd14e24109886834c928f508 = L.marker(
+                [37.61049672144425, 127.89696567677132],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_af07537ffd14e24109886834c928f508.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼마치LPG충전소</b><br>
+        <b>E1</b><br>
+        강원 홍천군 홍천읍 삼마치리 540<br>
+        강원 홍천군 홍천읍 영서로 1502<br>
+        > <b>가격: 1,039 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4675813a255e19f13799a1b4ba45a08 = L.marker(
+                [37.84797902593689, 127.7715243943446],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_e4675813a255e19f13799a1b4ba45a08.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>IOZEN(이오젠)</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 동내면 고은리 537-1<br>
+        강원 춘천시 동내면 순환대로 758<br>
+        > <b>가격: 1,041 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5dadbada7e0bd851d93ae3406ca06dac = L.marker(
+                [37.3268036216815, 127.8451809670556],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_5dadbada7e0bd851d93ae3406ca06dac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 원흥엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        강원 원주시 문막읍 동화리 514-3<br>
+        강원 원주시 문막읍 원문로 1415<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98d6f4ecfd38ee3fa9f2d6907729dba7 = L.marker(
+                [38.120033999366015, 127.2944613101691],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_98d6f4ecfd38ee3fa9f2d6907729dba7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>철원충전소</b><br>
+        <b>E1</b><br>
+        강원 철원군 갈말읍 강포리 130-1<br>
+        강원 철원군 갈말읍 호국로 4426<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f7d2a4524ec09c556b3df66e22b4de4c = L.marker(
+                [37.357082735092625, 127.90119846904761],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_f7d2a4524ec09c556b3df66e22b4de4c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(합)원주엘피지</b><br>
+        <b>S-OIL</b><br>
+        강원 원주시 호저면 만종리 627<br>
+        강원 원주시 호저면 신무로 10<br>
+        > <b>가격: 1,045 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6f51ff0ea8234474446563d0683fdae9 = L.marker(
+                [37.46106187100173, 127.9752720426811],
+                {}
+            ).addTo(map_623eaa82c85c326f8995267692972329);
+        
+    
+            marker_6f51ff0ea8234474446563d0683fdae9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원주공항 LPG</b><br>
+        <b>자가상표</b><br>
+        강원 횡성군 횡성읍 곡교리 85-6<br>
+        강원 횡성군 횡성읍 횡성로 68<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55c0c38269b7c822798cfb20016f5290 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_55c0c38269b7c822798cfb20016f5290" ></div>
+        
+</body>
+<script>    
+    
+            var map_55c0c38269b7c822798cfb20016f5290 = L.map(
+                "map_55c0c38269b7c822798cfb20016f5290",
+                {
+                    center: [37.145822653571244, 128.99761229606003],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a2b6569a3037c9f111cf66a775a20a7 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            var locate_control_e4bf8d617fd6b0904881ebce17b11c27 = L.control.locate(
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+            
+        
+    
+            var marker_22902995af4aa1ab85f8ee789469bf78 = L.marker(
+                [37.177141895351674, 128.99064280774775],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_22902995af4aa1ab85f8ee789469bf78.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태광주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 태백시 황지동 8-71<br>
+        강원 태백시 태백로 892 (황지동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b8ca6f2379e8063aa685363e7ed11eca = L.marker(
+                [37.1776879838145, 128.98636286198175],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_b8ca6f2379e8063aa685363e7ed11eca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>황지주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 황지동 274-19<br>
+        강원 태백시 황지로 234 (황지동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_220716ecfd5ceb7e5959dc4d5607c286 = L.marker(
+                [37.09531534142049, 129.02729552847035],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_220716ecfd5ceb7e5959dc4d5607c286.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 장성동 29-65<br>
+        강원 태백시 태백로 2124 (장성동)<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5d4893b0af3e9e83c26cb2b91895a6c = L.marker(
+                [37.179561924919, 128.97221441706796],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_e5d4893b0af3e9e83c26cb2b91895a6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태백농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 태백시 화전동 16-67<br>
+        강원 태백시 태백로 708 (화전동)<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d8146a4b40cafa3cc7f3a9a4ac4841c = L.marker(
+                [37.09450334558034, 129.0269435740762],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_7d8146a4b40cafa3cc7f3a9a4ac4841c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>메밀주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 태백시 장성동 23-1<br>
+        강원 태백시 메밀들1길 136 (장성동)<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54eb64456197292b66883a4b09a4c409 = L.marker(
+                [37.17039225711813, 129.02180716092917],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_54eb64456197292b66883a4b09a4c409.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연화주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 통동 266-1<br>
+        강원 태백시 강원남부로 302 (통동)<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b4f15306f15c414493b7e003a2638c0 = L.marker(
+                [37.15257977419443, 128.99075165810493],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_1b4f15306f15c414493b7e003a2638c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태백주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 황지동 104-1<br>
+        강원 태백시 태백로 1186 (황지동)<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7efb6c426b3f0cc6a8340405aca9ad2f = L.marker(
+                [37.173577509689494, 129.00844428174105],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_7efb6c426b3f0cc6a8340405aca9ad2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태연주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 통동 286-2<br>
+        강원 태백시 강원남부로 143 (통동)<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_532f53b431a2b0af406bdef7481148ba = L.marker(
+                [37.154885056274175, 128.98947396667953],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_532f53b431a2b0af406bdef7481148ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>자가상표</b><br>
+        강원 태백시 황지동 108-32<br>
+        강원 태백시 상장로 88 (황지동)<br>
+        > <b>가격: 1,925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a78803411b117a00c9be577f53398d2f = L.marker(
+                [37.15172372385693, 128.9887897717059],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_a78803411b117a00c9be577f53398d2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서학주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 황지동 179-2<br>
+        강원 태백시 번영로 87 (황지동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4a6b5d1b32169b6edf78e54a64407c4 = L.marker(
+                [37.104252092406966, 129.00844510068745],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_b4a6b5d1b32169b6edf78e54a64407c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장성주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 장성동 144-5<br>
+        강원 태백시 장성로 7 (장성동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5fe72cd92c8d4f5a3f1790d0ccf6eab7 = L.marker(
+                [37.16257864004611, 128.9917792265844],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_5fe72cd92c8d4f5a3f1790d0ccf6eab7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성일주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 태백시 황지동 78-4<br>
+        강원 태백시 태백로 1064 (황지동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a3cc3d5e5cdd1e163ad014e6248fbff = L.marker(
+                [37.12727720336063, 129.00330639660527],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_8a3cc3d5e5cdd1e163ad014e6248fbff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세봉주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 문곡동 27-52<br>
+        강원 태백시 태백로 1571<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10b48872a2574f24016d8771b2799edc = L.marker(
+                [37.12291898305821, 128.89935144598874],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_10b48872a2574f24016d8771b2799edc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>어평주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 혈동 155-3<br>
+        강원 태백시 태백산로 4162<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a63f215063b6b8510aa2faa83c17c606 = L.marker(
+                [37.095648529512715, 129.01499009763435],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_a63f215063b6b8510aa2faa83c17c606.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜삼봉레미콘 강원주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 태백시 장성동 128-3<br>
+        강원 태백시 메밀들1길 18 (장성동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e1c5c75a88e5a4970ee4842960c947e = L.marker(
+                [37.117334166514745, 129.03933109319829],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_3e1c5c75a88e5a4970ee4842960c947e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 철암2동 349-25<br>
+        강원 태백시 동태백로 450 (철암동)<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d4fd832a526b4efa4555bcb0c6c2e68 = L.marker(
+                [37.199240887463375, 128.96139260542859],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_6d4fd832a526b4efa4555bcb0c6c2e68.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 태백시 화전동 112-3<br>
+        강원 태백시 태백로 437 (화전동)<br>
+        > <b>가격: 1,935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f88042bf494b73c184367a5d83d0577d = L.marker(
+                [37.168188449700565, 129.03569933444908],
+                {}
+            ).addTo(map_55c0c38269b7c822798cfb20016f5290);
+        
+    
+            marker_f88042bf494b73c184367a5d83d0577d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통리주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 태백시 통동 69-5<br>
+        강원 태백시 강원남부로 459 (통동)<br>
+        > <b>가격: 1,965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

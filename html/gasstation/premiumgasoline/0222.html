@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cbef49159bd0afff62e0269d05579ba9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cbef49159bd0afff62e0269d05579ba9" ></div>
+        
+</body>
+<script>    
+    
+            var map_cbef49159bd0afff62e0269d05579ba9 = L.map(
+                "map_cbef49159bd0afff62e0269d05579ba9",
+                {
+                    center: [37.28618517160169, 127.64286894833013],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5db3ca144f25de0987535cab31a095bd = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+        
+    
+            var locate_control_2563592079668609f1256ae5aec0fc26 = L.control.locate(
+                {}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+            
+        
+    
+            var marker_098f19ff8f71f537f6c1ebb9f289ac45 = L.marker(
+                [37.26996843095638, 127.63812301572786],
+                {}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+        
+    
+            marker_098f19ff8f71f537f6c1ebb9f289ac45.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 교리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 교동 45-4<br>
+        경기 여주시 세종로 315<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2bdedd275e3acc5557332b31b04b9e5 = L.marker(
+                [37.27457865447201, 127.61132018503109],
+                {}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+        
+    
+            marker_d2bdedd275e3acc5557332b31b04b9e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주) 탑골주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 연라동166-4<br>
+        경기 여주시  여주남로 158<br>
+        > <b>가격: 1,897 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dbe83ec360fbde2d5fc68a6f3962ce7b = L.marker(
+                [37.332728643990436, 127.69503741686316],
+                {}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+        
+    
+            marker_dbe83ec360fbde2d5fc68a6f3962ce7b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)신접주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 북내면 신접리 6-5<br>
+        경기 여주시 북내면 당전로 153<br>
+        > <b>가격: 1,949 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_382ac7b43706a30853a0c5249cdc61ea = L.marker(
+                [37.26746495698792, 127.62699517569843],
+                {}
+            ).addTo(map_cbef49159bd0afff62e0269d05579ba9);
+        
+    
+            marker_382ac7b43706a30853a0c5249cdc61ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남여주주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 여주시 가업동 161-1<br>
+        경기 여주시 웅골로 186<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_14eeb2297f12df6ea5b18fe241075d1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_14eeb2297f12df6ea5b18fe241075d1d" ></div>
+        
+</body>
+<script>    
+    
+            var map_14eeb2297f12df6ea5b18fe241075d1d = L.map(
+                "map_14eeb2297f12df6ea5b18fe241075d1d",
+                {
+                    center: [36.36474826604972, 126.58191899056563],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e925a8b476fc003fcaae25071086ac6 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            var locate_control_80fd23ecc39bb66831bab5d164e758fd = L.control.locate(
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+            
+        
+    
+            var marker_99e1b4e0490c8cd00ad95aafde9b9786 = L.marker(
+                [36.337677011128456, 126.57751922130778],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_99e1b4e0490c8cd00ad95aafde9b9786.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천톨게이트주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 내항동 571<br>
+        충남 보령시 대해로 216 (내항동)<br>
+        > <b>가격: 1,559 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1e9b595c310b289da91e829242ea97fe = L.marker(
+                [36.36528353048681, 126.61449320761118],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_1e9b595c310b289da91e829242ea97fe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)대성주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 보령시 죽정동325<br>
+        충남 보령시 대천로 254 (죽정동)<br>
+        > <b>가격: 1,590 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f1a4d90de0141b216274167e7bc2e89 = L.marker(
+                [36.32379008490299, 126.55371964270353],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_8f1a4d90de0141b216274167e7bc2e89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백두산주유소</b><br>
+        <b>자가상표</b><br>
+        충남 보령시 요암동 371-6<br>
+        충남 보령시 대해로 498 (요암동)<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2e7bf006cb6bf6c9cd4ad6d1f37168c0 = L.marker(
+                [36.463750615344395, 126.60068388627873],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_2e7bf006cb6bf6c9cd4ad6d1f37168c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 청소면 재정리 668-6<br>
+        충남 보령시 청소면 충서로 4063<br>
+        > <b>가격: 1,620 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9fa41a13b80402c4dacb0c1b8a644360 = L.marker(
+                [36.35379433137656, 126.58605705455518],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_9fa41a13b80402c4dacb0c1b8a644360.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>24시 대천주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 보령시 대천동 377-11<br>
+        충남 보령시 중앙로 172 (대천동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0a56e37d8c5bdaa45ad54732ba65578d = L.marker(
+                [36.33151843940985, 126.5608367597354],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_0a56e37d8c5bdaa45ad54732ba65578d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해양주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 보령시 남곡동 459<br>
+        충남 보령시 대해로 386 (남곡동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84e52f12bcb0ec9d5511166620543925 = L.marker(
+                [36.33551855100587, 126.56961422659357],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_84e52f12bcb0ec9d5511166620543925.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>24시 충청주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 보령시 남곡동 288-1<br>
+        충남 보령시 대해로 294 (남곡동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_acbfae9b30bb0fe563c7139d012fbc27 = L.marker(
+                [36.33860159717014, 126.58169645749682],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_acbfae9b30bb0fe563c7139d012fbc27.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대보령셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 내항동 374<br>
+        충남 보령시 대해로 176 (내항동)<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6469b17dffdf97c7c4610d7abe2c1d5e = L.marker(
+                [36.32848453476652, 126.56022140672665],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_6469b17dffdf97c7c4610d7abe2c1d5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천IC셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 요암동 83-2<br>
+        충남 보령시 대해로 423<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ecb4cdd30beab43e098946c950b57e2 = L.marker(
+                [36.35515441318751, 126.60312141686684],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_5ecb4cdd30beab43e098946c950b57e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영보주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 대천동 26-1<br>
+        충남 보령시 대천로 97,  (대천동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a92f1085f8ead6cd0190fb3c3e1ed3d = L.marker(
+                [36.34755234907825, 126.58708904485877],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_4a92f1085f8ead6cd0190fb3c3e1ed3d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 대천동 1238<br>
+        충남 보령시 대천방조제로 42<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_688a8268f8d25c6670eb756d559e0f0b = L.marker(
+                [36.3572383603614, 126.58189073199637],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_688a8268f8d25c6670eb756d559e0f0b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수협주유소 대관점</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 대천동 608-26<br>
+        충남 보령시 중앙로 233<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_306b48c8835abddb16cae61c795687b1 = L.marker(
+                [36.35000388985034, 126.58348306835586],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_306b48c8835abddb16cae61c795687b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대천농협주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 대천동 1203-6<br>
+        충남 보령시 대천방조제로 84  (대천동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2934210833db8a97d0150ae0f69a7548 = L.marker(
+                [36.39847913406965, 126.6916583091532],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_2934210833db8a97d0150ae0f69a7548.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>소양주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 청라면 소양리 488-21<br>
+        충남 보령시 청라면 대청로 1100<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97a23c0cfcc28f35477815e43f656d60 = L.marker(
+                [36.426569184907954, 126.589767409697],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_97a23c0cfcc28f35477815e43f656d60.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신보령주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 보령시 청소면 장곡리 1-2<br>
+        충남 보령시 청소면 충서로 3610<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9545732943328afdcef0541e6c58a340 = L.marker(
+                [36.38155645006207, 126.58346969557185],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_9545732943328afdcef0541e6c58a340.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이수에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 주교면 관창리 372-22<br>
+        충남 보령시 주교면 보령북로 469<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98d1e7ccea8162417fc86fce17101135 = L.marker(
+                [36.43325748897016, 126.58786179647838],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_98d1e7ccea8162417fc86fce17101135.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서해안주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 청소면 야현리 620-3<br>
+        충남 보령시 청소면 청소큰길 22<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f291b74df8728cd009868d7404811492 = L.marker(
+                [36.33934517242809, 126.5856809204049],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_f291b74df8728cd009868d7404811492.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>역전주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 내항동 325-3<br>
+        충남 보령시 대해로 141 (내항동)<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8e3c27a606595f46dd356ed4c07afe2e = L.marker(
+                [36.36857105505283, 126.42457361521095],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_8e3c27a606595f46dd356ed4c07afe2e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오천농협원산도지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 보령시 오천면 원산도리 산91-8<br>
+        충남 보령시 오천면 원산도3길 66<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f7a4eba30f4823cb227485499404a6bc = L.marker(
+                [36.35881912743454, 126.61494193970911],
+                {}
+            ).addTo(map_14eeb2297f12df6ea5b18fe241075d1d);
+        
+    
+            marker_f7a4eba30f4823cb227485499404a6bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 보령시 동대동 245-5<br>
+        충남 보령시 대청로 209 (동대동)<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

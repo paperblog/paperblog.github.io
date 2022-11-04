@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a86734654522454257f7c0dc752341d5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a86734654522454257f7c0dc752341d5" ></div>
+        
+</body>
+<script>    
+    
+            var map_a86734654522454257f7c0dc752341d5 = L.map(
+                "map_a86734654522454257f7c0dc752341d5",
+                {
+                    center: [35.195943160011225, 128.6596870676404],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ba229b101a30c846f08ebff23bf3f399 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            var locate_control_9465ed463d6df809829d8e27e912c054 = L.control.locate(
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+            
+        
+    
+            var marker_01be21c7303298e5f2f9889f58c51dc1 = L.marker(
+                [35.11092056235619, 128.80561250989038],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_01be21c7303298e5f2f9889f58c51dc1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜천일에너지 천일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 창원시 진해구 용원동 532-1<br>
+        경남 창원시 진해구 진해대로 2221 (용원동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d376562c28c7259f9faa2ec786ccb988 = L.marker(
+                [35.11714628613283, 128.79791764885968],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_d376562c28c7259f9faa2ec786ccb988.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신석유(주)직영 진해대로주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 창원시 진해구 두동 1088<br>
+        경남 창원시 진해구 진해대로 2120 (두동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_16ca291fe4961c1ca0b628b1321af2b0 = L.marker(
+                [35.1529740013256, 128.70571148171166],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_16ca291fe4961c1ca0b628b1321af2b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부1</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 진해구 석동663-10<br>
+        경남 창원시 진해구 진해대로 855 (석동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3986640138274b8863a32b50bd7fdbfe = L.marker(
+                [35.15860824375534, 128.68702177947566],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_3986640138274b8863a32b50bd7fdbfe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장복주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 창원시 진해구 경화동 1202-2<br>
+        경남 창원시 진해구 진해대로 650 (경화동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9a5885f1b23c6f1f3aa1fd48f13bc7e = L.marker(
+                [35.15927018839074, 128.6956435371195],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_d9a5885f1b23c6f1f3aa1fd48f13bc7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부2</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 진해구 석동 518-1<br>
+        경남 창원시 진해구 진해대로 732<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40f0ce81361fc011614b19c6314b10ef = L.marker(
+                [35.09544935516472, 128.80184576712884],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_40f0ce81361fc011614b19c6314b10ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대호주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 진해구 안골동 324-7<br>
+        경남 창원시 진해구 안골로 242 (안골동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2d287b6d46cb9406fdf9659d534a1198 = L.marker(
+                [35.18623920778438, 128.6379467432271],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_2d287b6d46cb9406fdf9659d534a1198.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)맥아양곡IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 창원시 성산구 양곡동1066-1<br>
+        경남 창원시 성산구 진해대로 52<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7659e66f61596115c2e18ba5732f3ee1 = L.marker(
+                [35.16438294142592, 128.6631156570383],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_7659e66f61596115c2e18ba5732f3ee1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금창주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 창원시 진해구 여좌동 316-1<br>
+        경남 창원시 진해구 진해대로 390<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c7db483af26233709b307d8b9e13aa3 = L.marker(
+                [35.10641476336316, 128.8404004671301],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_9c7db483af26233709b307d8b9e13aa3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해안주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 창원시 진해구 가주동 123-4<br>
+        경남 창원시 진해구 가락대로 259<br>
+        > <b>가격: 1,560 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_797f5f9c25c73da1ec9f4e20ee1ab48a = L.marker(
+                [35.15566398165053, 128.6643293312489],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_797f5f9c25c73da1ec9f4e20ee1ab48a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)그린주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 창원시 진해구 여좌동 124-18<br>
+        경남 창원시 진해구 여좌로 38 (여좌동)<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_651846770400f285368c73041ccd115a = L.marker(
+                [35.21855534925797, 128.68159796363224],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_651846770400f285368c73041ccd115a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동부3</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 성산구 상남동 38-3<br>
+        경남 창원시 성산구 마디미로 73 (상남동)<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_07e8733563245bc39e9d0d2afb0b59e3 = L.marker(
+                [35.26023530774147, 128.6172768937279],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_07e8733563245bc39e9d0d2afb0b59e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 의창구 팔용동 198-11<br>
+        경남 창원시 의창구 팔용로 501 (팔용동)<br>
+        > <b>가격: 1,567 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_921271fec42cd7056f06e44748f24ca9 = L.marker(
+                [35.254810882066806, 128.60696479791767],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_921271fec42cd7056f06e44748f24ca9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성경주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 의창구 팔용동 148-1<br>
+        경남 창원시 의창구 사화로10번길 33 (팔용동)<br>
+        > <b>가격: 1,567 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69b250a3cb98851c82bb1414df771bd4 = L.marker(
+                [35.26225913897211, 128.61481574690475],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_69b250a3cb98851c82bb1414df771bd4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신직영(태광셀프)</b><br>
+        <b>S-OIL</b><br>
+        경남 창원시 의창구 서상동 600-3<br>
+        경남 창원시 의창구 서상로 14<br>
+        > <b>가격: 1,574 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b85ae7634a1d3597de5edc34ac5de0f1 = L.marker(
+                [35.26484636229351, 128.60971847907553],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_b85ae7634a1d3597de5edc34ac5de0f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)천주산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 창원시 의창구 동정동 808<br>
+        경남 창원시 의창구 정렬대로 119<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0f42ba66caa45c2a9887ee70bf4ec9c8 = L.marker(
+                [35.28894612294763, 128.61010647456953],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_0f42ba66caa45c2a9887ee70bf4ec9c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미창주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 의창구 북면 외감리 108-2<br>
+        경남 창원시 의창구 북면 구룡로 15-66<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1601aaf6c80cade7e86caaafc1638dfb = L.marker(
+                [35.23601472047951, 128.54916357853682],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_1601aaf6c80cade7e86caaafc1638dfb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양석유(주)아시아주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 창원시 마산회원구 두척동 286<br>
+        경남 창원시 마산회원구 북성로 443 (두척동)<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f0c4850939e4fa308d94cf84398e712a = L.marker(
+                [35.24726396562159, 128.5223685672964],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_f0c4850939e4fa308d94cf84398e712a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중리제일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 창원시 마산회원구 내서읍  중리 산 137-4<br>
+        경남 창원시 마산회원구 내서읍 함마대로 2843<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_954738f5b63d2592f9c026a947cad978 = L.marker(
+                [35.2450184888835, 128.5254072119402],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_954738f5b63d2592f9c026a947cad978.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 창원시 마산회원구 내서읍 중리 270<br>
+        경남 창원시 마산회원구 내서읍 함마대로 2878<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ae79bd2bcd4fe1c732102ce738760ff = L.marker(
+                [35.23384333061112, 128.55677671637653],
+                {}
+            ).addTo(map_a86734654522454257f7c0dc752341d5);
+        
+    
+            marker_0ae79bd2bcd4fe1c732102ce738760ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하늘주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 창원시 마산회원구 회성동 443-6<br>
+        경남 창원시 마산회원구 북성로 373<br>
+        > <b>가격: 1,580 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

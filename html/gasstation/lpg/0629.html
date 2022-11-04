@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_76a47a9d04796468ac5ed0d290f845ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_76a47a9d04796468ac5ed0d290f845ad" ></div>
+        
+</body>
+<script>    
+    
+            var map_76a47a9d04796468ac5ed0d290f845ad = L.map(
+                "map_76a47a9d04796468ac5ed0d290f845ad",
+                {
+                    center: [35.45303234332575, 126.68356468574582],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2040bb6be4da36a87a01f0eede82e98 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            var locate_control_c67e999de273208f3c11aba105ce01d5 = L.control.locate(
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+            
+        
+    
+            var marker_862be316abc3598fcfa17bfb5c1a5c46 = L.marker(
+                [35.46663284447598, 126.69849286497278],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_862be316abc3598fcfa17bfb5c1a5c46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동신충전소</b><br>
+        <b>S-OIL</b><br>
+        전북 고창군 신림면 자포리 723-4<br>
+        전북 고창군 신림면 고인돌대로 2100<br>
+        > <b>가격: 960 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1487688efe09a735d9450dd7b44e30e0 = L.marker(
+                [35.43502794919191, 126.69209534970685],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_1487688efe09a735d9450dd7b44e30e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 광진가스충전소</b><br>
+        <b>SK가스</b><br>
+        전북 고창군 고창읍 읍내리 1023<br>
+        전북 고창군 고창읍 중앙로 152<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_65c8d2440384b5b66c1772c1a788f34e = L.marker(
+                [35.45239871697285, 126.69647411398498],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_65c8d2440384b5b66c1772c1a788f34e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)고창가스충전소</b><br>
+        <b>SK에너지</b><br>
+        전북 고창군 고창읍 성두리 산27<br>
+        전북 고창군 고창읍 고인돌대로 1940<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b70bead2637b067622c00b77ee6d771e = L.marker(
+                [35.433871611933824, 126.66791882457724],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_b70bead2637b067622c00b77ee6d771e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고창에너지</b><br>
+        <b>SK에너지</b><br>
+        전북 고창군 고창읍 주곡리 708-1<br>
+        전북 고창군 고창읍 동서대로 1882<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_971b6f012706b4483d071166d472012d = L.marker(
+                [35.46626635174507, 126.67294910591491],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_971b6f012706b4483d071166d472012d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고인돌(하)주유소/충전소</b><br>
+        <b>E1</b><br>
+        전북 고창군 신림면 벽송리 557-10<br>
+        전북 고창군 신림면 서해안고속도로 81-1<br>
+        > <b>가격: 1,130 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a7048039be43128bbd3e269c1e49d13 = L.marker(
+                [35.46399658563487, 126.67345785531819],
+                {}
+            ).addTo(map_76a47a9d04796468ac5ed0d290f845ad);
+        
+    
+            marker_6a7048039be43128bbd3e269c1e49d13.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고인돌(상)주유소/충전소</b><br>
+        <b>E1</b><br>
+        전북 고창군 신림면 벽송리 598-5<br>
+        전북 고창군 신림면 서해안고속도로 80-1<br>
+        > <b>가격: 1,130 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

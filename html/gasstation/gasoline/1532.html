@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff7a2d6ec1db2b2e4a53676e7df08a59 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ff7a2d6ec1db2b2e4a53676e7df08a59" ></div>
+        
+</body>
+<script>    
+    
+            var map_ff7a2d6ec1db2b2e4a53676e7df08a59 = L.map(
+                "map_ff7a2d6ec1db2b2e4a53676e7df08a59",
+                {
+                    center: [37.558528518452725, 125.71342897874402],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbd1242096c4e8fb900833e1b14932f6 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            var locate_control_74aa75b48a9cba977edac9d17d18a5cc = L.control.locate(
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+            
+        
+    
+            var marker_3b984319eaf2d0c9cc4ff5cf250c7f7e = L.marker(
+                [37.23994230995802, 126.52927680485695],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_3b984319eaf2d0c9cc4ff5cf250c7f7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>선재주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 옹진군 영흥면 선재리 344<br>
+        인천 옹진군 영흥면 선재로 123<br>
+        > <b>가격: 1,765 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f9a4c9ec64bb0d60f70ca947c0f2e20 = L.marker(
+                [37.24696012667286, 126.3193001279695],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_7f9a4c9ec64bb0d60f70ca947c0f2e20.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자월주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 옹진군 자월면 자월리 308<br>
+        인천 옹진군 자월면 자월동로 38<br>
+        > <b>가격: 1,780 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_58f7248d12255734686b95898bfd4863 = L.marker(
+                [37.22781160772218, 126.1512434676415],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_58f7248d12255734686b95898bfd4863.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕적주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 옹진군 덕적면 진리 26-1<br>
+        인천 옹진군 덕적면 덕적북로 66<br>
+        > <b>가격: 1,780 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b4126f9a524075533a0bf2ed87992a5 = L.marker(
+                [37.25094314303875, 126.52028996171148],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_3b4126f9a524075533a0bf2ed87992a5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영흥주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 옹진군 영흥면 선재리 603-9<br>
+        인천 옹진군 영흥면 선재로 273<br>
+        > <b>가격: 1,788 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10e95c9a2c0d5fce8b5dfd9d0361df65 = L.marker(
+                [37.25787929232552, 126.48470183015304],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_10e95c9a2c0d5fce8b5dfd9d0361df65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내리주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 옹진군 영흥면 내리196-2<br>
+        인천 옹진군 영흥면 영흥로251번길 18<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d28ece93f8cc6e830452e0d986dec85 = L.marker(
+                [37.65602325332442, 125.6940666028824],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_8d28ece93f8cc6e830452e0d986dec85.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연평주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 옹진군 연평면 연평리 527<br>
+        인천 옹진군 연평면 연평로 715<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_805454203506aff7facf3cd2d8d982d3 = L.marker(
+                [37.83364806672685, 124.7043067849189],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_805454203506aff7facf3cd2d8d982d3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대청주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 옹진군 대청면 대청리 750<br>
+        인천 옹진군 대청면 대청로 222<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_45544d9b2c0aa8c29d818df05e5935b0 = L.marker(
+                [37.96766655761281, 124.72199222871589],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_45544d9b2c0aa8c29d818df05e5935b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백령주유소</b><br>
+        <b>S-OIL</b><br>
+        인천 옹진군 백령면 진촌리 315-3<br>
+        인천 옹진군 백령면 백령로 221<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d83ac2f3ecf0744d16c9e3fa581a892 = L.marker(
+                [37.957647923751864, 124.66327849858112],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_4d83ac2f3ecf0744d16c9e3fa581a892.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북포주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 옹진군 백령면 가을리 528-4<br>
+        인천 옹진군 백령면 백령로 859<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9e265ff9dc25a31e0a31228c2b265300 = L.marker(
+                [37.97348862699687, 124.71419318542341],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_9e265ff9dc25a31e0a31228c2b265300.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옹진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 옹진군 백령면 진촌1리 1027-4<br>
+        인천 옹진군 백령면 백령로 342<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7f7b22fbe34f85a6312b2cbceb5af55 = L.marker(
+                [37.531802794849824, 126.3450692733299],
+                {}
+            ).addTo(map_ff7a2d6ec1db2b2e4a53676e7df08a59);
+        
+    
+            marker_c7f7b22fbe34f85a6312b2cbceb5af55.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장봉주유소</b><br>
+        <b>자가상표</b><br>
+        인천 옹진군 북도면 장봉리 191<br>
+        인천 옹진군 북도면 장봉로 467<br>
+        > <b>가격: 1,950 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

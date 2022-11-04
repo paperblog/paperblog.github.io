@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37efd0a82f8689e498dbf90b21d5bdb8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_37efd0a82f8689e498dbf90b21d5bdb8" ></div>
+        
+</body>
+<script>    
+    
+            var map_37efd0a82f8689e498dbf90b21d5bdb8 = L.map(
+                "map_37efd0a82f8689e498dbf90b21d5bdb8",
+                {
+                    center: [36.64445083293491, 126.78561963760328],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_087a63c0cbff718fe1b6f4f9a8bc90b7 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            var locate_control_ce17003c68c097177a51c5ecfba6c5c1 = L.control.locate(
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+            
+        
+    
+            var marker_34e9e26283a96683b44e16fea25a63a1 = L.marker(
+                [36.59404583447854, 126.58698859140499],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_34e9e26283a96683b44e16fea25a63a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원두막주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 홍성군 구항면 남산리 190-11<br>
+        충남 홍성군 구항면 내포로 814-13<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40520f6186e6787a5fa83ce487d07da0 = L.marker(
+                [36.846689285212975, 126.45960318740401],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_40520f6186e6787a5fa83ce487d07da0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오토벨리(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 서산시 지곡면 무장리 1750<br>
+        충남 서산시 지곡면 무장산업로 183<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c60b566f9812961f85ef916c1b4060fc = L.marker(
+                [36.78334097418534, 126.49427252610325],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_c60b566f9812961f85ef916c1b4060fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한점오토밸리(주)</b><br>
+        <b>SK에너지</b><br>
+        충남 서산시 음암면 상홍리 914<br>
+        충남 서산시 음암면 서해로 3837<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5472663ab084215f20f7ca89ed632c65 = L.marker(
+                [36.782883226353924, 126.4729477591098],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_5472663ab084215f20f7ca89ed632c65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼마주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 서산시 잠홍동 753<br>
+        충남 서산시 서해로 3614 (잠홍동)<br>
+        > <b>가격: 1,812 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e2f6e8129f703e10c388ef7ef890823 = L.marker(
+                [36.78602224520957, 126.51397656746015],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_3e2f6e8129f703e10c388ef7ef890823.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김여사네self주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 서산시 음암면 부장리 615-2<br>
+        충남 서산시 음암면 서해로 4019<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c09b1c563f8efdac7318853af27a2c5e = L.marker(
+                [36.78552202184742, 126.47017497906322],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_c09b1c563f8efdac7318853af27a2c5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서동알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 서산시 잠홍동 517-4<br>
+        충남 서산시 고운로 320<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e245b26b8ab9916629af7ac6730369a1 = L.marker(
+                [36.425645833590295, 127.14805162653636],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_e245b26b8ab9916629af7ac6730369a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)무내기주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 공주시 신기동 450-1<br>
+        충남 공주시 전진배길 283<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aaf6baa84b5d189fdf1dd37b607a3949 = L.marker(
+                [36.154080843621564, 127.38833769056654],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_aaf6baa84b5d189fdf1dd37b607a3949.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 금산군 진산면 교촌리 156-3<br>
+        충남 금산군 진산면 대둔산로 604<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0bd1076e2bd43a50feb032e534d10ce4 = L.marker(
+                [36.82810526319965, 127.16866685706923],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_0bd1076e2bd43a50feb032e534d10ce4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 동남구 신부동 188-1<br>
+        충남 천안시 동남구 망향로 42<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_957b0b8b8757b1a45b6e0e71dec70d05 = L.marker(
+                [36.844186065723086, 127.17838874896485],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_957b0b8b8757b1a45b6e0e71dec70d05.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창선셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 천안시 서북구 성거읍 요방리 228-15<br>
+        충남 천안시 서북구 성거읍 망향로 251<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e665da8e5bc4ac6467eb445cbe976501 = L.marker(
+                [36.30974684021857, 127.13331427536093],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_e665da8e5bc4ac6467eb445cbe976501.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금솔주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 논산시 상월면 월오리 141-2<br>
+        충남 논산시 상월면 득안대로 3035<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b6d0924641bbee67e5fe02c0db718cdb = L.marker(
+                [36.78796210203939, 126.45752315710963],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_b6d0924641bbee67e5fe02c0db718cdb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나은셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충남 서산시 동문동 660-4<br>
+        충남 서산시 안견로 115 (동문동)<br>
+        > <b>가격: 1,817 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a4ba1d9c58329371a914ac128437812 = L.marker(
+                [36.78381576727673, 126.46348535956761],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_7a4ba1d9c58329371a914ac128437812.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>애향셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 서산시 동문동 48-4<br>
+        충남 서산시 고운로 254 (동문동)<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f59b5587643473faaa07df2252eb072b = L.marker(
+                [36.13219924175284, 126.62666571537757],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_f59b5587643473faaa07df2252eb072b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서창산업(주) 서천(서울방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 서천군 비인면 성산리 22-4<br>
+        충남 서천군 비인면 서해안고속도로 168<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a41e90faac8f2637709eee0540af691 = L.marker(
+                [36.62070482851151, 126.84410590316402],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_4a41e90faac8f2637709eee0540af691.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜선인상사 예산(당진방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 예산군 신양면 서계양리 680-1<br>
+        충남 예산군 신양면 당진영덕고속도로 33<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8760019b8f5fff8f194bbf2740d23aa3 = L.marker(
+                [36.62253875050823, 126.841214824658],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_8760019b8f5fff8f194bbf2740d23aa3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜선인상사 예산(대전방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        충남 예산군 신양면 서계양리 661-1<br>
+        충남 예산군 신양면 당진영덕고속도로 34<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf9a7a3e3cea8e647d44f3007bf2f7d1 = L.marker(
+                [36.81052093823922, 126.78270226075047],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_bf9a7a3e3cea8e647d44f3007bf2f7d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영광주유소</b><br>
+        <b>자가상표</b><br>
+        충남 당진시 우강면 창리 296-11<br>
+        충남 당진시 우강면 합우로 336-2<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f76bc978bdc21073584373f3404cc775 = L.marker(
+                [36.74645972603089, 126.86643581801556],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_f76bc978bdc21073584373f3404cc775.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서해안주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 아산시 도고면 금산리 161-6<br>
+        충남 아산시 도고면 온천대로 102<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6a72dc3f1f64ecebd6e8e028348f99f = L.marker(
+                [36.87926334021135, 127.20104369676856],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_f6a72dc3f1f64ecebd6e8e028348f99f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 천안시 서북구 성거읍 저리 144-4<br>
+        충남 천안시 서북구 성거읍 망향로 697<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b6d91edd1ac293f6f53c67433c2f87f9 = L.marker(
+                [36.36528353048681, 126.61449320761118],
+                {}
+            ).addTo(map_37efd0a82f8689e498dbf90b21d5bdb8);
+        
+    
+            marker_b6d91edd1ac293f6f53c67433c2f87f9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)대성주유소</b><br>
+        <b>자영알뜰</b><br>
+        충남 보령시 죽정동325<br>
+        충남 보령시 대천로 254 (죽정동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94a800380f0a16c3d87a1ef5f34e83cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_94a800380f0a16c3d87a1ef5f34e83cb" ></div>
+        
+</body>
+<script>    
+    
+            var map_94a800380f0a16c3d87a1ef5f34e83cb = L.map(
+                "map_94a800380f0a16c3d87a1ef5f34e83cb",
+                {
+                    center: [35.80982175842364, 127.41764812916676],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_add3fd1763b35d9bb94cc1a73957e595 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            var locate_control_9ae983a329e05bd8459c9f2e7d106246 = L.control.locate(
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+            
+        
+    
+            var marker_31a1d43f00e746f9bbeddcf689b818bb = L.marker(
+                [35.87102806568598, 127.43600201919149],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_31a1d43f00e746f9bbeddcf689b818bb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부귀농협정천지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 정천면 봉학리 423-1<br>
+        전북 진안군 정천면 진용로 1040<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad2b69a43c888c45a5248385426ef71a = L.marker(
+                [35.835590404288084, 127.36013366882773],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_ad2b69a43c888c45a5248385426ef71a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부귀농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 부귀면 거석리 946-2<br>
+        전북 진안군 부귀면 부귀로 298<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9ea9861904cf645bee12512ef481230 = L.marker(
+                [35.794057051450785, 127.43282006300754],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_d9ea9861904cf645bee12512ef481230.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진안농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 진안읍 군상리 243-4<br>
+        전북 진안군 진안읍 진무로 1146<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_53cb1160cd0db4d6788f75b331dcc0e7 = L.marker(
+                [35.70965616264084, 127.32565042986941],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_53cb1160cd0db4d6788f75b331dcc0e7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백운농협성수지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 성수면 외궁리 674<br>
+        전북 진안군 성수면 관진로 804<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf8dac4ce735ba7b3200e48bc1d06acf = L.marker(
+                [35.69009053493871, 127.39624579227831],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_bf8dac4ce735ba7b3200e48bc1d06acf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백운농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 백운면 백암리 867<br>
+        전북 진안군 백운면 임진로 1305<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e76236168089cf93c7a460b910e22f14 = L.marker(
+                [35.83776915893989, 127.5682804659811],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_e76236168089cf93c7a460b910e22f14.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진안농협 동향지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전라북도 진안군 동향면 대량리 783-22<br>
+        전라북도 진안군 동향면 진성로 1612<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_70b77b15b3cc446a50ce6a48dabceded = L.marker(
+                [35.898080793500036, 127.5551198271216],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_70b77b15b3cc446a50ce6a48dabceded.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진안농협안천지점</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 안천면 노성리 698-3<br>
+        전북 진안군 안천면 진무로 3022<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ea22bd9f48e44acbc9d65e546edb8c24 = L.marker(
+                [35.973651296593786, 127.42595965946511],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_ea22bd9f48e44acbc9d65e546edb8c24.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주천농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 주천면 주양리 443-1<br>
+        전북 진안군 주천면 동상주천로 2202<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f44d9b81af222bd9dc97a109c81eba3 = L.marker(
+                [35.734079000779005, 127.37000676278777],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_3f44d9b81af222bd9dc97a109c81eba3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진안농협마령지점</b><br>
+        <b>농협알뜰</b><br>
+        전북 진안군 마령면 평지리 575<br>
+        전북 진안군 마령면 임진로 2110<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da021395a55b1dca34c64161b3764dec = L.marker(
+                [35.788946568846896, 127.44173598918869],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_da021395a55b1dca34c64161b3764dec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무진장주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 진안군 진안읍 구룡리 690-4<br>
+        전북 진안군 진안읍 진장로 111<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf557509d5bcaa2f13c5fb1f8cd06efc = L.marker(
+                [35.85663527757988, 127.32710106154745],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_cf557509d5bcaa2f13c5fb1f8cd06efc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>소태정주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 진안군 부귀면 봉암리 89-2<br>
+        전북 진안군 부귀면 전진로 1678<br>
+        > <b>가격: 1,868 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_811f236337022dc5d43d26bd61fe3960 = L.marker(
+                [35.775748949947484, 127.42517528977105],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_811f236337022dc5d43d26bd61fe3960.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한화리조트(주)진안(하)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 진안군 진안읍 단양리 333-75<br>
+        전북 진안군 진안읍 익산장수고속도로 42-1<br>
+        > <b>가격: 1,874 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bd573dfd4fe789365bd7e9517870bf76 = L.marker(
+                [35.78111607838509, 127.40474526730587],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_bd573dfd4fe789365bd7e9517870bf76.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마이산주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 진안군 진안읍 정곡리 26-3<br>
+        전북 진안군 진안읍 전진로 3147<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4ff04683c88b998bb37f931a63c6b4e = L.marker(
+                [35.77693076328625, 127.42647935489643],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_b4ff04683c88b998bb37f931a63c6b4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한화리조트(주)진안(상)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 진안군 진안읍 단양리 171-110<br>
+        전북 진안군 진안읍 익산장수고속도로 41-1<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14a42c172b1dc52c538101b805805558 = L.marker(
+                [35.95572229420849, 127.52156858133542],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_14a42c172b1dc52c538101b805805558.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용담댐주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 진안군 용담면 송풍리 1123-1<br>
+        전북 진안군 용담면 안용로 906<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0f76925f6cd117b599ba309493f36870 = L.marker(
+                [35.83035340343781, 127.35020024543589],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_0f76925f6cd117b599ba309493f36870.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부귀주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 진안군 부귀면 오룡리 408-4<br>
+        전북 진안군 부귀면 전진로 2049-1<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2667c924fc3dfb5071201bbb1f679998 = L.marker(
+                [35.731591514829994, 127.36832628263178],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_2667c924fc3dfb5071201bbb1f679998.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마령주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 진안군 마령면 평지리 936-10<br>
+        전북 진안군 마령면 서평로 166<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5302f70d16cf1ed2977ef72a4b6b4b18 = L.marker(
+                [35.78522465188048, 127.42173778345764],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_5302f70d16cf1ed2977ef72a4b6b4b18.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호남주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 진안군 진안읍 군하리 332-5<br>
+        전북 진안군 진안읍 중앙로 1<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5377d7f142f9721b6d7dc520a6cd1eaf = L.marker(
+                [35.7923072455517, 127.43220902171291],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_5377d7f142f9721b6d7dc520a6cd1eaf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 진안군 진안읍 군상리 402<br>
+        전북 진안군 진안읍 진장로 10<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8fcbb52518f0505469e8a0ad44b2272 = L.marker(
+                [35.7778559517014, 127.36346501752286],
+                {}
+            ).addTo(map_94a800380f0a16c3d87a1ef5f34e83cb);
+        
+    
+            marker_d8fcbb52518f0505469e8a0ad44b2272.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반석주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 진안군 부귀면 신정리 133-1<br>
+        전북 진안군 부귀면 전진로 2721<br>
+        > <b>가격: 1,900 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

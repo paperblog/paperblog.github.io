@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_085bf46c319ca5af04a5202576085734 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_085bf46c319ca5af04a5202576085734" ></div>
+        
+</body>
+<script>    
+    
+            var map_085bf46c319ca5af04a5202576085734 = L.map(
+                "map_085bf46c319ca5af04a5202576085734",
+                {
+                    center: [34.826884667079966, 127.94180366595029],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5890851c95df7cb19f8df52af6461a5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            var locate_control_ca58ec22c0e535834330ec9c2f16913f = L.control.locate(
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+            
+        
+    
+            var marker_5088acd3f7e8b147cf27bb683a3af7fd = L.marker(
+                [34.87931736165727, 127.88926350485802],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_5088acd3f7e8b147cf27bb683a3af7fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새남해농협 고현주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 고현면 도마리 700-3<br>
+        경남 남해군 고현면 남해대로 3294<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4921fd6a5aec7a14da4292ff7aaec7c = L.marker(
+                [34.82972678200372, 127.99757789099498],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_b4921fd6a5aec7a14da4292ff7aaec7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동남해주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 남해군 삼동면 지족리 380-1<br>
+        경남 남해군 삼동면 삼이로 18-0<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78c63a186381766522eefb7fc4447ee4 = L.marker(
+                [34.809781749946765, 127.98113344064578],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_78c63a186381766522eefb7fc4447ee4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼동주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 남해군 삼동면 영지리 1195-1<br>
+        경남 남해군 삼동면 삼이로 344<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7950f84381e4d3ab66036eab3250e576 = L.marker(
+                [34.894800200421244, 128.01461027602005],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_7950f84381e4d3ab66036eab3250e576.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>목화주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 남해군 창선면 당항리 621<br>
+        경남 남해군 창선면 동부대로 2684<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d1a434234c353935c314fa3cffc2ba80 = L.marker(
+                [34.80572692800849, 128.03938666455844],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_d1a434234c353935c314fa3cffc2ba80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동천주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 남해군 삼동면 동천리 857-3<br>
+        경남 남해군 삼동면 동부대로 1241<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_09e69f6eea5191688db92b2ac3a775ec = L.marker(
+                [34.852715727792564, 128.01350750486947],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_09e69f6eea5191688db92b2ac3a775ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창선농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 창선면 당저리 63-1<br>
+        경남 남해군 창선면 창선로 38<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_14fef86a46c72f2c05b7ff94ac332491 = L.marker(
+                [34.830890563640196, 127.99950101974666],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_14fef86a46c72f2c05b7ff94ac332491.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신세계주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 남해군 삼동면 지족리 297-1<br>
+        경남 남해군 삼동면 동부대로 1867<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d5bec0a09639a2ba92f10ea945a3259 = L.marker(
+                [34.79139472721358, 127.95897708928118],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_5d5bec0a09639a2ba92f10ea945a3259.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금산주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 남해군 이동면 무림리 517-1<br>
+        경남 남해군 이동면 남해대로 1974 (이동면)<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_add0ec6b8bcda20087f63647c5adb979 = L.marker(
+                [34.816272401402586, 127.92982203766269],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_add0ec6b8bcda20087f63647c5adb979.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다정주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 남해군 이동면 다정리 298-3<br>
+        경남 남해군 이동면 남해대로 2389<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89ec845ddc99a13d88f6b807eb8bf033 = L.marker(
+                [34.809894568316174, 127.94264729347974],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_89ec845ddc99a13d88f6b807eb8bf033.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕산주유소(현대)</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 남해군 이동면 석평리 833<br>
+        경남 남해군 이동면 남해대로 2247<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_019d2c32f25304a1e66fd375759e0fe9 = L.marker(
+                [34.92095663306329, 127.91610105310934],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_019d2c32f25304a1e66fd375759e0fe9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새남해농협하나로마트설천점</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 설천면 금음리 754-3<br>
+        경남 남해군 설천면 설천로 647<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3de843a0173c68a0e9dbdb497e688523 = L.marker(
+                [34.83086226440949, 127.9079256312438],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_3de843a0173c68a0e9dbdb497e688523.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 남해군 남해읍 입현리 1399-1<br>
+        경남 남해군 남해읍 남해대로 2662<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34994ee16be737f7407af84384ef4a58 = L.marker(
+                [34.84872048766056, 127.81847409099413],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_34994ee16be737f7407af84384ef4a58.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새남해농협남상지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 서면 남상리 1047-4<br>
+        경남 남해군 서면 남서대로 2215<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a84a84ece831946a0254940e547f81b6 = L.marker(
+                [34.80922307557192, 127.83755644098761],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_a84a84ece831946a0254940e547f81b6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새남해농업협동조합서면주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 서면 서상리 641<br>
+        경남 남해군 서면 스포츠로 679<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52246ca603e4ffd894e3d4e545df3cb2 = L.marker(
+                [34.72312104815115, 127.98877287528433],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_52246ca603e4ffd894e3d4e545df3cb2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고려주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 남해군 상주면 상주리 1217-1<br>
+        경남 남해군 상주면 남해대로 678<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0528d64c908359826a284866cce39371 = L.marker(
+                [34.886189380492276, 127.89850931722552],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_0528d64c908359826a284866cce39371.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새남해농업협동조합설천주유소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 설천면 비란리 30-14<br>
+        경남 남해군 설천면 설천로 128<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2d504362bac0baf0d7a79eca0dbeb56d = L.marker(
+                [34.853901391550465, 127.89334326122012],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_2d504362bac0baf0d7a79eca0dbeb56d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 남해군 남해읍 심천리 820-1<br>
+        경남 남해군 남해읍 남해대로 2990<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ed6f180cd60734e3a0c6e024d2bdb9f = L.marker(
+                [34.770995478914976, 127.88422145840313],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_6ed6f180cd60734e3a0c6e024d2bdb9f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동남해농업협동조합남면지소</b><br>
+        <b>농협알뜰</b><br>
+        경남 남해군 남면 죽전리 377-3<br>
+        경남 남해군 남면 남서대로 810<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_261165bdaa6484ab3fac839e8bae27be = L.marker(
+                [34.84436068418388, 127.89445446536112],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_261165bdaa6484ab3fac839e8bae27be.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)남해종합에너지</b><br>
+        <b>GS칼텍스</b><br>
+        경남 남해군 남해읍 아산리 180-2<br>
+        경남 남해군 남해읍 화전로 149<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_791e0a5a33c43bc324518867f72c7969 = L.marker(
+                [34.72884188719876, 128.03028800305924],
+                {}
+            ).addTo(map_085bf46c319ca5af04a5202576085734);
+        
+    
+            marker_791e0a5a33c43bc324518867f72c7969.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송정주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 남해군 미조면 송정리 636<br>
+        경남 남해군 미조면 남해대로 214<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

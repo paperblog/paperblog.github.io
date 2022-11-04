@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5012f3a846b44ebcdeb8813712bf4316 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5012f3a846b44ebcdeb8813712bf4316" ></div>
+        
+</body>
+<script>    
+    
+            var map_5012f3a846b44ebcdeb8813712bf4316 = L.map(
+                "map_5012f3a846b44ebcdeb8813712bf4316",
+                {
+                    center: [37.74002146281986, 127.44477247146457],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ef80997862e65b9fc4f77ca3a22e8c1 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            var locate_control_9aaa2b80b4c75fc7330a05ac15cf0b5c = L.control.locate(
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+            
+        
+    
+            var marker_9267113a730d805cb90a411abf643966 = L.marker(
+                [37.79699539034875, 127.48157904648515],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_9267113a730d805cb90a411abf643966.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)오일유업경춘LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 가평군 가평읍 상색리 280<br>
+        경기 가평군 가평읍 경춘로 1770<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c9a6ed4c9bb7ef1ce2e39f00877b7afe = L.marker(
+                [37.81280095518996, 127.3410811711979],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_c9a6ed4c9bb7ef1ce2e39f00877b7afe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>국토충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 하면 현리 444-10<br>
+        경기 가평군 하면 비득재길 120<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa93daa7ae4762f316e33ccbf14f59b4 = L.marker(
+                [37.81020317393633, 127.49612605296055],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_fa93daa7ae4762f316e33ccbf14f59b4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성원에너지(주)</b><br>
+        <b>S-OIL</b><br>
+        경기 가평군 가평읍 하색리 249-3<br>
+        경기 가평군 가평읍 경춘로 1983-11<br>
+        > <b>가격: 1,061 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b6149b1ae0d72443ccf17c1af169b9d9 = L.marker(
+                [37.75363075179166, 127.43547973676259],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_b6149b1ae0d72443ccf17c1af169b9d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에너지뱅크청평충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 하천리 278<br>
+        경기 가평군 청평면 경춘로 1050<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_901a872e53c4a269ee01198a012cd9ed = L.marker(
+                [37.718282148794415, 127.40198964006709],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_901a872e53c4a269ee01198a012cd9ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청평그린충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 청평면 대성리 56-1<br>
+        경기 가평군 청평면 경춘로 524<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_68718ad2b5458a6056865d5f78436c42 = L.marker(
+                [37.68689044243536, 127.37940614125155],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_68718ad2b5458a6056865d5f78436c42.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화랑포충전소</b><br>
+        <b>E1</b><br>
+        경기 가평군 청평면 대성리 193-15<br>
+        경기 가평군 청평면 경춘로 121<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_930e6bea2aa7c9a23eb7c2ccd3d22959 = L.marker(
+                [37.6782099818769, 127.37705221124635],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_930e6bea2aa7c9a23eb7c2ccd3d22959.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성에너지</b><br>
+        <b>E1</b><br>
+        경기 가평군 청평면 대성리 621-4<br>
+        경기 가평군 청평면 경춘로 30<br>
+        > <b>가격: 1,071 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2cee2b6313b5fc55f8218899c9df6cc3 = L.marker(
+                [37.70187518421873, 127.54602055617738],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_2cee2b6313b5fc55f8218899c9df6cc3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평(하)충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 설악면 미사리 149<br>
+        경기 가평군 설악면 미사리로 544<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4f94ea902939e64e234bf102f182fee = L.marker(
+                [37.70130513678664, 127.54421768703263],
+                {}
+            ).addTo(map_5012f3a846b44ebcdeb8813712bf4316);
+        
+    
+            marker_e4f94ea902939e64e234bf102f182fee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가평(상)충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 가평군 설악면 미사리 64-28<br>
+        경기 가평군 설악면 미사리로 544<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d35df9cab73d8f84688e5df7dcc1e4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9d35df9cab73d8f84688e5df7dcc1e4f" ></div>
+        
+</body>
+<script>    
+    
+            var map_9d35df9cab73d8f84688e5df7dcc1e4f = L.map(
+                "map_9d35df9cab73d8f84688e5df7dcc1e4f",
+                {
+                    center: [35.82373501799081, 126.92915742516979],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bbe92466b4ab7852dae3de26a39a1077 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            var locate_control_2b9c2b8a431842c317940e7f1f53ed32 = L.control.locate(
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+            
+        
+    
+            var marker_3d00d2bfb1c94f72c5b8d2f85d23d63d = L.marker(
+                [35.80668121364691, 126.90547322037894],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_3d00d2bfb1c94f72c5b8d2f85d23d63d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신광주유소</b><br>
+        <b>자가상표</b><br>
+        전북 김제시 검산동 895-1<br>
+        전북 김제시 벽성로 673<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a0c5cfa752ac3f7ac72b9f398a9906e = L.marker(
+                [35.87635888513957, 126.99964358195989],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_9a0c5cfa752ac3f7ac72b9f398a9906e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼양주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 김제시 백구면 영상리 331-1<br>
+        전북 김제시 백구면 번영로 2876<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_980e8b7b13665cb6727c99689a17d2ed = L.marker(
+                [35.8937788682785, 126.96626147224653],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_980e8b7b13665cb6727c99689a17d2ed.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>차사랑주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 백구면 반월리 487-1<br>
+        전북 김제시 번영로 2492<br>
+        > <b>가격: 1,837 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da1729978de3b084c31ec0a3c4a68ab4 = L.marker(
+                [35.81650688702365, 126.92970540762141],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_da1729978de3b084c31ec0a3c4a68ab4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새로운주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 순동 226-10<br>
+        전북 김제시 콩쥐팥쥐로 258 (순동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8677412831a1f5034aacc2c6158cd1d5 = L.marker(
+                [35.80332863212582, 126.898582075371],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_8677412831a1f5034aacc2c6158cd1d5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>알뜰천하주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 김제시 신풍동 585-1<br>
+        전북 김제시 동서로 290 (신풍동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2846a561007b9a1a339bc17277b2f26b = L.marker(
+                [35.819912235106344, 126.89342300196007],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_2846a561007b9a1a339bc17277b2f26b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영광주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 하동 303-4<br>
+        전북 김제시 하공로 120 (하동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0f573e83cec470bc73c47922addcec79 = L.marker(
+                [35.87156676204929, 126.91029559351416],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_0f573e83cec470bc73c47922addcec79.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>DL주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 공덕면 공덕리 696-1<br>
+        전라북도 김제시 하공로 780<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43514fdf07fc67a682298bacff7de9be = L.marker(
+                [35.78699145814597, 126.98511066381931],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_43514fdf07fc67a682298bacff7de9be.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>샘터주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 금구면 옥성리 498-20<br>
+        전북 김제시 금구면 풍요로 795<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c5668ad7d247bbe91e89725afd39fca = L.marker(
+                [35.80627497966727, 126.91011608122594],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_9c5668ad7d247bbe91e89725afd39fca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스카이주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 검산동 488<br>
+        전북 김제시 콩쥐팥쥐로 44<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08ef2d059fc6e58510a2d90f94fec87e = L.marker(
+                [35.7915244591092, 127.05366223505479],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_08ef2d059fc6e58510a2d90f94fec87e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>허브주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 금구면 대화리 7-4<br>
+        전북 김제시 금구면 선비로 1311<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2d171b5149d7b7dcda627458a066972c = L.marker(
+                [35.804235177097, 126.90302403025844],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_2d171b5149d7b7dcda627458a066972c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오렌지주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 검산동 1052-9<br>
+        전북 김제시 동서로 330<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f924df0aa2c1bf544d72cf0c6ac0b8f8 = L.marker(
+                [35.8543055753421, 126.95536690130234],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_f924df0aa2c1bf544d72cf0c6ac0b8f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용지농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전북 김제시 용지면 구암리 356<br>
+        전북 김제시 용지면 황토로 755<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_422113c769b90692326f51a2f634338f = L.marker(
+                [35.78276976920684, 127.01507369865675],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_422113c769b90692326f51a2f634338f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)우주에너지주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 금구면 용지리10-3<br>
+        전북 김제시 금구면 선비로 905<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b29a563fc7518c7a826887bdef02621b = L.marker(
+                [35.86731375680873, 126.91973339664675],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_b29a563fc7518c7a826887bdef02621b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공덕주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 공덕면 황산리 893-1<br>
+        전북 김제시 공덕면 유강로 85<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4574bc88ec3ebcc446f2e0074b9f824 = L.marker(
+                [35.85942973015722, 126.91462932340043],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_c4574bc88ec3ebcc446f2e0074b9f824.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)공항유업주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 공덕면 황산리 1237-10<br>
+        전북 김제시 공덕면 하공로 633<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_91b5237c54ec784f754ed31ef968d393 = L.marker(
+                [35.813757438164586, 126.88886671155475],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_91b5237c54ec784f754ed31ef968d393.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아라주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 김제시 하동 414-5<br>
+        전북 김제시 하공로 40<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c1223a133dae72bbc9f543b73fce3182 = L.marker(
+                [35.79947013345572, 126.86835483131479],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_c1223a133dae72bbc9f543b73fce3182.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>검창주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 김제시 교동 314-20<br>
+        전북 김제시 월죽로 949(교동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e858c058aa3deb4c36ee215ab3044eab = L.marker(
+                [35.808247794069054, 126.87875398892076],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_e858c058aa3deb4c36ee215ab3044eab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서암주유소</b><br>
+        <b>자가상표</b><br>
+        전북 김제시 서암동 242-2<br>
+        전북 김제시 벽성로 420 (서암동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57a22209fca2ced081ae511db0a1924d = L.marker(
+                [35.805058588702984, 126.8732102928541],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_57a22209fca2ced081ae511db0a1924d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍둥이주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 김제시 서암동 524-1<br>
+        전북 김제시 벽성로 355<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f57e58af7c6e035981994fc14afab37 = L.marker(
+                [35.807188016519326, 126.9138619953344],
+                {}
+            ).addTo(map_9d35df9cab73d8f84688e5df7dcc1e4f);
+        
+    
+            marker_7f57e58af7c6e035981994fc14afab37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하나주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 김제시 검산동 305<br>
+        전북 김제시 콩쥐팥쥐로 80<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

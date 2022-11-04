@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_808bad55a6b2832a46b99d69af5f3bdc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_808bad55a6b2832a46b99d69af5f3bdc" ></div>
+        
+</body>
+<script>    
+    
+            var map_808bad55a6b2832a46b99d69af5f3bdc = L.map(
+                "map_808bad55a6b2832a46b99d69af5f3bdc",
+                {
+                    center: [35.30298943145268, 129.23633436637917],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95c21e25f9898576233b8ac0402756a8 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_808bad55a6b2832a46b99d69af5f3bdc);
+        
+    
+            var locate_control_08319662a64e46cc25edc6bf2ea392bd = L.control.locate(
+                {}
+            ).addTo(map_808bad55a6b2832a46b99d69af5f3bdc);
+            
+        
+    
+            var marker_9f837caf634401461d7f6a01cad6f18c = L.marker(
+                [35.24265953884299, 129.22089537223448],
+                {}
+            ).addTo(map_808bad55a6b2832a46b99d69af5f3bdc);
+        
+    
+            marker_9f837caf634401461d7f6a01cad6f18c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 기장읍 청강리 12-1<br>
+        부산 기장군 기장읍 기장대로 530<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9f4cda2dba2576beb4789e19d68227c6 = L.marker(
+                [35.34566730653969, 129.25179795518176],
+                {}
+            ).addTo(map_808bad55a6b2832a46b99d69af5f3bdc);
+        
+    
+            marker_9f4cda2dba2576beb4789e19d68227c6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)푸른숲self주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 장안읍 기룡리 480-3<br>
+        부산 기장군 장안읍 기장대로 1751<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44ce69352e0e29a8dfd0c75f482c0d63 = L.marker(
+                [35.32064144897535, 129.23630977172124],
+                {}
+            ).addTo(map_808bad55a6b2832a46b99d69af5f3bdc);
+        
+    
+            marker_44ce69352e0e29a8dfd0c75f482c0d63.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜첼시주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 장안읍 좌천리 436-7<br>
+        부산 기장군 장안읍 정관로 1148<br>
+        > <b>가격: 2,328 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

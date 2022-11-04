@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d218c85e06cf4084989b45f509ec6096 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d218c85e06cf4084989b45f509ec6096" ></div>
+        
+</body>
+<script>    
+    
+            var map_d218c85e06cf4084989b45f509ec6096 = L.map(
+                "map_d218c85e06cf4084989b45f509ec6096",
+                {
+                    center: [37.45109299828154, 126.85245404345335],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_637939bd8f16a1b21350997af8c673ef = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            var locate_control_6bd3e536301c4e45b865f20f7ff7ea0b = L.control.locate(
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+            
+        
+    
+            var marker_7a3180645a8db6c1a4946fab30c3c705 = L.marker(
+                [37.468931028187306, 126.8480398891252],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_7a3180645a8db6c1a4946fab30c3c705.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 광명6동 754-2<br>
+        경기 광명시 광명로 769 (광명동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a05000527a296498f46e4a831320a969 = L.marker(
+                [37.47549700945691, 126.85286132569273],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_a05000527a296498f46e4a831320a969.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광생주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 광명시 광명동 295-20<br>
+        경기 광명시 광명로 856 (광명동)<br>
+        > <b>가격: 1,828 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22e858dfa72afc8e8af05d0bff8c8cae = L.marker(
+                [37.44292383830758, 126.87915801142356],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_22e858dfa72afc8e8af05d0bff8c8cae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서율주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 소하동 303-14<br>
+        경기 광명시 오리로 461 (소하동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81cc29f15e72674e93fb6467b25a8815 = L.marker(
+                [37.41379975863027, 126.85057470850705],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_81cc29f15e72674e93fb6467b25a8815.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광명시 가학동 639-1<br>
+        경기 광명시 광명로 136 (가학동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_61ef3d70043cc62a25ec5e9fd04489cd = L.marker(
+                [37.42000251711486, 126.84834115814289],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_61ef3d70043cc62a25ec5e9fd04489cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경동석유산업(주)고속철주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 가학동 419-2<br>
+        경기 광명시 광명로 207 (가학동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_547c231f8ece184f8eaa38e875a759a6 = L.marker(
+                [37.48647882159687, 126.86574233417942],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_547c231f8ece184f8eaa38e875a759a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우주피엔씨(주) 새광명주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 광명시 철산동 60<br>
+        경기 광명시 시청로 115 (철산동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_588bc09b61237b838a2bc3b5adabb5de = L.marker(
+                [37.42481095054411, 126.84523971072953],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_588bc09b61237b838a2bc3b5adabb5de.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장미셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 노온사동 942<br>
+        경기 광명시 광명로 269 (노온사동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54be8d4aa95c3e31265ae827f7ec8477 = L.marker(
+                [37.45600253699194, 126.84477410398166],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_54be8d4aa95c3e31265ae827f7ec8477.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>학온셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 광명동 665-5<br>
+        경기 광명시 광명로 627 (광명동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_864baf00f6043f8475280b1c4e18397a = L.marker(
+                [37.46333503366646, 126.84655165148945],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_864baf00f6043f8475280b1c4e18397a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광일알뜰주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 광명시 광명동 506-1<br>
+        경기 광명시 광명로 712 (광명동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d4e1ce67da24525d37a31ca407cb86cf = L.marker(
+                [37.4316585490857, 126.84740656676456],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_d4e1ce67da24525d37a31ca407cb86cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대복주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 광명시 노온사동 669<br>
+        경기 광명시 광명로 344 (노온사동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6b006af5f2a66489d201489bb0debd8d = L.marker(
+                [37.47450037098892, 126.84021878476926],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_6b006af5f2a66489d201489bb0debd8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥길주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 옥길동 85<br>
+        경기 광명시 금오로 846 (옥길동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e62005287c306536b3478e2c9e96ebb3 = L.marker(
+                [37.45016987865467, 126.84485748522638],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_e62005287c306536b3478e2c9e96ebb3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광명시 노온사동 197-3<br>
+        경기 광명시 광명로 561 (노온사동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c0b51ad25a765dee72f0746a41fd7fa9 = L.marker(
+                [37.40557984536181, 126.85397866329211],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_c0b51ad25a765dee72f0746a41fd7fa9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>벌말주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 가학동 897<br>
+        경기 광명시 광명로 38 (가학동)<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_131e5fd3df3c21f03ae0e0b739e86b31 = L.marker(
+                [37.443510959395425, 126.84741630432605],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_131e5fd3df3c21f03ae0e0b739e86b31.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백재주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 노온사동 409-10<br>
+        경기 광명시 광명로 482<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4511febed708421f6cf22f7c671de255 = L.marker(
+                [37.43797323021573, 126.84502642833203],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_4511febed708421f6cf22f7c671de255.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광명 나들목주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 노온사동 572-3<br>
+        경기 광명시 광명로 417<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34ae3daeabd3725b156bb0e41ba2d8b4 = L.marker(
+                [37.46415102114851, 126.83419813999375],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_34ae3daeabd3725b156bb0e41ba2d8b4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)행운주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 옥길동 236-3<br>
+        경기 광명시 부광로 309 (옥길동)<br>
+        > <b>가격: 1,868 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_18fdb93573524922ee87317f60888732 = L.marker(
+                [37.4760134547087, 126.86436274640236],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_18fdb93573524922ee87317f60888732.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>철산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광명시 철산동 472-172<br>
+        경기 광명시 오리로 883<br>
+        > <b>가격: 1,868 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5448137035ae9af6e78e07b259d3ded5 = L.marker(
+                [37.45618475049402, 126.88031445069782],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_5448137035ae9af6e78e07b259d3ded5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)지에스이앤알 직영 하안단지주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광명시 소하동 1275<br>
+        경기 광명시 오리로 608 (소하동)<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee6314515f1904ea2a05137c8928c339 = L.marker(
+                [37.44133753991304, 126.84066350389668],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_ee6314515f1904ea2a05137c8928c339.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜광명제일주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 노온사동 340-24<br>
+        경기 광명시  범안로 608 (학온동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2b4d8f7e785a795fd5edef02523c94e5 = L.marker(
+                [37.48899887116798, 126.86935490209399],
+                {}
+            ).addTo(map_d218c85e06cf4084989b45f509ec6096);
+        
+    
+            marker_2b4d8f7e785a795fd5edef02523c94e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>IN-N-OUT주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광명시 철산동 32<br>
+        경기 광명시 안양천로 463 (철산동)<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

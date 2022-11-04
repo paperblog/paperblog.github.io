@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aaab4a4d431a544691e0346a6fc6c755 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aaab4a4d431a544691e0346a6fc6c755" ></div>
+        
+</body>
+<script>    
+    
+            var map_aaab4a4d431a544691e0346a6fc6c755 = L.map(
+                "map_aaab4a4d431a544691e0346a6fc6c755",
+                {
+                    center: [37.625491938919595, 127.18388663827928],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df46c80587a302ef048e2bcc4df2561b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            var locate_control_2c759487fb491db78cd015dc33ea3bca = L.control.locate(
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+            
+        
+    
+            var marker_3e254776e7de75f8229a9f71e3ab518c = L.marker(
+                [37.64277837648169, 127.12190869063144],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_3e254776e7de75f8229a9f71e3ab518c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한강에너지(주) 별내셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 별내동 997<br>
+        경기 남양주시 순화궁로 122<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_585487e8a7dd00a1c17d5ed51c8c46ef = L.marker(
+                [37.58888205874108, 127.20602261907972],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_585487e8a7dd00a1c17d5ed51c8c46ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜지에스이앤알직영 덕소주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 남양주시 와부읍 덕소리 601-7<br>
+        경기 남양주시 와부읍 덕소로 24<br>
+        > <b>가격: 1,987 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_338531d17a7e59740fe0d2ba9b2b545f = L.marker(
+                [37.67096357274362, 127.11698164091065],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_338531d17a7e59740fe0d2ba9b2b545f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하늘에너지(주)별내지점</b><br>
+        <b>GS칼텍스</b><br>
+        경기도 남양주시 별내동 817<br>
+        경기도 남양주시 순화궁로 513(별내동)<br>
+        > <b>가격: 1,997 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3ef4645ae965b98aa1934301dbaab119 = L.marker(
+                [37.59411153296875, 127.19466359309375],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_3ef4645ae965b98aa1934301dbaab119.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광남주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 삼패동 363<br>
+        경기 남양주시 고산로 257 (삼패동)<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52ceeb0dcb084093b204b50de86e53b0 = L.marker(
+                [37.596000037493674, 127.16541773039664],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_52ceeb0dcb084093b204b50de86e53b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금산주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 가운동 467<br>
+        경기 남양주시 가운로 139<br>
+        > <b>가격: 2,015 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08adb0f66612e38cbb4274def7bc2071 = L.marker(
+                [37.647593501415614, 127.11058645109236],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_08adb0f66612e38cbb4274def7bc2071.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 별내2호셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 별내동 1046<br>
+        경기 남양주시  불암로 70 (별내동)<br>
+        > <b>가격: 2,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2cca685a566148b5236b94b539268767 = L.marker(
+                [37.594349757735614, 127.18457537963045],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_2cca685a566148b5236b94b539268767.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 강변셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 삼패동 604<br>
+        경기 남양주시 고산로 166 (삼패동)<br>
+        > <b>가격: 2,038 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_526d42449c1ac17b5e18520efcf90777 = L.marker(
+                [37.655728173920565, 127.12950512014073],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_526d42449c1ac17b5e18520efcf90777.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 별내1호셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 별내동 별내택지개발지구 289<br>
+        경기 남양주시 송산로 149<br>
+        > <b>가격: 2,041 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c40657ec2ba59b3c437d6f486d297c50 = L.marker(
+                [37.64328930576192, 127.3036752319445],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_c40657ec2ba59b3c437d6f486d297c50.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성수주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 남양주시 화도읍 창현리 646-1<br>
+        경기 남양주시 화도읍 수레로 1186<br>
+        > <b>가격: 2,060 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_665e05d5510ed411921a4ff1f14ff206 = L.marker(
+                [37.63124054065007, 127.2047005918082],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_665e05d5510ed411921a4ff1f14ff206.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하나주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 금곡동 680-32<br>
+        경기 남양주시 홍유릉로 336<br>
+        > <b>가격: 2,087 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d48f0871d56612c143ecd7010f868fbf = L.marker(
+                [37.578570771143795, 127.22455221714925],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_d48f0871d56612c143ecd7010f868fbf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 덕소셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 와부읍 도곡리 1040-8<br>
+        경기 남양주시 와부읍 덕소로 256<br>
+        > <b>가격: 2,105 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32c3a3d0eba22eba121b37c65a79a4b3 = L.marker(
+                [37.662395637978754, 127.24405039347366],
+                {}
+            ).addTo(map_aaab4a4d431a544691e0346a6fc6c755);
+        
+    
+            marker_32c3a3d0eba22eba121b37c65a79a4b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 호평셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 호평동 444-1<br>
+        경기 남양주시 늘을1로 137 (호평동)<br>
+        > <b>가격: 2,105 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

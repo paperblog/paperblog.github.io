@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a801cdb20003e875a5911e5c9b35c98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4a801cdb20003e875a5911e5c9b35c98" ></div>
+        
+</body>
+<script>    
+    
+            var map_4a801cdb20003e875a5911e5c9b35c98 = L.map(
+                "map_4a801cdb20003e875a5911e5c9b35c98",
+                {
+                    center: [35.83359419420232, 128.5216216539087],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0215332d49b997be821346d04a764707 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            var locate_control_b5a636c34f38f1edc1efcf3405f662d3 = L.control.locate(
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+            
+        
+    
+            var marker_1f3276eaa510b719eaf0ae282376d49f = L.marker(
+                [35.81537273030504, 128.50864149598692],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_1f3276eaa510b719eaf0ae282376d49f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)대영대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 유천동 306-2<br>
+        대구 달서구 달서대로 84 (유천동)<br>
+        > <b>가격: 1,789 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5cff2197ae4ca91d5af19332e71fd8cb = L.marker(
+                [35.807922340631286, 128.5467240621234],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_5cff2197ae4ca91d5af19332e71fd8cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)대곡주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 도원동 559-1<br>
+        대구 달서구 상화로 302 (도원동)<br>
+        > <b>가격: 1,789 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_315ba3cc2018809b9cae11445e96bdc7 = L.marker(
+                [35.81294901327505, 128.54535325561062],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_315ba3cc2018809b9cae11445e96bdc7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)스타주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 상인동 1526-1<br>
+        대구 달서구 상화북로 179<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f49bac956dd1b8fa2a856575a66a9ec0 = L.marker(
+                [35.83712704096533, 128.51621199209237],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_f49bac956dd1b8fa2a856575a66a9ec0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>석경제2주유소</b><br>
+        <b>S-OIL</b><br>
+         대구 달서구 장동 116-1<br>
+        대구 달서구 성서동로 184<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0bae66ee43d9a997ab9ce81743ddd500 = L.marker(
+                [35.81803339662952, 128.5354452261942],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_0bae66ee43d9a997ab9ce81743ddd500.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 상인Self주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 달서구 상인동 251-1<br>
+        대구 달서구 월배로 200 (상인동)<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b6add4244f11c3e9226dd34c872559eb = L.marker(
+                [35.83653123334962, 128.52305723769922],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_b6add4244f11c3e9226dd34c872559eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 남대구IC셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 달서구 월성동 210<br>
+        대구 달서구 성서공단로 372 (월성동)<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cffe0dccbcd76b95e8df99aeb9370bf = L.marker(
+                [35.85484279356625, 128.51058812934585],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_3cffe0dccbcd76b95e8df99aeb9370bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 신세계주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 달서구 이곡동 1248-2<br>
+        대구 달서구 이곡공원로 28 (이곡동)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2442cb68650ac9211e4811362daa00cd = L.marker(
+                [35.808380463769566, 128.52488465935502],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_2442cb68650ac9211e4811362daa00cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 수목원주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 달서구 진천동 419-2<br>
+        대구 달서구 상화로 99 (진천동)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e45cc9ff66e05b25c0feb4eeda14a63e = L.marker(
+                [35.851084955885206, 128.49361522695935],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_e45cc9ff66e05b25c0feb4eeda14a63e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 삼성제일주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 달서구 신당동 1629-22<br>
+        대구 달서구 달구벌대로 1154 (신당동)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_773a46da7b1456c900b8ab54b4ac8a79 = L.marker(
+                [35.8614838379732, 128.49247858034917],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_773a46da7b1456c900b8ab54b4ac8a79.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아리랑주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 신당동 680<br>
+        대구 달서구 달서대로 696 (신당동)<br>
+        > <b>가격: 2,037 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab5ac851cd0af3ba5cc111ab185aa5b7 = L.marker(
+                [35.84948573907044, 128.53518126808217],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_ab5ac851cd0af3ba5cc111ab185aa5b7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>웰컴주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 달서구 감삼동 450-1<br>
+        대구 달서구 달구벌대로 1536 (감삼동)<br>
+        > <b>가격: 2,039 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ac7ef0f0a5ea2bf5854b50b4a6b6db7 = L.marker(
+                [35.85150165735431, 128.50597525156795],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_8ac7ef0f0a5ea2bf5854b50b4a6b6db7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성서주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 이곡동 893-2<br>
+        대구 달서구 달구벌대로 1270 (이곡동)<br>
+        > <b>가격: 2,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d1162e8fb0b12e4c34233c1ce9d346b5 = L.marker(
+                [35.83527065108027, 128.49156170748472],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_d1162e8fb0b12e4c34233c1ce9d346b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림공단주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 호림동 482-2<br>
+        대구 달서구 달서대로 403 (호림동)<br>
+        > <b>가격: 2,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_42172eb4fb1c6d22c58a0eeb5d8f7936 = L.marker(
+                [35.809876940243356, 128.54681052440992],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_42172eb4fb1c6d22c58a0eeb5d8f7936.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양주유소</b><br>
+        <b>SK에너지</b><br>
+        대구 달서구 상인2동 1170<br>
+        대구 달서구 월곡로 149<br>
+        > <b>가격: 2,084 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8deab24507f3c0e9ae06e8cfe9c9d922 = L.marker(
+                [35.83739243744461, 128.55177693638046],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_8deab24507f3c0e9ae06e8cfe9c9d922.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕영에너지송현주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 달서구 성당동 830-27<br>
+        대구 달서구 구마로 219 (성당동)<br>
+        > <b>가격: 2,085 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_90380eab5a14584553ff0f5ed0a58dce = L.marker(
+                [35.85025187569404, 128.51764090889765],
+                {}
+            ).addTo(map_4a801cdb20003e875a5911e5c9b35c98);
+        
+    
+            marker_90380eab5a14584553ff0f5ed0a58dce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥구석유(주)장기주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 달서구 장기동 131<br>
+        대구 달서구 달구벌대로 1374 (장기동)<br>
+        > <b>가격: 2,089 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99894c47b79c84902fe0c5c2018e1412 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_99894c47b79c84902fe0c5c2018e1412" ></div>
+        
+</body>
+<script>    
+    
+            var map_99894c47b79c84902fe0c5c2018e1412 = L.map(
+                "map_99894c47b79c84902fe0c5c2018e1412",
+                {
+                    center: [37.38773542202243, 126.80272926590794],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d4020fdafef2b1ed79c785d18bf6e60a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            var locate_control_fef1e9424aa7a5d56dca716295f908f2 = L.control.locate(
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+            
+        
+    
+            var marker_55dd45435fba33a5ac6e82e162317d50 = L.marker(
+                [37.35921560664487, 126.78682323309935],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_55dd45435fba33a5ac6e82e162317d50.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 시흥시 군자동 530<br>
+        경기 시흥시 황고개로 311 (군자동)<br>
+        > <b>가격: 1,577 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1dca1fd875b9d727a5e487745182f411 = L.marker(
+                [37.365194570031335, 126.75175812415901],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_1dca1fd875b9d727a5e487745182f411.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대경유업 대경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 시흥시 정왕동 191-4<br>
+        경기 시흥시 봉화로 166<br>
+        > <b>가격: 1,578 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0bf01478d40882d8297cada241282e36 = L.marker(
+                [37.35175198837021, 126.73910879999478],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_0bf01478d40882d8297cada241282e36.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>역전주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 시흥시 정왕동 876-359<br>
+        경기 시흥시 역전로 295 (정왕동)<br>
+        > <b>가격: 1,578 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da6a8a220a6f2ef387175d5d6c51784c = L.marker(
+                [37.35358154589724, 126.73767330035916],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_da6a8a220a6f2ef387175d5d6c51784c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK정다운셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 정왕동 876-420<br>
+        경기 시흥시 역전로 318<br>
+        > <b>가격: 1,583 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23c03094afedd5ff9a48546b99302d80 = L.marker(
+                [37.41665443068065, 126.84042808647479],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_23c03094afedd5ff9a48546b99302d80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무지내주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 시흥시 무지내동 277-1<br>
+        경기 시흥시  금오로 144 (무지내동)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d8aebce0a7c6a53036a7fc6d26ad849 = L.marker(
+                [37.38225418599964, 126.76576633779906],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_7d8aebce0a7c6a53036a7fc6d26ad849.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월곶하이웨이주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 시흥시 월곶동 165-2<br>
+        경기 시흥시 동서로 174 (월곶동)<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2b42f1cff213e322eb556d6c7b64fdf = L.marker(
+                [37.42763412798053, 126.8360604316364],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_b2b42f1cff213e322eb556d6c7b64fdf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼성주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 과림동 764-2<br>
+        경기 시흥시 금오로 269 (과림동)<br>
+        > <b>가격: 1,587 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bbd9dbabe3e98351048721091cacc6f1 = L.marker(
+                [37.44873988974146, 126.8082726217641],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_bbd9dbabe3e98351048721091cacc6f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)발산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 시흥시 계수동 495-1<br>
+        경기 시흥시 계수로 79<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f640428a957b84bdf6a4f678b10b7442 = L.marker(
+                [37.40583331420155, 126.83132131198784],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_f640428a957b84bdf6a4f678b10b7442.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)푸른에너지</b><br>
+        <b>GS칼텍스</b><br>
+        경기 시흥시 금이동 136-3<br>
+        경기 시흥시 수인로 2722 (금이동)<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_127ef7c9c5ef5ce8b28065f90a8b34d3 = L.marker(
+                [37.405195129474386, 126.8397234894423],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_127ef7c9c5ef5ce8b28065f90a8b34d3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주유할인마트</b><br>
+        <b>자영알뜰</b><br>
+        경기 시흥시 금이동 73-1<br>
+        경기 시흥시 수인로 2648 (금이동)<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b913c45edfd24f1bf7e55dddccab591e = L.marker(
+                [37.3839042649139, 126.8215889660933],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_b913c45edfd24f1bf7e55dddccab591e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강석유(주)나분들주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 시흥시 광석동 33-2<br>
+        경기 시흥시 동서로 674 (광석동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49bc52eb72c55f8c16450a9b50182b94 = L.marker(
+                [37.38391663936927, 126.79444869319347],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_49bc52eb72c55f8c16450a9b50182b94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세화제2주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 장현동 78<br>
+        경기 시흥시 동서로 425 (장현동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_90db97c0a003620e83426e94b1749c58 = L.marker(
+                [37.38348304628486, 126.82955394125823],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_90db97c0a003620e83426e94b1749c58.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주식회사현대석유</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 시흥시 물왕동 336<br>
+        경기 시흥시 금화로 411 (물왕동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_180078ca2e6ac35b87fc579cb82093fb = L.marker(
+                [37.3791266299228, 126.85504208985124],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_180078ca2e6ac35b87fc579cb82093fb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>효창에너지직영 5주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 조남동 690<br>
+        경기 시흥시 동서로 996<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_270250b369e67e545a29552342318c79 = L.marker(
+                [37.44294040644153, 126.77363101995552],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_270250b369e67e545a29552342318c79.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신천제일셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 신천동 586-6<br>
+        경기 시흥시 수인로 3471 (신천동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e1c9b5060151a9962270b71249247402 = L.marker(
+                [37.38027672539365, 126.8439009760441],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_e1c9b5060151a9962270b71249247402.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금진주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 시흥시 물왕동 56<br>
+        경기 시흥시 동서로 895-1 (물왕동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8721f7e843b83328cbd4bb38733d9fec = L.marker(
+                [37.377281247657656, 126.78912683823758],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_8721f7e843b83328cbd4bb38733d9fec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>플러스주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 시흥시 장곡동 264<br>
+        경기 시흥시 황고개로 520<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e92bcdd974ef3486eab3f4d91ff7124 = L.marker(
+                [37.38385934024856, 126.81708419913524],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_4e92bcdd974ef3486eab3f4d91ff7124.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장연주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 시흥시 광석동 138-2<br>
+        경기 시흥시 동서로 633 (광석동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ff6a6ecede904a4877db9ec5022f30b = L.marker(
+                [37.342594905161725, 126.73601263135413],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_5ff6a6ecede904a4877db9ec5022f30b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시흥버스터미널(주)주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 시흥시 정왕동 1745-6<br>
+        경기 시흥시 옥구공원로 225 (정왕동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3e8b5116d83ec66705db6f23142ef10 = L.marker(
+                [37.38127044603291, 126.85726022631944],
+                {}
+            ).addTo(map_99894c47b79c84902fe0c5c2018e1412);
+        
+    
+            marker_a3e8b5116d83ec66705db6f23142ef10.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>목감행복주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 시흥시 조남동 693<br>
+        경기 시흥시 목감우회로 9 (조남동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

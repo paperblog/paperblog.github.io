@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8047deb2bdbf4471591e19b508a692f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8047deb2bdbf4471591e19b508a692f0" ></div>
+        
+</body>
+<script>    
+    
+            var map_8047deb2bdbf4471591e19b508a692f0 = L.map(
+                "map_8047deb2bdbf4471591e19b508a692f0",
+                {
+                    center: [37.02794031762997, 127.27126028174617],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23204cd19150c91fabd5acedfa610aa5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            var locate_control_ab3cf882ef8abf2ace9f8c7045aff62a = L.control.locate(
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+            
+        
+    
+            var marker_5337713d6feba2ae822678ba34cf1b51 = L.marker(
+                [37.00057557890558, 127.17417541323316],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_5337713d6feba2ae822678ba34cf1b51.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KC네트웍스</b><br>
+        <b>자영알뜰</b><br>
+        경기 안성시 공도읍 만정리 274-7<br>
+        경기 안성시 공도읍 공도로 120<br>
+        > <b>가격: 1,560 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93b7c26756d1949c40b7f93b45a95ba6 = L.marker(
+                [37.00734228731458, 127.19155481713456],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_93b7c26756d1949c40b7f93b45a95ba6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>충일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안성시 공도읍 마정리 513-1<br>
+        경기 안성시 공도읍 서동대로 4405<br>
+        > <b>가격: 1,565 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a325ec271c7cb99acda304d3d30811d8 = L.marker(
+                [36.99089186021771, 127.26968486674104],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_a325ec271c7cb99acda304d3d30811d8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)뉴타운주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 안성시 계동 65<br>
+        경기 안성시 안성맞춤대로 862<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78ad98615745f64fdcf0f99bbb8be6a5 = L.marker(
+                [37.068705489448114, 127.3814312658358],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_78ad98615745f64fdcf0f99bbb8be6a5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>녹박재주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 안성시 죽산면 장능리 660-5<br>
+        경기 안성시 죽산면 서동대로 6518<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2427cf20a3be3f4b019dcbec26b8683 = L.marker(
+                [36.96953852326786, 127.27234956680444],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_b2427cf20a3be3f4b019dcbec26b8683.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서원 안성맞춤(평택)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 안성시 서운면 신능리 51-16<br>
+        경기 안성시 서운면 평택제천고속도로 41<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef7f615b0c6ccb28c685ccc38315fab4 = L.marker(
+                [37.07612020811017, 127.38284447719914],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_ef7f615b0c6ccb28c685ccc38315fab4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼죽주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 안성시 삼죽면 용월리 449-1<br>
+        경기 안성시 삼죽면 삼죽로 193<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac8d2cf991cdadf1342600fc55937fda = L.marker(
+                [37.03947473225308, 127.35692132818096],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_ac8d2cf991cdadf1342600fc55937fda.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>희망가득주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안성시 삼죽면 미장리 457-4<br>
+        경기 안성시 삼죽면 서동대로 6102<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fc59be0877ca917f8d24211845991444 = L.marker(
+                [37.12205023882669, 127.4202615305425],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_fc59be0877ca917f8d24211845991444.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼보주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 일죽면 방초리 866<br>
+        경기 안성시 일죽면 죽양대로 505<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f4167e6c3d12cbb3da164e2c2a7eb09 = L.marker(
+                [37.10188748393047, 127.51333888347338],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_2f4167e6c3d12cbb3da164e2c2a7eb09.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대원에너지 안성지점</b><br>
+        <b>SK에너지</b><br>
+        경기 안성시 일죽면 당촌리 11<br>
+        경기 안성시 일죽면 서동대로 7862<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_206ecd2e3aa1661c4fc6c120fd561b8f = L.marker(
+                [37.07771945564865, 127.1303451875268],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_206ecd2e3aa1661c4fc6c120fd561b8f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보유통(주) 안성(서울)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 안성시 원곡면 산하리 425-1<br>
+        경기 안성시 경부고속도로 372-1<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_499ae603147c1ca3b8d0a4a3619db04d = L.marker(
+                [36.96851931404012, 127.27638398972891],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_499ae603147c1ca3b8d0a4a3619db04d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>YM21유통㈜안성맞춤(제천)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 안성시 서운면 신능리 51-30<br>
+        경기 안성시 서운면 평택제천고속도로 40<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2a81b10f3449dee3d1a74fb0503c64f5 = L.marker(
+                [37.010226001066265, 127.21776743000692],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_2a81b10f3449dee3d1a74fb0503c64f5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 대덕면 신령리 716<br>
+        경기 안성시 대덕면 서동대로 4645<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4d3ab9ff59e6315df9c2a86fccce2f1 = L.marker(
+                [36.989181843767014, 127.2689362199845],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_b4d3ab9ff59e6315df9c2a86fccce2f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안성시 계동 88<br>
+        경기 안성시 안성맞춤대로 841<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5eeb2f34d4e7034691b2ed8ecb94282e = L.marker(
+                [37.01686702815987, 127.26794451484713],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_5eeb2f34d4e7034691b2ed8ecb94282e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜반석에너지</b><br>
+        <b>SK에너지</b><br>
+        경기 안성시 당왕동 164-6<br>
+        경기 안성시 안성맞춤대로 1168 (당왕동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef9cf58cec7b2cd387fda3eeb60c1203 = L.marker(
+                [37.02383271775055, 127.26546789895829],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_ef9cf58cec7b2cd387fda3eeb60c1203.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)진성에너지 안성맞춤셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 당왕동 269-11<br>
+        경기 안성시 안성맞춤대로 1253 (당왕동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_66ae90744baeef52885e947f92dcd44c = L.marker(
+                [37.00319128757873, 127.17751225309374],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_66ae90744baeef52885e947f92dcd44c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>더조은주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안성시 공도읍 만정리 278-20<br>
+        경기 안성시 공도읍 공도로 160<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e9c79cbad5fad9cf00a5642ee7fe9164 = L.marker(
+                [37.01965471968566, 127.24130232860888],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_e9c79cbad5fad9cf00a5642ee7fe9164.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥인주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 대덕면 건지리 157-10<br>
+        경기 안성시 대덕면 서동대로 4880<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9863009ba0e415fffac1f42723286dcb = L.marker(
+                [37.0149872105055, 127.31461051636204],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_9863009ba0e415fffac1f42723286dcb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운동장주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 보개면 양복리 910-3<br>
+        경기 안성시 보개면 양협길 4<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f5cc15a021d4adaf5c8a8fb5e5f47210 = L.marker(
+                [37.012773853374554, 127.14556720777875],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_f5cc15a021d4adaf5c8a8fb5e5f47210.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국도로공사 안성(부산방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 안성시 원곡면 반제리 642-5<br>
+        경기 안성시 원곡면 경부고속도로 365<br>
+        > <b>가격: 1,600 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a5e9e8c532f84bc82acda32a2a64e5b = L.marker(
+                [37.04526651874815, 127.15680593888223],
+                {}
+            ).addTo(map_8047deb2bdbf4471591e19b508a692f0);
+        
+    
+            marker_8a5e9e8c532f84bc82acda32a2a64e5b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜소모에너지 칠곡주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안성시 원곡면 칠곡리 613<br>
+        경기 안성시 원곡면 남북대로 1201-4<br>
+        > <b>가격: 1,600 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

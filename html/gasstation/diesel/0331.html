@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3df788014a4c7b6f6ae6cf49de26f26f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3df788014a4c7b6f6ae6cf49de26f26f" ></div>
+        
+</body>
+<script>    
+    
+            var map_3df788014a4c7b6f6ae6cf49de26f26f = L.map(
+                "map_3df788014a4c7b6f6ae6cf49de26f26f",
+                {
+                    center: [38.03920125940847, 128.23483106263643],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_35edc6c55bc8d495e538d24a1956cea4 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            var locate_control_d3cc5aa70e3f506d24c7046cbf6f08e8 = L.control.locate(
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+            
+        
+    
+            var marker_c70776d7efafc185630d9cf62c2b3a41 = L.marker(
+                [37.917392180156064, 128.28635808776895],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_c70776d7efafc185630d9cf62c2b3a41.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내린천(서울방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 인제군 상남면 하남리 333-2<br>
+        강원 인제군 상남면 서울양양고속도로 117<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22e93a4068da51e6439f544d98317610 = L.marker(
+                [37.91747792112511, 128.28836698129552],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_22e93a4068da51e6439f544d98317610.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내린천(양양방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 인제군 상남면 하남리 375-4<br>
+        강원 인제군 상남면 서울양양고속도로 117<br>
+        > <b>가격: 1,813 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac9fabdc375f772f7c0ca2f50663a584 = L.marker(
+                [37.92929164165767, 128.06066151641673],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_ac9fabdc375f772f7c0ca2f50663a584.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인제햇살주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 남면 어론리 623<br>
+        강원 인제군 남면 설악로 160<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eee6b39cebfbe6736d5d7255f51cd121 = L.marker(
+                [37.92080784565388, 128.0580755174911],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_eee6b39cebfbe6736d5d7255f51cd121.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>어린왕자 주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 인제군 남면 어론리 503<br>
+        강원 인제군 남면 설악로 51<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ec5c8cd7d3a45af9f95a3b01703daf2 = L.marker(
+                [38.00121358285147, 128.29507955934582],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_6ec5c8cd7d3a45af9f95a3b01703daf2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인제스피디움주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 기린면 북리 516<br>
+        강원 인제군 기린면 상하답로 130<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_46ce8be9f7b7183fa45d843225c79a1a = L.marker(
+                [38.194365840572935, 128.32124284667776],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_46ce8be9f7b7183fa45d843225c79a1a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>LP가스산업주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 인제군 북면 용대리 1109-1<br>
+        강원 인제군 북면 미시령로 951<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_92fe627a0917a23d613920b287649a49 = L.marker(
+                [38.1947842586596, 128.32452298029614],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_92fe627a0917a23d613920b287649a49.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>돌바우오일뱅크</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 북면 용대리 1108-1<br>
+        강원 인제군 북면 미시령로 979<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc9b9c13adae3431d97a2452f7c1bd89 = L.marker(
+                [38.11466152434575, 128.201855867465],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_cc9b9c13adae3431d97a2452f7c1bd89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스이앤알 직영 동일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 인제군 북면 원통리 459-11<br>
+        강원 인제군 북면 설악로 2775<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd58846ce523a4541bde74a5ffa67399 = L.marker(
+                [38.066024112761184, 128.16750915464388],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_fd58846ce523a4541bde74a5ffa67399.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>산성장주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 인제읍 상동리 326-1<br>
+        강원 인제군 인제읍 인제로 146<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9bc2ca3b44cd055cce1e0e70c2b0913b = L.marker(
+                [38.07157165404328, 128.1766736595598],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_9bc2ca3b44cd055cce1e0e70c2b0913b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인제주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 인제군 인제읍 합강리 354-12<br>
+        강원 인제군 인제읍 인제로 245<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f05f86ae34ccce09cdd1355caffc6f2 = L.marker(
+                [37.982249889420565, 128.09520487944152],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_3f05f86ae34ccce09cdd1355caffc6f2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 인제군 남면 신남리 41-4<br>
+        강원 인제군 남면 설악로 851<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3d0712dd699bb67ad8acdf1adbdcad0 = L.marker(
+                [38.08557751171533, 128.18236869218862],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_a3d0712dd699bb67ad8acdf1adbdcad0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 인제현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 인제읍 합강리 181<br>
+        강원 인제군 인제읍 설악로 2352<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0747e11c2e089cf89ff1b44a1cc52d9 = L.marker(
+                [38.18423356313212, 128.29294084421295],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_b0747e11c2e089cf89ff1b44a1cc52d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>12선녀탕주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 북면 용대리 1493-1<br>
+        강원 인제군 북면 미시령로 660<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38ea91a646f7ea64f7e68a63974b6a1c = L.marker(
+                [38.134634604630016, 128.15614541957197],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_38ea91a646f7ea64f7e68a63974b6a1c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명이백주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 인제군 인제읍 가아리 326<br>
+        강원 인제군 인제읍 광치령로 681<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ece908b8c9a48134045accf36bcbf8b = L.marker(
+                [37.93310292273795, 128.293864783784],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_7ece908b8c9a48134045accf36bcbf8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인제IC주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 기린면 현리 1211-1<br>
+        강원 인제군 기린면 내린천로 3477<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f8fd8ecb0c4b1d61ae42da12d1dbdc5 = L.marker(
+                [38.197037982513464, 128.33943648073512],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_4f8fd8ecb0c4b1d61ae42da12d1dbdc5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백담주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 인제군 북면 용대1리 1733-2<br>
+        강원 인제군 북면 미시령로 1113-3<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f19de6433023780070af8f8497560d3 = L.marker(
+                [37.86754775379973, 128.2601142223353],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_5f19de6433023780070af8f8497560d3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상남주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 인제군 상남면 상남4리 205-1<br>
+        강원 인제군 상남면 아홉사리로 3171<br>
+        > <b>가격: 1,909 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a466253a9d374c2a02a02ec4e97eddd1 = L.marker(
+                [37.95315578897947, 128.3160887163331],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_a466253a9d374c2a02a02ec4e97eddd1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기린농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 인제군 기린면 현리 695-6<br>
+        강원 인제군 기린면 내린천로 3996<br>
+        > <b>가격: 1,909 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fbcb795490fc8fdc49b9f4b18b0e3393 = L.marker(
+                [37.96800882455595, 128.32277405901522],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_fbcb795490fc8fdc49b9f4b18b0e3393.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진다리주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 인제군 기린면 현리 609-1<br>
+        강원 인제군 기린면 내린천로 4172<br>
+        > <b>가격: 1,915 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb219943689bb4923447eda457208f16 = L.marker(
+                [38.150885784857735, 128.25733698415021],
+                {}
+            ).addTo(map_3df788014a4c7b6f6ae6cf49de26f26f);
+        
+    
+            marker_fb219943689bb4923447eda457208f16.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>돌집주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 인제군 북면 한계리 1109-1<br>
+        강원 인제군 북면 고원통로 121<br>
+        > <b>가격: 1,915 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

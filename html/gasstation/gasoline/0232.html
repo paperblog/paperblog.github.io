@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b4b2b8c844b6d65c1d4f2fd54e69fc5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0b4b2b8c844b6d65c1d4f2fd54e69fc5" ></div>
+        
+</body>
+<script>    
+    
+            var map_0b4b2b8c844b6d65c1d4f2fd54e69fc5 = L.map(
+                "map_0b4b2b8c844b6d65c1d4f2fd54e69fc5",
+                {
+                    center: [37.50436153845975, 127.55004919101478],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a30454d8e09b7a434d87cab89ee3e642 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            var locate_control_d285b8971bfb9785218c0729437ba0ff = L.control.locate(
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+            
+        
+    
+            var marker_a4219b0cea542fedd27d36bb34ca48b1 = L.marker(
+                [37.497576082654106, 127.52525935259442],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_a4219b0cea542fedd27d36bb34ca48b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백운봉주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 양평읍 백안리 343-1<br>
+        경기 양평군 양평읍 경강로 2209<br>
+        > <b>가격: 1,591 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_26a2ab4adcb01a8cd1f3d2d9e40fb238 = L.marker(
+                [37.51701971222061, 127.63694926737365],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_26a2ab4adcb01a8cd1f3d2d9e40fb238.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평송단월주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 양평군 단월면 봉상리 385-1<br>
+        경기 양평군 단월면 경강로 3433<br>
+        > <b>가격: 1,592 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6fa59c93c01ac853e2e50493277296db = L.marker(
+                [37.54280349802137, 127.69577979495679],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_6fa59c93c01ac853e2e50493277296db.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평화주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양평군 청운면 비룡리 55<br>
+        경기 양평군 청운면 경강로 4089<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_07df95dc7af86e899a209c909ce58ada = L.marker(
+                [37.52188902645189, 127.66347736965776],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_07df95dc7af86e899a209c909ce58ada.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 단월면 봉상리 46-6<br>
+        경기 양평군 단월면 경강로 3695<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f294de39c68c85f0a0206fa4d04e50e8 = L.marker(
+                [37.56887729081837, 127.73096392784025],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_f294de39c68c85f0a0206fa4d04e50e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다대주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 청운면 다대리 155<br>
+        경기 양평군 청운면 설악로 249<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f2972f9bbab52f27260651004d614df = L.marker(
+                [37.48455749545264, 127.57821577791904],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_5f2972f9bbab52f27260651004d614df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여기가좋겠네주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양평군 용문면 삼성리 220-17<br>
+        경기 양평군 용문면 경강로 2758-1<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db00f19bec80addc6c0cc752a3f3d5ff = L.marker(
+                [37.511388779159645, 127.4427195891859],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_db00f19bec80addc6c0cc752a3f3d5ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양평프라자주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 옥천면 아신리 368-1<br>
+        경기 양평군 옥천면 경강로 1422<br>
+        > <b>가격: 1,612 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_601c42b8038fd050e799b0e46907a329 = L.marker(
+                [37.50444432068151, 127.46399838372147],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_601c42b8038fd050e799b0e46907a329.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강가주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 양평군 양평읍 오빈리 448-6<br>
+        경기 양평군 양평읍 경강로 1638<br>
+        > <b>가격: 1,612 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10f6dbf4ff784ca5f1977072d8e7bbb2 = L.marker(
+                [37.51050442430091, 127.62521671402796],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_10f6dbf4ff784ca5f1977072d8e7bbb2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용문주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양평군 용문면 광탄리 434-6<br>
+        경기 양평군 용문면 경강로 3299<br>
+        > <b>가격: 1,613 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5118381c3278200a02ef80b9e19ef73e = L.marker(
+                [37.50941068236381, 127.62533241218222],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_5118381c3278200a02ef80b9e19ef73e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정품셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 용문면 광탄리 438-4<br>
+        경기 양평군 용문면 경강로 3286<br>
+        > <b>가격: 1,614 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_15ee693fcc546c05079f9dd01a30c154 = L.marker(
+                [37.51636027133154, 127.41877725225855],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_15ee693fcc546c05079f9dd01a30c154.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍둥이주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양평군 양서면 복포리 239<br>
+        경기 양평군 양서면 경강로 1197<br>
+        > <b>가격: 1,616 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_daca8bee773b2f961047fdad21bf2917 = L.marker(
+                [37.50216832485509, 127.47535228960564],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_daca8bee773b2f961047fdad21bf2917.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남선석유(주) 라피네주유소</b><br>
+        <b>S-OIL</b><br>
+        경기도 양평군 양평읍 오빈리 118-7<br>
+        경기도 양평군 양평읍 경강로 1747<br>
+        > <b>가격: 1,616 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_225fde046d17f41faa8add6bc0764ba7 = L.marker(
+                [37.51558258292001, 127.41863838363759],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_225fde046d17f41faa8add6bc0764ba7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일흥주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 양평군 양서면 복포리 237-2<br>
+        경기 양평군 양서면 경강로 1196<br>
+        > <b>가격: 1,617 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1c104afa8f3a4c289aa3d2e146ab38f4 = L.marker(
+                [37.55062190239713, 127.70481481039286],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_1c104afa8f3a4c289aa3d2e146ab38f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신청운주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양평군 청운면 용두리 760-3<br>
+        경기 양평군 청운면 용두로 81<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5fefc816ac2c713ca5f64f1accf879e1 = L.marker(
+                [37.44075859595019, 127.53561884751834],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_5fefc816ac2c713ca5f64f1accf879e1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 양평군 개군면 하자포리 89-3<br>
+        경기 양평군 개군로 320<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad4a11b5a23353cbb8c31e1654054777 = L.marker(
+                [37.505084046939324, 127.45741277418249],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_ad4a11b5a23353cbb8c31e1654054777.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>승리주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 양평읍 오빈리 482-3<br>
+        경기 양평군 양평읍 경강로 1580<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_837d511506801feb888a297b4d1918b5 = L.marker(
+                [37.4224436070623, 127.53892529977601],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_837d511506801feb888a297b4d1918b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>개군농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 양평군 개군면 상자포리 410-2<br>
+        경기 양평군 개군면 여양로 2215<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78da86214fe63ed3888cd479dd26cbca = L.marker(
+                [37.45651195959987, 127.53506170534968],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_78da86214fe63ed3888cd479dd26cbca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부르릉주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 개군면 불곡리 310-2<br>
+        경기 양평군 개군면 개군로 135<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5370c528fb586d7e7a842d60c640b02 = L.marker(
+                [37.50844904828775, 127.45114217779542],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_e5370c528fb586d7e7a842d60c640b02.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>홍영주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 양평군 옥천면 옥천1리 869-2<br>
+        경기 양평군 옥천면 경강로 1511<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_525476bdf4871ce9ca204fbf153e21e8 = L.marker(
+                [37.50077911772692, 127.47732769031941],
+                {}
+            ).addTo(map_0b4b2b8c844b6d65c1d4f2fd54e69fc5);
+        
+    
+            marker_525476bdf4871ce9ca204fbf153e21e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남한강주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 양평군 양평읍 오빈리 151<br>
+        경기 양평군 양평읍 양근로 17<br>
+        > <b>가격: 1,634 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4562c9c5881c33bb8048f63362bfe20f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4562c9c5881c33bb8048f63362bfe20f" ></div>
+        
+</body>
+<script>    
+    
+            var map_4562c9c5881c33bb8048f63362bfe20f = L.map(
+                "map_4562c9c5881c33bb8048f63362bfe20f",
+                {
+                    center: [35.297888865506835, 129.21551863929326],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ee44ee980da99cef23f3f85ee72e76b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            var locate_control_5f6f004f036be313d2ab51e19fee722d = L.control.locate(
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+            
+        
+    
+            var marker_f45af0ef26ee3dc0c430bf81fd7179de = L.marker(
+                [35.20510650929302, 129.20669853815218],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_f45af0ef26ee3dc0c430bf81fd7179de.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 기장읍 내리 307-8<br>
+        부산 기장군 기장읍 기장대로 84<br>
+        > <b>가격: 1,559 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef2d51e6466385db4faf718e40c31758 = L.marker(
+                [35.30291920597897, 129.23910748316027],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_ef2d51e6466385db4faf718e40c31758.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월드컵주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 기장군 일광면 원리 100-2<br>
+        부산 기장군 일광면 기장대로 1230<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a4f4d47cda3624ff50058f2b73c384ee = L.marker(
+                [35.32177123209082, 129.24154321259167],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_a4f4d47cda3624ff50058f2b73c384ee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>선암주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 기장군 장안읍 좌동리 278<br>
+        부산 기장군 장안읍 기장대로 1453<br>
+        > <b>가격: 1,588 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c275decfaf248236455bb2931757ff76 = L.marker(
+                [35.3236487975351, 129.1978369854709],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_c275decfaf248236455bb2931757ff76.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백운1주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 정관면 예림리 1018-1<br>
+        부산 기장군 정관면 정관로 779<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c765ccf700dbb450af1df230f523292f = L.marker(
+                [35.324734614316185, 129.21040552525554],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_c765ccf700dbb450af1df230f523292f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정관신도시주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 정관면 예림리 329-12<br>
+        부산 기장군 정관면 정관로 901<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf9212898e22c58138af063a782f987c = L.marker(
+                [35.32489885988111, 129.20335831839265],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_bf9212898e22c58138af063a782f987c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공단신도시주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 정관면 예림리 851<br>
+        부산 기장군 정관면 정관로 835<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_90cf5e8c27e9b016d8d62b4f99e89a4a = L.marker(
+                [35.321432191606924, 129.2419944271405],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_90cf5e8c27e9b016d8d62b4f99e89a4a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의학원self주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 장안읍 좌동리 268-1<br>
+        부산 기장군 장안읍 좌동길 47<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4aab38daaa5f5b2564faafc1ac55a711 = L.marker(
+                [35.32221688243696, 129.23296848756584],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_4aab38daaa5f5b2564faafc1ac55a711.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>달음산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 장안읍 좌천리 503-1<br>
+        부산 기장군 장안읍 정관로 1115<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_86a09d7566643e3ff7e2e6babb53d42c = L.marker(
+                [35.30632318065866, 129.25686237094277],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_86a09d7566643e3ff7e2e6babb53d42c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 일광면 문동리 235-1<br>
+        부산 기장군 일광면 일광로 722<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_694ba90d5a9ebd5cdf4285907a12b3e5 = L.marker(
+                [35.321232704574335, 129.24188875049498],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_694ba90d5a9ebd5cdf4285907a12b3e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴장안IC주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 기장군 장안읍 좌동리 269-1<br>
+        부산 기장군 장안읍 좌동길 45<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_412a10b78c48f482292b3531493a8791 = L.marker(
+                [35.34475853714878, 129.15939622367588],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_412a10b78c48f482292b3531493a8791.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은마석유(주) 대영주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 정관면 모전리 17<br>
+        부산 기장군 정관면 정관로 249<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dfb37c30d396f64f2ee79759e7bb10d2 = L.marker(
+                [35.32353848837746, 129.19838884182215],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_dfb37c30d396f64f2ee79759e7bb10d2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>기분조은주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 정관면 예림리 1020-1<br>
+        부산 기장군 정관면 정관로 787<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8fd1b9e8818346a89cf86c2989f5fc69 = L.marker(
+                [35.24850852160254, 129.21022605277076],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_8fd1b9e8818346a89cf86c2989f5fc69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월드주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 기장읍 서부리 429<br>
+        부산 기장군 기장읍 반송로 1559<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0999444737d37f6be0375a88364010e5 = L.marker(
+                [35.32064144897535, 129.23630977172124],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_0999444737d37f6be0375a88364010e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜첼시주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 장안읍 좌천리 436-7<br>
+        부산 기장군 장안읍 정관로 1148<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b66d3b473859e6afba50e7f67b503604 = L.marker(
+                [35.33245371544584, 129.24758258574272],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_b66d3b473859e6afba50e7f67b503604.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장안IC(상)주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 기장군 장안읍 좌동리 69-1<br>
+        부산 기장군 장안읍 기장대로 1586<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43047fdffab416c9a1bc21df8169fa41 = L.marker(
+                [35.32891003794445, 129.20213333160044],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_43047fdffab416c9a1bc21df8169fa41.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)천일에너지 천일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 정관면 예림리 384-9<br>
+        부산 기장군 신정관로 183<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce59abfde37325b6ca5b5502b19c5e79 = L.marker(
+                [35.236157718357724, 129.1592156864259],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_ce59abfde37325b6ca5b5502b19c5e79.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)동남주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 철마면 고촌리 522<br>
+        부산 기장군 철마면 반송로 983<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cf0a557d271d7ed33fffc307509a780 = L.marker(
+                [35.25412875357948, 129.1958656435391],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_4cf0a557d271d7ed33fffc307509a780.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부경셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 기장군 기장읍 만화리 333-3<br>
+        부산 기장군 기장읍 반송로 1407<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_439b9ab1f10bf4f12ab2ff3ead652cd3 = L.marker(
+                [35.24265953884299, 129.22089537223448],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_439b9ab1f10bf4f12ab2ff3ead652cd3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동양주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 기장군 기장읍 청강리 12-1<br>
+        부산 기장군 기장읍 기장대로 530<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f7a81f920e0a571416439d2b7e83b448 = L.marker(
+                [35.251736371490004, 129.20769517716553],
+                {}
+            ).addTo(map_4562c9c5881c33bb8048f63362bfe20f);
+        
+    
+            marker_f7a81f920e0a571416439d2b7e83b448.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하영주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 기장군 기장읍 서부리386<br>
+        부산 기장군 기장읍 반송로 1517<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

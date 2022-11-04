@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e65fcc0c79359131e42d1a6c116d2b94 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e65fcc0c79359131e42d1a6c116d2b94" ></div>
+        
+</body>
+<script>    
+    
+            var map_e65fcc0c79359131e42d1a6c116d2b94 = L.map(
+                "map_e65fcc0c79359131e42d1a6c116d2b94",
+                {
+                    center: [37.49297689021421, 127.01000543392601],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbec8bed13a4ee151fcc4df19c856d76 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            var locate_control_beb5ae0c0dd56616dcd2e61d487fc067 = L.control.locate(
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+            
+        
+    
+            var marker_4b8667089d4251905cccfad88d21a806 = L.marker(
+                [37.49499511703796, 126.98317974336783],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_4b8667089d4251905cccfad88d21a806.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)선천주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 방배동 765-8<br>
+        서울 서초구 동작대로 206 (방배동)<br>
+        > <b>가격: 1,831 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aec199923c0a46053fe96b7c4daf70db = L.marker(
+                [37.50324808982197, 127.01086975326696],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_aec199923c0a46053fe96b7c4daf70db.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반포그린주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 반포동 56-2 GS<br>
+        서울 서초구 서초중앙로 239 (반포동)<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_57bdd7627d1761be80dcc930dd8a0977 = L.marker(
+                [37.50385920593627, 127.02317419164875],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_57bdd7627d1761be80dcc930dd8a0977.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에너지플러스허브 삼방주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 서초동 1303-1<br>
+        서울 서초구 사평대로 364 (서초동)<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a4117c3136539d9274a5e3db5c96009e = L.marker(
+                [37.48667479908543, 127.02279401173459],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_a4117c3136539d9274a5e3db5c96009e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에쓰오일(주)직영 오토테크주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 서초구 서초동 1438-19<br>
+        서울특별시 서초구  효령로 356 (서초동)<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_51f50607ebd6838b49e892b98b180faa = L.marker(
+                [37.504626496789584, 127.0017446358805],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_51f50607ebd6838b49e892b98b180faa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)직영 강남주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 반포동 19-2<br>
+        서울 서초구 반포대로 284 (반포동)<br>
+        > <b>가격: 1,912 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7b4ef2dc78657fd8a44f3a2e1c2c9f06 = L.marker(
+                [37.48038962755158, 127.0120365363896],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_7b4ef2dc78657fd8a44f3a2e1c2c9f06.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>극동유화(주) 전당앞주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 서초구 서초동 1464-18<br>
+        서울 서초구 남부순환로 2391 (서초동)<br>
+        > <b>가격: 1,915 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6edf3d6f56201c3893c31156240e9c4a = L.marker(
+                [37.49840993571347, 126.99480533184509],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_6edf3d6f56201c3893c31156240e9c4a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신반포주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서초구 반포동 111-2<br>
+        서울 서초구 사평대로 94 (반포동)<br>
+        > <b>가격: 1,919 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43007d2b8a1d5b31f3256117952b045e = L.marker(
+                [37.49255475777789, 126.99092721426605],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_43007d2b8a1d5b31f3256117952b045e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한독주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 방배동 810-1<br>
+        서울 서초구 방배로 218 (방배동)<br>
+        > <b>가격: 1,919 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7da2db42e9339223085e1e91641bc82 = L.marker(
+                [37.49285375187427, 126.98317430553207],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_e7da2db42e9339223085e1e91641bc82.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 방배현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서초구 방배동 782-23<br>
+        서울 서초구 동작대로 182 (방배동)<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ca88a5cadc3a403aba22dbdac0160011 = L.marker(
+                [37.50327593007197, 127.02150768091882],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_ca88a5cadc3a403aba22dbdac0160011.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 사평로주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서초구 서초동 1302<br>
+        서울 서초구 사평대로 350 (서초동)<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9dd6256e9c143b5a6b273d48e5ca8476 = L.marker(
+                [37.49055955350803, 127.02260855568565],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_9dd6256e9c143b5a6b273d48e5ca8476.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 서초제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서초구 서초동 1632-1<br>
+        서울 서초구 사임당로 116 (서초동)<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6047323125862e1819073c2485f2c8f0 = L.marker(
+                [37.50016366657984, 126.99920908227524],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_6047323125862e1819073c2485f2c8f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 팔레스주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서초구 반포동 67-2<br>
+        서울 서초구 사평대로 136 (반포동)<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b544e45dc4af2ab27c9c3514f38d0931 = L.marker(
+                [37.50673138408654, 127.00881968707996],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_b544e45dc4af2ab27c9c3514f38d0931.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)직영 터미널(고속)주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 반포동 19-6<br>
+        서울 서초구 신반포로 222 (반포동)<br>
+        > <b>가격: 1,924 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4837a665f0de3d73886ac515cb81318f = L.marker(
+                [37.51617043272236, 127.01895008389647],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_4837a665f0de3d73886ac515cb81318f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스(주)남서울주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 잠원동 13-6<br>
+        서울 서초구 나루터로 83 (잠원동)<br>
+        > <b>가격: 1,944 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd5bd6693371d0370f63d3d8b4f52751 = L.marker(
+                [37.48613464972335, 127.0108136269586],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_dd5bd6693371d0370f63d3d8b4f52751.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)한미석유 서초주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 서초동 1582-23<br>
+        서울 서초구 반포대로 64 (서초동)<br>
+        > <b>가격: 1,955 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d58e741e8c942b3d9829b095ddae858 = L.marker(
+                [37.48652779370683, 127.00992555707809],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_7d58e741e8c942b3d9829b095ddae858.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서초꽃마을주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 서초동 1536-15<br>
+        서울 서초구 반포대로 69 (서초동)<br>
+        > <b>가격: 1,965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4def8be0b90af50ed57bbb26991c31e6 = L.marker(
+                [37.47358289549199, 127.03973842887393],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_4def8be0b90af50ed57bbb26991c31e6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 양재현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 서초구 양재동 249-1<br>
+        서울 서초구 마방로 6<br>
+        > <b>가격: 1,973 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9996eb13041c3cc11ae25ea0a31070f8 = L.marker(
+                [37.47808450744399, 127.03953407552308],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_9996eb13041c3cc11ae25ea0a31070f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>양재주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서초구 양재동 81<br>
+        서울 서초구 바우뫼로 178<br>
+        > <b>가격: 1,973 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4abf71f4a05bd60cf56302061952dbb = L.marker(
+                [37.48257930321922, 127.01852201969501],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_c4abf71f4a05bd60cf56302061952dbb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성석유(주)연일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 서초구 서초동 1426-13<br>
+        서울 서초구 남부순환로 2451<br>
+        > <b>가격: 1,996 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f132a93d0729b220bf0f64ccfb9b92c9 = L.marker(
+                [37.47811590614163, 126.98777415660432],
+                {}
+            ).addTo(map_e65fcc0c79359131e42d1a6c116d2b94);
+        
+    
+            marker_f132a93d0729b220bf0f64ccfb9b92c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>방배동주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 서초구 방배동 475-17<br>
+        서울 서초구 효령로 29 (방배동)<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

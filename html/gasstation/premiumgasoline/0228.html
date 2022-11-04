@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ada5eda0b9ac12166bcd7318922c390 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4ada5eda0b9ac12166bcd7318922c390" ></div>
+        
+</body>
+<script>    
+    
+            var map_4ada5eda0b9ac12166bcd7318922c390 = L.map(
+                "map_4ada5eda0b9ac12166bcd7318922c390",
+                {
+                    center: [37.39162145775296, 127.26838347361863],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_084068fe08f29f35e7de7d093048cc78 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            var locate_control_bb5dcdfcb83d734a19dd29ca89c07ce8 = L.control.locate(
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+            
+        
+    
+            var marker_5a6013c5e160c7d42f68786367c8be88 = L.marker(
+                [37.363361364778406, 127.314124268208],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_5a6013c5e160c7d42f68786367c8be88.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대기주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광주시 초월읍 산이리 79-2<br>
+        경기 광주시 초월읍 경충대로 898<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ccde10f35f67fc3654078f2376863c0 = L.marker(
+                [37.36010453202043, 127.15694160636279],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_8ccde10f35f67fc3654078f2376863c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한신주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 오포읍 신현리 668-4<br>
+        경기 광주시 오포읍 신현로 90<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29f5749e426311b1bd73c506c8c608aa = L.marker(
+                [37.46833747532689, 127.33198000872679],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_29f5749e426311b1bd73c506c8c608aa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주)직영 SK퇴촌주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 퇴촌면 도수리 266-9<br>
+        경기 광주시 퇴촌면 정영로 378<br>
+        > <b>가격: 1,949 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac3e1e8a5e5b978fe76f94f93656fb1a = L.marker(
+                [37.434171221832656, 127.26205428749856],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_ac3e1e8a5e5b978fe76f94f93656fb1a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서민주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 송정동 462-1<br>
+        경기 광주시 회안대로 993 (송정동)<br>
+        > <b>가격: 1,994 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9e6a047379f140d42420132ea57815b3 = L.marker(
+                [37.39479581932396, 127.31333029580063],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_9e6a047379f140d42420132ea57815b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두월self주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 초월읍 신월리 650-5<br>
+        경기 광주시 초월읍 산수로 378<br>
+        > <b>가격: 1,995 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a0cd7d30aa4e77d3c7068232bf49469a = L.marker(
+                [37.34895758678238, 127.34571793272356],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_a0cd7d30aa4e77d3c7068232bf49469a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 곤지암현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광주시 곤지암읍 곤지암리 341-9<br>
+        경기 광주시 곤지암읍 경충대로 567<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1dc1bbd21ad6780e697c02f24698a2a3 = L.marker(
+                [37.40375586545852, 127.26870005783991],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_1dc1bbd21ad6780e697c02f24698a2a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 새광주셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광주시 쌍령동 113-8<br>
+        경기 광주시 경충대로 1515 (쌍령동)<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fcbd36e94e7bffdb7fa28f0dd8a12ce7 = L.marker(
+                [37.359487796500446, 127.15421933178874],
+                {}
+            ).addTo(map_4ada5eda0b9ac12166bcd7318922c390);
+        
+    
+            marker_fcbd36e94e7bffdb7fa28f0dd8a12ce7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 분당현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 광주시 오포읍 신현리 701-7<br>
+        경기 광주시 오포읍 태재로 47<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

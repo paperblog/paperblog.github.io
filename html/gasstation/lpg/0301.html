@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da9f9d27b986fa2aa632cbc1cf40d843 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_da9f9d27b986fa2aa632cbc1cf40d843" ></div>
+        
+</body>
+<script>    
+    
+            var map_da9f9d27b986fa2aa632cbc1cf40d843 = L.map(
+                "map_da9f9d27b986fa2aa632cbc1cf40d843",
+                {
+                    center: [37.86908671954529, 127.71938434435204],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8e277d423789f4d45479faf66111309 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            var locate_control_77799a789298c2f9e3c3e2e69cfd608b = L.control.locate(
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+            
+        
+    
+            var marker_c12e12c267bde2b6e4735e958ba09fc3 = L.marker(
+                [37.82706269266187, 127.62021035030715],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_c12e12c267bde2b6e4735e958ba09fc3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강촌가스충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 춘천시 서면 당림리 318-2<br>
+        강원 춘천시 서면 경춘로 1014<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9659b61b298ae9957c557054aa6ebeab = L.marker(
+                [37.83439198027283, 127.59374089635914],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_9659b61b298ae9957c557054aa6ebeab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 안보충전소</b><br>
+        <b>SK가스</b><br>
+        강원 춘천시 서면 안보리 63-1<br>
+        강원 춘천시 서면 경춘로 751<br>
+        > <b>가격: 1,027 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54796255f7a0042d5fc5181ea360b5b3 = L.marker(
+                [37.84797902593689, 127.7715243943446],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_54796255f7a0042d5fc5181ea360b5b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>IOZEN(이오젠)</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 동내면 고은리 537-1<br>
+        강원 춘천시 동내면 순환대로 758<br>
+        > <b>가격: 1,041 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cee6e2d6791844c0544387eaea60965f = L.marker(
+                [37.82313074431607, 127.69477645577253],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_cee6e2d6791844c0544387eaea60965f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)중부에너지 GS신동주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 신동면 팔미리 861-112<br>
+        강원 춘천시 신동면 경춘로 1757<br>
+        > <b>가격: 1,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b16c5f4ffadbf3c4758b575928eeeca3 = L.marker(
+                [37.84799213449879, 127.71447001025565],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_b16c5f4ffadbf3c4758b575928eeeca3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 춘천터미널충전소</b><br>
+        <b>SK가스</b><br>
+        강원 춘천시 온의동 495<br>
+        강원 춘천시 경춘로 2167 (온의동)<br>
+        > <b>가격: 1,054 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd3fca9991585d8c43d28eec8541a969 = L.marker(
+                [38.04541060094213, 127.64506948798864],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_dd3fca9991585d8c43d28eec8541a969.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘성고려LPG충천소</b><br>
+        <b>E1</b><br>
+        강원 춘천시 사북면 지촌1리 94-8<br>
+        강원 춘천시 사북면 영서로 4905<br>
+        > <b>가격: 1,055 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_535c6f08c33376497a345757d44f6a8a = L.marker(
+                [37.918676671963105, 127.72157986438029],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_535c6f08c33376497a345757d44f6a8a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘천호반LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 사농동 707-2<br>
+        강원 춘천시 영서로 2986<br>
+        > <b>가격: 1,059 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7fb4f8828f6d7ab7afa19e408192302c = L.marker(
+                [37.87604869793032, 127.7719031645552],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_7fb4f8828f6d7ab7afa19e408192302c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 엔탑에너지</b><br>
+        <b>SK가스</b><br>
+        강원 춘천시 동면 만천리 505<br>
+        강원 춘천시 동면 한솔만천로 3<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_68c73ff1aa8020b5d9c8542751cde5e7 = L.marker(
+                [37.87844332267116, 127.76169912384313],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_68c73ff1aa8020b5d9c8542751cde5e7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘천오렌지충전소</b><br>
+        <b>E1</b><br>
+        강원 춘천시 동면 만천리 898-3<br>
+        강원 춘천시 동면 후만로 158<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0d8f9e5e1122a476c7680a1a39b8a6f7 = L.marker(
+                [37.80466452819473, 127.70840150798999],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_0d8f9e5e1122a476c7680a1a39b8a6f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유정주유소충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 신동면 증리 179-11<br>
+        강원 춘천시 신동면 한치로 966-176<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3ab48da985a72affae1346c11ccc2357 = L.marker(
+                [37.84295050450269, 127.75931527909114],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_3ab48da985a72affae1346c11ccc2357.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 동내면 학곡리 422<br>
+        강원 춘천시 동내면 영서로 1864<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d3f06a584cd9aa464a946b701580e6a = L.marker(
+                [37.860046442262174, 127.71706617617565],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_5d3f06a584cd9aa464a946b701580e6a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘천LPG충전소</b><br>
+        <b>E1</b><br>
+        강원 춘천시 온의동 308-1<br>
+        강원 춘천시 경춘로 2307<br>
+        > <b>가격: 1,076 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78d84b53a1e00d3bdb7ec16966c2ec6f = L.marker(
+                [37.863921029331514, 127.70655539920952],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_78d84b53a1e00d3bdb7ec16966c2ec6f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘천개인택시가스충전소</b><br>
+        <b>E1</b><br>
+        강원 춘천시 삼천동 768<br>
+        강원 춘천시 옛경춘로 743 (삼천동)<br>
+        > <b>가격: 1,077 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a8f3c92f0efdad88046ed1bae9187e6 = L.marker(
+                [37.89602809435378, 127.76183489432019],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_6a8f3c92f0efdad88046ed1bae9187e6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경춘가스충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 춘천시 동면 장학리 225-1<br>
+        강원 춘천시 동면 춘천로 523<br>
+        > <b>가격: 1,079 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8d76c6502e566b58794ccb182acc2b47 = L.marker(
+                [37.839483851999596, 127.73267895334605],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_8d76c6502e566b58794ccb182acc2b47.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남춘천충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 신동면 정족리 707-5<br>
+        강원 춘천시 신동면 김유정로 1702<br>
+        > <b>가격: 1,081 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c88fb69c7d0d3ed7ce3bc8c7effbca1c = L.marker(
+                [37.891887613162254, 127.72177713934366],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_c88fb69c7d0d3ed7ce3bc8c7effbca1c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>NS에너지(주)춘천충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 근화동 794-1<br>
+        강원 춘천시 공지로 681<br>
+        > <b>가격: 1,082 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_426e89d30bbee005b8394ac821d22e05 = L.marker(
+                [37.88316459537181, 127.74855355182096],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_426e89d30bbee005b8394ac821d22e05.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 동보충전소</b><br>
+        <b>SK가스</b><br>
+        강원 춘천시 후평동 726-5<br>
+        강원 춘천시 춘천로 331<br>
+        > <b>가격: 1,082 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b486ced082f39a71242aa8811344914 = L.marker(
+                [37.811965336622926, 127.7669238923123],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_9b486ced082f39a71242aa8811344914.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원일유통 춘천</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 동내면 사암리 123-2<br>
+        강원 춘천시 동내면 영서로 1432 춘천휴게소(내)SK주유소<br>
+        > <b>가격: 1,094 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_92c278790cc435386d529f97c1d7173b = L.marker(
+                [37.91939980436591, 127.75022200127337],
+                {}
+            ).addTo(map_da9f9d27b986fa2aa632cbc1cf40d843);
+        
+    
+            marker_92c278790cc435386d529f97c1d7173b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장학충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 춘천시 동면 장학리 447-4<br>
+        강원 춘천시 동면 춘천순환로 913<br>
+        > <b>가격: 1,120 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

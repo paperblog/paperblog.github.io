@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e3aec72f611bb9f52c85ecb02dca96ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e3aec72f611bb9f52c85ecb02dca96ce" ></div>
+        
+</body>
+<script>    
+    
+            var map_e3aec72f611bb9f52c85ecb02dca96ce = L.map(
+                "map_e3aec72f611bb9f52c85ecb02dca96ce",
+                {
+                    center: [35.313509570076086, 126.78247757223009],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daaa8b9a99a3bf5cd751b735dd21784a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            var locate_control_99cf75085bce24b5082fd5cf3658650e = L.control.locate(
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+            
+        
+    
+            var marker_da158047682fb88ecb6eecf559f1b9ec = L.marker(
+                [35.23781063782137, 126.82265284885199],
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            marker_da158047682fb88ecb6eecf559f1b9ec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한길에너지 첨단LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        전남 장성군 남면 삼태리 521-26<br>
+        전남 장성군 남면 하서대로 66<br>
+        > <b>가격: 965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a1a9f3e7a62f4c1992873676e387c9f = L.marker(
+                [35.237057527739935, 126.68458838866252],
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            marker_8a1a9f3e7a62f4c1992873676e387c9f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 상무대엘피지충전소</b><br>
+        <b>SK가스</b><br>
+        전남 장성군 삼서면 두월리 872-5<br>
+        전남 장성군 삼서면 영장로 1910<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5a9d29338356a224b51698de103631d = L.marker(
+                [35.305316939340045, 126.79222081401478],
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            marker_e5a9d29338356a224b51698de103631d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백제가스</b><br>
+        <b>GS칼텍스</b><br>
+        전남 장성군 장성읍 영천리 1496-1<br>
+        전남 장성군 장성읍 방울샘길 29<br>
+        > <b>가격: 1,050 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b7e1112c246e7541703178c29fd19159 = L.marker(
+                [35.393341386932526, 126.80588929739092],
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            marker_b7e1112c246e7541703178c29fd19159.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백양사(순천)주유소/충전소</b><br>
+        <b>E1</b><br>
+        전남 장성군 북일면 박산리 산68-3<br>
+        전남 장성군 북이면 호남고속도로 107-1<br>
+        > <b>가격: 1,075 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9ca28b033721e0e57c23c8f8684785c = L.marker(
+                [35.394021358546546, 126.80703651223027],
+                {}
+            ).addTo(map_e3aec72f611bb9f52c85ecb02dca96ce);
+        
+    
+            marker_d9ca28b033721e0e57c23c8f8684785c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국도로공사 백양사(논산)주유소/충전소</b><br>
+        <b>E1</b><br>
+        전남 장성군 북일면 박산리 156-4<br>
+        전남 장성군 북일면 박산리 호남고속도로 108-1<br>
+        > <b>가격: 1,107 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

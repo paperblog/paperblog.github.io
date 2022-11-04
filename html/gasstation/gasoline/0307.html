@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_760a4357f1c9cc148846dacdf04d0837 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_760a4357f1c9cc148846dacdf04d0837" ></div>
+        
+</body>
+<script>    
+    
+            var map_760a4357f1c9cc148846dacdf04d0837 = L.map(
+                "map_760a4357f1c9cc148846dacdf04d0837",
+                {
+                    center: [37.33486514809838, 129.13905750971978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1d1f9ca166aeea25fa33288f212a26e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            var locate_control_3739aea9f2d8014c4851aecfd776073d = L.control.locate(
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+            
+        
+    
+            var marker_2e840c06015ab655a5d44709b4356877 = L.marker(
+                [37.356391075597436, 128.92580026130258],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_2e840c06015ab655a5d44709b4356877.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼척농협하장지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 삼척시 하장면 장전리 83-2<br>
+        강원 삼척시 하장면 백두대간로 2689<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e2824922598974f22b140fa289646a6d = L.marker(
+                [37.439370027090376, 129.18012359794417],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_e2824922598974f22b140fa289646a6d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼척현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 삼척시 정상동 289-2<br>
+        강원 삼척시 동해대로 4011<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b4012144f7ef3ac33628100f106e2768 = L.marker(
+                [37.45429938927791, 129.17607024902767],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_b4012144f7ef3ac33628100f106e2768.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>알파에쓰오일 삼척주유소(주)</b><br>
+        <b>S-OIL</b><br>
+        강원 삼척시 교동 98-1<br>
+        강원 삼척시 동해대로 4190<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ff70eb124680eb79af029efe4f71cb6 = L.marker(
+                [37.45782100817744, 129.16440421630548],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_6ff70eb124680eb79af029efe4f71cb6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼척농협주유소/충전소</b><br>
+        <b>농협알뜰</b><br>
+        강원 삼척시 갈천동 81-5<br>
+        강원 삼척시 동해대로 4298 (갈천동)<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_12c2aed36ab1c83e30517eee20f54ec7 = L.marker(
+                [37.26201635778398, 129.0608436509896],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_12c2aed36ab1c83e30517eee20f54ec7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도계농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 삼척시 도계읍 늑구리 68-2<br>
+        강원 삼척시 도계읍 강원남부로 1818<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bd72602bc00eda74e3f1864f570d2485 = L.marker(
+                [37.2429841489732, 129.0468165030078],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_bd72602bc00eda74e3f1864f570d2485.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도계주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 도계읍 마교리 255-4<br>
+        강원 삼척시 도계읍 강원남부로 1560<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a257bee8ca29f2853664ee11bdee802 = L.marker(
+                [37.252402188367476, 129.05471700429953],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_6a257bee8ca29f2853664ee11bdee802.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우창주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 도계읍 마교리 161<br>
+        강원 삼척시 도계읍 강원남부로 1696<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b138365f347ca4b15c875614e961ee4 = L.marker(
+                [37.22354427603786, 129.04166295525508],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_5b138365f347ca4b15c875614e961ee4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 도계읍 전두리 140<br>
+        강원 삼척시 도계읍 강원남부로 1332<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6330c4961f88468210745ee138a44597 = L.marker(
+                [37.41310645898144, 129.11123780171076],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_6330c4961f88468210745ee138a44597.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소(주)</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 미로면 하거노리 375-5<br>
+        강원 삼척시 미로면 강원남부로 3967<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c14dda2aeebdb0c466d0f27d7b4b8c3 = L.marker(
+                [37.27243050914986, 129.17867778372707],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_9c14dda2aeebdb0c466d0f27d7b4b8c3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼척주유할인마트</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 노곡면 중마읍리123-1<br>
+        강원 삼척시 노곡면 문의재로 2546<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_041dbfed01694a195b3697adbd255ce6 = L.marker(
+                [37.445603478512446, 129.17886095756955],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_041dbfed01694a195b3697adbd255ce6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우성주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 정상동 350-3<br>
+        강원 삼척시 동해대로 4088 (정상동)<br>
+        > <b>가격: 1,700 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c5803a2229e988352e88a6851719bcaa = L.marker(
+                [37.33336928412711, 129.24620602899452],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_c5803a2229e988352e88a6851719bcaa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대진주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 삼척시 근덕면 동막리 343-8<br>
+        강원 삼척시 근덕면 삼척로 3071<br>
+        > <b>가격: 1,710 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52e2b7b23be5a5016d6661fed350fe4c = L.marker(
+                [37.32106116258635, 129.07551988137462],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_52e2b7b23be5a5016d6661fed350fe4c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성MDI(주)삼척주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 삼척시 신기면 마차리 154<br>
+        강원 삼척시 신기면 강원남부로 2620<br>
+        > <b>가격: 1,710 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_246f86d936f9b28be0ef00720f57fdd2 = L.marker(
+                [37.16593433071489, 129.3289980014658],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_246f86d936f9b28be0ef00720f57fdd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원덕농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 삼척시 원덕읍 노경리 718-10<br>
+        강원 삼척시 원덕읍 가곡천로 3021<br>
+        > <b>가격: 1,710 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_64a7402d66a74cca34f46eec37cc9f74 = L.marker(
+                [37.35019566340475, 128.93819843090802],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_64a7402d66a74cca34f46eec37cc9f74.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하장주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 삼척시 하장면 153-3<br>
+        강원 삼척시 하장면 백두대간로 2564<br>
+        > <b>가격: 1,710 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54396bc5246c27da9df3fb162c9e4e50 = L.marker(
+                [37.352863157060696, 129.08554638031362],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_54396bc5246c27da9df3fb162c9e4e50.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용천주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 삼척시 신기면 신기리 394-1<br>
+        강원 삼척시 신기면 강원남부로 3038<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30a362a5150a9e1e11633cdc2659474c = L.marker(
+                [37.44777532917516, 129.16703978402285],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_30a362a5150a9e1e11633cdc2659474c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시청앞주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 삼척시 당저동 28-2<br>
+        강원 삼척시 교동로 40 (당저동)<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4055fde60e9692e6cfd941b167e23d25 = L.marker(
+                [37.28712240480748, 129.30708303363699],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_4055fde60e9692e6cfd941b167e23d25.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장호주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 근덕면 장호리 325<br>
+        강원 삼척시 근덕면 삼척로 2158<br>
+        > <b>가격: 1,730 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e68acf54e53c4b91d05a2de6ea847b37 = L.marker(
+                [37.42944376178912, 129.1828555289944],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_e68acf54e53c4b91d05a2de6ea847b37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원더풀주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 삼척시 오분동 126-3<br>
+        강원 삼척시 동해대로 3852 (오분동)<br>
+        > <b>가격: 1,740 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_53eef74e0513571b5a49d35da9179dcf = L.marker(
+                [37.18956895035275, 129.33048814354518],
+                {}
+            ).addTo(map_760a4357f1c9cc148846dacdf04d0837);
+        
+    
+            marker_53eef74e0513571b5a49d35da9179dcf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)남해토탈 삼척지점</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 삼척시 원덕읍 옥원리 33-1<br>
+        강원 삼척시 원덕읍 삼척로 634<br>
+        > <b>가격: 1,740 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

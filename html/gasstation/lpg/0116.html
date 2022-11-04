@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc6f96f45132f0072ef65c6b16f45e4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fc6f96f45132f0072ef65c6b16f45e4f" ></div>
+        
+</body>
+<script>    
+    
+            var map_fc6f96f45132f0072ef65c6b16f45e4f = L.map(
+                "map_fc6f96f45132f0072ef65c6b16f45e4f",
+                {
+                    center: [37.49647417427557, 126.86152157753263],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_059ef4d1bb155d0b7d3611b2c6c8335f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            var locate_control_fc819d9b5c12ef5e2b9de7d8c7f19920 = L.control.locate(
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+            
+        
+    
+            var marker_08820801b6105461da22c5dfdfff142f = L.marker(
+                [37.4927429666233, 126.83808935427298],
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            marker_08820801b6105461da22c5dfdfff142f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)오류동충전소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 구로구 오류동 74-8<br>
+        서울 구로구 경인로8길 31<br>
+        > <b>가격: 1,082 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d5cd6fc5a68a7cf054ec50ffe4d38494 = L.marker(
+                [37.50699889946366, 126.8291030858023],
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            marker_d5cd6fc5a68a7cf054ec50ffe4d38494.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 궁동충전소</b><br>
+        <b>SK가스</b><br>
+        서울 구로구 궁동 1-16<br>
+        서울 구로구 신정로 59 (궁동)<br>
+        > <b>가격: 1,091 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a23ca4aa866d343b6d1963c78ccf6de4 = L.marker(
+                [37.4964579489887, 126.86059306805171],
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            marker_a23ca4aa866d343b6d1963c78ccf6de4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 개봉충전소</b><br>
+        <b>SK가스</b><br>
+        서울 구로구 개봉동 175-16<br>
+        서울 구로구 경인로 364 (개봉동)<br>
+        > <b>가격: 1,091 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_354ffc37d1ee017c882c2bea4a07d9c8 = L.marker(
+                [37.48428965973814, 126.90207110089008],
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            marker_354ffc37d1ee017c882c2bea4a07d9c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일석유(주)남부</b><br>
+        <b>SK에너지</b><br>
+        서울 구로구 구로동 1123-2<br>
+        서울 구로구 시흥대로 573 (구로동)<br>
+        > <b>가격: 1,091 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce8933fc60d752b511652dc0b90a53ff = L.marker(
+                [37.501881396564045, 126.87775127864614],
+                {}
+            ).addTo(map_fc6f96f45132f0072ef65c6b16f45e4f);
+        
+    
+            marker_ce8933fc60d752b511652dc0b90a53ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 한일가스산업충전소</b><br>
+        <b>SK가스</b><br>
+        서울 구로구 구로본동 600-6<br>
+        서울 구로구 경인로 537 (구로동)<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

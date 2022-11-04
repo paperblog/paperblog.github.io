@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b533f6f69af4f1510e9ef57d1d55c59e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b533f6f69af4f1510e9ef57d1d55c59e" ></div>
+        
+</body>
+<script>    
+    
+            var map_b533f6f69af4f1510e9ef57d1d55c59e = L.map(
+                "map_b533f6f69af4f1510e9ef57d1d55c59e",
+                {
+                    center: [37.5532502818586, 127.0781266585957],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3bb9357cf4e019e750d9a9d5d496ece = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b533f6f69af4f1510e9ef57d1d55c59e);
+        
+    
+            var locate_control_d5f8fe3b777266dc60afa266693788d3 = L.control.locate(
+                {}
+            ).addTo(map_b533f6f69af4f1510e9ef57d1d55c59e);
+            
+        
+    
+            var marker_1bb4d3ab1e1ece6a6f67cef4686a3e0a = L.marker(
+                [37.56009504875627, 127.07370585793758],
+                {}
+            ).addTo(map_b533f6f69af4f1510e9ef57d1d55c59e);
+        
+    
+            marker_1bb4d3ab1e1ece6a6f67cef4686a3e0a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중곡충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 중곡동611-7<br>
+        서울 광진구 동일로 323 (중곡동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3131fc7d95833155f62b7320a9295275 = L.marker(
+                [37.564961868620465, 127.07661817202447],
+                {}
+            ).addTo(map_b533f6f69af4f1510e9ef57d1d55c59e);
+        
+    
+            marker_3131fc7d95833155f62b7320a9295275.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한양에너지(주)충전소</b><br>
+        <b>SK에너지</b><br>
+        서울 광진구 중곡동 237-8<br>
+        서울 광진구 동일로 381 (중곡동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e659173c4c7dad9855cc34c7c334e4de = L.marker(
+                [37.53469392819909, 127.08405594582507],
+                {}
+            ).addTo(map_b533f6f69af4f1510e9ef57d1d55c59e);
+        
+    
+            marker_e659173c4c7dad9855cc34c7c334e4de.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)해양가스</b><br>
+        <b>SK에너지</b><br>
+        서울 광진구 자양동 628-19<br>
+        서울특별시 광진구 자양로 77 (자양동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

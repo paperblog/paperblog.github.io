@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_76d4d1b04fb3714786c85970287519ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_76d4d1b04fb3714786c85970287519ba" ></div>
+        
+</body>
+<script>    
+    
+            var map_76d4d1b04fb3714786c85970287519ba = L.map(
+                "map_76d4d1b04fb3714786c85970287519ba",
+                {
+                    center: [36.398285289559155, 127.41701817295419],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb8ff658e16de1d745d90db08336cf2c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            var locate_control_234bdb37d0ac4ac5595a295acf8fd403 = L.control.locate(
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+            
+        
+    
+            var marker_ffd2412295ba3277afac9553b67acba5 = L.marker(
+                [36.44318228668164, 127.42894498398861],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_ffd2412295ba3277afac9553b67acba5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시온가스충전소</b><br>
+        <b>자가상표</b><br>
+        대전 대덕구 신탄진동 294-5<br>
+        대전 대덕구 신탄진로 737 (신탄진동)<br>
+        > <b>가격: 948 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c850923f3bc2988547ef6c468a5819c = L.marker(
+                [36.436193607614314, 127.42592673956713],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_4c850923f3bc2988547ef6c468a5819c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대덕밸리LPG충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 대덕구 평촌동 226-5<br>
+        대전 대덕구 신탄진로 650<br>
+        > <b>가격: 948 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81839b1e89a43743088e54149cd3b1f4 = L.marker(
+                [36.42528158527089, 127.42044959226344],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_81839b1e89a43743088e54149cd3b1f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신탄진충전소</b><br>
+        <b>SK에너지</b><br>
+        대전 대덕구 상서동 349-12<br>
+        대전 대덕구 신탄진로 520<br>
+        > <b>가격: 948 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ea25564a5837fd38a725963214a9a49e = L.marker(
+                [36.42250224378895, 127.41988909080935],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_ea25564a5837fd38a725963214a9a49e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상서충전소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 대덕구 상서동 440<br>
+        대전 대덕구 신탄진로 484<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e0c3902bcacc3d6e60b02ce0dd3c8a2 = L.marker(
+                [36.42240469099977, 127.41900238686192],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_0e0c3902bcacc3d6e60b02ce0dd3c8a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)중앙그린에너지2호점</b><br>
+        <b>GS칼텍스</b><br>
+        대전 대덕구 상서동 441<br>
+        대전 대덕구 신탄진로 485<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59bf90b2ba77de9eb4f878d4a782aa8f = L.marker(
+                [36.39123920697384, 127.41259429116731],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_59bf90b2ba77de9eb4f878d4a782aa8f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>회덕IC충전소</b><br>
+        <b>S-OIL</b><br>
+        대전 대덕구 신대동 433-2<br>
+        대전 대덕구 갑천도시고속도로 1084<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1c5f5cca6b520873c0fabc4a3e04df81 = L.marker(
+                [36.39277425725187, 127.41360539595195],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_1c5f5cca6b520873c0fabc4a3e04df81.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>갑천(상)LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 대덕구 신대동 426<br>
+        대전 대덕구 아리랑로55번길 187<br>
+        > <b>가격: 969 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c8bd1b51a2023e5602efd3ad1af9d589 = L.marker(
+                [36.38742918413896, 127.4225504404185],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_c8bd1b51a2023e5602efd3ad1af9d589.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우성LPG충전소</b><br>
+        <b>E1</b><br>
+        대전 대덕구 연축동 294-2<br>
+        대전 대덕구 신탄진로 71<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9dc55d7b0aacb30fa3e2c992ea41caa9 = L.marker(
+                [36.37691714115724, 127.4121961676774],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_9dc55d7b0aacb30fa3e2c992ea41caa9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대화공단LPG충전소</b><br>
+        <b>SK가스</b><br>
+        대전 대덕구 읍내동 511<br>
+        대전 대덕구 아리랑로 63 (읍내동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cb75e59f67c831098c405732f895637 = L.marker(
+                [36.36403248175068, 127.41881766130571],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_3cb75e59f67c831098c405732f895637.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>알파앤에너지(주)대화충전소</b><br>
+        <b>E1</b><br>
+        대전 대덕구 대화동 16-140<br>
+        대전 대덕구 대전로 1238 (대화동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa1a74ed53ac77c002d65c328ecf2e08 = L.marker(
+                [36.36884174686235, 127.41898547264466],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_aa1a74ed53ac77c002d65c328ecf2e08.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대전LPG충전소</b><br>
+        <b>E1</b><br>
+        대전 대덕구 대화동 3-1<br>
+        대전 대덕구 대화로50번길 90 (대화동)<br>
+        > <b>가격: 1,021 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_066a38287c9dc929464c68911bdf0a9a = L.marker(
+                [36.44561084592137, 127.40638778687241],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_066a38287c9dc929464c68911bdf0a9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공단LPG충전소</b><br>
+        <b>E1</b><br>
+        대전 대덕구 신일동 1684-1<br>
+        대전 대덕구 대덕대로 1408 (신일동)<br>
+        > <b>가격: 1,022 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8673170096890a51c6fdf8a6e8bee527 = L.marker(
+                [36.34856131696894, 127.41943885314578],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_8673170096890a51c6fdf8a6e8bee527.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정민가스충전소</b><br>
+        <b>SK가스</b><br>
+        대전 대덕구 오정동 478-5<br>
+         대전 대덕구 대전로1020번길 47<br>
+        > <b>가격: 1,042 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_104057b042b0a1510fcd301aaecd898f = L.marker(
+                [36.35322961478897, 127.41569409079922],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_104057b042b0a1510fcd301aaecd898f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대전개인택시동대전충전소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 대덕구 오정동 432-1<br>
+        대전 대덕구 대전로 1108 (오정동)<br>
+        > <b>가격: 1,044 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_baea755db012c6f7fc29a07b31bb2dbe = L.marker(
+                [36.36438041602931, 127.39976518956884],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_baea755db012c6f7fc29a07b31bb2dbe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대덕충전소</b><br>
+        <b>SK가스</b><br>
+        대전 대덕구 대화동 549-16<br>
+        대전 대덕구 대전로1331번길 460 (대화동)<br>
+        > <b>가격: 1,044 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0131971bb9425c79b25feb5ee3a904b = L.marker(
+                [36.42998400674745, 127.41804262422455],
+                {}
+            ).addTo(map_76d4d1b04fb3714786c85970287519ba);
+        
+    
+            marker_b0131971bb9425c79b25feb5ee3a904b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신탄진(상)주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        대전 대덕구 상서동 236-1<br>
+        대전 대덕구 산업단지로 27<br>
+        > <b>가격: 1,125 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

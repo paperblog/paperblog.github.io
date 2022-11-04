@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e55c7fb1c533bd8177c2bdd9aa63eea8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e55c7fb1c533bd8177c2bdd9aa63eea8" ></div>
+        
+</body>
+<script>    
+    
+            var map_e55c7fb1c533bd8177c2bdd9aa63eea8 = L.map(
+                "map_e55c7fb1c533bd8177c2bdd9aa63eea8",
+                {
+                    center: [37.496407434298284, 130.87240708218994],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb87d184ae1ffc4c1c7c2022d7f9fd3f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e55c7fb1c533bd8177c2bdd9aa63eea8);
+        
+    
+            var locate_control_d38b6af7d37c35eaa1c7e6274493be46 = L.control.locate(
+                {}
+            ).addTo(map_e55c7fb1c533bd8177c2bdd9aa63eea8);
+            
+        
+    
+            var marker_e720f440a73604275dc45a6784ad7f94 = L.marker(
+                [37.48959483139235, 130.9044876327464],
+                {}
+            ).addTo(map_e55c7fb1c533bd8177c2bdd9aa63eea8);
+        
+    
+            marker_e720f440a73604275dc45a6784ad7f94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울릉주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 울릉군 울릉읍 도동리 412-13<br>
+        경북 울릉군 울릉읍 울릉순환로 296<br>
+        > <b>가격: 1,989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0c0fae86885ce7e3a2d52d42838d45c5 = L.marker(
+                [37.51194985605623, 130.8105020458473],
+                {}
+            ).addTo(map_e55c7fb1c533bd8177c2bdd9aa63eea8);
+        
+    
+            marker_0c0fae86885ce7e3a2d52d42838d45c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>독도주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 울릉군 서면 태하리 219-3<br>
+        경북 울릉군 서면 태하리 울릉순환로 2150<br>
+        > <b>가격: 1,989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4728a0ffb369629aa7bb961369b7a3b1 = L.marker(
+                [37.48767761544627, 130.90223156797603],
+                {}
+            ).addTo(map_e55c7fb1c533bd8177c2bdd9aa63eea8);
+        
+    
+            marker_4728a0ffb369629aa7bb961369b7a3b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울릉수협주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 울릉군 울릉읍 도동리 240-2<br>
+        경북 울릉군 울릉읍 울릉순환로 352<br>
+        > <b>가격: 1,989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

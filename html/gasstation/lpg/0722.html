@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b94dd0c8febdc4790463880d1270572 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0b94dd0c8febdc4790463880d1270572" ></div>
+        
+</body>
+<script>    
+    
+            var map_0b94dd0c8febdc4790463880d1270572 = L.map(
+                "map_0b94dd0c8febdc4790463880d1270572",
+                {
+                    center: [35.283696133631366, 126.95695803116351],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_66eacc39a8b93daecd5ef5b4e23f8a7b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+        
+    
+            var locate_control_ffec17c7dc8a6b4cd1bb73ffdcc1275d = L.control.locate(
+                {}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+            
+        
+    
+            var marker_b2f76964681dd56afc34ee473b6f4083 = L.marker(
+                [35.28847404904232, 126.91365719294683],
+                {}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+        
+    
+            marker_b2f76964681dd56afc34ee473b6f4083.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스마일주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 담양군 대전면 성산리 308-38<br>
+        전남 담양군 대전면 추성로 571<br>
+        > <b>가격: 963 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c75929e00fd3b54d987c9a2d606d9183 = L.marker(
+                [35.22269651443286, 126.96815642728399],
+                {}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+        
+    
+            marker_c75929e00fd3b54d987c9a2d606d9183.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고서LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 담양군 고서면 보촌리 278-2<br>
+        전남 담양군 고서면 창평현로 141<br>
+        > <b>가격: 965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c9d7f9f64e08cc242d43072813fb812 = L.marker(
+                [35.31875376265088, 126.9646347416329],
+                {}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+        
+    
+            marker_3c9d7f9f64e08cc242d43072813fb812.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북광주LPG충전소</b><br>
+        <b>E1</b><br>
+        전남 담양군 담양읍 삼다리 54-6<br>
+        전남 담양군 담양읍 추성로 1155<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f496cb56130d1c7d0970314e864d5dbc = L.marker(
+                [35.3048602083994, 126.9813837627903],
+                {}
+            ).addTo(map_0b94dd0c8febdc4790463880d1270572);
+        
+    
+            marker_f496cb56130d1c7d0970314e864d5dbc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만재LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        전남 담양군 담양읍 백동리 412-3<br>
+        전남 담양군 담양읍 죽향대로 1110<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

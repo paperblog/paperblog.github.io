@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08e54619f3e988252469799c265e7472 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_08e54619f3e988252469799c265e7472" ></div>
+        
+</body>
+<script>    
+    
+            var map_08e54619f3e988252469799c265e7472 = L.map(
+                "map_08e54619f3e988252469799c265e7472",
+                {
+                    center: [37.55490267482476, 127.08438603835897],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eee312eba02ad5188f42bca755be73fa = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            var locate_control_7df3b5e063c3cccecda227b6bd87e3eb = L.control.locate(
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+            
+        
+    
+            var marker_f8817967b8b0b301fcdeed5864424b89 = L.marker(
+                [37.5656579557821, 127.07755756017514],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_f8817967b8b0b301fcdeed5864424b89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주) 중원셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 중곡동 235-2<br>
+        서울 광진구 동일로 398 (중곡동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_afbcf09e5ab83bea607f413ee28e2129 = L.marker(
+                [37.545132571242604, 127.08069636774046],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_afbcf09e5ab83bea607f413ee28e2129.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)창원CW</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 화양동 302-13<br>
+        서울 광진구 광나루로 460 (화양동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_607c57b25b79ae9eeeee5282b490ed83 = L.marker(
+                [37.55555783121629, 127.0824500090963],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_607c57b25b79ae9eeeee5282b490ed83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 능동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 능동 236-4<br>
+        서울 광진구 천호대로 584 (능동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_578c92fcad5b2497a566850a8d3a7f89 = L.marker(
+                [37.56934529604751, 127.079009857785],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_578c92fcad5b2497a566850a8d3a7f89.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 중곡현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 중곡동 186-6<br>
+        서울 광진구 동일로 435 (중곡동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2e082a7d4f71a8a990aa92aca319d36 = L.marker(
+                [37.56748113535335, 127.07799530555975],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_f2e082a7d4f71a8a990aa92aca319d36.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정해네트웍스(주)일진주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 광진구 중곡동 236-5<br>
+        서울 광진구 동일로 413 (중곡동)<br>
+        > <b>가격: 1,617 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_145c86909763a4d16f8b31d3278945b3 = L.marker(
+                [37.561842548149436, 127.07479354692771],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_145c86909763a4d16f8b31d3278945b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 광진구 중곡동 610-7<br>
+        서울 광진구 동일로 345 (중곡동)<br>
+        > <b>가격: 1,634 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa6df8b1eb9226ddc3ea67ff115bd610 = L.marker(
+                [37.55974203831421, 127.08786224232382],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_aa6df8b1eb9226ddc3ea67ff115bd610.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용마주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 광진구 중곡동 58-17<br>
+        서울 광진구 용마산로 68 (중곡동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7610f5cc8a70884352c5067268dd99d7 = L.marker(
+                [37.56454703189229, 127.08694561100543],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_7610f5cc8a70884352c5067268dd99d7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대원주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 광진구 중곡4동 18-70<br>
+        서울 광진구 용마산로 122 (중곡동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_129240976933668c65cd901d53df7aeb = L.marker(
+                [37.55505963508007, 127.0715225425796],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_129240976933668c65cd901d53df7aeb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)장수주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 광진구 군자동 134-53<br>
+        서울 광진구 동일로 266 (군자동)<br>
+        > <b>가격: 1,668 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eba9c5fc5473757c942993cc83e5b1c4 = L.marker(
+                [37.545658040766696, 127.10370783713098],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_eba9c5fc5473757c942993cc83e5b1c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼호주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 광진구 광장동 239-6<br>
+        서울 광진구 천호대로 809 (광장동)<br>
+        > <b>가격: 1,682 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd59b75d0f145a2f54cf7098ab48295b = L.marker(
+                [37.53780450696938, 127.09131634967288],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_fd59b75d0f145a2f54cf7098ab48295b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동서울주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 광진구 구의동 587-10<br>
+        서울 광진구 강변역로 10 (구의동)<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2448fd659da312cbd6a3d1de0fbb3244 = L.marker(
+                [37.53807780127263, 127.07591909123965],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_2448fd659da312cbd6a3d1de0fbb3244.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자양주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 광진구 자양동 227-4<br>
+        서울 광진구 아차산로 298 (자양동)<br>
+        > <b>가격: 1,758 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_331599a0d062fe8c9bae176552491221 = L.marker(
+                [37.54782838063534, 127.10724217742978],
+                {}
+            ).addTo(map_08e54619f3e988252469799c265e7472);
+        
+    
+            marker_331599a0d062fe8c9bae176552491221.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강평주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 광진구 광장동 336-8<br>
+        서울 광진구 아차산로 616 (광장동)<br>
+        > <b>가격: 1,798 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

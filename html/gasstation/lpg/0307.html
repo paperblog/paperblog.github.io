@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b3a081154eca55cb5c5b39dfa095b01 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9b3a081154eca55cb5c5b39dfa095b01" ></div>
+        
+</body>
+<script>    
+    
+            var map_9b3a081154eca55cb5c5b39dfa095b01 = L.map(
+                "map_9b3a081154eca55cb5c5b39dfa095b01",
+                {
+                    center: [37.409981382260824, 129.13912293399343],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07210620635c23c3415fef2a2447de11 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            var locate_control_71dc59abfa43b9e89b211f1cc7f26638 = L.control.locate(
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+            
+        
+    
+            var marker_d84869eaba28f080443c36e42faa0dde = L.marker(
+                [37.26051330018373, 129.06023256569588],
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            marker_d84869eaba28f080443c36e42faa0dde.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태극가스충전소</b><br>
+        <b>E1</b><br>
+        강원 삼척시 도계읍 늑구1리 70<br>
+        강원 삼척시 도계읍 강원남부로 1800<br>
+        > <b>가격: 1,062 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f616539bdc0f92599b6fb6e279e140ce = L.marker(
+                [37.4425815729115, 129.13066548209522],
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            marker_f616539bdc0f92599b6fb6e279e140ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼척LPG충전소</b><br>
+        <b>E1</b><br>
+        강원 삼척시 등봉동 11-2<br>
+        강원 삼척시 오십천로 91 (등봉동)<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fd5b18e022048529a2680bc6ff446a6b = L.marker(
+                [37.45782100817744, 129.16440421630548],
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            marker_fd5b18e022048529a2680bc6ff446a6b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼척농협주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        강원 삼척시 갈천동 81-5<br>
+        강원 삼척시 동해대로 4298 (갈천동)<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d0eae3bbc1f6461c0e23fab20d3e833 = L.marker(
+                [37.42944376178912, 129.1828555289944],
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            marker_5d0eae3bbc1f6461c0e23fab20d3e833.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원더풀주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        강원 삼척시 오분동 126-3<br>
+        강원 삼척시 동해대로 3852 (오분동)<br>
+        > <b>가격: 1,083 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c6a49e5575a9b7b271d7b12605130d18 = L.marker(
+                [37.459547268242346, 129.1574568768761],
+                {}
+            ).addTo(map_9b3a081154eca55cb5c5b39dfa095b01);
+        
+    
+            marker_c6a49e5575a9b7b271d7b12605130d18.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 삼척충전소</b><br>
+        <b>SK가스</b><br>
+        강원 삼척시 마달동 13-1<br>
+        강원 삼척시 마달길 4 (마달동)<br>
+        > <b>가격: 1,174 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

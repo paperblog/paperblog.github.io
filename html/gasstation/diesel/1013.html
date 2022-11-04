@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2cd2f6b1f920249437ec57d2ff271841 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2cd2f6b1f920249437ec57d2ff271841" ></div>
+        
+</body>
+<script>    
+    
+            var map_2cd2f6b1f920249437ec57d2ff271841 = L.map(
+                "map_2cd2f6b1f920249437ec57d2ff271841",
+                {
+                    center: [35.18637270725909, 129.08767489862404],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a1c19211d2b051ad96b22e40607dc421 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            var locate_control_55bfa76668b1ba1d3340235524aa53ad = L.control.locate(
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+            
+        
+    
+            var marker_b65985dce4841a777b4539f6ff5469ab = L.marker(
+                [35.183423718159496, 129.10735067056123],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_b65985dce4841a777b4539f6ff5469ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금천셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 연제구 연산9동 480-18<br>
+        부산 연제구 과정로 134 (연산동)<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79533edec773bb8a814c0095cf7e420b = L.marker(
+                [35.18213379301866, 129.10745392011071],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_79533edec773bb8a814c0095cf7e420b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주)부흥셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 연제구 연산동 489-14<br>
+        부산 연제구 과정로 120 (연산동)<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_16db2c6ad1a9de1c046118dac810cacf = L.marker(
+                [35.189809823988384, 129.0870034678926],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_16db2c6ad1a9de1c046118dac810cacf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에너지드림셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 연제구 연산동 589-2<br>
+        부산 연제구 반송로 68 (연산동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a718a078aca3c428ba13e64ea24c37b1 = L.marker(
+                [35.18580926715564, 129.08782848537362],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_a718a078aca3c428ba13e64ea24c37b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)좋은기름나라연산주유소지점</b><br>
+        <b>S-OIL</b><br>
+        부산 연제구 연산동 330-8<br>
+        부산 연제구 고분로 51 (연산동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93982cee9c1d265c228f68c54beb65c7 = L.marker(
+                [35.17722852121827, 129.06837983687362],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_93982cee9c1d265c228f68c54beb65c7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광동페트로㈜ 감사드림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 연제구 거제동 721-1<br>
+        부산 연제구 거제대로 98<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98d814e91926108d555dcacdbe69642c = L.marker(
+                [35.18001338380416, 129.06946523135395],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_98d814e91926108d555dcacdbe69642c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은마석유(주)아시아드주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 연제구 거제동 740-81<br>
+        부산 연제구  거제대로 130 (거제동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3e62322c8e19869b233edbd3ffa63735 = L.marker(
+                [35.19014789835042, 129.06991405833745],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_3e62322c8e19869b233edbd3ffa63735.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성학주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 연제구 거제동 1090-24<br>
+        부산 연제구 월드컵대로 249 (거제동)<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cc3e1cd2aba1cae2df3edf30c855395 = L.marker(
+                [35.189473950016826, 129.0919685633264],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_4cc3e1cd2aba1cae2df3edf30c855395.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 연제구 연산동 312-1<br>
+        부산 연제구 과정로 325 (연산동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_83ebf2c45fbf21262105d1bb39aa113c = L.marker(
+                [35.192801459981524, 129.0793763439709],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_83ebf2c45fbf21262105d1bb39aa113c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 연산셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 연제구 거제동 1-4<br>
+        부산 연제구 중앙대로 1179 (거제동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eee534ea6d311f43acb96ae14a01d6f3 = L.marker(
+                [35.189628804107606, 129.1074536308377],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_eee534ea6d311f43acb96ae14a01d6f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신한양주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 연제구 연산동 458-2<br>
+        부산 연제구 연안로 20 (연산동)<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f75bcb71ad5d0be4c460eb83b5816a8d = L.marker(
+                [35.19105706602836, 129.09984758725392],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_f75bcb71ad5d0be4c460eb83b5816a8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영웅주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 연제구 연산9동 386-1<br>
+        부산 연제구 온천천남로 86 (연산동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c1393c5997fa31ccfceace84a6468f5e = L.marker(
+                [35.18799661044311, 129.10473530826133],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_c1393c5997fa31ccfceace84a6468f5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신홀딩스㈜ 직영 토곡주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 연제구 연산동 401-30<br>
+        부산 연제구 과정로 208<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8318d9b12e55b3728776e1e34f2c400 = L.marker(
+                [35.193940133457474, 129.0662941319458],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_a8318d9b12e55b3728776e1e34f2c400.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 부산현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 연제구 거제동 891-2<br>
+        부산 연제구 아시아드대로 107 (거제동)<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8e7dcac230199bdabd5069c495db90fc = L.marker(
+                [35.175753471897345, 129.08037734463775],
+                {}
+            ).addTo(map_2cd2f6b1f920249437ec57d2ff271841);
+        
+    
+            marker_8e7dcac230199bdabd5069c495db90fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연제주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 연제구 연산2동 824-19<br>
+        부산 연제구 연수로 87<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

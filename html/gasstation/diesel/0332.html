@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1201e06bcb080058782066878969a2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f1201e06bcb080058782066878969a2e" ></div>
+        
+</body>
+<script>    
+    
+            var map_f1201e06bcb080058782066878969a2e = L.map(
+                "map_f1201e06bcb080058782066878969a2e",
+                {
+                    center: [38.33991255236856, 128.49091911610387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8cf84c8d8f3a759ba696103b4cab535a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            var locate_control_997a8dabe3a10262cd905ae8d0dda6ee = L.control.locate(
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+            
+        
+    
+            var marker_21e1571d4c402be50920a827f82da896 = L.marker(
+                [38.207068171000465, 128.49479112860655],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_21e1571d4c402be50920a827f82da896.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미시령관통도로주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 고성군 토성면 원암리 399-7<br>
+        강원 고성군 토성면 미시령로 2635<br>
+        > <b>가격: 1,864 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9bc57ac9d4816380be6e11bac0dcfe59 = L.marker(
+                [38.206482564461616, 128.50172723487302],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_9bc57ac9d4816380be6e11bac0dcfe59.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스타트주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 토성면 원암리 394-2<br>
+        강원 고성군 토성면 미시령로 2699<br>
+        > <b>가격: 1,877 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d7c732659c5edb20a9f3cc0e3455772c = L.marker(
+                [38.23074150306668, 128.5801038144779],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_d7c732659c5edb20a9f3cc0e3455772c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용촌주유소(주)</b><br>
+        <b>SK에너지</b><br>
+        강원 고성군 토성면 용촌리 67<br>
+        강원 고성군 토성면 중앙로 511<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b3d1b5c33d87ecce9d5f7c6acfb28ef7 = L.marker(
+                [38.22137020561387, 128.5637492188364],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_b3d1b5c33d87ecce9d5f7c6acfb28ef7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 토성면 용촌리 406-3<br>
+        강원 고성군 토성면 동해대로 4567<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ce29f323ae8e3a42f6834c065e7ae9a = L.marker(
+                [38.29129199283515, 128.54455878969344],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_5ce29f323ae8e3a42f6834c065e7ae9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시온주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 토성면 교암리 44-1<br>
+        강원 고성군 토성면 동해대로 5439<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2b771ab5cb54245b6d9827648894244 = L.marker(
+                [38.27052420462111, 128.54913010089075],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_f2b771ab5cb54245b6d9827648894244.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>토성농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 고성군 토성면 청간리 227-8<br>
+        강원 고성군 토성면 동해대로 5199<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_617c1f8ddcc835bd32581b384c9f6d8d = L.marker(
+                [38.33993076890618, 128.37940671419153],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_617c1f8ddcc835bd32581b384c9f6d8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>황금궁전주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 간성읍 장신리 377-1<br>
+        강원 고성군 간성읍 진부령로 1818<br>
+        > <b>가격: 1,925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de6a924cd055fea0a8fbc9e844b6a043 = L.marker(
+                [38.26588153350586, 128.55560908944105],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_de6a924cd055fea0a8fbc9e844b6a043.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김진주유소</b><br>
+        <b>S-OIL</b><br>
+        강원도 고성군 토성면 청간리 21<br>
+        강원도 고성군 토성면 청간정길 6-2<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c131265bfeeecb12ee9b981c3316174e = L.marker(
+                [38.37763017784685, 128.47597861451587],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_c131265bfeeecb12ee9b981c3316174e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>간성주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 고성군 간성읍 신안리 134<br>
+        강원 고성군 간성읍 탑동길 4-15<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28e5a573275749774dc64d060d0689e8 = L.marker(
+                [38.44284364998436, 128.45364532890358],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_28e5a573275749774dc64d060d0689e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>설악에너지주식회사</b><br>
+        <b>SK에너지</b><br>
+        강원 고성군 거진읍 거진리 339-7<br>
+        강원 고성군 거진읍 거탄진로 84<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6844bb66e55d9fd7533dc6e1d2b6ff3 = L.marker(
+                [38.35001366457069, 128.50971123413007],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_f6844bb66e55d9fd7533dc6e1d2b6ff3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공현진주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 고성군 죽왕면 공현진리 166<br>
+        강원 고성군 죽왕면 동해대로 6176<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2aa6281c74478c43719a9f08c0ae223 = L.marker(
+                [38.271778144201804, 128.5487966726734],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_a2aa6281c74478c43719a9f08c0ae223.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아야진동산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 고성군 토성면 아야진리 470-1<br>
+        강원 고성군 토성면 동해대로 5210<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2113459b7b59fb570407ffa286e25976 = L.marker(
+                [38.48391391187565, 128.42755659804604],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_2113459b7b59fb570407ffa286e25976.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>갑호주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 현내면 초도리 140-2<br>
+        강원 고성군 현내면 금강산로 49<br>
+        > <b>가격: 1,950 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0b53f296d1f8fd85aeb144f11de8f6f3 = L.marker(
+                [38.439174603062334, 128.4521459149354],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_0b53f296d1f8fd85aeb144f11de8f6f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거진농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 고성군 거진읍 거진리 395-1<br>
+        강원 고성군 거진읍 거탄진로 44<br>
+        > <b>가격: 1,950 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28dd73dae235ddf17872e55ffbe9a5e7 = L.marker(
+                [38.37918540553139, 128.47151345274136],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_28dd73dae235ddf17872e55ffbe9a5e7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 고성군 간성읍 신안리 253<br>
+        강원 고성군 간성읍 간성로 32<br>
+        > <b>가격: 1,950 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44a170f40447e6480000b393893d1fa4 = L.marker(
+                [38.514471802584254, 128.4188158628459],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_44a170f40447e6480000b393893d1fa4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통일전망대주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 고성군 현내면 마차진리 180<br>
+        강원 고성군 현내면 금강산로 474<br>
+        > <b>가격: 1,950 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4345e5a3feba93a0aec79143ffe1596 = L.marker(
+                [38.38800116608924, 128.45883394530787],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_f4345e5a3feba93a0aec79143ffe1596.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동해안주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 고성군 거진읍 대대리 304-50<br>
+        강원 고성군 거진읍 진부령로 2875<br>
+        > <b>가격: 1,970 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_20e9f482e75022c39801a50af89451b5 = L.marker(
+                [38.43812247287654, 128.4504703747594],
+                {}
+            ).addTo(map_f1201e06bcb080058782066878969a2e);
+        
+    
+            marker_20e9f482e75022c39801a50af89451b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거진OK주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 고성군 거진읍 거진리 424-4<br>
+        강원 고성군 거진읍 거탄진로 0<br>
+        > <b>가격: 1,990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

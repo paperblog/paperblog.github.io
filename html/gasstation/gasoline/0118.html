@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97d0c0a78786d75e237627e4c0fa5181 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97d0c0a78786d75e237627e4c0fa5181" ></div>
+        
+</body>
+<script>    
+    
+            var map_97d0c0a78786d75e237627e4c0fa5181 = L.map(
+                "map_97d0c0a78786d75e237627e4c0fa5181",
+                {
+                    center: [37.63712430377288, 127.07214004673301],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_688f5251532455fd25eb32783841151c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            var locate_control_9fb4a17fc3ca00beec10ee5240ccd519 = L.control.locate(
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+            
+        
+    
+            var marker_4622f76dc8754302ab75225c12027b65 = L.marker(
+                [37.619564000603084, 127.08062716297391],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_4622f76dc8754302ab75225c12027b65.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화랑대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 노원구 공릉동 649-14<br>
+        서울 노원구 화랑로 483<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3a5f132753b88b6a33ba77260c8f7e3a = L.marker(
+                [37.61855185892445, 127.07908773175132],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_3a5f132753b88b6a33ba77260c8f7e3a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이엠석유(주)배꽃나라주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 공릉동 657-12<br>
+        서울 노원구 화랑로 466 (공릉1동)<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08eaeddc0b79205a949816849901bdbf = L.marker(
+                [37.68665248174288, 127.05585069618573],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_08eaeddc0b79205a949816849901bdbf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)소모에너지 수락산셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 상계동 1205-7<br>
+        서울 노원구 동일로 1772<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81150934d85651bef15e5281d49504a3 = L.marker(
+                [37.6245134327726, 127.05065917797037],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_81150934d85651bef15e5281d49504a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월계주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 월계동 863-1<br>
+        서울 노원구 월계로 252 (월계동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9d951ec2fc03fccc148454314e3f401e = L.marker(
+                [37.6269828522875, 127.07194186895335],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_9d951ec2fc03fccc148454314e3f401e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한신주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 노원구 공릉동 379-17<br>
+        서울 노원구 동일로 1089 (공릉동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2610f5ecfa95ea727126f01b848582f0 = L.marker(
+                [37.6387400060451, 127.10910310616984],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_2610f5ecfa95ea727126f01b848582f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼육주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 노원구 공릉동26-44<br>
+        서울 노원구 화랑로 822 (공릉동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ef9346dd17ec6a470a2063637297de2 = L.marker(
+                [37.62586202164771, 127.08535533535861],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_7ef9346dd17ec6a470a2063637297de2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태릉솔밭주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 노원구 공릉동 230-17<br>
+        서울 노원구 노원로 49 (공릉동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c5a74e668d9dad1398eb56d70a72cae4 = L.marker(
+                [37.64228793555573, 127.07041855773264],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_c5a74e668d9dad1398eb56d70a72cae4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 하계주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 노원구 하계동 243-3<br>
+        서울 노원구 노원로17길 29 (하계동)<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ea98e0935cb1653c942831f820997677 = L.marker(
+                [37.65138112054067, 127.07723024689183],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_ea98e0935cb1653c942831f820997677.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남선석유(주)구도일주유소 불암</b><br>
+        <b>S-OIL</b><br>
+        서울 노원구 중계동 366-8<br>
+        서울 노원구 한글비석로 268 (중계동)<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43496e3a38e1939190efc6d25334cb2d = L.marker(
+                [37.65598077031686, 127.06655766065099],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_43496e3a38e1939190efc6d25334cb2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지㈜직영 상계주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 노원구 상계동 718-2<br>
+        서울 노원구 노해로 527 (상계동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_496558eefe2586825f60ad9bb48627d9 = L.marker(
+                [37.62517869624125, 127.05989193713674],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_496558eefe2586825f60ad9bb48627d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성북역주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 월계동 364-2<br>
+        서울 노원구 광운로 95 (월계동)<br>
+        > <b>가격: 1,698 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38c42ebe90696876e419532c76bb2b5a = L.marker(
+                [37.628678315598336, 127.0570310149919],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_38c42ebe90696876e419532c76bb2b5a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신성주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 노원구 월계동 295-4<br>
+        서울 노원구 월계로 328 (월계동)<br>
+        > <b>가격: 1,698 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c3653f73f549b564900cb9fbeb19e864 = L.marker(
+                [37.62036969254136, 127.07501686393832],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_c3653f73f549b564900cb9fbeb19e864.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>노원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 공릉동 596-10<br>
+        서울 노원구 동일로 1008 (공릉동)<br>
+        > <b>가격: 1,770 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7a78469564077f0be342a2803705312 = L.marker(
+                [37.658424960832996, 127.07116832993344],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_c7a78469564077f0be342a2803705312.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상계동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 노원구 상계동 387-212<br>
+        서울 노원구 노원로26길 191 (상계동)<br>
+        > <b>가격: 1,770 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34fa4bfe0187b307c255aed29325d6d0 = L.marker(
+                [37.633696410942605, 127.07216101035597],
+                {}
+            ).addTo(map_97d0c0a78786d75e237627e4c0fa5181);
+        
+    
+            marker_34fa4bfe0187b307c255aed29325d6d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하계삼호주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 노원구 하계동 141-3<br>
+        서울 노원구 공릉로 294 (하계동)<br>
+        > <b>가격: 1,785 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

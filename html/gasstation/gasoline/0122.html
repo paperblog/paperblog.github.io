@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2171246bf057a3c4510d42a70d070a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e2171246bf057a3c4510d42a70d070a9" ></div>
+        
+</body>
+<script>    
+    
+            var map_e2171246bf057a3c4510d42a70d070a9 = L.map(
+                "map_e2171246bf057a3c4510d42a70d070a9",
+                {
+                    center: [37.49884210016428, 127.11589034360236],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7acd06eb1ccdca4bde02a1fdf3aa499 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            var locate_control_dc585c0c6cad22d1865f29989ba2104d = L.control.locate(
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+            
+        
+    
+            var marker_3481c41c91dff3dfcbf61802f237ade4 = L.marker(
+                [37.48846829795027, 127.14254976967412],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_3481c41c91dff3dfcbf61802f237ade4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>위례제일주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 송파구 거여동 산 37<br>
+        서울 송파구 위례서로 260<br>
+        > <b>가격: 1,653 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cd9e5503d2a67dcd0c51b5f000447115 = L.marker(
+                [37.47541352324892, 127.12845882576445],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_cd9e5503d2a67dcd0c51b5f000447115.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>위례드림주유소</b><br>
+        <b>S-OIL</b><br>
+        서울시 송파구 장지동 646-7<br>
+        서울시 송파구  위례중앙로 10<br>
+        > <b>가격: 1,653 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2cb2ca4eaea8580709622f61f9b83b15 = L.marker(
+                [37.5001937113449, 127.14321894140936],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_2cb2ca4eaea8580709622f61f9b83b15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 마천동 31<br>
+        서울 송파구 마천로 230 (마천동)<br>
+        > <b>가격: 1,668 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2594cb6e7bff94acb2563e9d53c74aa4 = L.marker(
+                [37.50004348451718, 127.14780491875845],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_2594cb6e7bff94acb2563e9d53c74aa4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상아주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 송파구 마천동 49-11<br>
+        서울 송파구 거마로 82<br>
+        > <b>가격: 1,673 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_458c08052d9d3cd97b21f9eef9710219 = L.marker(
+                [37.47546793064651, 127.12742030482505],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_458c08052d9d3cd97b21f9eef9710219.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남성대주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 장지동 645-13<br>
+        서울 송파구 송파대로 52 (장지동)<br>
+        > <b>가격: 1,673 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4f5c5799a72e12f52ae924edf85fe69 = L.marker(
+                [37.492472280894766, 127.12735933851859],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_e4f5c5799a72e12f52ae924edf85fe69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼표에너지 우리주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 송파구 가락동 137-9<br>
+        서울 송파구 동남로 153<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d92e45f19300d9bfc8e6945f8e16f7b2 = L.marker(
+                [37.501652639355235, 127.0971390379392],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_d92e45f19300d9bfc8e6945f8e16f7b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스이앤알 직영 송파제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 송파구 석촌동 210-16<br>
+        서울 송파구 삼학사로 50 (석촌동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24d6d8f0f8034b4b42486164bc7b3953 = L.marker(
+                [37.50459533924274, 127.07736786414715],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_24d6d8f0f8034b4b42486164bc7b3953.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼표에너지 아시아주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 송파구 잠실동 305-11<br>
+        서울 송파구 도곡로 438 (잠실동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27852ad86f3645c72fa92bfdc8057884 = L.marker(
+                [37.50425567569725, 127.08900836874024],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_27852ad86f3645c72fa92bfdc8057884.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼전셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 삼전동 7-8<br>
+        서울 송파구 백제고분로 199<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4cf7238e26c89cfdc9ec3c4cd9066468 = L.marker(
+                [37.50663702160123, 127.0810022740731],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_4cf7238e26c89cfdc9ec3c4cd9066468.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼화주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 송파구 잠실동 222-31<br>
+        서울 송파구 백제고분로 125<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a7abc3441e806bc3b4fb34a71f8a58f = L.marker(
+                [37.47105807965933, 127.1261374372166],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_7a7abc3441e806bc3b4fb34a71f8a58f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>완불주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 장지동 608-5<br>
+        서울 송파구 송파대로 3 (장지동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a120fe2e39cba697a76a04241174b6ff = L.marker(
+                [37.510671365633364, 127.12081661827472],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_a120fe2e39cba697a76a04241174b6ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>방이주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 방이동 132-1<br>
+        서울 송파구 위례성대로12길 38 (방이동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7af85d8a81917ed98ce4ee965feeaad8 = L.marker(
+                [37.51258098587518, 127.11397145957848],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_7af85d8a81917ed98ce4ee965feeaad8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)뉴명성산업 남성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 송파구 방이동 149-3<br>
+        서울 송파구 백제고분로 474 (방이동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71041f9b13eb3a6250bbb13ff7f73eba = L.marker(
+                [37.50458206268262, 127.13841377582173],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_71041f9b13eb3a6250bbb13ff7f73eba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)유진주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 오금동 121-1<br>
+        서울 송파구 동남로 325 (오금동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71102e05307490ffc6724eae47162ae8 = L.marker(
+                [37.51108114051721, 127.11105507145132],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_71102e05307490ffc6724eae47162ae8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백제고분로주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 방이동 109-6<br>
+        서울 송파구 오금로 143 (방이동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_621afe3a47d03a071a8fc7f5026db365 = L.marker(
+                [37.50270515547542, 127.10898543896572],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_621afe3a47d03a071a8fc7f5026db365.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 잠실셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 송파구 석촌동 295<br>
+        서울 송파구 송파대로 397 (석촌동)<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2b6daf2c7c54ead3ce1c3bea2c9f753 = L.marker(
+                [37.49931022638781, 127.09705256530424],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_f2b6daf2c7c54ead3ce1c3bea2c9f753.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한강에너지(주)퍼스트주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 석촌동 217-17<br>
+        서울 송파구 삼학사로 22 (석촌동)<br>
+        > <b>가격: 1,677 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8ffff329c3dc6a2e2d78b574f35c8f7 = L.marker(
+                [37.49949004815174, 127.10174164366302],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_f8ffff329c3dc6a2e2d78b574f35c8f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)신화에너지 서울지점</b><br>
+        <b>SK에너지</b><br>
+        서울 송파구 석촌동 239-8<br>
+        서울 송파구 가락로 47 (석촌동)<br>
+        > <b>가격: 1,678 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4027e427bf03b262c79bb03ed39e1b99 = L.marker(
+                [37.50638721012516, 127.10652774877653],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_4027e427bf03b262c79bb03ed39e1b99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)잠실에너지</b><br>
+        <b>S-OIL</b><br>
+        서울 송파구 송파동 19-1<br>
+        서울 송파구 송파대로 442 (송파동)<br>
+        > <b>가격: 1,678 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30f5a031c6e5f108acfc45ac9ad27c2f = L.marker(
+                [37.509775824278684, 127.1317754691452],
+                {}
+            ).addTo(map_e2171246bf057a3c4510d42a70d070a9);
+        
+    
+            marker_30f5a031c6e5f108acfc45ac9ad27c2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 올림픽셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 송파구 오금동 4<br>
+        서울 송파구 위례성대로 188 (오금동)<br>
+        > <b>가격: 1,688 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

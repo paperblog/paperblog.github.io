@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ca656dd9d777f47f6368eba584b11c5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0ca656dd9d777f47f6368eba584b11c5" ></div>
+        
+</body>
+<script>    
+    
+            var map_0ca656dd9d777f47f6368eba584b11c5 = L.map(
+                "map_0ca656dd9d777f47f6368eba584b11c5",
+                {
+                    center: [34.8613369166209, 127.93437754466765],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f37a6fb67bb59ffbca39d60e0b5f1362 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+        
+    
+            var locate_control_62023f08ad9d82543e3d587bc72c6012 = L.control.locate(
+                {}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+            
+        
+    
+            var marker_88d1f67d743d82b676e6b39d2c1727ae = L.marker(
+                [34.909772575699286, 128.02839863675308],
+                {}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+        
+    
+            marker_88d1f67d743d82b676e6b39d2c1727ae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창선대교LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경남 남해군 창선면 대벽리 75-1<br>
+        경남 남해군 창선면 동부대로 2902<br>
+        > <b>가격: 939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72065a69fbff93c681d08667bf5af941 = L.marker(
+                [34.87635710372191, 127.8917599862468],
+                {}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+        
+    
+            marker_72065a69fbff93c681d08667bf5af941.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남해LPG충전소</b><br>
+        <b>E1</b><br>
+        경남 남해군 고현면 도마리 732-1<br>
+        경남 남해군 고현면 남해대로 3249<br>
+        > <b>가격: 1,063 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8506799868f6e8866783bd526dcc4c1 = L.marker(
+                [34.82857677290956, 127.91089736144085],
+                {}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+        
+    
+            marker_d8506799868f6e8866783bd526dcc4c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>땡큐LPG충전소</b><br>
+        <b>E1</b><br>
+        경남 남해군 남해읍 입현리 1256-1<br>
+        경남 남해군 남해읍 남해대로 2624<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_92c45ce694fe0b545f7ce8b808a2e679 = L.marker(
+                [34.830641214152855, 127.9064541942299],
+                {}
+            ).addTo(map_0ca656dd9d777f47f6368eba584b11c5);
+        
+    
+            marker_92c45ce694fe0b545f7ce8b808a2e679.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대영LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 남해군 남해읍 입현리 1401-4<br>
+        경남 남해군 남해읍 남해대로 2675<br>
+        > <b>가격: 1,073 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

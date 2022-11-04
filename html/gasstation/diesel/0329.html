@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b6051c64ae4f475b855916c385279f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6b6051c64ae4f475b855916c385279f1" ></div>
+        
+</body>
+<script>    
+    
+            var map_6b6051c64ae4f475b855916c385279f1 = L.map(
+                "map_6b6051c64ae4f475b855916c385279f1",
+                {
+                    center: [38.08944947398765, 127.6649724232224],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_17e00283a651e53e98007e84c94537f5 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            var locate_control_553294cddf79bd4341090958d8037bba = L.control.locate(
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+            
+        
+    
+            var marker_8f9ccbaaf7419493822ed699513a23e2 = L.marker(
+                [38.104561268722854, 127.70375818676398],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_8f9ccbaaf7419493822ed699513a23e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화천농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 화천군 화천읍 하리 35-1<br>
+         강원도 화천군 화천읍 상승로 39<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c9972b3a9e7ffd4ea1ce12377f2aa8fc = L.marker(
+                [38.13226337790797, 127.74246357485652],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_c9972b3a9e7ffd4ea1ce12377f2aa8fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평화주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 화천군 화천읍 풍산리 1278-1<br>
+        강원 화천군 화천읍 평화로 1115<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ba60ad243b9cfde0ae33105ef8a4309 = L.marker(
+                [38.028762550943036, 127.82140129843621],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_8ba60ad243b9cfde0ae33105ef8a4309.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>푸른주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 화천군 간동면 간척리 578-2<br>
+        강원 화천군 간동면 춘양로 932<br>
+        > <b>가격: 1,923 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_36c7cbea706cb25de6d750d189433f16 = L.marker(
+                [38.043134602190015, 127.70913426144435],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_36c7cbea706cb25de6d750d189433f16.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광바위주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 화천군 하남면 거례리 15-1<br>
+        강원 화천군 하남면 춘화로 2613<br>
+        > <b>가격: 1,924 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_68276c3b114faa555a85f13bbd8ac011 = L.marker(
+                [38.06065651645483, 127.5146045418412],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_68276c3b114faa555a85f13bbd8ac011.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 화천군 사내면 사창리 870-1<br>
+        강원 화천군 사내면 포화로 1022<br>
+        > <b>가격: 1,925 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ef373ad34a619d10c516d0189f9740c5 = L.marker(
+                [38.07782773697142, 127.48697244652544],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_ef373ad34a619d10c516d0189f9740c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사내주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 화천군 사내면 광덕리 480-1<br>
+        강원 화천군 사내면 포화로 661<br>
+        > <b>가격: 1,927 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d24d16b8919f51740efea3695c189a8 = L.marker(
+                [38.08653011497149, 127.69353808879774],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_4d24d16b8919f51740efea3695c189a8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진우셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 화천군 하남면 거례리 394-2<br>
+        강원 화천군 하남면 춘화로 3180<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_340f4e88a9756196408914f7ecf48252 = L.marker(
+                [38.099327951001136, 127.72120702223557],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_340f4e88a9756196408914f7ecf48252.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대현주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 화천군 화천읍 아리 179-4<br>
+        강원 화천군 화천읍 평화로 117<br>
+        > <b>가격: 1,929 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bcf04f057e02b9240923649665d9649b = L.marker(
+                [38.066533097592774, 127.49410558508747],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_bcf04f057e02b9240923649665d9649b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광덕주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 화천군 사내면 광덕리 143-2<br>
+        강원 화천군 사내면 포화로 814<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89d47f5c5ac0b734c7d98b764a44794f = L.marker(
+                [38.05266203526444, 127.81776319686946],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_89d47f5c5ac0b734c7d98b764a44794f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>간동주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 화천군 간동면 오음리 591-1<br>
+        강원 화천군 간동면 간척월명로 286<br>
+        > <b>가격: 1,939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ed4647aaea9cfd80e512eb02fee95ca = L.marker(
+                [38.07121370593025, 127.52327328579355],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_6ed4647aaea9cfd80e512eb02fee95ca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소(화천)</b><br>
+        <b>GS칼텍스</b><br>
+        강원 화천군 사내면 사창리 420-2<br>
+        강원 화천군 사내면 사내로 10-7<br>
+        > <b>가격: 1,939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_16f570a34621a7c14c90c9305a87afd7 = L.marker(
+                [38.13843526091651, 127.65965428149103],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_16f570a34621a7c14c90c9305a87afd7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파포주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 화천군 상서면 신대리 834-2<br>
+        강원 화천군 상서면 영서로 6803<br>
+        > <b>가격: 1,955 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_759003c762d36129f5f7d0236ffbf576 = L.marker(
+                [38.19758859094918, 127.66674749526835],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_759003c762d36129f5f7d0236ffbf576.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상서주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 화천군 상서면 산양리 424<br>
+        강원 화천군 상서면 영서로 7588<br>
+        > <b>가격: 1,955 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1e70b20231f64a41ebb155e01453492 = L.marker(
+                [38.09279582601122, 127.75499065970305],
+                {}
+            ).addTo(map_6b6051c64ae4f475b855916c385279f1);
+        
+    
+            marker_f1e70b20231f64a41ebb155e01453492.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파로호주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 화천군 화천읍 대이리 136-3<br>
+        강원 화천군 화천읍 평화로 523<br>
+        > <b>가격: 1,979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

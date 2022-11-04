@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f594ff5b6e2249df1777a308dd57e21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9f594ff5b6e2249df1777a308dd57e21" ></div>
+        
+</body>
+<script>    
+    
+            var map_9f594ff5b6e2249df1777a308dd57e21 = L.map(
+                "map_9f594ff5b6e2249df1777a308dd57e21",
+                {
+                    center: [37.1574757621983, 127.0598237520561],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21151e3d41467346cc2c97359647982a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            var locate_control_abc4f7b088d88c3db65d9d9b645da9c0 = L.control.locate(
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+            
+        
+    
+            var marker_9f4c7afb9e7e3d828f821f41ac126741 = L.marker(
+                [37.19898006421785, 127.06319119638377],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_9f4c7afb9e7e3d828f821f41ac126741.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동탄세마주유소</b><br>
+        <b>SK에너지</b><br>
+         경기도 오산시 외삼미동 126-10<br>
+        경기도 오산시 외삼미로 162-12, 외 1필지<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dccd217eb47faca81396c17bf9774f40 = L.marker(
+                [37.154576964957485, 127.06500153816823],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_dccd217eb47faca81396c17bf9774f40.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세정석유</b><br>
+        <b>S-OIL</b><br>
+        경기 오산시 청학동 5-3<br>
+        경기 오산시 청학로 64 (청학동)<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ca7eee0daf614bbe5043e73b3f5dbe4 = L.marker(
+                [37.18046501545224, 127.05334439384336],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_5ca7eee0daf614bbe5043e73b3f5dbe4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼미그린주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 오산시 내삼미동 570-5<br>
+        경기 오산시 경기대로 682<br>
+        > <b>가격: 1,613 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97f3c36214515a016a053a402ef5ee87 = L.marker(
+                [37.16220443234327, 127.06731238646881],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_97f3c36214515a016a053a402ef5ee87.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 오산시 수청동 84<br>
+        경기 오산시 경기대로 437 (수청동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_968597ce1cfd5034be1d67fb3f7f6566 = L.marker(
+                [37.18234089805655, 127.0499804197559],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_968597ce1cfd5034be1d67fb3f7f6566.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오산삼미주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 오산시 내삼미동 588-3<br>
+        경기 오산시 경기대로 721 (내삼미동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b68156ea17018966b1d9da1cd968ed3e = L.marker(
+                [37.16670894747267, 127.06424042783492],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_b68156ea17018966b1d9da1cd968ed3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명에너지세교셀프직영점</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 수청동 616-5<br>
+        경기 오산시 경기대로 491 (수청동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5cd717a986b9d427a4b17de57768ad7d = L.marker(
+                [37.17475581939422, 127.06081816560847],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_5cd717a986b9d427a4b17de57768ad7d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해솔셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 수청동 615-2<br>
+        경기 오산시 경기대로 587<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_addb59949c3358416a2f7e5a2297ddd6 = L.marker(
+                [37.18144673138135, 127.05223065043313],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_addb59949c3358416a2f7e5a2297ddd6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세일 삼화주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 오산시 내삼미동 573-1<br>
+        경기 오산시 경기대로 692<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac66d8580b1cc0677e8f69bc4bea997f = L.marker(
+                [37.13047736129786, 127.0896763959355],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_ac66d8580b1cc0677e8f69bc4bea997f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대복제2주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 고현동 188-4<br>
+        경기 오산시 남부대로 511 (고현동)<br>
+        > <b>가격: 1,634 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6be64623bfa1005461e0fd901f1197e8 = L.marker(
+                [37.138512530835094, 127.0372042052197],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_6be64623bfa1005461e0fd901f1197e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거창주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 벌음동 131-4<br>
+        경기 오산시 발안로 1252 (벌음동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9927505a98f493e9e5061a7f465b4291 = L.marker(
+                [37.13570752611841, 127.07478418804286],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_9927505a98f493e9e5061a7f465b4291.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜다원에너지직영 영일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 원동 513<br>
+        경기 오산시 남부대로 354 (원동)<br>
+        > <b>가격: 1,636 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7fe8e3fd8c6f236eb343258e61229553 = L.marker(
+                [37.1598635268508, 127.03757784986163],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_7fe8e3fd8c6f236eb343258e61229553.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우영주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 가장동 34-2<br>
+        경기도 오산시  가장로 524 (남촌동)<br>
+        > <b>가격: 1,636 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_687f19e7f7eee7f6d8eace07452eeef2 = L.marker(
+                [37.18324172489768, 127.03484829875528],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_687f19e7f7eee7f6d8eace07452eeef2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두꺼비주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 오산시 세교동 498 정암당<br>
+        경기 오산시 독산성로 350<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13678bbbdeb60f277998a7486ec963a0 = L.marker(
+                [37.13106915239332, 127.07175672572325],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_13678bbbdeb60f277998a7486ec963a0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)원창경성주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 오산시 갈곶동 285<br>
+        경기 오산시 경기대로 69 (갈곶동)<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_730e66fc97f90fdd138f46992e989eac = L.marker(
+                [37.134739643549395, 127.040686373692],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_730e66fc97f90fdd138f46992e989eac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>까막셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 두곡동 산 11-3<br>
+        경기 오산시 남부대로 40<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_414face0cfabdda3bd67a05da89f9121 = L.marker(
+                [37.15009879733957, 127.03893606561614],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_414face0cfabdda3bd67a05da89f9121.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상봉주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 오산시 서동 247<br>
+        경기 오산시 서동로 111<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_39172c35a1950b3e3e436f93d9a47e9b = L.marker(
+                [37.15280481749085, 127.07343281701785],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_39172c35a1950b3e3e436f93d9a47e9b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주)운암뜰주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 오산시 오산동 835-2<br>
+        경기 오산시 경기대로 317 (오산동)<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_abc5e9bcab0cc4f391dcdd11eec6ec56 = L.marker(
+                [37.15127393361975, 127.07402334726164],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_abc5e9bcab0cc4f391dcdd11eec6ec56.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>차사랑주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 오산시 오산동 851-4<br>
+        경기 오산시 경기대로 296 (오산동)<br>
+        > <b>가격: 1,646 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2f60e4121626b88b08c58be2cf3d2741 = L.marker(
+                [37.13729067058389, 127.07367316157053],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_2f60e4121626b88b08c58be2cf3d2741.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하하하주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 원동 420-1<br>
+        경기 오산시  경기대로 140 (원동)<br>
+        > <b>가격: 1,647 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4715e9015d0d1fc4a69b4483e28cfcf0 = L.marker(
+                [37.14295668571375, 127.07375643392933],
+                {}
+            ).addTo(map_9f594ff5b6e2249df1777a308dd57e21);
+        
+    
+            marker_4715e9015d0d1fc4a69b4483e28cfcf0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 오산시 원동 791-1<br>
+        경기 오산시 원동로 47 (원동)<br>
+        > <b>가격: 1,648 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

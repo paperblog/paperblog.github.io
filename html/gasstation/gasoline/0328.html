@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef2ac3009c5fa313cb3857e1cd5953f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef2ac3009c5fa313cb3857e1cd5953f5" ></div>
+        
+</body>
+<script>    
+    
+            var map_ef2ac3009c5fa313cb3857e1cd5953f5 = L.map(
+                "map_ef2ac3009c5fa313cb3857e1cd5953f5",
+                {
+                    center: [38.20221979887146, 127.33002731589461],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c93dd02e16337da4ba21aecde999868 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            var locate_control_916fede4c8e858ec497eacf7257fa171 = L.control.locate(
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+            
+        
+    
+            var marker_edfbccf8f946da1bffc7c5c164319452 = L.marker(
+                [38.192225116434514, 127.22831522887832],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_edfbccf8f946da1bffc7c5c164319452.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>형제주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 철원군 동송읍 이평리 240-1<br>
+        강원 철원군 동송읍 금학로 14<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72afc6ccfbf4f08db0502b22b0ff1f5a = L.marker(
+                [38.15796584588188, 127.30961940570762],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_72afc6ccfbf4f08db0502b22b0ff1f5a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동철원농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 철원군 갈말읍 군탄리 483-3<br>
+        강원 철원군 갈말읍 갈말로 7<br>
+        > <b>가격: 1,668 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa3c9e2ba9cc3dad14a29a39c795ff16 = L.marker(
+                [38.20678954316406, 127.25518100144465],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_fa3c9e2ba9cc3dad14a29a39c795ff16.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장흥주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 철원군 동송읍 장흥리 670-11<br>
+        강원 철원군 동송읍 태봉로 2202<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4a2f60309a43093efc081aec5e47bf72 = L.marker(
+                [38.19254648841148, 127.27556647005738],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_4a2f60309a43093efc081aec5e47bf72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고석정주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 동송읍 장흥4리 63-13<br>
+        강원 철원군 동송읍 태봉로 1952<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72dd9c11d500feaacccd32d8253f6008 = L.marker(
+                [38.22860965990425, 127.21189967070642],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_72dd9c11d500feaacccd32d8253f6008.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>sk소망주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 철원군 철원읍 화지리 206-12<br>
+        강원 철원군 철원읍 금학로 469<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e06e94c73bf6e9c1f6e8563fb9d2c9a3 = L.marker(
+                [38.24048491489432, 127.43745656213419],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_e06e94c73bf6e9c1f6e8563fb9d2c9a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행복주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 철원군 서면 와수리 1216-44<br>
+        강원 철원군 서면 와수1로 40<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3517fa4de385405d958f5914ddfc919 = L.marker(
+                [38.12762199312382, 127.29892060141951],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_e3517fa4de385405d958f5914ddfc919.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금강주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 갈말읍 강포리 395<br>
+        강원 철원군 갈말읍 호국로 4532<br>
+        > <b>가격: 1,678 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_857061baccc0d84f65e5ae54aebd4f1a = L.marker(
+                [38.16328526178204, 127.41063227517215],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_857061baccc0d84f65e5ae54aebd4f1a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>자등주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 서면 자등4리 969-24<br>
+        강원 철원군 서면 자등로 562<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_167b1c91cb52879ecbc47e1d67832da6 = L.marker(
+                [38.23747783038121, 127.43824952893155],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_167b1c91cb52879ecbc47e1d67832da6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김화농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 철원군 서면 와수리 1157-1<br>
+        강원 철원군 서면 와수로110번안길 49<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6798ca18124d37ec0a4f994a7d086dee = L.marker(
+                [38.20428156439946, 127.22006232988234],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_6798ca18124d37ec0a4f994a7d086dee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>철원주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 철원군 동송읍 이평리 710-3<br>
+        강원 철원군 동송읍 금학로 173<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_83960dbbd323aa736bcce376997326f0 = L.marker(
+                [38.24005452389845, 127.47165365896518],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_83960dbbd323aa736bcce376997326f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>근남주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 철원군 근남면 육단리 244-12<br>
+        강원 철원군 근남면 하오재로 2084<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8c0e511365e5f0839792eeeb1da8f37d = L.marker(
+                [38.21917670158889, 127.2105470767808],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_8c0e511365e5f0839792eeeb1da8f37d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리영농조합법인(철원점)</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 철원읍 화지리 467-15<br>
+        강원 철원군 철원읍 금학로357번길 2<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f661e774bc21c9c32383af5e838bc790 = L.marker(
+                [38.238276713134326, 127.43657353999032],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_f661e774bc21c9c32383af5e838bc790.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화강주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 철원군 서면 와수리 1141-5<br>
+        강원 철원군 서면 와수1로 17<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad5d438e49b37c6b1b7393a7e0a8915a = L.marker(
+                [38.160534915350325, 127.3115579877073],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_ad5d438e49b37c6b1b7393a7e0a8915a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>통일주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 철원군 갈말읍 군탄리 500-1<br>
+        강원 철원군 갈말읍 호국로 4931<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_047e87838e5f8ed295e1e861c692ca01 = L.marker(
+                [38.166655099287276, 127.31594395842014],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_047e87838e5f8ed295e1e861c692ca01.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 철원군 갈말읍 문혜리 1213<br>
+        강원 철원군 갈말읍 호국로 5007<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_50d89b3fdb0aec6d884959099d7b60c8 = L.marker(
+                [38.17667633438702, 127.32643390509126],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_50d89b3fdb0aec6d884959099d7b60c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리들주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 철원군 갈말읍 문혜리 645-6<br>
+        강원 철원군 갈말읍 호국로 5155<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_60cddb22329ef32736bd4fad52f93540 = L.marker(
+                [38.22963822352101, 127.34724843638935],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_60cddb22329ef32736bd4fad52f93540.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태봉주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 갈말읍 지경리 290-1<br>
+        강원 철원군 갈말읍 청양로 19<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05203b80e8f4cd703a14bf27af7e79f8 = L.marker(
+                [38.20116981745164, 127.42151976025902],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_05203b80e8f4cd703a14bf27af7e79f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송동주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 철원군 서면 자등리 378-14<br>
+        강원 철원군 서면 금강로 7645<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2cfc91ccdacb87c2d659b3f219ccbe67 = L.marker(
+                [38.21058405676335, 127.22334326438],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_2cfc91ccdacb87c2d659b3f219ccbe67.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동송주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 철원군 동송읍 이평리 648-6<br>
+        강원 철원군 동송읍 이평로 7<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2dae7d06b8bb9e0855f94cc62ae52c7b = L.marker(
+                [38.25034137367001, 127.44982165557498],
+                {}
+            ).addTo(map_ef2ac3009c5fa313cb3857e1cd5953f5);
+        
+    
+            marker_2dae7d06b8bb9e0855f94cc62ae52c7b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>와수주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 철원군 서면 와수5리 795-5<br>
+        강원 철원군 서면 와수로 341<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

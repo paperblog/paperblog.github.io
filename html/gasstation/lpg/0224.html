@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_736ea9af0e5d48a59bd6124c335f7649 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_736ea9af0e5d48a59bd6124c335f7649" ></div>
+        
+</body>
+<script>    
+    
+            var map_736ea9af0e5d48a59bd6124c335f7649 = L.map(
+                "map_736ea9af0e5d48a59bd6124c335f7649",
+                {
+                    center: [37.197736943896345, 126.88468362100339],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_880b0b551ff5b43b8606ea132d5f193b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            var locate_control_edb9dff164b23c70a700561fe289381b = L.control.locate(
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+            
+        
+    
+            var marker_8a8dc1b612ea68c9dcd642b61f752e11 = L.marker(
+                [37.11951161568988, 126.78592866695777],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_8a8dc1b612ea68c9dcd642b61f752e11.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 조암충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 우정읍 호곡리 89-1<br>
+        경기 화성시 우정읍 호곡길 84<br>
+        > <b>가격: 911 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fde4c56deb54aac871785b0597a7853a = L.marker(
+                [37.24788554443908, 126.8488211502407],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_fde4c56deb54aac871785b0597a7853a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풍천가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 화성시 비봉면 삼화리 773-1<br>
+        경기 화성시 비봉면 비봉로 366<br>
+        > <b>가격: 949 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2482a1624b4f41dc9f35a6833b9a9d7c = L.marker(
+                [37.18684116342984, 126.88120122133934],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_2482a1624b4f41dc9f35a6833b9a9d7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청우충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 화성시 팔탄면 창곡리 437-4<br>
+        경기 화성시 팔탄면 서해로 1409-9<br>
+        > <b>가격: 951 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_133a796a26a352d2cc97b25d865c4b88 = L.marker(
+                [37.14778021096816, 126.89241537674258],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_133a796a26a352d2cc97b25d865c4b88.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>JH충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 화성시 팔탄면 지월리 550-16<br>
+        경기 화성시 팔탄면 서해로 962<br>
+        > <b>가격: 951 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a98714ee197418073e4c37d90073054 = L.marker(
+                [37.22820392967625, 126.87870037138416],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_7a98714ee197418073e4c37d90073054.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유㈜ 비봉서일충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 화성시 비봉면 양노리 41-3<br>
+        경기 화성시 비봉면 서해로 1902<br>
+        > <b>가격: 953 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b135b8855b98add6ccbad19481a0038c = L.marker(
+                [37.20790560233204, 126.94335073109974],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_b135b8855b98add6ccbad19481a0038c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 장안대충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 봉담읍 상리 464-6<br>
+        경기 화성시 봉담읍 삼천병마로 1129-4 (봉담읍)<br>
+        > <b>가격: 954 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_62298af814f39454104235b1760c4186 = L.marker(
+                [37.20798831138063, 126.94441740296972],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_62298af814f39454104235b1760c4186.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해뜨는충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 화성시 봉담읍 상리 465-5<br>
+        경기 화성시 봉담읍 삼천병마로 1124<br>
+        > <b>가격: 954 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f1e5fa5695422b69e6d6859972be1a3 = L.marker(
+                [37.13336876678259, 126.89776601949849],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_5f1e5fa5695422b69e6d6859972be1a3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>발안LPG충전소(주)대야에너지</b><br>
+        <b>GS칼텍스</b><br>
+        경기도 화성시 향남읍 발안리 27-31<br>
+        경기 화성시 향남읍 서해로 806<br>
+        > <b>가격: 954 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_239b786a045846d629e99b672caf2f63 = L.marker(
+                [37.08492974503432, 126.80067385552965],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_239b786a045846d629e99b672caf2f63.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)지티이엔알 화성충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 화성시 우정읍 한각리 228-1<br>
+        경기 화성시 우정읍 포승향남로 1552<br>
+        > <b>가격: 956 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_326414d425f6dcdc359a886819b2bd72 = L.marker(
+                [37.26024166580185, 126.88601264778065],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_326414d425f6dcdc359a886819b2bd72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>야목역충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 화성시 매송면 야목리 801<br>
+        경기 화성시 매송면 매송로 279<br>
+        > <b>가격: 957 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ddecbe7e669f970223168cf782f41d19 = L.marker(
+                [37.258504614199765, 126.85020421168595],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_ddecbe7e669f970223168cf782f41d19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>희망충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 화성시 비봉면 삼화리 4-1<br>
+        경기 화성시 비봉면 비봉로 487<br>
+        > <b>가격: 957 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db0791483e3f61ffc539fbbc5c6faa3a = L.marker(
+                [37.24503423747365, 126.91963088186324],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_db0791483e3f61ffc539fbbc5c6faa3a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK원평LPG충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 매송면 원평리 343<br>
+        경기 화성시 매송면 매송고색로 131<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9cf2e40d36af2a1c7b6e7ba85b8f0cff = L.marker(
+                [37.24668284124325, 126.88994638971408],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_9cf2e40d36af2a1c7b6e7ba85b8f0cff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 한일에너지충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 비봉면 구포리 37-1<br>
+        경기 화성시 비봉면 화성로 2045<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_232e6fe034d27253f908b096cb5742bf = L.marker(
+                [37.2250928839551, 126.85451845083286],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_232e6fe034d27253f908b096cb5742bf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴타운충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 화성시 비봉면 양노리 637-5<br>
+        경기 화성시 비봉면 화성로 1589<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d038c4dd58836c04420f7c56074e456 = L.marker(
+                [37.130866655404404, 126.85496072660213],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_6d038c4dd58836c04420f7c56074e456.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK KH에너지 덕우충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 팔탄면 덕우리 46-8<br>
+        경기 화성시 팔탄면 포승향남로 2294<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1002288aa8c60bcec6110b7a46773937 = L.marker(
+                [37.20686517147538, 127.02370700822091],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_1002288aa8c60bcec6110b7a46773937.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 병점대교충전소</b><br>
+        <b>SK가스</b><br>
+        경기 화성시 진안동 832-171<br>
+        경기 화성시 효행로 869-6<br>
+        > <b>가격: 965 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cbc5a9b256a6e7de0b27fcc499508724 = L.marker(
+                [37.217584027401415, 126.82338438653996],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_cbc5a9b256a6e7de0b27fcc499508724.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴시티충전소</b><br>
+        <b>S-OIL</b><br>
+        경기 화성시 남양읍 송림리 220-7<br>
+        경기 화성시 화성로 1286 (송림동)<br>
+        > <b>가격: 979 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db1f3481d78391cdf8bc92f50d828254 = L.marker(
+                [37.22100557503734, 126.83628397648633],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_db1f3481d78391cdf8bc92f50d828254.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼진에너지남양주유소충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 화성시 남양읍 북양리 202-5<br>
+        경기 화성시 남양읍 화성로 1412<br>
+        > <b>가격: 982 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f3b97b76187e021a0d876f64ca31b6ef = L.marker(
+                [37.16765384101232, 126.89729479333525],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_f3b97b76187e021a0d876f64ca31b6ef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화성LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 화성시 팔탄면 구장리 103<br>
+        경기 화성시 팔탄면 구장길 106<br>
+        > <b>가격: 996 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27b7cf0fdc9ea8e22a0890f82526a450 = L.marker(
+                [37.21079247518968, 126.98445415124428],
+                {}
+            ).addTo(map_736ea9af0e5d48a59bd6124c335f7649);
+        
+    
+            marker_27b7cf0fdc9ea8e22a0890f82526a450.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화성융릉LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 화성시 안녕동 188-510<br>
+        경기 화성시 효행로 446 (안녕동)<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92a5afca0a3058cecac9be6f423d68b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_92a5afca0a3058cecac9be6f423d68b7" ></div>
+        
+</body>
+<script>    
+    
+            var map_92a5afca0a3058cecac9be6f423d68b7 = L.map(
+                "map_92a5afca0a3058cecac9be6f423d68b7",
+                {
+                    center: [37.490978197872934, 127.07373963339532],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d6efb201c4c839eeed880bae28b3351b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+        
+    
+            var locate_control_90e0aba031f875cc8709f3c52084be6b = L.control.locate(
+                {}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+            
+        
+    
+            var marker_159a853d6e33757a95bfd060dab59d1f = L.marker(
+                [37.49041110178617, 127.03581273434159],
+                {}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+        
+    
+            marker_159a853d6e33757a95bfd060dab59d1f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)진양가스</b><br>
+        <b>SK에너지</b><br>
+        서울 강남구 도곡동 552-5<br>
+        서울 강남구 도곡로 142  (도곡동)<br>
+        > <b>가격: 1,090 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d1a75a4041562a3e7a6d5624dc0b4efd = L.marker(
+                [37.49933524211632, 127.0780974920403],
+                {}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+        
+    
+            marker_d1a75a4041562a3e7a6d5624dc0b4efd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대치에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 강남구 대치동 27-15<br>
+        서울 강남구 남부순환로 3179 (대치동)<br>
+        > <b>가격: 1,092 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d967c3497e3317ee2c9623dd1ce1a089 = L.marker(
+                [37.476370037056725, 127.1054685987456],
+                {}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+        
+    
+            marker_d967c3497e3317ee2c9623dd1ce1a089.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>복지강남충전소</b><br>
+        <b>E1</b><br>
+        서울 강남구 자곡동 373-1<br>
+        서울 강남구 밤고개로 200<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9ab221859f402f443ff831339cdfd04b = L.marker(
+                [37.497796410532544, 127.0755797084538],
+                {}
+            ).addTo(map_92a5afca0a3058cecac9be6f423d68b7);
+        
+    
+            marker_9ab221859f402f443ff831339cdfd04b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남서울가스(주)</b><br>
+        <b>GS칼텍스</b><br>
+        서울 강남구 대치동 21-1<br>
+        서울 강남구 남부순환로3154<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4e94e143e9cadf6dba3428ff31dae8af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4e94e143e9cadf6dba3428ff31dae8af" ></div>
+        
+</body>
+<script>    
+    
+            var map_4e94e143e9cadf6dba3428ff31dae8af = L.map(
+                "map_4e94e143e9cadf6dba3428ff31dae8af",
+                {
+                    center: [37.5035179421002, 128.4523463374553],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7be0cb6ed22b69bd8c209608174bcf2 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            var locate_control_2e58ae30fd81e47ce0f56ac69fda1c41 = L.control.locate(
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+            
+        
+    
+            var marker_42c3254a87bbdd7bede0ee7a863a0384 = L.marker(
+                [37.60986108326323, 128.46302826906492],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_42c3254a87bbdd7bede0ee7a863a0384.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평창(서창)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 평창군 용평면 이목정리 476-4<br>
+        강원 평창군 용평면 탑거리길 63<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29d834052dc0cd8834beeac0465870e1 = L.marker(
+                [37.60578192257595, 128.4541431109434],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_29d834052dc0cd8834beeac0465870e1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평창(강릉방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 평창군 용평면 이목정리  778-2<br>
+        강원 평창군 용평면 경강로 2159-58<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0b9dfc68ea329173f4dcc3a37336801d = L.marker(
+                [37.32124272378748, 128.37052675172606],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_0b9dfc68ea329173f4dcc3a37336801d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마지리주유소</b><br>
+        <b>자영알뜰</b><br>
+        강원 평창군 평창읍 마지리 354<br>
+        강원 평창군 평창읍 평창강로 810<br>
+        > <b>가격: 1,668 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d1359f434a418fc3ff0889d2e03a282 = L.marker(
+                [37.47299910993907, 128.44773886454578],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_7d1359f434a418fc3ff0889d2e03a282.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대화농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 평창군 대화면 하안미1리1355-2<br>
+        강원 평창군 대화면 평창대로 572<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba5eba21bd8279b3c320b9fc358e7d83 = L.marker(
+                [37.633719008854726, 128.55461836599835],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_ba5eba21bd8279b3c320b9fc358e7d83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진부농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 평창군 진부면 하진부리316-2<br>
+        강원 평창군 진부면 진부중앙로 15<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb810758748f21c59ab4ea08ba9483e8 = L.marker(
+                [37.54248567117076, 128.45135784823344],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_cb810758748f21c59ab4ea08ba9483e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>바이오주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 평창군 대화면 신리 844-5<br>
+        강원 평창군 대화면 평창대로 1416<br>
+        > <b>가격: 1,684 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_340ebb49df3d1d18740bd733a7885efb = L.marker(
+                [37.43018322827337, 128.28887393784274],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_340ebb49df3d1d18740bd733a7885efb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백덕산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 방림면 운교리 1150<br>
+        강원 평창군 방림면 서동로 310<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_145bf2f952bfd8a800a5acfa45c98d04 = L.marker(
+                [37.36783204107966, 128.4028783652369],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_145bf2f952bfd8a800a5acfa45c98d04.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평창농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 평창군 평창읍 중리 74-1<br>
+        강원도 평창군 평창읍 서동로 2569 (평창읍)<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cf18692db8eb271646b99aed7c0c164 = L.marker(
+                [37.59640366222463, 128.38280995089352],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_3cf18692db8eb271646b99aed7c0c164.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉평농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 평창군 봉평면 평촌리  436-6<br>
+        강원 평창군 봉평면 경강로 1233<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6dfe15497456e7197950306847a38e94 = L.marker(
+                [37.39618643971137, 128.40616207962836],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_6dfe15497456e7197950306847a38e94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주진주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 평창읍 주진리 446-1<br>
+        강원 평창군 평창읍 서동로 2014<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c19f3208282701841683eb658dceebe9 = L.marker(
+                [37.37368198268282, 128.39365554707294],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_c19f3208282701841683eb658dceebe9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>노성주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 평창군 평창읍 후평리 351-1<br>
+        강원 평창군 평창읍 평창중앙로 179<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_61f10abe76f4368371e1a0587546bb70 = L.marker(
+                [37.585248103485924, 128.41479803051794],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_61f10abe76f4368371e1a0587546bb70.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장평주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 용평면 장평리 339-15<br>
+        강원 평창군 용평면 경강로 1646<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7caea7ae4885c30a01a1cfc27e596d3e = L.marker(
+                [37.53243619824283, 128.4557695385031],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_7caea7ae4885c30a01a1cfc27e596d3e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새신리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 대화면 신리 641-1<br>
+        강원 평창군 대화면 평창대로 1293<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69464f522994fb6f4264b70368de5226 = L.marker(
+                [37.329889393637664, 128.53048505286873],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_69464f522994fb6f4264b70368de5226.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대웅주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 미탄면 백운리 584<br>
+        강원 평창군 미탄면 서동로 4044<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_71d1c4aa1d73e98e7c6ffb6a648f7449 = L.marker(
+                [37.64038158996588, 128.54250815112198],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_71d1c4aa1d73e98e7c6ffb6a648f7449.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 평창군 진부면 하진부리 687-1<br>
+        강원 평창군 진부면 경강로 3406<br>
+        > <b>가격: 1,700 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dceedc946de4d0d21205f1edcb8a8118 = L.marker(
+                [37.5028689826178, 128.45496204573405],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_dceedc946de4d0d21205f1edcb8a8118.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세방주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 평창군 대화면 대화리 1164-2<br>
+        강원도 평창군 대화면 대화중앙로 153<br>
+        > <b>가격: 1,715 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de0d9c407fb6c8f5e1fb4e31880eebb1 = L.marker(
+                [37.646857652758385, 128.56459220858602],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_de0d9c407fb6c8f5e1fb4e31880eebb1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진부주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 평창군 진부면 상진부리 262-2<br>
+        강원 평창군 진부면 진부중앙로 184-1<br>
+        > <b>가격: 1,719 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_86043d7d01e793bfaefa3b89b91f6e1e = L.marker(
+                [37.430887116132084, 128.37436328739383],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_86043d7d01e793bfaefa3b89b91f6e1e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>멋다리주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 평창군 방림면 방림리 1646-4<br>
+        강원 평창군 방림면 서동로 1141<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a799349eb63c5bfd26551bf6fc7b39a = L.marker(
+                [37.68152910738098, 128.698547532168],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_6a799349eb63c5bfd26551bf6fc7b39a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대관령농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 평창군 대관령면 횡계리 377-218<br>
+        강원 평창군 대관령면 경강로 5167<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_de7aadd15ac099b18980d4c114ad083b = L.marker(
+                [37.369883824219514, 128.39510781102604],
+                {}
+            ).addTo(map_4e94e143e9cadf6dba3428ff31dae8af);
+        
+    
+            marker_de7aadd15ac099b18980d4c114ad083b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영목주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 평창군 평창읍 하리 103-1<br>
+        강원 평창군 평창읍 평창중앙로 89<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

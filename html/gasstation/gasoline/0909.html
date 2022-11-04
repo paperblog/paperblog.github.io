@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73547f9a66b3f1585c0bd89047a8acf7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_73547f9a66b3f1585c0bd89047a8acf7" ></div>
+        
+</body>
+<script>    
+    
+            var map_73547f9a66b3f1585c0bd89047a8acf7 = L.map(
+                "map_73547f9a66b3f1585c0bd89047a8acf7",
+                {
+                    center: [35.47451940757902, 128.76531508015006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b27ae551ceee1bccca1f21cf2613a0e3 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            var locate_control_1972185340d45dddb1840cdf56ff92cc = L.control.locate(
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+            
+        
+    
+            var marker_e055d700cac6d19dcaa6a19ec85a4095 = L.marker(
+                [35.4930158739551, 128.74476186835943],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_e055d700cac6d19dcaa6a19ec85a4095.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경민주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 밀양시 내이동 1052-1<br>
+        경남 밀양시 밀양대로 1900 (내이동)<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa420384b1698cf0437bc7879ecc42f1 = L.marker(
+                [35.48433569023817, 128.75195291094292],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_fa420384b1698cf0437bc7879ecc42f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>밀양셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 삼문동 547-20<br>
+        경남 밀양시 밀양대로 1776<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8c578b9a9820542041ab3fbca199515 = L.marker(
+                [35.411191689264975, 128.76931774229539],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_a8c578b9a9820542041ab3fbca199515.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한마음주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 밀양시 상남면 평촌리 928<br>
+        경남 밀양시 상남면 상남로 514<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fdadc2d351d497d185a30a6ccb019a80 = L.marker(
+                [35.50710052205382, 128.75720738557067],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_fdadc2d351d497d185a30a6ccb019a80.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시민주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 밀양시 교동 750<br>
+        경남 밀양시 밀양대로 2168<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad658411459b9d91bab2bb3ed20de592 = L.marker(
+                [35.41985290159367, 128.77532329308517],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_ad658411459b9d91bab2bb3ed20de592.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정다운주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 밀양시 상남면 평촌리 537-1<br>
+        경남 밀양시 상남면 상남로 650<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ce8952becec09b71e00c633a8f7c66c = L.marker(
+                [35.547350599049395, 128.8582006288203],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_5ce8952becec09b71e00c633a8f7c66c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 산내면 용전리 551<br>
+        경남 밀양시 산내면 밀양대로 3541<br>
+        > <b>가격: 1,608 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb98ed1abee61cc7adf25be0964f0b84 = L.marker(
+                [35.48184562817944, 128.75428144914324],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_cb98ed1abee61cc7adf25be0964f0b84.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)셀</b><br>
+        <b>S-OIL</b><br>
+        경남 밀양시 삼문동 105<br>
+        경남 밀양시 밀양대로 1744<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2894b34aa8630a0833f758fe66e959f2 = L.marker(
+                [35.48541873330569, 128.75719018406357],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_2894b34aa8630a0833f758fe66e959f2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동남주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 밀양시 삼문동 170-7<br>
+        경남 밀양시 중앙로 246 (삼문동)<br>
+        > <b>가격: 1,616 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_620fc525db380eb6decdeb3c85ccbcd0 = L.marker(
+                [35.50734751120735, 128.75651234957735],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_620fc525db380eb6decdeb3c85ccbcd0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>범북고개주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 교동 743-5<br>
+        경남 밀양시 밀양대로 2167<br>
+        > <b>가격: 1,620 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_123e7d408a5785004a6b30be779f1767 = L.marker(
+                [35.59007514033216, 128.88699074626194],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_123e7d408a5785004a6b30be779f1767.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)티엔에프하이웨이주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 산내면 송백리 1060-5<br>
+        경남 밀양시 산내면 밀양대로 4127<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d1f1c17505132e9694e5661c970b975 = L.marker(
+                [35.43903912624714, 128.65013476921172],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_1d1f1c17505132e9694e5661c970b975.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해동주유소</b><br>
+        <b>자영알뜰</b><br>
+        경남 밀양시 무안면 성덕리 458-1<br>
+        경남 밀양시 무안면 사명로 147<br>
+        > <b>가격: 1,627 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5d6fba9183dac319bee48d0cedaaac5 = L.marker(
+                [35.47373595936761, 128.7549206612859],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_e5d6fba9183dac319bee48d0cedaaac5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해뜨는주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 밀양시 부북면 전사포리 4-10<br>
+        경남 밀양시 부북면 밀양대로 1645<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0c574c646125400f788bea21550d16d1 = L.marker(
+                [35.44509955482205, 128.75473638469975],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_0c574c646125400f788bea21550d16d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 상남면 기산리 1008-9<br>
+        경남 밀양시 상남면 상남로 997<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b42f2e5ddf2a1b76ec29d315b6bda78 = L.marker(
+                [35.512323926346994, 128.76258921817333],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_3b42f2e5ddf2a1b76ec29d315b6bda78.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해창석유(주)밀양강주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 밀양시 교동 624-5<br>
+        경남 밀양시 밀양대로 2255 (교동)<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f140f55f6fa94ac0970fe78a56f4cd2d = L.marker(
+                [35.45538955582248, 128.7540328572032],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_f140f55f6fa94ac0970fe78a56f4cd2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>CJ대한통운㈜ 남밀양IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경남 밀양시 상남면 기산리 726-8<br>
+        경남 밀양시 상남면 밀양대로 1373<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f060585566c18b23d14ce56902a27c40 = L.marker(
+                [35.404354331514305, 128.7553399323885],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_f060585566c18b23d14ce56902a27c40.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상남주유소</b><br>
+        <b>SK에너지</b><br>
+        경남 밀양시 상남면 조음리 44-1<br>
+        경남 밀양시 상남면 하남로 437<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35415110bb47bb4a15c6a707f379cefd = L.marker(
+                [35.533619880025356, 128.7790097250223],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_35415110bb47bb4a15c6a707f379cefd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 상동면 가곡리 747-1<br>
+        경남 밀양시 상동면 상동로 252<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cb83d69bc828df4e09e0adb79a18f7f = L.marker(
+                [35.50351458796463, 128.75356819953655],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_3cb83d69bc828df4e09e0adb79a18f7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평화주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경남 밀양시 교동 874-4<br>
+        경남 밀양시 밀양대로 2108 (교동)<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0b116b671beea56232b89dad69493c8d = L.marker(
+                [35.39695244093245, 128.7111267345478],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_0b116b671beea56232b89dad69493c8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>귀명주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        경남 밀양시 하남읍 귀명리 332-8<br>
+        경남 밀양시 하남읍 온천로 1842 (하남읍)<br>
+        > <b>가격: 1,638 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3be77e1bdd2b98230a4c319fff1b5fee = L.marker(
+                [35.39882449935764, 128.81910456281233],
+                {}
+            ).addTo(map_73547f9a66b3f1585c0bd89047a8acf7);
+        
+    
+            marker_3be77e1bdd2b98230a4c319fff1b5fee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>만포주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 밀양시 삼랑진읍 미전리 40<br>
+        경남 밀양시 삼랑진읍 삼랑진로 390<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

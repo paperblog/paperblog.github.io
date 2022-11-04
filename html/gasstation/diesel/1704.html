@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_668b7d8c1d8c2fa0f7d84a11fc995af6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_668b7d8c1d8c2fa0f7d84a11fc995af6" ></div>
+        
+</body>
+<script>    
+    
+            var map_668b7d8c1d8c2fa0f7d84a11fc995af6 = L.map(
+                "map_668b7d8c1d8c2fa0f7d84a11fc995af6",
+                {
+                    center: [36.353388062698585, 127.33768306456366],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_628b64f50de51e920dfb65758f994757 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            var locate_control_667b1cca812359a9ee9a5b3cd8dd1258 = L.control.locate(
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+            
+        
+    
+            var marker_19d0c2745eeff479e07865863aef837c = L.marker(
+                [36.30069141525689, 127.32383336729201],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_19d0c2745eeff479e07865863aef837c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>롯데마트 서대전점주유소</b><br>
+        <b>S-OIL</b><br>
+        대전 유성구 원내동 33-19<br>
+        대전 유성구 유성대로 26-37 (원내동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63fbadf3c379cd61b08cea9457ff75c5 = L.marker(
+                [36.30202242849909, 127.32197868406719],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_63fbadf3c379cd61b08cea9457ff75c5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서남부주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 유성구 원내동 41-1<br>
+        대전 유성구 유성대로 44 (원내동)<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d92ecd25e8737b5fb6dd7f98a7d8d905 = L.marker(
+                [36.35929777779479, 127.30849271681119],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_d92ecd25e8737b5fb6dd7f98a7d8d905.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜상익 유성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 구암동 505-1<br>
+        대전 유성구 현충원로 342 (구암동)<br>
+        > <b>가격: 1,844 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_03635581f1c2464cf67ce944da91c86c = L.marker(
+                [36.31076439594711, 127.31808511481559],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_03635581f1c2464cf67ce944da91c86c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 교촌주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 교촌동 331-14<br>
+        대전 유성구 유성대로 142 (교촌동)<br>
+        > <b>가격: 1,844 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc0983fdbf83e14ff06f6d57fdfd4f95 = L.marker(
+                [36.36061042394633, 127.33606887437043],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_cc0983fdbf83e14ff06f6d57fdfd4f95.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 장대동 352-8<br>
+        대전 유성구 유성대로 768 (장대동)<br>
+        > <b>가격: 1,844 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a1bbde37660cd1140d8156a0eae14615 = L.marker(
+                [36.37958260462472, 127.4075744127078],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_a1bbde37660cd1140d8156a0eae14615.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>S-OIL</b><br>
+        대전 유성구 원촌동 45-18<br>
+        대전 유성구 아리랑로12<br>
+        > <b>가격: 1,847 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9d7968c4745a8f75dad242337d5592e2 = L.marker(
+                [36.40683190630555, 127.3389077391762],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_9d7968c4745a8f75dad242337d5592e2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK자운셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 신봉동 138-1<br>
+        대전 유성구 자운로157번길 122<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5cc135dc107e828eed3af08b046389d6 = L.marker(
+                [36.27022437264395, 127.27344107310552],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_5cc135dc107e828eed3af08b046389d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜제트에너지서대전주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 방동 665<br>
+        대전 유성구 계백로 212(방동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_29a2a7b17320fadb67fc6fb0511c77c3 = L.marker(
+                [36.349021279652526, 127.32710226873859],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_29a2a7b17320fadb67fc6fb0511c77c3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하은셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 구암동 629-6<br>
+        대전 유성구 유성대로 614 (구암동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1295bcb5837c058affdcfcca10b1e229 = L.marker(
+                [36.36037997740473, 127.2934334321766],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_1295bcb5837c058affdcfcca10b1e229.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계림주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 갑동 391-6<br>
+        대전 유성구 현충원로 201 (갑동)<br>
+        > <b>가격: 1,852 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_928d97eb0abee6a25d15608e57295d47 = L.marker(
+                [36.40043248424199, 127.39251265696316],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_928d97eb0abee6a25d15608e57295d47.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 대전선경주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 전민동 571<br>
+        대전 유성구 유성대로 1647<br>
+        > <b>가격: 1,853 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a28d7929578bb51936223811bba377d = L.marker(
+                [36.40184506234607, 127.37508470113454],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_7a28d7929578bb51936223811bba377d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화암동셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 화암동 65-3<br>
+        대전 유성구 대덕대로 804 (화암동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f2ae434ae1906086870283ecbdb5e748 = L.marker(
+                [36.3766205706053, 127.40361672013277],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_f2ae434ae1906086870283ecbdb5e748.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 스마트셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 원촌동 50<br>
+        대전 유성구 엑스포로 222 (원촌동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_840fa380e990224d55a834bb3e049b5e = L.marker(
+                [36.35889865839673, 127.32969872409589],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_840fa380e990224d55a834bb3e049b5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KH에너지(주)직영 하이웨이주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 장대동 176-10<br>
+        대전 유성구 현충원로 531<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa2599e829731092ed9940ff76a4e80f = L.marker(
+                [36.35932570476388, 127.3342682056824],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_fa2599e829731092ed9940ff76a4e80f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스엘 성림주유소</b><br>
+        <b>S-OIL</b><br>
+        대전 유성구 장대동 274-1<br>
+        대전 유성구 유성대로752번길 2 (장대동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_031d48fd81bb64cba39dfb6589425883 = L.marker(
+                [36.359770044795276, 127.32518567496666],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_031d48fd81bb64cba39dfb6589425883.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>위성주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 장대동 224-14<br>
+        대전 유성구 현충원로 489 (장대동)<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ad9e2083773237804c741f67ca6b1262 = L.marker(
+                [36.35842096958424, 127.3310708452836],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_ad9e2083773237804c741f67ca6b1262.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유성IC주유소</b><br>
+        <b>자영알뜰</b><br>
+        대전 유성구 장대동 211-6<br>
+        대전 유성구 현충원로 545<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7dffc72ac5a16bbdb1f5031cf94d4363 = L.marker(
+                [36.34460651212574, 127.31406843111147],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_7dffc72ac5a16bbdb1f5031cf94d4363.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)학하 학하셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 복용동 553<br>
+        대전 유성구 학하로 189 (복용동)<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e98b5cda5b908e5f08d7f574300cd98 = L.marker(
+                [36.299471343127074, 127.32390855496969],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_4e98b5cda5b908e5f08d7f574300cd98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 진잠셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 원내동 502-7<br>
+        대전 유성구 계백로 899 (원내동)<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_157ac69331d36f61872de02bde854065 = L.marker(
+                [36.40894332190976, 127.37532909367162],
+                {}
+            ).addTo(map_668b7d8c1d8c2fa0f7d84a11fc995af6);
+        
+    
+            marker_157ac69331d36f61872de02bde854065.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)행복가득주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 화암동 102-1<br>
+        대전 유성구 대덕대로 887  (화암동)<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

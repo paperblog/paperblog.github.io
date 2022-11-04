@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08cdecaa47541a602c76639ab5a1b729 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_08cdecaa47541a602c76639ab5a1b729" ></div>
+        
+</body>
+<script>    
+    
+            var map_08cdecaa47541a602c76639ab5a1b729 = L.map(
+                "map_08cdecaa47541a602c76639ab5a1b729",
+                {
+                    center: [36.7902644114625, 127.58940708432614],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94d877d8107b00bc4b33c77e672c7bd9 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            var locate_control_616cc673dc1747b01ae03a9b6693d050 = L.control.locate(
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+            
+        
+    
+            var marker_39e012eb8f48924f5a1311764301d8bb = L.marker(
+                [36.79658802967362, 127.58479121809559],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_39e012eb8f48924f5a1311764301d8bb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해찬주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 송산리 83<br>
+        충북 증평군 증평읍 중부로 2475<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49a8633fc08964c143d510dbe21763d8 = L.marker(
+                [36.79178096775489, 127.57543315466226],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_49a8633fc08964c143d510dbe21763d8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)선우에너지 봉신주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 증평군 증평읍 송산리 288<br>
+        충북 증평군 중부로 2371 (증평읍)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a0c9c2058bf319b0bef41a639d32b22b = L.marker(
+                [36.79289525571492, 127.56242773000146],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_a0c9c2058bf319b0bef41a639d32b22b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>선우셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 연탄리 592-2<br>
+        충북 증평군 증평읍 초평로 1742<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a974ec062b383a37528cd1a3afdce2d = L.marker(
+                [36.787964566546684, 127.5695284382943],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_1a974ec062b383a37528cd1a3afdce2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>증평self주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 증평군 연탄리 507-1<br>
+        충북 증평군 증평읍 삼보로 7<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a85b56493b5d4a08b0d16ce2f9c335c = L.marker(
+                [36.7981554154136, 127.60286237824214],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_1a85b56493b5d4a08b0d16ce2f9c335c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북청주주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 증평군 증평읍 미암리 123<br>
+        충북 증평군 증평읍 중부로 2641<br>
+        > <b>가격: 1,590 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8cafe585a6cdc2a0a9e6b86ee679446 = L.marker(
+                [36.7861766156932, 127.56358622405455],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_d8cafe585a6cdc2a0a9e6b86ee679446.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)한진 증평IC주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 연탄리 360-1<br>
+        충북 증평군 증평읍 중부로 2252<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fca20091fb63b2bfa98af7d7c8b0ccd2 = L.marker(
+                [36.780043107711855, 127.59530368423609],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_fca20091fb63b2bfa98af7d7c8b0ccd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 증평군 증평읍 증천리 974<br>
+        충북 증평군 증평읍 광장로 227<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9199de405baa384dfcdf898f9ffeaea6 = L.marker(
+                [36.77806652888559, 127.57626899524783],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_9199de405baa384dfcdf898f9ffeaea6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)뉴증평주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 증평군 증평읍 초중리 11-7<br>
+        충북 증평군 증평읍 중앙로 122<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_288b2ed914b04e4c75f9ab881bdfd751 = L.marker(
+                [36.778686803926654, 127.5966327509702],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_288b2ed914b04e4c75f9ab881bdfd751.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금호주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 증천리 1242<br>
+        충북 증평군 증평읍 광장로 247<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa6ca95ccfd348d88943c1889ea649d7 = L.marker(
+                [36.779806944254254, 127.5677156985995],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_aa6ca95ccfd348d88943c1889ea649d7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마하주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 증평군 증평읍 초중리 503<br>
+        충북 증평군 증평읍 충청대로 1623<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9f39818121a8371c8695dc93559afe2b = L.marker(
+                [36.78767844170693, 127.56538966679926],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_9f39818121a8371c8695dc93559afe2b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가나안주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 증평군 증평읍 연탄리 387-1<br>
+        충북 증평군 증평읍 중부로 2271<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24f61b3f1b725db2ecd11bf98aae4d74 = L.marker(
+                [36.812541313107054, 127.63188431651271],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_24f61b3f1b725db2ecd11bf98aae4d74.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신화주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 도안면 도당리 303-7<br>
+        충북 증평군 도안면 모래재로 176<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ca7296fb7e61a10b1219dac80406402c = L.marker(
+                [36.794223372332404, 127.60579189128015],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_ca7296fb7e61a10b1219dac80406402c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 증평군 증평읍 미암리 171-1<br>
+        충청북도 증평군 증평읍 하평로 51<br>
+        > <b>가격: 1,688 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_76374f3a1648126034825e2ae066b010 = L.marker(
+                [36.799427588694925, 127.59792515709496],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_76374f3a1648126034825e2ae066b010.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미암주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 증평군 증평읍 미암리 352<br>
+        충북 증평군 증평읍 중부로 2595<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_06d0e71c45edfc0bfa0519a8fad14979 = L.marker(
+                [36.8051932227781, 127.61387800006439],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_06d0e71c45edfc0bfa0519a8fad14979.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도안주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 증평군 도안면 화성리 296-3<br>
+        충북 증평군 도안면 충청대로 2173<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5c1dbc2e816a1eb8c3ecb6c869c5bf9b = L.marker(
+                [36.78734223698292, 127.58465494690518],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_5c1dbc2e816a1eb8c3ecb6c869c5bf9b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광성주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 증평군 증평읍 장동리 881<br>
+        충북 증평군 증평읍 충청대로 1798<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_676bfcd8cca2cd47d2cda6f1f8ea86c9 = L.marker(
+                [36.771550414342784, 127.6116520431333],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_676bfcd8cca2cd47d2cda6f1f8ea86c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 증평군 증평읍 용강리 284-2<br>
+        충북 증평군 증평읍 광장로 404<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_16a02e203eb2669114a14fec9b3020cf = L.marker(
+                [36.796638580804675, 127.60360122367662],
+                {}
+            ).addTo(map_08cdecaa47541a602c76639ab5a1b729);
+        
+    
+            marker_16a02e203eb2669114a14fec9b3020cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은하수주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 증평군 증평읍 미암리 141<br>
+        충북 증평군 증평읍 중부로 2658<br>
+        > <b>가격: 1,748 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

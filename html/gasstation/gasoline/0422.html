@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31725203be1cddbe4ba1aea24cd99c5d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_31725203be1cddbe4ba1aea24cd99c5d" ></div>
+        
+</body>
+<script>    
+    
+            var map_31725203be1cddbe4ba1aea24cd99c5d = L.map(
+                "map_31725203be1cddbe4ba1aea24cd99c5d",
+                {
+                    center: [36.484463835853134, 127.73839946758353],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e26ff1c7689f89dea8300165c612b66a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            var locate_control_5260cfc68438eb9500628b22b4de40c5 = L.control.locate(
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+            
+        
+    
+            var marker_c114af1a3acdbfbe2106bc55307107d6 = L.marker(
+                [36.4466060258015, 127.86842913813818],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_c114af1a3acdbfbe2106bc55307107d6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스피씨삼립 속리산(청원)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        충북 보은군 마로면 적암리 180<br>
+        충북 보은군 마로면 적암길 56-18<br>
+        > <b>가격: 1,596 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f99f05efb734e73ffd7438ccfa313291 = L.marker(
+                [36.444207834075094, 127.80650328392613],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_f99f05efb734e73ffd7438ccfa313291.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 탄부면 임한리 128-3<br>
+        충청북도 보은군 탄부면 보청대로 760<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cd63588e3ae2123404042e8033247f5 = L.marker(
+                [36.478369746003374, 127.7633839522322],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_3cd63588e3ae2123404042e8033247f5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>길상주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 보은군 보은읍 길상리 307-1<br>
+        충북 보은군 보은읍 보청대로 1334<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3706103bb42b07a03661574964eff98f = L.marker(
+                [36.446643235397055, 127.85540550202059],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_3706103bb42b07a03661574964eff98f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>형제주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 보은군 마로면 적암리 569-6<br>
+        충북 보은군 마로면 보청대로 177<br>
+        > <b>가격: 1,680 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b62adfc2620d21c9762efd6a6d8f7c98 = L.marker(
+                [36.526763402593105, 127.81914042941027],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_b62adfc2620d21c9762efd6a6d8f7c98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>속리산셀프주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 보은군 속리산면 사내리292-4<br>
+        충북 보은군 속리산면 법주사로 202<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d138b0073212553b1ef3e1fcb9d18b2 = L.marker(
+                [36.577441748402315, 127.66157041595902],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_7d138b0073212553b1ef3e1fcb9d18b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보은농협내북지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        충북 보은군 내북면 창리 46<br>
+        충북 보은군 내북면 남부로 6248<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_108aec2a4f438eea990ac6a48fad34b5 = L.marker(
+                [36.46655868228868, 127.78773100810454],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_108aec2a4f438eea990ac6a48fad34b5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보은농협장안주유소</b><br>
+        <b>농협알뜰</b><br>
+        충북 보은군 외속면 하개리 196-10<br>
+        충북 보은군 장안면 장안로 4<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24477284119ec57357657f3bb4f68c19 = L.marker(
+                [36.56372200574629, 127.65199800810656],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_24477284119ec57357657f3bb4f68c19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>내북주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 내북면 대안리 72<br>
+        충북 보은군 내북면 남부로 6061<br>
+        > <b>가격: 1,689 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8edfd201646a3eb48270d313367e856b = L.marker(
+                [36.430413120287135, 127.79653584741618],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_8edfd201646a3eb48270d313367e856b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남보은농협탄부지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        충북 보은군 탄부면 하장리 351-6<br>
+        충북 보은군 탄부면 삼승탄부로 729<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13b729da6467345b7e8b6d86d2f78fe8 = L.marker(
+                [36.52305942964966, 127.72092677927449],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_13b729da6467345b7e8b6d86d2f78fe8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대바위주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 보은군 보은읍 학림리 218-1<br>
+        충북 보은군 보은읍 남부로 4961<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1bbe3313df3d0f6c428b68fdb861f69 = L.marker(
+                [36.51528173849194, 127.59318820077199],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_b1bbe3313df3d0f6c428b68fdb861f69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 회북면 오동리 68-5<br>
+        충북 보은군 회인면 보청대로 3787<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_047fcdbc53769931c4dd6bbc593bc7be = L.marker(
+                [36.52839256030768, 127.78480994471123],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_047fcdbc53769931c4dd6bbc593bc7be.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서울주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 보은군 내속리면 하판리 296-2<br>
+        충북 보은군 속리산면 속리산로 1080<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_afec90968d0db969d8b6a04dfd041a81 = L.marker(
+                [36.430716240775546, 127.73341766345011],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_afec90968d0db969d8b6a04dfd041a81.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보은산단주유소</b><br>
+        <b>SK에너지</b><br>
+        충청북도 보은군 삼승면 우진리 550<br>
+        충청북도 보은군 삼승면 남부로 3852<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81618edafe394bb7fb881fb307b53b0d = L.marker(
+                [36.49632613137507, 127.73937781938864],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_81618edafe394bb7fb881fb307b53b0d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)보은현대주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 보은읍 풍취리 6-4<br>
+        충북 보은군 보은읍 보청대로 1670<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7bfe64eea4bec69998dd508acbaef08 = L.marker(
+                [36.512922266469324, 127.81102999076919],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_e7bfe64eea4bec69998dd508acbaef08.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상판주유소(보은)</b><br>
+        <b>SK에너지</b><br>
+        충북 보은군 내속리면 상판리 192-1<br>
+        충북 보은군 속리산면 법주사로 22<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0dfd684a4afbb698df9ff74ca40caeda = L.marker(
+                [36.48995131892333, 127.59768804143756],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_0dfd684a4afbb698df9ff74ca40caeda.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>회인주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 보은군 회북면 중앙리 20-4<br>
+        충북 보은군 회인면 회인로 28<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b015eee7c3dd46d556b3c68ec5547737 = L.marker(
+                [36.39458875941598, 127.73321687868427],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_b015eee7c3dd46d556b3c68ec5547737.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원남주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 보은군 삼승면 원남리 185-1<br>
+        충북 보은군 삼승면 원남로 8<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_348655c7bd54afec406382258331e4f8 = L.marker(
+                [36.4895292159814, 127.72066506639678],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_348655c7bd54afec406382258331e4f8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대정에너지</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 보은읍 교사리 25-1<br>
+        충북 보은군 보은읍 보청대로 1864<br>
+        > <b>가격: 1,719 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fab17a286bd639885b2317f05adff3e0 = L.marker(
+                [36.478437796189546, 127.6244030185249],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_fab17a286bd639885b2317f05adff3e0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성진주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 회인면 건천리 178-1<br>
+        충북 보은군 회인면 보청대로 3102<br>
+        > <b>가격: 1,719 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7667eea540ab6f1fad1ef05abaab784 = L.marker(
+                [36.44934545888849, 127.69856836294807],
+                {}
+            ).addTo(map_31725203be1cddbe4ba1aea24cd99c5d);
+        
+    
+            marker_e7667eea540ab6f1fad1ef05abaab784.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 수한면 묘서리 198-4<br>
+        충북 보은군 수한면 안내보은로 914<br>
+        > <b>가격: 1,729 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b461908837e8daeaacfb122ad3f2ae6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b461908837e8daeaacfb122ad3f2ae6" ></div>
+        
+</body>
+<script>    
+    
+            var map_7b461908837e8daeaacfb122ad3f2ae6 = L.map(
+                "map_7b461908837e8daeaacfb122ad3f2ae6",
+                {
+                    center: [35.159762279330124, 129.0452951378681],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c519ecf03320415339e02d80e554ad8c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            var locate_control_ddb42a6a10235c703c9008b9a0a3ea84 = L.control.locate(
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+            
+        
+    
+            var marker_6c77ba56c0ca02739c831d3566abfaf0 = L.marker(
+                [35.14306502789587, 129.0563245484317],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_6c77ba56c0ca02739c831d3566abfaf0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은마석유(주) 항도주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 부산진구 범천동 3-3<br>
+        부산 부산진구 신암로 14 (범천동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db01f13ad5d969155a2edf4b15f8a7a9 = L.marker(
+                [35.15135581843737, 129.01658049273817],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_db01f13ad5d969155a2edf4b15f8a7a9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태화주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 개금동 639<br>
+        부산 부산진구 가야대로 402<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_404f49c2f9afb67cb47ab9a4432e8d8e = L.marker(
+                [35.16510155914329, 129.03472087798193],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_404f49c2f9afb67cb47ab9a4432e8d8e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스마일주유소</b><br>
+        <b>자가상표</b><br>
+        부산 부산진구 당감동 350-7<br>
+        부산 부산진구 동평로 49<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d5c2b421ad255b103750d48535bf9d4c = L.marker(
+                [35.162867681622785, 129.05437347239453],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_d5c2b421ad255b103750d48535bf9d4c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 부산진구 부암동 669-3<br>
+        부산 부산진구 새싹로 61-1 (부암동)<br>
+        > <b>가격: 1,823 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dbe9142d761b4a52c0e11da5be7a3971 = L.marker(
+                [35.1571590561676, 129.0253346402302],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_dbe9142d761b4a52c0e11da5be7a3971.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)주공에너지</b><br>
+        <b>자영알뜰</b><br>
+        부산 부산진구 개금동 59-3<br>
+        부산 부산진구 백양대로 231<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ca6f075c26658d77145f52e226a67749 = L.marker(
+                [35.16482517293805, 129.03182720713593],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_ca6f075c26658d77145f52e226a67749.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대흥주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 부산진구 당감3동 613-8<br>
+        부산 부산진구 동평로 21<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a9a75d60bc2622bd3acc806a12966d13 = L.marker(
+                [35.15427786916099, 129.05278919956604],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_a9a75d60bc2622bd3acc806a12966d13.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영우에너지 부전주유소</b><br>
+        <b>자영알뜰</b><br>
+        부산 부산진구 부전동 577-2<br>
+        부산 부산진구 신천대로 132<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_738aa2146f00c448095f7dc98cd9d5b6 = L.marker(
+                [35.15711061960824, 129.02421480559258],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_738aa2146f00c448095f7dc98cd9d5b6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진성주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 부산진구 개금3동 246-2<br>
+        부산 부산진구 백양대로 242<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b1265312b50dc25d548127139362d98 = L.marker(
+                [35.17166552998668, 129.05847210361816],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_3b1265312b50dc25d548127139362d98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지에스칼텍스㈜ 성지주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 부산진구 연지동 41-3<br>
+        부산 부산진구 동평로 289 (연지동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ded5a7c753bdc84dba4bd920a9e11a1 = L.marker(
+                [35.16204629164372, 129.0409716236054],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_8ded5a7c753bdc84dba4bd920a9e11a1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명품주유소 당감점</b><br>
+        <b>현대오일뱅크</b><br>
+        부산 부산진구 당감동 219-3<br>
+        부산 부산진구 백양대로 78 (당감동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a3c6053f9a5569a60b35141e90c6068 = L.marker(
+                [35.17510888368656, 129.0643222674828],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_1a3c6053f9a5569a60b35141e90c6068.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신석유(주)직영 양정주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 양정동 508-6<br>
+        부산 부산진구 동평로 361 (양정동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab2668f693cd87530ffc381d50a1eaab = L.marker(
+                [35.17055376033228, 129.05307328677915],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_ab2668f693cd87530ffc381d50a1eaab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 연지오토self</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 연지동 202-4<br>
+        부산 부산진구 동평로 239 (연지동)<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c1e17e207fa1b4990d4560f73e84e74e = L.marker(
+                [35.15237859478275, 129.03293368038703],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_c1e17e207fa1b4990d4560f73e84e74e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가야주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 가야동 200-1<br>
+        부산 부산진구 가야대로552번길 39<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_400fcf776e562dd8ddee6afcd2647429 = L.marker(
+                [35.15741610720276, 129.0246036870322],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_400fcf776e562dd8ddee6afcd2647429.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백양주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 개금동 355-1<br>
+        부산 부산진구  백양대로 234 (개금동)<br>
+        > <b>가격: 1,853 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e9669f1a2fe394ebf40e840bec9ff410 = L.marker(
+                [35.17408124749905, 129.06837748217688],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_e9669f1a2fe394ebf40e840bec9ff410.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)우양네트웍스 하마정주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 부산진구 양정동 386-8<br>
+        부산 부산진구 동평로 398<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d5c1c7dfac12f3ba9e9d40a0055e4b8 = L.marker(
+                [35.17669994188169, 129.04862396772342],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_7d5c1c7dfac12f3ba9e9d40a0055e4b8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>럭키주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 초읍동 260-12<br>
+        부산 부산진구 새싹로 230 (초읍동)<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f1f7ecffb0a1b376c6cde3680a5a779 = L.marker(
+                [35.14980613664474, 129.06301707633438],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_1f1f7ecffb0a1b376c6cde3680a5a779.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동방석유(주)sk전포주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 전포동 892-16<br>
+        부산 부산진구 동천로 10 (전포동)<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33d522600e29c806b39011810b8501af = L.marker(
+                [35.149423705382894, 129.06657706300385],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_33d522600e29c806b39011810b8501af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동방석유(주)황령산주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 전포동 372-5<br>
+        부산 부산진구 황령대로 66 (전포동)<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bd498e7b1824f0bb6a3bb918c8a8e695 = L.marker(
+                [35.15394053058667, 129.02922008607305],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_bd498e7b1824f0bb6a3bb918c8a8e695.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 부산진구 가야동 136-31<br>
+        부산 부산진구 가야대로 523 (가야동)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0d9f9ac751bc3a54385bda76bf4ad393 = L.marker(
+                [35.14636205199846, 129.05954518907504],
+                {}
+            ).addTo(map_7b461908837e8daeaacfb122ad3f2ae6);
+        
+    
+            marker_0d9f9ac751bc3a54385bda76bf4ad393.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서영주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 부산진구 범천동 849-4<br>
+        부산 부산진구 범일로 184 (범천동)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

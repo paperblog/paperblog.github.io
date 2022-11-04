@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0f806387dd8c8dc33a9eb073f3ca949 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d0f806387dd8c8dc33a9eb073f3ca949" ></div>
+        
+</body>
+<script>    
+    
+            var map_d0f806387dd8c8dc33a9eb073f3ca949 = L.map(
+                "map_d0f806387dd8c8dc33a9eb073f3ca949",
+                {
+                    center: [34.96408692623997, 126.42857981272132],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5dc66773422a55e0a1d45ca4d0c2bae = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            var locate_control_88fea7c84bc5eb12db812d4842733295 = L.control.locate(
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+            
+        
+    
+            var marker_2242b8bf5fed7ff9de7e96d3c3afd4c6 = L.marker(
+                [35.00461326581158, 126.4968529366021],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_2242b8bf5fed7ff9de7e96d3c3afd4c6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)고속주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 무안읍 용월리 86-1<br>
+        전남 무안군 무안읍 영산로 3085<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5add6faf1c0f306873820d73a7c062d0 = L.marker(
+                [34.93281383699918, 126.43334063596639],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_5add6faf1c0f306873820d73a7c062d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 무안군 청계면 송현리 122-1<br>
+        전남 무안군 청계면 영산로 1968<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_930b83d35dc77edb0d18174465df3870 = L.marker(
+                [34.944204529714966, 126.44226452242012],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_930b83d35dc77edb0d18174465df3870.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)삼거리주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 무안군 청계면 청수리 158-1<br>
+        전남 무안군 청계면 영산로 2120<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eddedfabcbcbf5c3191defe3e815314c = L.marker(
+                [34.88883442148327, 126.43040122608956],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_eddedfabcbcbf5c3191defe3e815314c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장부다리주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 청계면 청계리 824-8<br>
+        전남 무안군 영산로 1450<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc689d468984dcb8220cde5c65f30f9d = L.marker(
+                [34.91171424001252, 126.42890044533526],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_cc689d468984dcb8220cde5c65f30f9d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청호주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 청계면 도림리 493<br>
+        전남 무안군 청계면 영산로 1713<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f36cda6c2d81a343296f6a32e2d4d023 = L.marker(
+                [34.8531216791491, 126.42826910082007],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_f36cda6c2d81a343296f6a32e2d4d023.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유달주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 무안군 삼향읍 왕산리218<br>
+        전남 무안군 삼향읍 영산로 1018<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc47c2f3ff90230b0b897924b4365293 = L.marker(
+                [34.916706138951184, 126.4279706909879],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_cc47c2f3ff90230b0b897924b4365293.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새도림주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 청계면 도림리 583-17<br>
+        전남 무안군 청계면 영산로 1768<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e48bf88cb32e82a0b6e14f8cd88e7fee = L.marker(
+                [34.9948325450111, 126.4842106946488],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_e48bf88cb32e82a0b6e14f8cd88e7fee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서해안 주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 무안읍 성동리 581-1<br>
+        전남 무안군 무안읍 무안로 592<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3b83479489e70f5ed4421a3513b9d1d9 = L.marker(
+                [35.01484203000432, 126.42813080466446],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_3b83479489e70f5ed4421a3513b9d1d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무안농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 무안군 현경면 평산리 836-4<br>
+        전남 무안군 현경면 공항로 566<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0c9b53f0ae3f92bf90ca6f0e06449e3 = L.marker(
+                [34.81946675915836, 126.48314055540501],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_b0c9b53f0ae3f92bf90ca6f0e06449e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영산호현대 남악지점주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 무안군 삼향읍 남악리 1366-2<br>
+        전남 무안군 삼향읍 후광대로 507<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ab879309dcf4fe62075e4ec0ec0ff7e = L.marker(
+                [34.9838743266367, 126.47456196446386],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_2ab879309dcf4fe62075e4ec0ec0ff7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜영화산업 제일주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 무안군 무안읍 성남리 301-3<br>
+        전남 무안군 무안읍 무안로 440<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_364ecc570d3af1caa76fd47a158ccf4e = L.marker(
+                [35.01419505516567, 126.39700051665493],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_364ecc570d3af1caa76fd47a158ccf4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>망운주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 망운면 목동리 467-2<br>
+        전남 무안군 망운면 운해로 1460<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9d6283ea64a8f5fcec9ca80336111102 = L.marker(
+                [34.9622006589697, 126.34642197465678],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_9d6283ea64a8f5fcec9ca80336111102.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운남주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 무안군 운남면 연리 475-14<br>
+        전남 무안군 운남면 운해로 636<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a5df61820b64e38cffe459d5a03cbea1 = L.marker(
+                [34.96006285130821, 126.34096374019235],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_a5df61820b64e38cffe459d5a03cbea1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>운남농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 무안군 운남면 연리 402-4<br>
+        전남 무안군 운남면 운해로 578-7<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22da061fe26affce14200e7fc61c0eeb = L.marker(
+                [35.02127765216369, 126.40958269777106],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_22da061fe26affce14200e7fc61c0eeb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)현경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 무안군 현경면 현화리 548-5<br>
+        전남 무안군 현경면 현해로 105<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c0f55696266ace8eec0611afe89b4591 = L.marker(
+                [34.93351184040068, 126.50351491148356],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_c0f55696266ace8eec0611afe89b4591.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>몽탄농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 무안군 몽탄면 구산리 567<br>
+        전남 무안군 몽탄면 몽탄로 830<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e2312834bd6dba5666d58911b8c594e5 = L.marker(
+                [35.081789693247536, 126.29387012972477],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_e2312834bd6dba5666d58911b8c594e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천장주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 무안군 해제면 천장리 660-1<br>
+        전남 무안군 해제면 현해로 2093<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_edd63008040befa868de3c9c16965641 = L.marker(
+                [34.99503137552527, 126.4685386643167],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_edd63008040befa868de3c9c16965641.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공항주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 무안군 무안읍 교촌리 399-11<br>
+        전남 무안군 무안읍 공항로 128-1<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a01f583f613ab87707185aab60bca59b = L.marker(
+                [35.05889188371668, 126.373999939354],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_a01f583f613ab87707185aab60bca59b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)삼삼주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 무안군 현경면 용정리 880<br>
+        전남 무안군 현경면 송마로 473<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_80d2d81818fad1abdc580d06bf77ab46 = L.marker(
+                [34.98975374136993, 126.47966010286899],
+                {}
+            ).addTo(map_d0f806387dd8c8dc33a9eb073f3ca949);
+        
+    
+            marker_80d2d81818fad1abdc580d06bf77ab46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 무안군 무안읍 성동리 85<br>
+        전남 무안군 무안읍 무안로 519<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abf3fff80d418c7fb3bced4e734983b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_abf3fff80d418c7fb3bced4e734983b8" ></div>
+        
+</body>
+<script>    
+    
+            var map_abf3fff80d418c7fb3bced4e734983b8 = L.map(
+                "map_abf3fff80d418c7fb3bced4e734983b8",
+                {
+                    center: [36.90264784504969, 128.81841014763035],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ddaff1cd4f7ace8de0a6e8a3e83c13c2 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            var locate_control_2e0c1650d66ac432916648cc09f3e4c4 = L.control.locate(
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+            
+        
+    
+            var marker_16c139046e009945605a0e683d6c7318 = L.marker(
+                [36.94070779562536, 129.00127328633192],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_16c139046e009945605a0e683d6c7318.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 봉화군 소천면 현동리693-1<br>
+        경북 봉화군 소천면 소천로 1251<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_19b322397e54632cb0304ee2846f5e84 = L.marker(
+                [36.92235551890812, 128.92192711655156],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_19b322397e54632cb0304ee2846f5e84.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘양농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 봉화군 춘양면 소로리 636-5<br>
+        경북 봉화군 춘양면 소천로 36<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0788df1eb8157e9b6415247326738b14 = L.marker(
+                [36.95162744218071, 128.99710395734735],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_0788df1eb8157e9b6415247326738b14.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고선주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 소천면 고선리 189-6<br>
+        경북 봉화군 소천면 청옥로 220<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a45ff72c2a295c6a9ec0d4a328083a8 = L.marker(
+                [36.91457600670776, 128.85367725277703],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_7a45ff72c2a295c6a9ec0d4a328083a8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉화송이주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 법전면 법전리 780-2<br>
+        경북 봉화군 법전면 파인토피아로 2137<br>
+        > <b>가격: 1,859 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f43fe229a4b55b88af0959ba7bca93d = L.marker(
+                [36.88118789318312, 128.73970703374226],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_3f43fe229a4b55b88af0959ba7bca93d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉화농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 봉화군 봉화읍 내성리139-1<br>
+        경북 봉화군 봉화읍 예봉로 2021<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa15c453b0dd0638bf26f4feb114ee2a = L.marker(
+                [36.88424683265368, 128.74051065626603],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_fa15c453b0dd0638bf26f4feb114ee2a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가래골주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 봉화군 봉화읍 내성리 158-7<br>
+        경북 봉화군 봉화읍 내성로 22<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97909d19f62c0c283fbab8036b93ae8b = L.marker(
+                [36.97687571121129, 128.73566524047968],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_97909d19f62c0c283fbab8036b93ae8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>물야농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 봉화군 물야면 오록리 431-2<br>
+        경북 봉화군 물야면 오록길 2<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5f1099fc1f00c2ea53497d03fc836631 = L.marker(
+                [36.84899752614436, 128.67323863097917],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_5f1099fc1f00c2ea53497d03fc836631.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>로드파워주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 봉화군 봉화읍 문단리 709<br>
+        경북 봉화군 봉화읍 파인토피아로 217<br>
+        > <b>가격: 1,867 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bcf61ddb7598a1e1abe9d6a1571912e8 = L.marker(
+                [36.877192670998596, 128.74102700038344],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_bcf61ddb7598a1e1abe9d6a1571912e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청용2주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 봉화읍 내성리 119-1<br>
+        경북 봉화군 봉화읍 예봉로 1973<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1bf1149b0b6bd321440425d6638046c9 = L.marker(
+                [36.823951784748125, 128.96592055018024],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_1bf1149b0b6bd321440425d6638046c9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉화농협재산지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 봉화군 재산면 현동리 599-10<br>
+        경북 봉화군 재산로 599<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ae278aa84bbf8578ddb825b1bb611ac = L.marker(
+                [36.827633637312765, 128.75369596222845],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_1ae278aa84bbf8578ddb825b1bb611ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉화농협상운지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 봉화군 상운면 운계리 789-1<br>
+        경북 봉화군 상운면 예봉로 1212<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c12bbc7cf1baf0cc216713059a13f0e = L.marker(
+                [36.892416647538454, 128.72112384155463],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_3c12bbc7cf1baf0cc216713059a13f0e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉화주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 봉화읍 해저리 148-6<br>
+        경북 봉화군 봉화로 1018<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a56bbc846f73b1062647354c2767f73b = L.marker(
+                [36.85809548190604, 128.89238112890706],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_a56bbc846f73b1062647354c2767f73b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명호주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 봉화군 명호면 도천리 298-3<br>
+        경북 봉화군 명호면 청량로 1245<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bac4688129e4d24efe1983d2335cb25b = L.marker(
+                [36.88058170860665, 128.81449267168742],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_bac4688129e4d24efe1983d2335cb25b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍봉주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 봉성면 봉성리 475-5<br>
+        경북 봉화군 봉성면 봉명로 602<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69357b5bda4142dd72d2f0d3f96659db = L.marker(
+                [36.93457628175796, 128.9128166723637],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_69357b5bda4142dd72d2f0d3f96659db.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>춘양주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 춘양면 의양리 427-5<br>
+        경북 봉화군 춘양면 의양로 81<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_87f28491b1967157abbb4e85f96e9aae = L.marker(
+                [37.02821450768457, 128.81206476546737],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_87f28491b1967157abbb4e85f96e9aae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수목원주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 춘양면 서벽리 506-6<br>
+        경북 봉화군 춘양면 춘양로 1437<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_623aec4f843e06bd246bfd0e9169fcea = L.marker(
+                [36.89119104204167, 128.7363883664763],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_623aec4f843e06bd246bfd0e9169fcea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 봉화군 봉화읍 내성4리 421-6<br>
+        경북 봉화군 봉화로 1153-1<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6977f08bb9687aad28f7d37ad68e2b37 = L.marker(
+                [36.91431937143565, 128.80933858886712],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_6977f08bb9687aad28f7d37ad68e2b37.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>창평주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 봉성면 창평리 139-3<br>
+        경북 봉화군 봉성면 파인토피아로 1651<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7e395995b215ab03bc96f68807ebeed2 = L.marker(
+                [36.91060158406458, 128.8063510564049],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_7e395995b215ab03bc96f68807ebeed2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금호주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 봉화군 봉성면 창평리139-7<br>
+        경북 봉화군 봉성면 파인토피아로 1652<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89cdb815039860bae2b5887d703e8494 = L.marker(
+                [36.893607456284364, 128.73949917361176],
+                {}
+            ).addTo(map_abf3fff80d418c7fb3bced4e734983b8);
+        
+    
+            marker_89cdb815039860bae2b5887d703e8494.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한일주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 봉화군 봉화읍 포저리 352-11<br>
+        경북 봉화군 봉화읍 내성로 125<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe446d09c1cd42d9103b347578397b46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fe446d09c1cd42d9103b347578397b46" ></div>
+        
+</body>
+<script>    
+    
+            var map_fe446d09c1cd42d9103b347578397b46 = L.map(
+                "map_fe446d09c1cd42d9103b347578397b46",
+                {
+                    center: [35.877930745518555, 129.1888921167635],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8b1da7d21e35b17ba39ee04db2a37ab = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            var locate_control_c58370f04daf29db9e658427596bac90 = L.control.locate(
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+            
+        
+    
+            var marker_9bfdc8e18d2d8434ff611b2e5091da83 = L.marker(
+                [35.83686811958327, 129.22052556909424],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_9bfdc8e18d2d8434ff611b2e5091da83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼일경주충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 인왕동 758-1<br>
+        경북 경주시 원화로 170 (인왕동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c08a295b427cdf9d891a5aabcfd4be3a = L.marker(
+                [35.84117861886835, 129.16570788734077],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_c08a295b427cdf9d891a5aabcfd4be3a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜금아리무진 행복주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        경북 경주시 충효동 1534<br>
+        경북 경주시 태종로 315 (충효동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5134690a451136617581fcb276af29e3 = L.marker(
+                [35.84456173895846, 129.20210210902133],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_5134690a451136617581fcb276af29e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜일선에너지 신라LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경주시 성건동 416-4<br>
+        경북 경주시 화랑로 14 (성건동)<br>
+        > <b>가격: 935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d01c112af2afba817bca43b6c03b839 = L.marker(
+                [35.813436736196145, 129.19796962804594],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_4d01c112af2afba817bca43b6c03b839.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아워홈(주) 서라벌광장주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 율동 592-21<br>
+        경북 경주시 서라벌대로 417 (율동)<br>
+        > <b>가격: 958 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ff18bdb9f4d76fff90c237bfc314b2c3 = L.marker(
+                [35.89545508417222, 129.2307074878605],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_ff18bdb9f4d76fff90c237bfc314b2c3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>늘푸른충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경주시 현곡면 라원리 1731-48<br>
+        경북 경주시 현곡면 형산로 446<br>
+        > <b>가격: 971 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_47c9a19be178e3f572bf32d964fc8782 = L.marker(
+                [35.80383371346008, 129.2038107921097],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_47c9a19be178e3f572bf32d964fc8782.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경주시 배동 610<br>
+        경북 경주시 반구대로 3682-15 (배동)<br>
+        > <b>가격: 972 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8d04dfe165223ff18564279670d3c4e = L.marker(
+                [35.98620018538966, 129.1522860815405],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_a8d04dfe165223ff18564279670d3c4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)태산이앤엘 호반셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 안강읍 두류리 150-16<br>
+        경북 경주시 안강읍 호국로 2191<br>
+        > <b>가격: 975 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7c646c09819c1ebb58da7e9cabffcee1 = L.marker(
+                [35.81302053589391, 129.19541838349178],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_7c646c09819c1ebb58da7e9cabffcee1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구도일충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 율동 33<br>
+        경북 경주시 서라벌대로 408 (율동)<br>
+        > <b>가격: 978 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_597c577ec95cd805874915e3065de65a = L.marker(
+                [35.9022531204975, 129.04003372966162],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_597c577ec95cd805874915e3065de65a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부자집LPG충전소</b><br>
+        <b>자가상표</b><br>
+        경북 경주시 서면 아화리 718-8<br>
+        경북 경주시 서면 대경호 137<br>
+        > <b>가격: 978 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_164d1dc10be54f9323acef5a46088c2f = L.marker(
+                [35.95211712501617, 129.24558649749636],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_164d1dc10be54f9323acef5a46088c2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경주고속주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 강동면 모서리 861<br>
+        경북 경주시 강동면 산업로 5333<br>
+        > <b>가격: 980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_00b5cd3f9c90900cdc95068f2d897e5a = L.marker(
+                [35.844449477417044, 129.1159134410762],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_00b5cd3f9c90900cdc95068f2d897e5a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대현건천충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주 건천읍 건천리 461-2<br>
+        경상북도 경주시 건천읍 대경로 3983<br>
+        > <b>가격: 980 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6e912bd67092cb7d30b69d49a771c73a = L.marker(
+                [35.91007316836928, 129.241248287742],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_6e912bd67092cb7d30b69d49a771c73a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 삼일충전소</b><br>
+        <b>SK가스</b><br>
+        경북 경주시 천북면 모아리 974-4<br>
+        경북 경주시 천북면 산업로 4854<br>
+        > <b>가격: 985 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4ef35773c7e903ad2c370261c4a231e8 = L.marker(
+                [35.90197867581734, 129.0417442838676],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_4ef35773c7e903ad2c370261c4a231e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아화만남충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 서면 아화리 716-8<br>
+        경북 경주시 서면 대경로 3004<br>
+        > <b>가격: 989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b5b462866563893ba882ec853e4710f0 = L.marker(
+                [35.99770407907121, 129.22780868411422],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_b5b462866563893ba882ec853e4710f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안강LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 안강읍 안강리 75-1<br>
+        경북 경주시 안강읍 안현로 1597<br>
+        > <b>가격: 989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ac581e811e309cf39fc5e7a608881c7 = L.marker(
+                [35.996371931097386, 129.20294041802003],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_8ac581e811e309cf39fc5e7a608881c7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>산대LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 경주시 안강읍 산대리 887-2<br>
+        경북 경주시 안강읍 안강중앙로 23<br>
+        > <b>가격: 989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8bf7c5c2197bc0a6e1d25aa08a2f53cd = L.marker(
+                [35.814312147739834, 129.17689224867348],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_8bf7c5c2197bc0a6e1d25aa08a2f53cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신경주LPG(율동)</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 율동 739-4<br>
+        경북 경주시 대경로 4682 (율동)<br>
+        > <b>가격: 990 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e38d780c59b19ebeba6e147547d960d9 = L.marker(
+                [35.83357211149148, 129.20689457754185],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_e38d780c59b19ebeba6e147547d960d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>국제충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 경주시 사정동 112-11<br>
+        경북 경주시 금성로 179 (사정동)<br>
+        > <b>가격: 999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1853a0066fe5cf858baa56b57c26dab9 = L.marker(
+                [35.87975407668763, 129.22903566810797],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_1853a0066fe5cf858baa56b57c26dab9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용강LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 경주시 용강동 434<br>
+        경북 경주시 산업로 4490 (용강동)<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_055e9eafddc0861bf1f61faa1abab15c = L.marker(
+                [35.88035792052198, 129.22551225010648],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_055e9eafddc0861bf1f61faa1abab15c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한성산업㈜</b><br>
+        <b>SK가스</b><br>
+        경북 경주시 용강동 1276-1<br>
+        경북 경주시 광중길 18 (용강동)<br>
+        > <b>가격: 1,007 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d8081f410b566265f320f83328b4387 = L.marker(
+                [35.81111634412232, 129.25570431035692],
+                {}
+            ).addTo(map_fe446d09c1cd42d9103b347578397b46);
+        
+    
+            marker_5d8081f410b566265f320f83328b4387.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 정우에너지 동방충전소</b><br>
+        <b>SK가스</b><br>
+        경북 경주시 동방동 699-1<br>
+        경북 경주시 산업로 3593 (동방동)<br>
+        > <b>가격: 1,009 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

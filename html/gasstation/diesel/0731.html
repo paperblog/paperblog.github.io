@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0d3db980a2cffafff5075b5805659ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d0d3db980a2cffafff5075b5805659ff" ></div>
+        
+</body>
+<script>    
+    
+            var map_d0d3db980a2cffafff5075b5805659ff = L.map(
+                "map_d0d3db980a2cffafff5075b5805659ff",
+                {
+                    center: [34.63695478901925, 126.92738714358617],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbb7ebebefe59e503d3de7892eb877ec = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            var locate_control_2c2060f03d5cd26e90448641b43afddb = L.control.locate(
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+            
+        
+    
+            var marker_da5134fa040877b09adfd98ff77cbfab = L.marker(
+                [34.72003821035351, 126.93034049903927],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_da5134fa040877b09adfd98ff77cbfab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장흥 정남진주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 장흥군 부산면 호계리 산 211-1<br>
+        전남 장흥군 부산면 남해고속도로 41<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e641c6903526e804f8328a0599b86fd = L.marker(
+                [34.79833291926111, 126.93237187494228],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_5e641c6903526e804f8328a0599b86fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>봉림주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 장흥군 장평면 봉림리 203<br>
+        전남 장흥군 장평면 곰치로 840<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e2248b28479a142ea8cab9925786c0b3 = L.marker(
+                [34.67784636507157, 126.930706225276],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_e2248b28479a142ea8cab9925786c0b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>보림주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 장흥군 장흥읍 향양리 385-5<br>
+        전남 장흥군 장흥읍 남부관광로 196<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_461c9b41bd1f768bfca606761aa1ca10 = L.marker(
+                [34.75225972220405, 126.99689662999573],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_461c9b41bd1f768bfca606761aa1ca10.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용두농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 장동면 배산리 529<br>
+        전남 장흥군 장동면 곰치로 9<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28fdd1bcf67612d4cd624222b869c347 = L.marker(
+                [34.61585540247471, 126.91501450238154],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_28fdd1bcf67612d4cd624222b869c347.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>용산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 용산면 인암리 790-11<br>
+        전남 장흥군 용산면 용안로11<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a6700debd0a73ccc844e9b5ada7efbb0 = L.marker(
+                [34.65812645267384, 126.96098153490452],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_a6700debd0a73ccc844e9b5ada7efbb0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안양농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 안양면 수양리 377-9<br>
+        전남 장흥군 안양면 용안로 793<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7eb10d69bbf77718fbad2776486972ff = L.marker(
+                [34.68335784413457, 126.9040529468052],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_7eb10d69bbf77718fbad2776486972ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정남진장흥농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 장흥읍 건산리 687-4<br>
+        전남 장흥군 장흥읍 북부로 6<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_421585daa02083aa238ccc425f85ee46 = L.marker(
+                [34.676805191197296, 126.9104873835129],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_421585daa02083aa238ccc425f85ee46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)행촌 청죽주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 장흥군 장흥읍 건산리 381-10<br>
+        전남 장흥군 장흥읍 흥성로 70<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bc6d26d6a37c847bdcdf75c15fbe7a19 = L.marker(
+                [34.49314450382067, 126.88460043340761],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_bc6d26d6a37c847bdcdf75c15fbe7a19.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도청주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 장흥군 대덕읍 도청리 501-5<br>
+        전남 장흥군 대덕읍 도청신월로 123<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44ecba33131fc378d596e5a179193d41 = L.marker(
+                [34.675549523091696, 126.9011571303047],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_44ecba33131fc378d596e5a179193d41.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진남주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 장흥군 장흥읍 예양리 114-3<br>
+        전남 장흥군 장흥읍 칠거리예양로 37<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd018c643b5bd244014166026db08359 = L.marker(
+                [34.48457459665702, 126.94021140032427],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_dd018c643b5bd244014166026db08359.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천관농협회진지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 회진면 회진리1797-7<br>
+        전남 장흥군 회진면 회진로 485<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d6c486c37af4690884f339b64bc979d = L.marker(
+                [34.53419581787841, 126.95289976380342],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_4d6c486c37af4690884f339b64bc979d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 장흥군 관산읍 외동리 77-7<br>
+        전남 장흥군 관산읍 장흥대로 1425<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_770f83ff1647b434c84acd14992109c4 = L.marker(
+                [34.50514333213196, 126.91884737264859],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_770f83ff1647b434c84acd14992109c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천관농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 대덕읍 연지리 103-62<br>
+        전남 장흥군 대덕읍 장흥대로 921<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aaee74d21082cc2f70f4ae41daee2f9a = L.marker(
+                [34.5642887836852, 126.93743176445692],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_aaee74d21082cc2f70f4ae41daee2f9a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>관산농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 장흥군 관산읍 옥당리 500-1<br>
+        전남 장흥군 관산읍 관산우회로 106-36<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d3b24fca2f28aecda086978e97259bd9 = L.marker(
+                [34.77265704306892, 126.97463917581403],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_d3b24fca2f28aecda086978e97259bd9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장평주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 장흥군 장평면 용강리 68-2<br>
+        전남 장흥군 장평면 장평중앙길 31<br>
+        > <b>가격: 1,899 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7e5afc14db76ca19714403b7e459b91 = L.marker(
+                [34.498977231392566, 126.89382181379393],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_c7e5afc14db76ca19714403b7e459b91.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대덕주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 장흥군 대덕읍 연정리 87-1<br>
+        전남 장흥군 대덕읍 대대로 981<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44cdf3b40b316e1e7ca71844d8816573 = L.marker(
+                [34.64194175932335, 126.8930268917597],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_44cdf3b40b316e1e7ca71844d8816573.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송산주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 장흥군 장흥읍 덕제리 44-3<br>
+        전남 장흥군 장흥읍 장흥대로 2956<br>
+        > <b>가격: 1,920 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bb3444f09f72c4ba3d65d1486bc7cd11 = L.marker(
+                [34.69467123419242, 126.90162624904026],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_bb3444f09f72c4ba3d65d1486bc7cd11.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정남진장흥IC주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 장흥군 장흥읍 행원리 947<br>
+        전남 장흥군 장흥읍 장흥대로 3717<br>
+        > <b>가격: 1,935 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ed13ef89f7e5e92ff9a48e811ccf78f6 = L.marker(
+                [34.71413888075945, 126.9284787123223],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_ed13ef89f7e5e92ff9a48e811ccf78f6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장안동부주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 장흥군 부산면 호계리 350<br>
+        전남 장흥군 부산면 녹색로 1030<br>
+        > <b>가격: 1,938 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c1c9d6afe9ebc7f3c612c0ba122e2d15 = L.marker(
+                [34.57719096701265, 126.94015056719037],
+                {}
+            ).addTo(map_d0d3db980a2cffafff5075b5805659ff);
+        
+    
+            marker_c1c9d6afe9ebc7f3c612c0ba122e2d15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천관산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 장흥군 용산면 녹원리 152-8<br>
+        전남 장흥군 용산면 장흥대로 1948<br>
+        > <b>가격: 1,939 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

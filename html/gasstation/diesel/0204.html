@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_370aa37a5e0183bb0e0a4eef4e2620fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_370aa37a5e0183bb0e0a4eef4e2620fd" ></div>
+        
+</body>
+<script>    
+    
+            var map_370aa37a5e0183bb0e0a4eef4e2620fd = L.map(
+                "map_370aa37a5e0183bb0e0a4eef4e2620fd",
+                {
+                    center: [37.39825318932207, 126.92966357375262],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fddc3f54bb5731c5f4a7e10dfaffc9e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            var locate_control_11b47020bf73482b88626ac5ac4fd8e1 = L.control.locate(
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+            
+        
+    
+            var marker_625c754dc6728fa9b931fe80937dc651 = L.marker(
+                [37.40196034008365, 126.90401742118613],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_625c754dc6728fa9b931fe80937dc651.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜천이코끼리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 박달2동 132-3<br>
+        경기 안양시 만안구 박달로 464 (박달동)<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ad0f0b532bcd35f577696907ed835cc = L.marker(
+                [37.393258978100086, 126.9308692820945],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_2ad0f0b532bcd35f577696907ed835cc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청기와주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 안양동 603-1<br>
+        경기 안양시 만안구 만안로 114<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dedc9583d990594510882cb2f5bd33fd = L.marker(
+                [37.40952540390098, 126.88336023470217],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_dedc9583d990594510882cb2f5bd33fd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안양원예농업협동조합주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 안양시 만안구 박달동 927<br>
+        경기도 안양시 만안구  오리로 60<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8efa82bf4deb82ced2506ddeb66bf8a = L.marker(
+                [37.405711481079074, 126.88596949815116],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_a8efa82bf4deb82ced2506ddeb66bf8a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)푸른주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 박달동 683-5<br>
+        경기 안양시 만안구 오리로 11 (박달동)<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db88ac0fce7b262a443b6f2c619a685d = L.marker(
+                [37.39420933571853, 126.92941642286019],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_db88ac0fce7b262a443b6f2c619a685d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)세일 구도일주유소 안양</b><br>
+        <b>S-OIL</b><br>
+        경기 안양시 만안구 안양동 392-10<br>
+        경기 안양시 만안구 만안로 135<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05a0618d76ed38d123892af71b20d49e = L.marker(
+                [37.40237833948817, 126.91417663857884],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_05a0618d76ed38d123892af71b20d49e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성유류판매(주) 안양지점</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 만안구 안양동 695-2<br>
+        경기 안양시 만안구 박달로 552 (안양동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_33d942f4d4722e3057ac9f4eb8260b3c = L.marker(
+                [37.38005005485242, 126.93692305030733],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_33d942f4d4722e3057ac9f4eb8260b3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안양알찬주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 안양시 만안구 안양동 367-12<br>
+        경기 안양시 만안구 안양로 49 (안양동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d55d10272f2bb22c7db427d5021d23a = L.marker(
+                [37.42025704480063, 126.90737989990298],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_4d55d10272f2bb22c7db427d5021d23a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 석수현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 석수2동 259-1<br>
+        경기 안양시 만안구 안양로 574 (석수동)<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd3a2803f5ba3ebdf41656a5be86a189 = L.marker(
+                [37.41214688284961, 126.90937979585077],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_dd3a2803f5ba3ebdf41656a5be86a189.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 목련주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 석수2동 319-3<br>
+        경기 안양시 만안구 안양로 479<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c99b552796b386f15f743ace4c68d2f = L.marker(
+                [37.38225444090089, 126.93566116720132],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_9c99b552796b386f15f743ace4c68d2f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>시몬주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 만안구 안양8동 347-16<br>
+        경기 안양시 만안구 안양천서로 347-16 (안양동)<br>
+        > <b>가격: 1,878 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_07a7ee54ae869a991daaeb0f0b17bc6c = L.marker(
+                [37.39757063348601, 126.91351979165626],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_07a7ee54ae869a991daaeb0f0b17bc6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)양지</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안양시 만안구 안양동 944-1<br>
+        경기 안양시 만안구 양화로 44 (안양동)<br>
+        > <b>가격: 1,879 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_856f5196d5d0d1d32a9223a698ff4439 = L.marker(
+                [37.38126187021131, 126.96056991526925],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_856f5196d5d0d1d32a9223a698ff4439.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KH에너지(주)직영 평촌주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 동안구 호계동 1073-2<br>
+        경기 안양시 동안구 평촌대로 99 (호계동)<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4551a4ddd6f45a882329e5b97c72f7f3 = L.marker(
+                [37.3689021452343, 126.95390396705623],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_4551a4ddd6f45a882329e5b97c72f7f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유(주)서일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안양시 동안구 호계동 966-24<br>
+        경기 안양시 동안구 엘에스로 56 (호계동)<br>
+        > <b>가격: 1,885 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ac234f64caabf4f773de53af216b07f3 = L.marker(
+                [37.40275486238064, 126.91593320691362],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_ac234f64caabf4f773de53af216b07f3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴그린주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안양시 만안구 안양동 693-7<br>
+        경기 안양시 만안구 박달로 569 (안양동)<br>
+        > <b>가격: 1,886 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d253498cc3fd066a4fab7183d235171e = L.marker(
+                [37.400086524057315, 126.93064540009391],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_d253498cc3fd066a4fab7183d235171e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동일석유제일주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 동안구 비산동 540-9<br>
+        경기 안양시 동안구 경수대로 962<br>
+        > <b>가격: 1,887 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_670bcc0c0a14ff242380a7d5b4f8c5e8 = L.marker(
+                [37.39601020192035, 126.96609705327002],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_670bcc0c0a14ff242380a7d5b4f8c5e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>플라트(주)금성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안양시 동안구 관양동 1018-3<br>
+        경기 안양시 동안구 시민대로 325<br>
+        > <b>가격: 1,888 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f05f38543e9962e19fc8605cd1b95ceb = L.marker(
+                [37.395760215068606, 126.9635417297166],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_f05f38543e9962e19fc8605cd1b95ceb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주)직영 평촌신도시주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 동안구 관양동 1597-2<br>
+        경기 안양시 동안구 시민대로 301<br>
+        > <b>가격: 1,888 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ecd9aa86a1f5a0087872aa120247a783 = L.marker(
+                [37.404398136687135, 126.9685411965785],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_ecd9aa86a1f5a0087872aa120247a783.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 관양현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안양시 동안구 관양동 1466-3<br>
+        경기 안양시 동안구 관악대로 414<br>
+        > <b>가격: 1,889 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b30e19fcc8bd78dca3faf6e2de716656 = L.marker(
+                [37.39566295963961, 126.9755761609094],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_b30e19fcc8bd78dca3faf6e2de716656.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통㈜ 구도일주유소 새안양</b><br>
+        <b>S-OIL</b><br>
+        경기 안양시 동안구 평촌동 81-7<br>
+        경기 안양시 동안구 흥안대로 463<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a8edc4831c6ce6c3bdf15e67a028a1b3 = L.marker(
+                [37.42090393598196, 126.90778964275349],
+                {}
+            ).addTo(map_370aa37a5e0183bb0e0a4eef4e2620fd);
+        
+    
+            marker_a8edc4831c6ce6c3bdf15e67a028a1b3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남경주유소㈜</b><br>
+        <b>SK에너지</b><br>
+        경기 안양시 만안구 석수동 102-11<br>
+        경기 안양시 만안구 경수대로 1279 (석수동)<br>
+        > <b>가격: 1,895 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

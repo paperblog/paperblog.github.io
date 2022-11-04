@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce55a6a0562f59c8a581ffcdfb231505 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ce55a6a0562f59c8a581ffcdfb231505" ></div>
+        
+</body>
+<script>    
+    
+            var map_ce55a6a0562f59c8a581ffcdfb231505 = L.map(
+                "map_ce55a6a0562f59c8a581ffcdfb231505",
+                {
+                    center: [35.12555845098641, 128.91966211354872],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbb0761775e5b9553c482207f2561d5a = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            var locate_control_cd7aa3178547c4693afe55cb1c53b919 = L.control.locate(
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+            
+        
+    
+            var marker_62c89483875ed0cbd97ef1eb2599dc16 = L.marker(
+                [35.09858867914578, 128.92766820708528],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_62c89483875ed0cbd97ef1eb2599dc16.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>명지농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        부산 강서구 명지동 1526-17<br>
+        부산 강서구 르노삼성대로 572 (명지동)<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f30d7803a038445ebe2e336adb2377fc = L.marker(
+                [35.16136951464647, 128.8871810964853],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_f30d7803a038445ebe2e336adb2377fc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 경마장주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 강서구 범방동 73<br>
+        부산 강서구 가락대로 1027<br>
+        > <b>가격: 1,989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb1ccd4c5cdd08d2ee11aa3817a81b7f = L.marker(
+                [35.21190813967673, 128.9681146544558],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_cb1ccd4c5cdd08d2ee11aa3817a81b7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>은마석유 경기장주유소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 강서구 대저1동 2120<br>
+        부산 강서구 낙동북로 364 (대저1동)<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_893ac96ca83c2d0187ace13c26630579 = L.marker(
+                [35.092218823978314, 128.90925873801],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_893ac96ca83c2d0187ace13c26630579.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서호주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 강서구 명지동 3604-3<br>
+        부산 강서구 명지국제2로28번길 36<br>
+        > <b>가격: 1,998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d56797f03d000f1c6ab8b19a3c007636 = L.marker(
+                [35.099904879842164, 128.92818424814726],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_d56797f03d000f1c6ab8b19a3c007636.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>극동유화(주) 고려주유소</b><br>
+        <b>S-OIL</b><br>
+        부산 강서구 명지동 1530-12<br>
+        부산 강서구 르노삼성대로 586<br>
+        > <b>가격: 1,999 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_140e42e83cb4aec7d6840d5d1f8f806a = L.marker(
+                [35.08936066862904, 128.89756573710864],
+                {}
+            ).addTo(map_ce55a6a0562f59c8a581ffcdfb231505);
+        
+    
+            marker_140e42e83cb4aec7d6840d5d1f8f806a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광신석유(주)직영 명지주유소</b><br>
+        <b>SK에너지</b><br>
+        부산 강서구 명지동 3227-1<br>
+        부산 강서구 르노삼성대로 372 (명지동)<br>
+        > <b>가격: 2,199 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

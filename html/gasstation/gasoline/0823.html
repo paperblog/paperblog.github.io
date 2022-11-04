@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3cfb247232f6f9554288022804ffa9a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3cfb247232f6f9554288022804ffa9a7" ></div>
+        
+</body>
+<script>    
+    
+            var map_3cfb247232f6f9554288022804ffa9a7 = L.map(
+                "map_3cfb247232f6f9554288022804ffa9a7",
+                {
+                    center: [36.36695106330441, 128.57351475750949],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_06189ef00423b89e8c9adb8ca054c661 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            var locate_control_531a4c06d7c0ad1bbf8afca2ee73be65 = L.control.locate(
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+            
+        
+    
+            var marker_115ad819a0a5a90d5338e25896e84cd2 = L.marker(
+                [36.34481411805255, 128.29751558155277],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_115ad819a0a5a90d5338e25896e84cd2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>낙동강의성주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 의성군 단밀면 낙정리산 1-4<br>
+        경북 의성군 단밀면 도안로 757-67<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79fde2802c2563897e6a6c34ebc5dc99 = L.marker(
+                [36.34448133581917, 128.29927708588772],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_79fde2802c2563897e6a6c34ebc5dc99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>낙동강구미주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 구미시 도개면 용산리 산29-11<br>
+        경북 구미시 도개면 용산3길 122-65<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3ffc69298ba2da07f871f84f3987b9c0 = L.marker(
+                [36.410892204579106, 128.44422002476668],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_3ffc69298ba2da07f871f84f3987b9c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성(상주)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 의성군 안계면 양곡리 산101-1<br>
+        경북 의성군 안계면 새못안길 45-49<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_386fcb8dcb8c099ebc6c72cc7fb4d552 = L.marker(
+                [36.40958626471798, 128.4469060380781],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_386fcb8dcb8c099ebc6c72cc7fb4d552.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성(영덕)주유소충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 의성군 안계면 양곡리 산104<br>
+        경북 의성군 안계면 새못안길 45-47<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2d13c603dded4b53ae21cecab42c9ee = L.marker(
+                [36.39109942300938, 128.6771245596604],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_a2d13c603dded4b53ae21cecab42c9ee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>조은주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 의성군 의성읍 업리 1119-2<br>
+        경북 의성군 의성읍 경북대로 6182<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aed667e07ddbaade21bbb97ce470012b = L.marker(
+                [36.35461272508995, 128.68312117115462],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_aed667e07ddbaade21bbb97ce470012b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성제일주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 의성군 의성읍 원당리 27-4<br>
+        경북 의성군 의성읍 경북대로 5752<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8fe9e50d049bba9a5c11bbdd267623df = L.marker(
+                [36.347335679146134, 128.66987241561017],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_8fe9e50d049bba9a5c11bbdd267623df.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>크로바주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 의성군 의성읍 원당리 566-1<br>
+        경북 의성군 의성읍 경북대로 5607<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13fe9c00783f6bcc40ae31848b6c376e = L.marker(
+                [36.44454581219032, 128.682961004316],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_13fe9c00783f6bcc40ae31848b6c376e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새동평주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 의성군 단촌면 세촌리 1404-52<br>
+        경북 의성군 단촌면 경북대로 6910<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eafa7ef5087e9a9df8d4bcb5034addeb = L.marker(
+                [36.35533486593817, 128.68312116403789],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_eafa7ef5087e9a9df8d4bcb5034addeb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>교동</b><br>
+        <b>S-OIL</b><br>
+        경북 의성군 의성읍 철파리 546-4<br>
+        경북 의성군 의성읍 경북대로 5763<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cfc7b442cc0548e5ea5cf9695b4fa19a = L.marker(
+                [36.28531040528843, 128.5722851152073],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_cfc7b442cc0548e5ea5cf9695b4fa19a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>분도주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 의성군 봉양면 신평리 5<br>
+        경북 의성군 봉양면 평기길 29-23<br>
+        > <b>가격: 1,639 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6fb8ef5eb4f1315d116f0aec05a1cadb = L.marker(
+                [36.32664348382387, 128.6565127012951],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_6fb8ef5eb4f1315d116f0aec05a1cadb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>행운주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 의성군 봉양면 분토리 114<br>
+        경북 의성군 봉양면 경북대로 5347<br>
+        > <b>가격: 1,640 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ad69cbd44efd26f9ce523bf7827c5cf = L.marker(
+                [36.40282944231545, 128.6767601065572],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_1ad69cbd44efd26f9ce523bf7827c5cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대양주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 의성군 단촌면 방하리 32-5<br>
+        경북 의성군 단촌면 경북대로 6344<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee0e30324d94f1ada2efeec320177f84 = L.marker(
+                [36.31956073016256, 128.62446004369744],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_ee0e30324d94f1ada2efeec320177f84.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무궁화주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 의성군 봉양면 문흥리 664<br>
+        경북 의성군 봉양면 경북대로 5029<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7eb56068d51adb69a7bfb4d1dd74187d = L.marker(
+                [36.37219003370383, 128.58002133530243],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_7eb56068d51adb69a7bfb4d1dd74187d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성중부농협안평주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 의성군 안평면 괴산리 731<br>
+        경북 의성군 안평면 봉호로 879<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eb00b4a58c68081e7d4734160d6531f7 = L.marker(
+                [36.471158262018754, 128.50486271098623],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_eb00b4a58c68081e7d4734160d6531f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성중부농협신평주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 의성군 신평면 교안리 286<br>
+        경북 의성군 신평면 봉호로 2413<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4524ec7a1911036b934147735a8c13f7 = L.marker(
+                [36.31149022871559, 128.61343465200792],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_4524ec7a1911036b934147735a8c13f7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성쌍용주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 의성군 봉양면 구미리 19<br>
+        경북 의성군 봉양면 경북대로 4899<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_91fc9d0cb6e0874e4af1523ae16e8620 = L.marker(
+                [36.30335688000611, 128.5753567916263],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_91fc9d0cb6e0874e4af1523ae16e8620.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>의성중부농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 의성군 봉양면 화전리 470-5<br>
+        경북 의성군 봉양면 도리원3길 46<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8ef8d5dd52dc8d9afb40ae8b6bc9700 = L.marker(
+                [36.382553977274036, 128.67912122621257],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_f8ef8d5dd52dc8d9afb40ae8b6bc9700.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동아주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 의성군 의성읍 업1리 1086-1<br>
+        경북 의성군 북부길 340<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a85324972d4b884789edde47d573d1b1 = L.marker(
+                [36.35534254550288, 128.6882171581076],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_a85324972d4b884789edde47d573d1b1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>엑스포주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 의성군 의성읍 원당리 82-1<br>
+        경북 의성군 의성읍 홍술로 87 (의성읍)<br>
+        > <b>가격: 1,655 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d13322b6400c081188a1eada4b1ed7a = L.marker(
+                [36.40588284873398, 128.4151442641257],
+                {}
+            ).addTo(map_3cfb247232f6f9554288022804ffa9a7);
+        
+    
+            marker_5d13322b6400c081188a1eada4b1ed7a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>일월주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 의성군 단북면 정안리 663-2<br>
+        경북 의성군 단북면 서부로 2004<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

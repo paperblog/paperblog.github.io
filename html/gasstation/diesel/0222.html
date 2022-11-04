@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77bda7725059bb5d2083c7afb35a53ca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_77bda7725059bb5d2083c7afb35a53ca" ></div>
+        
+</body>
+<script>    
+    
+            var map_77bda7725059bb5d2083c7afb35a53ca = L.map(
+                "map_77bda7725059bb5d2083c7afb35a53ca",
+                {
+                    center: [37.30125018872202, 127.57432083310232],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cdf42bc58a1842954020dec65fa86911 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            var locate_control_46b8045c1c4f71c4968911cb0b01bf1e = L.control.locate(
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+            
+        
+    
+            var marker_540cf59b5adcbd4aa88668ccf8a65f42 = L.marker(
+                [37.41398199686741, 127.59974986306061],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_540cf59b5adcbd4aa88668ccf8a65f42.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대신주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 여주시 대신면 계림리 132-1<br>
+        경기 여주시 대신면 여양1로 527<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5c070e09d1e27291516331b9bf9d2edc = L.marker(
+                [37.27900364708957, 127.57971124688012],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_5c070e09d1e27291516331b9bf9d2edc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서여주(양평방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 여주시 능서면 매류리 1-21<br>
+        경기 여주시 능서면 중부내륙고속도로 272<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7eb1fa0d8eea0b0dfa974e346edf8fc5 = L.marker(
+                [37.27845588478849, 127.57820904297535],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_7eb1fa0d8eea0b0dfa974e346edf8fc5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서여주(창원방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 여주시 능서면 매류리 1-55<br>
+        경기 여주시 능서면 중부내륙고속도로 271<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_74668c7fbe8b7f42c3f3910b6a055d2d = L.marker(
+                [37.238547728268635, 127.57148437481267],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_74668c7fbe8b7f42c3f3910b6a055d2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여주(강릉방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 여주시 가남읍 본두리 670-2<br>
+        경기 여주시 가남읍 여주남로 722<br>
+        > <b>가격: 1,829 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3735e46e7fb114b131aca42365be8f98 = L.marker(
+                [37.41175743130564, 127.57246823130565],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_3735e46e7fb114b131aca42365be8f98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 여주시 대신면 송촌리 482-1<br>
+        경기 여주군 여양1로 268<br>
+        > <b>가격: 1,835 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_37b716566614606210dd86f7713af0ac = L.marker(
+                [37.21516877456165, 127.53395881065676],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_37b716566614606210dd86f7713af0ac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)따스한놈들 여주지점</b><br>
+        <b>S-OIL</b><br>
+        경기 여주시 가남읍 신해리 637-1<br>
+        경기 여주시 가남읍 경충대로 1477<br>
+        > <b>가격: 1,845 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6d9f43572db5c9d8484964d6418c46c = L.marker(
+                [37.37411434033776, 127.57894933328846],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_e6d9f43572db5c9d8484964d6418c46c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대신농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 여주시 대신면 보통리 127<br>
+        경기 여주시 대신면 여양로 1537<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f36af03d6fd1548e7bceff7f4c8c64d9 = L.marker(
+                [37.257923000585336, 127.60105485262429],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_f36af03d6fd1548e7bceff7f4c8c64d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜두드림주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 여주시 연라동 551-3<br>
+        경기 여주시 여주남로 377<br>
+        > <b>가격: 1,848 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb80523cd73b9f965c737599a53b97b6 = L.marker(
+                [37.302404995670045, 127.66773698983826],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_fb80523cd73b9f965c737599a53b97b6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>연세석유여주셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 여주시 천송동 51-5<br>
+        경기 여주시 신륵로 164<br>
+        > <b>가격: 1,849 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_10e2584bb18f813afe7c9d346115f00b = L.marker(
+                [37.21770096268552, 127.53207565488681],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_10e2584bb18f813afe7c9d346115f00b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가남현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 가남읍 신해리 621-5<br>
+        경기 여주시 가남읍 경충대로 1520<br>
+        > <b>가격: 1,853 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69500909a47fe082b8a49e19199da253 = L.marker(
+                [37.298939595323716, 127.55585684647995],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_69500909a47fe082b8a49e19199da253.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 흥천면 신근리 873-5<br>
+        경기 여주시 흥천면 흥천로 1<br>
+        > <b>가격: 1,854 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b9e3188a464b8723375c0ace5a68ed3c = L.marker(
+                [37.21614505484512, 127.53374529023387],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_b9e3188a464b8723375c0ace5a68ed3c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신해주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 여주시 가남읍 신해리 617-3<br>
+        경기도 여주시 가남읍 경충대로 1490<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3a3ba8e8f91b35a46df45e844cbad7b = L.marker(
+                [37.407453243722244, 127.4790164752339],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_e3a3ba8e8f91b35a46df45e844cbad7b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 여주시 금사면 상호리 120<br>
+        경기 여주시 금사면 금품1로 436<br>
+        > <b>가격: 1,857 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a7c9c3a6de6ddb90570a9f60cd93578c = L.marker(
+                [37.23965046734272, 127.56854816240558],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_a7c9c3a6de6ddb90570a9f60cd93578c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스에너지㈜ 여주(인천방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경기 여주시 가남읍 본두리 677-1<br>
+        경기 여주시 가남읍 화평길 116<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_77c089cd4c7cd8b66c6689456396e9e8 = L.marker(
+                [37.26104364604866, 127.64304003979127],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_77c089cd4c7cd8b66c6689456396e9e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여주농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        경기 여주시 점봉동 586-14<br>
+        경기 여주시 세종로 421-7<br>
+        > <b>가격: 1,858 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84b9f81b1f1577f2199be0d5d70f14ce = L.marker(
+                [37.2126516683138, 127.54246947144392],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_84b9f81b1f1577f2199be0d5d70f14ce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성신주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 여주시 가남읍 태평리 268-35<br>
+        경기 여주시 가남읍 경충대로 1394<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b231fcd6241c4b59f3141236b41aa666 = L.marker(
+                [37.29833061547132, 127.60002028664296],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_b231fcd6241c4b59f3141236b41aa666.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)썬라이즈오일 서여주IC 주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 여주시 능서면 번도리 887-33<br>
+        경기 여주시 능서면 중부대로 2657<br>
+        > <b>가격: 1,865 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56ae035dec54f59b621a2600a86a74ea = L.marker(
+                [37.30399167223647, 127.67120437677734],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_56ae035dec54f59b621a2600a86a74ea.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우진주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 여주시 천송동 31-14<br>
+        경기 여주시 신륵로 200 (오학동)<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2806870608c16194e2dc98ad37f2fe2 = L.marker(
+                [37.405659117336384, 127.5444230416394],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_d2806870608c16194e2dc98ad37f2fe2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>코리아주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 여주시 대신면 천서리 646-1<br>
+        경기 여주시 대신면 여양로 2012<br>
+        > <b>가격: 1,869 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35a95d0dc33d7e561d81b90685ab01fa = L.marker(
+                [37.39207993163983, 127.53269427106933],
+                {}
+            ).addTo(map_77bda7725059bb5d2083c7afb35a53ca);
+        
+    
+            marker_35a95d0dc33d7e561d81b90685ab01fa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>이포주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 여주시 금사면 이포리 279<br>
+        경기 여주시 금사면 이포로 3<br>
+        > <b>가격: 1,875 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

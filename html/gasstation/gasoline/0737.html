@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_41e0b80a582968282aa1eecbc1f1fb64 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_41e0b80a582968282aa1eecbc1f1fb64" ></div>
+        
+</body>
+<script>    
+    
+            var map_41e0b80a582968282aa1eecbc1f1fb64 = L.map(
+                "map_41e0b80a582968282aa1eecbc1f1fb64",
+                {
+                    center: [35.077214008134504, 126.53005216919382],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cea5ea44fc2f42a3741955b881f1bf7c = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            var locate_control_19b7fbd678ec62cea9e9deffbb4a4ccb = L.control.locate(
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+            
+        
+    
+            var marker_299da3bad4623762bd6fbd7b2903059a = L.marker(
+                [35.17799454412852, 126.59487119494527],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_299da3bad4623762bd6fbd7b2903059a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함평나비주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 해보면 해보리 212-27<br>
+        전남 함평군 해보면 영광로 2538<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28099cdc61cdba871ebf140abda5d146 = L.marker(
+                [35.02146167800608, 126.5336505754359],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_28099cdc61cdba871ebf140abda5d146.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광목주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 학교면 사거리 621-31<br>
+        전라남도 함평군 학교면 함영로 490<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ed1e6ba9666b525b4a7fa703693f006 = L.marker(
+                [35.13219708295686, 126.4816652017081],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_0ed1e6ba9666b525b4a7fa703693f006.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함평천지(시흥방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 함평군 손불면 죽암리 46<br>
+        전남 함평군 손불면 서해안고속도로 38<br>
+        > <b>가격: 1,594 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f296bed9f94d9275e6f7a919e6d52a0c = L.marker(
+                [35.0372265667852, 126.50780194430178],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_f296bed9f94d9275e6f7a919e6d52a0c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보디앤에스㈜함평나비(무안)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 함평군 엄다면 성천리 1025-3<br>
+        전라남도 함평군 엄다면 무안광주고속도로 11-1<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a409785d786bac0b0a1b83621e82baf8 = L.marker(
+                [35.06814380734328, 126.47876841675853],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_a409785d786bac0b0a1b83621e82baf8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태경산업(주)함평무안주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 함평군 함평읍 장교리 산112-12<br>
+        전남 함평군 함평읍 서해안고속도로 31-1<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_caefd507250a1cf5e05d112bad760ffa = L.marker(
+                [35.0383196246445, 126.51309709572452],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_caefd507250a1cf5e05d112bad760ffa.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대보디앤에스(주)함평나비(광주)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        전남 함평군 엄다면 화양리 828<br>
+        전남 함평군 엄다면 무안광주고속도로12-1<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_079c6519bf112ec0dcada0a5a1271870 = L.marker(
+                [35.03333713280694, 126.53466604442036],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_079c6519bf112ec0dcada0a5a1271870.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천지농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 함평군 학교면 사거리 168-1<br>
+        전남 함평군 학교면 함영로 630<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b0c3e3029f287917352ef0fec2a9ee44 = L.marker(
+                [35.032940309458546, 126.55582308410668],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_b0c3e3029f287917352ef0fec2a9ee44.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>학다리주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 함평군 학교면 죽정리 883-4<br>
+        전남 함평군 학교면 영산로 3724<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_53cddaa1dfbbd8d6ca97e8ce22d09ca6 = L.marker(
+                [35.009523073943065, 126.50737339987036],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_53cddaa1dfbbd8d6ca97e8ce22d09ca6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)무안IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 엄다면 송로리 840-2<br>
+        전남 함평군 엄다면 영산로 3189<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c11be9fb40efd1f3f449a99cdf88f227 = L.marker(
+                [35.02830606456777, 126.58249948644472],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_c11be9fb40efd1f3f449a99cdf88f227.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함평제일주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 함평군 학교면 고막리 555-17<br>
+        전남 함평군 학교면 영산로 3995<br>
+        > <b>가격: 1,649 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_210dc4b4f4e3582ac3145fc2cacb3d15 = L.marker(
+                [35.11137959473447, 126.60967561942715],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_210dc4b4f4e3582ac3145fc2cacb3d15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나비골농협 나산지점</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 함평군 나산면 삼축리 274-3<br>
+        전남 함평군 나산면 나산길 51<br>
+        > <b>가격: 1,659 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dbe8cec0175d9c2a8d04ae8fdfbd802d = L.marker(
+                [35.08592423856402, 126.50097282388855],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_dbe8cec0175d9c2a8d04ae8fdfbd802d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함평농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 함평군 함평읍 대덕리 1051<br>
+        전남 함평군 함평읍 함영로 1348<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_04c049281edfe3ac27f4e1dc96971fb6 = L.marker(
+                [35.179870930844295, 126.6273297048541],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_04c049281edfe3ac27f4e1dc96971fb6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월야농협주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 함평군 월야면 월야리 494-29<br>
+        전라남도 함평군 월야면 밀재로 1516<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4dbcbbc6dd1c9e151478837204bb69eb = L.marker(
+                [35.142673900869504, 126.43106456504252],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_4dbcbbc6dd1c9e151478837204bb69eb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>손불농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 함평군 손불면 대전리 182-3<br>
+        전남 함평군 손불면 손불중앙길 76-13<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_974d4c9465ce974ad91a5765ac0880f1 = L.marker(
+                [35.062332212635006, 126.52283209811314],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_974d4c9465ce974ad91a5765ac0880f1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대창주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 함평군 함평읍 내교리 182-5<br>
+        전남 함평군 함평읍 중앙길 57<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c2ce03ad921e2bc98f281549c5cb3e62 = L.marker(
+                [35.0872545691883, 126.4966652653332],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_c2ce03ad921e2bc98f281549c5cb3e62.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주포주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 함평읍 진양리 290-1<br>
+        전남 함평군 함평읍 함영로 1389<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c76c3a3232a45586127c815c4b7ca699 = L.marker(
+                [35.06046823301882, 126.52360019931099],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_c76c3a3232a45586127c815c4b7ca699.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나비주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 함평군 함평읍 내교리 177<br>
+        전남 함평군 함평읍 중앙길 11<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7b5ead050712d637d40bffaa51bd30dd = L.marker(
+                [35.07418900144487, 126.54184850225377],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_7b5ead050712d637d40bffaa51bd30dd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 함평군 대동면 향교리 82<br>
+        전남 함평군 대동면 대동길 137<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_80d43f67689a97f5af0ab7fe7ede0fc6 = L.marker(
+                [35.075549791619835, 126.50671268667827],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_80d43f67689a97f5af0ab7fe7ede0fc6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청기와주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 함평군 함평읍 대덕리 458-4<br>
+        전남 함평군 함평읍 남일길 237<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba1f74751f4b4bf7d0a94d230360ad3a = L.marker(
+                [35.0851878051302, 126.55012547525858],
+                {}
+            ).addTo(map_41e0b80a582968282aa1eecbc1f1fb64);
+        
+    
+            marker_ba1f74751f4b4bf7d0a94d230360ad3a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성실주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 함평군 대동면 강운리 794-2<br>
+        전남 함평군 대동면 함장로 1661<br>
+        > <b>가격: 1,749 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

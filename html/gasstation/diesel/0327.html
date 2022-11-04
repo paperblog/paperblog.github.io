@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e7051a66f925c93ecc854b9028c2e9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2e7051a66f925c93ecc854b9028c2e9c" ></div>
+        
+</body>
+<script>    
+    
+            var map_2e7051a66f925c93ecc854b9028c2e9c = L.map(
+                "map_2e7051a66f925c93ecc854b9028c2e9c",
+                {
+                    center: [37.3891652916353, 128.7427211034041],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ebd701600563822a3379140bd383159 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            var locate_control_652e57864f86d7f90fe15d7845379fcd = L.control.locate(
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+            
+        
+    
+            var marker_e0028eeee2b05f6380ec97740e3e3521 = L.marker(
+                [37.49631712866385, 128.8498990059447],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_e0028eeee2b05f6380ec97740e3e3521.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 정선군 임계면 송계리 736-2<br>
+        강원 정선군 임계면 백두대간로 1377<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e2f3587b21d84b80cd2fb823e853307b = L.marker(
+                [37.531230373439755, 128.9263084219932],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_e2f3587b21d84b80cd2fb823e853307b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>백봉령주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 정선군 임계면 직원리 50-3<br>
+        강원 정선군 임계면 서동로 5584<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d7c6f46e429270b34cbd365e24d3fdf = L.marker(
+                [37.49435483652641, 128.85048720992617],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_6d7c6f46e429270b34cbd365e24d3fdf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>임계농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 정선군 임계면 송계리 792<br>
+        강원 정선군 임계면 서동로 4570 (임계면)<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee402e1b15a791ab60c2e804572d1143 = L.marker(
+                [37.4966783042335, 128.8637588741751],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_ee402e1b15a791ab60c2e804572d1143.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동백주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 임계면 송계리 299-1<br>
+        강원 정선군 임계면 서동로 4682<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9beee6a5a8923294473bfa3dffabb90a = L.marker(
+                [37.39643982372384, 128.8668986820207],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_9beee6a5a8923294473bfa3dffabb90a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼거리주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 임계면 골지리 616-8<br>
+        강원 정선군 임계면 백두대간로 35<br>
+        > <b>가격: 1,860 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e479cd78b079b6345f10b47cba123f8b = L.marker(
+                [37.38174539761091, 128.64466869744513],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_e479cd78b079b6345f10b47cba123f8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강원주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 정선읍 북실리 789-11<br>
+        강원 정선군 정선읍 정선로 1160<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_227a86d9c9ec3555eeb0f9938abfd461 = L.marker(
+                [37.457627307912226, 128.63076801291214],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_227a86d9c9ec3555eeb0f9938abfd461.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아리랑주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 정선군 북평면 나전리 361<br>
+        강원 정선군 북평면 오대천로 326<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d6c499a0627403583d60df8fd9f99d3 = L.marker(
+                [37.405826182420505, 128.67347139880695],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_1d6c499a0627403583d60df8fd9f99d3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지오텍서동주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 정선읍 덕송리 341-1<br>
+        강원 정선군 정선읍 서동로 1348<br>
+        > <b>가격: 1,880 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_946c6f605702f62369eb82108529785c = L.marker(
+                [37.47467315875742, 128.71387939975446],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_946c6f605702f62369eb82108529785c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>여량농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 정선군 북면 여량리 690-10<br>
+        강원 정선군 여량면 서동로 2783<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0dc358699b11ceb26737f43b9619e3e8 = L.marker(
+                [37.372385546749236, 128.66983322484677],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_0dc358699b11ceb26737f43b9619e3e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 정선군 정선읍 애산리 581<br>
+        강원 정선군 정선읍 애산로 1<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ac3528eef5f29abf36c2a265e3381a6 = L.marker(
+                [37.45151532680524, 128.66580488239055],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_8ac3528eef5f29abf36c2a265e3381a6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>나전주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 북평면 북평리 521-12<br>
+        강원 정선군 북평면 서동로 2085<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8bfbfd3447197cf317cb8db5304eff05 = L.marker(
+                [37.396557283095646, 128.66594671804296],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_8bfbfd3447197cf317cb8db5304eff05.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>정선주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 정선군 정선읍 덕송리 634-2<br>
+        강원 정선군 정선읍 서동로 1199<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_68558d29f5661bce14777bb60c7d5a56 = L.marker(
+                [37.34543743310597, 128.78749503921173],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_68558d29f5661bce14777bb60c7d5a56.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>그림바위주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 정선군 화암면 화암리 449<br>
+        강원 정선군 화암면 소금강로 1014<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_399e6ee08901e0b2836d0a8196cecab7 = L.marker(
+                [37.46976288818498, 128.6195310300978],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_399e6ee08901e0b2836d0a8196cecab7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>숙암주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 정선군 북평면 숙암리 607<br>
+        강원 정선군 북평면 오대천로 564<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd732f62cfc1e67e7883219880462080 = L.marker(
+                [37.346028179392064, 128.76685265057148],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_dd732f62cfc1e67e7883219880462080.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>석곡SK주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 동면 석곡리 269-3<br>
+        강원 정선군 화암면 소금강로 538<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b8014765c041105a792d6ca3c023c69 = L.marker(
+                [37.38169000765012, 128.66616677748843],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_1b8014765c041105a792d6ca3c023c69.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)에스앤제이(삼익주유소)</b><br>
+        <b>GS칼텍스</b><br>
+        강원 정선군 정선읍 봉양리 375-1<br>
+        강원 정선군 정선읍 비봉로 71<br>
+        > <b>가격: 1,910 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bd2cefa9b5ae77c7cccdfb42a94ed7fe = L.marker(
+                [37.197545851401294, 128.8570963487202],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_bd2cefa9b5ae77c7cccdfb42a94ed7fe.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강원주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 고한읍 고한리 54-1<br>
+        강원 정선군 고한읍 고한로 209<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e28969d11efa4329d2ec9443b41bf540 = L.marker(
+                [37.20040497882976, 128.6333940172549],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_e28969d11efa4329d2ec9443b41bf540.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신동주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 정선군 신동읍 천포리 363-1<br>
+        강원 정선군 신동읍 의림로 60<br>
+        > <b>가격: 1,930 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_013625e6670906c9153f611b738a966c = L.marker(
+                [37.26687606371222, 128.66714695993383],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_013625e6670906c9153f611b738a966c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이원주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 정선군 신동읍 가사리 산104<br>
+        강원 정선군 신동읍 강원남로 4123<br>
+        > <b>가격: 1,945 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_823c7945fc53581925e3afd63bd03cf3 = L.marker(
+                [37.22020976049107, 128.83501471654574],
+                {}
+            ).addTo(map_2e7051a66f925c93ecc854b9028c2e9c);
+        
+    
+            marker_823c7945fc53581925e3afd63bd03cf3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고토일주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 정선군 고한읍 고한리 154-5<br>
+        강원 정선군 고한읍 지장천로 859<br>
+        > <b>가격: 1,945 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

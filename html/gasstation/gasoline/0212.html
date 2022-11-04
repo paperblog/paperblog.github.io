@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9bcc2a109ccd087c3a9af704167501d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f9bcc2a109ccd087c3a9af704167501d" ></div>
+        
+</body>
+<script>    
+    
+            var map_f9bcc2a109ccd087c3a9af704167501d = L.map(
+                "map_f9bcc2a109ccd087c3a9af704167501d",
+                {
+                    center: [37.32003671159415, 126.85508804386708],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73360a82520d18fb9656a5a26cfd6c3f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            var locate_control_f14a1dac61e07aaf81c9756ec88a8ee3 = L.control.locate(
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+            
+        
+    
+            var marker_b58ce257278ab1120ad66ff84a8cb177 = L.marker(
+                [37.29507672246159, 126.8529415477007],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_b58ce257278ab1120ad66ff84a8cb177.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>소망주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 안산시 상록구 사동 1318-3<br>
+        경기 안산시 상록구 석호로 202 (사동)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0731ac281377082de6752c231b7c6f7f = L.marker(
+                [37.301450677674694, 126.90313757302158],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_0731ac281377082de6752c231b7c6f7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스유통㈜구도일주유소 신반월</b><br>
+        <b>S-OIL</b><br>
+        경기 안산시 상록구 건건동 897-28<br>
+        경기 안산시 상록구 건건1길 7 (건건동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_23afb3c2ad240c9593b4f267d836c4b9 = L.marker(
+                [37.292158050349784, 126.91197267881263],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_23afb3c2ad240c9593b4f267d836c4b9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안산슈퍼맨주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 안산시 상록구 사사동 614<br>
+        경기 안산시 상록구 서해로 2691 (사사동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c57a1ecbac858b55e3c4fa85026770af = L.marker(
+                [37.28727184938517, 126.86284899458781],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_c57a1ecbac858b55e3c4fa85026770af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상록수주유소(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안산시 상록구 본오동 948-5<br>
+        경기 안산시 상록구 이호로 53 (본오동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a3a72bdb15bdc177f8b6f529c0b044a = L.marker(
+                [37.35056942039545, 126.81809365497602],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_8a3a72bdb15bdc177f8b6f529c0b044a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안산주유소(강릉방향)</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 단원구 선부동 산1-50<br>
+        경기 안산시 단원구 영동고속도로 15<br>
+        > <b>가격: 1,603 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_752e8690bcef1bfadd130e3f43a126c1 = L.marker(
+                [37.28069845512812, 126.84745273845401],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_752e8690bcef1bfadd130e3f43a126c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사동셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 사동 1486<br>
+        경기 안산시 상록구 선진로 11 (사동)<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_49b0a7c87f1c14a05be340fe83e515a2 = L.marker(
+                [37.336799823410324, 126.84938555578802],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_49b0a7c87f1c14a05be340fe83e515a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜소모에너지 안산하이웨이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안산시 상록구 월피동 482-1<br>
+        경기 안산시 상록구 안산천서로 263<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4f887a78e1abc836e52c171a041497e = L.marker(
+                [37.337932114354174, 126.85043387704664],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_c4f887a78e1abc836e52c171a041497e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>준오토조이(주) 성우주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 월피동 481<br>
+        경기 안산시 상록구  안산천서로 277<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1f82baeb14d0e0924cf3b225f95f67a = L.marker(
+                [37.281467127085406, 126.84388693546049],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_b1f82baeb14d0e0924cf3b225f95f67a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이원네트웍스(주) 해안주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 사동 1497-1<br>
+        경기 안산시 상록구 선진6길 8<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a1ad818f4a474c83cad24257fceec89e = L.marker(
+                [37.28380945072005, 126.84768840253894],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_a1ad818f4a474c83cad24257fceec89e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>사동주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 안산시 상록구 사동 1423-6<br>
+        경기 안산시 상록구 항가울로 22 (사동)<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1dce9555309ed3a832615d9bf79b258e = L.marker(
+                [37.346626303503655, 126.84855257220921],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_1dce9555309ed3a832615d9bf79b258e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고속주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 양상동 201-2<br>
+        경기 안산시 상록구 가루개로 143 (양상동)<br>
+        > <b>가격: 1,605 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b18cb8a247258e3d4cddf00cc3133636 = L.marker(
+                [37.32284592474409, 126.78653873752137],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_b18cb8a247258e3d4cddf00cc3133636.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)안산공단주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안산시 단원구 신길동 1230<br>
+        경기 안산시 단원구 산단로 313<br>
+        > <b>가격: 1,613 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_08e55dfa8a7e7496781c914628a85713 = L.marker(
+                [37.33009371559506, 126.76939206979833],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_08e55dfa8a7e7496781c914628a85713.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)동강석유 남안산IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 안산시 단원구 신길동 1037-14<br>
+        경기 안산시 단원구 성곡로 279 (신길동)<br>
+        > <b>가격: 1,613 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b892b643ec5eadf46827808dff79ddc3 = L.marker(
+                [37.3505362881185, 126.81760950548392],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_b892b643ec5eadf46827808dff79ddc3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안산주유소(인천방향)</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 단원구 선부동 산1-50<br>
+        경기 안산시 단원구 영동고속도로 15<br>
+        > <b>가격: 1,613 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_739da9734f0494ac72677e019f993388 = L.marker(
+                [37.34604079121046, 126.86956002148473],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_739da9734f0494ac72677e019f993388.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)동원석유 행복주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 안산시 상록구 부곡동1-1<br>
+        경기 안산시 상록구 수인로 1820 (부곡동)<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_429ae10f3d1aa5e8ba10dbcf8963b692 = L.marker(
+                [37.36520766175, 126.87691094917768],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_429ae10f3d1aa5e8ba10dbcf8963b692.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수암주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 수암동 465<br>
+        경기 안산시 상록구 원당골1길 23-14 (수암동)<br>
+        > <b>가격: 1,624 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_022995f85d74c9383b06260f8c737301 = L.marker(
+                [37.33993726437587, 126.86375253890309],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_022995f85d74c9383b06260f8c737301.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대웅주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안산시 상록구 부곡동 214-13<br>
+        경기 안산시 상록구 수인로 1733 (부곡동)<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24644dd8cdc0e0fbbe1b781f675a51cb = L.marker(
+                [37.335497854835744, 126.85264409874098],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_24644dd8cdc0e0fbbe1b781f675a51cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신양주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 월피동 466<br>
+        경기 안산시 상록구 월피로 84<br>
+        > <b>가격: 1,628 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fae77d1d74c4c43fe7979ac8f8bd605e = L.marker(
+                [37.31173475020016, 126.91287515129437],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_fae77d1d74c4c43fe7979ac8f8bd605e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상림주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 안산시 상록구 건건동 435-1<br>
+        경기 안산시 상록구 서해로 2921 (건건동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f0307562d14b772cb340b116844b40b0 = L.marker(
+                [37.30497998658486, 126.91608327434093],
+                {}
+            ).addTo(map_f9bcc2a109ccd087c3a9af704167501d);
+        
+    
+            marker_f0307562d14b772cb340b116844b40b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 사사동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 안산시 상록구 사사동 469<br>
+        경기 안산시 상록구 서해로 2838 (사사동)<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

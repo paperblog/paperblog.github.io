@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a026ca07ae81731cc4df8fa739484ac2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a026ca07ae81731cc4df8fa739484ac2" ></div>
+        
+</body>
+<script>    
+    
+            var map_a026ca07ae81731cc4df8fa739484ac2 = L.map(
+                "map_a026ca07ae81731cc4df8fa739484ac2",
+                {
+                    center: [37.561310289349635, 127.00525746389232],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05e29bafdb00b5640af775ab31dac944 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            var locate_control_18d9815d3566223c9c0bbff8f1f64c91 = L.control.locate(
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+            
+        
+    
+            var marker_69eb8ae3bd7fcc1fff1b64c65c131137 = L.marker(
+                [37.56065807061509, 127.0031198936507],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_69eb8ae3bd7fcc1fff1b64c65c131137.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장충드림주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 중구 장충동2가 186-69<br>
+        서울 중구 동호로 296<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2b4a1d1bde319be851526e7c4f064eee = L.marker(
+                [37.56391970638479, 127.01567657615404],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_2b4a1d1bde319be851526e7c4f064eee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다산주유소</b><br>
+        <b>S-OIL</b><br>
+        서울 중구 무학동 12-2<br>
+        서울 중구 다산로 233<br>
+        > <b>가격: 1,699 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8cb0e8cea0d2effa5b77218a1d305c5c = L.marker(
+                [37.5649314453803, 127.02551987179531],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_8cb0e8cea0d2effa5b77218a1d305c5c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세화주유소</b><br>
+        <b>자영알뜰</b><br>
+        서울 중구 신당동 741<br>
+        서울 중구 왕십리로 403<br>
+        > <b>가격: 1,738 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce6bc2a606b30d72104f7de0fc609169 = L.marker(
+                [37.55621417768896, 127.00906384449478],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_ce6bc2a606b30d72104f7de0fc609169.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크 장원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 중구 신당동 357-6<br>
+        서울 중구 동호로 203 (신당동)<br>
+        > <b>가격: 1,833 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27c57dc8947c147403e41ce844c56b54 = L.marker(
+                [37.56171346765275, 126.99714820112254],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_27c57dc8947c147403e41ce844c56b54.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 퇴계로주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 중구 필동2가 51<br>
+        서울 중구 퇴계로 228 (필동2가)<br>
+        > <b>가격: 1,870 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d50c299e51c58aa4349afbed90e7bd6c = L.marker(
+                [37.56274118821771, 127.00706396157926],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_d50c299e51c58aa4349afbed90e7bd6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>장충주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 중구 장충동1가 31-1<br>
+        서울 중구 장충단로 202 (장충동1가)<br>
+        > <b>가격: 2,048 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_618a8639a8bdca131ee882d2ed66b33b = L.marker(
+                [37.56460343167987, 127.01641945354373],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_618a8639a8bdca131ee882d2ed66b33b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신당동주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 중구 신당동 101-9<br>
+        서울 중구 다산로 242 (신당동)<br>
+        > <b>가격: 2,098 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5aba3fe7dd75c6f06bf3168e2dc4f622 = L.marker(
+                [37.55906083200151, 127.01281936587064],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_5aba3fe7dd75c6f06bf3168e2dc4f622.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>약수주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 중구 신당2동 336-5<br>
+        서울 중구 다산로 173<br>
+        > <b>가격: 2,197 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9fe7b21f42aa8175986884e838db9e1 = L.marker(
+                [37.56093575855813, 126.99367630148109],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_d9fe7b21f42aa8175986884e838db9e1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>필동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        서울 중구 필동2가 3-1<br>
+        서울 중구 퇴계로 196 (필동2가)<br>
+        > <b>가격: 2,429 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fa95fdb4539f4a0eac25d1c4d892e8cb = L.marker(
+                [37.55832481531722, 126.97206716923115],
+                {}
+            ).addTo(map_a026ca07ae81731cc4df8fa739484ac2);
+        
+    
+            marker_fa95fdb4539f4a0eac25d1c4d892e8cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서남주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 중구 봉래동1가 126-4<br>
+        서울 중구 통일로 30<br>
+        > <b>가격: 2,633 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

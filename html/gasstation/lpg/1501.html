@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5040e070862b8c1ff969ff180e091818 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5040e070862b8c1ff969ff180e091818" ></div>
+        
+</body>
+<script>    
+    
+            var map_5040e070862b8c1ff969ff180e091818 = L.map(
+                "map_5040e070862b8c1ff969ff180e091818",
+                {
+                    center: [37.4642338555859, 126.55529061669324],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_16337d22b99eca07541d4f7d67a9be36 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5040e070862b8c1ff969ff180e091818);
+        
+    
+            var locate_control_a278da1a7ff55bf3e5f2209d0092bac1 = L.control.locate(
+                {}
+            ).addTo(map_5040e070862b8c1ff969ff180e091818);
+            
+        
+    
+            var marker_4c9c1eac039886e91eee67786adb2d93 = L.marker(
+                [37.448492050680755, 126.59927193061286],
+                {}
+            ).addTo(map_5040e070862b8c1ff969ff180e091818);
+        
+    
+            marker_4c9c1eac039886e91eee67786adb2d93.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일산업(주)강원가스</b><br>
+        <b>S-OIL</b><br>
+        인천 중구 항동7가 70-4<br>
+        인천 중구 연안부두로115번길 20<br>
+        > <b>가격: 977 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_531187991f2c83e20ad133c2119b388d = L.marker(
+                [37.4571173658721, 126.607113497125],
+                {}
+            ).addTo(map_5040e070862b8c1ff969ff180e091818);
+        
+    
+            marker_531187991f2c83e20ad133c2119b388d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK인천충전소</b><br>
+        <b>SK가스</b><br>
+        인천 중구 항동7가 50-2<br>
+        인천 중구 축항대로87번길 5 (항동7가)<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bba734b8c3134555b170bd64876ea61d = L.marker(
+                [37.487092150204845, 126.45948642234184],
+                {}
+            ).addTo(map_5040e070862b8c1ff969ff180e091818);
+        
+    
+            marker_bba734b8c3134555b170bd64876ea61d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>계동에너지 인천공항점</b><br>
+        <b>SK에너지</b><br>
+        인천 중구 운서동 2478<br>
+        인천 중구  공항동로465번길 10 (운서동)<br>
+        > <b>가격: 1,093 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

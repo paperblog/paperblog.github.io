@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_091f1fe6702d62b76124bccbca5948b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_091f1fe6702d62b76124bccbca5948b4" ></div>
+        
+</body>
+<script>    
+    
+            var map_091f1fe6702d62b76124bccbca5948b4 = L.map(
+                "map_091f1fe6702d62b76124bccbca5948b4",
+                {
+                    center: [36.33248948231863, 127.30875163883701],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4f9aa656734d675a52e87d0e437cdacd = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            var locate_control_afeeeeb4237e3b7e7b2c3c5d878a808f = L.control.locate(
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+            
+        
+    
+            var marker_005d9f0f465731246f0589b3aca71e84 = L.marker(
+                [36.29332170453221, 127.31974926353432],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_005d9f0f465731246f0589b3aca71e84.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 서대전IC충전소</b><br>
+        <b>SK가스</b><br>
+        대전 유성구 원내동 427<br>
+        대전 유성구 진잠로 9 (원내동)<br>
+        > <b>가격: 989 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cdb0b5f86edc64792076eb0ef85bb615 = L.marker(
+                [36.278410290576296, 127.25675464919763],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_cdb0b5f86edc64792076eb0ef85bb615.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송정가스충전소</b><br>
+        <b>SK에너지</b><br>
+        대전 유성구 송정동 300-7<br>
+        대전 유성구 계백로 34<br>
+        > <b>가격: 993 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22ff15de8c9fab84cbce9f0a0a16ed6e = L.marker(
+                [36.27666463695578, 127.2929571181328],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_22ff15de8c9fab84cbce9f0a0a16ed6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>방동미래LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 유성구 방동 474-4<br>
+        대전 유성구 계백로 473 (방동)<br>
+        > <b>가격: 993 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5968d209ea923ea858ce8966cf072c55 = L.marker(
+                [36.33269942458195, 127.307679857495],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_5968d209ea923ea858ce8966cf072c55.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유성학하충전소</b><br>
+        <b>S-OIL</b><br>
+        대전 유성구 학하동 501-2<br>
+        대전 유성구 진잠옛로135번길 76<br>
+        > <b>가격: 1,007 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59d937a9a8cf3ff2d5fa356f32414095 = L.marker(
+                [36.31126384167232, 127.31784546402736],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_59d937a9a8cf3ff2d5fa356f32414095.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>진잠 유통단지 충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        대전 유성구 교촌동 331-1<br>
+        대전 유성구 유성대로 148 (교촌동)<br>
+        > <b>가격: 1,018 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_63d2fd6c046e265b0dccc08bc8cd9ac8 = L.marker(
+                [36.359618138748424, 127.32782061851574],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_63d2fd6c046e265b0dccc08bc8cd9ac8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 유성IC충전소</b><br>
+        <b>SK가스</b><br>
+        대전 유성구 장대동 220-18<br>
+        대전 유성구 현충원로 509<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6a941f76a27054d64e2d82c246994247 = L.marker(
+                [36.419483852854185, 127.37918785366944],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_6a941f76a27054d64e2d82c246994247.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 황제충전소</b><br>
+        <b>SK가스</b><br>
+        대전 유성구 덕진동 50<br>
+        대전 유성구 대덕대로 1021 (덕진동)<br>
+        > <b>가격: 1,047 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3d5a2568c771e68f8ee25b756653b49d = L.marker(
+                [36.36126103967459, 127.28623283133977],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_3d5a2568c771e68f8ee25b756653b49d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동학사LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        대전 유성구 갑동 404<br>
+        대전 유성구 현충원로 137 (갑동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fcf5370e112a5856e29b4f547d323a17 = L.marker(
+                [36.35968241127188, 127.29053709362108],
+                {}
+            ).addTo(map_091f1fe6702d62b76124bccbca5948b4);
+        
+    
+            marker_fcf5370e112a5856e29b4f547d323a17.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 유성충전소</b><br>
+        <b>SK가스</b><br>
+        대전 유성구 갑동 398<br>
+        대전 유성구 현충원로 168 (갑동)<br>
+        > <b>가격: 1,056 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

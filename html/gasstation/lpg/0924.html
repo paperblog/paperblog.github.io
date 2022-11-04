@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c6ba2bd46c8d52438217925297a823b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8c6ba2bd46c8d52438217925297a823b" ></div>
+        
+</body>
+<script>    
+    
+            var map_8c6ba2bd46c8d52438217925297a823b = L.map(
+                "map_8c6ba2bd46c8d52438217925297a823b",
+                {
+                    center: [35.483124410410326, 128.49690539055163],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daf782af74f465e551e0667e092fc82b = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            var locate_control_117a5c4dc06f35448ed4677863c298c4 = L.control.locate(
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+            
+        
+    
+            var marker_1fe265a1bba40fdfe8b73c895cd8b062 = L.marker(
+                [35.54241730354865, 128.4796043157576],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_1fe265a1bba40fdfe8b73c895cd8b062.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성종합가스</b><br>
+        <b>GS칼텍스</b><br>
+        경남 창녕군 대지면 효정리 68-2<br>
+        경남 창녕군 대지면 효정직교길 107<br>
+        > <b>가격: 931 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8fd157f3c93d09d53bcb30d6bcfbbd7f = L.marker(
+                [35.42588183637524, 128.52336770694328],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_8fd157f3c93d09d53bcb30d6bcfbbd7f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)우리비케이에너지 경남대로충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        경남 창녕군 도천면 논리 650-6<br>
+        경남 창녕군 도천면 경남대로 3270<br>
+        > <b>가격: 951 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ba129decdb18b0d82ea746f998d0836 = L.marker(
+                [35.457934471093125, 128.52411279054942],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_8ba129decdb18b0d82ea746f998d0836.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 경성에너지 영산충전소</b><br>
+        <b>SK가스</b><br>
+        경남 창녕군 영산면 서리 209-7<br>
+        경남 창녕군 영산면 영산장마로 733<br>
+        > <b>가격: 957 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9086cd5de18e864662bb5fef73993473 = L.marker(
+                [35.53316147730228, 128.49967258814038],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_9086cd5de18e864662bb5fef73993473.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대흥가스충전소</b><br>
+        <b>SK가스</b><br>
+        경남 창녕군 창녕읍 탐하리 2-1<br>
+        경남 창녕군 창녕읍 창녕대로 142<br>
+        > <b>가격: 992 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f50efaf0631bc56a2cfb1b5ed5036dee = L.marker(
+                [35.60064904431958, 128.46972936127943],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_f50efaf0631bc56a2cfb1b5ed5036dee.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 경성에너지주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        경남 창녕군 대합면 등지리 274<br>
+        경남 창녕군 대합면 경남대로 5408<br>
+        > <b>가격: 997 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e75ef2f8ae99512d071dc8272ab36818 = L.marker(
+                [35.39322991267412, 128.4860228557332],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_e75ef2f8ae99512d071dc8272ab36818.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남지IC주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        경남 창녕군 남지읍 남지리 165-13<br>
+        경남 창녕군 남지읍 낙동로 579-4<br>
+        > <b>가격: 998 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56a2f1b916d1e981d3fcb01b8f4a61af = L.marker(
+                [35.428596827559275, 128.4958281154582],
+                {}
+            ).addTo(map_8c6ba2bd46c8d52438217925297a823b);
+        
+    
+            marker_56a2f1b916d1e981d3fcb01b8f4a61af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)이엠석유 영산(하)주유소/충전소</b><br>
+        <b>S-OIL</b><br>
+        경남 창녕군 영산면 신제리 1479-1<br>
+        경남 창녕군 영산면 장척호수길 56-110<br>
+        > <b>가격: 1,154 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

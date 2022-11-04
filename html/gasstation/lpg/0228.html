@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f77935852fc0057891f343b40a23fbba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f77935852fc0057891f343b40a23fbba" ></div>
+        
+</body>
+<script>    
+    
+            var map_f77935852fc0057891f343b40a23fbba = L.map(
+                "map_f77935852fc0057891f343b40a23fbba",
+                {
+                    center: [37.38632916221518, 127.30254885342266],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d0a6d2ff8a52ca2c8caf20929caeaf1 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            var locate_control_ffff3f5694a7a5f92701c0ad96a5956f = L.control.locate(
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+            
+        
+    
+            var marker_b3712d8d69c85e85371819fc1d650112 = L.marker(
+                [37.40152734018882, 127.24611435404243],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_b3712d8d69c85e85371819fc1d650112.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새한가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광주시 역동 112-1<br>
+        경기 광주시 경충대로 1736<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_12596897a61aa57f656f4b43e590f296 = L.marker(
+                [37.410439984468454, 127.20209796692662],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_12596897a61aa57f656f4b43e590f296.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜대지석유 갈마LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광주시 삼동 265-4<br>
+        경기 광주시 경충대로 2187 (삼동)<br>
+        > <b>가격: 1,023 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dd1d490bf96e7898cfc7b60214965886 = L.marker(
+                [37.42579011893578, 127.2546906320182],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_dd1d490bf96e7898cfc7b60214965886.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 서경에너지충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광주시 송정동 324-1<br>
+        경기 광주시 회안대로 881 (송정동)<br>
+        > <b>가격: 1,035 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_014355602d90dfe971f67d61e996b7b4 = L.marker(
+                [37.43049098225133, 127.25913106317782],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_014355602d90dfe971f67d61e996b7b4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광주가스(주)</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 송정동 428-2<br>
+        경기 광주시 회안대로 946 (송정동)<br>
+        > <b>가격: 1,036 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0d55304ace5720fa37fe7280ab2d8e6c = L.marker(
+                [37.3363178692302, 127.37069427996717],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_0d55304ace5720fa37fe7280ab2d8e6c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 태원충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광주시 곤지암읍 수양리 446-1<br>
+        경기 광주시 곤지암읍 경충대로 290<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b4d3c3675aa94ebee1a517636de1916 = L.marker(
+                [37.3536788595643, 127.3338304052336],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_4b4d3c3675aa94ebee1a517636de1916.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주)곤지암충전소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 광주시 곤지암읍 삼리 612-8<br>
+        경기 광주시 곤지암읍 평촌길11번길 72<br>
+        > <b>가격: 1,044 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3020d3bd5a9ad0076810b522f3865538 = L.marker(
+                [37.342621128817086, 127.35789491367609],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_3020d3bd5a9ad0076810b522f3865538.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대원석유(주) 신사LPG충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 곤지암읍 곤지암리 58<br>
+        경기 광주시 곤지암읍 경충대로 432<br>
+        > <b>가격: 1,044 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c82220fcf9141427356d95b18701847a = L.marker(
+                [37.47092986993892, 127.33470990025482],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_c82220fcf9141427356d95b18701847a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 (주)제이씨가스 퇴촌충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광주시 퇴촌면 도수리 179-2<br>
+        경기 광주시 퇴촌면 정영로 414<br>
+        > <b>가격: 1,046 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52b5029f30a18544f2d346d7b436b699 = L.marker(
+                [37.35874766217977, 127.22630751960239],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_52b5029f30a18544f2d346d7b436b699.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오포주유소/충전소</b><br>
+        <b>SK가스</b><br>
+        경기 광주시 오포읍 추자리 306-1<br>
+        경기 광주시 오포읍 포은대로 317<br>
+        > <b>가격: 1,065 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_591e8f4a366f6a240b2357e55207d6f4 = L.marker(
+                [37.379545432301576, 127.42391489432492],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_591e8f4a366f6a240b2357e55207d6f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경기광주(서울방향)주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 곤지암읍 유사리 산 30-2<br>
+        경기 광주시 곤지암읍 만삼로 211<br>
+        > <b>가격: 1,078 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5d1c8c98b2a5be30f7d7bc117ee40abd = L.marker(
+                [37.37913370549188, 127.43788480046604],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_5d1c8c98b2a5be30f7d7bc117ee40abd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경기광주(원주방향)주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 곤지암읍 삼합리 산 27-2<br>
+        경기 광주시 곤지암읍 만삼로 270<br>
+        > <b>가격: 1,078 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_629ab7905fe6586ce3d4e1619f85d682 = L.marker(
+                [37.34672699321406, 127.18331551138208],
+                {}
+            ).addTo(map_f77935852fc0057891f343b40a23fbba);
+        
+    
+            marker_629ab7905fe6586ce3d4e1619f85d682.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)인성충전소</b><br>
+        <b>SK에너지</b><br>
+        경기 광주시 오포읍 능평리 88-1<br>
+        경기 광주시 오포읍 오포로 172-2<br>
+        > <b>가격: 1,081 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

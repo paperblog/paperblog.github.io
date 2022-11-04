@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12612fd97d586650792efc6f66a4829f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_12612fd97d586650792efc6f66a4829f" ></div>
+        
+</body>
+<script>    
+    
+            var map_12612fd97d586650792efc6f66a4829f = L.map(
+                "map_12612fd97d586650792efc6f66a4829f",
+                {
+                    center: [36.42567782310125, 128.14374317763784],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78e77b156effd396767e8d59681a86ee = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            var locate_control_9775fcc8c4c8229f539e5bc19f308de9 = L.control.locate(
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+            
+        
+    
+            var marker_d3cf358e5c0112f6aacbdc73d8e3b8e3 = L.marker(
+                [36.39197394334141, 128.1521738298837],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_d3cf358e5c0112f6aacbdc73d8e3b8e3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 베스트원셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 상주시 신봉동 618-3<br>
+        경북 상주시 경상대로 2737<br>
+        > <b>가격: 1,545 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9e1d2726897912416aeb6893320da4d2 = L.marker(
+                [36.39471332819063, 128.15169308010596],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_9e1d2726897912416aeb6893320da4d2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대경에너지</b><br>
+        <b>SK에너지</b><br>
+        경북 상주시 신봉동 579<br>
+        경북 상주시 경상대로 2771 (신봉동)<br>
+        > <b>가격: 1,545 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f546f9e18d59ac1e18ac75c95700f89e = L.marker(
+                [36.41023816096057, 128.2273428106527],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_f546f9e18d59ac1e18ac75c95700f89e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성동주유소</b><br>
+        <b>자가상표</b><br>
+        경북 상주시 낙동면 성동리 16-1<br>
+        경북 상주시 낙동면 영남제일로 992<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f01a185d258017e0fe2956aab21136bd = L.marker(
+                [36.419503713009604, 128.19122854494495],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_f01a185d258017e0fe2956aab21136bd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>외답주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 상주시 외답동 849<br>
+        경북 상주시 영남제일로 1356 (외답동)<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2337d5da34f320c5d509d618595334de = L.marker(
+                [36.430517221872876, 128.15827782322754],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_2337d5da34f320c5d509d618595334de.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제이엠9주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 상주시 만산동 227-6<br>
+        경북 상주시 북상주로 3 (만산동)<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d8be3e7eb5150f37254eb0dc8de93647 = L.marker(
+                [36.40036233215317, 128.14973476007165],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_d8be3e7eb5150f37254eb0dc8de93647.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼백주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 상주시 신봉동 527-3<br>
+        경상북도 상주시 경상대로 2834 (신봉동)<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_462e2a8dd5f34787d6e73dcfa1988a6e = L.marker(
+                [36.418568621674495, 128.2007939492044],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_462e2a8dd5f34787d6e73dcfa1988a6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜태백산에너지 상주IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 상주시 외답동 473-3<br>
+        경북 상주시 영남제일로 1266 (외답동)<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c3ae79e791480fd7f73c9481b88c97af = L.marker(
+                [36.44450278753171, 127.92480795124476],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_c3ae79e791480fd7f73c9481b88c97af.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>화서(상주)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 상주시 화서면 상용리 396-12<br>
+        경북 상주시 화서면 터골길 51-25<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b89cab99f10a715c808b709f1b785f35 = L.marker(
+                [36.41794785142835, 128.20012330661652],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_b89cab99f10a715c808b709f1b785f35.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상주이룸self주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 상주시 외답동 413<br>
+        경북 상주시 영남제일로 1273<br>
+        > <b>가격: 1,595 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee14d5902f91feab9c5e457fdff4b422 = L.marker(
+                [36.41493898740237, 128.13140760977427],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_ee14d5902f91feab9c5e457fdff4b422.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서보셀프주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 상주시 연원동 777-23<br>
+        경북 상주시 영남제일로 1956<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a1952aecd077be27868e114cecc23e15 = L.marker(
+                [36.421977844164125, 128.1504864415383],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_a1952aecd077be27868e114cecc23e15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북천주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 상주시 무양동 1-89<br>
+        경북 상주시 경상대로 3079 (무양동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce51a5da1dee2bbde3507cbd39f351a4 = L.marker(
+                [36.42126822552258, 128.15119520975605],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_ce51a5da1dee2bbde3507cbd39f351a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무양주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 상주시 무양동 1-183<br>
+        경북 상주시 경상대로 3070 (무양동)<br>
+        > <b>가격: 1,598 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2ac600fcf295f980376f5ed97f93906a = L.marker(
+                [36.40531557843182, 128.148960000339],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_2ac600fcf295f980376f5ed97f93906a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 상주시 낙양동220-10<br>
+        경북 상주시 경상대로 2895 (낙양동)<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_caeedc1f75fe40f1514cb63a785be054 = L.marker(
+                [36.411908181252805, 128.15175081055855],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_caeedc1f75fe40f1514cb63a785be054.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한국광유(주) 낙양주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 상주시 낙양동 130-2<br>
+        경북 상주시 경상대로 2968 (낙양동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2a319659157be93e0c86303a242c8064 = L.marker(
+                [36.52074333133419, 128.16517002201655],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_2a319659157be93e0c86303a242c8064.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공갈못주유소</b><br>
+        <b>S-OIL</b><br>
+         경북 상주시 공검면 화동리 471-1<br>
+        경북 상주시 공검면 경상대로 4260<br>
+        > <b>가격: 1,618 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9cedb287683b330e2c838c1c4b4f7bc5 = L.marker(
+                [36.41114105788093, 128.18226956214497],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_9cedb287683b330e2c838c1c4b4f7bc5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서곡주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 상주시 서곡동 34<br>
+        경북 상주시 식산로 169 (서곡동)<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93a6a2ac9459346a5c9a58a0335e4ca1 = L.marker(
+                [36.41821329668231, 128.19349705553208],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_93a6a2ac9459346a5c9a58a0335e4ca1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상산주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 상주시 외답동 716-3<br>
+        경북 상주시 영남제일로 1339 (외답동)<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b5b5f71a516ef75b897a8a8a2b44678e = L.marker(
+                [36.40887185503386, 128.1114031561963],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_b5b5f71a516ef75b897a8a8a2b44678e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>농민주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 상주시 남장동 184-27<br>
+        경북 상주시 영남제일로 2176<br>
+        > <b>가격: 1,629 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c6ea726aa02a046f0e866482e73c74e5 = L.marker(
+                [36.386337820009906, 127.95154079602933],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_c6ea726aa02a046f0e866482e73c74e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서상주농협화동지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 상주시 화동면 신촌리 706<br>
+        경북 상주시 화동면 중화로 1470<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ce6eab9d4f784c0513e0a04ac43d94a = L.marker(
+                [36.564512324147344, 128.18100683291877],
+                {}
+            ).addTo(map_12612fd97d586650792efc6f66a4829f);
+        
+    
+            marker_5ce6eab9d4f784c0513e0a04ac43d94a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>함창농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 상주시 함창읍 오동리 565-7<br>
+        경북 상주시 함창읍 오동리 565-7<br>
+        > <b>가격: 1,635 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

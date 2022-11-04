@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b056b03aa4e7297c60df98484c7dd578 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b056b03aa4e7297c60df98484c7dd578" ></div>
+        
+</body>
+<script>    
+    
+            var map_b056b03aa4e7297c60df98484c7dd578 = L.map(
+                "map_b056b03aa4e7297c60df98484c7dd578",
+                {
+                    center: [35.96260248122965, 128.93396681976407],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0eb62c72f41209849e1baad44957eb5d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            var locate_control_1a0b26d705555c2f10304a5001ac1ebc = L.control.locate(
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+            
+        
+    
+            var marker_053ec121526e045badcc2cb67c3512a9 = L.marker(
+                [35.96290924243106, 128.9214064885645],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_053ec121526e045badcc2cb67c3512a9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영천2주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 성내동 348<br>
+        경북 영천시 최무선로 188<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d6890b1c1e0398129548946872acec99 = L.marker(
+                [35.94256659949205, 128.9289430936167],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_d6890b1c1e0398129548946872acec99.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이케이㈜ KK별빛주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 도동 270-4<br>
+        경북 영천시 천문로 43 (도동)<br>
+        > <b>가격: 1,805 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4893a59f409dfb2c9a642781cf9116c8 = L.marker(
+                [35.96322926565722, 128.9220260778248],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_4893a59f409dfb2c9a642781cf9116c8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>글로벌제3주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 화룡동 216-1<br>
+        경북 영천시 최무선로 191 (화룡동)<br>
+        > <b>가격: 1,809 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4994e5c7da28e32c40621aa38fdd5f28 = L.marker(
+                [35.97310337162048, 128.92967360296652],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_4994e5c7da28e32c40621aa38fdd5f28.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)착한주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 문내동 369<br>
+        경북 영천시 천문로 398 (문내동)<br>
+        > <b>가격: 1,814 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_84163b3f968cf68b8191f596465e62b8 = L.marker(
+                [35.93800770017122, 128.94439746565814],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_84163b3f968cf68b8191f596465e62b8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대경제1주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 작산동 264-2<br>
+        경북 영천시 영천아이시로 10 (작산동)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_19ceadc646c90cb1328589d3ada038a4 = L.marker(
+                [35.93432812953564, 128.86977588880296],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_19ceadc646c90cb1328589d3ada038a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신금호주유소</b><br>
+        <b>자영알뜰</b><br>
+        경북 영천시 금호읍 교대리 400-37<br>
+        경북 영천시 금호읍 대경로 1248<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d10aeb4e95cfe7f3fb785599aeac9520 = L.marker(
+                [36.0298639468232, 128.8090559795229],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_d10aeb4e95cfe7f3fb785599aeac9520.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대림주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 화산면 대안리 1176-6<br>
+        경북 영천시 장수로 1396 (화산면)<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d7eb4e5e5d3e3a9e72dd9e804b71fbd5 = L.marker(
+                [35.95515549995023, 128.90845906351356],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_d7eb4e5e5d3e3a9e72dd9e804b71fbd5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕진주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 영천시 오수동 364-3<br>
+        경북 영천시 최무선로 39 (오수동)<br>
+        > <b>가격: 1,817 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dcf6b0350f4ba14023b8a66866fab84d = L.marker(
+                [35.942484257085, 128.90165592977286],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_dcf6b0350f4ba14023b8a66866fab84d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>누리1주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 금호읍 신월리 54-11<br>
+        경북 영천시 금호읍 금호로 393<br>
+        > <b>가격: 1,818 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_671bc28fc242cabd24bc18fdb83bbe38 = L.marker(
+                [35.96070089791833, 128.915240811178],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_671bc28fc242cabd24bc18fdb83bbe38.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영천주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 오수동 24<br>
+        경북 영천시 최무선로 125<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e344a7d535d8ef96fa5bcd0341aebce = L.marker(
+                [35.97758362536555, 128.96186322070554],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_4e344a7d535d8ef96fa5bcd0341aebce.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동영천ic주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 조교동 461-1<br>
+        경북 영천시 호국로 224<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ecfee4ac768ec93a98e7c3db7bf2287 = L.marker(
+                [36.03777593411678, 128.7926925628139],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_0ecfee4ac768ec93a98e7c3db7bf2287.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신녕IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영천시 신녕면 완전리 683<br>
+        경북 영천시 신녕면 완전공단길 2<br>
+        > <b>가격: 1,824 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b8ea57274f7d3e760e7a2ab28eefc68 = L.marker(
+                [35.99167752791698, 129.08978306835874],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_4b8ea57274f7d3e760e7a2ab28eefc68.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영천대성주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 영천시 고경면 덕암리 355-2<br>
+        경북 영천시 고경면 호국로 1524<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_767ef626efe52ed6ecf2241ccee44532 = L.marker(
+                [35.935847376916406, 128.98521704099693],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_767ef626efe52ed6ecf2241ccee44532.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우덕주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 영천시 북안면 반정리 950-2<br>
+        경북 영천시 북안면 대경로 2332<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_684feec4ec0762502222557717b158ff = L.marker(
+                [35.93957824585982, 128.97140583274353],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_684feec4ec0762502222557717b158ff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>KK금호주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 북안면 송포리 538<br>
+        경북 영천시 북안면 대경로 2166-33<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_320dc4c4ae9fd210d72f70b6fa70d483 = L.marker(
+                [35.95058597555071, 128.92961154929327],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_320dc4c4ae9fd210d72f70b6fa70d483.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태정주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 영천시 금노동 414-7<br>
+        경북 영천시 천문로 131 (금노동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73497ab79ab8dc1a61eba26ec9a1482c = L.marker(
+                [35.99173360907771, 129.09054909598942],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_73497ab79ab8dc1a61eba26ec9a1482c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태양이앤지</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 고경면 덕암리 52-1<br>
+        경북 영천시 고경면 호국로 1529<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_43a1acff41168a0748918a63af7b5a7e = L.marker(
+                [35.94066116352487, 128.92927061722187],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_43a1acff41168a0748918a63af7b5a7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영천시 도동 647-2<br>
+        경상북도 영천시  천문로 21 (도동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2247c59b69e06a038488e59e67e7725 = L.marker(
+                [35.93095861638713, 128.94767752935724],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_a2247c59b69e06a038488e59e67e7725.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영천제일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 영천시 봉동 634-5<br>
+        경북 영천시 영천아이시로 99 (봉동)<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a73ebca0ba6443e12aaf76c8d28085e = L.marker(
+                [35.95329863919267, 128.9306314763797],
+                {}
+            ).addTo(map_b056b03aa4e7297c60df98484c7dd578);
+        
+    
+            marker_9a73ebca0ba6443e12aaf76c8d28085e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>별빛주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 영천시 금노동 399-10<br>
+        경북 영천시 천문로 165<br>
+        > <b>가격: 1,825 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

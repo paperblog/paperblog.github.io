@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7917629940aaa745edf47232d98c11f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f7917629940aaa745edf47232d98c11f" ></div>
+        
+</body>
+<script>    
+    
+            var map_f7917629940aaa745edf47232d98c11f = L.map(
+                "map_f7917629940aaa745edf47232d98c11f",
+                {
+                    center: [36.879978504362654, 129.41453002070403],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ccc106caca798f2d477765af35d5bdc = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            var locate_control_73c29eef4da0e17500ba6e55cac4f9e1 = L.control.locate(
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+            
+        
+    
+            var marker_7fb53626825ed619f24960d50a0d2e15 = L.marker(
+                [36.68659690957948, 129.44206168910273],
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            marker_7fb53626825ed619f24960d50a0d2e15.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울진동해가스충전소</b><br>
+        <b>S-OIL</b><br>
+        경북 울진군 후포면 삼율리 553-3<br>
+        경북 울진군 후포면 후포삼율로 188<br>
+        > <b>가격: 1,017 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_032ca8a1d745b47d5a072c01f16e0a9c = L.marker(
+                [36.66884206420233, 129.42956843063118],
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            marker_032ca8a1d745b47d5a072c01f16e0a9c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서광충전소/주유소</b><br>
+        <b>E1</b><br>
+        경북 울진군 후포면 금음리 62<br>
+        경북 울진군 후포면 동해대로 323<br>
+        > <b>가격: 1,017 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4745a832b3489c44acac7928151801f = L.marker(
+                [37.00706718074215, 129.4007165976668],
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            marker_e4745a832b3489c44acac7928151801f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울진농협주유소/충전소</b><br>
+        <b>E1</b><br>
+        경북 울진군 울진읍 연지리 849-20<br>
+        경북 울진군 울진읍 울진북로 684<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ead2184d9470e989eb4058f793ec6f0 = L.marker(
+                [37.0596777348011, 129.4040903290758],
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            marker_1ead2184d9470e989eb4058f793ec6f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울진고속충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 울진군 죽변면 후정리 916<br>
+        경북 울진군 죽변면 동해대로 5071<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f219c24010a97278496bcb5132ccbcd1 = L.marker(
+                [36.977708632488216, 129.39621305704355],
+                {}
+            ).addTo(map_f7917629940aaa745edf47232d98c11f);
+        
+    
+            marker_f219c24010a97278496bcb5132ccbcd1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 울진충전소</b><br>
+        <b>SK가스</b><br>
+        경북 울진군 울진읍 읍남리 350<br>
+        경북 울진군 울진읍 울진북로 331<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

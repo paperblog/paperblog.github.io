@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6af79067d4b9826a37cd4c465f4e7a70 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6af79067d4b9826a37cd4c465f4e7a70" ></div>
+        
+</body>
+<script>    
+    
+            var map_6af79067d4b9826a37cd4c465f4e7a70 = L.map(
+                "map_6af79067d4b9826a37cd4c465f4e7a70",
+                {
+                    center: [35.93772510103326, 127.70180140206692],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73acac9c4c5afdd9ecf0d3adfb33c409 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            var locate_control_4c455e12cb153b1a1f282bb794fd040c = L.control.locate(
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+            
+        
+    
+            var marker_718b1c32017e719d8654d3af61d613a5 = L.marker(
+                [36.01067355462987, 127.78639806785614],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_718b1c32017e719d8654d3af61d613a5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구천동주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 무주군 설천면 소천리 904-119<br>
+        전북 무주군 설천면 무설로 1567<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c4d8f7174d0395c11d9ce0370e4bdcca = L.marker(
+                [35.84542665182418, 127.65180250118567],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_c4d8f7174d0395c11d9ce0370e4bdcca.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>3008주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 무주군 안성면 장기리 429-1<br>
+        전북 무주군 안성면 안성로 29<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_21b52aa30823df553f5800e531e74aec = L.marker(
+                [35.817663696059455, 127.64560866761795],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_21b52aa30823df553f5800e531e74aec.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕유산(상)(대전방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        전북 무주군 안성면 공진리 471<br>
+        전북 무주군 안성면 통영대전고속도로 148<br>
+        > <b>가격: 1,619 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_24ad961e6a8e79a9a16c4cf894ca018b = L.marker(
+                [35.96937302855479, 127.84475442048992],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_24ad961e6a8e79a9a16c4cf894ca018b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무풍주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 무주군 무풍면 현내리 600-2<br>
+        전북 무주군 무풍면 현내로 178<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_50e4bfab5edb751c9fb1902f4c574d9d = L.marker(
+                [35.99989703039686, 127.79203656006523],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_50e4bfab5edb751c9fb1902f4c574d9d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>라제주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 무주군 설천면 소천리 684-7<br>
+        전북 무주군 설천면 무설로 1704<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_393299048c9e92798814f4699b9540ab = L.marker(
+                [35.87020546784463, 127.66983900187645],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_393299048c9e92798814f4699b9540ab.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>승희주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 무주군 안성면 사전리 402-1<br>
+        전북 무주군 안성면 안성로 446<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f7c7e0beb57882aabbca8f0ee693736 = L.marker(
+                [35.86435595504047, 127.65282784191031],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_8f7c7e0beb57882aabbca8f0ee693736.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안성주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 무주군 안성면 장기리 1546-1<br>
+        전북 무주군 안성면 안성로 256<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e6433d91ddccce273d71ff47854145f = L.marker(
+                [35.814194825409665, 127.63105243116077],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_0e6433d91ddccce273d71ff47854145f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원촌주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 무주군 안성면 공진리 1226-1<br>
+        전북 무주군 안성면 장무로 1371<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72fcd47c1298b6ed760ce24ce5d55083 = L.marker(
+                [35.943704386383914, 127.65952709908132],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_72fcd47c1298b6ed760ce24ce5d55083.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무주농협적상지점</b><br>
+        <b>농협알뜰</b><br>
+        전북 무주군 적상면 사천리 323-2<br>
+        전북 무주군 적상면 적상산로 8<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ce489fa1b21117d1113763ca6dbf1919 = L.marker(
+                [35.97217364334178, 127.55983580185762],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_ce489fa1b21117d1113763ca6dbf1919.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무주농협 부남지점</b><br>
+        <b>농협알뜰</b><br>
+        전북 무주군 부남면 대소리 520-2<br>
+        전라 무주군 부남면 부남로 866-2<br>
+        > <b>가격: 1,690 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c7fe057b70bfbc70c4c950aee56caf78 = L.marker(
+                [36.02523817262227, 127.67314731830119],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_c7fe057b70bfbc70c4c950aee56caf78.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성심주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 무주군 무주읍 오산리 802-2<br>
+        전북 무주군 무주읍 무학로 171<br>
+        > <b>가격: 1,710 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8aec75196bc659ccb4714c42cbbf24a2 = L.marker(
+                [35.96429038436062, 127.86333616514183],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_8aec75196bc659ccb4714c42cbbf24a2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대덕산주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 무주군 무풍면 지성리 230<br>
+        전북 무주군 무풍면 현내로 428<br>
+        > <b>가격: 1,720 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ec10c034abc266c2726f72404351db1 = L.marker(
+                [35.92004430723391, 127.6863521628184],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_8ec10c034abc266c2726f72404351db1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>올림픽주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 무주군 적상면 사산리 296-1<br>
+        전북 무주군 적상면 치마재로 165<br>
+        > <b>가격: 1,745 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_04a9ab82501ab6dfedf647f44f47f94d = L.marker(
+                [35.91576697195203, 127.68272421111743],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_04a9ab82501ab6dfedf647f44f47f94d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>적상주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 무주군 적상면 사산리 270<br>
+        전북 무주군 적상면 치마재로 62<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97fb6436c935be5afa7cf0fdc2a9f736 = L.marker(
+                [35.93093212914164, 127.7135996622438],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_97fb6436c935be5afa7cf0fdc2a9f736.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕유산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 무주군 적상면 괴목리 1049-2<br>
+        전북 무주군 적상면 치마재로 447<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cfcd149889539c6f4e37935ea9ae1ab4 = L.marker(
+                [35.9771902143291, 127.70244261180201],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_cfcd149889539c6f4e37935ea9ae1ab4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무주흥국주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 무주군 적상면 북창리 181<br>
+        전북 무주군 적상면 괴목로 935<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b6521e66faab7b80765899c82d4348a = L.marker(
+                [36.01095069060226, 127.68621245614078],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_9b6521e66faab7b80765899c82d4348a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성림주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 무주군 무주읍 오산리 1023-4<br>
+        전북 무주군 무주읍 무설로 99<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_98e652585bd30236dcb34d977373b4f0 = L.marker(
+                [35.89254157919202, 127.82025347002659],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_98e652585bd30236dcb34d977373b4f0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼거리주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 무주군 무풍면 삼거리 256<br>
+        전북 무주군 무풍면 구천동로 412<br>
+        > <b>가격: 1,764 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8bb28889bf6591eca88603e5c2409a51 = L.marker(
+                [36.00250702555217, 127.6570484393171],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_8bb28889bf6591eca88603e5c2409a51.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>무주주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 무주군 무주읍 당산리 1266-1<br>
+        전북 무주군 무주읍 한풍루로 280<br>
+        > <b>가격: 1,770 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cb1b16f9189cc9e8ada2e87909a75d7e = L.marker(
+                [36.007372306193595, 127.65722915132802],
+                {}
+            ).addTo(map_6af79067d4b9826a37cd4c465f4e7a70);
+        
+    
+            marker_cb1b16f9189cc9e8ada2e87909a75d7e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>반딧불주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 무주군 무주읍 읍내리 941-2<br>
+        전북 무주군 무주읍 단천로 58<br>
+        > <b>가격: 1,770 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

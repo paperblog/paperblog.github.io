@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78014fb28beb81bc08677806c32bc7d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_78014fb28beb81bc08677806c32bc7d6" ></div>
+        
+</body>
+<script>    
+    
+            var map_78014fb28beb81bc08677806c32bc7d6 = L.map(
+                "map_78014fb28beb81bc08677806c32bc7d6",
+                {
+                    center: [37.51392690199788, 126.65786964411606],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8547ab67b0be145d9a60427f1b7fcb6f = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            var locate_control_5e0bdbc5407058af325f3d80b90568af = L.control.locate(
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+            
+        
+    
+            var marker_4ef665961cb3659f1b27a3ef80e8b7ae = L.marker(
+                [37.499385313019054, 126.66092921445075],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_4ef665961cb3659f1b27a3ef80e8b7ae.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인천부릉부릉주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 석남동 223-195<br>
+        인천 서구 봉수대로 267<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2eb0c1a25dbf427593bb13ca6d4d8425 = L.marker(
+                [37.54824086634791, 126.6772606133367],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_2eb0c1a25dbf427593bb13ca6d4d8425.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서울에너지 서인천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 연희동 711-4<br>
+        인천 서구 서곶로 346 (연희동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_38f8993d25f1413cfcb8a04d668945b2 = L.marker(
+                [37.49955199058578, 126.66606763585318],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_38f8993d25f1413cfcb8a04d668945b2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우리주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 서구 석남동 223-46<br>
+        인천 서구 건지로 215 (석남동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4e8d20751ea9d1bdc3fa8c9a11317262 = L.marker(
+                [37.49246944558419, 126.66065152533061],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_4e8d20751ea9d1bdc3fa8c9a11317262.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파란들주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 가좌동 178-346<br>
+        인천 서구 봉수대로 181 (가좌동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_385335268cca6632ef6ca7d3f72aa0a9 = L.marker(
+                [37.492680353124065, 126.64822585429415],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_385335268cca6632ef6ca7d3f72aa0a9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한밭산업㈜ 청라주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 가좌동 602-24<br>
+        인천 서구 중봉대로 148<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_801b67068033d02489f25da04ec76cff = L.marker(
+                [37.507202550057094, 126.6411449589472],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_801b67068033d02489f25da04ec76cff.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)보문 북항IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 원창동 380-6<br>
+        인천 서구 원석로 133<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73c2527a498b5393f84cb48ee4ef773b = L.marker(
+                [37.51264759482887, 126.64938299419082],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_73c2527a498b5393f84cb48ee4ef773b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서광유업㈜청도3주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 서구 원창동 382-107<br>
+        인천 서구 중봉대로 372 (원창동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78f72875bc03d48a55e91fb173038a53 = L.marker(
+                [37.49798663104347, 126.6752264063302],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_78f72875bc03d48a55e91fb173038a53.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대성산업(주) 인천주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 가좌동 111-4<br>
+        인천 서구 가남로 181 (가좌동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0f9d93e82d0cdf296f693d5e05f2fa59 = L.marker(
+                [37.48472413444438, 126.66327156270708],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_0f9d93e82d0cdf296f693d5e05f2fa59.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)보문 가좌주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 가좌동 178-351<br>
+        인천 서구 백범로 853 (가좌동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a0065b6dc84bb17aefa08c1c8a061061 = L.marker(
+                [37.50432911452848, 126.6488469286385],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_a0065b6dc84bb17aefa08c1c8a061061.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동우석유(주)우진주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 서구 석남동 650-117<br>
+        인천 서구 중봉대로 280<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_983ac4a9390835b7ceff0d86df219158 = L.marker(
+                [37.48992423149431, 126.6526606230703],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_983ac4a9390835b7ceff0d86df219158.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대명에너지 청도2주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 서구 가좌동 178-170<br>
+        인천 서구 백범로 964 (가좌1동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3d304a91929fa5a443e2732420782a8 = L.marker(
+                [37.49836701716875, 126.66190031728172],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_a3d304a91929fa5a443e2732420782a8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가정셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 가좌동 173-356<br>
+        인천 서구 봉수대로 254<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28d58e6e08153d41b2df080d9ee63ad2 = L.marker(
+                [37.50592278279412, 126.62775416063917],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_28d58e6e08153d41b2df080d9ee63ad2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유(주)북항서일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        인천 서구 원창동 393-102<br>
+        인천 서구 북항로 185(원창동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b1a25d1b72f024f749035759b7f9efd4 = L.marker(
+                [37.485163641065505, 126.66744876296607],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_b1a25d1b72f024f749035759b7f9efd4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>인천현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 가좌동 585-71<br>
+        인천 서구 백범로 818 (가좌동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b7c614b8e6ac6c199d455e6e023bf5d5 = L.marker(
+                [37.51320271993877, 126.6492425034964],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_b7c614b8e6ac6c199d455e6e023bf5d5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)석산에너지 태양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 원창동 382-64<br>
+        인천 서구 중봉대로 378<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d83821b358e9b277639a6af77aea7aaf = L.marker(
+                [37.49019193452205, 126.66131815296957],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_d83821b358e9b277639a6af77aea7aaf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유림주유소</b><br>
+        <b>자영알뜰</b><br>
+        인천 서구 가좌동 178-113<br>
+        인천 서구 봉수대로162번길 3 (가좌동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32a47428aa514caf59125209e65a1154 = L.marker(
+                [37.49873318178379, 126.67833455381766],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_32a47428aa514caf59125209e65a1154.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>엘림주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 석남동 329<br>
+        인천 서구 서달로 4<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13eb0b9e89d122b002d450b7c9f996e6 = L.marker(
+                [37.554671601003626, 126.67699560603046],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_13eb0b9e89d122b002d450b7c9f996e6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)자연에너지 한강주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 연희동 44-3<br>
+        인천 서구 서곶로 415 (연희동)<br>
+        > <b>가격: 1,568 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6f7051ce944658404460525e2058e11e = L.marker(
+                [37.60556203662654, 126.6460743724754],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_6f7051ce944658404460525e2058e11e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)자연에너지 금곡주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        인천 서구 금곡동 161-1<br>
+        인천 서구 봉수대로 1491 (금곡동)<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f9ed9d92ad478d156e4f8470ce75e57c = L.marker(
+                [37.597580899996785, 126.64465613549443],
+                {}
+            ).addTo(map_78014fb28beb81bc08677806c32bc7d6);
+        
+    
+            marker_f9ed9d92ad478d156e4f8470ce75e57c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>미소주유소</b><br>
+        <b>SK에너지</b><br>
+        인천 서구 왕길동 377-1<br>
+        인천 서구 단봉로 61 (왕길동)<br>
+        > <b>가격: 1,570 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

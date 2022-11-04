@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fe2af394a23fb413f376993bd33834a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4fe2af394a23fb413f376993bd33834a" ></div>
+        
+</body>
+<script>    
+    
+            var map_4fe2af394a23fb413f376993bd33834a = L.map(
+                "map_4fe2af394a23fb413f376993bd33834a",
+                {
+                    center: [35.1670944745697, 128.9208838788844],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4881d45501e93e568c48fdc9243319fb = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            var locate_control_8ae4d4338c37ec19173b14766c67cc81 = L.control.locate(
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+            
+        
+    
+            var marker_69a6d8bc32c956adaf7e4011e3f069a4 = L.marker(
+                [35.11823296462395, 128.84541712160436],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_69a6d8bc32c956adaf7e4011e3f069a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신항만LPG충전소</b><br>
+        <b>GS칼텍스</b><br>
+        부산 강서구 송정동 737-13<br>
+        부산 강서구 가락대로 397<br>
+        > <b>가격: 988 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5851aed76e4d9883e312ddb95b82f15c = L.marker(
+                [35.11289887403542, 128.87510532003768],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_5851aed76e4d9883e312ddb95b82f15c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)GES신항만에너지</b><br>
+        <b>SK에너지</b><br>
+        부산 강서구 녹산동 604-7<br>
+        부산 강서구 낙동남로 507 (녹산동)<br>
+        > <b>가격: 988 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_901490c853a6ebccb563e06e8b85f81e = L.marker(
+                [35.200395474351936, 128.89366238663163],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_901490c853a6ebccb563e06e8b85f81e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>죽림LPG충전소</b><br>
+        <b>S-OIL</b><br>
+        부산 강서구 죽림동 497-1<br>
+        부산 강서구 호계로 102 (죽림동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ba7e9d4969c77b0233368b45bb80462a = L.marker(
+                [35.208447622304945, 128.89037352582488],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_ba7e9d4969c77b0233368b45bb80462a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가락충전소</b><br>
+        <b>E1</b><br>
+        부산 강서구 죽동동 122-1<br>
+        부산 강서구 호계로 195 (죽동동)<br>
+        > <b>가격: 1,019 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_582020b2e146371b994de35c418f7ed7 = L.marker(
+                [35.20608082739184, 128.97481608136007],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_582020b2e146371b994de35c418f7ed7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 대저충전소</b><br>
+        <b>SK가스</b><br>
+        부산 강서구 대저1동 2787-2<br>
+        부산 강서구 체육공원로 24 (대저1동)<br>
+        > <b>가격: 1,040 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_066cec109af95d0880a9c6e1c6e3c9ba = L.marker(
+                [35.198657631768896, 128.96642525734813],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_066cec109af95d0880a9c6e1c6e3c9ba.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>개인택시 신공항충전소</b><br>
+        <b>E1</b><br>
+        부산 강서구 대저1동 3036-1<br>
+        부산 강서구 대저신덕1길 312 (대저1동)<br>
+        > <b>가격: 1,049 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bea1da8d8a5e08ca5fb9c311d2f20988 = L.marker(
+                [35.212451296074526, 128.9627447882599],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_bea1da8d8a5e08ca5fb9c311d2f20988.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부산강서LPG충전소</b><br>
+        <b>E1</b><br>
+        부산 강서구 대저1동 2040<br>
+        부산 강서구 낙동북로 310 (대저1동)<br>
+        > <b>가격: 1,051 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bf0a35413149f3f5bf7121dc19a93a4e = L.marker(
+                [35.149036538192625, 128.9519805901925],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_bf0a35413149f3f5bf7121dc19a93a4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>부산공항LPG충전소</b><br>
+        <b>E1</b><br>
+        부산 강서구 대저2동 4427<br>
+        부산 강서구 공항로 459 (대저2동)<br>
+        > <b>가격: 1,052 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_45a141ebdd2ba6fbf8475ecf367b4528 = L.marker(
+                [35.09764904238311, 128.92742983870048],
+                {}
+            ).addTo(map_4fe2af394a23fb413f376993bd33834a);
+        
+    
+            marker_45a141ebdd2ba6fbf8475ecf367b4528.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신명지에너지</b><br>
+        <b>E1</b><br>
+        부산 강서구 명지동 1498-2<br>
+        부산 강서구 르노삼성대로 560<br>
+        > <b>가격: 1,052 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>
