@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c3f4b800090f0311a53bbbd3893bd8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3c3f4b800090f0311a53bbbd3893bd8d" ></div>
+        
+</body>
+<script>    
+    
+            var map_3c3f4b800090f0311a53bbbd3893bd8d = L.map(
+                "map_3c3f4b800090f0311a53bbbd3893bd8d",
+                {
+                    center: [35.17741595309061, 126.83302410554305],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3ecf98d7413f849d2aa66e10321b3e8d = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var locate_control_52467e1f6167a1bdb7b33ffdb53d111a = L.control.locate(
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+            
+        
+    
+            var marker_e54577e7debb32f6444e9b2fd970e3cf = L.marker(
+                [35.244789787624235, 126.88544204770577],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_2a040ba8a8eba54df37e641bb28d535c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e54577e7debb32f6444e9b2fd970e3cf.setIcon(icon_2a040ba8a8eba54df37e641bb28d535c);
+        
+    
+            marker_e54577e7debb32f6444e9b2fd970e3cf.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>행복가득주유소</b><br>
+    <b>광주 북구 우치로 952(용전동)</b><br>
+    전화번호: 062-576-5185<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-01 17:14:52<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_067010b1a71d850daf12b4dc00aef5e1 = L.marker(
+                [35.16529042025876, 126.80100890638025],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_14ef7dca4856506fca9f6905a7917534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_067010b1a71d850daf12b4dc00aef5e1.setIcon(icon_14ef7dca4856506fca9f6905a7917534);
+        
+    
+            marker_067010b1a71d850daf12b4dc00aef5e1.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>애경주유소</b><br>
+    <b>광주 광산구 손재로 25 (산정동)</b><br>
+    전화번호: 062-961-5149<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-01 11:03:08<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_738b0229fb9c7db7c593ae65a1d08ee0 = L.marker(
+                [35.224699873174366, 126.88191566192135],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_758786db532df69b867bf65218aae075 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_738b0229fb9c7db7c593ae65a1d08ee0.setIcon(icon_758786db532df69b867bf65218aae075);
+        
+    
+            marker_738b0229fb9c7db7c593ae65a1d08ee0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>동부에너지주유소</b><br>
+    <b>광주 북구 하서로 571 (본촌동)</b><br>
+    전화번호: 062-576-5182<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-01 17:13:14<br>
+    > <b>가격: 1,400 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e4da72f3be71e7b6078affd8018648b2 = L.marker(
+                [35.21323710786877, 126.79038742720066],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_bf7e20b84f9aa64f6bd07cdb03e2abf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e4da72f3be71e7b6078affd8018648b2.setIcon(icon_bf7e20b84f9aa64f6bd07cdb03e2abf8);
+        
+    
+            marker_e4da72f3be71e7b6078affd8018648b2.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>진곡산단주유소</b><br>
+    <b>광주 광산구 임곡로 516,  (진곡동)</b><br>
+    전화번호: 062-951-9366<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 07:14:57<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ddb27fbce25edd220bfa63b1fad39f24 = L.marker(
+                [35.14199168061554, 126.8332414429535],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_c62dafe33f7f1c2ada39bd34f51386e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ddb27fbce25edd220bfa63b1fad39f24.setIcon(icon_c62dafe33f7f1c2ada39bd34f51386e4);
+        
+    
+            marker_ddb27fbce25edd220bfa63b1fad39f24.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>상무주유소</b><br>
+    <b>광주 서구 풍서우로 408</b><br>
+    전화번호: 062-372-6364<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:43:00<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fed1b6f76919e7602f384a263d35177e = L.marker(
+                [35.189085453716, 126.8578321978803],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_0f991bd8da3009e60156ad0b8bed487d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fed1b6f76919e7602f384a263d35177e.setIcon(icon_0f991bd8da3009e60156ad0b8bed487d);
+        
+    
+            marker_fed1b6f76919e7602f384a263d35177e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>북문대로주유소</b><br>
+    <b>광주 광산구 북문대로 319 (신창동)</b><br>
+    전화번호: 062-952-5159<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-02 07:47:26<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6c0f099ea1dfcdf6cc3781bbfb77982 = L.marker(
+                [35.20269548868411, 126.79445308304578],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_b435a544a80b04489bc81c229efbc4b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f6c0f099ea1dfcdf6cc3781bbfb77982.setIcon(icon_b435a544a80b04489bc81c229efbc4b6);
+        
+    
+            marker_f6c0f099ea1dfcdf6cc3781bbfb77982.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 성현주유소</b><br>
+    <b>광주 광산구 손재로 415 (오선동)</b><br>
+    전화번호: 062-955-8251<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-02 07:23:01<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a02435b3044fe806ec9c44976aba6de = L.marker(
+                [35.215474079614246, 126.86227396987059],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_fae46e2cc99653e75551078dab60f0f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8a02435b3044fe806ec9c44976aba6de.setIcon(icon_fae46e2cc99653e75551078dab60f0f1);
+        
+    
+            marker_8a02435b3044fe806ec9c44976aba6de.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>신용구도일주유소</b><br>
+    <b>광주 북구 임방울대로 953</b><br>
+    전화번호: 062-576-5200<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 11:59:05<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_964e493fb4f67a5681b5ef035a630233 = L.marker(
+                [35.217202097241405, 126.8239338213749],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_94893cb15a2968c899a00432b3684db1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_964e493fb4f67a5681b5ef035a630233.setIcon(icon_94893cb15a2968c899a00432b3684db1);
+        
+    
+            marker_964e493fb4f67a5681b5ef035a630233.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)명당주유소</b><br>
+    <b>광주 광산구 사암로 865 (도천동)</b><br>
+    전화번호: 062-955-5195<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:30:04<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6edd973d787457ede7442d99c1c7c7d3 = L.marker(
+                [35.139764642282636, 126.8324926581193],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_ef119801c7d4b2e8af1e085b28825f71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6edd973d787457ede7442d99c1c7c7d3.setIcon(icon_ef119801c7d4b2e8af1e085b28825f71);
+        
+    
+            marker_6edd973d787457ede7442d99c1c7c7d3.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>벽진주유소</b><br>
+    <b>광주 서구 상무대로 616 (벽진동)</b><br>
+    전화번호: 062-945-5118<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 12:18:12<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_469f4bebef81af802e56125a1083d257 = L.marker(
+                [35.18194837828026, 126.8322839851306],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_a27a753f4984a9055843dad2a0f0e172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_469f4bebef81af802e56125a1083d257.setIcon(icon_a27a753f4984a9055843dad2a0f0e172);
+        
+    
+            marker_469f4bebef81af802e56125a1083d257.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>지에스칼텍스(주) 웰컴신가주유소</b><br>
+    <b>광주 광산구 목련로 375 (신가동)</b><br>
+    전화번호: 062-959-6800<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-31 13:25:08<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_525617e1e2673c920f2c54845654e293 = L.marker(
+                [35.1209940355411, 126.85870219697685],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_98d15cd5ced16fc6dc5e19f6b51c67ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_525617e1e2673c920f2c54845654e293.setIcon(icon_98d15cd5ced16fc6dc5e19f6b51c67ab);
+        
+    
+            marker_525617e1e2673c920f2c54845654e293.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>풍암대림주유소</b><br>
+    <b>광주 서구 풍서좌로 83 (매월동)</b><br>
+    전화번호: 062-655-2211<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:33:28<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a7f3e18f45917695caea077eaadcb3f = L.marker(
+                [35.22048399381912, 126.86848697235459],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_ca45d3a484ec69ef1413c270c36a4708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7a7f3e18f45917695caea077eaadcb3f.setIcon(icon_ca45d3a484ec69ef1413c270c36a4708);
+        
+    
+            marker_7a7f3e18f45917695caea077eaadcb3f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 빛고을로셀프주유소</b><br>
+    <b>광주 북구 빛고을대로 657 (용두동)</b><br>
+    전화번호: 062-574-3303<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-01 10:18:37<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6dbd0f69ec3299b822f8bbec0145d351 = L.marker(
+                [35.14378902477733, 126.80705226106664],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_041fb45cd5a83a0c4eef0786ab488af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6dbd0f69ec3299b822f8bbec0145d351.setIcon(icon_041fb45cd5a83a0c4eef0786ab488af3);
+        
+    
+            marker_6dbd0f69ec3299b822f8bbec0145d351.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>이칠주유소</b><br>
+    <b>광주 광산구 상무대로 378 (신촌동)</b><br>
+    전화번호: 062-942-2007<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-05-05 11:57:37<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_683c2b1914b36c9ee0545f52c8518355 = L.marker(
+                [35.155854002574266, 126.78021915168516],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_ad322a702733d96329c91f8f26b4c24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_683c2b1914b36c9ee0545f52c8518355.setIcon(icon_ad322a702733d96329c91f8f26b4c24e);
+        
+    
+            marker_683c2b1914b36c9ee0545f52c8518355.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)돼지꿈주유소(H)</b><br>
+    <b>광주 광산구 동곡로 839</b><br>
+    전화번호: 062-941-1072<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:28:03<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_504c51f35158902a393bcc94d5bc6144 = L.marker(
+                [35.20674107970124, 126.77559600546952],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_48cfd26d9e218304cd8802c3f4d58f1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_504c51f35158902a393bcc94d5bc6144.setIcon(icon_48cfd26d9e218304cd8802c3f4d58f1a);
+        
+    
+            marker_504c51f35158902a393bcc94d5bc6144.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>고룡셀프주유소</b><br>
+    <b>광주 광산구 임곡로 359</b><br>
+    전화번호: 062-710-0515<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-29 14:00:52<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_46f307df188a006f65fb2e861f2f76cd = L.marker(
+                [35.151154124198726, 126.85598706003005],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_3333c06a4bc7fcef217d8cf3f3376f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_46f307df188a006f65fb2e861f2f76cd.setIcon(icon_3333c06a4bc7fcef217d8cf3f3376f2f);
+        
+    
+            marker_46f307df188a006f65fb2e861f2f76cd.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)일프로주유소</b><br>
+    <b>광주 서구 운천로 206 (치평동)</b><br>
+    전화번호: 062-383-4007<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:30:39<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e796279e23e081680b62121e812f14f = L.marker(
+                [35.208370010199275, 126.87395727630192],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_45da7d4a29ad66b9a478970048ea534f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5e796279e23e081680b62121e812f14f.setIcon(icon_45da7d4a29ad66b9a478970048ea534f);
+        
+    
+            marker_5e796279e23e081680b62121e812f14f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주) 대림셀프주유소</b><br>
+    <b>광주 북구 하서로 380 (양산동)</b><br>
+    전화번호: 062-572-2294<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-21 10:23:13<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1bb79b4c3d21bae84c54ff59ed3057c0 = L.marker(
+                [35.19801007353113, 126.87590162875978],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_1f8a1c7bb23337a62d0a0518165aacfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1bb79b4c3d21bae84c54ff59ed3057c0.setIcon(icon_1f8a1c7bb23337a62d0a0518165aacfe);
+        
+    
+            marker_1bb79b4c3d21bae84c54ff59ed3057c0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 양산주유소</b><br>
+    <b>광주 북구 하서로 255 (양산동)</b><br>
+    전화번호: 062-571-5189<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-13 08:25:38<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4aeba738b1e3997fc6cd70c414106222 = L.marker(
+                [35.185867813472, 126.78461126269968],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_fce9e61c8c6b94ca1e883fd91aa211d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4aeba738b1e3997fc6cd70c414106222.setIcon(icon_fce9e61c8c6b94ca1e883fd91aa211d0);
+        
+    
+            marker_4aeba738b1e3997fc6cd70c414106222.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 장수IC셀프주유소</b><br>
+    <b>광주 광산구 고봉로 238</b><br>
+    전화번호: 062-955-2225<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 06:00:35<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d0236b891ae6093b5307dd6ad0445a85 = L.marker(
+                [35.217009202496165, 126.82473226394882],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_2e690eb799ac9322c99e904796c94a4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d0236b891ae6093b5307dd6ad0445a85.setIcon(icon_2e690eb799ac9322c99e904796c94a4d);
+        
+    
+            marker_d0236b891ae6093b5307dd6ad0445a85.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>실크로드주유소</b><br>
+    <b>광주 광산구 사암로 866</b><br>
+    전화번호: 062-953-7253<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:29:17<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_032868ce12e85f5c23e85cc3c91a43ec = L.marker(
+                [35.20337492192744, 126.81952544126334],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_896741a83a04f1706feb135b165e1e68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_032868ce12e85f5c23e85cc3c91a43ec.setIcon(icon_896741a83a04f1706feb135b165e1e68);
+        
+    
+            marker_032868ce12e85f5c23e85cc3c91a43ec.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)햇살가득주유소</b><br>
+    <b>광주 광산구 임방울대로 493 (수완동)</b><br>
+    전화번호: 062-959-4848<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:32:28<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af6458b6a4082952d234a3548fcf139d = L.marker(
+                [35.20434446619582, 126.75886360540837],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_549b31d0524875bda7136f261c47c825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_af6458b6a4082952d234a3548fcf139d.setIcon(icon_549b31d0524875bda7136f261c47c825);
+        
+    
+            marker_af6458b6a4082952d234a3548fcf139d.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크주유소</b><br>
+    <b>광주 광산구 고봉로 565 (산막동)</b><br>
+    전화번호: 062-962-3590<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-05 09:14:39<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_89c2a2b7bc4e721c767504987879ba6f = L.marker(
+                [35.21301065615299, 126.81860633477949],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_a658a88bc72b1590de4496dbfcf8d932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_89c2a2b7bc4e721c767504987879ba6f.setIcon(icon_a658a88bc72b1590de4496dbfcf8d932);
+        
+    
+            marker_89c2a2b7bc4e721c767504987879ba6f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>미스두바이주유소</b><br>
+    <b>광주 광산구 사암로 788 (도천동)</b><br>
+    전화번호: 062-959-5185<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:31:14<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf9de6af3ec91e3593a2e220da5ef6a2 = L.marker(
+                [35.15422005888054, 126.83651993685841],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_0d8d397fcb962510a43c1eebbd52caa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cf9de6af3ec91e3593a2e220da5ef6a2.setIcon(icon_0d8d397fcb962510a43c1eebbd52caa3);
+        
+    
+            marker_cf9de6af3ec91e3593a2e220da5ef6a2.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)아프리카주유소</b><br>
+    <b>광주광역시 서구  천변좌하로 168 (치평동)</b><br>
+    전화번호: 062-381-5151<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-28 18:31:44<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f13985fdf24306325e26dc53bd441339 = L.marker(
+                [35.156844741876284, 126.78113531245539],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_40d8dfd96480c0729388c194954a35c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f13985fdf24306325e26dc53bd441339.setIcon(icon_40d8dfd96480c0729388c194954a35c7);
+        
+    
+            marker_f13985fdf24306325e26dc53bd441339.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)효광 운수대통주유소</b><br>
+    <b>광주 광산구 동곡로 846 (운수동)</b><br>
+    전화번호: 062-942-5570<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 09:19:29<br>
+    > <b>가격: 1,630 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b22438191e708834a75f9bc5b7e05d5 = L.marker(
+                [35.122677818953925, 126.72455151485569],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_90915f48363903dba160273b772f3325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5b22438191e708834a75f9bc5b7e05d5.setIcon(icon_90915f48363903dba160273b772f3325);
+        
+    
+            marker_5b22438191e708834a75f9bc5b7e05d5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>평동농협명화지점주유소</b><br>
+    <b>광주 광산구 평동로 441 (명화동)</b><br>
+    전화번호: 062-943-4068<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-04 11:28:32<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_343c263c4681affcae65de0149157ffe = L.marker(
+                [35.15398780810169, 126.7310766397235],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_f8f8550310e5ea87d6c41ddbe4705089 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_343c263c4681affcae65de0149157ffe.setIcon(icon_f8f8550310e5ea87d6c41ddbe4705089);
+        
+    
+            marker_343c263c4681affcae65de0149157ffe.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>천우주유소</b><br>
+    <b>광주 광산구 어등대로 50 (지평동)</b><br>
+    전화번호: 062-942-1010<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 17:05:21<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b3e0ea82a037af89ccb40a9bf0dbe828 = L.marker(
+                [35.21072912339287, 126.82692293132735],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_e0df4d66ccc463d5d1ff9b08381f1b00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b3e0ea82a037af89ccb40a9bf0dbe828.setIcon(icon_e0df4d66ccc463d5d1ff9b08381f1b00);
+        
+    
+            marker_b3e0ea82a037af89ccb40a9bf0dbe828.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광주비아농협주유소</b><br>
+    <b>광주 광산구 임방울대로 600 (도천동)</b><br>
+    전화번호: 062-951-5182<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-05 13:23:34<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_294d3a1bc8f5519f8893a11a9f707e88 = L.marker(
+                [35.19458684579123, 126.7933309064984],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_3c3d5c6a4d68deb28ec09ff2360878b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_294d3a1bc8f5519f8893a11a9f707e88.setIcon(icon_3c3d5c6a4d68deb28ec09ff2360878b9);
+        
+    
+            marker_294d3a1bc8f5519f8893a11a9f707e88.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>내트럭(주)광주사업소</b><br>
+    <b>광주 광산구 손재로 327</b><br>
+    전화번호: 062-951-0316<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-17 17:33:58<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f50e88f9c353cf6bdc1ba71feb0ecc3a = L.marker(
+                [35.21355444513799, 126.79600609591274],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_d70d96a119c42f1841e06bafff0d1df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f50e88f9c353cf6bdc1ba71feb0ecc3a.setIcon(icon_d70d96a119c42f1841e06bafff0d1df8);
+        
+    
+            marker_f50e88f9c353cf6bdc1ba71feb0ecc3a.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>하남현대주유소(H)</b><br>
+    <b>광주 광산구 임곡로 573 (안청동)</b><br>
+    전화번호: 062-953-5149<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 13:56:30<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8a18e7b89415e2c3504a6e6178a552cb = L.marker(
+                [35.14013214939233, 126.77593104084836],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_5b2cd2e233d892850fa55f4d90efe7a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8a18e7b89415e2c3504a6e6178a552cb.setIcon(icon_5b2cd2e233d892850fa55f4d90efe7a5);
+        
+    
+            marker_8a18e7b89415e2c3504a6e6178a552cb.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>평동천우주유소</b><br>
+    <b>광주 광산구 동곡로 655 (송촌동)</b><br>
+    전화번호: 062-946-5182<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 11:22:29<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7264f5ce3a42a03560248cd570b5476f = L.marker(
+                [35.20266767230121, 126.81171668641323],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_5198b12fd570272294c73523ca7a91cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7264f5ce3a42a03560248cd570b5476f.setIcon(icon_5198b12fd570272294c73523ca7a91cf);
+        
+    
+            marker_7264f5ce3a42a03560248cd570b5476f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>CJ대한통운㈜ 신세계주유소</b><br>
+    <b>광주 광산구 사암로 660 (장덕동)</b><br>
+    전화번호: 062-952-1188<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-05-19 14:14:15<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_068e0805174d5129cd4514c9cf602dea = L.marker(
+                [35.115349669455185, 126.76403152933054],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_b9f41ea2aa285a1381fd0e0e2440563c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_068e0805174d5129cd4514c9cf602dea.setIcon(icon_b9f41ea2aa285a1381fd0e0e2440563c);
+        
+    
+            marker_068e0805174d5129cd4514c9cf602dea.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>내트럭(주) 광주평동사업소</b><br>
+    <b>광주 광산구 평동산단9번로 145</b><br>
+    전화번호: 062-451-6301<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-19 08:57:55<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e27fb608dee1d1ba3ef04b28496e2a08 = L.marker(
+                [35.175141982294065, 126.88211291244514],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_e90f2ee9c4c06b9d7585c11bd738accf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e27fb608dee1d1ba3ef04b28496e2a08.setIcon(icon_e90f2ee9c4c06b9d7585c11bd738accf);
+        
+    
+            marker_e27fb608dee1d1ba3ef04b28496e2a08.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)대창석유직영 운암주유소</b><br>
+    <b>광주 북구 북문대로 34 (운암동)</b><br>
+    전화번호: 062-525-0716<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-25 16:08:56<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_abf9384a3514a9c499b81949c011a906 = L.marker(
+                [35.186151071395976, 126.93351160017826],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_ad3ec76c274a1c1ed1aadb9d1f592985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_abf9384a3514a9c499b81949c011a906.setIcon(icon_ad3ec76c274a1c1ed1aadb9d1f592985);
+        
+    
+            marker_abf9384a3514a9c499b81949c011a906.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광주화물터미널(주)</b><br>
+    <b>광주 북구 동문대로 280 (각화동)</b><br>
+    전화번호: 062-261-2514<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-05-06 14:58:13<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79568463c72785b269b4c1030a03fab3 = L.marker(
+                [35.213397763304755, 126.81855680056286],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_6b2512ec8cb7e76f0daef8ab780548f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_79568463c72785b269b4c1030a03fab3.setIcon(icon_6b2512ec8cb7e76f0daef8ab780548f9);
+        
+    
+            marker_79568463c72785b269b4c1030a03fab3.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)대창석유직영 공단주유소</b><br>
+    <b>광주 광산구 사암로 800 (도천동)</b><br>
+    전화번호: 062-951-6008<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-05 11:19:28<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_032eb08b263f811e1297a5e1a12ba5f7 = L.marker(
+                [35.13954367576924, 126.80047278272109],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_3c50e691bd148deb7b5482d0ab51660f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_032eb08b263f811e1297a5e1a12ba5f7.setIcon(icon_3c50e691bd148deb7b5482d0ab51660f);
+        
+    
+            marker_032eb08b263f811e1297a5e1a12ba5f7.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>송정농협주유소</b><br>
+    <b>광주 광산구 송도로 295 (송정동)</b><br>
+    전화번호: 062-942-6110<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-22 14:38:20<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b40a8d4f2ad2a869c5844cb931acc527 = L.marker(
+                [35.185201917588884, 126.78445318235721],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_1fd1279a41c01f2fb499d649dc6e5f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b40a8d4f2ad2a869c5844cb931acc527.setIcon(icon_1fd1279a41c01f2fb499d649dc6e5f25);
+        
+    
+            marker_b40a8d4f2ad2a869c5844cb931acc527.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)에이치에스에너지 장수주유소</b><br>
+    <b>광주 광산구 고봉로 239 (장수동)</b><br>
+    전화번호: 062-955-1511<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-08 07:00:19<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc472dc2b92271724b6c6792a0eaeb4c = L.marker(
+                [35.21586890175711, 126.82157292740983],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_0702bbc39514e9022faae39e4f2ebf14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cc472dc2b92271724b6c6792a0eaeb4c.setIcon(icon_0702bbc39514e9022faae39e4f2ebf14);
+        
+    
+            marker_cc472dc2b92271724b6c6792a0eaeb4c.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 비아도천주유소</b><br>
+    <b>광주 광산구 사암로 841 (도천동)</b><br>
+    전화번호: 062-953-0606<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-06 14:12:48<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f22fa5ddf317caa36b98ee1052d67ee = L.marker(
+                [35.14151647767281, 126.88751214764108],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_56a6a08d4f5a806005909c2166d4e536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8f22fa5ddf317caa36b98ee1052d67ee.setIcon(icon_56a6a08d4f5a806005909c2166d4e536);
+        
+    
+            marker_8f22fa5ddf317caa36b98ee1052d67ee.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>미래주유소</b><br>
+    <b>광주 남구 금화로 380 (주월동)</b><br>
+    전화번호: 062-364-5188<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:35:48<br>
+    > <b>가격: 1,900 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e89eed9d26eee514dfeb868cdfe07095 = L.marker(
+                [35.18159457002742, 126.930851541611],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_a8d4bc956120be81c9568eaa391a986f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e89eed9d26eee514dfeb868cdfe07095.setIcon(icon_a8d4bc956120be81c9568eaa391a986f);
+        
+    
+            marker_e89eed9d26eee514dfeb868cdfe07095.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)안국에너지 우신주유소</b><br>
+    <b>광주 북구 동문대로 218 (각화동)</b><br>
+    전화번호: 062-261-8666<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-14 16:01:54<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_078506ae9b0d1a58a825b000926171b5 = L.marker(
+                [35.12730480132343, 126.8416883457423],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_9df33f075598de2c2fef58e56433a59d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_078506ae9b0d1a58a825b000926171b5.setIcon(icon_9df33f075598de2c2fef58e56433a59d);
+        
+    
+            marker_078506ae9b0d1a58a825b000926171b5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양케미칼주유소/충전소</b><br>
+    <b>광주 서구 풍서좌로 255 (세하동)</b><br>
+    전화번호: 062-655-1500<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:14:57<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9b87c013cf4ea335d746034a3322f01a = L.marker(
+                [35.19473893755765, 126.90014974753157],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_9d57db16e669e1e136a3c88ad664bab1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9b87c013cf4ea335d746034a3322f01a.setIcon(icon_9d57db16e669e1e136a3c88ad664bab1);
+        
+    
+            marker_9b87c013cf4ea335d746034a3322f01a.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>고려주유소</b><br>
+    <b>광주 북구 설죽로 398 (삼각동)</b><br>
+    전화번호: 062-263-2228<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-08 13:08:38<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_86b61168445c1357427ab68c6d3a8820 = L.marker(
+                [35.14600935276633, 126.90386669959813],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_99e203b4428c1a4df30340149e925579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_86b61168445c1357427ab68c6d3a8820.setIcon(icon_99e203b4428c1a4df30340149e925579);
+        
+    
+            marker_86b61168445c1357427ab68c6d3a8820.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>서양새마을금고주유소</b><br>
+    <b>광주 남구 독립로 140 (월산동)</b><br>
+    전화번호: 062-720-2800<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-26 08:59:33<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_637f367863e88cd711e6f21a53fefb1c = L.marker(
+                [35.13265553795621, 126.89350840098027],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_80f786f2a30e2c5f56fb74d86a30f041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_637f367863e88cd711e6f21a53fefb1c.setIcon(icon_80f786f2a30e2c5f56fb74d86a30f041);
+        
+    
+            marker_637f367863e88cd711e6f21a53fefb1c.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>에스제이오일㈜ 풍암주유소</b><br>
+    <b>광주 남구 회재로 1208</b><br>
+    전화번호: 062-652-8251<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-15 07:29:05<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9c6cdb1cdfd004b69fa9229dac4bf40 = L.marker(
+                [35.14649460217353, 126.90346195962657],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_a4e3dce76a57507e1b165a0a7965bb40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d9c6cdb1cdfd004b69fa9229dac4bf40.setIcon(icon_a4e3dce76a57507e1b165a0a7965bb40);
+        
+    
+            marker_d9c6cdb1cdfd004b69fa9229dac4bf40.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>독립로주유소</b><br>
+    <b>광주 남구 독립로 143</b><br>
+    전화번호: 062-363-5189<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:52:12<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_953ba187cd0929d53480ece2740f92e9 = L.marker(
+                [35.17217960306321, 126.86826360468609],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_148b65a4c0f7be135da581f9dfa2d6a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_953ba187cd0929d53480ece2740f92e9.setIcon(icon_148b65a4c0f7be135da581f9dfa2d6a2);
+        
+    
+            marker_953ba187cd0929d53480ece2740f92e9.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 동천마을셀프주유소</b><br>
+    <b>광주 북구 하남대로 691 (동림동)</b><br>
+    전화번호: 062-511-5106<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 19:47:21<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3f6ea13f9285d6f91f8414b7109732bc = L.marker(
+                [35.143104543954124, 126.84067690596298],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_1615d010914493b8c7061e926f808063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3f6ea13f9285d6f91f8414b7109732bc.setIcon(icon_1615d010914493b8c7061e926f808063);
+        
+    
+            marker_3f6ea13f9285d6f91f8414b7109732bc.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 공항가는길주유소</b><br>
+    <b>광주 서구 상무대로 699 (마륵동)</b><br>
+    전화번호: 062-372-5189<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-01 12:47:33<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_083d82913f687fc3826d7e23dc1f67aa = L.marker(
+                [35.1399611686954, 126.90181646154754],
+                {}
+            ).addTo(map_3c3f4b800090f0311a53bbbd3893bd8d);
+        
+    
+            var icon_cb46a7d75e0b5b66dab6fa1f63862f8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_083d82913f687fc3826d7e23dc1f67aa.setIcon(icon_cb46a7d75e0b5b66dab6fa1f63862f8f);
+        
+    
+            marker_083d82913f687fc3826d7e23dc1f67aa.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>늘푸른주유소</b><br>
+    <b>광주 남구 독립로 69 (백운동)</b><br>
+    전화번호: 062-416-7300<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 13:34:12<br>
+    > <b>가격: 2,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>

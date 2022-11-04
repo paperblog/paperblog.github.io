@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19ed3292c6b538613952ed91d1110e24 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_19ed3292c6b538613952ed91d1110e24" ></div>
+        
+</body>
+<script>    
+    
+            var map_19ed3292c6b538613952ed91d1110e24 = L.map(
+                "map_19ed3292c6b538613952ed91d1110e24",
+                {
+                    center: [35.16577905389123, 129.03903535218927],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54d12bb6ea95aa07b9252c7ea1e0035e = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var locate_control_ac1927a9bcb21d197149fe234045f0e6 = L.control.locate(
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+            
+        
+    
+            var marker_ed1c3cd9a0b1ca3936e81cf823bf53a7 = L.marker(
+                [35.1278489120069, 128.85683247509672],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_29b7a1cc830445a6c0f45d21c48152b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ed1c3cd9a0b1ca3936e81cf823bf53a7.setIcon(icon_29b7a1cc830445a6c0f45d21c48152b0);
+        
+    
+            marker_ed1c3cd9a0b1ca3936e81cf823bf53a7.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대경산업(주) 구랑주유소</b><br>
+    <b>부산 강서구 가락대로 546 (구랑동)</b><br>
+    전화번호: 051-972-1571<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-08 07:29:57<br>
+    > <b>가격: 1,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9090b3e47f378b6a75aa8b9e15e9fc15 = L.marker(
+                [35.3236487975351, 129.1978369854709],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_d58de60429d9bc50285e6cc40b1fb52e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9090b3e47f378b6a75aa8b9e15e9fc15.setIcon(icon_d58de60429d9bc50285e6cc40b1fb52e);
+        
+    
+            marker_9090b3e47f378b6a75aa8b9e15e9fc15.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>백운1주유소</b><br>
+    <b>부산 기장군 정관면 정관로 779</b><br>
+    전화번호: 051-728-4433<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-05-26 09:31:44<br>
+    > <b>가격: 1,200 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cecdfbd19fd2bea9a9d40e6cc2017b7f = L.marker(
+                [35.324734614316185, 129.21040552525554],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_7decfa1747318ac3d118c8d86993b380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cecdfbd19fd2bea9a9d40e6cc2017b7f.setIcon(icon_7decfa1747318ac3d118c8d86993b380);
+        
+    
+            marker_cecdfbd19fd2bea9a9d40e6cc2017b7f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>정관신도시주유소/충전소</b><br>
+    <b>부산 기장군 정관면 정관로 901</b><br>
+    전화번호: 051-727-6228<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-05 13:05:44<br>
+    > <b>가격: 1,200 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73c45f38e8aea3e7f886d08fc981e932 = L.marker(
+                [35.124985151538525, 129.07457602743617],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_2ad7ecccc55d026491ac822483166346 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_73c45f38e8aea3e7f886d08fc981e932.setIcon(icon_2ad7ecccc55d026491ac822483166346);
+        
+    
+            marker_73c45f38e8aea3e7f886d08fc981e932.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>우암주유소</b><br>
+    <b>부산 남구 우암로 204</b><br>
+    전화번호: 051-644-0142<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-01 08:06:11<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_59fa0f59bd8072f1f90b1fb5804c9ef5 = L.marker(
+                [35.32221688243696, 129.23296848756584],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_6a898086f61591a3de310c5fb071b55e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_59fa0f59bd8072f1f90b1fb5804c9ef5.setIcon(icon_6a898086f61591a3de310c5fb071b55e);
+        
+    
+            marker_59fa0f59bd8072f1f90b1fb5804c9ef5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>달음산주유소</b><br>
+    <b>부산 기장군 장안읍 정관로 1115</b><br>
+    전화번호: 051-727-5177<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-25 13:34:27<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e210652bde5d572abfeac3c4f6de02f9 = L.marker(
+                [35.124280101363595, 128.89736499583472],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_a36d6aa245f86d07e99c00c0e5017f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e210652bde5d572abfeac3c4f6de02f9.setIcon(icon_a36d6aa245f86d07e99c00c0e5017f3d);
+        
+    
+            marker_e210652bde5d572abfeac3c4f6de02f9.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)경인에너지</b><br>
+    <b>부산 강서구 생곡로 40 (녹산동)</b><br>
+    전화번호: 051-971-5013<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:57:46<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a2dc6bd575af791bb3ef974ee74699b5 = L.marker(
+                [35.14916075723148, 128.98886387899503],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_9b545ac934f7963961ec544d92b3308f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a2dc6bd575af791bb3ef974ee74699b5.setIcon(icon_9b545ac934f7963961ec544d92b3308f);
+        
+    
+            marker_a2dc6bd575af791bb3ef974ee74699b5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>구룡주유소</b><br>
+    <b>부산 사상구 가야대로 150 (학장동)</b><br>
+    전화번호: 051-316-4360<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:25:29<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_22df366db73f1cb26d27d5b2c98378c0 = L.marker(
+                [35.13716104940976, 128.8858980944141],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_086a5fd858d6037c22bd4233c414b079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_22df366db73f1cb26d27d5b2c98378c0.setIcon(icon_086a5fd858d6037c22bd4233c414b079);
+        
+    
+            marker_22df366db73f1cb26d27d5b2c98378c0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)시큐 국제산단주유소</b><br>
+    <b>부산 강서구 생곡로 272</b><br>
+    전화번호: 051-714-2208<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-31 23:26:21<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a5ad5ec680ed6224dbd1b9cea0de5a5 = L.marker(
+                [35.20975018616008, 128.97465030384618],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_3d138724d5e7995267dc55e96223ba03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7a5ad5ec680ed6224dbd1b9cea0de5a5.setIcon(icon_3d138724d5e7995267dc55e96223ba03);
+        
+    
+            marker_7a5ad5ec680ed6224dbd1b9cea0de5a5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)시큐 대저고속주유소</b><br>
+    <b>부산 강서구 체육공원로 66 (대저1동)</b><br>
+    전화번호: 051-941-5151<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-31 11:12:08<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ecd53431a4fb76e97e922e31603ed06c = L.marker(
+                [35.08520731246177, 128.96744990432583],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_504f2c2ce9d184d9ea03df2513813f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ecd53431a4fb76e97e922e31603ed06c.setIcon(icon_504f2c2ce9d184d9ea03df2513813f96);
+        
+    
+            marker_ecd53431a4fb76e97e922e31603ed06c.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>부영석유 도매주유소</b><br>
+    <b>부산 사하구 을숙도대로 564</b><br>
+    전화번호: 051-202-7333<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-28 14:56:22<br>
+    > <b>가격: 1,300 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9736546a3016649499576c294c767c67 = L.marker(
+                [35.208576824559586, 128.9814679970041],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_439bf37082072f9060b25a7e7949d848 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9736546a3016649499576c294c767c67.setIcon(icon_439bf37082072f9060b25a7e7949d848);
+        
+    
+            marker_9736546a3016649499576c294c767c67.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>공항대로주유소</b><br>
+    <b>부산 강서구 공항로 1217 (대저1동)</b><br>
+    전화번호: 051-973-8122<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-22 13:57:56<br>
+    > <b>가격: 1,350 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af4b6ad583652cbbfab35badec447360 = L.marker(
+                [35.12417034921645, 129.10018078396266],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_f1ce009874532c40a25e0f455e76afd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_af4b6ad583652cbbfab35badec447360.setIcon(icon_f1ce009874532c40a25e0f455e76afd1);
+        
+    
+            marker_af4b6ad583652cbbfab35badec447360.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>반도주유소</b><br>
+    <b>부산 남구 신선로 442 (용당동)</b><br>
+    전화번호: 051-626-6828<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-15 09:25:42<br>
+    > <b>가격: 1,400 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_69a0fc8b0dbcab4ed7a76d20b910f67f = L.marker(
+                [35.14747244967984, 128.9709972839475],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_fff397794c85f5972b6d8342aa26dd18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_69a0fc8b0dbcab4ed7a76d20b910f67f.setIcon(icon_fff397794c85f5972b6d8342aa26dd18);
+        
+    
+            marker_69a0fc8b0dbcab4ed7a76d20b910f67f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 감전주유소</b><br>
+    <b>부산 사상구 낙동대로 978 (감전동)</b><br>
+    전화번호: 051-315-6362<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-01 06:12:14<br>
+    > <b>가격: 1,400 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_914e51f3d15bc22d936a806c880b16a8 = L.marker(
+                [35.1117257574118, 128.86897868589938],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_9883438065f857efffd5beac8c1d962e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_914e51f3d15bc22d936a806c880b16a8.setIcon(icon_9883438065f857efffd5beac8c1d962e);
+        
+    
+            marker_914e51f3d15bc22d936a806c880b16a8.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>부산축산업협동조합 농협주유소</b><br>
+    <b>부산광역시 강서구  낙동남로 448 (녹산동)</b><br>
+    전화번호: 051-973-8141<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-14 11:04:13<br>
+    > <b>가격: 1,400 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b05b0ef387f26d37d29f6daab59aadd0 = L.marker(
+                [35.09317288310112, 128.96285963221493],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_83ee8a86ea064ecf79e690fb1d494ba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b05b0ef387f26d37d29f6daab59aadd0.setIcon(icon_83ee8a86ea064ecf79e690fb1d494ba1);
+        
+    
+            marker_b05b0ef387f26d37d29f6daab59aadd0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>극동유화(주) 부산주유소</b><br>
+    <b>부산 사하구 하신중앙로 165 (신평동)</b><br>
+    전화번호: 051-293-5451<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-07 08:51:49<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ac2f4763bb4612d14b5293bd0b7b83c = L.marker(
+                [35.10970019083182, 129.08129716420547],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_ccc19a7f7b146e1f659d73cf6f38db3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0ac2f4763bb4612d14b5293bd0b7b83c.setIcon(icon_ccc19a7f7b146e1f659d73cf6f38db3c);
+        
+    
+            marker_0ac2f4763bb4612d14b5293bd0b7b83c.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>내트럭(주)부산사업소</b><br>
+    <b>부산 남구 신선로 168</b><br>
+    전화번호: 051-638-3971<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-02 09:44:21<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_60912a89532f288b2858110f2467b959 = L.marker(
+                [35.219520217515964, 129.00666015097565],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_18b32cb268670498247bce5e488d40f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_60912a89532f288b2858110f2467b959.setIcon(icon_18b32cb268670498247bce5e488d40f9);
+        
+    
+            marker_60912a89532f288b2858110f2467b959.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>동양가스산업(주)명품주유소</b><br>
+    <b>부산 북구 금곡대로 113 (덕천동)</b><br>
+    전화번호: 051-343-3003<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:34:45<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4c9f81d5b871b39c694027266395a69 = L.marker(
+                [35.02285401095183, 128.80786916935912],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_4b497a7d8fb525244e7b8e24f8c76d0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f4c9f81d5b871b39c694027266395a69.setIcon(icon_4b497a7d8fb525244e7b8e24f8c76d0c);
+        
+    
+            marker_f4c9f81d5b871b39c694027266395a69.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양산업(주)대양가덕주유소</b><br>
+    <b>부산 강서구 거가대로 2571  (천성동)</b><br>
+    전화번호: 051-715-2201<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-08 07:55:05<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b082cd6bfeac9766bfcbcef5df341f2b = L.marker(
+                [35.089240072273704, 129.00106348879189],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_ece0db102da2ff345f4385d299a2d6ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b082cd6bfeac9766bfcbcef5df341f2b.setIcon(icon_ece0db102da2ff345f4385d299a2d6ae);
+        
+    
+            marker_b082cd6bfeac9766bfcbcef5df341f2b.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>에스씨(주) 감천주유소</b><br>
+    <b>부산 사하구 감천로 79 (감천동)</b><br>
+    전화번호: 051-291-9700<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-30 15:36:01<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a6da5b5ebb1f966780d715780f16ca6b = L.marker(
+                [35.112488328078754, 129.09461236702182],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_0eb905dcccafc85665b80444d647d2f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a6da5b5ebb1f966780d715780f16ca6b.setIcon(icon_0eb905dcccafc85665b80444d647d2f9);
+        
+    
+            marker_a6da5b5ebb1f966780d715780f16ca6b.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>내트럭(주)부산용당</b><br>
+    <b>부산 남구 신선로 261</b><br>
+    전화번호: 051-931-8001<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-07 16:10:10<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a57c03ec41e1941e5587676b3fb6ef37 = L.marker(
+                [35.32177123209082, 129.24154321259167],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_236356f70f4aa8b21c8477b53c1b7a4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a57c03ec41e1941e5587676b3fb6ef37.setIcon(icon_236356f70f4aa8b21c8477b53c1b7a4b);
+        
+    
+            marker_a57c03ec41e1941e5587676b3fb6ef37.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>선암주유소</b><br>
+    <b>부산 기장군 장안읍 기장대로 1453</b><br>
+    전화번호: 051-727-1212<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:23:02<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6c3713830800974ac137dea41fe4add8 = L.marker(
+                [35.14692344084648, 128.98908918695835],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_2ca51cdcb5bd783fcb7d7044e5bb2ffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6c3713830800974ac137dea41fe4add8.setIcon(icon_2ca51cdcb5bd783fcb7d7044e5bb2ffa);
+        
+    
+            marker_6c3713830800974ac137dea41fe4add8.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>세원주유소</b><br>
+    <b>부산 사상구 학감대로 178</b><br>
+    전화번호: 051-328-5311<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-04 13:34:16<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1d0a9b8608aadef2a66489021faa442f = L.marker(
+                [35.13647676306125, 128.99626674596647],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_cacc9198ba7b68b1779dd9ddafa3efe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1d0a9b8608aadef2a66489021faa442f.setIcon(icon_cacc9198ba7b68b1779dd9ddafa3efe1);
+        
+    
+            marker_1d0a9b8608aadef2a66489021faa442f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>에스씨(주) 새문주유소</b><br>
+    <b>부산 사상구 학감대로 30 (학장동)</b><br>
+    전화번호: 051-324-3502<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-15 09:51:34<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7025191dae2de653387767c37420b9a0 = L.marker(
+                [35.054442501139384, 128.9708264456325],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_3901b9ce28a951938a79069607cad11e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7025191dae2de653387767c37420b9a0.setIcon(icon_3901b9ce28a951938a79069607cad11e);
+        
+    
+            marker_7025191dae2de653387767c37420b9a0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>토성셀프주유소</b><br>
+    <b>부산 사하구 다대로 581 (다대동)</b><br>
+    전화번호: 051-261-5145<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-11 06:23:04<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fdd33418b2900c617157ab4f281b6cb4 = L.marker(
+                [35.07971926596266, 128.97293553784755],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_8ac6d44dc1d40d78fa1316a5ede85ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fdd33418b2900c617157ab4f281b6cb4.setIcon(icon_8ac6d44dc1d40d78fa1316a5ede85ee9);
+        
+    
+            marker_fdd33418b2900c617157ab4f281b6cb4.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>새마당주유소</b><br>
+    <b>부산 사하구 장평로 152 (장림동)</b><br>
+    전화번호: 070-4062-2345<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-29 06:47:09<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_03d9324c83e739dcc09dc0cdf714a936 = L.marker(
+                [35.15135581843737, 129.01658049273817],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_32d2f6a727c27972c482ea8ac5a7dfd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_03d9324c83e739dcc09dc0cdf714a936.setIcon(icon_32d2f6a727c27972c482ea8ac5a7dfd6);
+        
+    
+            marker_03d9324c83e739dcc09dc0cdf714a936.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)태화주유소</b><br>
+    <b>부산 부산진구 가야대로 402</b><br>
+    전화번호: 051-896-6147<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-02 09:09:48<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb402acc96d264c08d82256d546ea193 = L.marker(
+                [35.21087587422282, 129.10581276741067],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_9a7a203a65f3315a12132fb9db048e34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fb402acc96d264c08d82256d546ea193.setIcon(icon_9a7a203a65f3315a12132fb9db048e34);
+        
+    
+            marker_fb402acc96d264c08d82256d546ea193.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>에이원주유소</b><br>
+    <b>부산 금정구 반송로 364 (서동)</b><br>
+    전화번호: 051-532-5157<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-27 21:20:58<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6f5f4e2cd159f24f3e0d4377fc2a3168 = L.marker(
+                [35.17677499619903, 128.89736164972638],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_cb9eba8ce36d42ce4831aaa5daba67f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6f5f4e2cd159f24f3e0d4377fc2a3168.setIcon(icon_cb9eba8ce36d42ce4831aaa5daba67f5);
+        
+    
+            marker_6f5f4e2cd159f24f3e0d4377fc2a3168.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>신항만주유소</b><br>
+    <b>부산 강서구 가락대로1243번길 68</b><br>
+    전화번호: 051-973-0935<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:45:41<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8752fe5c85112cf92aa10ec95a37f521 = L.marker(
+                [35.09858867914578, 128.92766820708528],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_ddd440554440be0bbe8bbfd1863214c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8752fe5c85112cf92aa10ec95a37f521.setIcon(icon_ddd440554440be0bbe8bbfd1863214c2);
+        
+    
+            marker_8752fe5c85112cf92aa10ec95a37f521.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>명지농협주유소</b><br>
+    <b>부산 강서구 르노삼성대로 572 (명지동)</b><br>
+    전화번호: 051-294-8528<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-18 09:24:03<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a53b380f430f5bc6b4eeb2e8a4585d09 = L.marker(
+                [35.20297415197385, 129.11877170503575],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_d34de187a9a17962c6916770aa1ca40f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a53b380f430f5bc6b4eeb2e8a4585d09.setIcon(icon_d34de187a9a17962c6916770aa1ca40f);
+        
+    
+            marker_a53b380f430f5bc6b4eeb2e8a4585d09.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>sc(주)센텀주유소</b><br>
+    <b>부산광역시 해운대구  수영강변대로 504 (반여동)</b><br>
+    전화번호: 051-527-4144<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-15 09:18:24<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8f2746d8ffca626b0251b30cc92e175e = L.marker(
+                [35.131086111769584, 129.0572876544138],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_6d0f885514bd97ba8799bf9798fe7f9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8f2746d8ffca626b0251b30cc92e175e.setIcon(icon_6d0f885514bd97ba8799bf9798fe7f9b);
+        
+    
+            marker_8f2746d8ffca626b0251b30cc92e175e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)대양씨앤씨직영주유소</b><br>
+    <b>부산 동구 성남로 74 (범일동)</b><br>
+    전화번호: 051-646-5563<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-09-16 10:01:46<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f37a912d43a2a9abb468faa8313d163 = L.marker(
+                [35.0541445041709, 128.99524590656222],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_bbf839db6d29cc4c0a2922639b60cf9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1f37a912d43a2a9abb468faa8313d163.setIcon(icon_bbf839db6d29cc4c0a2922639b60cf9d);
+        
+    
+            marker_1f37a912d43a2a9abb468faa8313d163.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>동원주유소(주)</b><br>
+    <b>부산 사하구 감천항로 445 (구평동)</b><br>
+    전화번호: 051-261-4448<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-11 09:31:47<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_92a8a3c0b5ca933ec3390c0bf2eb129a = L.marker(
+                [35.130233585298335, 129.05478594400577],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_fb1189e90435a13d597bb956b9b9b172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_92a8a3c0b5ca933ec3390c0bf2eb129a.setIcon(icon_fb1189e90435a13d597bb956b9b9b172);
+        
+    
+            marker_92a8a3c0b5ca933ec3390c0bf2eb129a.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양대박주유소</b><br>
+    <b>부산 동구 성남로 42 (좌천동)</b><br>
+    전화번호: 051-634-5252<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-05 10:40:38<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_00b026be8fc716ebdb943d41918a3d4c = L.marker(
+                [35.17402508793901, 128.9769965040589],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e73f9fd8e5a52b9f22c9a56f4d64f135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_00b026be8fc716ebdb943d41918a3d4c.setIcon(icon_e73f9fd8e5a52b9f22c9a56f4d64f135);
+        
+    
+            marker_00b026be8fc716ebdb943d41918a3d4c.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 낙동로주유소</b><br>
+    <b>부산 사상구 낙동대로 1274 (삼락동)</b><br>
+    전화번호: 051-305-9558<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-29 14:29:39<br>
+    > <b>가격: 1,500 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ca64fadff5e58ba6877f37f090d079e = L.marker(
+                [35.32489885988111, 129.20335831839265],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_3eb6961a70ce1deb81a17c0fd979c7a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7ca64fadff5e58ba6877f37f090d079e.setIcon(icon_3eb6961a70ce1deb81a17c0fd979c7a3);
+        
+    
+            marker_7ca64fadff5e58ba6877f37f090d079e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>공단신도시주유소</b><br>
+    <b>부산 기장군 정관면 정관로 835</b><br>
+    전화번호: 051-728-4686<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-21 12:11:39<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_78c1cc463b69a9544277075def5516c4 = L.marker(
+                [35.126458161990705, 129.05120213536088],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_027cafe923b21b515d7db2826899a270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_78c1cc463b69a9544277075def5516c4.setIcon(icon_027cafe923b21b515d7db2826899a270);
+        
+    
+            marker_78c1cc463b69a9544277075def5516c4.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>부산벙커앤오일 청구주유소</b><br>
+    <b>부산 동구 충장대로 281 (좌천동)</b><br>
+    전화번호: 051-635-9698<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 07:51:38<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_55fc739f2d891019e60d4b323c04b279 = L.marker(
+                [35.06669706455476, 128.83268864293288],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_35c10c79aa4b1a3b5aa7057eabb97ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_55fc739f2d891019e60d4b323c04b279.setIcon(icon_35c10c79aa4b1a3b5aa7057eabb97ba0);
+        
+    
+            marker_55fc739f2d891019e60d4b323c04b279.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>내트럭(주) 부산신항남컨사업소</b><br>
+    <b>부산 강서구 신항남로 507</b><br>
+    전화번호: 070-4454-9235<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-27 09:45:24<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3d995d2361f297f3a5650ee6c7e88e7f = L.marker(
+                [35.09345082698523, 128.99260705573323],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_f1a5d23884cdaf475fd0a2d9ded0b534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3d995d2361f297f3a5650ee6c7e88e7f.setIcon(icon_f1a5d23884cdaf475fd0a2d9ded0b534);
+        
+    
+            marker_3d995d2361f297f3a5650ee6c7e88e7f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양석유(주) SK괴정주유소</b><br>
+    <b>부산광역시 사하구  사하로 129</b><br>
+    전화번호: 051-206-7446<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-02 17:20:19<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e441d02a3ffa7d40269429fdade30159 = L.marker(
+                [35.162867681622785, 129.05437347239453],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_388112d7625023e05360348638a33a8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e441d02a3ffa7d40269429fdade30159.setIcon(icon_388112d7625023e05360348638a33a8b);
+        
+    
+            marker_e441d02a3ffa7d40269429fdade30159.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양주유소</b><br>
+    <b>부산 부산진구 새싹로 61-1 (부암동)</b><br>
+    전화번호: 051-818-6161<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-22 16:04:09<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee54b65cd2f62996d45a7d090d17498f = L.marker(
+                [35.142267734638985, 128.94913184570748],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_8ac2a9e23c204e7bf775cf23b933f3c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ee54b65cd2f62996d45a7d090d17498f.setIcon(icon_8ac2a9e23c204e7bf775cf23b933f3c0);
+        
+    
+            marker_ee54b65cd2f62996d45a7d090d17498f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>맥도주유소</b><br>
+    <b>부산 강서구 공항로 381 (대저2동)</b><br>
+    전화번호: 051-973-5735<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 11:56:23<br>
+    > <b>가격: 1,600 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b12129146b60942b0702516fe29542c7 = L.marker(
+                [35.2603761735963, 129.0916293912201],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_a6b54274377520ca2460ac06a45241fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b12129146b60942b0702516fe29542c7.setIcon(icon_a6b54274377520ca2460ac06a45241fc);
+        
+    
+            marker_b12129146b60942b0702516fe29542c7.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>금강주유소</b><br>
+    <b>부산 금정구 중앙대로 1972</b><br>
+    전화번호: 051-581-8551<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-14 15:05:46<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0efa7fe78637bc65dda9cdc1bb2b8117 = L.marker(
+                [35.213089536199156, 129.0233145403595],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_fa6401bbfe1b03ea5de3e54fe26dc1cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0efa7fe78637bc65dda9cdc1bb2b8117.setIcon(icon_fa6401bbfe1b03ea5de3e54fe26dc1cb);
+        
+    
+            marker_0efa7fe78637bc65dda9cdc1bb2b8117.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>만복드림주유소</b><br>
+    <b>부산 북구 만덕대로 170</b><br>
+    전화번호: 051-343-5155<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-01 17:25:01<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2278d157a994ac9dfa5ea16c5c9b17a0 = L.marker(
+                [35.11174594303701, 129.03479091756586],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_dd17e0920d95a4fc9795f781b6603b48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2278d157a994ac9dfa5ea16c5c9b17a0.setIcon(icon_dd17e0920d95a4fc9795f781b6603b48);
+        
+    
+            marker_2278d157a994ac9dfa5ea16c5c9b17a0.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)오일석유 제일주유소</b><br>
+    <b>부산 중구 중구로 194 (영주동)</b><br>
+    전화번호: 051-469-3124<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-11 10:58:46<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4bbebc54f64b4f4f433037f0e336f4c4 = L.marker(
+                [35.16304819448201, 129.13801088722224],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_c7534b064f6976e477c8b08583a122b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4bbebc54f64b4f4f433037f0e336f4c4.setIcon(icon_c7534b064f6976e477c8b08583a122b1);
+        
+    
+            marker_4bbebc54f64b4f4f433037f0e336f4c4.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>에스씨(주) 마리나타운주유소</b><br>
+    <b>부산 해운대구 해운대해변로 44 (우동)</b><br>
+    전화번호: 051-741-7030<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-08 18:11:10<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_387751bea9b129d85bbd3571f0cf5845 = L.marker(
+                [35.138915170070064, 128.99191822058043],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_844bcbd2c1b7207f0fcb609f935d5786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_387751bea9b129d85bbd3571f0cf5845.setIcon(icon_844bcbd2c1b7207f0fcb609f935d5786);
+        
+    
+            marker_387751bea9b129d85bbd3571f0cf5845.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>행복한셀프주유소</b><br>
+    <b>부산 사상구 학감대로 73 (학장동)</b><br>
+    전화번호: 051-327-7547<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 11:05:51<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_58fe24040a508859ed99d11d24462e37 = L.marker(
+                [35.26055016738603, 129.09100366439617],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_efd5ac08603700aedbe607ee9fad9368 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_58fe24040a508859ed99d11d24462e37.setIcon(icon_efd5ac08603700aedbe607ee9fad9368);
+        
+    
+            marker_58fe24040a508859ed99d11d24462e37.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>훼미리알뜰주유소</b><br>
+    <b>부산 금정구 두실로 2</b><br>
+    전화번호: 051-582-5882<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-29 09:20:04<br>
+    > <b>가격: 1,700 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_953064114db099e459cb2b264d5e7b80 = L.marker(
+                [35.1018665929837, 128.99791207041542],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_38dffe13932c2e41a54941059b8ce64a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_953064114db099e459cb2b264d5e7b80.setIcon(icon_38dffe13932c2e41a54941059b8ce64a);
+        
+    
+            marker_953064114db099e459cb2b264d5e7b80.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 괴정제일셀프주유소</b><br>
+    <b>부산 사하구 낙동대로 169</b><br>
+    전화번호: 051-292-0091<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-20 15:09:11<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1b5e92c6f8aeca319a7ab68c7e192028 = L.marker(
+                [35.193940133457474, 129.0662941319458],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_6e676fd3f94569f0220be7370734526c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1b5e92c6f8aeca319a7ab68c7e192028.setIcon(icon_6e676fd3f94569f0220be7370734526c);
+        
+    
+            marker_1b5e92c6f8aeca319a7ab68c7e192028.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 부산현대주유소</b><br>
+    <b>부산 연제구 아시아드대로 107 (거제동)</b><br>
+    전화번호: 051-502-9131<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-21 15:11:46<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0c9fade7d33efdf83ec295fa91f205c4 = L.marker(
+                [35.18174743231808, 129.12348374948803],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_8d590d7136971ab88b613f769419a533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0c9fade7d33efdf83ec295fa91f205c4.setIcon(icon_8d590d7136971ab88b613f769419a533);
+        
+    
+            marker_0c9fade7d33efdf83ec295fa91f205c4.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 센텀셀프주유소</b><br>
+    <b>부산 해운대구 해운대로 179 (재송동)</b><br>
+    전화번호: 051-784-0293<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-05-19 07:57:51<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4dcfa511d95f81a6d22750b9f1bb439 = L.marker(
+                [35.21355250906444, 129.0422425075932],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e3cea3705d089474c9923f7bfe3e2641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f4dcfa511d95f81a6d22750b9f1bb439.setIcon(icon_e3cea3705d089474c9923f7bfe3e2641);
+        
+    
+            marker_f4dcfa511d95f81a6d22750b9f1bb439.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)삼보부림SELF주유소</b><br>
+    <b>부산 북구 만덕대로 343 (만덕동)</b><br>
+    전화번호: 051-338-5156<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-12 14:20:53<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c1e7dfddbe1f0d0701a6a7dc1b33dbf2 = L.marker(
+                [35.213408582712006, 129.0408479779587],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_498c34288fe064cadca30fbc49fb2701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c1e7dfddbe1f0d0701a6a7dc1b33dbf2.setIcon(icon_498c34288fe064cadca30fbc49fb2701);
+        
+    
+            marker_c1e7dfddbe1f0d0701a6a7dc1b33dbf2.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>삼보주유소/충전소</b><br>
+    <b>부산 북구 만덕대로 331 (만덕동)</b><br>
+    전화번호: 051-336-2002<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-08-12 13:35:11<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4d0d520cbc6763c135b24767ed44ca6f = L.marker(
+                [35.13658110212425, 129.0699963741319],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_7ca4a25ebadc2bc8c59149fd3105baf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4d0d520cbc6763c135b24767ed44ca6f.setIcon(icon_7ca4a25ebadc2bc8c59149fd3105baf0);
+        
+    
+            marker_4d0d520cbc6763c135b24767ed44ca6f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>매일주유소</b><br>
+    <b>부산 남구 수영로 22 (문현동)</b><br>
+    전화번호: 051-646-5182<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-28 10:20:39<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_13b4abc112e36f5027220a62b5ddf60e = L.marker(
+                [35.18001338380416, 129.06946523135395],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e58a57f8fde3ae29485ef86a83cdf36d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_13b4abc112e36f5027220a62b5ddf60e.setIcon(icon_e58a57f8fde3ae29485ef86a83cdf36d);
+        
+    
+            marker_13b4abc112e36f5027220a62b5ddf60e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>은마석유(주)아시아드주유소</b><br>
+    <b>부산 연제구  거제대로 130 (거제동)</b><br>
+    전화번호: 051-852-4144<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-27 17:41:14<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_668222bc4828b88cda5b03649eae3d55 = L.marker(
+                [35.1724414451469, 129.17368251380196],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_df9739315222df2ff1e97a4e519e4437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_668222bc4828b88cda5b03649eae3d55.setIcon(icon_df9739315222df2ff1e97a4e519e4437);
+        
+    
+            marker_668222bc4828b88cda5b03649eae3d55.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크(주)직영 장산IC주유소</b><br>
+    <b>부산 해운대구 양운로 107 (좌동)</b><br>
+    전화번호: 051-704-5189<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 13:38:50<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_df4f368f2e3c3503304961cfb63928b2 = L.marker(
+                [35.11352249769447, 129.02104616983533],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_0111f60182d81a598779c25cc6aae8fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_df4f368f2e3c3503304961cfb63928b2.setIcon(icon_0111f60182d81a598779c25cc6aae8fd);
+        
+    
+            marker_df4f368f2e3c3503304961cfb63928b2.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)디시에너지 운동장</b><br>
+    <b>부산광역시 서구  보수대로 220 (동대신제3동)</b><br>
+    전화번호: 051-243-0444<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 18:14:13<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_866cda66cd05c55b3234aafd1080277f = L.marker(
+                [35.152704697173526, 128.9994619987587],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_91da7a453d59de3272c14a2f378bf1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_866cda66cd05c55b3234aafd1080277f.setIcon(icon_91da7a453d59de3272c14a2f378bf1f7);
+        
+    
+            marker_866cda66cd05c55b3234aafd1080277f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)지엠지 우경주유소</b><br>
+    <b>부산 사상구 백양대로 477 (주례동)</b><br>
+    전화번호: 051-312-0951<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-13 09:47:34<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7ddb81bbcf34c8c43e5170fd4ee58db4 = L.marker(
+                [35.111454775801015, 129.0210613534853],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_4fbf96f8cf382c7a7bc2efdbb32c47da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7ddb81bbcf34c8c43e5170fd4ee58db4.setIcon(icon_4fbf96f8cf382c7a7bc2efdbb32c47da);
+        
+    
+            marker_7ddb81bbcf34c8c43e5170fd4ee58db4.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)디시에너지 대신지점</b><br>
+    <b>부산 서구 대영로 91</b><br>
+    전화번호: 051-242-8144<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 21:20:09<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7fcbabd4e1fad651e1f905f9f989019b = L.marker(
+                [35.192801459981524, 129.0793763439709],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_9b8db3b5042df2a13c2832ebc99fc035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7fcbabd4e1fad651e1f905f9f989019b.setIcon(icon_9b8db3b5042df2a13c2832ebc99fc035);
+        
+    
+            marker_7fcbabd4e1fad651e1f905f9f989019b.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜직영 연산셀프주유소</b><br>
+    <b>부산 연제구 중앙대로 1179 (거제동)</b><br>
+    전화번호: 051-867-6741<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 16:25:58<br>
+    > <b>가격: 1,800 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7ab841b4254c587e15a7d783caf4ff5 = L.marker(
+                [35.08936066862904, 128.89756573710864],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_3bf190201d299e970ea35b4b66a2f57c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e7ab841b4254c587e15a7d783caf4ff5.setIcon(icon_3bf190201d299e970ea35b4b66a2f57c);
+        
+    
+            marker_e7ab841b4254c587e15a7d783caf4ff5.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 명지주유소</b><br>
+    <b>부산 강서구 르노삼성대로 372 (명지동)</b><br>
+    전화번호: 051-271-4405<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-23 15:38:04<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6572a66e822c7d24326428c2bb406569 = L.marker(
+                [35.15986004427687, 128.98385716095524],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_59fb6f7da27c73969f13bd01f0e12c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6572a66e822c7d24326428c2bb406569.setIcon(icon_59fb6f7da27c73969f13bd01f0e12c84);
+        
+    
+            marker_6572a66e822c7d24326428c2bb406569.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>아시아사상주유소</b><br>
+    <b>부산 사상구 새벽로 207 (괘법동)</b><br>
+    전화번호: 051-321-1445<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-05 11:09:21<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0c5e7a20eb3ba6acd3308acec41b1f29 = L.marker(
+                [35.081840985352876, 128.98927412484613],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_f7b452d84b9ec07a754a50a6adccdcf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0c5e7a20eb3ba6acd3308acec41b1f29.setIcon(icon_f7b452d84b9ec07a754a50a6adccdcf4);
+        
+    
+            marker_0c5e7a20eb3ba6acd3308acec41b1f29.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 구평주유소</b><br>
+    <b>부산 사하구 서포로 61</b><br>
+    전화번호: 051-265-6004<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 09:31:57<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ccb95a0611bdcc87af7a6949562413e9 = L.marker(
+                [35.34475853714878, 129.15939622367588],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_7945b2449260ebb58229217cf0545c70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ccb95a0611bdcc87af7a6949562413e9.setIcon(icon_7945b2449260ebb58229217cf0545c70);
+        
+    
+            marker_ccb95a0611bdcc87af7a6949562413e9.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>은마석유(주) 대영주유소</b><br>
+    <b>부산 기장군 정관면 정관로 249</b><br>
+    전화번호: 051-728-5133<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-04 10:59:30<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_25491d93670479a7c7c6cf8a10747d65 = L.marker(
+                [35.108655886727405, 129.01879152261776],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_dfefd12ca5e1ab8d4a29b8e9fcc893bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_25491d93670479a7c7c6cf8a10747d65.setIcon(icon_dfefd12ca5e1ab8d4a29b8e9fcc893bd);
+        
+    
+            marker_25491d93670479a7c7c6cf8a10747d65.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)부영에너지직영신일주유소</b><br>
+    <b>부산 서구 구덕로 273 (서대신동1가)</b><br>
+    전화번호: 051-256-3929<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 09:28:02<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1e1d626758daafc11d08f0045853344 = L.marker(
+                [35.18163684850879, 129.19928275020916],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_578e14e1fc91dccf49381c90bbe0c871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f1e1d626758daafc11d08f0045853344.setIcon(icon_578e14e1fc91dccf49381c90bbe0c871);
+        
+    
+            marker_f1e1d626758daafc11d08f0045853344.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>SK에너지(주) 송정셀프주유소</b><br>
+    <b>부산 해운대구 해운대로 1075 (송정동)</b><br>
+    전화번호: 051-704-0011<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-27 06:13:55<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e81675041f80996da74663385d62feaa = L.marker(
+                [35.23382475337174, 129.09204150290654],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_0758637a2897528a585b1cb47cb31d4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e81675041f80996da74663385d62feaa.setIcon(icon_0758637a2897528a585b1cb47cb31d4a);
+        
+    
+            marker_e81675041f80996da74663385d62feaa.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>거북이주유소(SK)</b><br>
+    <b>부산 금정구 중앙대로 1672 (부곡동)</b><br>
+    전화번호: 051-516-5151<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-07-23 12:45:37<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2bb0ba4d796274ce55ad0a0598d5b03e = L.marker(
+                [35.1946193512477, 128.99323768807588],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_1621e4c8cae36188c007690c610106ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2bb0ba4d796274ce55ad0a0598d5b03e.setIcon(icon_1621e4c8cae36188c007690c610106ee);
+        
+    
+            marker_2bb0ba4d796274ce55ad0a0598d5b03e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 백양대로주유소</b><br>
+    <b>부산 북구 백양대로 995 (구포동)</b><br>
+    전화번호: 051-337-3100<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-05 10:17:46<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_aa8337764d0ced5bb44606870b382cda = L.marker(
+                [35.23129331248481, 129.09179775554094],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_73482b3bd31acd092efd6a9cdb650e38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_aa8337764d0ced5bb44606870b382cda.setIcon(icon_73482b3bd31acd092efd6a9cdb650e38);
+        
+    
+            marker_aa8337764d0ced5bb44606870b382cda.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>한솔유화(주) 직영 한길주유소</b><br>
+    <b>부산 금정구 중앙대로 1646 (부곡동)</b><br>
+    전화번호: 051-581-0875<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-03 14:19:38<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e5cfc08fa789710fd0c1408abaf1cde8 = L.marker(
+                [35.139116659492736, 128.97024103504884],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_4baa9239002934e5efd6f0e6228633bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e5cfc08fa789710fd0c1408abaf1cde8.setIcon(icon_4baa9239002934e5efd6f0e6228633bc);
+        
+    
+            marker_e5cfc08fa789710fd0c1408abaf1cde8.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>산업주유소</b><br>
+    <b>부산 사상구 낙동대로 879 (감전동)</b><br>
+    전화번호: 051-311-4305<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-08 13:58:35<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1a25d24e1c8cc0008577a101d1849006 = L.marker(
+                [35.17523470789014, 129.1315571591849],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e8952215e3ac3e2c75bd50d951f2554f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1a25d24e1c8cc0008577a101d1849006.setIcon(icon_e8952215e3ac3e2c75bd50d951f2554f);
+        
+    
+            marker_1a25d24e1c8cc0008577a101d1849006.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)세일 구도일주유소센텀시티</b><br>
+    <b>부산 해운대구 해운대로 285 (우동)</b><br>
+    전화번호: 051-742-0882<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 07:57:52<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0cf679c0bb0004d0ef78b163ed77198f = L.marker(
+                [35.14618624848966, 128.98884979290494],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_3e0a384840e535fe18b6acff95f7ff9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0cf679c0bb0004d0ef78b163ed77198f.setIcon(icon_3e0a384840e535fe18b6acff95f7ff9e);
+        
+    
+            marker_0cf679c0bb0004d0ef78b163ed77198f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>서부산IC주유소</b><br>
+    <b>부산 사상구 학감대로 170</b><br>
+    전화번호: 051-328-5189<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-06-22 09:11:01<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9cc234336b6801fa13043bb9c61f3cf = L.marker(
+                [35.3232726333719, 129.18238282815418],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_83cc7d6289211b5484938b833c824ca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d9cc234336b6801fa13043bb9c61f3cf.setIcon(icon_83cc7d6289211b5484938b833c824ca7);
+        
+    
+            marker_d9cc234336b6801fa13043bb9c61f3cf.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)SK정관주유소</b><br>
+    <b>부산 기장군 정관면 정관덕산길 21</b><br>
+    전화번호: 051-728-5083<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 10:43:19<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fbfe54d9f0d520b37a1a1157fa5ab775 = L.marker(
+                [35.14441835771435, 128.9692735720635],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_deec5c8cdf52812b7ae3f1f6435151c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fbfe54d9f0d520b37a1a1157fa5ab775.setIcon(icon_deec5c8cdf52812b7ae3f1f6435151c0);
+        
+    
+            marker_fbfe54d9f0d520b37a1a1157fa5ab775.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신홀딩스㈜ 직영 낙동대로주유소</b><br>
+    <b>부산 사상구 낙동대로 935 (감전동)</b><br>
+    전화번호: 051-311-0131<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 09:35:47<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_96ad55137848a3b1ba65c2dade91c047 = L.marker(
+                [35.21877031409139, 129.0086599857668],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e91326685e0f3b8ba82999b0a6cf4df9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_96ad55137848a3b1ba65c2dade91c047.setIcon(icon_e91326685e0f3b8ba82999b0a6cf4df9);
+        
+    
+            marker_96ad55137848a3b1ba65c2dade91c047.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 덕천주유소</b><br>
+    <b>부산 북구 의성로 20 (덕천동)</b><br>
+    전화번호: 051-343-5232<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-04 13:43:58<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8fe4e887b40518849bc36eac7a4940d3 = L.marker(
+                [35.0920019787358, 129.02439988161058],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_1a15c345f3573a303c7afee43437ae43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8fe4e887b40518849bc36eac7a4940d3.setIcon(icon_1a15c345f3573a303c7afee43437ae43);
+        
+    
+            marker_8fe4e887b40518849bc36eac7a4940d3.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>극동유화(주) 우양냉장주유소</b><br>
+    <b>부산 서구 충무대로 240 (남부민동)</b><br>
+    전화번호: 051-256-1070<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-01 12:43:06<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_51b5204db6079b91aacb1f4134f4c492 = L.marker(
+                [35.183423718159496, 129.10735067056123],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_88b9acc98194eac1211ef6ccb6677c98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_51b5204db6079b91aacb1f4134f4c492.setIcon(icon_88b9acc98194eac1211ef6ccb6677c98);
+        
+    
+            marker_51b5204db6079b91aacb1f4134f4c492.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>금천셀프주유소</b><br>
+    <b>부산 연제구 과정로 134 (연산동)</b><br>
+    전화번호: 051-759-9393<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-01 17:47:45<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b10f11b10b52cf394a17446155f6e359 = L.marker(
+                [35.17510888368656, 129.0643222674828],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_9c24a6e724ca6371e8eaa7f3d501e464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b10f11b10b52cf394a17446155f6e359.setIcon(icon_9c24a6e724ca6371e8eaa7f3d501e464);
+        
+    
+            marker_b10f11b10b52cf394a17446155f6e359.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 양정주유소</b><br>
+    <b>부산 부산진구 동평로 361 (양정동)</b><br>
+    전화번호: 051-862-7063<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-30 11:28:29<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5ac451778b75b57284754cc72fcb898e = L.marker(
+                [35.207865219997146, 129.12147687563942],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_8a6ab7000d4b028bb9382ce07313302f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5ac451778b75b57284754cc72fcb898e.setIcon(icon_8a6ab7000d4b028bb9382ce07313302f);
+        
+    
+            marker_5ac451778b75b57284754cc72fcb898e.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 수영강변대로주유소</b><br>
+    <b>부산 해운대구 수영강변대로 568</b><br>
+    전화번호: 051-529-1100<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-11-04 06:51:30<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_914b81578636f9e5d28bd3c9410ed78d = L.marker(
+                [35.15077820229549, 129.05579546951205],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_635b29104af84880d5182f070c31ec89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_914b81578636f9e5d28bd3c9410ed78d.setIcon(icon_635b29104af84880d5182f070c31ec89);
+        
+    
+            marker_914b81578636f9e5d28bd3c9410ed78d.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>광신석유(주)직영 범천주유소</b><br>
+    <b>부산 부산진구 신천대로 85</b><br>
+    전화번호: 051-818-4419<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-10-28 11:53:23<br>
+    > <b>가격: 2,000 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f434ccf864331b8fc48d2b7e3e5f5134 = L.marker(
+                [35.1615277833688, 129.17114649725474],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_6073c97ce01bd1dd6a66bf93e2143c73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f434ccf864331b8fc48d2b7e3e5f5134.setIcon(icon_6073c97ce01bd1dd6a66bf93e2143c73);
+        
+    
+            marker_f434ccf864331b8fc48d2b7e3e5f5134.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>(주)대양씨앤씨 달맞이주유소</b><br>
+    <b>부산 해운대구 달맞이길 57 (중동)</b><br>
+    전화번호: 051-747-8481<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-03-31 16:56:15<br>
+    > <b>가격: 2,200 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9c050793bbbddb0fef12cbac1961ad58 = L.marker(
+                [35.16916133114879, 129.03956949694646],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_8a812ecc5309439cac702dfccdbdbe31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9c050793bbbddb0fef12cbac1961ad58.setIcon(icon_8a812ecc5309439cac702dfccdbdbe31);
+        
+    
+            marker_9c050793bbbddb0fef12cbac1961ad58.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>한일주유소</b><br>
+    <b>부산 부산진구 백양순환로110번길 19 (부암동)</b><br>
+    전화번호: 051-809-1542<br>
+    재고유무: 재고있음<br>
+    보고일시: 2022-04-16 15:18:09<br>
+    > <b>가격: 2,200 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9aadc958eccfaa96a50b955dbfba243f = L.marker(
+                [35.23274153947813, 129.09187486245602],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_ef63692484a2d3a4fbbd1db54bedc4c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9aadc958eccfaa96a50b955dbfba243f.setIcon(icon_ef63692484a2d3a4fbbd1db54bedc4c7);
+        
+    
+            marker_9aadc958eccfaa96a50b955dbfba243f.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>현대오일뱅크㈜ 직영 금정셀프주유소</b><br>
+    <b>부산 금정구 중앙대로 1664 (부곡동)</b><br>
+    전화번호: 051-583-8951<br>
+    재고유무: 재고없음<br>
+    보고일시: 2022-04-06 12:17:21<br>
+    > <b>가격: 0 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_73ceccca51d8fe29bd33b61118b043ff = L.marker(
+                [35.17983099295302, 129.1255946965338],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_e5283dcef9cb61b573d185080b29ea78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_73ceccca51d8fe29bd33b61118b043ff.setIcon(icon_e5283dcef9cb61b573d185080b29ea78);
+        
+    
+            marker_73ceccca51d8fe29bd33b61118b043ff.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양산업(주)동화주유소</b><br>
+    <b>부산 해운대구 해운대로 211 (재송동)</b><br>
+    전화번호: 051-781-4400<br>
+    재고유무: 재고없음<br>
+    보고일시: 2022-03-29 16:24:09<br>
+    > <b>가격: 0 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3a9ea81e06df7781c440f3a71ba3fd61 = L.marker(
+                [35.168665527306125, 129.11928979839118],
+                {}
+            ).addTo(map_19ed3292c6b538613952ed91d1110e24);
+        
+    
+            var icon_ce09edeb80c3eac6a1f7d195e4c30673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3a9ea81e06df7781c440f3a71ba3fd61.setIcon(icon_ce09edeb80c3eac6a1f7d195e4c30673);
+        
+    
+            marker_3a9ea81e06df7781c440f3a71ba3fd61.bindTooltip(
+                `<div>
+                     
+    <font size=3>
+    <b>대양산업(주)대영주유소</b><br>
+    <b>부산 수영구 수영로 731</b><br>
+    전화번호: 051-753-0360<br>
+    재고유무: 재고없음<br>
+    보고일시: 2022-03-29 16:22:58<br>
+    > <b>가격: 0 원/리터</b>
+    </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>
