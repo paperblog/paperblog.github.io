@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e39bf68d3d59ceb6b88bd1b69107130a {
+                #map_786e103cb3517e38c751e87da78feb4e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e39bf68d3d59ceb6b88bd1b69107130a" ></div>
+            <div class="folium-map" id="map_786e103cb3517e38c751e87da78feb4e" ></div>
         
 </body>
 <script>    
     
-            var map_e39bf68d3d59ceb6b88bd1b69107130a = L.map(
-                "map_e39bf68d3d59ceb6b88bd1b69107130a",
+            var map_786e103cb3517e38c751e87da78feb4e = L.map(
+                "map_786e103cb3517e38c751e87da78feb4e",
                 {
-                    center: [36.491038430696484, 127.77641411969996],
+                    center: [36.491038430696484, 127.7764141197],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_ec973b330158b25d03f59a07ea4148c1 = L.tileLayer(
+            var tile_layer_36530d9f3de2a3321cd0479bd7c004aa = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e39bf68d3d59ceb6b88bd1b69107130a);
+            ).addTo(map_786e103cb3517e38c751e87da78feb4e);
         
     
-            var locate_control_d71ad63042531cbd578ab8a267e12ad5 = L.control.locate(
+            var locate_control_b92501274ec3c7f6d1f28e63d3c5e5a0 = L.control.locate(
                 {}
-            ).addTo(map_e39bf68d3d59ceb6b88bd1b69107130a);
+            ).addTo(map_786e103cb3517e38c751e87da78feb4e);
             
         
     
-            var marker_782093433fe1dea7cb5d7897d88efcf2 = L.marker(
-                [36.53018313491288, 127.72143540157312],
+            var marker_c1d331998e0fb90b70c750d3bfd57adc = L.marker(
+                [36.49632613137507, 127.73937781938864],
                 {}
-            ).addTo(map_e39bf68d3d59ceb6b88bd1b69107130a);
+            ).addTo(map_786e103cb3517e38c751e87da78feb4e);
         
     
-            marker_782093433fe1dea7cb5d7897d88efcf2.bindTooltip(
+            marker_c1d331998e0fb90b70c750d3bfd57adc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)보은현대주유소/충전소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 보은군 보은읍 풍취리 6-4<br>
+        충북 보은군 보은읍 보청대로 1670<br>
+        > <b>가격: 1,053 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32d9500ebc4b04afd46f016ecd11c154 = L.marker(
+                [36.53018313491288, 127.72143540157312],
+                {}
+            ).addTo(map_786e103cb3517e38c751e87da78feb4e);
+        
+    
+            marker_32d9500ebc4b04afd46f016ecd11c154.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_fa6af201f6403db1e775af6ab3ffdf88 = L.marker(
+            var marker_1398698684c5f1c2ab1e9751e590b36f = L.marker(
                 [36.4466060258015, 127.86842913813818],
                 {}
-            ).addTo(map_e39bf68d3d59ceb6b88bd1b69107130a);
+            ).addTo(map_786e103cb3517e38c751e87da78feb4e);
         
     
-            marker_fa6af201f6403db1e775af6ab3ffdf88.bindTooltip(
+            marker_1398698684c5f1c2ab1e9751e590b36f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -106,28 +128,6 @@
         충북 보은군 마로면 적암리 180<br>
         충북 보은군 마로면 적암길 56-18<br>
         > <b>가격: 1,095 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_e49cb13759f632cee6f915eb50ba757c = L.marker(
-                [36.49632613137507, 127.73937781938864],
-                {}
-            ).addTo(map_e39bf68d3d59ceb6b88bd1b69107130a);
-        
-    
-            marker_e49cb13759f632cee6f915eb50ba757c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)보은현대주유소/충전소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 보은군 보은읍 풍취리 6-4<br>
-        충북 보은군 보은읍 보청대로 1670<br>
-        > <b>가격: 1,110 원/리터</b>
         </font>
     
                  </div>`,
