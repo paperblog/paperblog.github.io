@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3575ed0e7ca0e6fb178d09105d6480e5 {
+                #map_449d257bcbaa882d5d8c5eb169a79d1e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3575ed0e7ca0e6fb178d09105d6480e5" ></div>
+            <div class="folium-map" id="map_449d257bcbaa882d5d8c5eb169a79d1e" ></div>
         
 </body>
 <script>    
     
-            var map_3575ed0e7ca0e6fb178d09105d6480e5 = L.map(
-                "map_3575ed0e7ca0e6fb178d09105d6480e5",
+            var map_449d257bcbaa882d5d8c5eb169a79d1e = L.map(
+                "map_449d257bcbaa882d5d8c5eb169a79d1e",
                 {
-                    center: [37.496407434298284, 130.8724070821899],
+                    center: [37.496407434298284, 130.87240708218994],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_2a72a08c38797191ed71fa54ee41e9ed = L.tileLayer(
+            var tile_layer_b24e52dd85ba68e59a2e9bc3afdc6ce3 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3575ed0e7ca0e6fb178d09105d6480e5);
+            ).addTo(map_449d257bcbaa882d5d8c5eb169a79d1e);
         
     
-            var locate_control_e0000cc46ed9d8d4e1e031c4244ff9ee = L.control.locate(
+            var locate_control_6694b70ebe9b013d30a77f48adbb3309 = L.control.locate(
                 {}
-            ).addTo(map_3575ed0e7ca0e6fb178d09105d6480e5);
+            ).addTo(map_449d257bcbaa882d5d8c5eb169a79d1e);
             
         
     
-            var marker_2773256dc891805d93041599df7f5d36 = L.marker(
-                [37.48767761544627, 130.90223156797603],
+            var marker_c32fa343f83e20e90ddde1634854cdcc = L.marker(
+                [37.48959483139235, 130.9044876327464],
                 {}
-            ).addTo(map_3575ed0e7ca0e6fb178d09105d6480e5);
+            ).addTo(map_449d257bcbaa882d5d8c5eb169a79d1e);
         
     
-            marker_2773256dc891805d93041599df7f5d36.bindTooltip(
+            marker_c32fa343f83e20e90ddde1634854cdcc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울릉주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 울릉군 울릉읍 도동리 412-13<br>
+        경북 울릉군 울릉읍 울릉순환로 296<br>
+        > <b>가격: 2,119 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0cdcce881dd48611873b198d778f5cd6 = L.marker(
+                [37.48767761544627, 130.90223156797603],
+                {}
+            ).addTo(map_449d257bcbaa882d5d8c5eb169a79d1e);
+        
+    
+            marker_0cdcce881dd48611873b198d778f5cd6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_4b84e0ed36e2dcfcb39d191ad00dff71 = L.marker(
+            var marker_f98cc9bf79ad2171657bf88dee037623 = L.marker(
                 [37.51194985605623, 130.8105020458473],
                 {}
-            ).addTo(map_3575ed0e7ca0e6fb178d09105d6480e5);
+            ).addTo(map_449d257bcbaa882d5d8c5eb169a79d1e);
         
     
-            marker_4b84e0ed36e2dcfcb39d191ad00dff71.bindTooltip(
+            marker_f98cc9bf79ad2171657bf88dee037623.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -105,28 +127,6 @@
         <b>GS칼텍스</b><br>
         경북 울릉군 서면 태하리 219-3<br>
         경북 울릉군 서면 태하리 울릉순환로 2150<br>
-        > <b>가격: 2,119 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_bed608ce726e41a7acebb95a5378ca29 = L.marker(
-                [37.48959483139235, 130.9044876327464],
-                {}
-            ).addTo(map_3575ed0e7ca0e6fb178d09105d6480e5);
-        
-    
-            marker_bed608ce726e41a7acebb95a5378ca29.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>울릉주유소</b><br>
-        <b>S-OIL</b><br>
-        경북 울릉군 울릉읍 도동리 412-13<br>
-        경북 울릉군 울릉읍 울릉순환로 296<br>
         > <b>가격: 2,119 원/리터</b>
         </font>
     
