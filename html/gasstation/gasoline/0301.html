@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3ee5dfde879849fb81f8a4e592ddd30f {
+                #map_e226d6eeafc3c760d2d7ff609bed1b1d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3ee5dfde879849fb81f8a4e592ddd30f" ></div>
+            <div class="folium-map" id="map_e226d6eeafc3c760d2d7ff609bed1b1d" ></div>
         
 </body>
 <script>    
     
-            var map_3ee5dfde879849fb81f8a4e592ddd30f = L.map(
-                "map_3ee5dfde879849fb81f8a4e592ddd30f",
+            var map_e226d6eeafc3c760d2d7ff609bed1b1d = L.map(
+                "map_e226d6eeafc3c760d2d7ff609bed1b1d",
                 {
-                    center: [37.865090556179744, 127.72699069477264],
+                    center: [37.86566332861118, 127.72637574292074],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_32ce154d634bf07a3bcf94df2ec1b457 = L.tileLayer(
+            var tile_layer_228caaf9bc969e6e8d5e959a969b7782 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            var locate_control_5ddbfa8e93d83febefe3ec5cd90d1070 = L.control.locate(
+            var locate_control_242a6352edc6b88ae2f5dd2e7a4bf408 = L.control.locate(
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
             
         
     
-            var marker_46899b7ae9c691b450780c4123a898b9 = L.marker(
-                [37.863349572697786, 127.7479591589689],
+            var marker_8555f3bb90f6a2327d73f939a6445013 = L.marker(
+                [37.85578716383124, 127.75027274533029],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_46899b7ae9c691b450780c4123a898b9.bindTooltip(
+            marker_8555f3bb90f6a2327d73f939a6445013.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>거두주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 동내면 거두리 910<br>
+        강원도 춘천시 동내면 춘천순환로 59<br>
+        > <b>가격: 1,562 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ade1cc9d5f9731fe367f2ed86a70fa56 = L.marker(
+                [37.863349572697786, 127.7479591589689],
+                {}
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
+        
+    
+            marker_ade1cc9d5f9731fe367f2ed86a70fa56.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_00fe84bc71eca06ae14afbd7f65a7d25 = L.marker(
+            var marker_bb29b855c1e0dabe3255d78068feacd2 = L.marker(
                 [37.8607949697165, 127.75949283149222],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_00fe84bc71eca06ae14afbd7f65a7d25.bindTooltip(
+            marker_bb29b855c1e0dabe3255d78068feacd2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,35 +135,13 @@
             );
         
     
-            var marker_84f129034d9b1a4e2858e577bcce1d7d = L.marker(
-                [37.85578716383124, 127.75027274533029],
-                {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
-        
-    
-            marker_84f129034d9b1a4e2858e577bcce1d7d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>거두주유소</b><br>
-        <b>GS칼텍스</b><br>
-        강원 춘천시 동내면 거두리 910<br>
-        강원도 춘천시 동내면 춘천순환로 59<br>
-        > <b>가격: 1,565 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_68d13fb5079d89a5676c5b7b0d7714c0 = L.marker(
+            var marker_9f40c59cda5747714942d5a28aa9faab = L.marker(
                 [37.86376669745397, 127.73771698899347],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_68d13fb5079d89a5676c5b7b0d7714c0.bindTooltip(
+            marker_9f40c59cda5747714942d5a28aa9faab.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +157,13 @@
             );
         
     
-            var marker_147579e2dd84f79dccacc73c6de0162b = L.marker(
+            var marker_dfbd2fe2de5d6d627c405ccde6f2f2a6 = L.marker(
                 [37.889339995533625, 127.7417452128003],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_147579e2dd84f79dccacc73c6de0162b.bindTooltip(
+            marker_dfbd2fe2de5d6d627c405ccde6f2f2a6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +179,13 @@
             );
         
     
-            var marker_ce0668d489a3b8a67405f77d2c662b37 = L.marker(
+            var marker_e6667b325d8c0748e0cf3dfb312afde6 = L.marker(
                 [37.87816027328244, 127.75955134069343],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_ce0668d489a3b8a67405f77d2c662b37.bindTooltip(
+            marker_e6667b325d8c0748e0cf3dfb312afde6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +201,13 @@
             );
         
     
-            var marker_0d7c04b70e8c6eb2f387fdbb63a3bd0a = L.marker(
+            var marker_2c3a59f4dbafe82f3e62a6ab2ca907bc = L.marker(
                 [37.86584789563881, 127.7247442032047],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_0d7c04b70e8c6eb2f387fdbb63a3bd0a.bindTooltip(
+            marker_2c3a59f4dbafe82f3e62a6ab2ca907bc.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_c4946baebdd111aea4b9387784ad15b0 = L.marker(
+            var marker_9bef6242391b264887bb11e4a74500d0 = L.marker(
                 [37.88218611983058, 127.7589701052748],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_c4946baebdd111aea4b9387784ad15b0.bindTooltip(
+            marker_9bef6242391b264887bb11e4a74500d0.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +245,13 @@
             );
         
     
-            var marker_64e0d9628afcac46b99c03ae05e1c11b = L.marker(
+            var marker_32ce784e513909f5feab254f5cf933c1 = L.marker(
                 [37.85186017125064, 127.75157974814245],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_64e0d9628afcac46b99c03ae05e1c11b.bindTooltip(
+            marker_32ce784e513909f5feab254f5cf933c1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +267,13 @@
             );
         
     
-            var marker_1e6088bff983b95b6e7d2648368803a2 = L.marker(
+            var marker_363203e0f12c1148c4b9704fd59aa93b = L.marker(
                 [37.92997617768582, 127.76339645238723],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_1e6088bff983b95b6e7d2648368803a2.bindTooltip(
+            marker_363203e0f12c1148c4b9704fd59aa93b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,35 +289,13 @@
             );
         
     
-            var marker_aa5448b07e3a312a8702af3a5ee9bd49 = L.marker(
-                [37.87595692827518, 127.73574378060812],
-                {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
-        
-    
-            marker_aa5448b07e3a312a8702af3a5ee9bd49.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>광장셀프주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 춘천시 효자동 653-1<br>
-        강원 춘천시 효자로 150<br>
-        > <b>가격: 1,579 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6f34c7e0df81e5637582c9b6ea77bb1e = L.marker(
+            var marker_41665638b378bad4574058ec29759aca = L.marker(
                 [37.83831280613999, 127.57567421172881],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_6f34c7e0df81e5637582c9b6ea77bb1e.bindTooltip(
+            marker_41665638b378bad4574058ec29759aca.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +311,57 @@
             );
         
     
-            var marker_719fe67c43f95ab9e1af45508b45f8db = L.marker(
-                [37.856045414482885, 127.74429981261457],
+            var marker_fa886d87a379c806790d7b80f0fc6333 = L.marker(
+                [37.87595692827518, 127.73574378060812],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_719fe67c43f95ab9e1af45508b45f8db.bindTooltip(
+            marker_fa886d87a379c806790d7b80f0fc6333.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광장셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 효자동 653-1<br>
+        강원 춘천시 효자로 150<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1cdebda8dcb3746872d90d2c39b1d4f2 = L.marker(
+                [37.87129357064494, 127.73280068456188],
+                {}
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
+        
+    
+            marker_1cdebda8dcb3746872d90d2c39b1d4f2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에이스주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 효자동 666-2<br>
+        강원 춘천시 효자로 94 (효자동)<br>
+        > <b>가격: 1,579 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7901f6d08956b65360cd578176521264 = L.marker(
+                [37.856045414482885, 127.74429981261457],
+                {}
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
+        
+    
+            marker_7901f6d08956b65360cd578176521264.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,35 +377,13 @@
             );
         
     
-            var marker_84a31065ff84b15ac921e69ac35b1165 = L.marker(
-                [37.83642591356076, 127.71349642466217],
-                {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
-        
-    
-            marker_84a31065ff84b15ac921e69ac35b1165.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>경춘주유소</b><br>
-        <b>GS칼텍스</b><br>
-        강원 춘천시 칠전동 227<br>
-        강원 춘천시 경춘로 2039 (칠전동)<br>
-        > <b>가격: 1,585 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1b050959dec5f85ccb774b8b07681dcc = L.marker(
+            var marker_0706f9fd7a4b792f120a45f5ccdabfd2 = L.marker(
                 [37.82787991800363, 127.71029857687405],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_1b050959dec5f85ccb774b8b07681dcc.bindTooltip(
+            marker_0706f9fd7a4b792f120a45f5ccdabfd2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,13 @@
             );
         
     
-            var marker_c30ae2e4ad814ed8fb0076d59400ba11 = L.marker(
+            var marker_9342f520a0fc4a8548f1873e3cf98078 = L.marker(
                 [37.82700234189574, 127.61993575461906],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_c30ae2e4ad814ed8fb0076d59400ba11.bindTooltip(
+            marker_9342f520a0fc4a8548f1873e3cf98078.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +421,35 @@
             );
         
     
-            var marker_340f80053ee66f312077e52a24cf6638 = L.marker(
-                [37.86817586476805, 127.72329778330139],
+            var marker_5fab48e6bea25de13e131a52b40236e8 = L.marker(
+                [37.83642591356076, 127.71349642466217],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_340f80053ee66f312077e52a24cf6638.bindTooltip(
+            marker_5fab48e6bea25de13e131a52b40236e8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>경춘주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 춘천시 칠전동 227<br>
+        강원 춘천시 경춘로 2039 (칠전동)<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0cd5b4c27e42adaf093b6b6fc14a20e7 = L.marker(
+                [37.86817586476805, 127.72329778330139],
+                {}
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
+        
+    
+            marker_0cd5b4c27e42adaf093b6b6fc14a20e7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,35 +465,13 @@
             );
         
     
-            var marker_93c216941b31f5b546369bd1ef016a14 = L.marker(
-                [37.891395393190486, 127.72618448220773],
-                {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
-        
-    
-            marker_93c216941b31f5b546369bd1ef016a14.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK에너지(주) 소양강셀프주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 춘천시 소양로1가 93-8<br>
-        강원 춘천시 소양로 206 (소양로1가)<br>
-        > <b>가격: 1,588 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_876da1cb0aefa0998a3b39e77d816f00 = L.marker(
+            var marker_2ecb67bc78e9344071f104ed076ba537 = L.marker(
                 [37.8797093843405, 127.75035455994863],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_876da1cb0aefa0998a3b39e77d816f00.bindTooltip(
+            marker_2ecb67bc78e9344071f104ed076ba537.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_2a8fb7aec8b46b85357551a7438b21ca = L.marker(
-                [37.85983812201644, 127.74509972160055],
+            var marker_89d846af69ba64451a0000c97c9e8289 = L.marker(
+                [37.891395393190486, 127.72618448220773],
                 {}
-            ).addTo(map_3ee5dfde879849fb81f8a4e592ddd30f);
+            ).addTo(map_e226d6eeafc3c760d2d7ff609bed1b1d);
         
     
-            marker_2a8fb7aec8b46b85357551a7438b21ca.bindTooltip(
+            marker_89d846af69ba64451a0000c97c9e8289.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>지에스칼텍스(주)붕붕붕주유소</b><br>
-        <b>GS칼텍스</b><br>
-        강원 춘천시 석사동 430-1<br>
-        강원 춘천시 공지로 156-3<br>
-        > <b>가격: 1,589 원/리터</b>
+        <b>SK에너지(주) 소양강셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 춘천시 소양로1가 93-8<br>
+        강원 춘천시 소양로 206 (소양로1가)<br>
+        > <b>가격: 1,588 원/리터</b>
         </font>
     
                  </div>`,
