@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_49c82fcd4012d620dae358f28e5c6007 {
+                #map_3a224fc2b0373a318fb9ac0e46e04510 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_49c82fcd4012d620dae358f28e5c6007" ></div>
+            <div class="folium-map" id="map_3a224fc2b0373a318fb9ac0e46e04510" ></div>
         
 </body>
 <script>    
     
-            var map_49c82fcd4012d620dae358f28e5c6007 = L.map(
-                "map_49c82fcd4012d620dae358f28e5c6007",
+            var map_3a224fc2b0373a318fb9ac0e46e04510 = L.map(
+                "map_3a224fc2b0373a318fb9ac0e46e04510",
                 {
-                    center: [34.63117479308498, 127.28445224522504],
+                    center: [34.635927338061286, 127.2925307072421],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_0cc1f34e7d456bed3ab9d85bf345f48e = L.tileLayer(
+            var tile_layer_57298fbd261e9780bb4676ab020d6a3d = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            var locate_control_ee793d24e56546cb8c3700b26ffaebf1 = L.control.locate(
+            var locate_control_8761c4bb442c315c4f40bec7d8a8d4ac = L.control.locate(
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
             
         
     
-            var marker_c297d8541676f3c6aeb219091dbd617c = L.marker(
-                [34.68765565425485, 127.3677829415014],
+            var marker_d8795db1459822e58c68943d52981bac = L.marker(
+                [34.76108337081884, 127.33514385879678],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_c297d8541676f3c6aeb219091dbd617c.bindTooltip(
+            marker_d8795db1459822e58c68943d52981bac.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고흥우주주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 고흥군 남양면 침교리 910-4<br>
+        전라남도 고흥군 남양면 우주항공로 4177<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d2d9f7d11a702fd3f30826861c5cbb0f = L.marker(
+                [34.68765565425485, 127.3677829415014],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_d2d9f7d11a702fd3f30826861c5cbb0f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,189 +113,13 @@
             );
         
     
-            var marker_942e569ee17d03e00a864fe8397ccda6 = L.marker(
-                [34.78186458623693, 127.33425365165242],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_942e569ee17d03e00a864fe8397ccda6.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>팔영농협동강지점주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 고흥군 동강면 유둔리 2-9<br>
-        전남 고흥군 동강면 고흥로 4287<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4ad8a9469d2f3ec1318094d432b55ac6 = L.marker(
-                [34.774309468204386, 127.25656602623305],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_4ad8a9469d2f3ec1318094d432b55ac6.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>팔영농협대서주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 고흥군 대서면 남정리 1406<br>
-        전남 고흥군 대서면 봉두로 892<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_685685e5e9d8770ec867a3bfe1cf1075 = L.marker(
-                [34.54491892691415, 127.36791920084646],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_685685e5e9d8770ec867a3bfe1cf1075.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>흥양농협남부주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 고흥군 포두면 차동리 855-6<br>
-        전남 고흥군 포두면 우주로 1195<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f16848a429a86cfe691bc33993bc57b7 = L.marker(
-                [34.60740862900278, 127.28253360861522],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_f16848a429a86cfe691bc33993bc57b7.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>고흥농협주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 고흥군 고흥읍 호형리 690-12<br>
-        전남 고흥군 고흥읍 우주로 112<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_87d9706141dd3b6d96ee08753d97df09 = L.marker(
-                [34.57544587983368, 127.2410251786829],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_87d9706141dd3b6d96ee08753d97df09.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>풍양농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 고흥군 풍양면 야막리 518-3<br>
-        전남 고흥군 풍양면 고흥로 1166<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_b9c963cf370ffa556a42ffd443b162ec = L.marker(
-                [34.64976844331467, 127.38141723290519],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_b9c963cf370ffa556a42ffd443b162ec.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>팔영농협점암지점주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 고흥군 점암면 모룡리 622<br>
-        전남 고흥군 점암면 모룡길 87<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d5b83a2f54254e50090c6f48548dd0e7 = L.marker(
-                [34.67868174445542, 127.36077994327655],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_d5b83a2f54254e50090c6f48548dd0e7.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>팔영농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 고흥군 과역면 과역리 70-5<br>
-        전남 고흥군 과역면 무궁화길 1<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_89099633ed9c7c599a8cc638b4a317d0 = L.marker(
-                [34.64507396690006, 127.27450988850377],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_89099633ed9c7c599a8cc638b4a317d0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>두원농협주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 고흥군 두원면 학곡리 1-2<br>
-        전남 고흥군 두원면 두원로 463<br>
-        > <b>가격: 1,670 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_abdd296d2ca8cd9d753077b98a0793c1 = L.marker(
+            var marker_602c1cd236a3d355704ebc5ff682603e = L.marker(
                 [34.57182561331447, 127.33957040766762],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_abdd296d2ca8cd9d753077b98a0793c1.bindTooltip(
+            marker_602c1cd236a3d355704ebc5ff682603e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,21 +135,21 @@
             );
         
     
-            var marker_ce0ed2e7456ee9e660c66fbbd893e345 = L.marker(
-                [34.65565817943682, 127.3482680939878],
+            var marker_9f8db8ace3464d4475a6fff8a3c552b1 = L.marker(
+                [34.67868174445542, 127.36077994327655],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_ce0ed2e7456ee9e660c66fbbd893e345.bindTooltip(
+            marker_9f8db8ace3464d4475a6fff8a3c552b1.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>해피주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 고흥군 점암면 연봉리 186-6<br>
-        전남 고흥군 점암면 우주항공로 2901<br>
-        > <b>가격: 1,675 원/리터</b>
+        <b>팔영농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 고흥군 과역면 과역리 70-5<br>
+        전남 고흥군 과역면 무궁화길 1<br>
+        > <b>가격: 1,670 원/리터</b>
         </font>
     
                  </div>`,
@@ -311,21 +157,21 @@
             );
         
     
-            var marker_d65eaee2af3a6d24fb4f05de9f832dc1 = L.marker(
-                [34.66052834727467, 127.3520486407332],
+            var marker_3decffc4986c7e71384818019f0028fd = L.marker(
+                [34.54491892691415, 127.36791920084646],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_d65eaee2af3a6d24fb4f05de9f832dc1.bindTooltip(
+            marker_3decffc4986c7e71384818019f0028fd.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>파랑새주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 고흥군 점암면 연봉리 477-1<br>
-        전남 고흥군 점암면 우주항공로 2878<br>
-        > <b>가격: 1,675 원/리터</b>
+        <b>흥양농협남부주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 고흥군 포두면 차동리 855-6<br>
+        전남 고흥군 포두면 우주로 1195<br>
+        > <b>가격: 1,670 원/리터</b>
         </font>
     
                  </div>`,
@@ -333,21 +179,21 @@
             );
         
     
-            var marker_0d4c8330fd8453feee3262dbb3f9611d = L.marker(
-                [34.70798403117886, 127.35264150976607],
+            var marker_f8146091cd9278f6e0e2b3c822872d4c = L.marker(
+                [34.78186458623693, 127.33425365165242],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_0d4c8330fd8453feee3262dbb3f9611d.bindTooltip(
+            marker_f8146091cd9278f6e0e2b3c822872d4c.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>대덕주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 고흥군 남양면 대곡리 1151<br>
-        전남 고흥군 남양면 고흥로 3338<br>
-        > <b>가격: 1,675 원/리터</b>
+        <b>팔영농협동강지점주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 고흥군 동강면 유둔리 2-9<br>
+        전남 고흥군 동강면 고흥로 4287<br>
+        > <b>가격: 1,670 원/리터</b>
         </font>
     
                  </div>`,
@@ -355,13 +201,123 @@
             );
         
     
-            var marker_36017fa5f03df9fb845cd2ca8c9aebc3 = L.marker(
+            var marker_db1c8ea550dd7b6418ff521a0b6d39b9 = L.marker(
+                [34.60740862900278, 127.28253360861522],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_db1c8ea550dd7b6418ff521a0b6d39b9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고흥농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 고흥군 고흥읍 호형리 690-12<br>
+        전남 고흥군 고흥읍 우주로 112<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_06be4263e988132b9b07e509c88576dc = L.marker(
+                [34.64507396690006, 127.27450988850377],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_06be4263e988132b9b07e509c88576dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>두원농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 고흥군 두원면 학곡리 1-2<br>
+        전남 고흥군 두원면 두원로 463<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3b0883c0abb8109854b395ff8a65f38 = L.marker(
+                [34.64976844331467, 127.38141723290519],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_e3b0883c0abb8109854b395ff8a65f38.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔영농협점암지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 고흥군 점암면 모룡리 622<br>
+        전남 고흥군 점암면 모룡길 87<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34d3729ecd50a48896a5b3a423c57016 = L.marker(
+                [34.57544587983368, 127.2410251786829],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_34d3729ecd50a48896a5b3a423c57016.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>풍양농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 고흥군 풍양면 야막리 518-3<br>
+        전남 고흥군 풍양면 고흥로 1166<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_264c14d5d33a90008a766fb9eefd83cb = L.marker(
+                [34.774309468204386, 127.25656602623305],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_264c14d5d33a90008a766fb9eefd83cb.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔영농협대서주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 고흥군 대서면 남정리 1406<br>
+        전남 고흥군 대서면 봉두로 892<br>
+        > <b>가격: 1,670 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_81bfee4ee7e11ef33b7f93a4e2c741eb = L.marker(
                 [34.56776979650286, 127.17597592720348],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_36017fa5f03df9fb845cd2ca8c9aebc3.bindTooltip(
+            marker_81bfee4ee7e11ef33b7f93a4e2c741eb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +333,79 @@
             );
         
     
-            var marker_f9601ca8652be55c956538043b2b85eb = L.marker(
-                [34.600551292478166, 127.30295219727017],
+            var marker_b0e761af5ccccac8dbdd55709c315bb2 = L.marker(
+                [34.66052834727467, 127.3520486407332],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_f9601ca8652be55c956538043b2b85eb.bindTooltip(
+            marker_b0e761af5ccccac8dbdd55709c315bb2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>파랑새주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 고흥군 점암면 연봉리 477-1<br>
+        전남 고흥군 점암면 우주항공로 2878<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5c63a12dcc0ba0d3de227203694a9c01 = L.marker(
+                [34.65565817943682, 127.3482680939878],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_5c63a12dcc0ba0d3de227203694a9c01.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해피주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 고흥군 점암면 연봉리 186-6<br>
+        전남 고흥군 점암면 우주항공로 2901<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79a21b95acb664d765489eacb2b4827f = L.marker(
+                [34.70798403117886, 127.35264150976607],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_79a21b95acb664d765489eacb2b4827f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>대덕주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 고흥군 남양면 대곡리 1151<br>
+        전남 고흥군 남양면 고흥로 3338<br>
+        > <b>가격: 1,675 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e715ae7147b253d7b346fdcaaccb6346 = L.marker(
+                [34.600551292478166, 127.30295219727017],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_e715ae7147b253d7b346fdcaaccb6346.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +421,13 @@
             );
         
     
-            var marker_107d67245a4c22372df8e09bb179cab9 = L.marker(
+            var marker_557f32a12fff9dd87645ebd5cb153b9a = L.marker(
                 [34.573609272451456, 127.19023996479758],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_107d67245a4c22372df8e09bb179cab9.bindTooltip(
+            marker_557f32a12fff9dd87645ebd5cb153b9a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,57 +443,13 @@
             );
         
     
-            var marker_6d05c6c92ae2a82b08f1a441a9a9dabe = L.marker(
-                [34.76108337081884, 127.33514385879678],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_6d05c6c92ae2a82b08f1a441a9a9dabe.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>고흥우주주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 고흥군 남양면 침교리 910-4<br>
-        전라남도 고흥군 남양면 우주항공로 4177<br>
-        > <b>가격: 1,695 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_689556b30370fdd74936068f8957fcdf = L.marker(
-                [34.556980461008656, 127.15627558207593],
-                {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
-        
-    
-            marker_689556b30370fdd74936068f8957fcdf.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>도양주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 고흥군 도양읍 관리 710-3<br>
-        전남 고흥군 도양읍 우주항공로 446<br>
-        > <b>가격: 1,695 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_21b09bc1bb61812002a019031f46c46e = L.marker(
+            var marker_ac01f95603b9b587b33c9da91b929c40 = L.marker(
                 [34.476980827432534, 127.1291348651815],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_21b09bc1bb61812002a019031f46c46e.bindTooltip(
+            marker_ac01f95603b9b587b33c9da91b929c40.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +465,43 @@
             );
         
     
-            var marker_0a9ed6fa03c2650a30accec6a0a2324e = L.marker(
-                [34.545397370685535, 127.14000618480371],
+            var marker_4f4d985c3d5c9dc3d69dc951be6f16e5 = L.marker(
+                [34.556980461008656, 127.15627558207593],
                 {}
-            ).addTo(map_49c82fcd4012d620dae358f28e5c6007);
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
         
     
-            marker_0a9ed6fa03c2650a30accec6a0a2324e.bindTooltip(
+            marker_4f4d985c3d5c9dc3d69dc951be6f16e5.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>소록주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 고흥군 도양읍 용정리 1168-34<br>
-        전남 고흥군 도양읍 우주항공로 225<br>
-        > <b>가격: 1,719 원/리터</b>
+        <b>도양주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 고흥군 도양읍 관리 710-3<br>
+        전남 고흥군 도양읍 우주항공로 446<br>
+        > <b>가격: 1,695 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b11e3eb52c1252852f442a2b5f2bdfb3 = L.marker(
+                [34.64044827021163, 127.30157542514476],
+                {}
+            ).addTo(map_3a224fc2b0373a318fb9ac0e46e04510);
+        
+    
+            marker_b11e3eb52c1252852f442a2b5f2bdfb3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>우주주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 고흥군 두원면 용반리 1039-9<br>
+        전남 고흥군 두원면 우주항공로 2333<br>
+        > <b>가격: 1,695 원/리터</b>
         </font>
     
                  </div>`,
