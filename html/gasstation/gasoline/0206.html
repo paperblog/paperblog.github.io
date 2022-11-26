@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_fb8093160cddde97959ec7677cf125ba {
+                #map_1841c1ff042a400aed4d6ac73a388261 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_fb8093160cddde97959ec7677cf125ba" ></div>
+            <div class="folium-map" id="map_1841c1ff042a400aed4d6ac73a388261" ></div>
         
 </body>
 <script>    
     
-            var map_fb8093160cddde97959ec7677cf125ba = L.map(
-                "map_fb8093160cddde97959ec7677cf125ba",
+            var map_1841c1ff042a400aed4d6ac73a388261 = L.map(
+                "map_1841c1ff042a400aed4d6ac73a388261",
                 {
-                    center: [37.91640550725806, 127.05521927915852],
+                    center: [37.913358439991256, 127.05421786126514],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_144ea19e5199c506085c1d77e90e3868 = L.tileLayer(
+            var tile_layer_07b29db5476dbe2483ab4d4b698ae077 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            var locate_control_d20f4cd99bf56a2cfa7b7198b0e02427 = L.control.locate(
+            var locate_control_07ceedc10bfaeec94e2aa210ceeb20d4 = L.control.locate(
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
             
         
     
-            var marker_8e23a50a2b3fd2ea87eea88d9e4b29e5 = L.marker(
-                [37.896000291575035, 127.07184948384767],
+            var marker_1fa44a2bc25051332cb529ede027c62f = L.marker(
+                [37.89000053236977, 127.05720181670169],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_8e23a50a2b3fd2ea87eea88d9e4b29e5.bindTooltip(
+            marker_1fa44a2bc25051332cb529ede027c62f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>중앙주유소</b><br>
+        <b>자가상표</b><br>
+        경기 동두천시 지행동 478-1<br>
+        경기 동두천시 평화로 2266 (지행동)<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b3af4d8bb91fa6f4fd2927f1b3611ca2 = L.marker(
+                [37.896000291575035, 127.07184948384767],
+                {}
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
+        
+    
+            marker_b3af4d8bb91fa6f4fd2927f1b3611ca2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_b754a08f5b4e808defa0f0d8e35fe715 = L.marker(
-                [37.89000053236977, 127.05720181670169],
-                {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
-        
-    
-            marker_b754a08f5b4e808defa0f0d8e35fe715.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>중앙주유소</b><br>
-        <b>자가상표</b><br>
-        경기 동두천시 지행동 478-1<br>
-        경기 동두천시 평화로 2266 (지행동)<br>
-        > <b>가격: 1,559 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f3b6a7091c9a0853ab0cfb8be31f8b61 = L.marker(
-                [37.96500623687289, 127.06679814733265],
-                {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
-        
-    
-            marker_f3b6a7091c9a0853ab0cfb8be31f8b61.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>씨엘무역동두천지점 주식회사</b><br>
-        <b>자영알뜰</b><br>
-        경기 동두천시 하봉암동 70-5<br>
-        경기 동두천시 평화로 3122 (하봉암동)<br>
-        > <b>가격: 1,559 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1bf4bb8b4c3156ede4563eb5b8b87f48 = L.marker(
+            var marker_67b6d318436844d6cd12e8bcd2333c31 = L.marker(
                 [37.959862173542504, 127.0629160394963],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_1bf4bb8b4c3156ede4563eb5b8b87f48.bindTooltip(
+            marker_67b6d318436844d6cd12e8bcd2333c31.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,21 +135,21 @@
             );
         
     
-            var marker_f190ad6d91b6fd94b86a7d55a29fffc2 = L.marker(
-                [37.87843976581915, 127.05337386274117],
+            var marker_4842e5f85a64deb9dd99ffad8693e0ac = L.marker(
+                [37.96500623687289, 127.06679814733265],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_f190ad6d91b6fd94b86a7d55a29fffc2.bindTooltip(
+            marker_4842e5f85a64deb9dd99ffad8693e0ac.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>하이웨이주유소</b><br>
-        <b>S-OIL</b><br>
-        경기 동두천시 송내동 513<br>
-        경기 동두천시 강변로 74 (송내동)<br>
-        > <b>가격: 1,569 원/리터</b>
+        <b>씨엘무역동두천지점 주식회사</b><br>
+        <b>자영알뜰</b><br>
+        경기 동두천시 하봉암동 70-5<br>
+        경기 동두천시 평화로 3122 (하봉암동)<br>
+        > <b>가격: 1,559 원/리터</b>
         </font>
     
                  </div>`,
@@ -179,13 +157,13 @@
             );
         
     
-            var marker_56d2d283f147200d48b09df3990feaf2 = L.marker(
+            var marker_db301b06d4246c77d9998a7317504b1a = L.marker(
                 [37.97080672920847, 127.06804166677357],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_56d2d283f147200d48b09df3990feaf2.bindTooltip(
+            marker_db301b06d4246c77d9998a7317504b1a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +179,35 @@
             );
         
     
-            var marker_ad28419eab62ee46c3fec59e507c80a0 = L.marker(
-                [37.89632375056466, 127.04606543176973],
+            var marker_e7798a2596cfac6512da016e9814ee4e = L.marker(
+                [37.87843976581915, 127.05337386274117],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_ad28419eab62ee46c3fec59e507c80a0.bindTooltip(
+            marker_e7798a2596cfac6512da016e9814ee4e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 동두천시 송내동 513<br>
+        경기 동두천시 강변로 74 (송내동)<br>
+        > <b>가격: 1,569 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_77de51eefc8068c98e97e6bb718345ca = L.marker(
+                [37.89632375056466, 127.04606543176973],
+                {}
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
+        
+    
+            marker_77de51eefc8068c98e97e6bb718345ca.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_c8db7c07fd7b5513d8b44bcc3709914c = L.marker(
+            var marker_5a539838d74aff4e950293522dbf5d9b = L.marker(
                 [37.907046948002154, 127.0381873569625],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_c8db7c07fd7b5513d8b44bcc3709914c.bindTooltip(
+            marker_5a539838d74aff4e950293522dbf5d9b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +245,13 @@
             );
         
     
-            var marker_caf75fdc8dbf70538d8c20f3a2b24d1e = L.marker(
+            var marker_6c057bdccad7102c3bb556065e9cff20 = L.marker(
                 [37.94144759842276, 127.05544468361936],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_caf75fdc8dbf70538d8c20f3a2b24d1e.bindTooltip(
+            marker_6c057bdccad7102c3bb556065e9cff20.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +267,13 @@
             );
         
     
-            var marker_a3121d80cb57047d9904bd9186865f08 = L.marker(
+            var marker_1361e4fa6d288151727163e7f2ab6ac0 = L.marker(
                 [37.91068804038742, 127.05840526755237],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_a3121d80cb57047d9904bd9186865f08.bindTooltip(
+            marker_1361e4fa6d288151727163e7f2ab6ac0.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_a66aad47256ef2b7276a6a5cb31aae63 = L.marker(
+            var marker_de7dd5b903ad9cab34986784aea6734a = L.marker(
                 [37.900824920681735, 127.05763251419074],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_a66aad47256ef2b7276a6a5cb31aae63.bindTooltip(
+            marker_de7dd5b903ad9cab34986784aea6734a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,35 +311,13 @@
             );
         
     
-            var marker_8ee87c97ceaec45d6faa79c51ec7b27a = L.marker(
-                [37.93950738754724, 127.05572880125906],
-                {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
-        
-    
-            marker_8ee87c97ceaec45d6faa79c51ec7b27a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>착한주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경기 동두천시 동두천동 385-3<br>
-        경기 동두천시 평화로 2817 (동두천동)<br>
-        > <b>가격: 1,597 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_7565419286f261568f7b38c96a2e6884 = L.marker(
+            var marker_fc49212576e8b11a2b598aa90d871617 = L.marker(
                 [37.879532486190094, 127.05579299935829],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_7565419286f261568f7b38c96a2e6884.bindTooltip(
+            marker_fc49212576e8b11a2b598aa90d871617.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +333,35 @@
             );
         
     
-            var marker_937febb78987b80850f136380fe243a3 = L.marker(
-                [37.90834063876649, 127.03513088026374],
+            var marker_24931d6c40241295e979e4af1248f781 = L.marker(
+                [37.93950738754724, 127.05572880125906],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_937febb78987b80850f136380fe243a3.bindTooltip(
+            marker_24931d6c40241295e979e4af1248f781.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 동두천시 동두천동 385-3<br>
+        경기 동두천시 평화로 2817 (동두천동)<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_34454db7cc85e73efcd08158936bfa50 = L.marker(
+                [37.90834063876649, 127.03513088026374],
+                {}
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
+        
+    
+            marker_34454db7cc85e73efcd08158936bfa50.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +377,13 @@
             );
         
     
-            var marker_fdd26a4be751c2e8d5a3362759ec48ee = L.marker(
+            var marker_3e48c506735b08ddc82db2a2a0d9c3bf = L.marker(
                 [37.88454522276368, 127.05666875994038],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_fdd26a4be751c2e8d5a3362759ec48ee.bindTooltip(
+            marker_3e48c506735b08ddc82db2a2a0d9c3bf.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,13 @@
             );
         
     
-            var marker_59625fd65158e1ff3def0ba18642c4da = L.marker(
+            var marker_7426fffa677fb001dfe7bdeb5703a650 = L.marker(
                 [37.904778851615944, 127.04542075970889],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_59625fd65158e1ff3def0ba18642c4da.bindTooltip(
+            marker_7426fffa677fb001dfe7bdeb5703a650.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +421,13 @@
             );
         
     
-            var marker_60a8895127c7ae970cfb2eae112cb901 = L.marker(
+            var marker_09932838b77ee0337b04f554b34d9561 = L.marker(
                 [37.92639352296679, 127.05068668684824],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_60a8895127c7ae970cfb2eae112cb901.bindTooltip(
+            marker_09932838b77ee0337b04f554b34d9561.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +443,13 @@
             );
         
     
-            var marker_352033355930f0a37295bd90db22b86e = L.marker(
+            var marker_eeafb37169f71badf16b2097a2168887 = L.marker(
                 [37.90843031846387, 127.03107903648865],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_352033355930f0a37295bd90db22b86e.bindTooltip(
+            marker_eeafb37169f71badf16b2097a2168887.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,20 +465,20 @@
             );
         
     
-            var marker_dc565568aa618c8511a5ce1fff82bc63 = L.marker(
-                [37.89506419993621, 127.07180478077204],
+            var marker_09556a842c7fbb85b4af40eada22d443 = L.marker(
+                [37.904129184128216, 127.04612824967552],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_dc565568aa618c8511a5ce1fff82bc63.bindTooltip(
+            marker_09556a842c7fbb85b4af40eada22d443.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>생연주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 동두천시 생연동 45-3<br>
-        경기 동두천시 삼육사로 1118 (생연동)<br>
+        <b>이섬주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 동두천시 상패동 69-22<br>
+        경기 동두천시 어수로 30 (상패동)<br>
         > <b>가격: 1,638 원/리터</b>
         </font>
     
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_0fecc6a7c7beba9776a0bc1edb7a635e = L.marker(
-                [37.965070529464455, 127.0661566075429],
+            var marker_e83b08506230b90debcdc52791deab44 = L.marker(
+                [37.89506419993621, 127.07180478077204],
                 {}
-            ).addTo(map_fb8093160cddde97959ec7677cf125ba);
+            ).addTo(map_1841c1ff042a400aed4d6ac73a388261);
         
     
-            marker_0fecc6a7c7beba9776a0bc1edb7a635e.bindTooltip(
+            marker_e83b08506230b90debcdc52791deab44.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>정인주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 동두천시 하봉암동 69-7<br>
-        경기 동두천시 평화로 3125<br>
-        > <b>가격: 1,648 원/리터</b>
+        <b>생연주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 동두천시 생연동 45-3<br>
+        경기 동두천시 삼육사로 1118 (생연동)<br>
+        > <b>가격: 1,638 원/리터</b>
         </font>
     
                  </div>`,
