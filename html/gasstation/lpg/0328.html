@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7e13497784b1ddf619df6e9e4b16312f {
+                #map_6d5b1899d587ccc3d6a2f57a1206d03b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_7e13497784b1ddf619df6e9e4b16312f" ></div>
+            <div class="folium-map" id="map_6d5b1899d587ccc3d6a2f57a1206d03b" ></div>
         
 </body>
 <script>    
     
-            var map_7e13497784b1ddf619df6e9e4b16312f = L.map(
-                "map_7e13497784b1ddf619df6e9e4b16312f",
+            var map_6d5b1899d587ccc3d6a2f57a1206d03b = L.map(
+                "map_6d5b1899d587ccc3d6a2f57a1206d03b",
                 {
-                    center: [38.16002821015984, 127.28890458087385],
+                    center: [38.160028210159844, 127.28890458087385],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_af73cf2778893587c6789f55ee8ff7a8 = L.tileLayer(
+            var tile_layer_16ad13c0d82f803027a05ae90a6ff0ab = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_7e13497784b1ddf619df6e9e4b16312f);
+            ).addTo(map_6d5b1899d587ccc3d6a2f57a1206d03b);
         
     
-            var locate_control_12232267edb4d9b87255bff2b2b03924 = L.control.locate(
+            var locate_control_bc7d8d0607c45202afb94aa5d7b164db = L.control.locate(
                 {}
-            ).addTo(map_7e13497784b1ddf619df6e9e4b16312f);
+            ).addTo(map_6d5b1899d587ccc3d6a2f57a1206d03b);
             
         
     
-            var marker_eaaab00c5fe8909e925bd07c90b3bd1f = L.marker(
-                [38.17560324181821, 127.23866434764896],
+            var marker_ac520235300b091708954e3ab5250bda = L.marker(
+                [38.120033999366015, 127.2944613101691],
                 {}
-            ).addTo(map_7e13497784b1ddf619df6e9e4b16312f);
+            ).addTo(map_6d5b1899d587ccc3d6a2f57a1206d03b);
         
     
-            marker_eaaab00c5fe8909e925bd07c90b3bd1f.bindTooltip(
+            marker_ac520235300b091708954e3ab5250bda.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>철원충전소</b><br>
+        <b>E1</b><br>
+        강원 철원군 갈말읍 강포리 130-1<br>
+        강원 철원군 갈말읍 호국로 4426<br>
+        > <b>가격: 1,043 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_311f17e1cfc16d8065ae932127fd160d = L.marker(
+                [38.17560324181821, 127.23866434764896],
+                {}
+            ).addTo(map_6d5b1899d587ccc3d6a2f57a1206d03b);
+        
+    
+            marker_311f17e1cfc16d8065ae932127fd160d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_8ccea9e68cdcec9a86009c34ae4a608e = L.marker(
+            var marker_b4dbc6be870d14c10a205c7ecbf1d3d2 = L.marker(
                 [38.18444738929529, 127.33358808480347],
                 {}
-            ).addTo(map_7e13497784b1ddf619df6e9e4b16312f);
+            ).addTo(map_6d5b1899d587ccc3d6a2f57a1206d03b);
         
     
-            marker_8ccea9e68cdcec9a86009c34ae4a608e.bindTooltip(
+            marker_b4dbc6be870d14c10a205c7ecbf1d3d2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -106,28 +128,6 @@
         강원 철원군 갈말읍 문혜리 434-12<br>
         강원 철원군 갈말읍 태봉로 1421<br>
         > <b>가격: 1,054 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ada2d39675954cb6ac0b2e78db9c2e98 = L.marker(
-                [38.120033999366015, 127.2944613101691],
-                {}
-            ).addTo(map_7e13497784b1ddf619df6e9e4b16312f);
-        
-    
-            marker_ada2d39675954cb6ac0b2e78db9c2e98.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>철원충전소</b><br>
-        <b>E1</b><br>
-        강원 철원군 갈말읍 강포리 130-1<br>
-        강원 철원군 갈말읍 호국로 4426<br>
-        > <b>가격: 1,060 원/리터</b>
         </font>
     
                  </div>`,
