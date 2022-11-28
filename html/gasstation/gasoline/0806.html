@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_530acbda6582c0f38f8f5c2e1ffde15a {
+                #map_6537c049e0a0fdb79ff1eb49e3dfa7f4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_530acbda6582c0f38f8f5c2e1ffde15a" ></div>
+            <div class="folium-map" id="map_6537c049e0a0fdb79ff1eb49e3dfa7f4" ></div>
         
 </body>
 <script>    
     
-            var map_530acbda6582c0f38f8f5c2e1ffde15a = L.map(
-                "map_530acbda6582c0f38f8f5c2e1ffde15a",
+            var map_6537c049e0a0fdb79ff1eb49e3dfa7f4 = L.map(
+                "map_6537c049e0a0fdb79ff1eb49e3dfa7f4",
                 {
-                    center: [36.5636862729585, 128.71045692411775],
+                    center: [36.56317335128631, 128.71128569953618],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_b1cb54182d8372be727b2ac25d883364 = L.tileLayer(
+            var tile_layer_3143bef24b0264aaa91179a07c09cbfa = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            var locate_control_94edbeadff6ba44f425be2711ce70ed5 = L.control.locate(
+            var locate_control_d0eeb21a601848c8816023b0c068891b = L.control.locate(
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
             
         
     
-            var marker_64ae862ab98f2529542fecf243a5879f = L.marker(
-                [36.600212996641865, 128.7489388208942],
+            var marker_ed6d4a3b5fc237ff8a62dfef27d4c5e5 = L.marker(
+                [36.625465498965404, 128.76516454191218],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_64ae862ab98f2529542fecf243a5879f.bindTooltip(
+            marker_ed6d4a3b5fc237ff8a62dfef27d4c5e5.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>세웅주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 안동시 와룡면 태리 476<br>
+        경북 안동시 와룡면 퇴계로 935<br>
+        > <b>가격: 1,539 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_28e7edd71d01f9b92bce3bd4b65f68ec = L.marker(
+                [36.600212996641865, 128.7489388208942],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_28e7edd71d01f9b92bce3bd4b65f68ec.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_d18400b5a55ef29cdd6ab0712d2f4b89 = L.marker(
+            var marker_897753298c7b8a84252232c74e9edaf9 = L.marker(
                 [36.51789632916378, 128.68926709683473],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_d18400b5a55ef29cdd6ab0712d2f4b89.bindTooltip(
+            marker_897753298c7b8a84252232c74e9edaf9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,35 +135,13 @@
             );
         
     
-            var marker_1ac49b5a2b79f4888f38e1211b7b369a = L.marker(
-                [36.625465498965404, 128.76516454191218],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_1ac49b5a2b79f4888f38e1211b7b369a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>세웅주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경북 안동시 와룡면 태리 476<br>
-        경북 안동시 와룡면 퇴계로 935<br>
-        > <b>가격: 1,545 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_5c12b49d75a0c7984517903e523bf995 = L.marker(
+            var marker_d6b6bd8ba87278b3e17f9a12da279d99 = L.marker(
                 [36.480931425973715, 128.6376516082969],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_5c12b49d75a0c7984517903e523bf995.bindTooltip(
+            marker_d6b6bd8ba87278b3e17f9a12da279d99.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,35 +157,13 @@
             );
         
     
-            var marker_d724567ba21d181fc2602a23353724ef = L.marker(
-                [36.552154330091014, 128.64261819225035],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_d724567ba21d181fc2602a23353724ef.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>㈜광동유통 안동(부산방향)주유소</b><br>
-        <b>고속도로알뜰</b><br>
-        경북 안동시 풍산읍 계평리 산 133-12<br>
-        경북 안동시 풍산읍 풍산태사로 1903-17<br>
-        > <b>가격: 1,572 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6990d83ce84094aa102025a5358c2f8f = L.marker(
+            var marker_5ad61d1b77db611b3cd4965d4f719080 = L.marker(
                 [36.55496402312217, 128.64460634764907],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_6990d83ce84094aa102025a5358c2f8f.bindTooltip(
+            marker_5ad61d1b77db611b3cd4965d4f719080.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +179,35 @@
             );
         
     
-            var marker_1de43c5330b060eb3dbac3ff58eff31b = L.marker(
-                [36.513283156780446, 128.68027543363806],
+            var marker_358837ffbc325dff03c97c09a9a3ab7c = L.marker(
+                [36.552154330091014, 128.64261819225035],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_1de43c5330b060eb3dbac3ff58eff31b.bindTooltip(
+            marker_358837ffbc325dff03c97c09a9a3ab7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>㈜광동유통 안동(부산방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        경북 안동시 풍산읍 계평리 산 133-12<br>
+        경북 안동시 풍산읍 풍산태사로 1903-17<br>
+        > <b>가격: 1,572 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c4ca8cce04a63f5e6e69620f032c371 = L.marker(
+                [36.513283156780446, 128.68027543363806],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_4c4ca8cce04a63f5e6e69620f032c371.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,35 @@
             );
         
     
-            var marker_056666c8821c251439398159d50c188e = L.marker(
-                [36.64728240650662, 128.69404417354036],
+            var marker_e3a10857927c94fff8f4cf06d9a62be8 = L.marker(
+                [36.55378118559009, 128.75893622172563],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_056666c8821c251439398159d50c188e.bindTooltip(
+            marker_e3a10857927c94fff8f4cf06d9a62be8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안동VIP주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 안동시 용상동 1078-114<br>
+        경북 안동시 경동로 962 (용상동)<br>
+        > <b>가격: 1,575 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_442f2363e78f4a907e953a0df09ff3b5 = L.marker(
+                [36.64728240650662, 128.69404417354036],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_442f2363e78f4a907e953a0df09ff3b5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,79 +267,13 @@
             );
         
     
-            var marker_185d0b53870b51212eaa3d88f871ab4d = L.marker(
-                [36.55378118559009, 128.75893622172563],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_185d0b53870b51212eaa3d88f871ab4d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>안동VIP주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경북 안동시 용상동 1078-114<br>
-        경북 안동시 경동로 962 (용상동)<br>
-        > <b>가격: 1,585 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_26024cbc17249d81ce7ef40817c99e9f = L.marker(
-                [36.551067963459325, 128.76360096562212],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_26024cbc17249d81ce7ef40817c99e9f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>안동농협용상주유소</b><br>
-        <b>농협알뜰</b><br>
-        경북 안동시 용상동 535-1<br>
-        경북 안동시 경동로 1014<br>
-        > <b>가격: 1,585 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_b346d648294efe1f47e81340ac98307d = L.marker(
-                [36.57478514037672, 128.6810536565813],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_b346d648294efe1f47e81340ac98307d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>안동농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        경북 안동시 송현동 617<br>
-        경북 안동시 경동로 173<br>
-        > <b>가격: 1,585 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_98244dffbc04a1430fcc9d1cee005554 = L.marker(
+            var marker_b4ef40a7ff9ad6d3f41c6a0362ab4c2b = L.marker(
                 [36.615173995658786, 128.66379542965996],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_98244dffbc04a1430fcc9d1cee005554.bindTooltip(
+            marker_b4ef40a7ff9ad6d3f41c6a0362ab4c2b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,21 +289,21 @@
             );
         
     
-            var marker_ab68c3988cd2be28dfd16d576826d9a4 = L.marker(
-                [36.55228133512984, 128.7191290974825],
+            var marker_a8ed68a46104dd6d13ccf9440d27c0af = L.marker(
+                [36.57478514037672, 128.6810536565813],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_ab68c3988cd2be28dfd16d576826d9a4.bindTooltip(
+            marker_a8ed68a46104dd6d13ccf9440d27c0af.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>(주)신풍주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경북 안동시 정하동 381-2<br>
-        경북 안동시 강남로 163 (정하동)<br>
-        > <b>가격: 1,589 원/리터</b>
+        <b>안동농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 안동시 송현동 617<br>
+        경북 안동시 경동로 173<br>
+        > <b>가격: 1,585 원/리터</b>
         </font>
     
                  </div>`,
@@ -355,21 +311,21 @@
             );
         
     
-            var marker_269cde5b3ec6164f9d46d1b1da5dfe2d = L.marker(
-                [36.55058182561064, 128.77329715151564],
+            var marker_e93153835f850327df9831ca8eccbc86 = L.marker(
+                [36.551067963459325, 128.76360096562212],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_269cde5b3ec6164f9d46d1b1da5dfe2d.bindTooltip(
+            marker_e93153835f850327df9831ca8eccbc86.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>명품주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경북 안동시 용상동 472-9<br>
-        경북 안동시 경동로 1099<br>
-        > <b>가격: 1,589 원/리터</b>
+        <b>안동농협용상주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 안동시 용상동 535-1<br>
+        경북 안동시 경동로 1014<br>
+        > <b>가격: 1,585 원/리터</b>
         </font>
     
                  </div>`,
@@ -377,13 +333,57 @@
             );
         
     
-            var marker_2369194ccb7196b3cc376ce664ac709a = L.marker(
+            var marker_0e9c3f568a2c23beaa0fb67fe55971d7 = L.marker(
+                [36.59464043888907, 128.7123007272273],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_0e9c3f568a2c23beaa0fb67fe55971d7.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제비원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 안동시 이천동 987<br>
+        경북 안동시 제비원로 501<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_360ad13f09440dfc93880ace7c9ed86e = L.marker(
+                [36.55042099724377, 128.7659692933983],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_360ad13f09440dfc93880ace7c9ed86e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>마뜰주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 안동시 용상동 516-2<br>
+        경북 안동시 경동로 1034<br>
+        > <b>가격: 1,585 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_17dcbaea7286ef64de1135e841eb869d = L.marker(
                 [36.54758635838957, 128.70246540907493],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_2369194ccb7196b3cc376ce664ac709a.bindTooltip(
+            marker_17dcbaea7286ef64de1135e841eb869d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,57 @@
             );
         
     
-            var marker_ead354275d247cee9918c2af8f1046f7 = L.marker(
-                [36.55754300800015, 128.6994352306339],
+            var marker_a71c23c167985657b985deb2c8057818 = L.marker(
+                [36.55228133512984, 128.7191290974825],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_ead354275d247cee9918c2af8f1046f7.bindTooltip(
+            marker_a71c23c167985657b985deb2c8057818.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)신풍주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 안동시 정하동 381-2<br>
+        경북 안동시 강남로 163 (정하동)<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8831d0b4a604791a8c5fab910bdb16cf = L.marker(
+                [36.551618742069785, 128.7638341488152],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_8831d0b4a604791a8c5fab910bdb16cf.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청용주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 안동시 용상동 565-1<br>
+        경북 안동시 경동로 1017<br>
+        > <b>가격: 1,589 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56b7fbe1ec4f97e6bcd2716912837fc7 = L.marker(
+                [36.55754300800015, 128.6994352306339],
+                {}
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
+        
+    
+            marker_56b7fbe1ec4f97e6bcd2716912837fc7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,21 +465,21 @@
             );
         
     
-            var marker_5ff78633d574ce030418acb96bb0edad = L.marker(
-                [36.55042099724377, 128.7659692933983],
+            var marker_fe169ad6a10e689a80236ca9fad795f1 = L.marker(
+                [36.55058182561064, 128.77329715151564],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_5ff78633d574ce030418acb96bb0edad.bindTooltip(
+            marker_fe169ad6a10e689a80236ca9fad795f1.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>마뜰주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경북 안동시 용상동 516-2<br>
-        경북 안동시 경동로 1034<br>
-        > <b>가격: 1,595 원/리터</b>
+        <b>명품주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 안동시 용상동 472-9<br>
+        경북 안동시 경동로 1099<br>
+        > <b>가격: 1,589 원/리터</b>
         </font>
     
                  </div>`,
@@ -443,57 +487,13 @@
             );
         
     
-            var marker_8e4f58c16eae044ca80ac072f37b71bd = L.marker(
-                [36.59464043888907, 128.7123007272273],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_8e4f58c16eae044ca80ac072f37b71bd.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>제비원주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경북 안동시 이천동 987<br>
-        경북 안동시 제비원로 501<br>
-        > <b>가격: 1,595 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_dbc4ca6a854691f04f0c04a252771df6 = L.marker(
-                [36.56187717551352, 128.7472586404461],
-                {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
-        
-    
-            marker_dbc4ca6a854691f04f0c04a252771df6.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>대성산업(주)낙동강주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경북 안동시 용상동 1432-2<br>
-        경북 안동시 경동로 823 (용상동)<br>
-        > <b>가격: 1,595 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4c0bacac19c49b7ba04fd210d2b5c8e1 = L.marker(
+            var marker_915c72b288e73985c6a81e58af92d320 = L.marker(
                 [36.571795868063425, 128.7193304439717],
                 {}
-            ).addTo(map_530acbda6582c0f38f8f5c2e1ffde15a);
+            ).addTo(map_6537c049e0a0fdb79ff1eb49e3dfa7f4);
         
     
-            marker_4c0bacac19c49b7ba04fd210d2b5c8e1.bindTooltip(
+            marker_915c72b288e73985c6a81e58af92d320.bindTooltip(
                 `<div>
                      
         <font size=3>
