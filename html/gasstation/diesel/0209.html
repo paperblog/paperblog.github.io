@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_728c1d625a6efb1d183fc4d78952a7b7 {
+                #map_e6d63f15b073c27345386015bd0e4e58 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_728c1d625a6efb1d183fc4d78952a7b7" ></div>
+            <div class="folium-map" id="map_e6d63f15b073c27345386015bd0e4e58" ></div>
         
 </body>
 <script>    
     
-            var map_728c1d625a6efb1d183fc4d78952a7b7 = L.map(
-                "map_728c1d625a6efb1d183fc4d78952a7b7",
+            var map_e6d63f15b073c27345386015bd0e4e58 = L.map(
+                "map_e6d63f15b073c27345386015bd0e4e58",
                 {
-                    center: [37.01369236912551, 126.97993192973188],
+                    center: [37.01480317754818, 126.98717266778246],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_e3c0af11de26d30f09cc96030077e2b3 = L.tileLayer(
+            var tile_layer_414a2a478fc9df67881d1746f2e1b0b3 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            var locate_control_5b2dc6cb1fe9efa9fe55b78322ae3a35 = L.control.locate(
+            var locate_control_c18b5e2aa50f7f6e83df9239fbb8855d = L.control.locate(
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
             
         
     
-            var marker_4f5d4e99503a18ac88a5685c640680b8 = L.marker(
-                [37.126458105667325, 127.09674073182478],
+            var marker_93c647564cce6b63f97e6d24b8a41fb4 = L.marker(
+                [37.10379446485477, 127.06411878016681],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_4f5d4e99503a18ac88a5685c640680b8.bindTooltip(
+            marker_93c647564cce6b63f97e6d24b8a41fb4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>금영주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 평택시 진위면 견산리 558-7<br>
+        경기 평택시 진위면 경기대로 1786<br>
+        > <b>가격: 1,762 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a3a935e52f485c25edb51e61ed4881dd = L.marker(
+                [37.126458105667325, 127.09674073182478],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_a3a935e52f485c25edb51e61ed4881dd.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_2c336f3108bb7275823702910e87662b = L.marker(
+            var marker_15d31fc16dd75c94958ab9c3ba9f3e1b = L.marker(
                 [36.936546985608494, 126.91529731614919],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_2c336f3108bb7275823702910e87662b.bindTooltip(
+            marker_15d31fc16dd75c94958ab9c3ba9f3e1b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,57 +135,13 @@
             );
         
     
-            var marker_6b9ea630dbbad393f2c18ba65fd53106 = L.marker(
-                [36.98455108504482, 126.88432537331714],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_6b9ea630dbbad393f2c18ba65fd53106.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>자유에너지(주) 포승주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경기 평택시 포승읍 석정리1253-1<br>
-        경기 평택시 포승읍 서동대로 1179<br>
-        > <b>가격: 1,795 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_9c14e81a99eed7b682fa07f401b17646 = L.marker(
-                [36.991907701748936, 126.90816901595227],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_9c14e81a99eed7b682fa07f401b17646.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>가득주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경기 평택시 안중읍 학현리 284-9<br>
-        경기 평택시 안중읍 서동대로 1411<br>
-        > <b>가격: 1,795 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_61c5ba1b23ca15d0111bd9d552acca1b = L.marker(
+            var marker_b585724899b0aef43ea3a82c71d26c2d = L.marker(
                 [37.12510550100395, 127.09812284485739],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_61c5ba1b23ca15d0111bd9d552acca1b.bindTooltip(
+            marker_b585724899b0aef43ea3a82c71d26c2d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,21 +157,21 @@
             );
         
     
-            var marker_253e188fafb4722fc6ac7b127a767db5 = L.marker(
-                [37.04003421036008, 126.94741804410262],
+            var marker_1603616107f814dbdab0b6f4ba20499e = L.marker(
+                [36.98455108504482, 126.88432537331714],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_253e188fafb4722fc6ac7b127a767db5.bindTooltip(
+            marker_1603616107f814dbdab0b6f4ba20499e.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>토진주유소</b><br>
-        <b>S-OIL</b><br>
-        경기 평택시 청북읍 토진리 213-34<br>
-        경기 평택시 청북읍 청원로 123<br>
-        > <b>가격: 1,807 원/리터</b>
+        <b>자유에너지(주) 포승주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 평택시 포승읍 석정리1253-1<br>
+        경기 평택시 포승읍 서동대로 1179<br>
+        > <b>가격: 1,795 원/리터</b>
         </font>
     
                  </div>`,
@@ -201,13 +179,35 @@
             );
         
     
-            var marker_8fa9aa3f8fcc19262cdc8a06cf9a0967 = L.marker(
-                [37.04063431065948, 126.93888061857027],
+            var marker_7f08bbf47fd762849e67c2edbc15766a = L.marker(
+                [36.991907701748936, 126.90816901595227],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_8fa9aa3f8fcc19262cdc8a06cf9a0967.bindTooltip(
+            marker_7f08bbf47fd762849e67c2edbc15766a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>가득주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 평택시 안중읍 학현리 284-9<br>
+        경기 평택시 안중읍 서동대로 1411<br>
+        > <b>가격: 1,795 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c629eb0dcd395861552bdcbf603a4930 = L.marker(
+                [37.04063431065948, 126.93888061857027],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_c629eb0dcd395861552bdcbf603a4930.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,57 @@
             );
         
     
-            var marker_140dde9ecf644027c48b74a648a94c4c = L.marker(
-                [37.071767734612756, 127.0897910481083],
+            var marker_983d7516fc6c956577052ec45ff7a2d9 = L.marker(
+                [37.04003421036008, 126.94741804410262],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_140dde9ecf644027c48b74a648a94c4c.bindTooltip(
+            marker_983d7516fc6c956577052ec45ff7a2d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>토진주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 평택시 청북읍 토진리 213-34<br>
+        경기 평택시 청북읍 청원로 123<br>
+        > <b>가격: 1,807 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_42123afe9fc4183d09de97d5dd5fc387 = L.marker(
+                [37.007541407835575, 126.96953067239352],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_42123afe9fc4183d09de97d5dd5fc387.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>평택휴게소 주유소</b><br>
+        <b>자가상표</b><br>
+        경기 평택시 오성면 죽리 1-2<br>
+        경기 평택시 오성면 서동대로 2043<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_580b9bd0de95055f64ebf78bb10d05b6 = L.marker(
+                [37.071767734612756, 127.0897910481083],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_580b9bd0de95055f64ebf78bb10d05b6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +289,13 @@
             );
         
     
-            var marker_d338eab8c5701941c835fe8b816d7763 = L.marker(
+            var marker_cb5629f855c5831815b4e5889344619a = L.marker(
                 [37.08543076619604, 127.09123640941823],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_d338eab8c5701941c835fe8b816d7763.bindTooltip(
+            marker_cb5629f855c5831815b4e5889344619a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,35 +311,13 @@
             );
         
     
-            var marker_bd73d16e94c341fa027ad3f9e85e0df3 = L.marker(
-                [36.94297001723577, 126.87794942101402],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_bd73d16e94c341fa027ad3f9e85e0df3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>굿모닝주유소</b><br>
-        <b>S-OIL</b><br>
-        경기 평택시 포승면 신영리 413-16<br>
-        경기 평택시 포승읍 서동대로 501<br>
-        > <b>가격: 1,815 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_604dc91ff5f11da4f1c6e1cd4e87c5fc = L.marker(
+            var marker_547cdbacec24a66a9e2c65560475e066 = L.marker(
                 [37.085194517415474, 127.06200650076572],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_604dc91ff5f11da4f1c6e1cd4e87c5fc.bindTooltip(
+            marker_547cdbacec24a66a9e2c65560475e066.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +333,35 @@
             );
         
     
-            var marker_2d3e7c23656c4aae5267a19defa6b104 = L.marker(
-                [37.003092599613275, 126.95939679908085],
+            var marker_0a33d8cd50afb24e67d9256d7bf9eb1f = L.marker(
+                [36.94297001723577, 126.87794942101402],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_2d3e7c23656c4aae5267a19defa6b104.bindTooltip(
+            marker_0a33d8cd50afb24e67d9256d7bf9eb1f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>굿모닝주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 평택시 포승면 신영리 413-16<br>
+        경기 평택시 포승읍 서동대로 501<br>
+        > <b>가격: 1,815 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_828222800bd766904f5bb2bc7273f01a = L.marker(
+                [37.003092599613275, 126.95939679908085],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_828222800bd766904f5bb2bc7273f01a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +377,13 @@
             );
         
     
-            var marker_30361aa96dfbb8a6305c38ad98e6eda8 = L.marker(
+            var marker_907e24ab9519ff420ad32bb768d7ad59 = L.marker(
                 [36.98549562200329, 127.11211809920823],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_30361aa96dfbb8a6305c38ad98e6eda8.bindTooltip(
+            marker_907e24ab9519ff420ad32bb768d7ad59.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +399,13 @@
             );
         
     
-            var marker_ec1c7b2d9258c6359652c3b4f46f91ec = L.marker(
+            var marker_3f0143f985433a5c39ee64b7a2d7f6a3 = L.marker(
                 [36.946785924216385, 126.91233832821068],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_ec1c7b2d9258c6359652c3b4f46f91ec.bindTooltip(
+            marker_3f0143f985433a5c39ee64b7a2d7f6a3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +421,13 @@
             );
         
     
-            var marker_2617c6834ca7dfbfcea824030dacbebb = L.marker(
+            var marker_97d32ccf5f3a8edc4185dce7e1e47737 = L.marker(
                 [36.93786485639499, 126.89021090933795],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_2617c6834ca7dfbfcea824030dacbebb.bindTooltip(
+            marker_97d32ccf5f3a8edc4185dce7e1e47737.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,35 +443,13 @@
             );
         
     
-            var marker_e8f50e83fb104860d9234ce3bf593bdb = L.marker(
-                [37.04432964564154, 126.94337590229877],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_e8f50e83fb104860d9234ce3bf593bdb.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>평택복합휴게소(평택방향)주유소/충전소</b><br>
-        <b>SK에너지</b><br>
-        경기 평택시 청북읍 현곡리 73-21<br>
-        경기 평택시 청북읍 평택제천고속도로 6<br>
-        > <b>가격: 1,819 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_12a0628b4451e91b7955a4a398710bcf = L.marker(
+            var marker_209d0c8a4776babe7291b8fdab75af7e = L.marker(
                 [36.94465415539024, 126.87607403033533],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_12a0628b4451e91b7955a4a398710bcf.bindTooltip(
+            marker_209d0c8a4776babe7291b8fdab75af7e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,57 +465,13 @@
             );
         
     
-            var marker_bc8e571bd783f724a4f6edd570e02cab = L.marker(
-                [36.99348467336854, 127.13541303080144],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_bc8e571bd783f724a4f6edd570e02cab.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>에스씨에너지㈜직영 용이주유소</b><br>
-        <b>자영알뜰</b><br>
-        경기 평택시 용이동 249-10<br>
-        경기 평택시 서동대로 3853 (용이동)<br>
-        > <b>가격: 1,819 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_727f8a96a8791d27ea3e5580ee7fb44f = L.marker(
-                [37.04479005859546, 126.94545878924953],
-                {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
-        
-    
-            marker_727f8a96a8791d27ea3e5580ee7fb44f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>평택복합휴게소(제천방향)주유소/충전소</b><br>
-        <b>SK에너지</b><br>
-        경기 평택시 청북읍 현곡리 73-25<br>
-        경기 평택시 청북읍 평택제천고속도로 6<br>
-        > <b>가격: 1,819 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4af81e377872509515f2a021ed79a36a = L.marker(
+            var marker_eecaebcf85c40cb14a1b579e84049fd4 = L.marker(
                 [36.94274891173338, 126.9143153820348],
                 {}
-            ).addTo(map_728c1d625a6efb1d183fc4d78952a7b7);
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
         
     
-            marker_4af81e377872509515f2a021ed79a36a.bindTooltip(
+            marker_eecaebcf85c40cb14a1b579e84049fd4.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -501,6 +479,28 @@
         <b>S-OIL</b><br>
         경기 평택시 현덕면 기산리 140-98<br>
         경기 평택시 현덕면 서해로 471<br>
+        > <b>가격: 1,819 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b02717af8af2c5514e09ae10ad616dc = L.marker(
+                [36.99348467336854, 127.13541303080144],
+                {}
+            ).addTo(map_e6d63f15b073c27345386015bd0e4e58);
+        
+    
+            marker_8b02717af8af2c5514e09ae10ad616dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스씨에너지㈜직영 용이주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 평택시 용이동 249-10<br>
+        경기 평택시 서동대로 3853 (용이동)<br>
         > <b>가격: 1,819 원/리터</b>
         </font>
     
