@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_4cb91a67f483749660d601654e656e17 {
+                #map_e9dd01af235a7f40b42e65907bc5bb27 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_4cb91a67f483749660d601654e656e17" ></div>
+            <div class="folium-map" id="map_e9dd01af235a7f40b42e65907bc5bb27" ></div>
         
 </body>
 <script>    
     
-            var map_4cb91a67f483749660d601654e656e17 = L.map(
-                "map_4cb91a67f483749660d601654e656e17",
+            var map_e9dd01af235a7f40b42e65907bc5bb27 = L.map(
+                "map_e9dd01af235a7f40b42e65907bc5bb27",
                 {
-                    center: [37.25416482195543, 127.12017837895613],
+                    center: [37.259629819255814, 127.11695778950397],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_f9e5e343a2c28a6f360e9e4b51a18183 = L.tileLayer(
+            var tile_layer_074cb9c5181d31957f931b73913a2547 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            var locate_control_b5cb089abc5ac1feba4acc7b98960226 = L.control.locate(
+            var locate_control_e53627eec13868998706d7d4fc20fd96 = L.control.locate(
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
             
         
     
-            var marker_74d2fed98d95a55c71a80311f3414b42 = L.marker(
-                [37.30347953943143, 127.10475824373009],
+            var marker_0852194ae7e5c9e44ca3f2b592f2e11e = L.marker(
+                [37.282329786743546, 127.11602907684312],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_74d2fed98d95a55c71a80311f3414b42.bindTooltip(
+            marker_0852194ae7e5c9e44ca3f2b592f2e11e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 기흥현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 용인시 기흥구 기흥동 4041-1<br>
+        경기 용인시 기흥구 기흥로 68<br>
+        > <b>가격: 1,609 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ab205d6f68de24a2b7e9921067faa93c = L.marker(
+                [37.30347953943143, 127.10475824373009],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_ab205d6f68de24a2b7e9921067faa93c.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,145 +113,13 @@
             );
         
     
-            var marker_850a7843a26a958cb470b4da46a3c6dc = L.marker(
-                [37.276715112845935, 127.09837741630572],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_850a7843a26a958cb470b4da46a3c6dc.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>서일석유(주)용인서일주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 용인시 신갈동 405-4<br>
-        경기 용인시 기흥구 신수로 70<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6785cd5f4eac41b6bba123920180183a = L.marker(
-                [37.292077685434045, 127.12181759188249],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_6785cd5f4eac41b6bba123920180183a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>언남신도시주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 용인시 기흥구 언남동 221-1<br>
-        경기 용인시 기흥구 마북로2번길 69<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_5aed212eaed70e2709b2a8141ecead41 = L.marker(
-                [37.320227462332625, 127.10515453032347],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_5aed212eaed70e2709b2a8141ecead41.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)삼표에너지 보정동주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 용인시 기흥구 보정동 498-2<br>
-        경기 용인시 기흥구 용구대로2469번길 150 (보정동)<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ff0df10d4e7879c679908c5c8c114f1d = L.marker(
-                [37.28565263981889, 127.09860029739066],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_ff0df10d4e7879c679908c5c8c114f1d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>서일석유(주)기흥서일 주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 용인시 기흥구 신갈동 357-2<br>
-        경기 용인시 기흥구 신수로 179<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6ed9b9e6b4dc08e94f2e66afd82bed29 = L.marker(
-                [37.28354113263695, 127.17163243111536],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_6ed9b9e6b4dc08e94f2e66afd82bed29.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>오션네트웍스(주) 동백지점</b><br>
-        <b>SK에너지</b><br>
-        경기 용인시 기흥구 동백동 4-13<br>
-        경기 용인시 기흥구 석성로 666 (동백동)<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_2023d651e93d03b441efe254a7ddce8e = L.marker(
-                [37.295085595408246, 127.09275400766766],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_2023d651e93d03b441efe254a7ddce8e.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>광교서일주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 용인시 기흥구 보정동 1057-1<br>
-        경기 용인시 기흥구 석성로 1 (보정동)<br>
-        > <b>가격: 1,733 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4c724901414988286b85cb49c95ab7f7 = L.marker(
+            var marker_d1624b177abb259d03f2170608fd2217 = L.marker(
                 [37.32108104059771, 127.10440795809419],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_4c724901414988286b85cb49c95ab7f7.bindTooltip(
+            marker_d1624b177abb259d03f2170608fd2217.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,21 +135,21 @@
             );
         
     
-            var marker_fb9709a9fdde5b5dab18ce510130237c = L.marker(
-                [37.235270382056726, 127.1109928506714],
+            var marker_83c881f8d2babcc1801752a384d167f5 = L.marker(
+                [37.28565263981889, 127.09860029739066],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_fb9709a9fdde5b5dab18ce510130237c.bindTooltip(
+            marker_83c881f8d2babcc1801752a384d167f5.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>동탄행복셀프주유소</b><br>
+        <b>서일석유(주)기흥서일 주유소</b><br>
         <b>GS칼텍스</b><br>
-        경기 용인시 기흥구 공세동 161-7<br>
-        경기 용인시 기흥구 용구대로 1625 (공세동)<br>
-        > <b>가격: 1,735 원/리터</b>
+        경기 용인시 기흥구 신갈동 357-2<br>
+        경기 용인시 기흥구 신수로 179<br>
+        > <b>가격: 1,733 원/리터</b>
         </font>
     
                  </div>`,
@@ -267,13 +157,123 @@
             );
         
     
-            var marker_f61ea03fad523e17450a12d5572cfa74 = L.marker(
-                [37.22300038921375, 127.21042599392555],
+            var marker_897209a36d6c7c5ed0125245f242e974 = L.marker(
+                [37.276715112845935, 127.09837741630572],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_f61ea03fad523e17450a12d5572cfa74.bindTooltip(
+            marker_897209a36d6c7c5ed0125245f242e974.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서일석유(주)용인서일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 신갈동 405-4<br>
+        경기 용인시 기흥구 신수로 70<br>
+        > <b>가격: 1,733 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_dfe15c43100c7e899749b5bec579fb2d = L.marker(
+                [37.295085595408246, 127.09275400766766],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_dfe15c43100c7e899749b5bec579fb2d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>광교서일주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 보정동 1057-1<br>
+        경기 용인시 기흥구 석성로 1 (보정동)<br>
+        > <b>가격: 1,733 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2d987833cd0be4ffae9b98c9c6d7e55 = L.marker(
+                [37.28354113263695, 127.17163243111536],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_b2d987833cd0be4ffae9b98c9c6d7e55.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오션네트웍스(주) 동백지점</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 동백동 4-13<br>
+        경기 용인시 기흥구 석성로 666 (동백동)<br>
+        > <b>가격: 1,733 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_094dd788314b00632ecad7de7598c750 = L.marker(
+                [37.320227462332625, 127.10515453032347],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_094dd788314b00632ecad7de7598c750.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼표에너지 보정동주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 보정동 498-2<br>
+        경기 용인시 기흥구 용구대로2469번길 150 (보정동)<br>
+        > <b>가격: 1,733 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_784271fbeece7457dc5fad578f3a0b31 = L.marker(
+                [37.292077685434045, 127.12181759188249],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_784271fbeece7457dc5fad578f3a0b31.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>언남신도시주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 용인시 기흥구 언남동 221-1<br>
+        경기 용인시 기흥구 마북로2번길 69<br>
+        > <b>가격: 1,733 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_407c7272ed181ce2b395ea7190039ce5 = L.marker(
+                [37.22300038921375, 127.21042599392555],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_407c7272ed181ce2b395ea7190039ce5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_94134e4000ebf687b5cfdf666fe4f844 = L.marker(
+            var marker_9c438ae599bc2515c623929242fb0ed6 = L.marker(
                 [37.23546447671348, 127.11182317073903],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_94134e4000ebf687b5cfdf666fe4f844.bindTooltip(
+            marker_9c438ae599bc2515c623929242fb0ed6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,35 @@
             );
         
     
-            var marker_f28839935c940f714cd45490886277fa = L.marker(
-                [37.27551218588073, 127.10449817186166],
+            var marker_83b1862b322fc8821658c73eced8c6cd = L.marker(
+                [37.235270382056726, 127.1109928506714],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_f28839935c940f714cd45490886277fa.bindTooltip(
+            marker_83b1862b322fc8821658c73eced8c6cd.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동탄행복셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 용인시 기흥구 공세동 161-7<br>
+        경기 용인시 기흥구 용구대로 1625 (공세동)<br>
+        > <b>가격: 1,735 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0a012af873f26ef9ea1003561afa5600 = L.marker(
+                [37.27551218588073, 127.10449817186166],
+                {}
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
+        
+    
+            marker_0a012af873f26ef9ea1003561afa5600.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +355,13 @@
             );
         
     
-            var marker_3a273779e9877fc49011577d69a88243 = L.marker(
+            var marker_817484da9767959e426d4cdc25595faa = L.marker(
                 [37.218501617810865, 127.09489873923367],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_3a273779e9877fc49011577d69a88243.bindTooltip(
+            marker_817484da9767959e426d4cdc25595faa.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +377,13 @@
             );
         
     
-            var marker_0f51dbf6bef4e2ff1b80951482fd174c = L.marker(
+            var marker_c429190f48ee689cdcdecbf008a2db65 = L.marker(
                 [37.12117432755854, 127.1233371314212],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_0f51dbf6bef4e2ff1b80951482fd174c.bindTooltip(
+            marker_c429190f48ee689cdcdecbf008a2db65.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +399,13 @@
             );
         
     
-            var marker_564b468485b888d522e9ce6108edc594 = L.marker(
+            var marker_b86e6bdd6ba7b3dc29a3055d46e19577 = L.marker(
                 [37.21039882434161, 127.16976988577298],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_564b468485b888d522e9ce6108edc594.bindTooltip(
+            marker_b86e6bdd6ba7b3dc29a3055d46e19577.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +421,13 @@
             );
         
     
-            var marker_1bc58a2f299fb1f9d7a180d85ef3271e = L.marker(
+            var marker_66b952e78af1542d0f762fa01dc88f19 = L.marker(
                 [37.2385981469165, 127.17849691124452],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_1bc58a2f299fb1f9d7a180d85ef3271e.bindTooltip(
+            marker_66b952e78af1542d0f762fa01dc88f19.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +443,13 @@
             );
         
     
-            var marker_8447f56b06c143b39b661c6a24a4c198 = L.marker(
+            var marker_abfaf1055d77eaa516d6d391c1d6a62c = L.marker(
                 [37.231302522843215, 127.0700897358566],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_8447f56b06c143b39b661c6a24a4c198.bindTooltip(
+            marker_abfaf1055d77eaa516d6d391c1d6a62c.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +465,13 @@
             );
         
     
-            var marker_e3000180cd22d4a8ed3ccac1d533f6b8 = L.marker(
+            var marker_7d7eb43eacfc9135fcd10f55d5d38aa2 = L.marker(
                 [37.27606468601416, 127.0766736550141],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_e3000180cd22d4a8ed3ccac1d533f6b8.bindTooltip(
+            marker_7d7eb43eacfc9135fcd10f55d5d38aa2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +487,13 @@
             );
         
     
-            var marker_742ab8f7b339dc69e188a9cfa8efdb9a = L.marker(
+            var marker_410b155962c67b126d5318cb516fd05c = L.marker(
                 [37.267118830517305, 127.07461799098638],
                 {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
+            ).addTo(map_e9dd01af235a7f40b42e65907bc5bb27);
         
     
-            marker_742ab8f7b339dc69e188a9cfa8efdb9a.bindTooltip(
+            marker_410b155962c67b126d5318cb516fd05c.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -480,28 +502,6 @@
         경기 용인시 기흥구 영덕동 523-1<br>
         경기 용인시 기흥구 중부대로 56 (영덕동)<br>
         > <b>가격: 1,793 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_a78cd8a8c6a3cd8661a16556b14dcb9c = L.marker(
-                [37.17302984073591, 127.18044086588561],
-                {}
-            ).addTo(map_4cb91a67f483749660d601654e656e17);
-        
-    
-            marker_a78cd8a8c6a3cd8661a16556b14dcb9c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>주식회사 시헌 STAY 365</b><br>
-        <b>SK에너지</b><br>
-        경기 용인시 처인구 남사읍 완장리 147-1<br>
-        경기 용인시 처인구 남사읍 처인성로 973<br>
-        > <b>가격: 1,797 원/리터</b>
         </font>
     
                  </div>`,
