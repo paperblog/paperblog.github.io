@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_97bd31e965a76954a9c58ce51e4ba2be {
+                #map_25317cc79fda394fd23cc4acb64482d0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_97bd31e965a76954a9c58ce51e4ba2be" ></div>
+            <div class="folium-map" id="map_25317cc79fda394fd23cc4acb64482d0" ></div>
         
 </body>
 <script>    
     
-            var map_97bd31e965a76954a9c58ce51e4ba2be = L.map(
-                "map_97bd31e965a76954a9c58ce51e4ba2be",
+            var map_25317cc79fda394fd23cc4acb64482d0 = L.map(
+                "map_25317cc79fda394fd23cc4acb64482d0",
                 {
-                    center: [36.38420714449991, 126.56977272122715],
+                    center: [36.373699151631406, 126.57262065442652],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_76d5a03d17143074eb11652386e9c04e = L.tileLayer(
+            var tile_layer_da02707476d8385882dd914c6b2a33d3 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            var locate_control_878d3ae4567831078f508326048b6981 = L.control.locate(
+            var locate_control_ab0654408db6d54abe058410745a928d = L.control.locate(
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
             
         
     
-            var marker_2f44604047ae77a6c0d6865dd4fcc080 = L.marker(
-                [36.36528353048681, 126.61449320761118],
+            var marker_a6045a08cf6da85a0ba56f3599b77c7c = L.marker(
+                [36.463750615344395, 126.60068388627873],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_2f44604047ae77a6c0d6865dd4fcc080.bindTooltip(
+            marker_a6045a08cf6da85a0ba56f3599b77c7c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>덕원주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 보령시 청소면 재정리 668-6<br>
+        충남 보령시 청소면 충서로 4063<br>
+        > <b>가격: 1,750 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_18cebf49605065a144d6f45af240fad1 = L.marker(
+                [36.36528353048681, 126.61449320761118],
+                {}
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
+        
+    
+            marker_18cebf49605065a144d6f45af240fad1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,79 +113,13 @@
             );
         
     
-            var marker_9969d7b6d652ce4deffe96f3727d0828 = L.marker(
-                [36.463750615344395, 126.60068388627873],
-                {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
-        
-    
-            marker_9969d7b6d652ce4deffe96f3727d0828.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>덕원주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충남 보령시 청소면 재정리 668-6<br>
-        충남 보령시 청소면 충서로 4063<br>
-        > <b>가격: 1,790 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_fc7e0ddbb5c5aa67a99f0b4d99ec1d6a = L.marker(
-                [36.43325748897016, 126.58786179647838],
-                {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
-        
-    
-            marker_fc7e0ddbb5c5aa67a99f0b4d99ec1d6a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>서해안주유소</b><br>
-        <b>GS칼텍스</b><br>
-        충남 보령시 청소면 야현리 620-3<br>
-        충남 보령시 청소면 청소큰길 22<br>
-        > <b>가격: 1,839 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8bf1e6cd115ac05b21cd10a5d1b51952 = L.marker(
-                [36.32379008490299, 126.55371964270353],
-                {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
-        
-    
-            marker_8bf1e6cd115ac05b21cd10a5d1b51952.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>백두산주유소</b><br>
-        <b>자가상표</b><br>
-        충남 보령시 요암동 371-6<br>
-        충남 보령시 대해로 498 (요암동)<br>
-        > <b>가격: 1,839 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_337f61e40b08aac43025c09168dfaf9d = L.marker(
+            var marker_c5a691adb88697d1704163114ce73bb1 = L.marker(
                 [36.426569184907954, 126.589767409697],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_337f61e40b08aac43025c09168dfaf9d.bindTooltip(
+            marker_c5a691adb88697d1704163114ce73bb1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,21 +135,21 @@
             );
         
     
-            var marker_8de85b300a9e0c4189a2761bd8d79dad = L.marker(
-                [36.49639787157071, 126.52326679047677],
+            var marker_44efefb74a7a9b29801410f07672138d = L.marker(
+                [36.43325748897016, 126.58786179647838],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_8de85b300a9e0c4189a2761bd8d79dad.bindTooltip(
+            marker_44efefb74a7a9b29801410f07672138d.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>천북농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        충남 보령시 천북면 장은리 112-1<br>
-        충남 보령시 천북면 홍보로 670<br>
-        > <b>가격: 1,840 원/리터</b>
+        <b>서해안주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 보령시 청소면 야현리 620-3<br>
+        충남 보령시 청소면 청소큰길 22<br>
+        > <b>가격: 1,839 원/리터</b>
         </font>
     
                  </div>`,
@@ -201,21 +157,21 @@
             );
         
     
-            var marker_2d141c638a1b04319f5f13d5df5585eb = L.marker(
-                [36.36857105505283, 126.42457361521095],
+            var marker_d93caed92289cdc035559657671c95a3 = L.marker(
+                [36.32379008490299, 126.55371964270353],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_2d141c638a1b04319f5f13d5df5585eb.bindTooltip(
+            marker_d93caed92289cdc035559657671c95a3.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>오천농협원산도지점주유소</b><br>
-        <b>농협알뜰</b><br>
-        충남 보령시 오천면 원산도리 산91-8<br>
-        충남 보령시 오천면 원산도3길 66<br>
-        > <b>가격: 1,840 원/리터</b>
+        <b>백두산주유소</b><br>
+        <b>자가상표</b><br>
+        충남 보령시 요암동 371-6<br>
+        충남 보령시 대해로 498 (요암동)<br>
+        > <b>가격: 1,839 원/리터</b>
         </font>
     
                  </div>`,
@@ -223,35 +179,13 @@
             );
         
     
-            var marker_7f721ecbc8c39e8acf714a6b8b81a134 = L.marker(
-                [36.495098409617896, 126.57979996542046],
-                {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
-        
-    
-            marker_7f721ecbc8c39e8acf714a6b8b81a134.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>천북농협클린(신덕점)주유소</b><br>
-        <b>농협알뜰</b><br>
-        충남 보령시 천북면 신덕리 405-7<br>
-        충남 보령시 천북면 천광로 557<br>
-        > <b>가격: 1,840 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6b4fe659b86f1ec84cea2e890aafc3a6 = L.marker(
+            var marker_f8a53da8c18a0ad92ef3b0281885e212 = L.marker(
                 [36.32213136831655, 126.60297247321871],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_6b4fe659b86f1ec84cea2e890aafc3a6.bindTooltip(
+            marker_f8a53da8c18a0ad92ef3b0281885e212.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +201,79 @@
             );
         
     
-            var marker_34d5b66983bb1be21a14055440732bde = L.marker(
-                [36.33551855100587, 126.56961422659357],
+            var marker_5d0cd32ffb16180d99ce1715b4a455b0 = L.marker(
+                [36.49639787157071, 126.52326679047677],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_34d5b66983bb1be21a14055440732bde.bindTooltip(
+            marker_5d0cd32ffb16180d99ce1715b4a455b0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천북농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 보령시 천북면 장은리 112-1<br>
+        충남 보령시 천북면 홍보로 670<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee00da42a1a7bb0de3766665254d9a94 = L.marker(
+                [36.495098409617896, 126.57979996542046],
+                {}
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
+        
+    
+            marker_ee00da42a1a7bb0de3766665254d9a94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>천북농협클린(신덕점)주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 보령시 천북면 신덕리 405-7<br>
+        충남 보령시 천북면 천광로 557<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1ab7946b5b4c99aca7eb373dc953c94e = L.marker(
+                [36.36857105505283, 126.42457361521095],
+                {}
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
+        
+    
+            marker_1ab7946b5b4c99aca7eb373dc953c94e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오천농협원산도지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        충남 보령시 오천면 원산도리 산91-8<br>
+        충남 보령시 오천면 원산도3길 66<br>
+        > <b>가격: 1,840 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44394255fd9692b05eafa31b68d7ec9f = L.marker(
+                [36.33551855100587, 126.56961422659357],
+                {}
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
+        
+    
+            marker_44394255fd9692b05eafa31b68d7ec9f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_3e23af1610f25ae5c03b39456638b7f4 = L.marker(
+            var marker_bfa01a38b4e1558c18e186f7b2714782 = L.marker(
                 [36.378727557190246, 126.53836556597855],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_3e23af1610f25ae5c03b39456638b7f4.bindTooltip(
+            marker_bfa01a38b4e1558c18e186f7b2714782.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,13 @@
             );
         
     
-            var marker_ff564a437d027ffb5387a088bd011bb9 = L.marker(
+            var marker_bbb14bf2788209be2f18187a441bd450 = L.marker(
                 [36.35515441318751, 126.60312141686684],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_ff564a437d027ffb5387a088bd011bb9.bindTooltip(
+            marker_bbb14bf2788209be2f18187a441bd450.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +333,13 @@
             );
         
     
-            var marker_a0a48450ef6a273fde634470ff42a4ec = L.marker(
+            var marker_618a0cbecb9350b6ab6b80b101b3b3ab = L.marker(
                 [36.35379433137656, 126.58605705455518],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_a0a48450ef6a273fde634470ff42a4ec.bindTooltip(
+            marker_618a0cbecb9350b6ab6b80b101b3b3ab.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +355,13 @@
             );
         
     
-            var marker_52be4e187f343f5861e85460df0f5c80 = L.marker(
+            var marker_f1f9d0e820810801fa99ae0b74aaf1ac = L.marker(
                 [36.33934517242809, 126.5856809204049],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_52be4e187f343f5861e85460df0f5c80.bindTooltip(
+            marker_f1f9d0e820810801fa99ae0b74aaf1ac.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +377,13 @@
             );
         
     
-            var marker_5952814eeb16472c9fd26282ccf3ef4a = L.marker(
+            var marker_7b1f8462399b601a13107b06313d4ff2 = L.marker(
                 [36.33860159717014, 126.58169645749682],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_5952814eeb16472c9fd26282ccf3ef4a.bindTooltip(
+            marker_7b1f8462399b601a13107b06313d4ff2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,13 @@
             );
         
     
-            var marker_b48d1e0d63f1a2d5c75db98329458959 = L.marker(
+            var marker_e231aea131efb8e8b8fd493f7bc57784 = L.marker(
                 [36.44731145682588, 126.59113916562684],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_b48d1e0d63f1a2d5c75db98329458959.bindTooltip(
+            marker_e231aea131efb8e8b8fd493f7bc57784.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +421,13 @@
             );
         
     
-            var marker_7524b09fb5826331976ad00ecf8ce2b6 = L.marker(
+            var marker_656204647d94badb8b9b66ab26afe2dd = L.marker(
                 [36.33151843940985, 126.5608367597354],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_7524b09fb5826331976ad00ecf8ce2b6.bindTooltip(
+            marker_656204647d94badb8b9b66ab26afe2dd.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +443,13 @@
             );
         
     
-            var marker_f78262a37dff63966ce0296540c4697c = L.marker(
+            var marker_49164de78921c67bc97b83c5d389679d = L.marker(
                 [36.32848453476652, 126.56022140672665],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_f78262a37dff63966ce0296540c4697c.bindTooltip(
+            marker_49164de78921c67bc97b83c5d389679d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +465,13 @@
             );
         
     
-            var marker_d6238ce09027e313e73bbfea7971b15b = L.marker(
+            var marker_436bf6ad141442ebd2b94c2060103be6 = L.marker(
                 [36.33626862597828, 126.59961154529265],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_d6238ce09027e313e73bbfea7971b15b.bindTooltip(
+            marker_436bf6ad141442ebd2b94c2060103be6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,20 +487,20 @@
             );
         
     
-            var marker_3e34dd2e65f2a917a9eba25c743d76dd = L.marker(
-                [36.444568601489074, 126.54197111816964],
+            var marker_2656a67432e9372bbd4fa95f2ca5ba57 = L.marker(
+                [36.234408744118916, 126.5989297821572],
                 {}
-            ).addTo(map_97bd31e965a76954a9c58ce51e4ba2be);
+            ).addTo(map_25317cc79fda394fd23cc4acb64482d0);
         
     
-            marker_3e34dd2e65f2a917a9eba25c743d76dd.bindTooltip(
+            marker_2656a67432e9372bbd4fa95f2ca5ba57.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>오천농협주유소</b><br>
+        <b>광명주유소</b><br>
         <b>현대오일뱅크</b><br>
-        충남 보령시 오천면 소성리 17-6<br>
-        충남 보령시 오천면 충청수영로 564-5<br>
+        충남 보령시 웅천읍 대창리 721-4<br>
+        충남 보령시 웅천읍 장터중앙길 164<br>
         > <b>가격: 1,860 원/리터</b>
         </font>
     
