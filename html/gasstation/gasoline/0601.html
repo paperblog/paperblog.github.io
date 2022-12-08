@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_82fb617062ee90a5ddc6cb397137156d {
+                #map_2557ec08ad9e176931e078daf8315478 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_82fb617062ee90a5ddc6cb397137156d" ></div>
+            <div class="folium-map" id="map_2557ec08ad9e176931e078daf8315478" ></div>
         
 </body>
 <script>    
     
-            var map_82fb617062ee90a5ddc6cb397137156d = L.map(
-                "map_82fb617062ee90a5ddc6cb397137156d",
+            var map_2557ec08ad9e176931e078daf8315478 = L.map(
+                "map_2557ec08ad9e176931e078daf8315478",
                 {
-                    center: [35.83805596904146, 127.1170944110499],
+                    center: [35.83809973236905, 127.11511473493991],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_369b3a08e74d3d0061052fcaf9b9358f = L.tileLayer(
+            var tile_layer_b271571f8a9a7692fde9f80dfeab2adf = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            var locate_control_82743d28178716302404a5a8e842c83a = L.control.locate(
+            var locate_control_c3b35e9614fa6a4081124b92a66628ac = L.control.locate(
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
             
         
     
-            var marker_ccd754cec5d6b37190e8e44b00cf4d1e = L.marker(
-                [35.86642366982563, 127.07605056026355],
+            var marker_33e587b28cf1656605beb318c64f48b6 = L.marker(
+                [35.85451627434616, 127.10424156585906],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_ccd754cec5d6b37190e8e44b00cf4d1e.bindTooltip(
+            marker_33e587b28cf1656605beb318c64f48b6.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔복주유소</b><br>
+        <b>자영알뜰</b><br>
+        전북 전주시 덕진구 팔복동1가 140-6<br>
+        전북 전주시 덕진구 기린대로 714<br>
+        > <b>가격: 1,409 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e363f1ace05ef24e5c67ec42c2f90a89 = L.marker(
+                [35.86642366982563, 127.07605056026355],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_e363f1ace05ef24e5c67ec42c2f90a89.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -83,6 +105,50 @@
         <b>자가상표</b><br>
         전북 전주시 덕진구 여의동 691-11<br>
         전북 전주시 덕진구 기린대로 1003 (여의동)<br>
+        > <b>가격: 1,409 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6b84fdf501505502d02ab394724b894 = L.marker(
+                [35.789793368302924, 127.19355423229665],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_f6b84fdf501505502d02ab394724b894.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오일스타㈜전주지점</b><br>
+        <b>자가상표</b><br>
+        전북 전주시 완산구 색장동 527<br>
+        전북 전주시 완산구 춘향로 5006<br>
+        > <b>가격: 1,429 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c09aac4021ee949220523742fea32e98 = L.marker(
+                [35.85257872631027, 127.10791674910723],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_c09aac4021ee949220523742fea32e98.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>팔복2주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 전주시 덕진구 팔복동2가 20-89<br>
+        전북 전주시 덕진구 기린대로 674 (팔복동2가)<br>
         > <b>가격: 1,439 원/리터</b>
         </font>
     
@@ -91,21 +157,21 @@
             );
         
     
-            var marker_f4e7b061a01a5950a3bc308ab0b50b33 = L.marker(
-                [35.85451627434616, 127.10424156585906],
+            var marker_826af2f56504e4b506a72b8d270ba720 = L.marker(
+                [35.79880099196477, 127.17961511271713],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_f4e7b061a01a5950a3bc308ab0b50b33.bindTooltip(
+            marker_826af2f56504e4b506a72b8d270ba720.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>팔복주유소</b><br>
+        <b>현대주유소</b><br>
         <b>자영알뜰</b><br>
-        전북 전주시 덕진구 팔복동1가 140-6<br>
-        전북 전주시 덕진구 기린대로 714<br>
-        > <b>가격: 1,459 원/리터</b>
+        전북 전주시 완산구 대성동 23-2<br>
+        전북 전주시 완산구 춘향로 5197 (대성동)<br>
+        > <b>가격: 1,449 원/리터</b>
         </font>
     
                  </div>`,
@@ -113,35 +179,13 @@
             );
         
     
-            var marker_e20812ecefdd99c8e90b35417a657dc3 = L.marker(
-                [35.85257872631027, 127.10791674910723],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_e20812ecefdd99c8e90b35417a657dc3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>팔복2주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전북 전주시 덕진구 팔복동2가 20-89<br>
-        전북 전주시 덕진구 기린대로 674 (팔복동2가)<br>
-        > <b>가격: 1,459 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1756df621a2dcd9b562ab0c31e5fb8db = L.marker(
+            var marker_48c5f2c769a6a5c9d279e651fd1c360b = L.marker(
                 [35.85528565651057, 127.15777488499322],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_1756df621a2dcd9b562ab0c31e5fb8db.bindTooltip(
+            marker_48c5f2c769a6a5c9d279e651fd1c360b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,20 +201,20 @@
             );
         
     
-            var marker_10878417362b821adaf42175ef052b5d = L.marker(
-                [35.789793368302924, 127.19355423229665],
+            var marker_3608ab8156a7f8b1f8fdc58c918f7419 = L.marker(
+                [35.8546308156351, 127.07101885657008],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_10878417362b821adaf42175ef052b5d.bindTooltip(
+            marker_3608ab8156a7f8b1f8fdc58c918f7419.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>오일스타㈜전주지점</b><br>
+        <b>더드림주유소</b><br>
         <b>자가상표</b><br>
-        전북 전주시 완산구 색장동 527<br>
-        전북 전주시 완산구 춘향로 5006<br>
+        전북 전주시 덕진구 여의동 1017-8<br>
+        전북 전주시 덕진구 온고을로 541<br>
         > <b>가격: 1,469 원/리터</b>
         </font>
     
@@ -179,35 +223,13 @@
             );
         
     
-            var marker_01e9c641696f83f186a129608ab23500 = L.marker(
-                [35.8622518496109, 127.06918347445388],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_01e9c641696f83f186a129608ab23500.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>전인주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전북 전주시 덕진구 여의동 1140-5<br>
-        전북 전주시 덕진구 혁신로 558 (여의동)<br>
-        > <b>가격: 1,469 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0a11fbcf618b1ddb1a889a834ba1f90c = L.marker(
+            var marker_5b374287ff1ae58e7098fbf1196cb0c1 = L.marker(
                 [35.84629139377424, 127.16264253312828],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_0a11fbcf618b1ddb1a889a834ba1f90c.bindTooltip(
+            marker_5b374287ff1ae58e7098fbf1196cb0c1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +245,79 @@
             );
         
     
-            var marker_a985a864f4761dc8ff2217f64a2b42f2 = L.marker(
-                [35.81866027543965, 127.09283215956849],
+            var marker_c9b542b88c6dc3d335ef10b14a487d20 = L.marker(
+                [35.85627018214199, 127.06851834116839],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_a985a864f4761dc8ff2217f64a2b42f2.bindTooltip(
+            marker_c9b542b88c6dc3d335ef10b14a487d20.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>착한2주유소</b><br>
+        <b>자가상표</b><br>
+        전북 전주시 덕진구 여의동 1263-7<br>
+        전북 전주시 덕진구 온고을로 566<br>
+        > <b>가격: 1,469 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b81ad34ce74f3a0e78022af7e599a35 = L.marker(
+                [35.8622518496109, 127.06918347445388],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_5b81ad34ce74f3a0e78022af7e599a35.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>전인주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 전주시 덕진구 여의동 1140-5<br>
+        전북 전주시 덕진구 혁신로 558 (여의동)<br>
+        > <b>가격: 1,469 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_52326c72e21af3587140431366921843 = L.marker(
+                [35.85493701763301, 127.07174028980455],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_52326c72e21af3587140431366921843.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)고덕물류 여의동지점</b><br>
+        <b>자가상표</b><br>
+        전북 전주시 덕진구 여의동 1017-4<br>
+        전북 전주시 덕진구 온고을로 534<br>
+        > <b>가격: 1,469 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_55ee2c261d4b251ab27b4092ec9662ad = L.marker(
+                [35.81866027543965, 127.09283215956849],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_55ee2c261d4b251ab27b4092ec9662ad.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,101 +333,13 @@
             );
         
     
-            var marker_7288b18deed0d0444571ec8885e40a8d = L.marker(
-                [35.823449933632276, 127.09124347358366],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_7288b18deed0d0444571ec8885e40a8d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>서진셀프주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전북 전주시 완산구 효자동3가 1017-11<br>
-        전북 전주시 완산구 유연로 48 (효자동3가)<br>
-        > <b>가격: 1,475 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_123fe169f0308613495f99adb7624a8d = L.marker(
-                [35.82308234148483, 127.09673964525224],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_123fe169f0308613495f99adb7624a8d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>신도시주유소</b><br>
-        <b>SK에너지</b><br>
-        전북 전주시 완산구 효자동3가 671<br>
-        전북 전주시 완산구 천잠로 411 (효자동3가)<br>
-        > <b>가격: 1,475 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0c5ed885a73e7754c582ebb6a9ef963e = L.marker(
-                [35.82794580281292, 127.13680145217359],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_0c5ed885a73e7754c582ebb6a9ef963e.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>전주현대주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전북 전주시 덕진구 진북동1가 874-3<br>
-        전북 전주시 덕진구  안덕원로 60<br>
-        > <b>가격: 1,475 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_47ea8d9ef4eefb2bf4eec324cd55c890 = L.marker(
-                [35.850321592211785, 127.09990194519067],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_47ea8d9ef4eefb2bf4eec324cd55c890.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>상리주유소</b><br>
-        <b>SK에너지</b><br>
-        전북 전주시 덕진구 팔복동2가 393-2<br>
-        전북 전주시 덕진구 상리2길 67<br>
-        > <b>가격: 1,475 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_16211400d5c0e6e7027d18bde9df9e8d = L.marker(
+            var marker_0a4149c0ade35cb6c5ab5939d4765f8d = L.marker(
                 [35.82418355782406, 127.1295381573463],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_16211400d5c0e6e7027d18bde9df9e8d.bindTooltip(
+            marker_0a4149c0ade35cb6c5ab5939d4765f8d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,131 +355,21 @@
             );
         
     
-            var marker_7d2b7ea1324e09c00b26539f3dbb9e80 = L.marker(
-                [35.88659854956933, 127.12946591049507],
+            var marker_8c0f958f184e4158f0d7ec5a2f3ffbaa = L.marker(
+                [35.86849618426303, 127.06152476100786],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_7d2b7ea1324e09c00b26539f3dbb9e80.bindTooltip(
+            marker_8c0f958f184e4158f0d7ec5a2f3ffbaa.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>오일스타 착한12주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전북 전주시 덕진구 전미동1가 60-3<br>
-        전북 전주시 덕진구 과학로 198 (전미동1가)<br>
-        > <b>가격: 1,479 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_46bc303540a1567edc3c3bb84be777b1 = L.marker(
-                [35.85493701763301, 127.07174028980455],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_46bc303540a1567edc3c3bb84be777b1.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(유)고덕물류 여의동지점</b><br>
-        <b>자가상표</b><br>
-        전북 전주시 덕진구 여의동 1017-4<br>
-        전북 전주시 덕진구 온고을로 534<br>
-        > <b>가격: 1,479 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6b78de1278b291db728fd667725f8451 = L.marker(
-                [35.77752656050526, 127.19898701363076],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_6b78de1278b291db728fd667725f8451.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>색장주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전북 전주시 완산구 색장동 859-1<br>
-        전북 전주시 완산구 춘향로 4860 (색장동)<br>
-        > <b>가격: 1,479 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_a74bd5d52aab6f79c308bc7640d48232 = L.marker(
-                [35.85627018214199, 127.06851834116839],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_a74bd5d52aab6f79c308bc7640d48232.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>착한2주유소</b><br>
-        <b>자가상표</b><br>
-        전북 전주시 덕진구 여의동 1263-7<br>
-        전북 전주시 덕진구 온고을로 566<br>
-        > <b>가격: 1,479 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_28965e7521fc2831b828786c7ded5d10 = L.marker(
-                [35.79880099196477, 127.17961511271713],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_28965e7521fc2831b828786c7ded5d10.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>현대주유소</b><br>
-        <b>자영알뜰</b><br>
-        전북 전주시 완산구 대성동 23-2<br>
-        전북 전주시 완산구 춘향로 5197 (대성동)<br>
-        > <b>가격: 1,479 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_68e3a7918708eb4892a587399c8b19a4 = L.marker(
-                [35.83757082129365, 127.10412186339497],
-                {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
-        
-    
-            marker_68e3a7918708eb4892a587399c8b19a4.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>신협셀프주유소</b><br>
+        <b>혁신주유소</b><br>
         <b>GS칼텍스</b><br>
-        전북 전주시 완산구 효자동3가 844-5<br>
-        전북 전주시 완산구 온고을로 180 (효자동3가)<br>
-        > <b>가격: 1,479 원/리터</b>
+        전북 전주시 덕진구 반월동 769-3<br>
+        전북 전주시 덕진구 온고을로 739<br>
+        > <b>가격: 1,475 원/리터</b>
         </font>
     
                  </div>`,
@@ -487,20 +377,130 @@
             );
         
     
-            var marker_2ac7589d0ad0a9c44121f0d61fbb9f90 = L.marker(
-                [35.8546308156351, 127.07101885657008],
+            var marker_070906a4ee31f2d6b42fcc8304336349 = L.marker(
+                [35.833870181217065, 127.15924643635228],
                 {}
-            ).addTo(map_82fb617062ee90a5ddc6cb397137156d);
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
         
     
-            marker_2ac7589d0ad0a9c44121f0d61fbb9f90.bindTooltip(
+            marker_070906a4ee31f2d6b42fcc8304336349.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>더드림주유소</b><br>
-        <b>자가상표</b><br>
-        전북 전주시 덕진구 여의동 1017-8<br>
-        전북 전주시 덕진구 온고을로 541<br>
+        <b>(유)고덕물류 직영주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 전주시 덕진구 인후동1가 431-58<br>
+        전북 전주시 덕진구 건산로 201 (인후동1가)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6d7210133fbffd2226d3f4185cb51895 = L.marker(
+                [35.82308234148483, 127.09673964525224],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_6d7210133fbffd2226d3f4185cb51895.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신도시주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 전주시 완산구 효자동3가 671<br>
+        전북 전주시 완산구 천잠로 411 (효자동3가)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_32a47f87f366bd40c11eab4397bf9aa2 = L.marker(
+                [35.82794580281292, 127.13680145217359],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_32a47f87f366bd40c11eab4397bf9aa2.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>전주현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전북 전주시 덕진구 진북동1가 874-3<br>
+        전북 전주시 덕진구  안덕원로 60<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a87345554f1ff02016cba4f33355240 = L.marker(
+                [35.850321592211785, 127.09990194519067],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_7a87345554f1ff02016cba4f33355240.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>상리주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 전주시 덕진구 팔복동2가 393-2<br>
+        전북 전주시 덕진구 상리2길 67<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6950c228ae4def9575f1613186c41a04 = L.marker(
+                [35.823449933632276, 127.09124347358366],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_6950c228ae4def9575f1613186c41a04.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서진셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전북 전주시 완산구 효자동3가 1017-11<br>
+        전북 전주시 완산구 유연로 48 (효자동3가)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_587c49f74734f2c7acf5e5bc050f16c1 = L.marker(
+                [35.80020483243991, 127.17221006796086],
+                {}
+            ).addTo(map_2557ec08ad9e176931e078daf8315478);
+        
+    
+            marker_587c49f74734f2c7acf5e5bc050f16c1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>소망주유소</b><br>
+        <b>S-OIL</b><br>
+        전북 전주시 완산구 대성동 221-1<br>
+        전북 전주시 완산구 춘향로 5265 (대성동)<br>
         > <b>가격: 1,479 원/리터</b>
         </font>
     
