@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_96f1f49049c535396f5ee7917e4f8cba {
+                #map_a022ceb213c31400c35207c910defb4b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_96f1f49049c535396f5ee7917e4f8cba" ></div>
+            <div class="folium-map" id="map_a022ceb213c31400c35207c910defb4b" ></div>
         
 </body>
 <script>    
     
-            var map_96f1f49049c535396f5ee7917e4f8cba = L.map(
-                "map_96f1f49049c535396f5ee7917e4f8cba",
+            var map_a022ceb213c31400c35207c910defb4b = L.map(
+                "map_a022ceb213c31400c35207c910defb4b",
                 {
-                    center: [37.49787256550422, 128.07569459761598],
+                    center: [37.492418312072296, 128.07468246041776],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_fe6d7608a1e5c8e5d656b47c56c8e1bf = L.tileLayer(
+            var tile_layer_b51b5a39b99ae9af8f7546ed5127aedd = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            var locate_control_f16e1b2d422061a1a83eb9afe8624596 = L.control.locate(
+            var locate_control_47519f299017b7703bc4230fbc2781e7 = L.control.locate(
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
             
         
     
-            var marker_4a408b9c2c7056b1c2fae820cca9a6ba = L.marker(
-                [37.46509428525217, 128.13376314255845],
+            var marker_c6f66c5e1da87b798604a7ee331e900e = L.marker(
+                [37.4633470444048, 128.13600633776852],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_4a408b9c2c7056b1c2fae820cca9a6ba.bindTooltip(
+            marker_c6f66c5e1da87b798604a7ee331e900e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스에너지(주) 횡성(하)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 횡성군 안흥면 소사리 1537-1<br>
+        강원 횡성군 안흥면 영동고속도로 154-1<br>
+        > <b>가격: 1,765 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7fea5c33c6e82da5e474a6579574f694 = L.marker(
+                [37.46509428525217, 128.13376314255845],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_7fea5c33c6e82da5e474a6579574f694.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_5523dfd10bf5ac73905d16dfcc9695b1 = L.marker(
-                [37.4633470444048, 128.13600633776852],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_5523dfd10bf5ac73905d16dfcc9695b1.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>씨앤에스에너지(주) 횡성(하)주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 횡성군 안흥면 소사리 1537-1<br>
-        강원 횡성군 안흥면 영동고속도로 154-1<br>
-        > <b>가격: 1,775 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8bac395df9e55747125d1bff2dfea5d3 = L.marker(
-                [37.52686217664888, 127.88465185919794],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_8bac395df9e55747125d1bff2dfea5d3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>횡성농협 유현지점주유소</b><br>
-        <b>농협알뜰</b><br>
-        강원 횡성군 서원면 유현리 128-1<br>
-        강원 횡성군 서원면 경강로 800<br>
-        > <b>가격: 1,800 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d5a75459440da25728a4b4ed2d69fa09 = L.marker(
+            var marker_427b31aca949ba2bcb009b3cc241650a = L.marker(
                 [37.48698651632056, 127.98878360635624],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_d5a75459440da25728a4b4ed2d69fa09.bindTooltip(
+            marker_427b31aca949ba2bcb009b3cc241650a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,35 @@
             );
         
     
-            var marker_012467a0fdfa65f20d7913e8d4cae0ce = L.marker(
-                [37.47228203244761, 128.05104810139318],
+            var marker_3bf240f6fd304529a8fa134236d64b93 = L.marker(
+                [37.52686217664888, 127.88465185919794],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_012467a0fdfa65f20d7913e8d4cae0ce.bindTooltip(
+            marker_3bf240f6fd304529a8fa134236d64b93.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>횡성농협 유현지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 횡성군 서원면 유현리 128-1<br>
+        강원 횡성군 서원면 경강로 800<br>
+        > <b>가격: 1,800 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_532569a9cb0dbe8ba16697ffee1520ec = L.marker(
+                [37.47228203244761, 128.05104810139318],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_532569a9cb0dbe8ba16697ffee1520ec.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,35 +179,13 @@
             );
         
     
-            var marker_fd27c92449c04481459036836a710c22 = L.marker(
-                [37.446594981505534, 128.07819090501116],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_fd27c92449c04481459036836a710c22.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>새말쉼터주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        강원 횡성군 우천면 우항리 744-8<br>
-        강원 횡성군 우천면 전재로 49<br>
-        > <b>가격: 1,820 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_929e2908fd256076e318825d09946f4e = L.marker(
+            var marker_317bb4b82872c41a1d154327a733c082 = L.marker(
                 [37.4861324775735, 128.0201645499536],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_929e2908fd256076e318825d09946f4e.bindTooltip(
+            marker_317bb4b82872c41a1d154327a733c082.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +201,57 @@
             );
         
     
-            var marker_8163cec302c127f42b64d0563f560116 = L.marker(
-                [37.4860362682497, 127.984423636436],
+            var marker_83bf1e1042b2d50172a57a10d4c9fa2c = L.marker(
+                [37.507253809224196, 127.9549790833087],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_8163cec302c127f42b64d0563f560116.bindTooltip(
+            marker_83bf1e1042b2d50172a57a10d4c9fa2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 횡성군 횡성읍 학곡리 480<br>
+        강원 횡성군 횡성읍 경강로 1599<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7f79e821f27ccd7e71baa19800221eb8 = L.marker(
+                [37.446594981505534, 128.07819090501116],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_7f79e821f27ccd7e71baa19800221eb8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>새말쉼터주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 횡성군 우천면 우항리 744-8<br>
+        강원 횡성군 우천면 전재로 49<br>
+        > <b>가격: 1,820 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f6588d3657dfc203a88d2d8171acb0c4 = L.marker(
+                [37.4860362682497, 127.984423636436],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_f6588d3657dfc203a88d2d8171acb0c4.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +267,13 @@
             );
         
     
-            var marker_bbfb131670cdded0665d47b9fca6744b = L.marker(
+            var marker_61dd6d1ad4e514707291a0040da625c3 = L.marker(
                 [37.44159541883949, 128.06424780115253],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_bbfb131670cdded0665d47b9fca6744b.bindTooltip(
+            marker_61dd6d1ad4e514707291a0040da625c3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +289,13 @@
             );
         
     
-            var marker_02a08fe69f593f02cddc1c96f0aea2c0 = L.marker(
+            var marker_d43f836185948d7d18d5154226a46f7e = L.marker(
                 [37.524440831239254, 127.95544990415203],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_02a08fe69f593f02cddc1c96f0aea2c0.bindTooltip(
+            marker_d43f836185948d7d18d5154226a46f7e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +311,13 @@
             );
         
     
-            var marker_5aa83a65b6cb76b8a5dfaebf81bf2183 = L.marker(
+            var marker_198b825d4ec6574d8d9a5dfe59dc0a84 = L.marker(
                 [37.577689802614316, 127.90662155187306],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_5aa83a65b6cb76b8a5dfaebf81bf2183.bindTooltip(
+            marker_198b825d4ec6574d8d9a5dfe59dc0a84.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,57 +333,13 @@
             );
         
     
-            var marker_4a33904d517bad32f735b7b884cc87b9 = L.marker(
-                [37.558524726121014, 128.10806713889858],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_4a33904d517bad32f735b7b884cc87b9.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>동횡성농협갑천지점</b><br>
-        <b>농협알뜰</b><br>
-        강원 횡성군 갑천면 율동리 61-1<br>
-        강원 횡성군 갑천면 청정로 323<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6fe12c876e187d000beea618b33d8efe = L.marker(
-                [37.41633056494085, 128.19901528156186],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_6fe12c876e187d000beea618b33d8efe.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>상안주유소</b><br>
-        <b>GS칼텍스</b><br>
-        강원 횡성군 안흥면 상안리 588-70<br>
-        강원 횡성군 안흥면 서동로 1595<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_64a0d3c79a89eeb0015a8a33744f522b = L.marker(
+            var marker_19181a346ac51c878da33ec6c52542e8 = L.marker(
                 [37.582768897524375, 128.150600519396],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_64a0d3c79a89eeb0015a8a33744f522b.bindTooltip(
+            marker_19181a346ac51c878da33ec6c52542e8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,20 +355,20 @@
             );
         
     
-            var marker_383fcf6b762459fc91a13f4b76c92e2a = L.marker(
-                [37.507253809224196, 127.9549790833087],
+            var marker_e4c7ea924c9d78a8a354cf9ebe244fd9 = L.marker(
+                [37.41633056494085, 128.19901528156186],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_383fcf6b762459fc91a13f4b76c92e2a.bindTooltip(
+            marker_e4c7ea924c9d78a8a354cf9ebe244fd9.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>영동주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        강원 횡성군 횡성읍 학곡리 480<br>
-        강원 횡성군 횡성읍 경강로 1599<br>
+        <b>상안주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 횡성군 안흥면 상안리 588-70<br>
+        강원 횡성군 안흥면 서동로 1595<br>
         > <b>가격: 1,850 원/리터</b>
         </font>
     
@@ -399,13 +377,57 @@
             );
         
     
-            var marker_a9f490395a02d83dbf07d7f593252296 = L.marker(
-                [37.52594370167533, 128.21727809042363],
+            var marker_601b6205246f5c8b62d7256b3b4d194c = L.marker(
+                [37.558524726121014, 128.10806713889858],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_a9f490395a02d83dbf07d7f593252296.bindTooltip(
+            marker_601b6205246f5c8b62d7256b3b4d194c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동횡성농협갑천지점</b><br>
+        <b>농협알뜰</b><br>
+        강원 횡성군 갑천면 율동리 61-1<br>
+        강원 횡성군 갑천면 청정로 323<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_55610c6e6e3d3e492435482fd379e922 = L.marker(
+                [37.44558094916467, 128.0781673723106],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_55610c6e6e3d3e492435482fd379e922.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>뉴새말주유소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 횡성군 우천면 우항리 459-2<br>
+        강원 횡성군 우천면 전재로 50<br>
+        > <b>가격: 1,855 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d39eac347408802d0d26f7eb7654b762 = L.marker(
+                [37.52594370167533, 128.21727809042363],
+                {}
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
+        
+    
+            marker_d39eac347408802d0d26f7eb7654b762.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,35 +443,13 @@
             );
         
     
-            var marker_d2533cd8c17d8182d281b5828aabf4f8 = L.marker(
-                [37.511213827328305, 128.21588324709063],
-                {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
-        
-    
-            marker_d2533cd8c17d8182d281b5828aabf4f8.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>둔내농협주유소</b><br>
-        <b>S-OIL</b><br>
-        강원 횡성군 둔내면 자포곡리456-13<br>
-        강원 횡성군 둔내면 둔내로48번길 15<br>
-        > <b>가격: 1,860 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_93694f12431d84f84686314e5a2c5d83 = L.marker(
+            var marker_e52cf671cbd67765a29a34c18349b4da = L.marker(
                 [37.51400484600231, 128.21328914422784],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_93694f12431d84f84686314e5a2c5d83.bindTooltip(
+            marker_e52cf671cbd67765a29a34c18349b4da.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +465,13 @@
             );
         
     
-            var marker_9f1c79c03534940c610b98a0c26502e5 = L.marker(
+            var marker_8f95c1912489eea9689bc52818e4cd39 = L.marker(
                 [37.40968308436901, 128.1530179352847],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_9f1c79c03534940c610b98a0c26502e5.bindTooltip(
+            marker_8f95c1912489eea9689bc52818e4cd39.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_757f1269ead5d83e7f5e73e3a8bedad9 = L.marker(
-                [37.55466601780315, 128.0984101162747],
+            var marker_80bcbe36c120a4410d1ada478ec21996 = L.marker(
+                [37.511213827328305, 128.21588324709063],
                 {}
-            ).addTo(map_96f1f49049c535396f5ee7917e4f8cba);
+            ).addTo(map_a022ceb213c31400c35207c910defb4b);
         
     
-            marker_757f1269ead5d83e7f5e73e3a8bedad9.bindTooltip(
+            marker_80bcbe36c120a4410d1ada478ec21996.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>갑천주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 횡성군 갑천면 포동리 513-2<br>
-        강원 횡성군 갑천면 청정로 171<br>
-        > <b>가격: 1,865 원/리터</b>
+        <b>둔내농협주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 횡성군 둔내면 자포곡리456-13<br>
+        강원 횡성군 둔내면 둔내로48번길 15<br>
+        > <b>가격: 1,860 원/리터</b>
         </font>
     
                  </div>`,
