@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e8554ed20dcae622438df8d971860e2a {
+                #map_2a0e16fbdb377bce825a7471230080e5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e8554ed20dcae622438df8d971860e2a" ></div>
+            <div class="folium-map" id="map_2a0e16fbdb377bce825a7471230080e5" ></div>
         
 </body>
 <script>    
     
-            var map_e8554ed20dcae622438df8d971860e2a = L.map(
-                "map_e8554ed20dcae622438df8d971860e2a",
+            var map_2a0e16fbdb377bce825a7471230080e5 = L.map(
+                "map_2a0e16fbdb377bce825a7471230080e5",
                 {
-                    center: [35.84987330568441, 128.6340479730658],
+                    center: [35.85042393047825, 128.63476520767074],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_465806b31bab0d5a5e6f6724358dd1ae = L.tileLayer(
+            var tile_layer_642f2342110d7989b117ca68fe8c4f18 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            var locate_control_ce52066c10e9e2be673a26069af94168 = L.control.locate(
+            var locate_control_48607d040ff8102526b9ea13a4beb36d = L.control.locate(
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
             
         
     
-            var marker_95ac1462ba48fdf84cb31afff5f1d690 = L.marker(
-                [35.847363924334815, 128.60982730969897],
+            var marker_33915841bd979d163da3f56e793c38f4 = L.marker(
+                [35.86696954931535, 128.63601517658654],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_95ac1462ba48fdf84cb31afff5f1d690.bindTooltip(
+            marker_33915841bd979d163da3f56e793c38f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태영주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 수성구 범어동 428-13<br>
+        대구 수성구 국채보상로 964 (범어동)<br>
+        > <b>가격: 1,469 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_af142fe8d77d28b5e7af6fb0a9cdc1b8 = L.marker(
+                [35.847363924334815, 128.60982730969897],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_af142fe8d77d28b5e7af6fb0a9cdc1b8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -83,7 +105,7 @@
         <b>GS칼텍스</b><br>
         대구 수성구 중동 537-21<br>
         대구 수성구 희망로 101-1 (중동)<br>
-        > <b>가격: 1,484 원/리터</b>
+        > <b>가격: 1,474 원/리터</b>
         </font>
     
                  </div>`,
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_77c63513c81e02f6c7315a14af9c24b9 = L.marker(
-                [35.82636651612914, 128.6440745246293],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_77c63513c81e02f6c7315a14af9c24b9.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>문화주유소</b><br>
-        <b>자영알뜰</b><br>
-        대구 수성구 지산동 103<br>
-        대구 수성구 청호로 93 (지산동)<br>
-        > <b>가격: 1,485 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_13d3b5f4d0ac61aa2104208b77ab866f = L.marker(
-                [35.82879951423552, 128.60978877223855],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_13d3b5f4d0ac61aa2104208b77ab866f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>버디클럽오일뱅크</b><br>
-        <b>현대오일뱅크</b><br>
-        대구 수성구 상동 611-8<br>
-        대구 수성구 무학로 12 (상동)<br>
-        > <b>가격: 1,485 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f77d731a535449486473a34ad9b9fdd4 = L.marker(
+            var marker_0f0218b0756df74d65af96ff3f626f02 = L.marker(
                 [35.84522571636663, 128.67546047625038],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_f77d731a535449486473a34ad9b9fdd4.bindTooltip(
+            marker_0f0218b0756df74d65af96ff3f626f02.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -149,6 +127,94 @@
         <b>자영알뜰</b><br>
         대구 수성구 연호동 154-94<br>
         대구 수성구  달구벌대로 2899 (연호동)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6dbfec62667dcea934f9fbd138b014dc = L.marker(
+                [35.86811173393104, 128.6313252183978],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_6dbfec62667dcea934f9fbd138b014dc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>메트로팔레스주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 수성구 만촌동 414-18<br>
+        대구 수성구 화랑로 20 (만촌동)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e5ca24ccb1858cc08a31a4cb8c22f5c = L.marker(
+                [35.82636651612914, 128.6440745246293],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_0e5ca24ccb1858cc08a31a4cb8c22f5c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>문화주유소</b><br>
+        <b>자영알뜰</b><br>
+        대구 수성구 지산동 103<br>
+        대구 수성구 청호로 93 (지산동)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30c817f01d0bef0d37c06be778008ff8 = L.marker(
+                [35.87624290512444, 128.64468104094848],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_30c817f01d0bef0d37c06be778008ff8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥구석유(주)만촌주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 수성구 만촌동 1331-14<br>
+        대구 수성구 화랑로 170 (만촌동)<br>
+        > <b>가격: 1,475 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35f02f60b9daefa00d8905182a583c5e = L.marker(
+                [35.8262187040409, 128.62611575133664],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_35f02f60b9daefa00d8905182a583c5e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한결주유소</b><br>
+        <b>S-OIL</b><br>
+        대구 수성구 두산동 740-9<br>
+        대구 수성구 지범로 50<br>
         > <b>가격: 1,485 원/리터</b>
         </font>
     
@@ -157,13 +223,79 @@
             );
         
     
-            var marker_567342e2c4707c0cc25d9256f3a8ae1d = L.marker(
-                [35.84788065527108, 128.61331167082872],
+            var marker_5a4f1438b4bc10d1a96dea046d79694c = L.marker(
+                [35.83675534874329, 128.624361260434],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_567342e2c4707c0cc25d9256f3a8ae1d.bindTooltip(
+            marker_5a4f1438b4bc10d1a96dea046d79694c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수성현대셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        대구 수성구 지산동 997-2<br>
+        대구 수성구 동대구로 74 (지산동)<br>
+        > <b>가격: 1,485 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40366ed90bcd3421964e424263c517e4 = L.marker(
+                [35.83999445708058, 128.61849774705303],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_40366ed90bcd3421964e424263c517e4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥구석유(주)동신주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 수성구 두산동 8<br>
+        대구 수성구 청수로 94<br>
+        > <b>가격: 1,485 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0789ace59432d66d8e08c17bced8e56a = L.marker(
+                [35.83269784515089, 128.60710689545675],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_0789ace59432d66d8e08c17bced8e56a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>수성착한주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 수성구 상동 208<br>
+        대구 수성구 신천동로 85<br>
+        > <b>가격: 1,485 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8056c95ba6849b5eab02d7a1cfc60594 = L.marker(
+                [35.84788065527108, 128.61331167082872],
+                {}
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
+        
+    
+            marker_8056c95ba6849b5eab02d7a1cfc60594.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +311,13 @@
             );
         
     
-            var marker_615a048bc848f7ed6e0444f51ded6ad5 = L.marker(
+            var marker_8d634b9d79ab6ab4abb4534a3bddeed2 = L.marker(
                 [35.84288126177339, 128.67860997014225],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_615a048bc848f7ed6e0444f51ded6ad5.bindTooltip(
+            marker_8d634b9d79ab6ab4abb4534a3bddeed2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,21 +333,21 @@
             );
         
     
-            var marker_ecbdaba6abd3ad15e855f1fbd644276c = L.marker(
-                [35.86696954931535, 128.63601517658654],
+            var marker_150d7c880ec5b429b013bc72090c9ffe = L.marker(
+                [35.82879951423552, 128.60978877223855],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_ecbdaba6abd3ad15e855f1fbd644276c.bindTooltip(
+            marker_150d7c880ec5b429b013bc72090c9ffe.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>태영주유소</b><br>
+        <b>버디클럽오일뱅크</b><br>
         <b>현대오일뱅크</b><br>
-        대구 수성구 범어동 428-13<br>
-        대구 수성구 국채보상로 964 (범어동)<br>
-        > <b>가격: 1,489 원/리터</b>
+        대구 수성구 상동 611-8<br>
+        대구 수성구 무학로 12 (상동)<br>
+        > <b>가격: 1,485 원/리터</b>
         </font>
     
                  </div>`,
@@ -223,13 +355,13 @@
             );
         
     
-            var marker_9a9c781ef2d3358d598de8d5d26ad39e = L.marker(
+            var marker_3de479a1f22b939f67b17bab19442533 = L.marker(
                 [35.8778574554047, 128.64946956438928],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_9a9c781ef2d3358d598de8d5d26ad39e.bindTooltip(
+            marker_3de479a1f22b939f67b17bab19442533.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +377,13 @@
             );
         
     
-            var marker_e866add4e924e3241171f68ca82c0420 = L.marker(
+            var marker_b67c405e789d7b2e59ce91f4a41a67f0 = L.marker(
                 [35.85694572630006, 128.64950673785586],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_e866add4e924e3241171f68ca82c0420.bindTooltip(
+            marker_b67c405e789d7b2e59ce91f4a41a67f0.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,57 +399,13 @@
             );
         
     
-            var marker_15a5f0c6ee0e1f0fcaff821a8c030eb8 = L.marker(
-                [35.86811173393104, 128.6313252183978],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_15a5f0c6ee0e1f0fcaff821a8c030eb8.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>메트로팔레스주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        대구 수성구 만촌동 414-18<br>
-        대구 수성구 화랑로 20 (만촌동)<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8153375e996793e5a0615947603cc815 = L.marker(
-                [35.8262187040409, 128.62611575133664],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_8153375e996793e5a0615947603cc815.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>한결주유소</b><br>
-        <b>S-OIL</b><br>
-        대구 수성구 두산동 740-9<br>
-        대구 수성구 지범로 50<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_919f7ed156dcd0ce6ca78d3ccdba7132 = L.marker(
+            var marker_a0a3f72455ed08de1ae3e04c56765311 = L.marker(
                 [35.839190860449534, 128.62571977788267],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_919f7ed156dcd0ce6ca78d3ccdba7132.bindTooltip(
+            marker_a0a3f72455ed08de1ae3e04c56765311.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,79 +421,13 @@
             );
         
     
-            var marker_9b5ba9ff111afa497a49b30198c5cea5 = L.marker(
-                [35.83269784515089, 128.60710689545675],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_9b5ba9ff111afa497a49b30198c5cea5.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>수성착한주유소</b><br>
-        <b>GS칼텍스</b><br>
-        대구 수성구 상동 208<br>
-        대구 수성구 신천동로 85<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_239ee2ab1c476bdcb9b96829c23768a3 = L.marker(
-                [35.87624290512444, 128.64468104094848],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_239ee2ab1c476bdcb9b96829c23768a3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>흥구석유(주)만촌주유소</b><br>
-        <b>GS칼텍스</b><br>
-        대구 수성구 만촌동 1331-14<br>
-        대구 수성구 화랑로 170 (만촌동)<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1f1f25aa713ce04457894c3b88474676 = L.marker(
-                [35.83999445708058, 128.61849774705303],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_1f1f25aa713ce04457894c3b88474676.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>흥구석유(주)동신주유소</b><br>
-        <b>GS칼텍스</b><br>
-        대구 수성구 두산동 8<br>
-        대구 수성구 청수로 94<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4a7b65de0476c26a32c70bc813a8eeb6 = L.marker(
+            var marker_c39fa79fa7c8781f731aef9779880778 = L.marker(
                 [35.86500109314642, 128.6492681230669],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_4a7b65de0476c26a32c70bc813a8eeb6.bindTooltip(
+            marker_c39fa79fa7c8781f731aef9779880778.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +443,13 @@
             );
         
     
-            var marker_5da27d3d287e4d8aa47f3397ff43101c = L.marker(
+            var marker_6e48248f8cfce8ea5819807bfda99bdd = L.marker(
                 [35.85926000852764, 128.63151352710165],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_5da27d3d287e4d8aa47f3397ff43101c.bindTooltip(
+            marker_6e48248f8cfce8ea5819807bfda99bdd.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,35 +465,13 @@
             );
         
     
-            var marker_11debf9abc24b0c1524dd5f5b4e1c4b1 = L.marker(
-                [35.850361606218904, 128.62456224674727],
-                {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
-        
-    
-            marker_11debf9abc24b0c1524dd5f5b4e1c4b1.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>사랑가득주유소</b><br>
-        <b>GS칼텍스</b><br>
-        대구 수성구 황금동 670-1<br>
-        대구 수성구 동대구로 221 (황금동)<br>
-        > <b>가격: 1,499 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_cb356165f91da16810d22214809390eb = L.marker(
+            var marker_b12696d80f47245b78ca14713135827e = L.marker(
                 [35.874353728020736, 128.6460883623699],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_cb356165f91da16810d22214809390eb.bindTooltip(
+            marker_b12696d80f47245b78ca14713135827e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_b0f344ba03f9c0e6a6c362f98b32ed53 = L.marker(
-                [35.82574285286643, 128.61001656833463],
+            var marker_f8ac02270d29a39e056f9bd3ada74d31 = L.marker(
+                [35.850361606218904, 128.62456224674727],
                 {}
-            ).addTo(map_e8554ed20dcae622438df8d971860e2a);
+            ).addTo(map_2a0e16fbdb377bce825a7471230080e5);
         
     
-            marker_b0f344ba03f9c0e6a6c362f98b32ed53.bindTooltip(
+            marker_f8ac02270d29a39e056f9bd3ada74d31.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>수성주유소</b><br>
-        <b>SK에너지</b><br>
-        대구 수성구 상동 623-11<br>
-        대구 수성구 수성로 1 (상동)<br>
-        > <b>가격: 1,514 원/리터</b>
+        <b>사랑가득주유소</b><br>
+        <b>GS칼텍스</b><br>
+        대구 수성구 황금동 670-1<br>
+        대구 수성구 동대구로 221 (황금동)<br>
+        > <b>가격: 1,499 원/리터</b>
         </font>
     
                  </div>`,

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_920cc2f0e0cdd0a1f4165f9364b0bcbb {
+                #map_41567f2cf65715a85e7fa9f80d26bc0c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_920cc2f0e0cdd0a1f4165f9364b0bcbb" ></div>
+            <div class="folium-map" id="map_41567f2cf65715a85e7fa9f80d26bc0c" ></div>
         
 </body>
 <script>    
     
-            var map_920cc2f0e0cdd0a1f4165f9364b0bcbb = L.map(
-                "map_920cc2f0e0cdd0a1f4165f9364b0bcbb",
+            var map_41567f2cf65715a85e7fa9f80d26bc0c = L.map(
+                "map_41567f2cf65715a85e7fa9f80d26bc0c",
                 {
-                    center: [37.18458656094056, 126.95398410577836],
+                    center: [37.18786621430972, 126.95593549497269],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_7718c328eed273ea92c99217a5bfc148 = L.tileLayer(
+            var tile_layer_cc0e664f972de3662df9e40e1c65d56f = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            var locate_control_7c015683c91603c27873c328b9934cff = L.control.locate(
+            var locate_control_e6ed69144f132b3377be3661d994da5f = L.control.locate(
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
             
         
     
-            var marker_d5f155c3a4e99610896dc4abd7c2f48d = L.marker(
-                [37.197554540290334, 127.06548632861488],
+            var marker_a462032927bdd86746e2cc5b102cb8c4 = L.marker(
+                [37.15872318151871, 127.0973898773556],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_d5f155c3a4e99610896dc4abd7c2f48d.bindTooltip(
+            marker_a462032927bdd86746e2cc5b102cb8c4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동탄뉴타운주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 화성시 장지동 194-5<br>
+        경기 화성시 경기동로 234<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7d84fa745c0fae277374bf4fc6865523 = L.marker(
+                [37.197554540290334, 127.06548632861488],
+                {}
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
+        
+    
+            marker_7d84fa745c0fae277374bf4fc6865523.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_9b16fb8ae24ad3b6aa6c7fa1e3b168ab = L.marker(
-                [37.15872318151871, 127.0973898773556],
-                {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
-        
-    
-            marker_9b16fb8ae24ad3b6aa6c7fa1e3b168ab.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>동탄뉴타운주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 화성시 장지동 194-5<br>
-        경기 화성시 경기동로 234<br>
-        > <b>가격: 1,809 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4a1a6608c5d47f35aeb1a57916cbb3cf = L.marker(
-                [37.14781614953202, 126.89241158408765],
-                {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
-        
-    
-            marker_4a1a6608c5d47f35aeb1a57916cbb3cf.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK에너지(주) 서해로셀프주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 화성시 팔탄면 지월리 550-16<br>
-        경기 화성시 팔탄면 서해로 962<br>
-        > <b>가격: 1,838 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ef1d8f437b60c32493c46502681424f7 = L.marker(
+            var marker_61b0b633f6af7382bf22299083d75540 = L.marker(
                 [37.21799266264911, 126.84100618165405],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_ef1d8f437b60c32493c46502681424f7.bindTooltip(
+            marker_61b0b633f6af7382bf22299083d75540.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,35 @@
             );
         
     
-            var marker_d9916b09a38383da2070bedb382ff663 = L.marker(
-                [37.245715267709116, 126.9146706406965],
+            var marker_d8ec045b9e3815dd349125e626a70d9c = L.marker(
+                [37.14781614953202, 126.89241158408765],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_d9916b09a38383da2070bedb382ff663.bindTooltip(
+            marker_d8ec045b9e3815dd349125e626a70d9c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK에너지(주) 서해로셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 화성시 팔탄면 지월리 550-16<br>
+        경기 화성시 팔탄면 서해로 962<br>
+        > <b>가격: 1,838 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_44056f5b8049e2020384f0bb8df12510 = L.marker(
+                [37.245715267709116, 126.9146706406965],
+                {}
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
+        
+    
+            marker_44056f5b8049e2020384f0bb8df12510.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +179,13 @@
             );
         
     
-            var marker_69cddd9a7afa0267ef978ca49fa3f518 = L.marker(
+            var marker_5d88e923956ca58def53b2e8e65d9f73 = L.marker(
                 [37.192461146007055, 126.83917431439204],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_69cddd9a7afa0267ef978ca49fa3f518.bindTooltip(
+            marker_5d88e923956ca58def53b2e8e65d9f73.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +201,13 @@
             );
         
     
-            var marker_9f9f4b345ed435071cfcbb778b6a0a5b = L.marker(
+            var marker_db9fa82bc76b016d8a3001db59c8d531 = L.marker(
                 [37.22067306149654, 126.97582965371191],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_9f9f4b345ed435071cfcbb778b6a0a5b.bindTooltip(
+            marker_db9fa82bc76b016d8a3001db59c8d531.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_3f607df0745e6da07e68a2b471c7ae7d = L.marker(
+            var marker_9163e4f07f789ecd44e4d06540ecfd28 = L.marker(
                 [37.21478526682072, 127.05319605808921],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_3f607df0745e6da07e68a2b471c7ae7d.bindTooltip(
+            marker_9163e4f07f789ecd44e4d06540ecfd28.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +245,13 @@
             );
         
     
-            var marker_a001d0582e0044b3f55ef022f58462db = L.marker(
+            var marker_f70fbf898b1b4a8b3ce777d7cc44c7f5 = L.marker(
                 [37.211491504977026, 126.75725002717277],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_a001d0582e0044b3f55ef022f58462db.bindTooltip(
+            marker_f70fbf898b1b4a8b3ce777d7cc44c7f5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +267,13 @@
             );
         
     
-            var marker_ee6a5c82daf1a4d87fa527f6cf9b00ee = L.marker(
+            var marker_413391a1d38b181dd2b12204b3abd9fd = L.marker(
                 [37.12493044144549, 126.98412577126636],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_ee6a5c82daf1a4d87fa527f6cf9b00ee.bindTooltip(
+            marker_413391a1d38b181dd2b12204b3abd9fd.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_d72b327ac3713930573ca6b895b34735 = L.marker(
+            var marker_abe42fbe85e0616afba33b45cdd796c8 = L.marker(
                 [37.18475661545447, 126.93854597751805],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_d72b327ac3713930573ca6b895b34735.bindTooltip(
+            marker_abe42fbe85e0616afba33b45cdd796c8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,13 @@
             );
         
     
-            var marker_321fefb2e17998d8f4a03d2a424dba8d = L.marker(
+            var marker_b682965bf661014ed12b892d57123220 = L.marker(
                 [37.065019560696136, 126.79675427953711],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_321fefb2e17998d8f4a03d2a424dba8d.bindTooltip(
+            marker_b682965bf661014ed12b892d57123220.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +333,13 @@
             );
         
     
-            var marker_85aee293e8a2e39ec585ad5d8c9ffc56 = L.marker(
+            var marker_3c634fe147e5b20b42b22e43711f9a44 = L.marker(
                 [37.224969394444386, 127.06362743042678],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_85aee293e8a2e39ec585ad5d8c9ffc56.bindTooltip(
+            marker_3c634fe147e5b20b42b22e43711f9a44.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +355,13 @@
             );
         
     
-            var marker_67c818c73ee4a19548260d4529e7012c = L.marker(
+            var marker_9271a95cad08fdadf142219f2b3a39f9 = L.marker(
                 [37.18457735370073, 127.10614377425874],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_67c818c73ee4a19548260d4529e7012c.bindTooltip(
+            marker_9271a95cad08fdadf142219f2b3a39f9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +377,13 @@
             );
         
     
-            var marker_fff1c3dd2e3f274f979240f77592d059 = L.marker(
+            var marker_3d49701256de1d5c37b69c8abcfebd31 = L.marker(
                 [37.225196494558986, 126.95401642826845],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_fff1c3dd2e3f274f979240f77592d059.bindTooltip(
+            marker_3d49701256de1d5c37b69c8abcfebd31.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,35 +399,13 @@
             );
         
     
-            var marker_153ca022394174d70bf70e03d9fbdf04 = L.marker(
-                [37.177332082781426, 126.8160067034716],
-                {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
-        
-    
-            marker_153ca022394174d70bf70e03d9fbdf04.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>신남스타주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 화성시 남양읍 신남리 488-5<br>
-        경기 화성시 남양읍 남양로 409<br>
-        > <b>가격: 1,898 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_eedcbf52633648d8306dd14590ca39fd = L.marker(
+            var marker_e21b79b3045409db06445c5e25bf1a2e = L.marker(
                 [37.13609528918682, 126.89455038884991],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_eedcbf52633648d8306dd14590ca39fd.bindTooltip(
+            marker_e21b79b3045409db06445c5e25bf1a2e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +421,35 @@
             );
         
     
-            var marker_3007e65711a82cd63cf8c5d10f550a93 = L.marker(
-                [37.19869617289713, 127.05943450911451],
+            var marker_91ec2942ef2bf1cf635fab2e43bcf931 = L.marker(
+                [37.177332082781426, 126.8160067034716],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_3007e65711a82cd63cf8c5d10f550a93.bindTooltip(
+            marker_91ec2942ef2bf1cf635fab2e43bcf931.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신남스타주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 화성시 남양읍 신남리 488-5<br>
+        경기 화성시 남양읍 남양로 409<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5045890f396e8ad4587f0697741d14f9 = L.marker(
+                [37.19869617289713, 127.05943450911451],
+                {}
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
+        
+    
+            marker_5045890f396e8ad4587f0697741d14f9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +465,13 @@
             );
         
     
-            var marker_8a4ace6362d3112fdfbf53510e58349e = L.marker(
+            var marker_9e3872fc817bb876ee7e8aa08d39dfbc = L.marker(
                 [37.223704305202496, 127.07415296815053],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_8a4ace6362d3112fdfbf53510e58349e.bindTooltip(
+            marker_9e3872fc817bb876ee7e8aa08d39dfbc.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_2b94b53b7ce91061d07dc9d51befaacf = L.marker(
-                [37.13924072744244, 126.9559092189307],
+            var marker_d6f1713cdc6db3f685525e50533beaf0 = L.marker(
+                [37.20483379482568, 126.99493700281728],
                 {}
-            ).addTo(map_920cc2f0e0cdd0a1f4165f9364b0bcbb);
+            ).addTo(map_41567f2cf65715a85e7fa9f80d26bc0c);
         
     
-            marker_2b94b53b7ce91061d07dc9d51befaacf.bindTooltip(
+            marker_d6f1713cdc6db3f685525e50533beaf0.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>21세기주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 화성시 향남읍 동오리 79-4<br>
-        경기 화성시 향남읍 서봉로 713<br>
-        > <b>가격: 1,915 원/리터</b>
+        <b>현대오일뱅크(주)직영 태안현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 화성시 태안읍 안녕리 170-104<br>
+        경기 화성시 효행로 568 (안녕동)<br>
+        > <b>가격: 1,913 원/리터</b>
         </font>
     
                  </div>`,
