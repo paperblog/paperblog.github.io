@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_672fb11c0fb983f05b8b0c72bb54acec {
+                #map_8787b0df7e120802a1c0e33b1f6c96be {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_672fb11c0fb983f05b8b0c72bb54acec" ></div>
+            <div class="folium-map" id="map_8787b0df7e120802a1c0e33b1f6c96be" ></div>
         
 </body>
 <script>    
     
-            var map_672fb11c0fb983f05b8b0c72bb54acec = L.map(
-                "map_672fb11c0fb983f05b8b0c72bb54acec",
+            var map_8787b0df7e120802a1c0e33b1f6c96be = L.map(
+                "map_8787b0df7e120802a1c0e33b1f6c96be",
                 {
-                    center: [36.66986172928341, 127.47756274666456],
+                    center: [36.67050150084554, 127.47944631237051],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_7e5fa093d9630537da4816caa5fc1d7f = L.tileLayer(
+            var tile_layer_9d7bfe32f2d7478b0e74ba6ec0bbb81a = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            var locate_control_4fe0bdc6a375bc02583539cfbbb42644 = L.control.locate(
+            var locate_control_264f61a5e01475244a4938dc6c4c09dd = L.control.locate(
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
             
         
     
-            var marker_39688a84d7710aea2735837a76e8134e = L.marker(
-                [37.06676999591132, 127.6409085634319],
+            var marker_7d0cb4cf8cbb7a0298c820403918b454 = L.marker(
+                [36.871027986766315, 127.43248658493445],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_39688a84d7710aea2735837a76e8134e.bindTooltip(
+            marker_7d0cb4cf8cbb7a0298c820403918b454.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>박물관주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 진천군 진천읍 장관리 357-9<br>
+        충북 진천군 진천읍 생거진천로 1399<br>
+        > <b>가격: 1,790 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e910304fc2700024307cd86ad3155148 = L.marker(
+                [37.06676999591132, 127.6409085634319],
+                {}
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
+        
+    
+            marker_e910304fc2700024307cd86ad3155148.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_11fac444692db9f435624484d4e689a7 = L.marker(
-                [36.6271241631631, 127.42722325356054],
-                {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
-        
-    
-            marker_11fac444692db9f435624484d4e689a7.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>현대오일뱅크(주)직영 청주현대주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 청주시 흥덕구 강서동 14-10<br>
-        충북 청주시 흥덕구 가로수로 1174 (강서동)<br>
-        > <b>가격: 1,839 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0910fc65c71106e7fb368bf9993ce16a = L.marker(
-                [36.64343294836253, 127.45719908131717],
-                {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
-        
-    
-            marker_0910fc65c71106e7fb368bf9993ce16a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>현대오일뱅크㈜직영 서원경주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 청주시 흥덕구 봉명동 1614<br>
-        충북 청주시 흥덕구 직지대로 579 (봉명동)<br>
-        > <b>가격: 1,839 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_fa7815564c6a9ee1aae64b8e06838553 = L.marker(
+            var marker_bd4f20f1fdbc1f1077b60013b325bfad = L.marker(
                 [36.643053213407086, 127.46836350444167],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_fa7815564c6a9ee1aae64b8e06838553.bindTooltip(
+            marker_bd4f20f1fdbc1f1077b60013b325bfad.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,57 @@
             );
         
     
-            var marker_b47e5d7d64205fb2984bc05897692a27 = L.marker(
-                [36.63507279137769, 127.45714361013376],
+            var marker_f12f2b8f6d0cb2eda0d45fd56b540869 = L.marker(
+                [36.6271241631631, 127.42722325356054],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_b47e5d7d64205fb2984bc05897692a27.bindTooltip(
+            marker_f12f2b8f6d0cb2eda0d45fd56b540869.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크(주)직영 청주현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 강서동 14-10<br>
+        충북 청주시 흥덕구 가로수로 1174 (강서동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_480dc16456ec292b1728f681cb330a64 = L.marker(
+                [36.64343294836253, 127.45719908131717],
+                {}
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
+        
+    
+            marker_480dc16456ec292b1728f681cb330a64.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 서원경주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 청주시 흥덕구 봉명동 1614<br>
+        충북 청주시 흥덕구 직지대로 579 (봉명동)<br>
+        > <b>가격: 1,839 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54cd45243f916de00df33ac5287ffb4b = L.marker(
+                [36.63507279137769, 127.45714361013376],
+                {}
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
+        
+    
+            marker_54cd45243f916de00df33ac5287ffb4b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +201,13 @@
             );
         
     
-            var marker_8ee3b893dc6d1f2defa0e15a3944cb4a = L.marker(
+            var marker_c37f3d4e62fb2230a5f4495d05f42d26 = L.marker(
                 [36.6337673000658, 127.44345039698848],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_8ee3b893dc6d1f2defa0e15a3944cb4a.bindTooltip(
+            marker_c37f3d4e62fb2230a5f4495d05f42d26.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +223,13 @@
             );
         
     
-            var marker_518aecde5b2dbe3de3f29004adf13e4a = L.marker(
+            var marker_475d173b30fe8e4b90301ce94d18404d = L.marker(
                 [36.67780210065882, 127.48303306384929],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_518aecde5b2dbe3de3f29004adf13e4a.bindTooltip(
+            marker_475d173b30fe8e4b90301ce94d18404d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +245,13 @@
             );
         
     
-            var marker_adc85b51094bb1255011271325a840f0 = L.marker(
+            var marker_13c8e94d2466881de91b795fb1c4174f = L.marker(
                 [36.602649275648396, 127.47885376411045],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_adc85b51094bb1255011271325a840f0.bindTooltip(
+            marker_13c8e94d2466881de91b795fb1c4174f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +267,13 @@
             );
         
     
-            var marker_4171c47b9da6344fdb99bf63ad780b27 = L.marker(
+            var marker_de39ef02943de1ca8c85c872990884a9 = L.marker(
                 [36.659471668257076, 127.43543243448804],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_4171c47b9da6344fdb99bf63ad780b27.bindTooltip(
+            marker_de39ef02943de1ca8c85c872990884a9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +289,13 @@
             );
         
     
-            var marker_9e790be5730d8557d507666f5b5e2de4 = L.marker(
+            var marker_27ae9c9bfb5ddbb32db65f7a9a81dd35 = L.marker(
                 [36.66805357768613, 127.50458814548112],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_9e790be5730d8557d507666f5b5e2de4.bindTooltip(
+            marker_27ae9c9bfb5ddbb32db65f7a9a81dd35.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +311,13 @@
             );
         
     
-            var marker_ef282e2de740879b5b6595052abd7124 = L.marker(
+            var marker_10fdfe5ca2fe0b9df5ccf2e01ee78b67 = L.marker(
                 [36.63852290026003, 127.42946029315024],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_ef282e2de740879b5b6595052abd7124.bindTooltip(
+            marker_10fdfe5ca2fe0b9df5ccf2e01ee78b67.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +333,13 @@
             );
         
     
-            var marker_96c46619f4f0fa280b9a989a0dd14b14 = L.marker(
+            var marker_e3e856a81a0292111bbac7c0007dc842 = L.marker(
                 [36.61302001923094, 127.50033441775538],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_96c46619f4f0fa280b9a989a0dd14b14.bindTooltip(
+            marker_e3e856a81a0292111bbac7c0007dc842.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +355,13 @@
             );
         
     
-            var marker_98cd755fd591ad8b1cc4caf3055df29f = L.marker(
+            var marker_9bc79bacde0a87c32ce86342efc8ed1a = L.marker(
                 [36.59903572566729, 127.47276419590655],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_98cd755fd591ad8b1cc4caf3055df29f.bindTooltip(
+            marker_9bc79bacde0a87c32ce86342efc8ed1a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +377,13 @@
             );
         
     
-            var marker_f1e54396f3fc435b03c73984e1c05399 = L.marker(
+            var marker_2ff7c8eea97442386f4d43d4f9b41a07 = L.marker(
                 [36.537249279804904, 127.50467682560098],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_f1e54396f3fc435b03c73984e1c05399.bindTooltip(
+            marker_2ff7c8eea97442386f4d43d4f9b41a07.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +399,13 @@
             );
         
     
-            var marker_56d7dfcf4c3dba071551bcdd742268da = L.marker(
+            var marker_5585329d250ab967ce93fb845dae5370 = L.marker(
                 [36.61673267353094, 127.4243004744561],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_56d7dfcf4c3dba071551bcdd742268da.bindTooltip(
+            marker_5585329d250ab967ce93fb845dae5370.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,35 +421,13 @@
             );
         
     
-            var marker_1f4d46763f90d524173f4d3cb1841810 = L.marker(
-                [36.871027986766315, 127.43248658493445],
-                {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
-        
-    
-            marker_1f4d46763f90d524173f4d3cb1841810.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>박물관주유소</b><br>
-        <b>SK에너지</b><br>
-        충북 진천군 진천읍 장관리 357-9<br>
-        충북 진천군 진천읍 생거진천로 1399<br>
-        > <b>가격: 1,880 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_06eea8b0f30f6cbf44ba3e6669326f55 = L.marker(
+            var marker_bf8bfc4f99e67bba8301afff61eb7d40 = L.marker(
                 [36.658042581972744, 127.48819618118439],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_06eea8b0f30f6cbf44ba3e6669326f55.bindTooltip(
+            marker_bf8bfc4f99e67bba8301afff61eb7d40.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,20 +443,20 @@
             );
         
     
-            var marker_9387b9cc575d3474828e7bfd63a9ffea = L.marker(
-                [36.61572286375968, 127.46996786107037],
+            var marker_b2e0864ff423851830d1e56d460b81e6 = L.marker(
+                [36.628518295002074, 127.5076391751897],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_9387b9cc575d3474828e7bfd63a9ffea.bindTooltip(
+            marker_b2e0864ff423851830d1e56d460b81e6.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>SK에너지(주) 해피스테이션셀프주유소</b><br>
+        <b>SK에너지(주) 용암주유소</b><br>
         <b>SK에너지</b><br>
-        충북 청주시 서원구 산남동 334-7<br>
-        충북 청주시 서원구 구룡산로 217 (산남동)<br>
+        충북 청주시 상당구 금천동 220-14<br>
+        충북 청주시 상당구 중고개로 295 (금천동)<br>
         > <b>가격: 1,889 원/리터</b>
         </font>
     
@@ -465,13 +465,13 @@
             );
         
     
-            var marker_8309b08d3a8447c8ef415cd9e58c4a5e = L.marker(
+            var marker_81cf3775cc33a2e24e1c773468c597bb = L.marker(
                 [36.67877929789643, 127.49892896520038],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_8309b08d3a8447c8ef415cd9e58c4a5e.bindTooltip(
+            marker_81cf3775cc33a2e24e1c773468c597bb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,13 +487,13 @@
             );
         
     
-            var marker_e0b739a3c9fc154809776779764c9dd1 = L.marker(
+            var marker_b79d3b7e4735f79b2ac93c0fcba8af06 = L.marker(
                 [36.7119042222412, 127.53394331622985],
                 {}
-            ).addTo(map_672fb11c0fb983f05b8b0c72bb54acec);
+            ).addTo(map_8787b0df7e120802a1c0e33b1f6c96be);
         
     
-            marker_e0b739a3c9fc154809776779764c9dd1.bindTooltip(
+            marker_b79d3b7e4735f79b2ac93c0fcba8af06.bindTooltip(
                 `<div>
                      
         <font size=3>
