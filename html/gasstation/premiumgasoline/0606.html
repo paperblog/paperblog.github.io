@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_52e7f7f4fe012e5c9c3b8be328da905c {
+                #map_057aca4f8642c45fc28139c614bc5829 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_52e7f7f4fe012e5c9c3b8be328da905c" ></div>
+            <div class="folium-map" id="map_057aca4f8642c45fc28139c614bc5829" ></div>
         
 </body>
 <script>    
     
-            var map_52e7f7f4fe012e5c9c3b8be328da905c = L.map(
-                "map_52e7f7f4fe012e5c9c3b8be328da905c",
+            var map_057aca4f8642c45fc28139c614bc5829 = L.map(
+                "map_057aca4f8642c45fc28139c614bc5829",
                 {
                     center: [35.84606499907203, 126.93878948268281],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_5ce103dc90ffca75db462294e3e1e184 = L.tileLayer(
+            var tile_layer_8f4cc7d1c85681aa76c429eb665e41fb = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_52e7f7f4fe012e5c9c3b8be328da905c);
+            ).addTo(map_057aca4f8642c45fc28139c614bc5829);
         
     
-            var locate_control_05291456408fbd201e9b8f21c838d040 = L.control.locate(
+            var locate_control_7eba4924ec9abd9f7a970e6bfa8230bf = L.control.locate(
                 {}
-            ).addTo(map_52e7f7f4fe012e5c9c3b8be328da905c);
+            ).addTo(map_057aca4f8642c45fc28139c614bc5829);
             
         
     
-            var marker_85a960ae43cbfea557c81ea14c2f9e71 = L.marker(
-                [35.878372559979475, 126.98871225381087],
+            var marker_24dc9a8ad35ea76a5eae098f8fa7fa64 = L.marker(
+                [35.813757438164586, 126.88886671155475],
                 {}
-            ).addTo(map_52e7f7f4fe012e5c9c3b8be328da905c);
+            ).addTo(map_057aca4f8642c45fc28139c614bc5829);
         
     
-            marker_85a960ae43cbfea557c81ea14c2f9e71.bindTooltip(
+            marker_24dc9a8ad35ea76a5eae098f8fa7fa64.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아라주유소</b><br>
+        <b>SK에너지</b><br>
+        전북 김제시 하동 414-5<br>
+        전북 김제시 하공로 40<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e8c07b1cb4edeb768f2ac1d2c3989622 = L.marker(
+                [35.878372559979475, 126.98871225381087],
+                {}
+            ).addTo(map_057aca4f8642c45fc28139c614bc5829);
+        
+    
+            marker_e8c07b1cb4edeb768f2ac1d2c3989622.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -84,28 +106,6 @@
         전북 김제시 백구면 마산리 417-12<br>
         전북 김제시 백구면 번영로 2773<br>
         > <b>가격: 1,968 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8005d9b7a8ff6e2f77fbc3b2286e0acc = L.marker(
-                [35.813757438164586, 126.88886671155475],
-                {}
-            ).addTo(map_52e7f7f4fe012e5c9c3b8be328da905c);
-        
-    
-            marker_8005d9b7a8ff6e2f77fbc3b2286e0acc.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>아라주유소</b><br>
-        <b>SK에너지</b><br>
-        전북 김제시 하동 414-5<br>
-        전북 김제시 하공로 40<br>
-        > <b>가격: 1,999 원/리터</b>
         </font>
     
                  </div>`,
