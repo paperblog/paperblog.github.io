@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a7778fd58d2b713e67b64e9adbffafbf {
+                #map_3a2ebc22480dc17e0fed07e086f98d1f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a7778fd58d2b713e67b64e9adbffafbf" ></div>
+            <div class="folium-map" id="map_3a2ebc22480dc17e0fed07e086f98d1f" ></div>
         
 </body>
 <script>    
     
-            var map_a7778fd58d2b713e67b64e9adbffafbf = L.map(
-                "map_a7778fd58d2b713e67b64e9adbffafbf",
+            var map_3a2ebc22480dc17e0fed07e086f98d1f = L.map(
+                "map_3a2ebc22480dc17e0fed07e086f98d1f",
                 {
-                    center: [36.79713491753767, 126.4624094986807],
+                    center: [36.79043311215298, 126.46400583418315],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_d195b699c295f79b84fb9d44c49c3125 = L.tileLayer(
+            var tile_layer_714fd20a32484caf2ff7d193cca93e96 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            var locate_control_f448633325964a8fff522a9a17ae91cf = L.control.locate(
+            var locate_control_74c6e1a7ebe5fc872fa2e96d351a76b3 = L.control.locate(
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
             
         
     
-            var marker_623e71b2a2bf729909e61906aa6b07e0 = L.marker(
-                [36.78334097418534, 126.49427252610325],
+            var marker_83d6e1ef98728478f8529ee943e5bba1 = L.marker(
+                [36.78381576727673, 126.46348535956761],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_623e71b2a2bf729909e61906aa6b07e0.bindTooltip(
+            marker_83d6e1ef98728478f8529ee943e5bba1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>애향셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 서산시 동문동 48-4<br>
+        충남 서산시 고운로 254 (동문동)<br>
+        > <b>가격: 1,489 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0108e3a7cb52c84a1ab698f19ed63b85 = L.marker(
+                [36.78334097418534, 126.49427252610325],
+                {}
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
+        
+    
+            marker_0108e3a7cb52c84a1ab698f19ed63b85.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,35 @@
             );
         
     
-            var marker_a64324bfce486dbe438c375480131505 = L.marker(
-                [36.78549453133994, 126.51444875185634],
+            var marker_3b87bef470072cf933bf0bd316bf6a1e = L.marker(
+                [36.76149678185289, 126.46290000308207],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_a64324bfce486dbe438c375480131505.bindTooltip(
+            marker_3b87bef470072cf933bf0bd316bf6a1e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서산제일주유소</b><br>
+        <b>SK에너지</b><br>
+        충남 서산시 석남동 484-6<br>
+        충남 서산시 양열로 149-39<br>
+        > <b>가격: 1,491 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5bba1dcbcb7172a146f13593777d2b17 = L.marker(
+                [36.78549453133994, 126.51444875185634],
+                {}
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
+        
+    
+            marker_5bba1dcbcb7172a146f13593777d2b17.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,13 +157,13 @@
             );
         
     
-            var marker_c4ada88e904af6d16227f24a36380e1e = L.marker(
+            var marker_10382cf2d68a1faf9e4cb7285b4134e9 = L.marker(
                 [36.78602224520957, 126.51397656746015],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_c4ada88e904af6d16227f24a36380e1e.bindTooltip(
+            marker_10382cf2d68a1faf9e4cb7285b4134e9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -135,13 +179,57 @@
             );
         
     
-            var marker_dcd33df7672fcff0c5d05f7251b07b7c = L.marker(
-                [36.78552202184742, 126.47017497906322],
+            var marker_4572ea2b03847a3a7a9636ac483a134c = L.marker(
+                [36.78404358018437, 126.51055163080355],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_dcd33df7672fcff0c5d05f7251b07b7c.bindTooltip(
+            marker_4572ea2b03847a3a7a9636ac483a134c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이웨이주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충남 서산시 음암면 부장리 741-14<br>
+        충남 서산시 음암면 서해로 3986<br>
+        > <b>가격: 1,494 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3cacf8a4fbf1a7820804d6ebc24d7b8d = L.marker(
+                [36.846689285212975, 126.45960318740401],
+                {}
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
+        
+    
+            marker_3cacf8a4fbf1a7820804d6ebc24d7b8d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>오토벨리(주)</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 서산시 지곡면 무장리 1750<br>
+        충남 서산시 지곡면 무장산업로 183<br>
+        > <b>가격: 1,498 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d75064b7c09034e07588042089ec69ff = L.marker(
+                [36.78552202184742, 126.47017497906322],
+                {}
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
+        
+    
+            marker_d75064b7c09034e07588042089ec69ff.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +245,13 @@
             );
         
     
-            var marker_a67ec773ad9e26f92f2b55c4512b6535 = L.marker(
+            var marker_3690cf54d8c2699b002030b9549e5122 = L.marker(
                 [36.782883226353924, 126.4729477591098],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_a67ec773ad9e26f92f2b55c4512b6535.bindTooltip(
+            marker_3690cf54d8c2699b002030b9549e5122.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,35 +267,13 @@
             );
         
     
-            var marker_889df792ee9ca503f064d0e3060655d7 = L.marker(
-                [36.78404358018437, 126.51055163080355],
-                {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
-        
-    
-            marker_889df792ee9ca503f064d0e3060655d7.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>하이웨이주유소</b><br>
-        <b>GS칼텍스</b><br>
-        충남 서산시 음암면 부장리 741-14<br>
-        충남 서산시 음암면 서해로 3986<br>
-        > <b>가격: 1,505 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1e07610b78d0a937cc9140acf4af34ae = L.marker(
+            var marker_1a4d8de01d2d5512838b4418a35524ab = L.marker(
                 [36.76104062101472, 126.48644964923294],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_1e07610b78d0a937cc9140acf4af34ae.bindTooltip(
+            marker_1a4d8de01d2d5512838b4418a35524ab.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +289,13 @@
             );
         
     
-            var marker_bde102db03a39e0046acf00a3e024f67 = L.marker(
+            var marker_adddfcd3d9052dae4ed6865fd5b4c331 = L.marker(
                 [36.75883435412688, 126.4903270914212],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_bde102db03a39e0046acf00a3e024f67.bindTooltip(
+            marker_adddfcd3d9052dae4ed6865fd5b4c331.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +311,13 @@
             );
         
     
-            var marker_151ef96551145cd25ea561ace3c9969a = L.marker(
+            var marker_a53009e1c262e546255349e87b0942c1 = L.marker(
                 [36.770871913507364, 126.3504891772132],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_151ef96551145cd25ea561ace3c9969a.bindTooltip(
+            marker_a53009e1c262e546255349e87b0942c1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,35 +333,13 @@
             );
         
     
-            var marker_795fd02dfeb15daa29a7e761f590737f = L.marker(
-                [36.846689285212975, 126.45960318740401],
-                {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
-        
-    
-            marker_795fd02dfeb15daa29a7e761f590737f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>오토벨리(주)</b><br>
-        <b>현대오일뱅크</b><br>
-        충남 서산시 지곡면 무장리 1750<br>
-        충남 서산시 지곡면 무장산업로 183<br>
-        > <b>가격: 1,509 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ebe36aa408eca534ec3ffcfb0eea3262 = L.marker(
+            var marker_bc8490f880e389654e694d0302c8df71 = L.marker(
                 [36.78796210203939, 126.45752315710963],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_ebe36aa408eca534ec3ffcfb0eea3262.bindTooltip(
+            marker_bc8490f880e389654e694d0302c8df71.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +355,13 @@
             );
         
     
-            var marker_8ec894fda2311289b6fe7211eb0a173a = L.marker(
+            var marker_6932b8e8b07ea91cd4f4cb3e37be1e47 = L.marker(
                 [36.79070006272016, 126.459499518308],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_8ec894fda2311289b6fe7211eb0a173a.bindTooltip(
+            marker_6932b8e8b07ea91cd4f4cb3e37be1e47.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,35 +377,13 @@
             );
         
     
-            var marker_3f78cfa845fe476f9df240326794d9f0 = L.marker(
-                [36.78381576727673, 126.46348535956761],
-                {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
-        
-    
-            marker_3f78cfa845fe476f9df240326794d9f0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>애향셀프주유소</b><br>
-        <b>SK에너지</b><br>
-        충남 서산시 동문동 48-4<br>
-        충남 서산시 고운로 254 (동문동)<br>
-        > <b>가격: 1,511 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_900562a8a678cfd214790ac137eae527 = L.marker(
+            var marker_613ab10b029386041e8046d644546389 = L.marker(
                 [36.905029607730185, 126.44256871961016],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_900562a8a678cfd214790ac137eae527.bindTooltip(
+            marker_613ab10b029386041e8046d644546389.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,21 +399,21 @@
             );
         
     
-            var marker_29acfbbc00a60a5c4b197ab59e244577 = L.marker(
-                [36.777416952619234, 126.45513213962295],
+            var marker_2e8bdedbb03cf903ea0ca9f92dddee1b = L.marker(
+                [36.79997216369484, 126.4705354355947],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_29acfbbc00a60a5c4b197ab59e244577.bindTooltip(
+            marker_2e8bdedbb03cf903ea0ca9f92dddee1b.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>서창셀프주유소</b><br>
+        <b>하늘빛주유소</b><br>
         <b>현대오일뱅크</b><br>
-        충남 서산시 동문동 987-9<br>
-        충남 서산시 안견로 255 (동문동)<br>
-        > <b>가격: 1,528 원/리터</b>
+        충남 서산시 온석동344-1<br>
+        충남 서산시 서령로 249 (온석동)<br>
+        > <b>가격: 1,526 원/리터</b>
         </font>
     
                  </div>`,
@@ -399,13 +421,13 @@
             );
         
     
-            var marker_c4c52b8a0fd755ebbc98602fad095799 = L.marker(
+            var marker_aa4c7796f854fd1b8c9dcc739575ec04 = L.marker(
                 [36.79703038203386, 126.43763798244295],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_c4c52b8a0fd755ebbc98602fad095799.bindTooltip(
+            marker_aa4c7796f854fd1b8c9dcc739575ec04.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,21 +443,21 @@
             );
         
     
-            var marker_109e248769f9d024fd6654aad13867a4 = L.marker(
-                [36.78420819824414, 126.38357967525683],
+            var marker_d06b78d5354814ee6502d6505bcf6cdc = L.marker(
+                [36.777416952619234, 126.45513213962295],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_109e248769f9d024fd6654aad13867a4.bindTooltip(
+            marker_d06b78d5354814ee6502d6505bcf6cdc.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>태윤주유소</b><br>
+        <b>서창셀프주유소</b><br>
         <b>현대오일뱅크</b><br>
-        충남 서산시 인지면 차리 661-5<br>
-        충남 서산시 인지면 서해로 2663<br>
-        > <b>가격: 1,548 원/리터</b>
+        충남 서산시 동문동 987-9<br>
+        충남 서산시 안견로 255 (동문동)<br>
+        > <b>가격: 1,528 원/리터</b>
         </font>
     
                  </div>`,
@@ -443,43 +465,21 @@
             );
         
     
-            var marker_1aedaf5118a0c580c88139c092349017 = L.marker(
-                [36.77010745372676, 126.43467895674168],
+            var marker_65f748e66a39d9a6cf878d70e710d7d9 = L.marker(
+                [36.77685944311214, 126.35989578260858],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_1aedaf5118a0c580c88139c092349017.bindTooltip(
+            marker_65f748e66a39d9a6cf878d70e710d7d9.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>예천동주유소</b><br>
-        <b>자영알뜰</b><br>
-        충남 서산시 예천동 622-9<br>
-        충남 서산시 공림3길 13 (예천동)<br>
-        > <b>가격: 1,548 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_c8435facdcf200bc2f1ae9bc0db47ca3 = L.marker(
-                [36.91804884438271, 126.44314587923756],
-                {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
-        
-    
-            marker_c8435facdcf200bc2f1ae9bc0db47ca3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)대산에너지</b><br>
+        <b>행복주유소</b><br>
         <b>현대오일뱅크</b><br>
-        충남 서산시 대산읍 영탑리 463-10<br>
-        충남 서산시 대산읍 충의로 1700<br>
-        > <b>가격: 1,548 원/리터</b>
+        충남 서산시 팔봉면 진장리 881-3<br>
+        충남 서산시 팔봉면 서해로 2408<br>
+        > <b>가격: 1,530 원/리터</b>
         </font>
     
                  </div>`,
@@ -487,13 +487,13 @@
             );
         
     
-            var marker_151f7eb30161f2b52ad0b97522127cb6 = L.marker(
+            var marker_0688e4f65daf3e4ae527f5fac82a5e31 = L.marker(
                 [36.7836362269977, 126.50769726604918],
                 {}
-            ).addTo(map_a7778fd58d2b713e67b64e9adbffafbf);
+            ).addTo(map_3a2ebc22480dc17e0fed07e086f98d1f);
         
     
-            marker_151f7eb30161f2b52ad0b97522127cb6.bindTooltip(
+            marker_0688e4f65daf3e4ae527f5fac82a5e31.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -501,7 +501,7 @@
         <b>현대오일뱅크</b><br>
         충남 서산시 음암면 부장리 661-3<br>
         충남 서산시 음암면 서해로 3961<br>
-        > <b>가격: 1,549 원/리터</b>
+        > <b>가격: 1,539 원/리터</b>
         </font>
     
                  </div>`,

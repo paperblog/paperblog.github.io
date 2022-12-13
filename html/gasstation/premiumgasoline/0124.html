@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c9bb7b6d710f6bd1fc81eedf30dc5efa {
+                #map_d4a8f6e2fcdd786a195b2c479db25553 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c9bb7b6d710f6bd1fc81eedf30dc5efa" ></div>
+            <div class="folium-map" id="map_d4a8f6e2fcdd786a195b2c479db25553" ></div>
         
 </body>
 <script>    
     
-            var map_c9bb7b6d710f6bd1fc81eedf30dc5efa = L.map(
-                "map_c9bb7b6d710f6bd1fc81eedf30dc5efa",
+            var map_d4a8f6e2fcdd786a195b2c479db25553 = L.map(
+                "map_d4a8f6e2fcdd786a195b2c479db25553",
                 {
                     center: [37.63298384238752, 127.0229841446626],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,69 @@
 
         
     
-            var tile_layer_de8d00893577a3e0c055cf60a79ac640 = L.tileLayer(
+            var tile_layer_cd77d90620702dde64502c6d1c9c41be = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
         
     
-            var locate_control_b05771f01183b99324b06f32b3a20052 = L.control.locate(
+            var locate_control_2f2d5310f3ff5e164eb946592deb5174 = L.control.locate(
                 {}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
             
         
     
-            var marker_296d0474dc33a3f4d8c0050a85279702 = L.marker(
-                [37.62000134161155, 127.0290355005791],
+            var marker_57291dcc421bce993d8b38a0696a0f28 = L.marker(
+                [37.63619970069852, 127.01281514817174],
                 {}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
         
     
-            marker_296d0474dc33a3f4d8c0050a85279702.bindTooltip(
+            marker_57291dcc421bce993d8b38a0696a0f28.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)서울에너지 시민주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        서울 강북구 수유동 440-36<br>
+        서울 강북구 인수봉로 185 (수유동)<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9a8a8cbcbd906f8a895280b7762a580e = L.marker(
+                [37.64017953313496, 127.01719666308165],
+                {}
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
+        
+    
+            marker_9a8a8cbcbd906f8a895280b7762a580e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북서울고속주유소</b><br>
+        <b>SK에너지</b><br>
+        서울 강북구 수유동 392<br>
+        서울 강북구 삼양로 410 (수유동)<br>
+        > <b>가격: 1,810 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0e4a57e8a93c4bc0d2c056c1a55c8778 = L.marker(
+                [37.62000134161155, 127.0290355005791],
+                {}
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
+        
+    
+            marker_0e4a57e8a93c4bc0d2c056c1a55c8778.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +135,13 @@
             );
         
     
-            var marker_fc92a9d2e45d18cc3eed50fa9eeec3c0 = L.marker(
-                [37.64017953313496, 127.01719666308165],
-                {}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
-        
-    
-            marker_fc92a9d2e45d18cc3eed50fa9eeec3c0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>북서울고속주유소</b><br>
-        <b>SK에너지</b><br>
-        서울 강북구 수유동 392<br>
-        서울 강북구 삼양로 410 (수유동)<br>
-        > <b>가격: 1,840 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_c6de1b41d8a8d9ec12802e7a8087d9e2 = L.marker(
-                [37.63619970069852, 127.01281514817174],
-                {}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
-        
-    
-            marker_c6de1b41d8a8d9ec12802e7a8087d9e2.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)서울에너지 시민주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        서울 강북구 수유동 440-36<br>
-        서울 강북구 인수봉로 185 (수유동)<br>
-        > <b>가격: 1,840 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_bcc3e8275bfd63ee9d2f2e2e172f9f73 = L.marker(
+            var marker_6d11387eb9c6b4fb178edc6b2aa05e07 = L.marker(
                 [37.63555479410503, 127.03288926681789],
                 {}
-            ).addTo(map_c9bb7b6d710f6bd1fc81eedf30dc5efa);
+            ).addTo(map_d4a8f6e2fcdd786a195b2c479db25553);
         
     
-            marker_bcc3e8275bfd63ee9d2f2e2e172f9f73.bindTooltip(
+            marker_6d11387eb9c6b4fb178edc6b2aa05e07.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -149,7 +149,7 @@
         <b>현대오일뱅크</b><br>
         서울 강북구 번동 410-95<br>
         서울 강북구 한천로 963 (번동)<br>
-        > <b>가격: 1,925 원/리터</b>
+        > <b>가격: 1,875 원/리터</b>
         </font>
     
                  </div>`,
