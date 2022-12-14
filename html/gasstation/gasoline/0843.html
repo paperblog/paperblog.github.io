@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5c0ed078e2799213da4e2f4b097a4e84 {
+                #map_8e017ede0a9459c128adafba5ae5429a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5c0ed078e2799213da4e2f4b097a4e84" ></div>
+            <div class="folium-map" id="map_8e017ede0a9459c128adafba5ae5429a" ></div>
         
 </body>
 <script>    
     
-            var map_5c0ed078e2799213da4e2f4b097a4e84 = L.map(
-                "map_5c0ed078e2799213da4e2f4b097a4e84",
+            var map_8e017ede0a9459c128adafba5ae5429a = L.map(
+                "map_8e017ede0a9459c128adafba5ae5429a",
                 {
-                    center: [36.92187943816685, 129.41434155765637],
+                    center: [36.92187943816684, 129.41434155765637],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_c5478de70c7c51ae9225b6f2ede132ae = L.tileLayer(
+            var tile_layer_e8bbd277e1174c9fffe6bcaa9ced960f = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            var locate_control_ebbfa46b5f2e4f01bec479c09aa7162b = L.control.locate(
+            var locate_control_3f5dde6b6373003a6ae25d464391079c = L.control.locate(
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
             
         
     
-            var marker_0f847b6530bda887ff8454b73aefd8f7 = L.marker(
-                [37.05868169875781, 129.40449919760687],
+            var marker_735f6d15e25cd9f6ac023df63319422b = L.marker(
+                [36.95101617082458, 129.394103260073],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_0f847b6530bda887ff8454b73aefd8f7.bindTooltip(
+            marker_735f6d15e25cd9f6ac023df63319422b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>울진현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경북 울진군 근남면 노음리 66-2<br>
+        경북 울진군 근남면 동해대로 3816<br>
+        > <b>가격: 1,535 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_05d41e8174f63d58ad336411bc680152 = L.marker(
+                [37.05868169875781, 129.40449919760687],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_05d41e8174f63d58ad336411bc680152.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_43a2aff3cf78c6d8d7e5dea389824cf3 = L.marker(
-                [36.99541460419004, 129.41292989458407],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_43a2aff3cf78c6d8d7e5dea389824cf3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>영덕울진축산농협 주유소</b><br>
-        <b>SK에너지</b><br>
-        경북 울진군 울진읍 연지리 256-5<br>
-        경북 울진군 울진읍 동해대로 4348<br>
-        > <b>가격: 1,555 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_a5f48c448e12257ef983bcb9271e6289 = L.marker(
-                [37.076776571682515, 129.38140798155987],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_a5f48c448e12257ef983bcb9271e6289.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>북면농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        경북 울진군 북면 고목리 423-3<br>
-        경북 울진군 북면 울진북로 1730<br>
-        > <b>가격: 1,555 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_026b12d017b3ff93ca8606fdfe1a988f = L.marker(
+            var marker_2dcf47fb935d44dbecbc516a235219be = L.marker(
                 [36.98282911919164, 129.40584857549237],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_026b12d017b3ff93ca8606fdfe1a988f.bindTooltip(
+            marker_2dcf47fb935d44dbecbc516a235219be.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,57 @@
             );
         
     
-            var marker_fef03ab2886a7dfbc0ec6c296db3feb4 = L.marker(
-                [37.06016181515247, 129.40430164184963],
+            var marker_c1184c7c44444ba81efae2a5bf245912 = L.marker(
+                [36.99541460419004, 129.41292989458407],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_fef03ab2886a7dfbc0ec6c296db3feb4.bindTooltip(
+            marker_c1184c7c44444ba81efae2a5bf245912.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영덕울진축산농협 주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 울진군 울진읍 연지리 256-5<br>
+        경북 울진군 울진읍 동해대로 4348<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8bde3e42c8e835ab827e6ae0844491e = L.marker(
+                [37.076776571682515, 129.38140798155987],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_f8bde3e42c8e835ab827e6ae0844491e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>북면농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        경북 울진군 북면 고목리 423-3<br>
+        경북 울진군 북면 울진북로 1730<br>
+        > <b>가격: 1,555 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_46d7ce769ec1e0b8a824e36546420aa8 = L.marker(
+                [37.06016181515247, 129.40430164184963],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_46d7ce769ec1e0b8a824e36546420aa8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +201,13 @@
             );
         
     
-            var marker_3971cebdd7b4c38ae4a92f1db51c6708 = L.marker(
+            var marker_bedac3dfb7df3dc6407165d60b8017bb = L.marker(
                 [36.68427539865705, 129.44260612531502],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_3971cebdd7b4c38ae4a92f1db51c6708.bindTooltip(
+            marker_bedac3dfb7df3dc6407165d60b8017bb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +223,13 @@
             );
         
     
-            var marker_04d384006bfa9b16b2faeb13384dc2ed = L.marker(
+            var marker_57fafac601fc0aff6c4b4b5fd750a08b = L.marker(
                 [36.69258164706736, 129.44328812198964],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_04d384006bfa9b16b2faeb13384dc2ed.bindTooltip(
+            marker_57fafac601fc0aff6c4b4b5fd750a08b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +245,13 @@
             );
         
     
-            var marker_561b3df3f610ac30c4b6d9616cc60144 = L.marker(
+            var marker_e6e35d2610c9c5e14100bce4c68c1a3d = L.marker(
                 [36.66884206420233, 129.42956843063118],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_561b3df3f610ac30c4b6d9616cc60144.bindTooltip(
+            marker_e6e35d2610c9c5e14100bce4c68c1a3d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +267,13 @@
             );
         
     
-            var marker_507ad8c13b7fc808b7aa1b7eeb2a13ec = L.marker(
+            var marker_2c8a6ecf28feb128a8057ab752af0d21 = L.marker(
                 [37.00706718074215, 129.4007165976668],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_507ad8c13b7fc808b7aa1b7eeb2a13ec.bindTooltip(
+            marker_2c8a6ecf28feb128a8057ab752af0d21.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,35 +289,13 @@
             );
         
     
-            var marker_afe96d285cf62794f4086fe056f90d66 = L.marker(
-                [36.95101617082458, 129.394103260073],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_afe96d285cf62794f4086fe056f90d66.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>울진현대주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경북 울진군 근남면 노음리 66-2<br>
-        경북 울진군 근남면 동해대로 3816<br>
-        > <b>가격: 1,565 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0c4b20e7b86aa4ff11fb22a4e4af1892 = L.marker(
+            var marker_86223f9b3bfecbb7eccb7585e0e0bb35 = L.marker(
                 [36.67465633088416, 129.43986749277866],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_0c4b20e7b86aa4ff11fb22a4e4af1892.bindTooltip(
+            marker_86223f9b3bfecbb7eccb7585e0e0bb35.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,13 @@
             );
         
     
-            var marker_a9aedb9defa812716b2a5ba69add77aa = L.marker(
+            var marker_ae48869c8ea7073f18a4a57f2fa13623 = L.marker(
                 [37.1029495026173, 129.3739682505252],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_a9aedb9defa812716b2a5ba69add77aa.bindTooltip(
+            marker_ae48869c8ea7073f18a4a57f2fa13623.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +333,13 @@
             );
         
     
-            var marker_e22a61ab0ee887b9d93295b7ad91425b = L.marker(
+            var marker_69e4e1953d5c98f9764fa2496c2963b2 = L.marker(
                 [36.87358708032055, 129.42080022699113],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_e22a61ab0ee887b9d93295b7ad91425b.bindTooltip(
+            marker_69e4e1953d5c98f9764fa2496c2963b2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,123 +355,13 @@
             );
         
     
-            var marker_33283c7386aa3322f41073be3904329b = L.marker(
-                [37.015906023813656, 129.41207236711085],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_33283c7386aa3322f41073be3904329b.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>온양주유소</b><br>
-        <b>S-OIL</b><br>
-        경북 울진군 울진읍 온양리 317-4<br>
-        경북 울진군 울진읍 울진북로 836<br>
-        > <b>가격: 1,610 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_760158e2ab1aedc059b294ce3f2bffb0 = L.marker(
-                [36.95993816619982, 129.39413487320687],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_760158e2ab1aedc059b294ce3f2bffb0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>성류굴주유소</b><br>
-        <b>SK에너지</b><br>
-        경북 울진군 근남면 노음3리260-2<br>
-        경북 울진군 울진북로 111<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6b67fad470ac6d41a971bcfc2471cd5a = L.marker(
-                [37.06503745613642, 129.41218755210897],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_6b67fad470ac6d41a971bcfc2471cd5a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>영동주유소</b><br>
-        <b>SK에너지</b><br>
-        경북 울진군 죽변면 후정1리 213-1<br>
-        경북 울진군 죽변북로 119<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8a2536170162b8c466a59a41a9a213a3 = L.marker(
-                [36.98535196568707, 129.3972454016597],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_8a2536170162b8c466a59a41a9a213a3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>삼원주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경북 울진군 울진읍 읍내3리 221-2<br>
-        경북 울진군 울진중앙로 33<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d6d9210387372eac07dca38c5cb29dc9 = L.marker(
-                [37.059065982964334, 129.42093685130325],
-                {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
-        
-    
-            marker_d6d9210387372eac07dca38c5cb29dc9.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>죽변주유소</b><br>
-        <b>SK에너지</b><br>
-        경북 울진군 죽변면 죽변리 391<br>
-        경북 울진군 죽변면 죽변중앙로 148-2<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ff102fc3b1a5b8e57942eea4e84984dc = L.marker(
+            var marker_809501d557da1f38064278a62a844f76 = L.marker(
                 [36.795762826276246, 129.45188175456562],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_ff102fc3b1a5b8e57942eea4e84984dc.bindTooltip(
+            marker_809501d557da1f38064278a62a844f76.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,13 +377,13 @@
             );
         
     
-            var marker_2567fb87a15334e0ede1d09eaf6bb69c = L.marker(
+            var marker_81e0a003a27c96b807ee878cd2ee4fd2 = L.marker(
                 [36.72768715796946, 129.44446655610835],
                 {}
-            ).addTo(map_5c0ed078e2799213da4e2f4b097a4e84);
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
         
     
-            marker_2567fb87a15334e0ede1d09eaf6bb69c.bindTooltip(
+            marker_81e0a003a27c96b807ee878cd2ee4fd2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -502,6 +392,116 @@
         경북 울진군 평해읍 평해리 462<br>
         경북 울진군 평해읍 월송정로 145<br>
         > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0ce719bc357e86d94e2ed6fd981bf390 = L.marker(
+                [37.06503745613642, 129.41218755210897],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_0ce719bc357e86d94e2ed6fd981bf390.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영동주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 울진군 죽변면 후정1리 213-1<br>
+        경북 울진군 죽변북로 119<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_eae45459a5d79dfd247c4f8ecad2ec73 = L.marker(
+                [36.95993816619982, 129.39413487320687],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_eae45459a5d79dfd247c4f8ecad2ec73.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>성류굴주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 울진군 근남면 노음3리260-2<br>
+        경북 울진군 울진북로 111<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2cdd6bca0cb46af17e8102dde221b970 = L.marker(
+                [36.98535196568707, 129.3972454016597],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_2cdd6bca0cb46af17e8102dde221b970.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경북 울진군 울진읍 읍내3리 221-2<br>
+        경북 울진군 울진중앙로 33<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3c42f939df2b8f3a087ba756a0c1d643 = L.marker(
+                [37.059065982964334, 129.42093685130325],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_3c42f939df2b8f3a087ba756a0c1d643.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>죽변주유소</b><br>
+        <b>SK에너지</b><br>
+        경북 울진군 죽변면 죽변리 391<br>
+        경북 울진군 죽변면 죽변중앙로 148-2<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_231febee97f7445b62d252b6f2b92a08 = L.marker(
+                [37.015906023813656, 129.41207236711085],
+                {}
+            ).addTo(map_8e017ede0a9459c128adafba5ae5429a);
+        
+    
+            marker_231febee97f7445b62d252b6f2b92a08.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>온양주유소</b><br>
+        <b>S-OIL</b><br>
+        경북 울진군 울진읍 온양리 317-4<br>
+        경북 울진군 울진읍 울진북로 836<br>
+        > <b>가격: 1,620 원/리터</b>
         </font>
     
                  </div>`,
