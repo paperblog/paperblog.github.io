@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_1cb42514083bbb5edf3383bfd8d4efa4 {
+                #map_0c55889da8f2ec971e0d951c9813f5ee {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1cb42514083bbb5edf3383bfd8d4efa4" ></div>
+            <div class="folium-map" id="map_0c55889da8f2ec971e0d951c9813f5ee" ></div>
         
 </body>
 <script>    
     
-            var map_1cb42514083bbb5edf3383bfd8d4efa4 = L.map(
-                "map_1cb42514083bbb5edf3383bfd8d4efa4",
+            var map_0c55889da8f2ec971e0d951c9813f5ee = L.map(
+                "map_0c55889da8f2ec971e0d951c9813f5ee",
                 {
-                    center: [34.626065057648326, 126.75386730254277],
+                    center: [34.6329931757368, 126.75667519269102],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_0f3af50c1c9dc8c26815a1e3912d4afe = L.tileLayer(
+            var tile_layer_3dff78fc0252ee38d617bbbda2e18f1f = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            var locate_control_53523306aaa5366a16e1f1a3e425c3ad = L.control.locate(
+            var locate_control_fc9888e0e6950aa4c5857237faddb17e = L.control.locate(
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
             
         
     
-            var marker_c22aaf7565943178ad241e97b036a0e3 = L.marker(
-                [34.74387928701441, 126.72661551810249],
+            var marker_8cb5e5dcdd654557d5a591d2f1c46d77 = L.marker(
+                [34.597919327781256, 126.73399454547912],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_c22aaf7565943178ad241e97b036a0e3.bindTooltip(
+            marker_8cb5e5dcdd654557d5a591d2f1c46d77.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>청자골주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 강진군 강진읍 영파리 224-1<br>
+        전남 강진군 강진읍 해강로 976<br>
+        > <b>가격: 1,739 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da3fe03693112c8ba7e81a716511bfeb = L.marker(
+                [34.74387928701441, 126.72661551810249],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_da3fe03693112c8ba7e81a716511bfeb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_c0327ec1f57be1350fe11e67c0e844d2 = L.marker(
+            var marker_5b0274a72829459ba035128c31e03c18 = L.marker(
                 [34.51591897314615, 126.72153112721593],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_c0327ec1f57be1350fe11e67c0e844d2.bindTooltip(
+            marker_5b0274a72829459ba035128c31e03c18.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,35 +135,13 @@
             );
         
     
-            var marker_a958a535e19402a9861f982650a73dde = L.marker(
-                [34.665735626670774, 126.72777955096748],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_a958a535e19402a9861f982650a73dde.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>남산주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 강진군 성전면 금당리 601-1<br>
-        전남 강진군 성전면 송계로 538<br>
-        > <b>가격: 1,799 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_5e997dbad7ac90a1c9e9665bac9052e2 = L.marker(
+            var marker_67f7bc37645362385775e96c1d76c13d = L.marker(
                 [34.725168821386966, 126.7100240280457],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_5e997dbad7ac90a1c9e9665bac9052e2.bindTooltip(
+            marker_67f7bc37645362385775e96c1d76c13d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +157,35 @@
             );
         
     
-            var marker_64e8493e255c4aef301249a77df739ff = L.marker(
-                [34.65409802962646, 126.72627976235333],
+            var marker_8def4f4e319ae481ae6baec815b63b9e = L.marker(
+                [34.665735626670774, 126.72777955096748],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_64e8493e255c4aef301249a77df739ff.bindTooltip(
+            marker_8def4f4e319ae481ae6baec815b63b9e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>남산주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 강진군 성전면 금당리 601-1<br>
+        전남 강진군 성전면 송계로 538<br>
+        > <b>가격: 1,799 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e685b2a010a484b8c03f87c0cc2dd995 = L.marker(
+                [34.65409802962646, 126.72627976235333],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_e685b2a010a484b8c03f87c0cc2dd995.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +201,13 @@
             );
         
     
-            var marker_0b7dc04ed671aeaadb5497051f8e11d8 = L.marker(
+            var marker_d8f7c5dfcd571f5ddbddac87fed7c064 = L.marker(
                 [34.59305007749611, 126.73250402493252],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_0b7dc04ed671aeaadb5497051f8e11d8.bindTooltip(
+            marker_d8f7c5dfcd571f5ddbddac87fed7c064.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,35 +223,13 @@
             );
         
     
-            var marker_5f4d638b18cc931a50e5638c82835e38 = L.marker(
-                [34.597919327781256, 126.73399454547912],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_5f4d638b18cc931a50e5638c82835e38.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>청자골주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 강진군 강진읍 영파리 224-1<br>
-        전남 강진군 강진읍 해강로 976<br>
-        > <b>가격: 1,839 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0052448cff8bc0c504364779960dd467 = L.marker(
+            var marker_a1b651d2ef031672d44f10a7407235f6 = L.marker(
                 [34.633758720624144, 126.76556704393796],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_0052448cff8bc0c504364779960dd467.bindTooltip(
+            marker_a1b651d2ef031672d44f10a7407235f6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,233 +245,13 @@
             );
         
     
-            var marker_f9b8a34af1a2bd3ae19ca50413523085 = L.marker(
-                [34.64394627686707, 126.81555673206694],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_f9b8a34af1a2bd3ae19ca50413523085.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강진농협군동주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 강진군 군동면 라천리 66-3<br>
-        전남 강진군 군동면 진흥로 328<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_e8e32f547a2f29e3686132a5a2980e3c = L.marker(
-                [34.63904438538216, 126.77494229198146],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_e8e32f547a2f29e3686132a5a2980e3c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강진농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 강진군 강진읍 동성리 184-11<br>
-        전남 강진군 강진읍 보은로 155<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_c7a35a600876f8acff91bb98cc808533 = L.marker(
-                [34.635572524905605, 126.7696372226747],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_c7a35a600876f8acff91bb98cc808533.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>희망주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 강진군 강진읍 평동리 3-2<br>
-        전남 강진군 강진읍 보은로 94<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_c7912553691473e0155bf4ef94f3a931 = L.marker(
-                [34.71520272598035, 126.81146635019107],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_c7912553691473e0155bf4ef94f3a931.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강진한들농협병영주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 강진군 병영면 성남리 198-6,7<br>
-        전남 강진군 병영면 장강로 1039<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f9f9aca619a49b9f5dce214793f295fb = L.marker(
-                [34.54749552491548, 126.72802355543688],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_f9f9aca619a49b9f5dce214793f295fb.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>도암농협주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 강진군 도암면 항촌리 1145-2<br>
-        전남 강진군 도암면 백도로 1872<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_527b777ba145116b8f4ffa0e080c599f = L.marker(
-                [34.63665571773263, 126.76535981022381],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_527b777ba145116b8f4ffa0e080c599f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>동창주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 강진군 강진읍 서성리 48<br>
-        전남 강진군 강진읍 중앙로 65<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_3d84ea82a1ae9e90b0aad2b8bb6b6beb = L.marker(
-                [34.464293653211726, 126.81280718641776],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_3d84ea82a1ae9e90b0aad2b8bb6b6beb.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(유)가온주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 강진군 마량면 수인리 산 139<br>
-        전남 강진군 마량면 청자로 2281<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f4caa63aa06153e76720c11b43a187c9 = L.marker(
-                [34.68843746915399, 126.71349678642814],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_f4caa63aa06153e76720c11b43a187c9.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강진농협성전지점주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 강진군 성전면 성전리 643-1<br>
-        전남 강진군 성전면 송계로 850-7<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_92cf381e2cfff0379b5e4b702a9b26ed = L.marker(
-                [34.495837791315125, 126.70314397416702],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_92cf381e2cfff0379b5e4b702a9b26ed.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>호남주유소</b><br>
-        <b>S-OIL</b><br>
-        전남 강진군 신전면 용월리 1061-6<br>
-        전남 강진군 신전면 백도로 1260<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8e2a6fe25a13dbef3949a244bae01752 = L.marker(
-                [34.704592593852155, 126.76863682695402],
-                {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
-        
-    
-            marker_8e2a6fe25a13dbef3949a244bae01752.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강진한들농협작천주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 강진군 작천면 평리 395-2<br>
-        전라남도 강진군 작천면 금강로 606<br>
-        > <b>가격: 1,850 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_e9bb182700a9be80e80eeac4299b98f9 = L.marker(
+            var marker_a8d76636a1b0a49bfc1dafbd09302f1e = L.marker(
                 [34.582423935123245, 126.79658459688066],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_e9bb182700a9be80e80eeac4299b98f9.bindTooltip(
+            marker_a8d76636a1b0a49bfc1dafbd09302f1e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,13 +267,211 @@
             );
         
     
-            var marker_21592b71b5621da01b75a197d4b6cf9d = L.marker(
-                [34.638269690780874, 126.77339511639835],
+            var marker_13ba4cff8cf3e3e509f17aee17126658 = L.marker(
+                [34.464293653211726, 126.81280718641776],
                 {}
-            ).addTo(map_1cb42514083bbb5edf3383bfd8d4efa4);
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
         
     
-            marker_21592b71b5621da01b75a197d4b6cf9d.bindTooltip(
+            marker_13ba4cff8cf3e3e509f17aee17126658.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(유)가온주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 강진군 마량면 수인리 산 139<br>
+        전남 강진군 마량면 청자로 2281<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_54dc9ec7ad1cc44ab7f33c854a512540 = L.marker(
+                [34.635572524905605, 126.7696372226747],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_54dc9ec7ad1cc44ab7f33c854a512540.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>희망주유소</b><br>
+        <b>S-OIL</b><br>
+        전남 강진군 강진읍 평동리 3-2<br>
+        전남 강진군 강진읍 보은로 94<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a1f63e9677a5603f223fd8f26e365625 = L.marker(
+                [34.54749552491548, 126.72802355543688],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_a1f63e9677a5603f223fd8f26e365625.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>도암농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 강진군 도암면 항촌리 1145-2<br>
+        전남 강진군 도암면 백도로 1872<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b48f101a50cd4376d89525e1616b9b6f = L.marker(
+                [34.63904438538216, 126.77494229198146],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_b48f101a50cd4376d89525e1616b9b6f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진농협주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 강진군 강진읍 동성리 184-11<br>
+        전남 강진군 강진읍 보은로 155<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a62bef6b8b5e93a308af20427703c558 = L.marker(
+                [34.64394627686707, 126.81555673206694],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_a62bef6b8b5e93a308af20427703c558.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진농협군동주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 강진군 군동면 라천리 66-3<br>
+        전남 강진군 군동면 진흥로 328<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e104a87ff65a8bb5391fb126e8129b2c = L.marker(
+                [34.63665571773263, 126.76535981022381],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_e104a87ff65a8bb5391fb126e8129b2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>동창주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 강진군 강진읍 서성리 48<br>
+        전남 강진군 강진읍 중앙로 65<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6ffdfef3e6a96af6e87e20567d60fc13 = L.marker(
+                [34.71520272598035, 126.81146635019107],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_6ffdfef3e6a96af6e87e20567d60fc13.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진한들농협병영주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 강진군 병영면 성남리 198-6,7<br>
+        전남 강진군 병영면 장강로 1039<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f02a25a2c8f457115a1d7eadb19c238a = L.marker(
+                [34.704592593852155, 126.76863682695402],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_f02a25a2c8f457115a1d7eadb19c238a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진한들농협작천주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 강진군 작천면 평리 395-2<br>
+        전라남도 강진군 작천면 금강로 606<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cac2cad1656ede0533f7c73b3357538a = L.marker(
+                [34.68843746915399, 126.71349678642814],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_cac2cad1656ede0533f7c73b3357538a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강진농협성전지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 강진군 성전면 성전리 643-1<br>
+        전남 강진군 성전면 송계로 850-7<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8edf27e62893d4889a726218e4f51c86 = L.marker(
+                [34.638269690780874, 126.77339511639835],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_8edf27e62893d4889a726218e4f51c86.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -501,6 +479,28 @@
         <b>GS칼텍스</b><br>
         전남 강진군 강진읍 남성리 50-18<br>
         전남 강진군 강진읍 보은로 135 (강진읍)<br>
+        > <b>가격: 1,850 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5b64792641c5d063650804aea7cf3e6d = L.marker(
+                [34.63440015308463, 126.75930177713221],
+                {}
+            ).addTo(map_0c55889da8f2ec971e0d951c9813f5ee);
+        
+    
+            marker_5b64792641c5d063650804aea7cf3e6d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>에스케이강진주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 강진군 강진읍 서성리 353-1<br>
+        전남 강진군 강진읍 송계로 28<br>
         > <b>가격: 1,850 원/리터</b>
         </font>
     
