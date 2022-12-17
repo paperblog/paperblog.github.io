@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_1cfcbbe4a903c308ef889bc8ca91f40c {
+                #map_d45960ff1f4784717919a6c3ff1d4ceb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1cfcbbe4a903c308ef889bc8ca91f40c" ></div>
+            <div class="folium-map" id="map_d45960ff1f4784717919a6c3ff1d4ceb" ></div>
         
 </body>
 <script>    
     
-            var map_1cfcbbe4a903c308ef889bc8ca91f40c = L.map(
-                "map_1cfcbbe4a903c308ef889bc8ca91f40c",
+            var map_d45960ff1f4784717919a6c3ff1d4ceb = L.map(
+                "map_d45960ff1f4784717919a6c3ff1d4ceb",
                 {
                     center: [37.73717239818775, 127.91096382490974],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_e955406ab60fd512336ee2e787e91e8e = L.tileLayer(
+            var tile_layer_2052e419ac4aa800d14ee57ae44c772d = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_1cfcbbe4a903c308ef889bc8ca91f40c);
+            ).addTo(map_d45960ff1f4784717919a6c3ff1d4ceb);
         
     
-            var locate_control_fba800aaf5dbcaa3544fc6e42bf8f825 = L.control.locate(
+            var locate_control_ac163901baeb91a0817794e7c7fb3f57 = L.control.locate(
                 {}
-            ).addTo(map_1cfcbbe4a903c308ef889bc8ca91f40c);
+            ).addTo(map_d45960ff1f4784717919a6c3ff1d4ceb);
             
         
     
-            var marker_0fdc67ea37b128ecf76ed3e36c7ae223 = L.marker(
-                [37.82057395269409, 128.0020418976481],
+            var marker_3e13e8aeb770c530e554b430359734f4 = L.marker(
+                [37.65377084368142, 127.8198857521714],
                 {}
-            ).addTo(map_1cfcbbe4a903c308ef889bc8ca91f40c);
+            ).addTo(map_d45960ff1f4784717919a6c3ff1d4ceb);
         
     
-            marker_0fdc67ea37b128ecf76ed3e36c7ae223.bindTooltip(
+            marker_3e13e8aeb770c530e554b430359734f4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>스카이주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 홍천군 홍천읍 상오안리 172<br>
+        강원 홍천군 홍천읍 설악로 951<br>
+        > <b>가격: 1,797 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fdf4f65ed414eae62db8964d3636cac3 = L.marker(
+                [37.82057395269409, 128.0020418976481],
+                {}
+            ).addTo(map_d45960ff1f4784717919a6c3ff1d4ceb);
+        
+    
+            marker_fdf4f65ed414eae62db8964d3636cac3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -84,28 +106,6 @@
         강원 홍천군 두촌면 철정리 437-11<br>
         강원 홍천군 두촌면 설악로 3606<br>
         > <b>가격: 1,799 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_fce18e93b9c186009f6ac3afe03c12b7 = L.marker(
-                [37.65377084368142, 127.8198857521714],
-                {}
-            ).addTo(map_1cfcbbe4a903c308ef889bc8ca91f40c);
-        
-    
-            marker_fce18e93b9c186009f6ac3afe03c12b7.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>스카이주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        강원 홍천군 홍천읍 상오안리 172<br>
-        강원 홍천군 홍천읍 설악로 951<br>
-        > <b>가격: 1,897 원/리터</b>
         </font>
     
                  </div>`,
