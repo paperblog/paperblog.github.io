@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_80bb746bdd5cacba969a3f8e48f71970 {
+                #map_9d44442074a69c4f2b960fd7689a7f0f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_80bb746bdd5cacba969a3f8e48f71970" ></div>
+            <div class="folium-map" id="map_9d44442074a69c4f2b960fd7689a7f0f" ></div>
         
 </body>
 <script>    
     
-            var map_80bb746bdd5cacba969a3f8e48f71970 = L.map(
-                "map_80bb746bdd5cacba969a3f8e48f71970",
+            var map_9d44442074a69c4f2b960fd7689a7f0f = L.map(
+                "map_9d44442074a69c4f2b960fd7689a7f0f",
                 {
                     center: [36.59242027126797, 126.66603403567332],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_fc1f65e3a4282a4a6b41f3a59ff6b003 = L.tileLayer(
+            var tile_layer_47e74395102c251ac1433ddf93efeddb = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_80bb746bdd5cacba969a3f8e48f71970);
+            ).addTo(map_9d44442074a69c4f2b960fd7689a7f0f);
         
     
-            var locate_control_068bed7e0b754562b5e8c478c0bb46b9 = L.control.locate(
+            var locate_control_f998387a357a50e29194b658958d1fc1 = L.control.locate(
                 {}
-            ).addTo(map_80bb746bdd5cacba969a3f8e48f71970);
+            ).addTo(map_9d44442074a69c4f2b960fd7689a7f0f);
             
         
     
-            var marker_8b979922ef5541b6215415930ab1a711 = L.marker(
-                [36.59237867441893, 126.67788019873812],
+            var marker_fccb44c2a704eab1f0aebbd739afcaef = L.marker(
+                [36.592461868117, 126.65418787260852],
                 {}
-            ).addTo(map_80bb746bdd5cacba969a3f8e48f71970);
+            ).addTo(map_9d44442074a69c4f2b960fd7689a7f0f);
         
     
-            marker_8b979922ef5541b6215415930ab1a711.bindTooltip(
+            marker_fccb44c2a704eab1f0aebbd739afcaef.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>홍성현대주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충남 홍성군 홍성읍 옥암리 227<br>
+        충청남도 홍성군 홍성읍 충서로 1309 (홍성읍)<br>
+        > <b>가격: 1,898 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56fe0ea064f57a3b865feb9586fb27a1 = L.marker(
+                [36.59237867441893, 126.67788019873812],
+                {}
+            ).addTo(map_9d44442074a69c4f2b960fd7689a7f0f);
+        
+    
+            marker_56fe0ea064f57a3b865feb9586fb27a1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -84,28 +106,6 @@
         충남 홍성군 홍성읍 고암리 348-4<br>
         충남 홍성군 홍성읍 충절로 919<br>
         > <b>가격: 1,899 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d3017bbe61b986df72caadace89e8fa2 = L.marker(
-                [36.592461868117, 126.65418787260852],
-                {}
-            ).addTo(map_80bb746bdd5cacba969a3f8e48f71970);
-        
-    
-            marker_d3017bbe61b986df72caadace89e8fa2.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>홍성현대주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충남 홍성군 홍성읍 옥암리 227<br>
-        충청남도 홍성군 홍성읍 충서로 1309 (홍성읍)<br>
-        > <b>가격: 1,918 원/리터</b>
         </font>
     
                  </div>`,
