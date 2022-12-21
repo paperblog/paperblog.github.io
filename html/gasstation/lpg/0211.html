@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_10b8da7ae6ecd018ea23b982f86923f2 {
+                #map_505ea13a6d894aeb12fd3ddb218300df {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_10b8da7ae6ecd018ea23b982f86923f2" ></div>
+            <div class="folium-map" id="map_505ea13a6d894aeb12fd3ddb218300df" ></div>
         
 </body>
 <script>    
     
-            var map_10b8da7ae6ecd018ea23b982f86923f2 = L.map(
-                "map_10b8da7ae6ecd018ea23b982f86923f2",
+            var map_505ea13a6d894aeb12fd3ddb218300df = L.map(
+                "map_505ea13a6d894aeb12fd3ddb218300df",
                 {
                     center: [37.42993727074209, 126.99441043849384],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_730c8365a28b6e846e4d3995d63fa21a = L.tileLayer(
+            var tile_layer_c8740d0c07dbcb0b318d986b5f682d3c = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_10b8da7ae6ecd018ea23b982f86923f2);
+            ).addTo(map_505ea13a6d894aeb12fd3ddb218300df);
         
     
-            var locate_control_11284cf627e6e6524c98a86a1f4945d3 = L.control.locate(
+            var locate_control_6c3457312b1ef19b8bd938c9ff99ea42 = L.control.locate(
                 {}
-            ).addTo(map_10b8da7ae6ecd018ea23b982f86923f2);
+            ).addTo(map_505ea13a6d894aeb12fd3ddb218300df);
             
         
     
-            var marker_bd967db0edfbaac6d4cc9551697d0f08 = L.marker(
-                [37.40412426127346, 126.97884288286912],
+            var marker_027d65e5d5f03558d1bff5b3ba364b72 = L.marker(
+                [37.45575028021071, 127.00997799411857],
                 {}
-            ).addTo(map_10b8da7ae6ecd018ea23b982f86923f2);
+            ).addTo(map_505ea13a6d894aeb12fd3ddb218300df);
         
     
-            marker_bd967db0edfbaac6d4cc9551697d0f08.bindTooltip(
+            marker_027d65e5d5f03558d1bff5b3ba364b72.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>과천LPG충전소</b><br>
+        <b>E1</b><br>
+        경기 과천시 과천동 30<br>
+        경기 과천시 중앙로 526 (과천동)<br>
+        > <b>가격: 1,067 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4b0a8727b6aabb5c97980f060ba0ca79 = L.marker(
+                [37.40412426127346, 126.97884288286912],
+                {}
+            ).addTo(map_505ea13a6d894aeb12fd3ddb218300df);
+        
+    
+            marker_4b0a8727b6aabb5c97980f060ba0ca79.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -84,28 +106,6 @@
         경기 과천시 갈현동 302-1<br>
         경기 과천시 과천대로 20<br>
         > <b>가격: 1,069 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_02cc24b0fad25c7ed73b9aa180a70c9c = L.marker(
-                [37.45575028021071, 127.00997799411857],
-                {}
-            ).addTo(map_10b8da7ae6ecd018ea23b982f86923f2);
-        
-    
-            marker_02cc24b0fad25c7ed73b9aa180a70c9c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>과천LPG충전소</b><br>
-        <b>E1</b><br>
-        경기 과천시 과천동 30<br>
-        경기 과천시 중앙로 526 (과천동)<br>
-        > <b>가격: 1,078 원/리터</b>
         </font>
     
                  </div>`,

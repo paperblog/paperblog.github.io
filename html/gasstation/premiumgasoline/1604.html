@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_f6b8ddefe7d7fa3a47ac8147d7fd304a {
+                #map_8e229e85ce60cb19973ec0ef6e6b2f6b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_f6b8ddefe7d7fa3a47ac8147d7fd304a" ></div>
+            <div class="folium-map" id="map_8e229e85ce60cb19973ec0ef6e6b2f6b" ></div>
         
 </body>
 <script>    
     
-            var map_f6b8ddefe7d7fa3a47ac8147d7fd304a = L.map(
-                "map_f6b8ddefe7d7fa3a47ac8147d7fd304a",
+            var map_8e229e85ce60cb19973ec0ef6e6b2f6b = L.map(
+                "map_8e229e85ce60cb19973ec0ef6e6b2f6b",
                 {
-                    center: [35.17509053745909, 126.8065887600822],
+                    center: [35.17509053745908, 126.8065887600822],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,69 @@
 
         
     
-            var tile_layer_857f9deca8ce861532532b7edc72928b = L.tileLayer(
+            var tile_layer_f148fb754e82d1ad85d1095e1e3f5513 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            var locate_control_f3274babff3c0d8124d6206d4947788c = L.control.locate(
+            var locate_control_d059db6f428c02abaef470d4a3aadb8b = L.control.locate(
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
             
         
     
-            var marker_da6ed1169ccb471af6451a2fb70f9e46 = L.marker(
-                [35.19039023713579, 126.82670075419972],
+            var marker_1373bf6a59785af9f53b73f9ee6f0297 = L.marker(
+                [35.18150826694409, 126.80825160699635],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_da6ed1169ccb471af6451a2fb70f9e46.bindTooltip(
+            marker_1373bf6a59785af9f53b73f9ee6f0297.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흑석주유소</b><br>
+        <b>GS칼텍스</b><br>
+        광주 광산구 흑석동 158-2<br>
+        광주 광산구 사암로 415 (흑석동)<br>
+        > <b>가격: 1,700 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8fb1641a8f72f1ae669cc17541afac61 = L.marker(
+                [35.19132698696802, 126.85298069362126],
+                {}
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
+        
+    
+            marker_8fb1641a8f72f1ae669cc17541afac61.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)동행행복주유소</b><br>
+        <b>SK에너지</b><br>
+        광주 광산구 신창동 1083-8<br>
+        광주 광산구  북문대로 364-5 (신창동)<br>
+        > <b>가격: 1,735 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b88252bcf1032c98e85e911fcd06ebe = L.marker(
+                [35.19039023713579, 126.82670075419972],
+                {}
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
+        
+    
+            marker_8b88252bcf1032c98e85e911fcd06ebe.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,35 +135,13 @@
             );
         
     
-            var marker_daf0fd32e11aee37abaae4e148419ec9 = L.marker(
-                [35.19132698696802, 126.85298069362126],
-                {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
-        
-    
-            marker_daf0fd32e11aee37abaae4e148419ec9.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)동행행복주유소</b><br>
-        <b>SK에너지</b><br>
-        광주 광산구 신창동 1083-8<br>
-        광주 광산구  북문대로 364-5 (신창동)<br>
-        > <b>가격: 1,745 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0f0f2b50126fd673d83a951454f13f19 = L.marker(
+            var marker_137a130d8174a7622401273afafcd2f8 = L.marker(
                 [35.13922718379491, 126.77574980832689],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_0f0f2b50126fd673d83a951454f13f19.bindTooltip(
+            marker_137a130d8174a7622401273afafcd2f8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -135,13 +157,13 @@
             );
         
     
-            var marker_9789c32172ab298f2d93668be9753ba5 = L.marker(
+            var marker_85d227b19de3af95df8ee6b3fd32ebda = L.marker(
                 [35.20265035304964, 126.81732224032469],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_9789c32172ab298f2d93668be9753ba5.bindTooltip(
+            marker_85d227b19de3af95df8ee6b3fd32ebda.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +179,13 @@
             );
         
     
-            var marker_48aa56cc3e4bc10c5780b01d80e4a873 = L.marker(
+            var marker_1496a053e8192298f19d01983bae7aab = L.marker(
                 [35.17263931639589, 126.80401880436801],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_48aa56cc3e4bc10c5780b01d80e4a873.bindTooltip(
+            marker_1496a053e8192298f19d01983bae7aab.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +201,13 @@
             );
         
     
-            var marker_c76700f61215c955ecc7c9fb7c3b68aa = L.marker(
+            var marker_74db8daa5a241caf4f06dd80f3cd80e7 = L.marker(
                 [35.153619347253105, 126.80758941168178],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_c76700f61215c955ecc7c9fb7c3b68aa.bindTooltip(
+            marker_74db8daa5a241caf4f06dd80f3cd80e7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +223,13 @@
             );
         
     
-            var marker_fa700299908c78882efdb967e1e797d6 = L.marker(
+            var marker_f2a2de64cf44ed6051e756e48729d9a7 = L.marker(
                 [35.1268537048446, 126.77606267331134],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_fa700299908c78882efdb967e1e797d6.bindTooltip(
+            marker_f2a2de64cf44ed6051e756e48729d9a7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,35 +245,13 @@
             );
         
     
-            var marker_e7c1f98adf4834a9ec0ef5821740684d = L.marker(
-                [35.09463856894131, 126.77321767795961],
-                {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
-        
-    
-            marker_e7c1f98adf4834a9ec0ef5821740684d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>강남주유소</b><br>
-        <b>SK에너지</b><br>
-        광주 광산구 하산동 153-2<br>
-        광주 광산구 동곡로 104 (하산동)<br>
-        > <b>가격: 1,797 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_52612e5d4237e853c3d613928bae5705 = L.marker(
+            var marker_a3e297c21761df1dda8855ec2aae28e6 = L.marker(
                 [35.16237154871915, 126.81810917183672],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_52612e5d4237e853c3d613928bae5705.bindTooltip(
+            marker_a3e297c21761df1dda8855ec2aae28e6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +267,35 @@
             );
         
     
-            var marker_b21ce8c85a5fe87f4af878543a526c0d = L.marker(
-                [35.1564513668799, 126.79953604014112],
+            var marker_367e6edf29a5c88049a20bdc0ffbdf46 = L.marker(
+                [35.09463856894131, 126.77321767795961],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_b21ce8c85a5fe87f4af878543a526c0d.bindTooltip(
+            marker_367e6edf29a5c88049a20bdc0ffbdf46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>강남주유소</b><br>
+        <b>SK에너지</b><br>
+        광주 광산구 하산동 153-2<br>
+        광주 광산구 동곡로 104 (하산동)<br>
+        > <b>가격: 1,797 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_96e1694c2e1c14b2f325f5a53ab89550 = L.marker(
+                [35.1564513668799, 126.79953604014112],
+                {}
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
+        
+    
+            marker_96e1694c2e1c14b2f325f5a53ab89550.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +311,13 @@
             );
         
     
-            var marker_6bdff3fea04c1185f93b06abc5b4f33d = L.marker(
+            var marker_354455b962e949ca66a2b978ba377429 = L.marker(
                 [35.18070606154797, 126.8045191592984],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_6bdff3fea04c1185f93b06abc5b4f33d.bindTooltip(
+            marker_354455b962e949ca66a2b978ba377429.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +333,13 @@
             );
         
     
-            var marker_3a945001be6b64aa0656c96392ca27fd = L.marker(
+            var marker_5c2be01b6cce48f0c0080267ee13456d = L.marker(
                 [35.20914741141839, 126.81687894518352],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_3a945001be6b64aa0656c96392ca27fd.bindTooltip(
+            marker_5c2be01b6cce48f0c0080267ee13456d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +355,13 @@
             );
         
     
-            var marker_25111bff8de1eb2bb9277474f039dd7e = L.marker(
+            var marker_7d0b5bb9bbb277bf3930b05420181686 = L.marker(
                 [35.156844741876284, 126.78113531245539],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_25111bff8de1eb2bb9277474f039dd7e.bindTooltip(
+            marker_7d0b5bb9bbb277bf3930b05420181686.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +377,13 @@
             );
         
     
-            var marker_5a4605a0e30c366d0b36ad4b127ec186 = L.marker(
+            var marker_fcafe495a68b9b7eb08673a4b1a07677 = L.marker(
                 [35.217009202496165, 126.82473226394882],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_5a4605a0e30c366d0b36ad4b127ec186.bindTooltip(
+            marker_fcafe495a68b9b7eb08673a4b1a07677.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +399,13 @@
             );
         
     
-            var marker_f79920ea2dafd0e2b5b6c21bf0434110 = L.marker(
+            var marker_fdc588350039b5bacda97cf2c23abe9f = L.marker(
                 [35.185201917588884, 126.78445318235721],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_f79920ea2dafd0e2b5b6c21bf0434110.bindTooltip(
+            marker_fdc588350039b5bacda97cf2c23abe9f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +421,13 @@
             );
         
     
-            var marker_890b0a26d9ae17a43ca14b5d6493d3cc = L.marker(
+            var marker_fd92f66bd2e9db914a9b5d82d7837bfc = L.marker(
                 [35.221368328714, 126.8304609949393],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_890b0a26d9ae17a43ca14b5d6493d3cc.bindTooltip(
+            marker_fd92f66bd2e9db914a9b5d82d7837bfc.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +443,13 @@
             );
         
     
-            var marker_2e93ad11b3ea8556c2b6645c71d13c6f = L.marker(
+            var marker_af7876b02b4671f4307e42e12652e5fe = L.marker(
                 [35.20967512969543, 126.8168789405295],
                 {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
+            ).addTo(map_8e229e85ce60cb19973ec0ef6e6b2f6b);
         
     
-            marker_2e93ad11b3ea8556c2b6645c71d13c6f.bindTooltip(
+            marker_af7876b02b4671f4307e42e12652e5fe.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -436,28 +458,6 @@
         광주 광산구 도천동 산55-5<br>
         광주 광산구 사암로 754 (도천동)<br>
         > <b>가격: 1,875 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_b0dc7ec82eda2b8cec20bf9e0d00f06f = L.marker(
-                [35.18150826694409, 126.80825160699635],
-                {}
-            ).addTo(map_f6b8ddefe7d7fa3a47ac8147d7fd304a);
-        
-    
-            marker_b0dc7ec82eda2b8cec20bf9e0d00f06f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>흑석주유소</b><br>
-        <b>GS칼텍스</b><br>
-        광주 광산구 흑석동 158-2<br>
-        광주 광산구 사암로 415 (흑석동)<br>
-        > <b>가격: 1,899 원/리터</b>
         </font>
     
                  </div>`,
