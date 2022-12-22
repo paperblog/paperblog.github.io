@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_db34b4a3fa442e7f55d44d37011dc0e9 {
+                #map_53da334f73cfb355308ee408e188e6a8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_db34b4a3fa442e7f55d44d37011dc0e9" ></div>
+            <div class="folium-map" id="map_53da334f73cfb355308ee408e188e6a8" ></div>
         
 </body>
 <script>    
     
-            var map_db34b4a3fa442e7f55d44d37011dc0e9 = L.map(
-                "map_db34b4a3fa442e7f55d44d37011dc0e9",
+            var map_53da334f73cfb355308ee408e188e6a8 = L.map(
+                "map_53da334f73cfb355308ee408e188e6a8",
                 {
-                    center: [37.07244666302478, 128.09569567313],
+                    center: [37.131782732421634, 128.17528005213052],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_92dacdb81f9a1f97d7b45bcef69b6416 = L.tileLayer(
+            var tile_layer_9d82ab773460c02e4d604a2757fec10c = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            var locate_control_3cdcabe805ea827df0e8e69ba9f8a4d7 = L.control.locate(
+            var locate_control_c5ba12119e048b959fbdae9ef168e55e = L.control.locate(
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
             
         
     
-            var marker_93d88f887d9ce43bb31b4506992ceaef = L.marker(
-                [37.127568321498956, 128.21421029536327],
+            var marker_72b78cae4389fc3d1d1c1cd867e34d6e = L.marker(
+                [37.111162187456706, 128.21171039553406],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_93d88f887d9ce43bb31b4506992ceaef.bindTooltip(
+            marker_72b78cae4389fc3d1d1c1cd867e34d6e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>관해셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 제천시 명지동 7-1<br>
+        충북 제천시 북부로 2263<br>
+        > <b>가격: 1,597 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3c9eea556e5bb4fd020b497f5f779b7 = L.marker(
+                [37.127568321498956, 128.21421029536327],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_e3c9eea556e5bb4fd020b497f5f779b7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,79 +113,13 @@
             );
         
     
-            var marker_39c6d580114f011c6ac6619813194429 = L.marker(
-                [37.13835256282884, 128.07338912144775],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_39c6d580114f011c6ac6619813194429.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>지산주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 제천시 봉양읍 원박리 896<br>
-        충북 제천시 봉양읍 북부로 918<br>
-        > <b>가격: 1,599 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_3b1c072dd4cb0fa0032f2b3f02d66121 = L.marker(
-                [37.097245461928054, 127.97042653522566],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_3b1c072dd4cb0fa0032f2b3f02d66121.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>다릿재주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 충주시 산척면 송강리 652-2<br>
-        충북 충주시 산척면 북부로 3293<br>
-        > <b>가격: 1,599 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ef9705389f2915b8b5ab622b6569f7cc = L.marker(
-                [37.153165193462655, 128.22842407705622],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_ef9705389f2915b8b5ab622b6569f7cc.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>이포주유소</b><br>
-        <b>자영알뜰</b><br>
-        충청북도 제천시 장락동 415-1<br>
-        충청북도 제천시 내토로 868(장락동)<br>
-        > <b>가격: 1,599 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_9b7e0cccd567d28bca6138454ce83887 = L.marker(
+            var marker_126ed73d88d8e615df1bd87bc4d5ceb7 = L.marker(
                 [37.142384886321686, 128.22242568063666],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_9b7e0cccd567d28bca6138454ce83887.bindTooltip(
+            marker_126ed73d88d8e615df1bd87bc4d5ceb7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,21 +135,21 @@
             );
         
     
-            var marker_69d5beb482ee1e1169d9759d8b73d660 = L.marker(
-                [37.111162187456706, 128.21171039553406],
+            var marker_c85e2c20e6816fbf587e23ebc09eaa17 = L.marker(
+                [37.153165193462655, 128.22842407705622],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_69d5beb482ee1e1169d9759d8b73d660.bindTooltip(
+            marker_c85e2c20e6816fbf587e23ebc09eaa17.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>관해셀프주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 제천시 명지동 7-1<br>
-        충북 제천시 북부로 2263<br>
-        > <b>가격: 1,604 원/리터</b>
+        <b>이포주유소</b><br>
+        <b>자영알뜰</b><br>
+        충청북도 제천시 장락동 415-1<br>
+        충청북도 제천시 내토로 868(장락동)<br>
+        > <b>가격: 1,599 원/리터</b>
         </font>
     
                  </div>`,
@@ -201,13 +157,57 @@
             );
         
     
-            var marker_67615cc51ee4f2c0d858808d8c136af9 = L.marker(
-                [37.14126876036925, 128.22254491182895],
+            var marker_c4b6453e766f4d1357fa632dd80f0e58 = L.marker(
+                [37.13835256282884, 128.07338912144775],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_67615cc51ee4f2c0d858808d8c136af9.bindTooltip(
+            marker_c4b6453e766f4d1357fa632dd80f0e58.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>지산주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 제천시 봉양읍 원박리 896<br>
+        충북 제천시 봉양읍 북부로 918<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_acd83764dd352d4f7883a5bc5081ce8a = L.marker(
+                [37.097245461928054, 127.97042653522566],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_acd83764dd352d4f7883a5bc5081ce8a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>다릿재주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 충주시 산척면 송강리 652-2<br>
+        충북 충주시 산척면 북부로 3293<br>
+        > <b>가격: 1,599 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2e2e2b84551a7748f48021038098fbb6 = L.marker(
+                [37.14126876036925, 128.22254491182895],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_2e2e2b84551a7748f48021038098fbb6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_07b3adb766b7f68e07008d8b55ef88cf = L.marker(
+            var marker_3a25cef586f379167106a4e5ed0e42ad = L.marker(
                 [37.14266280359181, 128.03392692940545],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_07b3adb766b7f68e07008d8b55ef88cf.bindTooltip(
+            marker_3a25cef586f379167106a4e5ed0e42ad.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,101 +245,13 @@
             );
         
     
-            var marker_4e8e378e17edb26f7cca27128d635b71 = L.marker(
-                [37.092070401100116, 128.25764455758238],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_4e8e378e17edb26f7cca27128d635b71.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>제천하이테크주유소</b><br>
-        <b>자영알뜰</b><br>
-        충북 제천시 대랑동 71-3<br>
-        충북 제천시 단양로 2897 (대랑동)<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0877db3666b241484c5597090fc3e760 = L.marker(
-                [37.105908128951015, 128.19860244069784],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_0877db3666b241484c5597090fc3e760.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)송암 남제천톨게이트주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 제천시 산곡동 242-3<br>
-        충북 제천시 청풍호로 294 (산곡동)<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d30852c519bde3a96e75e0486225f540 = L.marker(
-                [37.14763025338746, 128.21465418115608],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_d30852c519bde3a96e75e0486225f540.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>현대오일뱅크㈜직영 제천대로셀프주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 제천시 청전동 125-12<br>
-        충북 제천시 의림대로 226<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_2f63ca5d748d117028b6b61a9baa849a = L.marker(
-                [37.0829119042353, 128.27048181874423],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_2f63ca5d748d117028b6b61a9baa849a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>하이테크에너지(주)단양하이테크주유소</b><br>
-        <b>SK에너지</b><br>
-        충북 단양군 매포읍 고양리 201-2<br>
-        충북 단양군 매포읍 단양로 2727<br>
-        > <b>가격: 1,615 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_fc8cba918f072e58dbdeaec6fbf1f6d0 = L.marker(
+            var marker_63c2afd0d3f13c3b063eef9c4822f490 = L.marker(
                 [37.140820292636676, 128.20344278292134],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_fc8cba918f072e58dbdeaec6fbf1f6d0.bindTooltip(
+            marker_63c2afd0d3f13c3b063eef9c4822f490.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +267,123 @@
             );
         
     
-            var marker_a12371a21456948b56e48da72c01cd7b = L.marker(
-                [37.133769941479905, 128.10066451120935],
+            var marker_59eaed4f2a069229c108770b065dc348 = L.marker(
+                [37.105908128951015, 128.19860244069784],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_a12371a21456948b56e48da72c01cd7b.bindTooltip(
+            marker_59eaed4f2a069229c108770b065dc348.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)송암 남제천톨게이트주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 제천시 산곡동 242-3<br>
+        충북 제천시 청풍호로 294 (산곡동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7a1d9afd1f166b696781a65f7cc9628a = L.marker(
+                [37.092070401100116, 128.25764455758238],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_7a1d9afd1f166b696781a65f7cc9628a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>제천하이테크주유소</b><br>
+        <b>자영알뜰</b><br>
+        충북 제천시 대랑동 71-3<br>
+        충북 제천시 단양로 2897 (대랑동)<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_178d89422ae7d003a7d1544d034c5de4 = L.marker(
+                [37.0829119042353, 128.27048181874423],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_178d89422ae7d003a7d1544d034c5de4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>하이테크에너지(주)단양하이테크주유소</b><br>
+        <b>SK에너지</b><br>
+        충북 단양군 매포읍 고양리 201-2<br>
+        충북 단양군 매포읍 단양로 2727<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_66793354aa2e4eac97ae4fb76eed54d0 = L.marker(
+                [37.14763025338746, 128.21465418115608],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_66793354aa2e4eac97ae4fb76eed54d0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>현대오일뱅크㈜직영 제천대로셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        충북 제천시 청전동 125-12<br>
+        충북 제천시 의림대로 226<br>
+        > <b>가격: 1,615 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e3b6185bd911f8003e8dc382ca31d247 = L.marker(
+                [37.109878241597855, 128.21831257299706],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_e3b6185bd911f8003e8dc382ca31d247.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)맑은주유소</b><br>
+        <b>S-OIL</b><br>
+        충북 제천시 강제동 106-2<br>
+        충북 제천시 북부로 2313<br>
+        > <b>가격: 1,625 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_79f7c45a85deed33cad95ec8beb91e10 = L.marker(
+                [37.133769941479905, 128.10066451120935],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_79f7c45a85deed33cad95ec8beb91e10.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +399,13 @@
             );
         
     
-            var marker_d5b3773bcf57c5149fe1835552742573 = L.marker(
+            var marker_4709a1e38642e3a00bfb24ddcfd55966 = L.marker(
                 [37.14161899795845, 128.0305078851236],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_d5b3773bcf57c5149fe1835552742573.bindTooltip(
+            marker_4709a1e38642e3a00bfb24ddcfd55966.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,20 +421,42 @@
             );
         
     
-            var marker_81d1c66e38fff341da171ad052376f89 = L.marker(
-                [37.109878241597855, 128.21831257299706],
+            var marker_4653fb2faed5805bd8d0eb70c67c4aa6 = L.marker(
+                [37.126943469404054, 128.2239730993628],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_81d1c66e38fff341da171ad052376f89.bindTooltip(
+            marker_4653fb2faed5805bd8d0eb70c67c4aa6.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>(주)맑은주유소</b><br>
-        <b>S-OIL</b><br>
-        충북 제천시 강제동 106-2<br>
-        충북 제천시 북부로 2313<br>
+        <b>착한주유소 주식회사 상일물류</b><br>
+        <b>자영알뜰</b><br>
+        충북 제천시 신백동 250-1<br>
+        충북 제천시 단양로 3400 (신백동)<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b2baf785f0ef07a95cd345d1806424e1 = L.marker(
+                [37.185642709478024, 128.27463289190885],
+                {}
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
+        
+    
+            marker_b2baf785f0ef07a95cd345d1806424e1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>코끼리주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 제천시 송학면 무도리 122-3<br>
+        충북 제천시 송학면 북부로 3392<br>
         > <b>가격: 1,635 원/리터</b>
         </font>
     
@@ -421,13 +465,13 @@
             );
         
     
-            var marker_6dcfc9f1cfb5fda2816bc78e252c9ed3 = L.marker(
+            var marker_a6d6338d4eec457026d30197f91b3e19 = L.marker(
                 [37.13696756767937, 128.07962683369962],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_6dcfc9f1cfb5fda2816bc78e252c9ed3.bindTooltip(
+            marker_a6d6338d4eec457026d30197f91b3e19.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,65 +487,21 @@
             );
         
     
-            var marker_69e310aa85435c14e3fa7a6d1ce79a3d = L.marker(
-                [36.55621968732882, 127.43165546685687],
+            var marker_2a33931c7bdf648166ed88abbbef82fb = L.marker(
+                [37.17768256306656, 128.25599952070965],
                 {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
+            ).addTo(map_53da334f73cfb355308ee408e188e6a8);
         
     
-            marker_69e310aa85435c14e3fa7a6d1ce79a3d.bindTooltip(
+            marker_2a33931c7bdf648166ed88abbbef82fb.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>상일주유소</b><br>
-        <b>자영알뜰</b><br>
-        충북 청주시 서원구 남이면 외천리 172-1<br>
-        충북 청주시 서원구 남이면 청남로 1162<br>
-        > <b>가격: 1,639 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_42a870c69337dccce9a7088e606cdef6 = L.marker(
-                [37.1845800281372, 128.28606155416878],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_42a870c69337dccce9a7088e606cdef6.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>박달이주유소</b><br>
-        <b>SK에너지</b><br>
-        충북 제천시 송학면 시곡리 192-20<br>
-        충북 제천시 송학면 북부로 3510<br>
-        > <b>가격: 1,639 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_4f9c25e6dad6a2d862213acfdd8b288b = L.marker(
-                [36.562747638545424, 127.44520091094495],
-                {}
-            ).addTo(map_db34b4a3fa442e7f55d44d37011dc0e9);
-        
-    
-            marker_4f9c25e6dad6a2d862213acfdd8b288b.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>한양주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        충북 청주시 서원구 남이면 척산리 280<br>
-        충북 청주시 서원구 남이면 청남로 1309-18<br>
-        > <b>가격: 1,639 원/리터</b>
+        <b>알라딘주유소</b><br>
+        <b>GS칼텍스</b><br>
+        충북 제천시 송학면 무도리 379-4<br>
+        충북 제천시 송학면 내토로 1243<br>
+        > <b>가격: 1,635 원/리터</b>
         </font>
     
                  </div>`,
