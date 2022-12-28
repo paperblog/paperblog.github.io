@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6ee1a18a208495b1d02b0f242a0c4aca {
+                #map_beb66f6e6e6b8355247747b6443946e6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_6ee1a18a208495b1d02b0f242a0c4aca" ></div>
+            <div class="folium-map" id="map_beb66f6e6e6b8355247747b6443946e6" ></div>
         
 </body>
 <script>    
     
-            var map_6ee1a18a208495b1d02b0f242a0c4aca = L.map(
-                "map_6ee1a18a208495b1d02b0f242a0c4aca",
+            var map_beb66f6e6e6b8355247747b6443946e6 = L.map(
+                "map_beb66f6e6e6b8355247747b6443946e6",
                 {
-                    center: [37.63352163587013, 128.41156704637405],
+                    center: [37.60994479257403, 128.31835620094432],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_5926b8ad88bc0b05e4b72bb51ada8b2a = L.tileLayer(
+            var tile_layer_7ab3b1a0ff65147c1425083adf22c6ac = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            var locate_control_1cd475cd73cb087ffac7d0763451b331 = L.control.locate(
+            var locate_control_6180a2e79a2062ba5060559eaab33c7b = L.control.locate(
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
             
         
     
-            var marker_e1e523d845982f188c71b2548b89e1f6 = L.marker(
-                [37.29705343427704, 127.817354428421],
+            var marker_3a8e29672ddc06aab1eb1a9ba57d0e8c = L.marker(
+                [37.72170970780116, 128.85289004662917],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_e1e523d845982f188c71b2548b89e1f6.bindTooltip(
+            marker_3a8e29672ddc06aab1eb1a9ba57d0e8c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>구정(동해)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 강릉시 구정면 제비리 888<br>
+        강원 강릉시 구정면 동해고속도로 345-1<br>
+        > <b>가격: 1,435 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_ee5ac0a6ef10477d762543bb6a615069 = L.marker(
+                [37.29705343427704, 127.817354428421],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_ee5ac0a6ef10477d762543bb6a615069.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_5706b9a588e5f7ec5ac99259e974ea85 = L.marker(
-                [37.72170970780116, 128.85289004662917],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_5706b9a588e5f7ec5ac99259e974ea85.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>구정(동해)주유소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 강릉시 구정면 제비리 888<br>
-        강원 강릉시 구정면 동해고속도로 345-1<br>
-        > <b>가격: 1,440 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_957123b6d22b74a35d4e3052bac76b57 = L.marker(
-                [37.758690677785566, 128.00546954217742],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_957123b6d22b74a35d4e3052bac76b57.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>키다리식품(주)홍천서울주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 홍천군 화촌면 군업리 산244-4<br>
-        강원 홍천군 화촌면 서울양양고속도로 83-1<br>
-        > <b>가격: 1,444 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_27c2e477bb180a0e26eeb460c9f15998 = L.marker(
+            var marker_803691f475a181fd6ca366bdaf9f5eaa = L.marker(
                 [37.7577540564652, 128.00530419840868],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_27c2e477bb180a0e26eeb460c9f15998.bindTooltip(
+            marker_803691f475a181fd6ca366bdaf9f5eaa.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,21 +135,21 @@
             );
         
     
-            var marker_c500b4ed6e2a1952a31150d2a5bcdedd = L.marker(
-                [37.739233810011385, 128.86997759278555],
+            var marker_2782d1958024eb46e52cf7f0d44931b7 = L.marker(
+                [37.758690677785566, 128.00546954217742],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_c500b4ed6e2a1952a31150d2a5bcdedd.bindTooltip(
+            marker_2782d1958024eb46e52cf7f0d44931b7.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>회산주유소</b><br>
-        <b>S-OIL</b><br>
-        강원 강릉시 회산동 234-1<br>
-        강원 강릉시 관솔길 27 (회산동)<br>
-        > <b>가격: 1,451 원/리터</b>
+        <b>키다리식품(주)홍천서울주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 홍천군 화촌면 군업리 산244-4<br>
+        강원 홍천군 화촌면 서울양양고속도로 83-1<br>
+        > <b>가격: 1,444 원/리터</b>
         </font>
     
                  </div>`,
@@ -179,13 +157,35 @@
             );
         
     
-            var marker_6053e849523dba041e63e797bf789da9 = L.marker(
-                [37.75848975318993, 128.80728462095868],
+            var marker_852133fb0d2a7cd60be897f5c5dce533 = L.marker(
+                [37.616306999539454, 129.05690144740018],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_6053e849523dba041e63e797bf789da9.bindTooltip(
+            marker_852133fb0d2a7cd60be897f5c5dce533.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>옥계(속초)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 강릉시 옥계면 주수리 88-14<br>
+        강원 강릉시 옥계면 동해고속도로 322<br>
+        > <b>가격: 1,449 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2af9c4070fda2d55f875528c6d614d22 = L.marker(
+                [37.75848975318993, 128.80728462095868],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_2af9c4070fda2d55f875528c6d614d22.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +201,13 @@
             );
         
     
-            var marker_66c95bc550e033d3a6e67ddc21e03ea1 = L.marker(
+            var marker_2c742034347aec7c9c8d5e66d3edf137 = L.marker(
                 [37.75857228233584, 128.80390317569953],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_66c95bc550e033d3a6e67ddc21e03ea1.bindTooltip(
+            marker_2c742034347aec7c9c8d5e66d3edf137.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_b4a694b2775946a72ac85c626b76b7a2 = L.marker(
+            var marker_c532910a3d35e9101122d534b900acd1 = L.marker(
                 [38.04727993439802, 128.65304886259375],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_b4a694b2775946a72ac85c626b76b7a2.bindTooltip(
+            marker_c532910a3d35e9101122d534b900acd1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,57 +245,13 @@
             );
         
     
-            var marker_a3f95ee99acdb6fe32d85857ae7e80f0 = L.marker(
-                [37.74615174888021, 128.86767478136287],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_a3f95ee99acdb6fe32d85857ae7e80f0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>솔향주유소</b><br>
-        <b>자영알뜰</b><br>
-        강원 강릉시 홍제동 757-1<br>
-        강원 강릉시 공제로437번길 1 (홍제동)<br>
-        > <b>가격: 1,453 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ba601d1ce7d9594e185ca31cfb2d4582 = L.marker(
-                [37.253318844569705, 128.05025775204246],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_ba601d1ce7d9594e185ca31cfb2d4582.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>치악(부산방향)주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 원주시 신림면 금창리 550<br>
-        강원 원주시 신림면 치악로 416<br>
-        > <b>가격: 1,454 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f5a0aca6910105c1f723a7ff2a661c5d = L.marker(
+            var marker_f32d0703c2d01ff8acaf2247b592b3bf = L.marker(
                 [37.723706915132624, 128.8529153401794],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_f5a0aca6910105c1f723a7ff2a661c5d.bindTooltip(
+            marker_f32d0703c2d01ff8acaf2247b592b3bf.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +267,35 @@
             );
         
     
-            var marker_f92c99cdc9bfe892ba1e4ad15895a7f3 = L.marker(
-                [37.25601695033811, 128.04791041932316],
+            var marker_e0f5006ade3d889004c44b8d01430cc0 = L.marker(
+                [37.253318844569705, 128.05025775204246],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_f92c99cdc9bfe892ba1e4ad15895a7f3.bindTooltip(
+            marker_e0f5006ade3d889004c44b8d01430cc0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>치악(부산방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 원주시 신림면 금창리 550<br>
+        강원 원주시 신림면 치악로 416<br>
+        > <b>가격: 1,454 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_30ec36cf2117fe0caf2c3ff08a5a199b = L.marker(
+                [37.25601695033811, 128.04791041932316],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_30ec36cf2117fe0caf2c3ff08a5a199b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,79 +311,13 @@
             );
         
     
-            var marker_a510798de7eccaab6cef973fee67627d = L.marker(
-                [37.71255223931263, 127.82768080206964],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_a510798de7eccaab6cef973fee67627d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)선인상사 홍천강(춘천방향)주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 홍천군 북방면 소매곡리 294<br>
-        강원 홍천군 북방면 도사곡길 223<br>
-        > <b>가격: 1,455 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8adf8d003a2136efaa373e024868f0e1 = L.marker(
-                [37.46509428525217, 128.13376314255845],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_8adf8d003a2136efaa373e024868f0e1.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)대현유통 횡성(인천방향)주유소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 횡성군 안흥면 소사리 1512-4<br>
-        강원 횡성군 안흥면 영동고속도로 153-1<br>
-        > <b>가격: 1,455 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_562e6ff806abe15bc60ca9aead7f6017 = L.marker(
-                [37.4633470444048, 128.13600633776852],
-                {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
-        
-    
-            marker_562e6ff806abe15bc60ca9aead7f6017.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>씨앤에스에너지(주) 횡성(하)주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 횡성군 안흥면 소사리 1537-1<br>
-        강원 횡성군 안흥면 영동고속도로 154-1<br>
-        > <b>가격: 1,455 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f64f9a450c7fb19b2fa3e57d9d151d6e = L.marker(
+            var marker_9e6ca3ec103ed5eb68a249152ea1781b = L.marker(
                 [37.33657305469253, 127.85867768437826],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_f64f9a450c7fb19b2fa3e57d9d151d6e.bindTooltip(
+            marker_9e6ca3ec103ed5eb68a249152ea1781b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +333,79 @@
             );
         
     
-            var marker_ae98dafab2d0247452c53bf04d070763 = L.marker(
-                [38.042937973177025, 128.66714937271541],
+            var marker_89cc5e405261b9fdcbde2f9f1b07a991 = L.marker(
+                [37.46509428525217, 128.13376314255845],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_ae98dafab2d0247452c53bf04d070763.bindTooltip(
+            marker_89cc5e405261b9fdcbde2f9f1b07a991.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)대현유통 횡성(인천방향)주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 횡성군 안흥면 소사리 1512-4<br>
+        강원 횡성군 안흥면 영동고속도로 153-1<br>
+        > <b>가격: 1,455 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_178dbe74741fc3c7ae6dd5d15ce87513 = L.marker(
+                [37.4633470444048, 128.13600633776852],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_178dbe74741fc3c7ae6dd5d15ce87513.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>씨앤에스에너지(주) 횡성(하)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 횡성군 안흥면 소사리 1537-1<br>
+        강원 횡성군 안흥면 영동고속도로 154-1<br>
+        > <b>가격: 1,455 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a4ae8ef3dda9f41419fa81325bfa87c0 = L.marker(
+                [37.71255223931263, 127.82768080206964],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_a4ae8ef3dda9f41419fa81325bfa87c0.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)선인상사 홍천강(춘천방향)주유소/충전소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 홍천군 북방면 소매곡리 294<br>
+        강원 홍천군 북방면 도사곡길 223<br>
+        > <b>가격: 1,455 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2859f85ea4d25f5f11bb6be01575e07d = L.marker(
+                [38.042937973177025, 128.66714937271541],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_2859f85ea4d25f5f11bb6be01575e07d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,20 +421,20 @@
             );
         
     
-            var marker_333280dd959d9f498ef429d8d53ca252 = L.marker(
-                [37.616306999539454, 129.05690144740018],
+            var marker_b01898710dd359500a2af923b0cc9290 = L.marker(
+                [37.60986108326323, 128.46302826906492],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_333280dd959d9f498ef429d8d53ca252.bindTooltip(
+            marker_b01898710dd359500a2af923b0cc9290.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>옥계(속초)주유소/충전소</b><br>
+        <b>평창(서창)주유소/충전소</b><br>
         <b>고속도로알뜰</b><br>
-        강원 강릉시 옥계면 주수리 88-14<br>
-        강원 강릉시 옥계면 동해고속도로 322<br>
+        강원 평창군 용평면 이목정리 476-4<br>
+        강원 평창군 용평면 탑거리길 63<br>
         > <b>가격: 1,459 원/리터</b>
         </font>
     
@@ -465,13 +443,13 @@
             );
         
     
-            var marker_a799b88dac456fc18da3152d9226f00c = L.marker(
+            var marker_e6885d44c7dc52930baa28969eb2981f = L.marker(
                 [37.60578192257595, 128.4541431109434],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_a799b88dac456fc18da3152d9226f00c.bindTooltip(
+            marker_e6885d44c7dc52930baa28969eb2981f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,21 +465,43 @@
             );
         
     
-            var marker_006aff63f6885b1b3d9f9cd4a072e2fc = L.marker(
-                [37.60986108326323, 128.46302826906492],
+            var marker_9164baa69af1dc00b403fcf354f4df7f = L.marker(
+                [37.48698651632056, 127.98878360635624],
                 {}
-            ).addTo(map_6ee1a18a208495b1d02b0f242a0c4aca);
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
         
     
-            marker_006aff63f6885b1b3d9f9cd4a072e2fc.bindTooltip(
+            marker_9164baa69af1dc00b403fcf354f4df7f.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>평창(서창)주유소/충전소</b><br>
-        <b>고속도로알뜰</b><br>
-        강원 평창군 용평면 이목정리 476-4<br>
-        강원 평창군 용평면 탑거리길 63<br>
-        > <b>가격: 1,459 원/리터</b>
+        <b>횡성농협클린주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 횡성군 횡성읍 읍상리 494<br>
+        강원 횡성군 횡성읍 한우로 323<br>
+        > <b>가격: 1,460 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b19998f9de2119ddf67681ffe3168c25 = L.marker(
+                [37.52686217664888, 127.88465185919794],
+                {}
+            ).addTo(map_beb66f6e6e6b8355247747b6443946e6);
+        
+    
+            marker_b19998f9de2119ddf67681ffe3168c25.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>횡성농협 유현지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 횡성군 서원면 유현리 128-1<br>
+        강원 횡성군 서원면 경강로 800<br>
+        > <b>가격: 1,460 원/리터</b>
         </font>
     
                  </div>`,
