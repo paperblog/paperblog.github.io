@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_64f3588b8af3fe1955962024818f44b1 {
+                #map_8fe9232c5fd6d866a44e59622373e08c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_64f3588b8af3fe1955962024818f44b1" ></div>
+            <div class="folium-map" id="map_8fe9232c5fd6d866a44e59622373e08c" ></div>
         
 </body>
 <script>    
     
-            var map_64f3588b8af3fe1955962024818f44b1 = L.map(
-                "map_64f3588b8af3fe1955962024818f44b1",
+            var map_8fe9232c5fd6d866a44e59622373e08c = L.map(
+                "map_8fe9232c5fd6d866a44e59622373e08c",
                 {
-                    center: [34.80169955339856, 127.64236450050973],
+                    center: [34.80043361517839, 127.64485742664003],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_24b120fb77b7d57c4c7b6d8ef6c154f0 = L.tileLayer(
+            var tile_layer_dfdfb3692b1bf914e139796be98ed1a0 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            var locate_control_db81e182058eae369be4bdaae73e662f = L.control.locate(
+            var locate_control_2432b608a8969e087fbcd97408e3c867 = L.control.locate(
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
             
         
     
-            var marker_769f160051fabe3f4a0fc04679c9a08c = L.marker(
-                [34.82542362450757, 127.61794185816645],
+            var marker_98d41fd036d16942ce637059e0eaf89e = L.marker(
+                [34.756665844593186, 127.71852353309697],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_769f160051fabe3f4a0fc04679c9a08c.bindTooltip(
+            marker_98d41fd036d16942ce637059e0eaf89e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>삼거리주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 여수시 오림동 413-8<br>
+        전남 여수시 좌수영로 237 (오림동)<br>
+        > <b>가격: 1,488 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6364341b83ac1c1737a0d76bf991b0e2 = L.marker(
+                [34.82542362450757, 127.61794185816645],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_6364341b83ac1c1737a0d76bf991b0e2.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,79 @@
             );
         
     
-            var marker_e3b16ba515ecce664c3c8eb40f72fb61 = L.marker(
-                [34.78081789830559, 127.67770784319785],
+            var marker_c4106d505937151790cb24d6512fc16e = L.marker(
+                [34.81861202820694, 127.62133950781484],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_e3b16ba515ecce664c3c8eb40f72fb61.bindTooltip(
+            marker_c4106d505937151790cb24d6512fc16e.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>공항주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 여수시 소라면 대포리 26-2<br>
+        전남 여수시 소라면 여순로 146<br>
+        > <b>가격: 1,489 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_388fe37de2071a5ee8be267708ff9f03 = L.marker(
+                [34.82233975097753, 127.6195099564798],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_388fe37de2071a5ee8be267708ff9f03.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)명진주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 소라면 대포리 99<br>
+        전남 여수시 소라면 여순로 198<br>
+        > <b>가격: 1,489 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9274ea228584d9364aff9f53b43b2b83 = L.marker(
+                [34.81664044677181, 127.62285739932383],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_9274ea228584d9364aff9f53b43b2b83.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)현우 조은주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 여수시 소라면 대포리 637-4<br>
+        전남 여수시 소라면 여순로 120<br>
+        > <b>가격: 1,489 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c11447e8060e512264ca3673af22bd3b = L.marker(
+                [34.78081789830559, 127.67770784319785],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_c11447e8060e512264ca3673af22bd3b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -113,13 +201,13 @@
             );
         
     
-            var marker_c76f276f30b64e4b572d54ff9bb3618f = L.marker(
+            var marker_b729e0bdf4d75b56a023f4922b59d1ca = L.marker(
                 [34.79996445667478, 127.66223614900004],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_c76f276f30b64e4b572d54ff9bb3618f.bindTooltip(
+            marker_b729e0bdf4d75b56a023f4922b59d1ca.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -135,13 +223,13 @@
             );
         
     
-            var marker_55a2745057a92e3f29121047cb722a65 = L.marker(
+            var marker_8a94b0dcfeea51bc8e8847406af5bf8a = L.marker(
                 [34.82645621760782, 127.64649209239883],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_55a2745057a92e3f29121047cb722a65.bindTooltip(
+            marker_8a94b0dcfeea51bc8e8847406af5bf8a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,57 +245,13 @@
             );
         
     
-            var marker_daa9c9f72143e26bf7741cce67b973b0 = L.marker(
-                [34.78198460899646, 127.66866501049103],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_daa9c9f72143e26bf7741cce67b973b0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>남해화학(주)여천하나로주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 여수시 여천동 381<br>
-        전남 여수시 좌수영로 925<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8e2934b3bbd37d8c4868cfedb7b816f6 = L.marker(
-                [34.80599603832299, 127.66832385517745],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_8e2934b3bbd37d8c4868cfedb7b816f6.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>태화로지스틱스㈜ 동화주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 여수시 월하동 780-1<br>
-        전남 여수시 여수산단로 264<br>
-        > <b>가격: 1,498 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_49e243c9d1df14df17dd3de38d622cc9 = L.marker(
+            var marker_c22adc0cafa54e7225c3b941d37ba017 = L.marker(
                 [34.804019397497, 127.66618373904396],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_49e243c9d1df14df17dd3de38d622cc9.bindTooltip(
+            marker_c22adc0cafa54e7225c3b941d37ba017.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,43 +267,21 @@
             );
         
     
-            var marker_d70bb3b953c60cbd77de5bcfd6cdc4c7 = L.marker(
-                [34.81664044677181, 127.62285739932383],
+            var marker_c763255d310a9f8120d41acb45886417 = L.marker(
+                [34.80599603832299, 127.66832385517745],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_d70bb3b953c60cbd77de5bcfd6cdc4c7.bindTooltip(
+            marker_c763255d310a9f8120d41acb45886417.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>(주)현우 조은주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 여수시 소라면 대포리 637-4<br>
-        전남 여수시 소라면 여순로 120<br>
-        > <b>가격: 1,499 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_82cb24e8af63d6737a06c4b186c812b3 = L.marker(
-                [34.82233975097753, 127.6195099564798],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_82cb24e8af63d6737a06c4b186c812b3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)명진주유소</b><br>
+        <b>태화로지스틱스㈜ 동화주유소</b><br>
         <b>GS칼텍스</b><br>
-        전남 여수시 소라면 대포리 99<br>
-        전남 여수시 소라면 여순로 198<br>
-        > <b>가격: 1,499 원/리터</b>
+        전남 여수시 월하동 780-1<br>
+        전남 여수시 여수산단로 264<br>
+        > <b>가격: 1,498 원/리터</b>
         </font>
     
                  </div>`,
@@ -267,13 +289,13 @@
             );
         
     
-            var marker_d8a6100b4b34643caf4be9a6a2b3f11e = L.marker(
+            var marker_917419c2cd8f9924422ebb50030600a3 = L.marker(
                 [34.85614355461721, 127.59716821664944],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_d8a6100b4b34643caf4be9a6a2b3f11e.bindTooltip(
+            marker_917419c2cd8f9924422ebb50030600a3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,35 +311,13 @@
             );
         
     
-            var marker_578f400e76e840b5cc2a7aef3e72d5e5 = L.marker(
-                [34.786796777328696, 127.6322144659262],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_578f400e76e840b5cc2a7aef3e72d5e5.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>The 드림주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 여수시 소라면 덕양리 845-1<br>
-        전남 여수시 소라면 845-1<br>
-        > <b>가격: 1,499 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1214a431d22958b0e3fcee84feeae046 = L.marker(
+            var marker_fbe38d5d473ed0197d31ea2add494654 = L.marker(
                 [34.797070252891096, 127.63512038879483],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_1214a431d22958b0e3fcee84feeae046.bindTooltip(
+            marker_fbe38d5d473ed0197d31ea2add494654.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +333,13 @@
             );
         
     
-            var marker_ec4443166c5cf1150bbdf5fb1cde9727 = L.marker(
+            var marker_c616c02e93b0874eeb7a88d53abfbba5 = L.marker(
                 [34.821109286917974, 127.61904891129856],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_ec4443166c5cf1150bbdf5fb1cde9727.bindTooltip(
+            marker_c616c02e93b0874eeb7a88d53abfbba5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,20 +355,20 @@
             );
         
     
-            var marker_910a5edb3a57e4cc72a911cada900679 = L.marker(
-                [34.81861202820694, 127.62133950781484],
+            var marker_76c6410376dd79ff39224436c92d6934 = L.marker(
+                [34.786796777328696, 127.6322144659262],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_910a5edb3a57e4cc72a911cada900679.bindTooltip(
+            marker_76c6410376dd79ff39224436c92d6934.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>공항주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 여수시 소라면 대포리 26-2<br>
-        전남 여수시 소라면 여순로 146<br>
+        <b>The 드림주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 여수시 소라면 덕양리 845-1<br>
+        전남 여수시 소라면 845-1<br>
         > <b>가격: 1,499 원/리터</b>
         </font>
     
@@ -377,13 +377,13 @@
             );
         
     
-            var marker_d69d04bbcd31178c7a1c7778799f6c78 = L.marker(
+            var marker_4372d40575d73db5028d97e3fb402634 = L.marker(
                 [34.72835398974964, 127.72034171816856],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_d69d04bbcd31178c7a1c7778799f6c78.bindTooltip(
+            marker_4372d40575d73db5028d97e3fb402634.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,13 @@
             );
         
     
-            var marker_1ba490f740edadb0e38edbc55f08702f = L.marker(
+            var marker_280b56fa178c93de8e4492dab0a75046 = L.marker(
                 [34.774887623287945, 127.63738964305442],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_1ba490f740edadb0e38edbc55f08702f.bindTooltip(
+            marker_280b56fa178c93de8e4492dab0a75046.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,57 +421,13 @@
             );
         
     
-            var marker_1d6fdf419ce39b60abcd5540f22b5bf4 = L.marker(
-                [34.78234046983388, 127.66277874659777],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_1d6fdf419ce39b60abcd5540f22b5bf4.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>해솔주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 여수시 여천동 675-2<br>
-        전남 여수시 시청로 230<br>
-        > <b>가격: 1,505 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_95414181bd0cc29c6df2194527fe79d3 = L.marker(
-                [34.76067418105243, 127.64722661444668],
-                {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
-        
-    
-            marker_95414181bd0cc29c6df2194527fe79d3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>안산주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 여수시 안산동 470-8<br>
-        전남 여수시 도원로 150 (안산동)<br>
-        > <b>가격: 1,505 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_90b6a273e5cd3e6ea3be65e2b0b19ae8 = L.marker(
+            var marker_6cbe4f1e67cbb247f816ec1ead113b0b = L.marker(
                 [34.76114634518901, 127.64625447282705],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_90b6a273e5cd3e6ea3be65e2b0b19ae8.bindTooltip(
+            marker_6cbe4f1e67cbb247f816ec1ead113b0b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,13 +443,57 @@
             );
         
     
-            var marker_1a5b2d259be654cf3bb4c647ee9208ab = L.marker(
-                [34.883214119234744, 127.57848942133765],
+            var marker_d4dae9ceef03f5e37a0613ae8e0342d1 = L.marker(
+                [34.76067418105243, 127.64722661444668],
                 {}
-            ).addTo(map_64f3588b8af3fe1955962024818f44b1);
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
         
     
-            marker_1a5b2d259be654cf3bb4c647ee9208ab.bindTooltip(
+            marker_d4dae9ceef03f5e37a0613ae8e0342d1.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>안산주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 여수시 안산동 470-8<br>
+        전남 여수시 도원로 150 (안산동)<br>
+        > <b>가격: 1,505 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_654407fd333ba74af28dbff80cba2011 = L.marker(
+                [34.78234046983388, 127.66277874659777],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_654407fd333ba74af28dbff80cba2011.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해솔주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 여수시 여천동 675-2<br>
+        전남 여수시 시청로 230<br>
+        > <b>가격: 1,505 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0c7a90067a47de7b590176bd6ed39fe3 = L.marker(
+                [34.883214119234744, 127.57848942133765],
+                {}
+            ).addTo(map_8fe9232c5fd6d866a44e59622373e08c);
+        
+    
+            marker_0c7a90067a47de7b590176bd6ed39fe3.bindTooltip(
                 `<div>
                      
         <font size=3>
