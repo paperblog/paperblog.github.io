@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c1b59dd18d5e68a06ac45af3fdd2d6a7 {
+                #map_9fbcec91e1846dfc379451962e1c336f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c1b59dd18d5e68a06ac45af3fdd2d6a7" ></div>
+            <div class="folium-map" id="map_9fbcec91e1846dfc379451962e1c336f" ></div>
         
 </body>
 <script>    
     
-            var map_c1b59dd18d5e68a06ac45af3fdd2d6a7 = L.map(
-                "map_c1b59dd18d5e68a06ac45af3fdd2d6a7",
+            var map_9fbcec91e1846dfc379451962e1c336f = L.map(
+                "map_9fbcec91e1846dfc379451962e1c336f",
                 {
-                    center: [37.440135199389466, 129.160571414906],
+                    center: [37.440135199389466, 129.16057141490597],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_6242a250a8c92fe1da9838a9e4982c5a = L.tileLayer(
+            var tile_layer_8f031ed7b455229d51045368334fd45b = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c1b59dd18d5e68a06ac45af3fdd2d6a7);
+            ).addTo(map_9fbcec91e1846dfc379451962e1c336f);
         
     
-            var locate_control_5e0dce3e79447905e70bd535c231befd = L.control.locate(
+            var locate_control_5c35eabb91b32c1d3e0e5c0d4fd7b764 = L.control.locate(
                 {}
-            ).addTo(map_c1b59dd18d5e68a06ac45af3fdd2d6a7);
+            ).addTo(map_9fbcec91e1846dfc379451962e1c336f);
             
         
     
-            var marker_db44969ddf8def5262eb9cad86069faf = L.marker(
-                [37.44318650720412, 129.13181893170068],
+            var marker_02c5ff5de6403ac5a90ac88bc9f4b33c = L.marker(
+                [37.42944376178912, 129.1828555289944],
                 {}
-            ).addTo(map_c1b59dd18d5e68a06ac45af3fdd2d6a7);
+            ).addTo(map_9fbcec91e1846dfc379451962e1c336f);
         
     
-            marker_db44969ddf8def5262eb9cad86069faf.bindTooltip(
+            marker_02c5ff5de6403ac5a90ac88bc9f4b33c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원더풀주유소/충전소</b><br>
+        <b>GS칼텍스</b><br>
+        강원 삼척시 오분동 126-3<br>
+        강원 삼척시 동해대로 3852 (오분동)<br>
+        > <b>가격: 1,890 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_75124a9c5b2220278ccc48d3746ca631 = L.marker(
+                [37.44318650720412, 129.13181893170068],
+                {}
+            ).addTo(map_9fbcec91e1846dfc379451962e1c336f);
+        
+    
+            marker_75124a9c5b2220278ccc48d3746ca631.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,13 +113,13 @@
             );
         
     
-            var marker_036697ae12eda9a85a249265ebee5ef7 = L.marker(
+            var marker_86899df96cde9cb23f260dbec750a572 = L.marker(
                 [37.44777532917516, 129.16703978402285],
                 {}
-            ).addTo(map_c1b59dd18d5e68a06ac45af3fdd2d6a7);
+            ).addTo(map_9fbcec91e1846dfc379451962e1c336f);
         
     
-            marker_036697ae12eda9a85a249265ebee5ef7.bindTooltip(
+            marker_86899df96cde9cb23f260dbec750a572.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -105,28 +127,6 @@
         <b>GS칼텍스</b><br>
         강원 삼척시 당저동 28-2<br>
         강원 삼척시 교동로 40 (당저동)<br>
-        > <b>가격: 1,890 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_73cc73a42ea2ebc74a2eb15dc2279703 = L.marker(
-                [37.42944376178912, 129.1828555289944],
-                {}
-            ).addTo(map_c1b59dd18d5e68a06ac45af3fdd2d6a7);
-        
-    
-            marker_73cc73a42ea2ebc74a2eb15dc2279703.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>원더풀주유소/충전소</b><br>
-        <b>GS칼텍스</b><br>
-        강원 삼척시 오분동 126-3<br>
-        강원 삼척시 동해대로 3852 (오분동)<br>
         > <b>가격: 1,890 원/리터</b>
         </font>
     
