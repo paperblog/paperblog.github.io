@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_95f9c6c13280688ed7a1f714dae91776 {
+                #map_84a5670c7829e997298c7e18e8552b39 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_95f9c6c13280688ed7a1f714dae91776" ></div>
+            <div class="folium-map" id="map_84a5670c7829e997298c7e18e8552b39" ></div>
         
 </body>
 <script>    
     
-            var map_95f9c6c13280688ed7a1f714dae91776 = L.map(
-                "map_95f9c6c13280688ed7a1f714dae91776",
+            var map_84a5670c7829e997298c7e18e8552b39 = L.map(
+                "map_84a5670c7829e997298c7e18e8552b39",
                 {
-                    center: [37.509966466054024, 129.10934727334111],
+                    center: [37.51480758481543, 129.10785031520163],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_0e81b3b6dfb853f82bbd5bbb1746f0d0 = L.tileLayer(
+            var tile_layer_3a7d9551fe8b178a50c4db9b96f8c77a = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            var locate_control_b38408feab70c1a0a1a71ccdf8cf068b = L.control.locate(
+            var locate_control_2b5c25712b58a181977c99a92c218d37 = L.control.locate(
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
             
         
     
-            var marker_43343f53e341b970f8d4eee0b144a7e5 = L.marker(
-                [37.5829480141176, 129.1004033422604],
+            var marker_225b4090cfaec89457a79bdf22e2c901 = L.marker(
+                [37.521159098527164, 129.10210619579416],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_43343f53e341b970f8d4eee0b144a7e5.bindTooltip(
+            marker_225b4090cfaec89457a79bdf22e2c901.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)명진에너지 동해지점</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 천곡동 569-2<br>
+        강원 동해시 동해대로 5361 (천곡동)<br>
+        > <b>가격: 1,490 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b75293862121b20f350b3ad3d34c9c52 = L.marker(
+                [37.5829480141176, 129.1004033422604],
+                {}
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
+        
+    
+            marker_b75293862121b20f350b3ad3d34c9c52.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_9a3e94283f8e9abdb104ca4e98d66f3c = L.marker(
-                [37.521159098527164, 129.10210619579416],
-                {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
-        
-    
-            marker_9a3e94283f8e9abdb104ca4e98d66f3c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)명진에너지 동해지점</b><br>
-        <b>SK에너지</b><br>
-        강원 동해시 천곡동 569-2<br>
-        강원 동해시 동해대로 5361 (천곡동)<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_68f97bae1c6f70162d73bc13073c2829 = L.marker(
-                [37.50923444281628, 129.125263147048],
-                {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
-        
-    
-            marker_68f97bae1c6f70162d73bc13073c2829.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK해안로주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 동해시 용정동 256-2<br>
-        강원 동해시 해안로 63 (용정동)<br>
-        > <b>가격: 1,495 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_b0e58c54fed2540e649475cc76a7bd3a = L.marker(
+            var marker_787a020e0920659365df4ea02e27be24 = L.marker(
                 [37.5833971312997, 129.10004048530607],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_b0e58c54fed2540e649475cc76a7bd3a.bindTooltip(
+            marker_787a020e0920659365df4ea02e27be24.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,35 @@
             );
         
     
-            var marker_f8756b0187a0e84d1eb8b69408dff10b = L.marker(
-                [37.493014103440125, 129.12463670655288],
+            var marker_452b55464919f75b298f4d69bd468c2b = L.marker(
+                [37.50923444281628, 129.125263147048],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_f8756b0187a0e84d1eb8b69408dff10b.bindTooltip(
+            marker_452b55464919f75b298f4d69bd468c2b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK해안로주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 용정동 256-2<br>
+        강원 동해시 해안로 63 (용정동)<br>
+        > <b>가격: 1,495 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_db7a9d400f507b185e0e8df3c34cd7e6 = L.marker(
+                [37.493014103440125, 129.12463670655288],
+                {}
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
+        
+    
+            marker_db7a9d400f507b185e0e8df3c34cd7e6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +179,13 @@
             );
         
     
-            var marker_f56a478441903e6edd1b8c50867f24dc = L.marker(
+            var marker_4bb0c0f8faeea408959d39e780c95be6 = L.marker(
                 [37.4919773272053, 129.12300088964383],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_f56a478441903e6edd1b8c50867f24dc.bindTooltip(
+            marker_4bb0c0f8faeea408959d39e780c95be6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +201,13 @@
             );
         
     
-            var marker_226967ef55e3218e617d923d6a7aeda1 = L.marker(
+            var marker_9ffd3157b1d807e86dc7c6b7eab6e69f = L.marker(
                 [37.5765486465944, 129.09601725547012],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_226967ef55e3218e617d923d6a7aeda1.bindTooltip(
+            marker_9ffd3157b1d807e86dc7c6b7eab6e69f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +223,13 @@
             );
         
     
-            var marker_4cf32d1533b4ef7de1943266a18d4cdf = L.marker(
+            var marker_36a5ac9848b71ba6167571fc8d2e9574 = L.marker(
                 [37.5361074556439, 129.1030619045166],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_4cf32d1533b4ef7de1943266a18d4cdf.bindTooltip(
+            marker_36a5ac9848b71ba6167571fc8d2e9574.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,35 +245,13 @@
             );
         
     
-            var marker_da1afc34d723001c71247e9a415b020c = L.marker(
-                [37.47395822068712, 129.12922342389695],
-                {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
-        
-    
-            marker_da1afc34d723001c71247e9a415b020c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>기업주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 동해시 대구동 351-4<br>
-        강원 동해시 동해대로 4683<br>
-        > <b>가격: 1,520 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_54f34d92a33d62ed508cba4916a56276 = L.marker(
+            var marker_3d953c72c7203e964bf884a6e27793c3 = L.marker(
                 [37.470627880829994, 129.14112331961664],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_54f34d92a33d62ed508cba4916a56276.bindTooltip(
+            marker_3d953c72c7203e964bf884a6e27793c3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +267,13 @@
             );
         
     
-            var marker_e23ad848dba2c64fb58c4d772ba30f0e = L.marker(
+            var marker_ae59dd4de569bae8f09b91baa4edd08b = L.marker(
                 [37.46559916073082, 129.1156793764608],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_e23ad848dba2c64fb58c4d772ba30f0e.bindTooltip(
+            marker_ae59dd4de569bae8f09b91baa4edd08b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,20 +289,20 @@
             );
         
     
-            var marker_392b3e7dee43ecdb6fc2091f11c63979 = L.marker(
-                [37.46043426704462, 129.1149243281647],
+            var marker_e736b4b56cf3de1b91e07cf9f9176092 = L.marker(
+                [37.47395822068712, 129.12922342389695],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_392b3e7dee43ecdb6fc2091f11c63979.bindTooltip(
+            marker_e736b4b56cf3de1b91e07cf9f9176092.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>CJ대한통운㈜ 동해주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        강원 동해시 단봉동 453-2<br>
-        강원 동해시 강원남부로 4591 (단봉동)<br>
+        <b>기업주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 대구동 351-4<br>
+        강원 동해시 동해대로 4683<br>
         > <b>가격: 1,520 원/리터</b>
         </font>
     
@@ -333,13 +311,13 @@
             );
         
     
-            var marker_8c4b9c5629f602da165b8d1e5322c5c2 = L.marker(
+            var marker_d70f37acbf4bfe8a80cabe7ba427bd2c = L.marker(
                 [37.49120856527329, 129.1041263660388],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_8c4b9c5629f602da165b8d1e5322c5c2.bindTooltip(
+            marker_d70f37acbf4bfe8a80cabe7ba427bd2c.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,35 +333,13 @@
             );
         
     
-            var marker_25c8dddecd0cd863afff3a43069812da = L.marker(
-                [37.503082526819995, 129.12584877413576],
-                {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
-        
-    
-            marker_25c8dddecd0cd863afff3a43069812da.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>용정에너지</b><br>
-        <b>S-OIL</b><br>
-        강원 동해시 용정동 73-1<br>
-        강원 동해시 용정로 169 (용정동)<br>
-        > <b>가격: 1,535 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_61d915c9615c66ed6e43b8664d313691 = L.marker(
+            var marker_efe718c09a9f81cee6f24f1cbe649c35 = L.marker(
                 [37.4990917246503, 129.11735047630498],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_61d915c9615c66ed6e43b8664d313691.bindTooltip(
+            marker_efe718c09a9f81cee6f24f1cbe649c35.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,20 +355,42 @@
             );
         
     
-            var marker_4840d9a42f69dd7b34803eabc1a092da = L.marker(
-                [37.48207054679777, 129.08137850789475],
+            var marker_5a298af9348848857eb7e9caadaaa74f = L.marker(
+                [37.503082526819995, 129.12584877413576],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_4840d9a42f69dd7b34803eabc1a092da.bindTooltip(
+            marker_5a298af9348848857eb7e9caadaaa74f.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>쇄운주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 동해시 쇄운동 668<br>
-        강원 동해시 효자로 400 (쇄운동)<br>
+        <b>용정에너지</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 용정동 73-1<br>
+        강원 동해시 용정로 169 (용정동)<br>
+        > <b>가격: 1,535 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40fbd7aaf9fd0bcc2c3cf76b8c8eaed4 = L.marker(
+                [37.46043426704462, 129.1149243281647],
+                {}
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
+        
+    
+            marker_40fbd7aaf9fd0bcc2c3cf76b8c8eaed4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>CJ대한통운㈜ 동해주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        강원 동해시 단봉동 453-2<br>
+        강원 동해시 강원남부로 4591 (단봉동)<br>
         > <b>가격: 1,540 원/리터</b>
         </font>
     
@@ -421,13 +399,13 @@
             );
         
     
-            var marker_41caef08d2aea5d3436ed39b0c785bc5 = L.marker(
+            var marker_a86e306d845952777f04b0b216601fbb = L.marker(
                 [37.48854194417979, 129.07071271362312],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_41caef08d2aea5d3436ed39b0c785bc5.bindTooltip(
+            marker_a86e306d845952777f04b0b216601fbb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +421,35 @@
             );
         
     
-            var marker_2d46d3f35c0bbfd8c6ae27921ca1b7c1 = L.marker(
-                [37.56228817820815, 129.1014682318641],
+            var marker_73f9707630900bcdf8aa8b2189309996 = L.marker(
+                [37.48207054679777, 129.08137850789475],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_2d46d3f35c0bbfd8c6ae27921ca1b7c1.bindTooltip(
+            marker_73f9707630900bcdf8aa8b2189309996.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쇄운주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 동해시 쇄운동 668<br>
+        강원 동해시 효자로 400 (쇄운동)<br>
+        > <b>가격: 1,540 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f8ebc0e642b717d388309f3d94519893 = L.marker(
+                [37.56228817820815, 129.1014682318641],
+                {}
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
+        
+    
+            marker_f8ebc0e642b717d388309f3d94519893.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,20 +465,20 @@
             );
         
     
-            var marker_d2743edb3edb27b85c4c3ea6ac01c0f6 = L.marker(
-                [37.50401266472546, 129.10557052359044],
+            var marker_d082e0f5658efcd55b63256650e11bcd = L.marker(
+                [37.60084979671682, 129.07507033584875],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_d2743edb3edb27b85c4c3ea6ac01c0f6.bindTooltip(
+            marker_d082e0f5658efcd55b63256650e11bcd.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>성일기업(주)성일주유소</b><br>
-        <b>S-OIL</b><br>
-        강원 동해시 효가동 363-1<br>
-        강원 동해시 동해대로 5155 (효가동)<br>
+        <b>한국도로공사 동해주유소</b><br>
+        <b>고속도로알뜰</b><br>
+        강원 동해시 망상동 산 3-1<br>
+        강원 동해시 동해대로 6427 (망상동)<br>
         > <b>가격: 1,549 원/리터</b>
         </font>
     
@@ -487,21 +487,21 @@
             );
         
     
-            var marker_d5228d7ef987f096a5523453ee300f55 = L.marker(
-                [37.50402742148852, 129.10500949863953],
+            var marker_53d19349b30751ef87bf4d41452f9068 = L.marker(
+                [37.50401266472546, 129.10557052359044],
                 {}
-            ).addTo(map_95f9c6c13280688ed7a1f714dae91776);
+            ).addTo(map_84a5670c7829e997298c7e18e8552b39);
         
     
-            marker_d5228d7ef987f096a5523453ee300f55.bindTooltip(
+            marker_53d19349b30751ef87bf4d41452f9068.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>대경주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        강원 동해시 효가동 363-3<br>
-        강원 동해시 동해대로 5161 (효가동)<br>
-        > <b>가격: 1,550 원/리터</b>
+        <b>성일기업(주)성일주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 동해시 효가동 363-1<br>
+        강원 동해시 동해대로 5155 (효가동)<br>
+        > <b>가격: 1,549 원/리터</b>
         </font>
     
                  </div>`,
