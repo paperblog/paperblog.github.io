@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e9de14a6671d9998ea1d8b3b654c5f0f {
+                #map_b563744148cc0a15422fbe981c0b44ac {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,13 +37,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e9de14a6671d9998ea1d8b3b654c5f0f" ></div>
+            <div class="folium-map" id="map_b563744148cc0a15422fbe981c0b44ac" ></div>
         
 </body>
 <script>    
     
-            var map_e9de14a6671d9998ea1d8b3b654c5f0f = L.map(
-                "map_e9de14a6671d9998ea1d8b3b654c5f0f",
+            var map_b563744148cc0a15422fbe981c0b44ac = L.map(
+                "map_b563744148cc0a15422fbe981c0b44ac",
                 {
                     center: [34.56867623021985, 126.51787224916458],
                     crs: L.CRS.EPSG3857,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_e8f254af3e6d3f0562f5926052c8d622 = L.tileLayer(
+            var tile_layer_b1c270afc726052d64b488fbf931b64d = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
         
     
-            var locate_control_5370d4be3cb26cee30764d960b0571a3 = L.control.locate(
+            var locate_control_ba23c6175c5e34018d15d7a05323e0f4 = L.control.locate(
                 {}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
             
         
     
-            var marker_9b104da7ef6ff5bbdb4026ecc7654347 = L.marker(
-                [34.57901674502707, 126.31162568931286],
+            var marker_9732fc5cf547b2646257adff901eb341 = L.marker(
+                [34.56045499349198, 126.58827519049524],
                 {}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
         
     
-            marker_9b104da7ef6ff5bbdb4026ecc7654347.bindTooltip(
+            marker_9732fc5cf547b2646257adff901eb341.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>GS 해남IC가스충전소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 해남군 해남읍 용정리 15-2<br>
+        전남 해남군 해남읍 땅끝대로 77<br>
+        > <b>가격: 1,008 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7b757fd14bc6b71e5ceba69d4533c09d = L.marker(
+                [34.57901674502707, 126.31162568931286],
+                {}
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
+        
+    
+            marker_7b757fd14bc6b71e5ceba69d4533c09d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,35 +113,13 @@
             );
         
     
-            var marker_70260f97c44cf99d94bb8306f8b9086a = L.marker(
-                [34.557821218265644, 126.58478720189659],
-                {}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
-        
-    
-            marker_70260f97c44cf99d94bb8306f8b9086a.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>해남가스충천소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 해남군 해남읍 용정리 44-1<br>
-        전남 해남군 해남읍 땅끝대로 123<br>
-        > <b>가격: 1,008 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_017497c245b09679b52a5c806450e2bb = L.marker(
+            var marker_4053e660b04ad37cdc86970e9d9a881a = L.marker(
                 [34.5774119640947, 126.58680091495366],
                 {}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
         
     
-            marker_017497c245b09679b52a5c806450e2bb.bindTooltip(
+            marker_4053e660b04ad37cdc86970e9d9a881a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -135,20 +135,20 @@
             );
         
     
-            var marker_d9de2d336c6d2096c61d94dd1f6465e8 = L.marker(
-                [34.56045499349198, 126.58827519049524],
+            var marker_fae5c98d1ed6ef575ff3a712a5bcc4b1 = L.marker(
+                [34.557821218265644, 126.58478720189659],
                 {}
-            ).addTo(map_e9de14a6671d9998ea1d8b3b654c5f0f);
+            ).addTo(map_b563744148cc0a15422fbe981c0b44ac);
         
     
-            marker_d9de2d336c6d2096c61d94dd1f6465e8.bindTooltip(
+            marker_fae5c98d1ed6ef575ff3a712a5bcc4b1.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>GS 해남IC가스충전소</b><br>
+        <b>해남가스충천소</b><br>
         <b>GS칼텍스</b><br>
-        전남 해남군 해남읍 용정리 15-2<br>
-        전남 해남군 해남읍 땅끝대로 77<br>
+        전남 해남군 해남읍 용정리 44-1<br>
+        전남 해남군 해남읍 땅끝대로 123<br>
         > <b>가격: 1,008 원/리터</b>
         </font>
     
