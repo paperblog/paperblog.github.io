@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_22b5d80c214cebe7c9c9763d3ab863dc {
+                #map_74b5128e157492cde8511dbef775f7ee {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_22b5d80c214cebe7c9c9763d3ab863dc" ></div>
+            <div class="folium-map" id="map_74b5128e157492cde8511dbef775f7ee" ></div>
         
 </body>
 <script>    
     
-            var map_22b5d80c214cebe7c9c9763d3ab863dc = L.map(
-                "map_22b5d80c214cebe7c9c9763d3ab863dc",
+            var map_74b5128e157492cde8511dbef775f7ee = L.map(
+                "map_74b5128e157492cde8511dbef775f7ee",
                 {
-                    center: [37.73324000095401, 127.07198260866953],
+                    center: [37.73319130435339, 127.0724897261911],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,69 @@
 
         
     
-            var tile_layer_67e43a5acdc9545e3d4cde1c84d7d5ca = L.tileLayer(
+            var tile_layer_3cd5fedb3a7837071d68d7dc7a4b24cd = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            var locate_control_e1fc9b68f5a57471e3163e7866d045ff = L.control.locate(
+            var locate_control_454c9d5d7b914af1c501e888d0d6d788 = L.control.locate(
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
             
         
     
-            var marker_3d1e6c059dd4bb733596d220458c7509 = L.marker(
-                [37.73639703134755, 127.05842419404385],
+            var marker_0f023ae58d86b285d9d4b6c894d616a4 = L.marker(
+                [37.7343224691147, 127.0660857258135],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_3d1e6c059dd4bb733596d220458c7509.bindTooltip(
+            marker_0f023ae58d86b285d9d4b6c894d616a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK KH에너지 신곡주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의정부시 신곡동 387<br>
+        경기 의정부시 금신로 153 (신곡동)<br>
+        > <b>가격: 1,663 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8ceb6fce7e1f1a505020ba3024b08586 = L.marker(
+                [37.72919429439129, 127.06329919413592],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_8ceb6fce7e1f1a505020ba3024b08586.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>흥산에너지</b><br>
+        <b>자영알뜰</b><br>
+        경기 의정부시 신곡동 312-38<br>
+        경기 의정부시 금신로 91 (신곡동)<br>
+        > <b>가격: 1,663 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_6b96e09dba75217bf2d25051e1431d30 = L.marker(
+                [37.73639703134755, 127.05842419404385],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_6b96e09dba75217bf2d25051e1431d30.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,101 +135,13 @@
             );
         
     
-            var marker_e2680ec06e88c8ecec5db91245d3e990 = L.marker(
-                [37.72919429439129, 127.06329919413592],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_e2680ec06e88c8ecec5db91245d3e990.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>흥산에너지</b><br>
-        <b>자영알뜰</b><br>
-        경기 의정부시 신곡동 312-38<br>
-        경기 의정부시 금신로 91 (신곡동)<br>
-        > <b>가격: 1,667 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_51a5f6bf559422a6d04e64ff3f458060 = L.marker(
-                [37.7343224691147, 127.0660857258135],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_51a5f6bf559422a6d04e64ff3f458060.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK KH에너지 신곡주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 의정부시 신곡동 387<br>
-        경기 의정부시 금신로 153 (신곡동)<br>
-        > <b>가격: 1,667 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_fde145d944ede80dcb114762f782fc2c = L.marker(
-                [37.71827977095668, 127.10387669418348],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_fde145d944ede80dcb114762f782fc2c.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>훼미리주유소</b><br>
-        <b>S-OIL</b><br>
-        경기 의정부시 산곡동 466-2<br>
-        경기 의정부시 송산로 970 (산곡동)<br>
-        > <b>가격: 1,669 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f73bd9cd714975c5923f872d4b8c6677 = L.marker(
-                [37.73072084562617, 127.08515810489632],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_f73bd9cd714975c5923f872d4b8c6677.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>한신주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 의정부시 용현동 225-5<br>
-        경기 의정부시 시민로 473 (용현동)<br>
-        > <b>가격: 1,669 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d08a80d0b0f323604b803fe6e1333626 = L.marker(
+            var marker_b3cf870e7c617ec072debdb268a7ef69 = L.marker(
                 [37.70753030083083, 127.05769683850878],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_d08a80d0b0f323604b803fe6e1333626.bindTooltip(
+            marker_b3cf870e7c617ec072debdb268a7ef69.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +157,79 @@
             );
         
     
-            var marker_7b323eede98eb633edbb728cc788f144 = L.marker(
-                [37.735610493852, 127.07547272499329],
+            var marker_3a279b668c25cbf67fb161063ec11a94 = L.marker(
+                [37.756125132921376, 127.0795891998407],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_7b323eede98eb633edbb728cc788f144.bindTooltip(
+            marker_3a279b668c25cbf67fb161063ec11a94.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>신화에너지 제일주유소</b><br>
+        <b>자가상표</b><br>
+        경기 의정부시 금오동 93-3<br>
+        경기 의정부시 호국로 1618 (금오동)<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f1a5d9b9da777516303024fee11673d9 = L.marker(
+                [37.73072084562617, 127.08515810489632],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_f1a5d9b9da777516303024fee11673d9.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한신주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 의정부시 용현동 225-5<br>
+        경기 의정부시 시민로 473 (용현동)<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_41b1f902f7108fd5a44deac1379de727 = L.marker(
+                [37.71827977095668, 127.10387669418348],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_41b1f902f7108fd5a44deac1379de727.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>훼미리주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 의정부시 산곡동 466-2<br>
+        경기 의정부시 송산로 970 (산곡동)<br>
+        > <b>가격: 1,669 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f4da2b27e7812cb4546c0d333069ef8a = L.marker(
+                [37.735610493852, 127.07547272499329],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_f4da2b27e7812cb4546c0d333069ef8a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +245,13 @@
             );
         
     
-            var marker_5d3cd4750c5e814d8f1434c049f31ba9 = L.marker(
+            var marker_eed54045853d5d0ee9bd507a0aadffbf = L.marker(
                 [37.71313536421791, 127.10490552166846],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_5d3cd4750c5e814d8f1434c049f31ba9.bindTooltip(
+            marker_eed54045853d5d0ee9bd507a0aadffbf.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +267,13 @@
             );
         
     
-            var marker_8d4e731a2adff4294889f5c437e6fbd7 = L.marker(
+            var marker_2bad55dbac0316ab25a5e7e520c342ad = L.marker(
                 [37.72396514118015, 127.06312106946206],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_8d4e731a2adff4294889f5c437e6fbd7.bindTooltip(
+            marker_2bad55dbac0316ab25a5e7e520c342ad.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,35 +289,13 @@
             );
         
     
-            var marker_8b684be0902ab937d52c9be35b87deb3 = L.marker(
-                [37.756125132921376, 127.0795891998407],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_8b684be0902ab937d52c9be35b87deb3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>신화에너지 제일주유소</b><br>
-        <b>자가상표</b><br>
-        경기 의정부시 금오동 93-3<br>
-        경기 의정부시 호국로 1618 (금오동)<br>
-        > <b>가격: 1,679 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_e196ade0901836ad20822b1a03bdbcb8 = L.marker(
+            var marker_965f92fb6f4e9f8a2b4ab92aab357938 = L.marker(
                 [37.73377444222372, 127.04823544592627],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_e196ade0901836ad20822b1a03bdbcb8.bindTooltip(
+            marker_965f92fb6f4e9f8a2b4ab92aab357938.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,13 @@
             );
         
     
-            var marker_9a8d41d850cc246b72f2a199bb54aa93 = L.marker(
+            var marker_d51e30ea08194e949bfa0e46ac360d55 = L.marker(
                 [37.73314565418017, 127.04048564053772],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_9a8d41d850cc246b72f2a199bb54aa93.bindTooltip(
+            marker_d51e30ea08194e949bfa0e46ac360d55.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +333,13 @@
             );
         
     
-            var marker_eb74c7282ddf2bb424f131100c47e9b9 = L.marker(
+            var marker_51e106feef4ef3423ce5c3a319a5f6a6 = L.marker(
                 [37.75712643177793, 127.1126808769352],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_eb74c7282ddf2bb424f131100c47e9b9.bindTooltip(
+            marker_51e106feef4ef3423ce5c3a319a5f6a6.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,35 +355,13 @@
             );
         
     
-            var marker_39411f76cfa92c2c0801493e3602527e = L.marker(
-                [37.74795056325092, 127.11839328857843],
-                {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
-        
-    
-            marker_39411f76cfa92c2c0801493e3602527e.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>고산셀프주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 의정부시 민락동 0<br>
-        경기 의정부시 문충로 332<br>
-        > <b>가격: 1,684 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_e0f7c8a2da613075bb997cc83eaf1dd0 = L.marker(
+            var marker_56bb81c7cce852663d46c485d7ea3079 = L.marker(
                 [37.75112337681163, 127.10215822436199],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_e0f7c8a2da613075bb997cc83eaf1dd0.bindTooltip(
+            marker_56bb81c7cce852663d46c485d7ea3079.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +377,35 @@
             );
         
     
-            var marker_67f1610aaba331752fd58834727d9649 = L.marker(
-                [37.74294728554026, 127.10172225506697],
+            var marker_bbd27bdb8c18f769653af676b3cb113a = L.marker(
+                [37.74795056325092, 127.11839328857843],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_67f1610aaba331752fd58834727d9649.bindTooltip(
+            marker_bbd27bdb8c18f769653af676b3cb113a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>고산셀프주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 의정부시 민락동 0<br>
+        경기 의정부시 문충로 332<br>
+        > <b>가격: 1,684 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_df0a6e57f404f4d0437c824761777cf1 = L.marker(
+                [37.74294728554026, 127.10172225506697],
+                {}
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
+        
+    
+            marker_df0a6e57f404f4d0437c824761777cf1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +421,13 @@
             );
         
     
-            var marker_4f3458cbd045cd158b5c35de41d568ab = L.marker(
+            var marker_3edbb799c742da34e10d3b6b83ec3c6a = L.marker(
                 [37.74033278621936, 127.02101024114926],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_4f3458cbd045cd158b5c35de41d568ab.bindTooltip(
+            marker_3edbb799c742da34e10d3b6b83ec3c6a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +443,13 @@
             );
         
     
-            var marker_c95e850969c8443992e6dcbdcc4ce63b = L.marker(
+            var marker_5d476023db4089016abfe5e4bde3a570 = L.marker(
                 [37.73663183185597, 127.06613623786251],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_c95e850969c8443992e6dcbdcc4ce63b.bindTooltip(
+            marker_5d476023db4089016abfe5e4bde3a570.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +465,13 @@
             );
         
     
-            var marker_2f4d358f57800728e07bea991070b8d3 = L.marker(
+            var marker_47fa03be6faba0f7157c863d7404f52a = L.marker(
                 [37.74329644204651, 127.02593129919826],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_2f4d358f57800728e07bea991070b8d3.bindTooltip(
+            marker_47fa03be6faba0f7157c863d7404f52a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,20 +487,20 @@
             );
         
     
-            var marker_8b3ba6c6644c2e86f050ffcacb24f485 = L.marker(
-                [37.69319036073515, 127.0452693962274],
+            var marker_bc9336491ace71a020a4c4249711ce31 = L.marker(
+                [37.69221642872266, 127.05541174665855],
                 {}
-            ).addTo(map_22b5d80c214cebe7c9c9763d3ab863dc);
+            ).addTo(map_74b5128e157492cde8511dbef775f7ee);
         
     
-            marker_8b3ba6c6644c2e86f050ffcacb24f485.bindTooltip(
+            marker_bc9336491ace71a020a4c4249711ce31.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>원에너지(주) 호원주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 의정부시 호원동 194-2<br>
-        경기 의정부시 평화로 10<br>
+        <b>장암주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 의정부시 장암동 380-9<br>
+        경기 의정부시 동일로 30 (장암동)<br>
         > <b>가격: 1,695 원/리터</b>
         </font>
     
