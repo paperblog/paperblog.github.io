@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_2475d1f3790009efe22fe4dc8bb8facd {
+                #map_05354a27a5313c89f1c13bc41b7e6bcf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_2475d1f3790009efe22fe4dc8bb8facd" ></div>
+            <div class="folium-map" id="map_05354a27a5313c89f1c13bc41b7e6bcf" ></div>
         
 </body>
 <script>    
     
-            var map_2475d1f3790009efe22fe4dc8bb8facd = L.map(
-                "map_2475d1f3790009efe22fe4dc8bb8facd",
+            var map_05354a27a5313c89f1c13bc41b7e6bcf = L.map(
+                "map_05354a27a5313c89f1c13bc41b7e6bcf",
                 {
-                    center: [35.27743838941866, 126.47855741299497],
+                    center: [35.27473874600322, 126.47363595071275],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_2caddab6845dc3b15e6a1be152c0d438 = L.tileLayer(
+            var tile_layer_d4c55951aecd9131b8d9e8cf33183bc1 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            var locate_control_cbb1b950a30a5baf303641d6792492bc = L.control.locate(
+            var locate_control_255f35a6bf74723366a7b2cf3517fb9e = L.control.locate(
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
             
         
     
-            var marker_760ac9da69f75673754f3e5819ba7df1 = L.marker(
-                [35.25596677659384, 126.5132262432721],
+            var marker_5c248bbf44bd108b912435e63475eca3 = L.marker(
+                [35.30621803361758, 126.54908339512056],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_760ac9da69f75673754f3e5819ba7df1.bindTooltip(
+            marker_5c248bbf44bd108b912435e63475eca3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영광IC주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 영광읍 우평리 270-4<br>
+        전남 영광군 영광읍 영대로 672<br>
+        > <b>가격: 1,645 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_85d1ef4692f822899a45de3a4fff5500 = L.marker(
+                [35.25596677659384, 126.5132262432721],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_85d1ef4692f822899a45de3a4fff5500.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,79 +113,13 @@
             );
         
     
-            var marker_db9ca7b5560452da64c4bd78dab71bb5 = L.marker(
-                [35.30621803361758, 126.54908339512056],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_db9ca7b5560452da64c4bd78dab71bb5.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>영광IC주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 영광군 영광읍 우평리 270-4<br>
-        전남 영광군 영광읍 영대로 672<br>
-        > <b>가격: 1,675 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_76698ba6924da289cc7f23b5cb5fd985 = L.marker(
-                [35.294748744198486, 126.53583339890021],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_76698ba6924da289cc7f23b5cb5fd985.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>삼성주유소</b><br>
-        <b>SK에너지</b><br>
-        전남 영광군 묘량면 덕흥리 436-1<br>
-        전남 영광군 묘량면 영대로 496<br>
-        > <b>가격: 1,679 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_993bcec85016078d64d90742928604ad = L.marker(
-                [35.265919122666595, 126.49258495659433],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_993bcec85016078d64d90742928604ad.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)낙원주유소</b><br>
-        <b>GS칼텍스</b><br>
-        전남 영광군 영광읍 신하리 130-6<br>
-        전남 영광군 영광읍 천년로 1329<br>
-        > <b>가격: 1,679 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_12466c996e2c5cc62e768192c45c99a2 = L.marker(
+            var marker_18ff8fbcbe8ea476040977a60878257f = L.marker(
                 [35.28618028974814, 126.50742940652749],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_12466c996e2c5cc62e768192c45c99a2.bindTooltip(
+            marker_18ff8fbcbe8ea476040977a60878257f.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,21 +135,21 @@
             );
         
     
-            var marker_b14e75bdebefe7bd317a4516be4b4aa8 = L.marker(
-                [35.277183132723195, 126.50641780965739],
+            var marker_30d23949defdc377399b0bdfa78ab721 = L.marker(
+                [35.294748744198486, 126.53583339890021],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_b14e75bdebefe7bd317a4516be4b4aa8.bindTooltip(
+            marker_30d23949defdc377399b0bdfa78ab721.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>영광농협주유소</b><br>
+        <b>삼성주유소</b><br>
         <b>SK에너지</b><br>
-        전남 영광군 영광읍 백학리 374-1<br>
-        전남 영광군 영광읍 물무로 52<br>
-        > <b>가격: 1,685 원/리터</b>
+        전남 영광군 묘량면 덕흥리 436-1<br>
+        전남 영광군 묘량면 영대로 496<br>
+        > <b>가격: 1,679 원/리터</b>
         </font>
     
                  </div>`,
@@ -201,13 +157,35 @@
             );
         
     
-            var marker_c96a089c9ba9d2b51bbb869f0d2c7266 = L.marker(
-                [35.27981586340916, 126.50065385433157],
+            var marker_9d1094b2e4866f58a840b240b22e0e76 = L.marker(
+                [35.265919122666595, 126.49258495659433],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_c96a089c9ba9d2b51bbb869f0d2c7266.bindTooltip(
+            marker_9d1094b2e4866f58a840b240b22e0e76.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)낙원주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 영광읍 신하리 130-6<br>
+        전남 영광군 영광읍 천년로 1329<br>
+        > <b>가격: 1,679 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_938992ebca762b672304d5d1d468bec5 = L.marker(
+                [35.27981586340916, 126.50065385433157],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_938992ebca762b672304d5d1d468bec5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,35 +201,13 @@
             );
         
     
-            var marker_a67b7b33f8230c5271340386f1f418af = L.marker(
-                [35.2646673926715, 126.50312832258878],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_a67b7b33f8230c5271340386f1f418af.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>해오름주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 영광군 영광읍 녹사리 355-1<br>
-        전남 영광군 영광읍 영광로 1179<br>
-        > <b>가격: 1,685 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_a151f32257e85e77947921c469e52adb = L.marker(
+            var marker_b8d8aa4ef7c7788212c54af17f2c9b6e = L.marker(
                 [35.26952797884028, 126.50787786971595],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_a151f32257e85e77947921c469e52adb.bindTooltip(
+            marker_b8d8aa4ef7c7788212c54af17f2c9b6e.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +223,57 @@
             );
         
     
-            var marker_8037699c33b1604b8c8ce3d9141a9e99 = L.marker(
-                [35.306400708804, 126.48368208196096],
+            var marker_17d84ced4c06243a1e05488180a1242f = L.marker(
+                [35.2646673926715, 126.50312832258878],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_8037699c33b1604b8c8ce3d9141a9e99.bindTooltip(
+            marker_17d84ced4c06243a1e05488180a1242f.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>해오름주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        전남 영광군 영광읍 녹사리 355-1<br>
+        전남 영광군 영광읍 영광로 1179<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_8b5017e15a71c44c026a63c32b7fefb8 = L.marker(
+                [35.277183132723195, 126.50641780965739],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_8b5017e15a71c44c026a63c32b7fefb8.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>영광농협주유소</b><br>
+        <b>SK에너지</b><br>
+        전남 영광군 영광읍 백학리 374-1<br>
+        전남 영광군 영광읍 물무로 52<br>
+        > <b>가격: 1,685 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_09aebd2472f1e4558e57b7d0efa3add8 = L.marker(
+                [35.306400708804, 126.48368208196096],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_09aebd2472f1e4558e57b7d0efa3add8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_0429cac6c024237b01441a636fe3f903 = L.marker(
+            var marker_371001ab99a9e68946d43496b874b56a = L.marker(
                 [35.35665675629239, 126.44738256777028],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_0429cac6c024237b01441a636fe3f903.bindTooltip(
+            marker_371001ab99a9e68946d43496b874b56a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +311,13 @@
             );
         
     
-            var marker_554c74239bc9a90f74579b820dbbc363 = L.marker(
+            var marker_64d452fbfb355f87d9ebd8f60dc0c532 = L.marker(
                 [35.263945285372806, 126.51009993642978],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_554c74239bc9a90f74579b820dbbc363.bindTooltip(
+            marker_64d452fbfb355f87d9ebd8f60dc0c532.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,35 +333,13 @@
             );
         
     
-            var marker_a277b0c78ac5c3c2cda10515fb3545c0 = L.marker(
-                [35.24342570404715, 126.45623626178497],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_a277b0c78ac5c3c2cda10515fb3545c0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>서영광농협군남주유소</b><br>
-        <b>농협알뜰</b><br>
-        전남 영광군 군남면 포천리 246<br>
-        전남 영광군 군남면 천년로 870-20<br>
-        > <b>가격: 1,700 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_8a10057ca9faec704b27ecb5f6389c6f = L.marker(
+            var marker_79ae7f5852dfb4b9441654c08e9522e1 = L.marker(
                 [35.24109157546775, 126.43553609684746],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_8a10057ca9faec704b27ecb5f6389c6f.bindTooltip(
+            marker_79ae7f5852dfb4b9441654c08e9522e1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +355,35 @@
             );
         
     
-            var marker_caf36c3ce3050d15ce76afd564d1d4b0 = L.marker(
-                [35.21345033259083, 126.37644538474702],
+            var marker_cb447739f7ee85c14739b6cfb7f7ad47 = L.marker(
+                [35.22634120999718, 126.3278349826086],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_caf36c3ce3050d15ce76afd564d1d4b0.bindTooltip(
+            marker_cb447739f7ee85c14739b6cfb7f7ad47.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>송암주유소</b><br>
+        <b>GS칼텍스</b><br>
+        전남 영광군 염산면 송암리 485<br>
+        전남 영광군 염산면 칠산로 533<br>
+        > <b>가격: 1,700 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d9b13694b0361206368a7572319177e1 = L.marker(
+                [35.21345033259083, 126.37644538474702],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_d9b13694b0361206368a7572319177e1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +399,35 @@
             );
         
     
-            var marker_b7c85ac4e31289c19fadcac07b38e762 = L.marker(
-                [35.30625479794769, 126.48282717730115],
+            var marker_25c7c9fd7b622b4f3b8bbc4886b84533 = L.marker(
+                [35.24342570404715, 126.45623626178497],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_b7c85ac4e31289c19fadcac07b38e762.bindTooltip(
+            marker_25c7c9fd7b622b4f3b8bbc4886b84533.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>서영광농협군남주유소</b><br>
+        <b>농협알뜰</b><br>
+        전남 영광군 군남면 포천리 246<br>
+        전남 영광군 군남면 천년로 870-20<br>
+        > <b>가격: 1,700 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_35dfcfc67e22a0098938c9e1d83205b1 = L.marker(
+                [35.30625479794769, 126.48282717730115],
+                {}
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
+        
+    
+            marker_35dfcfc67e22a0098938c9e1d83205b1.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +443,13 @@
             );
         
     
-            var marker_87ac947a062a4be0886d67a9f699c198 = L.marker(
+            var marker_e238f41ea85c80c2b4617bdbeebb3af3 = L.marker(
                 [35.27115135256356, 126.49897358711075],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_87ac947a062a4be0886d67a9f699c198.bindTooltip(
+            marker_e238f41ea85c80c2b4617bdbeebb3af3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +465,13 @@
             );
         
     
-            var marker_d94d358527ec958784f457dea2358b94 = L.marker(
+            var marker_bd15e8e212d375dc094facae2fb3d4b3 = L.marker(
                 [35.28302592860529, 126.3975263727642],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_d94d358527ec958784f457dea2358b94.bindTooltip(
+            marker_bd15e8e212d375dc094facae2fb3d4b3.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +487,13 @@
             );
         
     
-            var marker_b5d5068647caec973eeefa716ebe9e8a = L.marker(
+            var marker_5c8e93d7aab79e46ed9a99b72c872e6d = L.marker(
                 [35.28280393390715, 126.43993930822064],
                 {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
+            ).addTo(map_05354a27a5313c89f1c13bc41b7e6bcf);
         
     
-            marker_b5d5068647caec973eeefa716ebe9e8a.bindTooltip(
+            marker_5c8e93d7aab79e46ed9a99b72c872e6d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -480,28 +502,6 @@
         전남 영광군 백수읍 천마리 211-1<br>
         전남 영광군 백수읍 백수로 1211<br>
         > <b>가격: 1,720 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_1f70cb55e5f22a1ab3a020785632eeb4 = L.marker(
-                [35.28033407830577, 126.42626422825359],
-                {}
-            ).addTo(map_2475d1f3790009efe22fe4dc8bb8facd);
-        
-    
-            marker_1f70cb55e5f22a1ab3a020785632eeb4.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>해안도로주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        전남 영광군 백수읍 죽사리 434-1<br>
-        전남 영광군 백수읍 백수로 1067<br>
-        > <b>가격: 1,725 원/리터</b>
         </font>
     
                  </div>`,
