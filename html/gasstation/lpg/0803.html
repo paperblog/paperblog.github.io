@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_af9de65303c3f5ae31406d391a56bdba {
+                #map_d23ccd6e60a91e19cae9bc63a4da5f62 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_af9de65303c3f5ae31406d391a56bdba" ></div>
+            <div class="folium-map" id="map_d23ccd6e60a91e19cae9bc63a4da5f62" ></div>
         
 </body>
 <script>    
     
-            var map_af9de65303c3f5ae31406d391a56bdba = L.map(
-                "map_af9de65303c3f5ae31406d391a56bdba",
+            var map_d23ccd6e60a91e19cae9bc63a4da5f62 = L.map(
+                "map_d23ccd6e60a91e19cae9bc63a4da5f62",
                 {
-                    center: [36.14053018431534, 128.1141803476548],
+                    center: [36.141792463081934, 128.12303933303556],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_f5d97e33a8c291dde23b111a359184b9 = L.tileLayer(
+            var tile_layer_0e9fbc46226cd8fa0db4007a80852083 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            var locate_control_a349ea892fed7d8c130bd6dae067eafe = L.control.locate(
+            var locate_control_79233bff3c1d82ad2ec0c2eef33b841c = L.control.locate(
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
             
         
     
-            var marker_a9e59e4b554c2e86830d3cb496fab4a0 = L.marker(
-                [36.15661052098171, 128.20461542056935],
+            var marker_40771e35469b1c62ae4c71a304c48f46 = L.marker(
+                [36.15820208704775, 128.23820614298577],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_a9e59e4b554c2e86830d3cb496fab4a0.bindTooltip(
+            marker_40771e35469b1c62ae4c71a304c48f46.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>아포가스충전소</b><br>
+        <b>자가상표</b><br>
+        경북 김천시 아포읍 제석리 429-3<br>
+        경북 김천시 아포읍 아포대로 999<br>
+        > <b>가격: 955 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_342727f2c9385feb8ddcbbe414530c16 = L.marker(
+                [36.15661052098171, 128.20461542056935],
+                {}
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
+        
+    
+            marker_342727f2c9385feb8ddcbbe414530c16.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,101 +113,13 @@
             );
         
     
-            var marker_071735096aba80457524feb6873f5912 = L.marker(
-                [36.133657776933326, 128.14347357530636],
-                {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
-        
-    
-            marker_071735096aba80457524feb6873f5912.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK행복충전 서일산업(주)대광가스</b><br>
-        <b>SK가스</b><br>
-        경북 김천시 대광동 869-2<br>
-        경북 김천시 환경로 164 (대광동)<br>
-        > <b>가격: 1,005 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_d522e3bc8146b54907ca0a341153484b = L.marker(
-                [36.1244164096525, 128.0837799701134],
-                {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
-        
-    
-            marker_d522e3bc8146b54907ca0a341153484b.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>김천LPG충전소 (주)서일</b><br>
-        <b>GS칼텍스</b><br>
-        경북 김천시 백옥동 169-1<br>
-        경북 김천시 영남대로 1348<br>
-        > <b>가격: 1,005 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_ca296b31721e7c782d7936860589107f = L.marker(
-                [36.11265104643818, 128.16379555359737],
-                {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
-        
-    
-            marker_ca296b31721e7c782d7936860589107f.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>SK행복충전 행복한충전소</b><br>
-        <b>SK가스</b><br>
-        경북 김천시 덕곡동 803<br>
-        경북 김천시 영남대로 2159 (덕곡동)<br>
-        > <b>가격: 1,005 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_09e985168dd2d6f449136ad77ef534fc = L.marker(
-                [36.13050631988654, 128.1177807596442],
-                {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
-        
-    
-            marker_09e985168dd2d6f449136ad77ef534fc.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>케이케이㈜ 신도시충전소</b><br>
-        <b>SK에너지</b><br>
-        경북 김천시 신음동 422-3<br>
-        경북 김천시 시청로 21<br>
-        > <b>가격: 1,005 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_0da2d9260c6b083a0b85ccc91e67a7f0 = L.marker(
+            var marker_5f40eeb54961eccbd7ed2b68ec493126 = L.marker(
                 [36.13026814689896, 128.11245857893118],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_0da2d9260c6b083a0b85ccc91e67a7f0.bindTooltip(
+            marker_5f40eeb54961eccbd7ed2b68ec493126.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +135,35 @@
             );
         
     
-            var marker_7e86282847eda381ade4cdf2c839054e = L.marker(
-                [36.13315699654474, 128.09698557349344],
+            var marker_511ad2c79ecabd360751155b92d170a4 = L.marker(
+                [36.1244164096525, 128.0837799701134],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_7e86282847eda381ade4cdf2c839054e.bindTooltip(
+            marker_511ad2c79ecabd360751155b92d170a4.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김천LPG충전소 (주)서일</b><br>
+        <b>GS칼텍스</b><br>
+        경북 김천시 백옥동 169-1<br>
+        경북 김천시 영남대로 1348<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_72cc7a1ebe8b785c03e8fbd8de3ae3d5 = L.marker(
+                [36.13315699654474, 128.09698557349344],
+                {}
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
+        
+    
+            marker_72cc7a1ebe8b785c03e8fbd8de3ae3d5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,13 +179,35 @@
             );
         
     
-            var marker_38772526fe28e51a859571f178cb3a54 = L.marker(
-                [36.11723389069596, 128.13139852422614],
+            var marker_b8b72272791f7250d3f955011148d815 = L.marker(
+                [36.11265104643818, 128.16379555359737],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_38772526fe28e51a859571f178cb3a54.bindTooltip(
+            marker_b8b72272791f7250d3f955011148d815.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 행복한충전소</b><br>
+        <b>SK가스</b><br>
+        경북 김천시 덕곡동 803<br>
+        경북 김천시 영남대로 2159 (덕곡동)<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_39a628746b1fde601e5abed20b28b5fd = L.marker(
+                [36.11723389069596, 128.13139852422614],
+                {}
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
+        
+    
+            marker_39a628746b1fde601e5abed20b28b5fd.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -245,13 +223,57 @@
             );
         
     
-            var marker_114a0391dc5f9a9f9a2e6cfcaca1800f = L.marker(
-                [36.12856064537997, 128.09665764538798],
+            var marker_d06692ef2dd63114bdf4eb9838ab3940 = L.marker(
+                [36.133657776933326, 128.14347357530636],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_114a0391dc5f9a9f9a2e6cfcaca1800f.bindTooltip(
+            marker_d06692ef2dd63114bdf4eb9838ab3940.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK행복충전 서일산업(주)대광가스</b><br>
+        <b>SK가스</b><br>
+        경북 김천시 대광동 869-2<br>
+        경북 김천시 환경로 164 (대광동)<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9455956f93a0b1f081669eb9b0bc5dcc = L.marker(
+                [36.13050631988654, 128.1177807596442],
+                {}
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
+        
+    
+            marker_9455956f93a0b1f081669eb9b0bc5dcc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>케이케이㈜ 신도시충전소</b><br>
+        <b>SK에너지</b><br>
+        경북 김천시 신음동 422-3<br>
+        경북 김천시 시청로 21<br>
+        > <b>가격: 1,005 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cf524d3e14caca477eb944090ed98027 = L.marker(
+                [36.12856064537997, 128.09665764538798],
+                {}
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
+        
+    
+            marker_cf524d3e14caca477eb944090ed98027.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +289,13 @@
             );
         
     
-            var marker_89da2f26b2fbe6ef8562a0405702e6cb = L.marker(
+            var marker_c8da25a716586eb6a35ed7e89722fb71 = L.marker(
                 [36.200637723249564, 128.00314604331112],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_89da2f26b2fbe6ef8562a0405702e6cb.bindTooltip(
+            marker_c8da25a716586eb6a35ed7e89722fb71.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +311,13 @@
             );
         
     
-            var marker_0743a87f67ecc69c4a40fe710d18112e = L.marker(
+            var marker_9a9c052e37ee7ea1d611d1e466f5c500 = L.marker(
                 [36.12969958206396, 128.16669770132896],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_0743a87f67ecc69c4a40fe710d18112e.bindTooltip(
+            marker_9a9c052e37ee7ea1d611d1e466f5c500.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +333,13 @@
             );
         
     
-            var marker_b17d00479a734503e3423f2948a516a0 = L.marker(
+            var marker_a973fb25ff04d64b6be913cb27c9a849 = L.marker(
                 [36.13059811787346, 128.1621301685103],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_b17d00479a734503e3423f2948a516a0.bindTooltip(
+            marker_a973fb25ff04d64b6be913cb27c9a849.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,13 +355,13 @@
             );
         
     
-            var marker_041be216c6ff4f45f4978de5d3d45833 = L.marker(
+            var marker_b42732e0d02c861d6602012174aee3f9 = L.marker(
                 [36.198895219500535, 128.00142500509256],
                 {}
-            ).addTo(map_af9de65303c3f5ae31406d391a56bdba);
+            ).addTo(map_d23ccd6e60a91e19cae9bc63a4da5f62);
         
     
-            marker_041be216c6ff4f45f4978de5d3d45833.bindTooltip(
+            marker_b42732e0d02c861d6602012174aee3f9.bindTooltip(
                 `<div>
                      
         <font size=3>
