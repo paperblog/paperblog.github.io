@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_1faf6c3751f47bd8909a4e99498d6b19 {
+                #map_6dfe97eccdb36dce5215e58c57f25578 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1faf6c3751f47bd8909a4e99498d6b19" ></div>
+            <div class="folium-map" id="map_6dfe97eccdb36dce5215e58c57f25578" ></div>
         
 </body>
 <script>    
     
-            var map_1faf6c3751f47bd8909a4e99498d6b19 = L.map(
-                "map_1faf6c3751f47bd8909a4e99498d6b19",
+            var map_6dfe97eccdb36dce5215e58c57f25578 = L.map(
+                "map_6dfe97eccdb36dce5215e58c57f25578",
                 {
-                    center: [37.62298288126253, 127.19478461890981],
+                    center: [37.626378857420804, 127.19724185514488],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_a267c31dedf7384676454fbc6b151ead = L.tileLayer(
+            var tile_layer_09d59c0e3598935baaede496e8f234a1 = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            var locate_control_12e327665dff240de33418d9f959dadd = L.control.locate(
+            var locate_control_f027b3e3e730f908b44a7e125a499880 = L.control.locate(
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
             
         
     
-            var marker_2fb7458ce2af212523d60453a9a9d285 = L.marker(
-                [37.66979190939427, 127.18817109195604],
+            var marker_192edd9b0de5972026c9a079c438068a = L.marker(
+                [37.668973879169336, 127.18730245611899],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_2fb7458ce2af212523d60453a9a9d285.bindTooltip(
+            marker_192edd9b0de5972026c9a079c438068a.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>원우주유소</b><br>
+        <b>자영알뜰</b><br>
+        경기 남양주시 진건읍 용정리 464<br>
+        경기 남양주시 진건읍 진건오남로 237<br>
+        > <b>가격: 1,509 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_da14143266d73168c956a801d20f723b = L.marker(
+                [37.66979190939427, 127.18817109195604],
+                {}
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
+        
+    
+            marker_da14143266d73168c956a801d20f723b.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_17cd7355964e0d061f06ae52564c2e69 = L.marker(
-                [37.668973879169336, 127.18730245611899],
-                {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
-        
-    
-            marker_17cd7355964e0d061f06ae52564c2e69.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>원우주유소</b><br>
-        <b>자영알뜰</b><br>
-        경기 남양주시 진건읍 용정리 464<br>
-        경기 남양주시 진건읍 진건오남로 237<br>
-        > <b>가격: 1,517 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_80602083d51d897a5159b2fd2dab67f8 = L.marker(
-                [37.594349757735614, 127.18457537963045],
-                {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
-        
-    
-            marker_80602083d51d897a5159b2fd2dab67f8.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>현대오일뱅크㈜직영 강변셀프주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경기 남양주시 삼패동 604<br>
-        경기 남양주시 고산로 166 (삼패동)<br>
-        > <b>가격: 1,523 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_91ab53e278ae9deb98d84c7be700a6d9 = L.marker(
+            var marker_46457e3c0f3a3ca316ac2d290a6aa0bc = L.marker(
                 [37.592266758033446, 127.19924074188349],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_91ab53e278ae9deb98d84c7be700a6d9.bindTooltip(
+            marker_46457e3c0f3a3ca316ac2d290a6aa0bc.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,20 +135,42 @@
             );
         
     
-            var marker_e5ce688185dfbdfda1d8cb484519d457 = L.marker(
-                [37.64788327439477, 127.23546047960822],
+            var marker_5950dc8a90c42f84a945d3e9c00fbbbd = L.marker(
+                [37.594349757735614, 127.18457537963045],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_e5ce688185dfbdfda1d8cb484519d457.bindTooltip(
+            marker_5950dc8a90c42f84a945d3e9c00fbbbd.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>(주)소모에너지 뉴평내셀프주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 남양주시 평내동 588<br>
-        경기 남양주시 경춘로 1272 (평내동)<br>
+        <b>현대오일뱅크㈜직영 강변셀프주유소</b><br>
+        <b>현대오일뱅크</b><br>
+        경기 남양주시 삼패동 604<br>
+        경기 남양주시 고산로 166 (삼패동)<br>
+        > <b>가격: 1,523 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_93c6ff6637865d91562082ccd5c9cf2c = L.marker(
+                [37.66228674213469, 127.2467912908739],
+                {}
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
+        
+    
+            marker_93c6ff6637865d91562082ccd5c9cf2c.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>호평첨단주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 호평동 248-12<br>
+        경기 남양주시 늘을1로 161 (호평동)<br>
         > <b>가격: 1,525 원/리터</b>
         </font>
     
@@ -179,13 +179,13 @@
             );
         
     
-            var marker_4a22af2adf4377c64853a61cf3866406 = L.marker(
+            var marker_0b30e0909339366dc1c57c05f8578c6d = L.marker(
                 [37.64653822623817, 127.19404622052693],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_4a22af2adf4377c64853a61cf3866406.bindTooltip(
+            marker_0b30e0909339366dc1c57c05f8578c6d.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,57 +201,13 @@
             );
         
     
-            var marker_9689a5f2d43f22ac284a8290b8c714e3 = L.marker(
-                [37.632842128419746, 127.20505202820863],
-                {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
-        
-    
-            marker_9689a5f2d43f22ac284a8290b8c714e3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>중앙셀프주유소</b><br>
-        <b>GS칼텍스</b><br>
-        경기 남양주시 금곡동 433-2<br>
-        경기 남양주시 경춘로 928 (금곡동)<br>
-        > <b>가격: 1,525 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_cd9e6dab25d38f29239c629f146dc8bb = L.marker(
-                [37.65738227836388, 127.23928436215502],
-                {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
-        
-    
-            marker_cd9e6dab25d38f29239c629f146dc8bb.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>씨앤에스유통(주)호평IC주유소</b><br>
-        <b>S-OIL</b><br>
-        경기 남양주시 호평동 551-1<br>
-        경기 남양주시 늘을1로 59 (호평동)<br>
-        > <b>가격: 1,525 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_33a50b0ed68eeafdc3dd4bfbb0d324f2 = L.marker(
+            var marker_b380f9449fe91414ef4bfe8180a1263a = L.marker(
                 [37.629339004500906, 127.1930330687138],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_33a50b0ed68eeafdc3dd4bfbb0d324f2.bindTooltip(
+            marker_b380f9449fe91414ef4bfe8180a1263a.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,20 +223,20 @@
             );
         
     
-            var marker_efe67822482d00c9769f81a65293688c = L.marker(
-                [37.625388620963626, 127.18951448874931],
+            var marker_0dffafb3a31d5abfd6cace687535e445 = L.marker(
+                [37.632842128419746, 127.20505202820863],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_efe67822482d00c9769f81a65293688c.bindTooltip(
+            marker_0dffafb3a31d5abfd6cace687535e445.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>월드에너지</b><br>
-        <b>S-OIL</b><br>
-        경기 남양주시 일패동 100-3<br>
-        경기 남양주시 경춘로 754 (일패동)<br>
+        <b>중앙셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 남양주시 금곡동 433-2<br>
+        경기 남양주시 경춘로 928 (금곡동)<br>
         > <b>가격: 1,525 원/리터</b>
         </font>
     
@@ -289,13 +245,13 @@
             );
         
     
-            var marker_07dec6fe8425490524aac9a17cd0e6d5 = L.marker(
+            var marker_c95642433f867c3f2118db8db01b11fb = L.marker(
                 [37.63124054065007, 127.2047005918082],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_07dec6fe8425490524aac9a17cd0e6d5.bindTooltip(
+            marker_c95642433f867c3f2118db8db01b11fb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,13 +267,35 @@
             );
         
     
-            var marker_96369ae031db89f6293fc03fe1e72366 = L.marker(
-                [37.63607952005478, 127.2197603596979],
+            var marker_2a753f1d1644687cae339117be1069bc = L.marker(
+                [37.625388620963626, 127.18951448874931],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_96369ae031db89f6293fc03fe1e72366.bindTooltip(
+            marker_2a753f1d1644687cae339117be1069bc.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>월드에너지</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 일패동 100-3<br>
+        경기 남양주시 경춘로 754 (일패동)<br>
+        > <b>가격: 1,525 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_f0c5f9fa1bead96a71d6dc8da4048f41 = L.marker(
+                [37.63607952005478, 127.2197603596979],
+                {}
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
+        
+    
+            marker_f0c5f9fa1bead96a71d6dc8da4048f41.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -333,21 +311,21 @@
             );
         
     
-            var marker_95e6f9ecbd5395bb740a6399915c71dd = L.marker(
-                [37.55960409923824, 127.23573777364184],
+            var marker_f474bb598cae4b09c3c724d18e413ab3 = L.marker(
+                [37.64788327439477, 127.23546047960822],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_95e6f9ecbd5395bb740a6399915c71dd.bindTooltip(
+            marker_f474bb598cae4b09c3c724d18e413ab3.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>SK KH에너지 덕소주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 남양주시 와부읍 팔당리 713-1<br>
-        경기도 남양주시 와부읍 경강로 881<br>
-        > <b>가격: 1,528 원/리터</b>
+        <b>(주)소모에너지 뉴평내셀프주유소</b><br>
+        <b>GS칼텍스</b><br>
+        경기 남양주시 평내동 588<br>
+        경기 남양주시 경춘로 1272 (평내동)<br>
+        > <b>가격: 1,525 원/리터</b>
         </font>
     
                  </div>`,
@@ -355,21 +333,21 @@
             );
         
     
-            var marker_43e523e8d09ee0664f65794d0ed4784a = L.marker(
-                [37.605042784392715, 127.15610562385623],
+            var marker_5a384f896e3c809a424550cd3551e79d = L.marker(
+                [37.65738227836388, 127.23928436215502],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_43e523e8d09ee0664f65794d0ed4784a.bindTooltip(
+            marker_5a384f896e3c809a424550cd3551e79d.bindTooltip(
                 `<div>
                      
         <font size=3>
-        <b>(주)삼호에너지 도농주유소</b><br>
-        <b>SK에너지</b><br>
-        경기 남양주시 도농동 137-2<br>
-        경기 남양주시 경춘로 374 (도농동)<br>
-        > <b>가격: 1,528 원/리터</b>
+        <b>씨앤에스유통(주)호평IC주유소</b><br>
+        <b>S-OIL</b><br>
+        경기 남양주시 호평동 551-1<br>
+        경기 남양주시 늘을1로 59 (호평동)<br>
+        > <b>가격: 1,525 원/리터</b>
         </font>
     
                  </div>`,
@@ -377,13 +355,13 @@
             );
         
     
-            var marker_5dd6ec32edad8a6e4190c780abba7232 = L.marker(
+            var marker_01b31215f22321074a7c6c098392a386 = L.marker(
                 [37.61660488543247, 127.17151984158704],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_5dd6ec32edad8a6e4190c780abba7232.bindTooltip(
+            marker_01b31215f22321074a7c6c098392a386.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,13 +377,57 @@
             );
         
     
-            var marker_ff2a3171b633a095e9cf6b83b6f3e3ce = L.marker(
-                [37.609767612931144, 127.18244752489501],
+            var marker_86de5dcaf8d56f0295daa01442152a21 = L.marker(
+                [37.605042784392715, 127.15610562385623],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_ff2a3171b633a095e9cf6b83b6f3e3ce.bindTooltip(
+            marker_86de5dcaf8d56f0295daa01442152a21.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)삼호에너지 도농주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 도농동 137-2<br>
+        경기 남양주시 경춘로 374 (도농동)<br>
+        > <b>가격: 1,528 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5e4e7900548cf21bf2ae9dd30e6a6388 = L.marker(
+                [37.55960409923824, 127.23573777364184],
+                {}
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
+        
+    
+            marker_5e4e7900548cf21bf2ae9dd30e6a6388.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>SK KH에너지 덕소주유소</b><br>
+        <b>SK에너지</b><br>
+        경기 남양주시 와부읍 팔당리 713-1<br>
+        경기도 남양주시 와부읍 경강로 881<br>
+        > <b>가격: 1,528 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a20a4e6abc32939f9d0044ab08d7f3a7 = L.marker(
+                [37.609767612931144, 127.18244752489501],
+                {}
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
+        
+    
+            marker_a20a4e6abc32939f9d0044ab08d7f3a7.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -421,13 +443,13 @@
             );
         
     
-            var marker_56cf3bb8abb1028224dbf15f3a7d4ae3 = L.marker(
+            var marker_88f7438c556a4cd188e16e62e187cb94 = L.marker(
                 [37.61577498420564, 127.1700869541277],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_56cf3bb8abb1028224dbf15f3a7d4ae3.bindTooltip(
+            marker_88f7438c556a4cd188e16e62e187cb94.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -443,13 +465,13 @@
             );
         
     
-            var marker_8271413c02804e7ca2e1ef84075eb084 = L.marker(
+            var marker_e157cf2c639ce89d87a1eb84425db607 = L.marker(
                 [37.60933464519586, 127.17306160936992],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_8271413c02804e7ca2e1ef84075eb084.bindTooltip(
+            marker_e157cf2c639ce89d87a1eb84425db607.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -465,13 +487,13 @@
             );
         
     
-            var marker_fb03a794269143d31ba810e179b99fae = L.marker(
+            var marker_8d38cf2eab04b5929fb2d5774fbd3f76 = L.marker(
                 [37.61708549696661, 127.16894521548843],
                 {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
+            ).addTo(map_6dfe97eccdb36dce5215e58c57f25578);
         
     
-            marker_fb03a794269143d31ba810e179b99fae.bindTooltip(
+            marker_8d38cf2eab04b5929fb2d5774fbd3f76.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -480,28 +502,6 @@
         경기 남양주시 다산동 3264<br>
         경기 남양주시 진관로 64 (다산동)<br>
         > <b>가격: 1,536 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_af2f2f8845f90317b70bc583dc2a9415 = L.marker(
-                [37.594367218969346, 127.19764656617329],
-                {}
-            ).addTo(map_1faf6c3751f47bd8909a4e99498d6b19);
-        
-    
-            marker_af2f2f8845f90317b70bc583dc2a9415.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>대박주유소</b><br>
-        <b>현대오일뱅크</b><br>
-        경기 남양주시 삼패동 337-4<br>
-        경기 남양주시 경강로 351 (삼패동)<br>
-        > <b>가격: 1,538 원/리터</b>
         </font>
     
                  </div>`,
