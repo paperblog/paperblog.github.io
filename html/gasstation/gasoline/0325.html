@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c9fd38e7b03c2e526915ff541a05e258 {
+                #map_d252b17c6203fc4d9e24348da220f010 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,15 +37,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c9fd38e7b03c2e526915ff541a05e258" ></div>
+            <div class="folium-map" id="map_d252b17c6203fc4d9e24348da220f010" ></div>
         
 </body>
 <script>    
     
-            var map_c9fd38e7b03c2e526915ff541a05e258 = L.map(
-                "map_c9fd38e7b03c2e526915ff541a05e258",
+            var map_d252b17c6203fc4d9e24348da220f010 = L.map(
+                "map_d252b17c6203fc4d9e24348da220f010",
                 {
-                    center: [37.19082659031782, 128.4363389650955],
+                    center: [37.19082659031782, 128.43633896509553],
                     crs: L.CRS.EPSG3857,
                     zoom: 11,
                     zoomControl: false,
@@ -57,25 +57,47 @@
 
         
     
-            var tile_layer_898a0e1681e44c28d4ca22f17dcf7efc = L.tileLayer(
+            var tile_layer_6a9b27a25014aa61bb3ee25672e76b5e = L.tileLayer(
                 "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            var locate_control_3158adf2c29b9d53bed5278cb5244d10 = L.control.locate(
+            var locate_control_689896da81968dc08082d4830b204691 = L.control.locate(
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
             
         
     
-            var marker_4516822f215ed7c6aa824003902895e8 = L.marker(
-                [37.17380057916223, 128.32159022379784],
+            var marker_a9a92d1a112a4654e239f6b2b73d1d8b = L.marker(
+                [37.18032163640063, 128.3121173446728],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_4516822f215ed7c6aa824003902895e8.bindTooltip(
+            marker_a9a92d1a112a4654e239f6b2b73d1d8b.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>쌍용장원주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 영월군 한반도면 쌍용리 1079-1<br>
+        강원 영월군 한반도면 강원남로 153<br>
+        > <b>가격: 1,515 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_9e9a08ea892e3437f3acad4ef4e41441 = L.marker(
+                [37.17380057916223, 128.32159022379784],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_9e9a08ea892e3437f3acad4ef4e41441.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -91,57 +113,13 @@
             );
         
     
-            var marker_4e5c52d6dcb124a87c12e1d6776c6c37 = L.marker(
-                [37.27356146647617, 128.27110591886088],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_4e5c52d6dcb124a87c12e1d6776c6c37.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>주천주유소</b><br>
-        <b>S-OIL</b><br>
-        강원 영월군 주천면 주천리 1357<br>
-        강원 영월군 주천면 송학주천로 1462<br>
-        > <b>가격: 1,539 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_318d2a5b774c104952d8ba8a68c7ced0 = L.marker(
-                [37.198264671198984, 128.40310902386295],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_318d2a5b774c104952d8ba8a68c7ced0.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>한반도농협남면지점주유소</b><br>
-        <b>농협알뜰</b><br>
-        강원 영월군 남면 북쌍리 271-1<br>
-        강원 영월군 남면 영월로 971<br>
-        > <b>가격: 1,539 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_acae515e360261e2aae7dce164e2a5c5 = L.marker(
+            var marker_1d4dcf927641014f013cca0408f37091 = L.marker(
                 [37.26586706678506, 128.26689821844462],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_acae515e360261e2aae7dce164e2a5c5.bindTooltip(
+            marker_1d4dcf927641014f013cca0408f37091.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -157,13 +135,57 @@
             );
         
     
-            var marker_16953de8dbdb64a41b1729827fa53341 = L.marker(
-                [37.242293068262185, 128.24484849820675],
+            var marker_af1efbcba5ad5ddcc1dc7c5e422af944 = L.marker(
+                [37.27356146647617, 128.27110591886088],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_16953de8dbdb64a41b1729827fa53341.bindTooltip(
+            marker_af1efbcba5ad5ddcc1dc7c5e422af944.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>주천주유소</b><br>
+        <b>S-OIL</b><br>
+        강원 영월군 주천면 주천리 1357<br>
+        강원 영월군 주천면 송학주천로 1462<br>
+        > <b>가격: 1,539 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_086a9736f225638b769144c9b78c186d = L.marker(
+                [37.198264671198984, 128.40310902386295],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_086a9736f225638b769144c9b78c186d.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>한반도농협남면지점주유소</b><br>
+        <b>농협알뜰</b><br>
+        강원 영월군 남면 북쌍리 271-1<br>
+        강원 영월군 남면 영월로 971<br>
+        > <b>가격: 1,539 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_97c4d7d86e1a6ce3a58ae39fbaeece51 = L.marker(
+                [37.242293068262185, 128.24484849820675],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_97c4d7d86e1a6ce3a58ae39fbaeece51.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -179,13 +201,13 @@
             );
         
     
-            var marker_71d3b694903ea17bf76988d91b1b98ad = L.marker(
+            var marker_b04aafea1011b779b911665dcd62b0f9 = L.marker(
                 [37.21962284853767, 128.41920059581423],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_71d3b694903ea17bf76988d91b1b98ad.bindTooltip(
+            marker_b04aafea1011b779b911665dcd62b0f9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -201,13 +223,13 @@
             );
         
     
-            var marker_ca4740f69cdc35b61450630841a88232 = L.marker(
+            var marker_25562ed46c932d12b7760cfb07f637a9 = L.marker(
                 [37.252258678939576, 128.43027266074876],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_ca4740f69cdc35b61450630841a88232.bindTooltip(
+            marker_25562ed46c932d12b7760cfb07f637a9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -223,35 +245,13 @@
             );
         
     
-            var marker_99709f5bbafbaa583803cc170a8d7454 = L.marker(
-                [37.18032163640063, 128.3121173446728],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_99709f5bbafbaa583803cc170a8d7454.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>쌍용장원주유소</b><br>
-        <b>S-OIL</b><br>
-        강원 영월군 한반도면 쌍용리 1079-1<br>
-        강원 영월군 한반도면 강원남로 153<br>
-        > <b>가격: 1,595 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_5d4325962028dc560785b5b11f69828a = L.marker(
+            var marker_3ccb3ac34cbe804cba7c85c7f4955461 = L.marker(
                 [37.17990499638829, 128.30911761666576],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_5d4325962028dc560785b5b11f69828a.bindTooltip(
+            marker_3ccb3ac34cbe804cba7c85c7f4955461.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -267,13 +267,13 @@
             );
         
     
-            var marker_5239a3479c1fc39a74a1cf6c3db458b8 = L.marker(
+            var marker_63eb1453b05e0b0d16b5453d88bbf6b5 = L.marker(
                 [37.17988876162801, 128.3107195621514],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_5239a3479c1fc39a74a1cf6c3db458b8.bindTooltip(
+            marker_63eb1453b05e0b0d16b5453d88bbf6b5.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -289,13 +289,13 @@
             );
         
     
-            var marker_2e512dbf19fdea48557d1fbc4714023f = L.marker(
+            var marker_cef77b00eb54816cfa6ab5feb4f862d8 = L.marker(
                 [37.19660192159234, 128.60582829824514],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_2e512dbf19fdea48557d1fbc4714023f.bindTooltip(
+            marker_cef77b00eb54816cfa6ab5feb4f862d8.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -311,35 +311,13 @@
             );
         
     
-            var marker_021cd779b36bef04de0a4ed197c3e799 = L.marker(
-                [37.12930345277938, 128.83059950124024],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_021cd779b36bef04de0a4ed197c3e799.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>유진주유소(영월)</b><br>
-        <b>S-OIL</b><br>
-        강원 영월군 상동읍 내덕리 36-7<br>
-        강원 영월군 상동읍 태백산로 3234<br>
-        > <b>가격: 1,630 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_f473a4e6fb98ac9b8f3ca82e5b767166 = L.marker(
+            var marker_e18ca297bf339cc2f02a2a9f9e3e6ecb = L.marker(
                 [37.23642645804691, 128.33192051109938],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_f473a4e6fb98ac9b8f3ca82e5b767166.bindTooltip(
+            marker_e18ca297bf339cc2f02a2a9f9e3e6ecb.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -355,13 +333,13 @@
             );
         
     
-            var marker_6eb3e852b71096eff7f22d198ceeba63 = L.marker(
+            var marker_df4519b930cf4bed6489aca8c0d6ee87 = L.marker(
                 [37.120831567554376, 128.7452738556905],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_6eb3e852b71096eff7f22d198ceeba63.bindTooltip(
+            marker_df4519b930cf4bed6489aca8c0d6ee87.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -377,13 +355,35 @@
             );
         
     
-            var marker_b31b69832838ce3d2e77f4efd59516dc = L.marker(
-                [37.18507232427617, 128.4850185302066],
+            var marker_8af84a35dbfeac34f1fe2519f1b5d941 = L.marker(
+                [37.12930345277938, 128.83059950124024],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_b31b69832838ce3d2e77f4efd59516dc.bindTooltip(
+            marker_8af84a35dbfeac34f1fe2519f1b5d941.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>유진주유소(영월)</b><br>
+        <b>S-OIL</b><br>
+        강원 영월군 상동읍 내덕리 36-7<br>
+        강원 영월군 상동읍 태백산로 3234<br>
+        > <b>가격: 1,630 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_50515dcc24fe40956bfeba28c4e6ecc9 = L.marker(
+                [37.18507232427617, 128.4850185302066],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_50515dcc24fe40956bfeba28c4e6ecc9.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -399,79 +399,13 @@
             );
         
     
-            var marker_e0e39f5c2cc4c631dc2ef7f65f862ef3 = L.marker(
-                [37.128801358252396, 128.53679232493167],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_e0e39f5c2cc4c631dc2ef7f65f862ef3.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>(주)고씨굴주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 영월군 김삿갓면 진별리 506-29<br>
-        강원 영월군 김삿갓면 영월동로 1139<br>
-        > <b>가격: 1,650 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_be2248481d67304a495c987807ef8e8d = L.marker(
-                [37.17721118902539, 128.35555794532274],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_be2248481d67304a495c987807ef8e8d.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>태경에프엔지(주)동강주유소/충전소</b><br>
-        <b>SK에너지</b><br>
-        강원 영월군 남면 창원리 729-1<br>
-        강원 영월군 남면 강원남로 641<br>
-        > <b>가격: 1,650 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_86667edefa570f858398a0e1947f3348 = L.marker(
-                [37.121591843116, 128.61085352580992],
-                {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
-        
-    
-            marker_86667edefa570f858398a0e1947f3348.bindTooltip(
-                `<div>
-                     
-        <font size=3>
-        <b>김삿갓주유소</b><br>
-        <b>SK에너지</b><br>
-        강원 영월군 김삿갓면 와석리 322<br>
-        강원 영월군 김삿갓면 영월동로 2150<br>
-        > <b>가격: 1,650 원/리터</b>
-        </font>
-    
-                 </div>`,
-                {"sticky": false}
-            );
-        
-    
-            var marker_6e19ad2833ebe633b66bc6c13c8c74cd = L.marker(
+            var marker_947c748b9b99233dd6a30ca7ece14717 = L.marker(
                 [37.185167218461324, 128.45738031408942],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_6e19ad2833ebe633b66bc6c13c8c74cd.bindTooltip(
+            marker_947c748b9b99233dd6a30ca7ece14717.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -487,13 +421,13 @@
             );
         
     
-            var marker_b95c2c8f6356ff2b06169faac4308342 = L.marker(
+            var marker_5bf6276e8ca98fd830052e425cd4e594 = L.marker(
                 [37.16974069947327, 128.47857483204885],
                 {}
-            ).addTo(map_c9fd38e7b03c2e526915ff541a05e258);
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
         
     
-            marker_b95c2c8f6356ff2b06169faac4308342.bindTooltip(
+            marker_5bf6276e8ca98fd830052e425cd4e594.bindTooltip(
                 `<div>
                      
         <font size=3>
@@ -501,6 +435,72 @@
         <b>현대오일뱅크</b><br>
         강원 영월군 영월읍 덕포리 676-1<br>
         강원 영월군 영월읍 중앙로 254<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_5015e68aeaf0201fc0df50e468637402 = L.marker(
+                [37.128801358252396, 128.53679232493167],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_5015e68aeaf0201fc0df50e468637402.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>(주)고씨굴주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 영월군 김삿갓면 진별리 506-29<br>
+        강원 영월군 김삿갓면 영월동로 1139<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_90e3ed21b451f11c69eff2d061b89cc3 = L.marker(
+                [37.121591843116, 128.61085352580992],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_90e3ed21b451f11c69eff2d061b89cc3.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>김삿갓주유소</b><br>
+        <b>SK에너지</b><br>
+        강원 영월군 김삿갓면 와석리 322<br>
+        강원 영월군 김삿갓면 영월동로 2150<br>
+        > <b>가격: 1,650 원/리터</b>
+        </font>
+    
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_68534ddac654689a66b26d20a9252945 = L.marker(
+                [37.17721118902539, 128.35555794532274],
+                {}
+            ).addTo(map_d252b17c6203fc4d9e24348da220f010);
+        
+    
+            marker_68534ddac654689a66b26d20a9252945.bindTooltip(
+                `<div>
+                     
+        <font size=3>
+        <b>태경에프엔지(주)동강주유소/충전소</b><br>
+        <b>SK에너지</b><br>
+        강원 영월군 남면 창원리 729-1<br>
+        강원 영월군 남면 강원남로 641<br>
         > <b>가격: 1,650 원/리터</b>
         </font>
     
